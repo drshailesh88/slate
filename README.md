@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Slate
 
-## Getting Started
+A citation-first research and writing desk for clinicians and academics —
+find, organize, draft, and check.
 
-First, run the development server:
+## Stack
+
+- [Next.js](https://nextjs.org) (App Router, TypeScript, React 19) with the
+  `src/` directory layout
+- [WorkOS AuthKit](https://workos.com/docs/authkit) for authentication
+  (`@workos-inc/authkit-nextjs`)
+- [Neon](https://neon.tech) serverless Postgres +
+  [Drizzle ORM](https://orm.drizzle.team)
+- [Lucide](https://lucide.dev) icons; CSS transitions for motion
+- pnpm, Node 20+
+
+The visual and interaction authority is `docs/design/design.md` (**FROZEN**)
+and the specs under `docs/design/specs/`. Every color, font, radius, and
+motion value in component code references the CSS tokens defined in
+`src/app/globals.css` — never raw values.
+
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Without WorkOS credentials, dev mode runs with a mock session (`Dr. Singh`)
+so the app shell renders immediately. Real auth activates automatically once
+the WorkOS env vars are set.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Environment variables
 
-## Learn More
+Copy `.env.example` to `.env.local` and fill in:
 
-To learn more about Next.js, take a look at the following resources:
+| Variable                          | Purpose                                                      |
+| --------------------------------- | ------------------------------------------------------------ |
+| `WORKOS_API_KEY`                  | WorkOS secret key                                            |
+| `WORKOS_CLIENT_ID`                | WorkOS client id                                             |
+| `WORKOS_COOKIE_PASSWORD`          | 32+ char secret used to encrypt the session cookie           |
+| `NEXT_PUBLIC_WORKOS_REDIRECT_URI` | AuthKit callback, e.g. `http://localhost:3000/auth/callback` |
+| `DATABASE_URL`                    | Neon **pooled** connection string (runtime, neon-http)       |
+| `DATABASE_URL_UNPOOLED`           | Neon **direct** connection string (drizzle-kit migrations)   |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Never commit `.env*` files (only `.env.example` is tracked).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Scripts
 
-## Deploy on Vercel
+| Command            | What it does                                     |
+| ------------------ | ------------------------------------------------ |
+| `pnpm dev`         | Dev server                                       |
+| `pnpm build`       | Production build                                 |
+| `pnpm typecheck`   | `tsc --noEmit`                                   |
+| `pnpm lint`        | ESLint, zero warnings allowed                    |
+| `pnpm format`      | Prettier write (`format:check` to verify)        |
+| `pnpm db:generate` | Generate SQL migrations from the schema          |
+| `pnpm db:migrate`  | Apply migrations (needs `DATABASE_URL_UNPOOLED`) |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Layout
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+docs/design/          frozen design authority (do not edit values)
+drizzle/              generated SQL migrations
+src/app/              routes (App Router); (app)/ is the authed shell
+src/components/       shell + feature components (CSS Modules, tokens only)
+src/lib/auth/         AuthKit session helpers + dev bypass
+src/lib/db/           Drizzle schema, Neon client, user upsert
+src/proxy.ts          AuthKit route protection (Next 16 proxy)
+```
+
+The `src/lib` / `src/types` / `src/app/api` layout is load-bearing: a search
+engine module will later be imported verbatim into `src/lib/search/**` with
+couplings at `src/lib/http/**`, `src/lib/ai/`, and `src/types/search.ts`.
