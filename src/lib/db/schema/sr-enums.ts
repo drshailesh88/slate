@@ -60,3 +60,25 @@ export const robJudgementEnum = pgEnum('sr_rob_judgement', [
   'some',
   'high',
 ]);
+
+// The stage a batch of references is imported into (Covidence: import into a
+// named stage). Mirrors the precursor `ImportBatch.target`.
+export const importTargetEnum = pgEnum('sr_import_target', [
+  'screen',
+  'full_text',
+]);
+
+// Per-study duplicate-detection state (Covidence model: match on title · year ·
+// authors · identifiers). `unique` = matcher found no duplicate. `auto_merged` =
+// high-confidence duplicate, removed from the pool automatically. `needs_review`
+// = uncertain pair queued for a human, kept IN the pool until decided. `merged`
+// = human-confirmed duplicate (removed). `kept` = human said not-a-duplicate
+// (stays). No state ever deletes the row — removal is reversible (never a silent
+// drop).
+export const dupeStatusEnum = pgEnum('sr_dupe_status', [
+  'unique',
+  'auto_merged',
+  'needs_review',
+  'merged',
+  'kept',
+]);
