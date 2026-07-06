@@ -15,3 +15,8 @@ export const users = pgTable('users', {
 
 export type User = typeof users.$inferSelect;
 export type NewUser = typeof users.$inferInsert;
+
+// Systematic-Review module schema (enums, visible tables, and the three blinded
+// base tables). Kept in ./schema/* to keep files small; re-exported here so the
+// drizzle client barrel and drizzle-kit discover every table through one entry.
+export * from './schema/sr';

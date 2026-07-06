@@ -1,0 +1,23 @@
+name: Blinding wall
+
+# Fails the build if any of the three blinded SR base tables is referenced
+# outside src/lib/db/schema/** (definition) or src/lib/sr/authz/** (the blinding
+# chokepoint). Third layer of defense behind the Postgres privilege wall and the
+# ESLint no-restricted-imports rule. See FOUNDATION-auth-tenancy.md §6.
+
+on:
+  pull_request:
+    branches: [main, 'feat/systematic-review']
+  push:
+    branches: [main, 'feat/systematic-review']
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Blinded-table reference guard
+        run: node scripts/check-blinded-wall.mjs
