@@ -1,0 +1,368 @@
+/* Review Summary (funnel home) skin. Ported from the ScholarSync precursor's
+   funnel styles and re-expressed in Slate tokens — no raw hex, no raw
+   durations/easings, hairline borders, no shadows (design.md §9). Motion
+   animates transform/opacity only and honors prefers-reduced-motion (globals). */
+
+.wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 32px 32px 64px;
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
+.title {
+  margin: 6px 0 0;
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: -0.3px;
+  color: var(--ink);
+}
+
+.lead {
+  margin: 8px 0 0;
+  max-width: 70ch;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink3);
+}
+
+.lead b {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* ── AI strip — informational only, never a leaked count or a verdict ─────── */
+.aistrip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 12px 16px;
+  border: 1px solid var(--accentln);
+  border-radius: 11px;
+  background: var(--accentbg);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink3);
+}
+
+.aichip {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 7px;
+  border-radius: 5px;
+  border: 1px solid var(--accentln);
+  background: var(--paper);
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--accent);
+}
+
+.sysrec {
+  margin-left: auto;
+  flex: none;
+  padding-left: 12px;
+  border-left: 1px solid var(--accentln);
+  font-size: 11.5px;
+  color: var(--accent);
+}
+
+/* ── Funnel-viz — the one safe hero number (imported), then completion meters */
+.funnelviz {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.vizcell {
+  flex: 1 1 150px;
+  min-width: 150px;
+  padding: 15px 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+}
+
+.vizcell.lead {
+  border-color: var(--accentln);
+  background: var(--accentbg);
+}
+
+.vizNum {
+  font-family: var(--mono);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.vizLabel {
+  margin-top: 3px;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.vizMeter {
+  height: 6px;
+  margin-top: 10px;
+  border-radius: 4px;
+  background: var(--line2);
+  overflow: hidden;
+}
+
+.vizMeter i {
+  display: block;
+  height: 100%;
+  background: var(--inc);
+}
+
+/* ── Section label ────────────────────────────────────────────────────────── */
+.seclabel {
+  margin: 30px 2px 12px;
+  font-size: 10.5px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* ── Funnel stage cards ───────────────────────────────────────────────────── */
+.funnel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fstage {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+}
+
+.fstage.locked {
+  background: var(--rail);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 16px 22px;
+  background: none;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+}
+
+.top.plain {
+  cursor: default;
+}
+
+.badge {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: var(--rail);
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink3);
+}
+
+.chev {
+  flex: none;
+  display: inline-flex;
+  color: var(--muted);
+  transition: transform var(--motion-micro) var(--ease-inout);
+}
+
+.fstage.open .chev {
+  transform: rotate(90deg);
+}
+
+.fname {
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.fmeta {
+  margin-left: 6px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.flinks {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 12.5px;
+}
+
+.soon {
+  margin-left: auto;
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.fbody {
+  padding: 4px 22px 20px;
+  border-top: 1px solid var(--line2);
+}
+
+/* ── Safe team progress — completion counts ONLY ──────────────────────────── */
+.progress {
+  padding-top: 16px;
+}
+
+.plabel {
+  font-size: 10.5px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.surfaceRow {
+  display: grid;
+  grid-template-columns: 150px 1fr auto;
+  align-items: center;
+  gap: 14px;
+  padding: 9px 0;
+  border-top: 1px solid var(--line2);
+}
+
+.surfaceRow:first-of-type {
+  border-top: 0;
+}
+
+.surfaceName {
+  font-size: 13px;
+  color: var(--ink3);
+}
+
+.pbar {
+  height: 8px;
+  border-radius: 5px;
+  background: var(--line2);
+  overflow: hidden;
+}
+
+.pbar i {
+  display: block;
+  height: 100%;
+  background: var(--inc);
+}
+
+.surfaceCount {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+/* ── First-run guidance ───────────────────────────────────────────────────── */
+.stateblock {
+  margin-top: 26px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--rail);
+}
+
+.stateblock h3 {
+  margin: 12px 0 0;
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.stateblock p {
+  margin: 8px 0 0;
+  max-width: 62ch;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--ink3);
+}
+
+.actions {
+  margin-top: 18px;
+}
+
+/* ── Stage links / buttons ────────────────────────────────────────────────── */
+.link {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.linkMuted {
+  color: var(--muted);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 15px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.btn:hover {
+  background: var(--rail);
+}
+
+.btnPrimary {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.btnPrimary:hover {
+  background: var(--ink2);
+}
+
+.btn:disabled,
+.btn[aria-disabled='true'] {
+  border-color: var(--line);
+  background: var(--rail);
+  color: var(--muted);
+  cursor: default;
+}

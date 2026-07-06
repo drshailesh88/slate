@@ -323,8 +323,7 @@ later task.
   ACTIVE-member reviews (`src/lib/sr/reviews.ts`, membership-scoped, org-
   independent) or an empty state pointing to `/systematic-review/new` (the create
   wizard — a separate task; may 404 until it lands). The `[reviewId]` index
-  `page.tsx` is a shell placeholder for the Summary screen (its own M2 task will
-  replace it).
+  `page.tsx` is the **Review Summary funnel home** (T11 — see below).
 - **Module manifest** `src/lib/sr/manifest.ts` (`systematicReviewManifest`) — the
   stable `{ id, name, icon, entryRoute, flag }` seam a future Home launcher will
   consume. Exported, deliberately NOT wired into the global nav yet.
@@ -377,5 +376,185 @@ yet).
   neon-http driver can't talk to a plain local Postgres), which is a founder
   step — so the create→redirect path is proven by unit tests + build, and the
   wizard UI/skin is browser-verified under dev-bypass.
+
+### The Members/Team screen + invitation security model (T7 · ★ security-sensitive)
+
+The per-review Team screen (`/[reviewId]/members`) and its invitation flow. Net-new
+(the precursor had only a `team-progress` readout). All state changes are
+server-authoritative, owner-gated, and audited.
+
+- **Feature module** `src/lib/sr/members/**` — grouped by feature, not type:
+  - `roles.ts` (pure) — the five per-review roles, labels, capability one-liners
+    (FOUNDATION §1), display order.
+  - `token.ts` — invite-token minting via `node:crypto`. 256-bit random token;
+    only its **SHA-256 hash** is persisted (`review_invitations.tokenHash`), never
+    the token. Lookup is by hash against the UNIQUE column → non-enumerable.
+  - `invitation-policy.ts` (pure) — `evaluateInviteForAccept` enforces the three
+    token guarantees together: **single-use** (status must be `pending`),
+    **expiring** (short TTL, `expiresAt`), **email-bound** (normalized-email match).
+    Plus rate-limit + email-format decisions. Exhaustively unit-tested.
+  - `errors.ts` — typed `MemberActionError`s (owner-required 403, rate-limited 429,
+    last-owner 409, invitation-invalid 404/410, AI-validation-required 422, …),
+    each with a `.status` for the route boundary.
+  - `service.ts` — the owner-gated, audited DB operations. Reads VISIBLE tables
+    only (never the three blinded base tables). Every mutation writes `audit_log`.
+- **Accept is single-use WITHOUT interactive transactions.** The runtime driver is
+  neon-http (the codebase invariant: "single idempotent statement", no
+  `SELECT … FOR UPDATE`). `acceptInvitation` therefore enforces no-double-accept
+  with an **atomic conditional UPDATE (compare-and-swap)**:
+  `UPDATE … SET status='accepted' WHERE id=$ AND status='pending' AND expiresAt > now() RETURNING …`.
+  The row transitions `pending → accepted` in ONE statement; two concurrent accepts
+  race on that row, exactly one sees a RETURNING row, the loser sees zero and is
+  refused. This is an equal-or-stronger single-accept guarantee than row locking.
+  Follow-on writes (supersede prior pending invites, upsert the member active,
+  audit) are idempotent + forward-only. If a future task adds a genuine multi-write
+  transaction need, use `@neondatabase/serverless` `Pool` (Node 22 has native
+  `WebSocket`; set `neonConfig.webSocketConstructor` for Node ≤ 21) — do NOT weaken
+  the CAS gate.
+- **Roles are enforced server-side.** `assertOwner(actor)` gates every mutation on
+  `actor.member.role === 'owner'` (the LIVE `review_members` role from
+  `requireMember`, never a client flag). A non-owner gets 403. Demoting/revoking the
+  **last active owner** is refused (409) so a review is never orphaned.
+- **Arbitrator independence is enforced at role assignment.** Promoting/adding a
+  user to `arbitrator` calls `assertArbitratorIndependentForReview` (new, review-wide
+  analog of `assertArbitratorIndependent`, added to the wall-allowed
+  `src/lib/sr/authz/arbitrator.ts`) — refuses (422) if the user authored ANY
+  screening/extraction/RoB row in the review, read only through the audited
+  `sr_read_*` definer functions, disclosing just a boolean about the assignee.
+- **Add-existing-member** (no token) attaches a user who already has a Neon `users`
+  row (WorkOS org members sync in via T4) directly as `active`; **email invite**
+  is for people without an account yet.
+- **Invite email is a surfaced side effect, never silent.** No email provider is
+  wired, so `createEmailInvitation` returns the raw token ONCE and the screen shows
+  the invite link for the owner to send manually (FOUNDATION §7).
+- **AI-member row** renders in the members table with **Validate / Activate**. The
+  recall-validation GATE lands in M3 (T14); here Activate REFUSES (422) unless a
+  passing `ai_validations` row already exists — so **AI can never screen
+  unvalidated** — and Validate is a wired, audited stub pointing at the M3 flow.
+- **Accept route** `src/app/api/sr/invitations/accept/route.ts` (POST, SR's own
+  API namespace) + landing page `systematic-review/invite/[token]` (outside the
+  `[reviewId]` layout — the invitee is not a member yet). Server actions in
+  `[reviewId]/members/actions.ts` re-resolve `requireMember` (defense in depth) and
+  surface known action/authz errors (owner-required, arbitrator-refused,
+  rate-limited) as warnings rather than 500s.
+- **Browser-verify needs live Neon** (members reads the DB via `requireMember` +
+  `getReviewTeam`); the accept landing page renders without a DB. Full data path
+  waits on the founder's Neon role provisioning + `pnpm sr:seed`.
+
+### Import + dedup (T9 — `/[reviewId]/import`)
+
+Bring references into a review and deduplicate them **reversibly**. Ported the
+precursor's ledger/queue math and UI; rebuilt persistence server-side.
+
+- **Schema (migration `0004_loose_meltdown.sql`, additive):** new
+  `import_batches` table (one row per import action; `undoneAt` marks it undone
+  **without deleting studies** — reversible, never a silent drop) + four columns
+  on `studies`: `batch_id` (FK), `dupe_status` (`sr_dupe_status`:
+  unique/auto_merged/needs_review/merged/kept), `dupe_of_study_id` (self-FK to
+  the kept original), `dupe_matched_on` (jsonb `string[]`). New enums
+  `sr_dupe_status` + `sr_import_target` in `sr-enums.ts`. Pre-T9 rows default to
+  `unique` (stay in the pool).
+- **Pure math** `src/lib/sr/import.ts` — ported `deriveImportLedger` /
+  `deriveDupeQueue` (near-verbatim, retyped to a DB-fed `ImportView`) PLUS the
+  duplicate DETECTION the precursor lacked: `detectDuplicates(incoming, seen)`
+  matches on **DOI / source-id → auto_merged**; **title + (year | first author),
+  no shared id → needs_review** (queued for a human); else unique. Confident dupes
+  leave the pool; uncertain ones stay until decided. `canManageImport(role)` gates
+  writes to owner/collaborator.
+- **Parsers** `src/lib/sr/import-parse.ts` — pure, offline: `parseRis`,
+  `parseCsv` (RFC4180-ish quoted-field splitter + header aliases), `parsePubmedIds`
+  (PMID list → identifier-only stubs). Every parser reports a `skipped` count for
+  malformed records — nothing is silently dropped.
+- **Persistence** — the T4 store-port pattern: `import-store.ts` (the `ImportStore`
+  port), `import-drizzle-store.ts` (neon-http impl, reads always reviewId-scoped),
+  `import-service.ts` (orchestration; DB-free unit-testable via an in-memory fake).
+  Every mutation writes an append-only `audit_log` row and is reversible:
+  `importReferences` → parse/dedup/persist; `mergeDuplicate` /
+  `markNotDuplicate` / `undoDedupDecision` (needs_review ⇄ merged/kept);
+  `undoImport` / `restoreImport` (batch.undoneAt ⇄ null). IDOR: a foreign
+  study/batch id 404s (`ReviewAccessError`) — imported from the pure `authz/errors`
+  (not `require-member`, which pulls WorkOS→`next/cache` and breaks Vitest).
+- **Screen** `src/components/sr/import/import-screen.tsx` (+ `.module.css`,
+  tokens-only skin) is a client component fed the chokepoint-safe (non-blinded)
+  study data by the server `page.tsx`; mutations call the `'use server'` actions
+  in `import/actions.ts` (re-resolve `requireMember`, gate on role, `revalidatePath`).
+  The AI-discovery strip is informational only (the schema's `ai` flag is ready
+  for when AI import lands). Ledger line is the honest "N references · M
+  duplicates · Undo"; undone imports show a reversible "Restore" row.
+- **Tests:** `import.test.ts` (ledger/queue port + matcher + gate),
+  `import-parse.test.ts`, `import-service.test.ts` (persist, reversible dedup +
+  undo/restore, ledger counts, IDOR — in-memory fake store), and
+  `import-screen.test.tsx` (skin + action wiring). Browser-verified the skin
+  visually; a live route render needs the founder DB step (neon-http + seeded
+  review), same as the rest of SR.
+
+### The Protocol / eligibility-criteria screen (SR1 — T10)
+
+The Protocol screen (`/systematic-review/[reviewId]/protocol`) is PICO +
+inclusion/exclusion criteria with **lock + dated amendments** — the
+methodological audit trail. Ported from the ScholarSync precursor
+(`protocol-screen.tsx`, `criterion-editor.tsx`, `protocol.ts`) into the frozen
+skin and rewired from the precursor's in-memory Zustand store to persisted,
+versioned server actions.
+
+- **Schema — one append-only table `protocol_versions`** (migration
+  `0004_absurd_wolfpack.sql`, additive; **renumbers at integration**). Exactly
+  ONE mutable draft row per review carries `version = NULL` (a partial unique
+  index `protocol_versions_one_draft_idx` caps it at one); it is edited freely
+  until locked. **Locking** stamps that row as `version = 1` (immutable).
+  Every later edit is a dated **amendment**: a fresh row with the next version,
+  a required `reason`, its author (`locked_by`), and `locked_at` — never a
+  silent overwrite. Locked rows are only ever INSERTed, so the full history
+  (v1 baseline + every amendment) is preserved. `pico`/`criteria` are typed
+  JSONB (structural types in `src/lib/sr/protocol/types.ts`; the schema uses an
+  erased `import type` so drizzle-kit stays relative-safe). The migration also
+  `GRANT SELECT, INSERT, UPDATE` (no DELETE — append-only) to `slate_runtime`,
+  guarded on the wall role existing (0002 creates it); new tables get NO default
+  privilege, so per-table grants are required — mirror this for future tables.
+- **The versioning state machine is pure + port-backed** (`src/lib/sr/protocol/`):
+  `service.ts` (`loadProtocol`/`saveDraft`/`lockProtocol`/`amendProtocol`, clock
+  injected) depends only on `store.ts` (`ProtocolStore` port + in-memory fake),
+  so the contract is unit-tested with no DB (`service.test.ts`). `drizzle-store.ts`
+  is the neon-http impl (single statements — no transactions). `saveDraft` is
+  **refused once locked** (→ `ProtocolLockedError`); `amend` requires a non-empty
+  reason (→ `AmendmentReasonRequiredError`); locking an empty protocol is refused
+  (→ `ProtocolIncompleteError`, ≥1 criterion). Every mutation writes an
+  `audit_log` row (`protocol.save_draft` / `protocol.lock` / `protocol.amend`).
+- **Writes gate on role** (`roles.ts`): only `owner` + `collaborator` edit/lock/
+  amend; everyone else sees it read-only. Server actions (`actions.ts`,
+  `'use server'`) re-authorize via `requireMember` (defense in depth), sanitize
+  the untrusted payload (`validate.ts` — never trusts the client), and return
+  `{ ok:false, message }` for domain failures (infra errors reject → 500).
+- Flag-gated + membership-gated by the `[reviewId]` layout (nothing new to wire);
+  `protocol` is already in `BUILT_STAGES`, so the stage rail links it. Additive —
+  no global shell/nav or reserved search paths touched. Tests: 207 green
+  (was 174; +33 across service/constants/validate/screen).
+
+### Review Summary — the funnel home (T11)
+
+Screen 0, the index of a review, at `src/app/(app)/systematic-review/[reviewId]/page.tsx`.
+Ported from the ScholarSync precursor's `summary/*` components, re-skinned to
+tokens. It renders the per-stage funnel cards (Import → Export, in shell-rail
+order, built stages link / un-built show "Soon"), the imported-study hero, and a
+team-progress readout.
+
+- **Funnel counts MUST route through the chokepoint — never a client store, never
+  the blinded tables, never a `COUNT(*)` outside `src/lib/sr/authz/**`.** The
+  precursor derived every count in the browser from a monolithic store holding all
+  votes (the structural blinding hole); that call site is relocated. Non-blinded
+  numbers (imported/total studies) come from `studies`; every blinded-derived
+  number comes from the chokepoint (`getSafeProgress`, or a reconcile-gated tally).
+- **Data seam:** `summary/review-summary-container.tsx` reads the safe review
+  context (`useSrReview`) the `[reviewId]` layout resolved once server-side — the
+  imported count from `studies` and completion progress from `getSafeProgress`
+  (T2). The context carries ONLY safe facts, so the funnel can only render safe
+  counts; `buildFunnelSummary` (`src/lib/sr/summary/funnel.ts`, pure) shapes them.
+- **Independent-safe by construction:** during `independent` the summary shows
+  **completion counts only** ("2 of 3 reviewers finished" per surface). It never
+  renders the precursor's decision distribution (done/conflicts/one-vote/no-votes)
+  or per-reviewer contribution rows — the safe `summary/team-progress.tsx` replaces
+  the leaky one. A leak here would silently invalidate the review + breach blinding
+  (report §2.2). Tests: `funnel.test.ts` (safe-model shape), `review-summary.test.tsx`
+  - `review-summary-container.test.tsx` (assert no distribution/per-partner leak).
 
 - Add durable project-specific notes here as they are discovered through real work.
