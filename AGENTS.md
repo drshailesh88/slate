@@ -63,4 +63,39 @@ foundation (shell + Home) landed as the genesis on `main`.
   (not `<body>`) — token vars in `:root` reference them, and var() chains
   resolve against `:root`.
 
+## Reading Room synthesis canvas (P0 spike)
+
+- **Where it lives:** `src/app/(app)/reading-room/[roomId]/page.tsx` (server
+  component: seeds stub Sources, loads the canvas) renders
+  `src/components/reading-room/canvas-mount.tsx`, which `next/dynamic`-imports
+  the client `canvas.tsx` with `ssr:false` (React Flow reads the DOM on mount).
+  Reachable directly at `/reading-room/<roomId>`; the global shell/nav is
+  intentionally untouched (3-homes IA is a separate task).
+- **Library:** React Flow — `@xyflow/react` (MIT). Custom `nodeTypes`
+  (`SourceNode`, `SynthesisNode`) are our own components in the frozen skin;
+  `colorMode` is wired to the app's `data-theme` via `use-color-mode.ts`
+  (MutationObserver). Skin overrides live in `canvas-skin.css` (maps
+  `--xy-*` → design tokens; no raw hex). `proOptions.hideAttribution` is set.
+- **THE invariant — reference, never clone:** a canvas node persists only
+  `{ id, type, position, ref, config }` — a type + a foreign key + layout,
+  NEVER a content payload. Source titles/authors are hydrated at render time by
+  ID (`SourceView`) and stripped on save. This is enforced in TWO places:
+  `flow-map.ts#flowToPersisted` (client) and `serialize.ts#toPersistedCanvas`
+  (server action boundary). Deleting a canvas must never delete a Source — the
+  canvas owns only layout + graph + FKs.
+- **Persistence:** `reading_room_canvas` table (`roomId` unique, `nodes`/`edges`
+  jsonb) upserted per room by a debounced autosave server action
+  (`lib/reading-room/actions.ts`). `sources` is a stub of the Library's Source
+  object. Both are additive; the reverse of the migration is `DROP TABLE`.
+- **Local DB without Neon:** the runtime driver is chosen by URL scheme in
+  `src/lib/db/client.ts` — a `neon.tech` URL → neon-http (production); any other
+  `postgres://` → node-postgres. `pnpm db:local` serves an ephemeral PGlite over
+  the PG wire protocol on :5433 for `pnpm dev`; `pnpm db:verify` runs the
+  reference-not-clone persistence round-trip (docker via
+  `scripts/verify-persistence.sh`, else in-process PGlite). Real Postgres in
+  both cases — jsonb behaves identically.
+- **Migration numbering:** SR builds in parallel on `feat/systematic-review`
+  off the same `0000` base; this branch's `0001_*` may need renumbering if the
+  two migrations collide at merge.
+
 - Add durable project-specific notes here as they are discovered through real work.

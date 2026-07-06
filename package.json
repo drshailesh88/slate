@@ -11,19 +11,26 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "db:generate": "drizzle-kit generate",
-    "db:migrate": "node scripts/migrate.mjs"
+    "db:migrate": "node scripts/migrate.mjs",
+    "db:local": "node scripts/pglite-server.mjs",
+    "db:verify": "node scripts/verify-persistence.mjs"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.1.0",
     "@workos-inc/authkit-nextjs": "^4.2.0",
+    "@xyflow/react": "^12.11.1",
     "drizzle-orm": "^0.45.2",
     "lucide-react": "^1.23.0",
     "next": "16.2.10",
+    "pg": "^8.22.0",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "^0.5.4",
+    "@electric-sql/pglite-socket": "^0.2.7",
     "@types/node": "^20",
+    "@types/pg": "^8.20.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "drizzle-kit": "^0.31.10",

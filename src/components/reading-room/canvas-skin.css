@@ -1,0 +1,82 @@
+/* React Flow, wearing the frozen Slate skin (docs/design/design.md).
+ * Hairline --line edges/handles, --paper/--rail surfaces, no shadows, no
+ * gradients. Tokens only — no raw hex. All values flip automatically in dark
+ * because the tokens themselves flip under :root[data-theme='dark']. */
+
+.react-flow.slate-canvas {
+  /* Surfaces */
+  --xy-background-color-default: var(--paper);
+  --xy-background-pattern-color-default: var(--line);
+
+  /* Edges — a hairline "feeds the prompt" line; --accent (AI/link) when active */
+  --xy-edge-stroke-default: var(--line);
+  --xy-edge-stroke-width-default: 1;
+  --xy-edge-stroke-selected-default: var(--accent);
+
+  /* Handles — hairline dots on --paper */
+  --xy-handle-background-color-default: var(--paper);
+  --xy-handle-border-color-default: var(--muted);
+
+  /* Selection / connection line */
+  --xy-selection-background-color-default: var(--accentbg);
+  --xy-selection-border-default: 1px solid var(--accentln);
+  --xy-connectionline-stroke-default: var(--accent);
+
+  /* Controls */
+  --xy-controls-button-background-color-default: var(--paper);
+  --xy-controls-button-background-color-hover-default: var(--active);
+  --xy-controls-button-color-default: var(--ink3);
+  --xy-controls-button-color-hover-default: var(--ink);
+  --xy-controls-button-border-color-default: var(--line);
+}
+
+.react-flow.slate-canvas .react-flow__edge-path {
+  stroke: var(--line);
+  stroke-width: 1.25;
+}
+
+.react-flow.slate-canvas .react-flow__edge.selected .react-flow__edge-path,
+.react-flow.slate-canvas .react-flow__edge:hover .react-flow__edge-path {
+  stroke: var(--accent);
+}
+
+.react-flow.slate-canvas .react-flow__handle {
+  width: 9px;
+  height: 9px;
+  background: var(--paper);
+  border: 1px solid var(--muted);
+}
+
+.react-flow.slate-canvas .react-flow__handle:hover,
+.react-flow.slate-canvas .react-flow__handle.connectingfrom,
+.react-flow.slate-canvas .react-flow__handle.connectingto {
+  border-color: var(--accent);
+  background: var(--accentbg);
+}
+
+.react-flow.slate-canvas .react-flow__controls {
+  box-shadow: none;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.react-flow.slate-canvas .react-flow__controls-button {
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink3);
+}
+
+.react-flow.slate-canvas .react-flow__controls-button:hover {
+  background: var(--active);
+  color: var(--ink);
+}
+
+.react-flow.slate-canvas .react-flow__controls-button svg {
+  fill: currentColor;
+}
+
+/* Selected custom node: hairline ring in ink, never a shadow. */
+.react-flow.slate-canvas .react-flow__node.selected .slate-node {
+  border-color: var(--ink3);
+}
