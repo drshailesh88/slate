@@ -1,0 +1,74 @@
+/* SR home loading/error skin — tokens only, no spinner, no shadows. */
+
+.wrap {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.shimmer {
+  border-radius: 8px;
+  background: var(--line2);
+  animation: sr-home-shimmer var(--motion-panel) var(--ease-inout) infinite
+    alternate;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+@keyframes sr-home-shimmer {
+  from {
+    opacity: 0.55;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.errorBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  max-width: 520px;
+  padding: 20px;
+  border: 1px solid var(--excln);
+  border-radius: 12px;
+  background: var(--excbg);
+  color: var(--exc);
+}
+
+.errorTitle {
+  margin: 4px 0 0;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.errorBody {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--ink3);
+}
+
+.retry {
+  margin-top: 8px;
+  padding: 8px 15px;
+  border: 1px solid var(--ink);
+  border-radius: 8px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.retry:hover {
+  background: var(--ink2);
+}
