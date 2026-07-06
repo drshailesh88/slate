@@ -14,7 +14,13 @@
 ## Global Constraints
 
 - **Run dev with secrets:** `op-run -- pnpm dev` (Dev-vault keys inject; never paste/commit secrets). Same for typecheck-with-runtime and curl checks that hit real APIs.
-- **Frozen skin (design.md §9):** tokens only — no raw hex, no raw durations/easings; values come from `src/app/globals.css`, `docs/design/reference/*`, and the paper.design artboards. Ink is the brand (~95% grayscale). Cool Slate default theme. Serif titles / DM Sans body / JetBrains Mono for all numbers. Hairline `--line` borders; no shadows/gradients. Animate `transform`/`opacity` only; honor `prefers-reduced-motion`.
+- **Frozen skin (design.md §9):** Ink is the brand (~95% grayscale). Cool Slate default theme. Serif titles / DM Sans body / JetBrains Mono for all numbers. Hairline `--line` borders; no shadows/gradients. Animate `transform`/`opacity` only; honor `prefers-reduced-motion`.
+- **⚠ SKIN TOKEN REALITY (slate) — overrides any `--s*` / `--r-*` / `--text-*` token names elsewhere in this plan; those DO NOT EXIST in slate's `globals.css`.** design.md defines **color, font-family, and motion** as CSS tokens; **radius, spacing, and type-size are px values/ranges** (§5/§6), not tokens. §9.6 forbids raw **hex** (use color tokens), not raw px.
+  - **Color (tokens only, no hex):** `--ink`/`--ink2`/`--ink3`/`--muted`; `--paper`/`--rail`/`--line`/`--line2`/`--active`; `--accent`/`--accentbg`/`--accentln` (AI, links, source chips ONLY); `--may`/`--maybg`/`--mayln` (Amber = degraded/warning); `--exc`/`--excbg`/`--excln` (Tomato = error); `--inc`/`--con` for other states.
+  - **Font:** `--serif` (titles, wt 600/700, never body), `--sans` (body/UI), `--mono` (every number/count/ID/year).
+  - **Motion:** `--motion-micro/base/panel`, `--ease-out/in/inout`, `--motion-shift`, `--motion-stagger`; transform/opacity only.
+  - **Spacing/radius/size = raw px** per §5: radii 6–8px controls/cards, 9–12px larger containers, 3–4px chips, 20px status pills; 1px `--line` borders; flat; result title 16px serif; body ~14px sans; section labels UPPERCASE ~11px letter-spaced `--muted`. **Mirror the existing `src/components/home/*` and `src/components/shell/*` CSS-module conventions.**
+  - paper.design artboards are optional visual reference; the text specs (`docs/design/specs/*`) + `globals.css` + existing components are sufficient ground truth. Do not block on Paper MCP.
 - **Honesty cornerstone:** never render a silent `0`; every count honest (`matchedTotal`); every degraded source disclosed via `sourceStatuses`.
 - **Contract is frozen:** `src/types/search.ts` is copied verbatim and never forked; adapt the UI to real engine output.
 - **Coding style:** one concern per file, 200–400 lines; `const` default; kebab-case files, PascalCase components; no `I`-prefixed types; comments only for non-obvious WHY.
