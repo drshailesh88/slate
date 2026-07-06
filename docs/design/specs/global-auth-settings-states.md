@@ -1,7 +1,7 @@
 # Global · Auth · Settings — States Design Spec
 
 Cross-cutting surfaces. **Authorities:** `design.md` (skin) · `CRAFT-ADDENDUM.md` (toasts §A, theme-picker §D, settings two-pane) · `STATE-INVENTORY.md`.
-**Identity:** calm, ink-first, honest. Functional color only where it encodes state. Auth is Clerk-powered — **we never build credential entry** (design.md + security rules); the app renders Clerk's flow in our skin.
+**Identity:** calm, ink-first, honest. Functional color only where it encodes state. Auth is WorkOS AuthKit-powered — **we never build credential entry** (design.md + security rules); the app renders AuthKit's flow in our skin.
 
 ---
 
@@ -20,16 +20,16 @@ Cross-cutting surfaces. **Authorities:** `design.md` (skin) · `CRAFT-ADDENDUM.m
 
 ---
 
-## B. Auth (Clerk, in our skin)
+## B. Auth (WorkOS AuthKit, in our skin)
 
-Centered single card on `--paper`, ScholarSync wordmark above, generous whitespace, ink primary buttons, hairline inputs. We style the container; Clerk owns the fields.
+Centered single card on `--paper`, ScholarSync wordmark above, generous whitespace, ink primary buttons, hairline inputs. We style the container; AuthKit owns the fields.
 
 | State | Spec |
 |---|---|
-| **Sign in** | Wordmark · serif `Welcome back` · Clerk email/password + OAuth (Google) rendered in our tokens (ink buttons, `--line` inputs, `--accent` links) · `New here? Create an account`. |
-| **Sign up** | serif `Create your account` · Clerk fields · one line of value-prop `--muted` · `Already have an account? Sign in`. |
+| **Sign in** | Wordmark · serif `Welcome back` · AuthKit email/password + OAuth (Google) rendered in our tokens (ink buttons, `--line` inputs, `--accent` links) · `New here? Create an account`. |
+| **Sign up** | serif `Create your account` · AuthKit fields · one line of value-prop `--muted` · `Already have an account? Sign in`. |
 | **Splash / initial load** | Before auth resolves: centered ScholarSync mark + a quiet skeleton or a single `Status` shimmer line (`Setting up your desk…`), never a spinner. Resolves into Home (or Sign-in). |
-| **Auth error** | Inline under the field (Clerk copy, our red `--exc`): actionable, e.g. `That email or password didn't match.` We never surface raw errors. |
+| **Auth error** | Inline under the field (AuthKit copy, our red `--exc`): actionable, e.g. `That email or password didn't match.` We never surface raw errors. |
 
 ---
 
@@ -39,7 +39,7 @@ Centered single card on `--paper`, ScholarSync wordmark above, generous whitespa
 
 - **Left nav:** `Account · Appearance · Sources & databases · Notifications · Plan & usage · Team` (Team only if applicable). Active row `--active` fill + ink; rest `--muted`.
 - **Detail panes:**
-  - **Account** — name, email (read-only display; changes go through Clerk, not us), `Sign out`. No password/credential fields rendered by us.
+  - **Account** — name, email (read-only display; changes go through AuthKit, not us), `Sign out`. No password/credential fields rendered by us.
   - **Appearance** — **theme picker: `Light · Dark · System`** as **tiny live mini-screenshots** (Langdock steal, addendum §D), selected = `--accent` ring. Density default (Comfortable/Compact).
   - **Sources & databases** — the grounding picker: **curated "Popular" tier first, full catalog after** (addendum §D); per-source connect/status; connection = Jade `Connected` chip.
   - **Notifications** — the "quiet by default" controls: which alert kinds land in Inbox; **no push** — reinforced in copy.
