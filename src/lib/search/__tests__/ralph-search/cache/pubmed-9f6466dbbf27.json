@@ -1,0 +1,796 @@
+{
+  "source": "pubmed",
+  "query": "Gut microbiome atrial fibrillation",
+  "timestamp": "2026-03-02T17:03:22.758Z",
+  "results": [
+    {
+      "title": "Gut microbiota-derived isovaleric acid alleviates atrial fibrillation by suppressing GSDME-dependent pyroptosis.",
+      "abstract": "Atrial fibrillation (AF), a common and clinically significant cardiac rhythm disturbance, is associated with gut microbial dysbiosis. However, the precise role of the microbiota and associated metabolism in this condition remain unclear. Through integrated analysis of clinical cohorts and multiple animal models, we identified an intestinal symbiont, Ruminococcus gnavus (R. gnavus), which suppresses the occurrence of AF and atrial fibrosis by producing the leucine-derived branched-chain fatty acid isovaleric acid (IVA). R. gnavus colonization or exogenous IVA supplementation reduced AF susceptibility and improved fibrosis-driven atrial remodeling. Mechanistically, R. gnavus metabolizes dietary leucine into IVA through its unique enzyme 2-oxoisovalerate ferredoxin reductase &#x3b3;-subunit (vorC). Microbiome-derived IVA activates G protein-coupled receptor 109A (GPR109A) on atrial cardiomyocytes, inhibiting interleukin (IL)-6/signal transducer and activator of transcription 3 (STAT3) signaling activation and blocking gasdermin E (GSDME)-mediated pyroptosis through a STAT3-GSDME feedforward circuit. These results reveal that the microbial metabolism of dietary leucine and the production of IVA play pivotal roles in preventing AF onset and progression.",
+      "authors": [
+        "Ning Ding",
+        "Hao Wu",
+        "Yiming Hua",
+        "Rui Hua",
+        "Bolin Li",
+        "Yifei Xie",
+        "Ying Xiong",
+        "Ting Bai",
+        "Xue Shi",
+        "Ting Shen",
+        "Peining Liu",
+        "Junhui Liu",
+        "Xiao Yang",
+        "Yu Xu",
+        "Zixuan Meng",
+        "Beidi Lan",
+        "Juan Zhou",
+        "Bing Liu",
+        "John Y-J Shyy",
+        "Zuyi Yuan",
+        "Yue Wu",
+        "Ting Li"
+      ],
+      "year": 2026,
+      "journal": "Cell metabolism",
+      "doi": "10.1016/j.cmet.2025.12.017",
+      "pmid": "41638192",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41638192",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [
+        "Animals",
+        "Gastrointestinal Microbiome",
+        "Pyroptosis",
+        "Atrial Fibrillation",
+        "Pentanoic Acids",
+        "Mice",
+        "Humans",
+        "Mice, Inbred C57BL",
+        "Myocytes, Cardiac",
+        "Male",
+        "Ruminococcus",
+        "Receptors, G-Protein-Coupled",
+        "Hemiterpenes"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "[Research progress on the correlation between Akkermansia muciniphila and cardiovascular diseases].",
+      "abstract": "Cardiovascular disease (CVD) is one of the leading causes of death globally, characterized by high morbidity and mortality rates. Metabolic disorders are critical risk factors for CVD. In recent years, growing evidence has highlighted the crucial role of gut microbiota in the onset, progression, and pathological mechanisms of both metabolic diseases and CVD. Akkermansia muciniphila (A. muciniphila), a promising next-generation probiotic, has attracted considerable attention due to its unique metabolic functions and immunomodulatory properties. This review systematically summarizes the mechanisms and research progress regarding the role of A. muciniphila in metabolic diseases and cardiovascular diseases. It elucidates how this bacterium exerts beneficial effects on metabolic disorders through multiple pathways, including improving gut barrier function, regulating lipid and glucose metabolism, increasing short-chain fatty acid production, and suppressing inflammatory responses. Meanwhile, A. muciniphila is also involved in cardiovascular protective processes such as anti-atherosclerosis, blood pressure regulation, alleviation of atrial fibrillation, and improvement of pulmonary arterial hypertension. Its mechanisms involve immunomodulation, regulation of metabolites, and multi-level interactions along the gut-cardiovascular axis, offering novel microbial targets and strategies for intervening in related diseases. &#x5fc3;&#x8840;&#x7ba1;&#x75be;&#x75c5;&#xff08;CVD&#xff09;&#x662f;&#x5168;&#x7403;&#x4e3b;&#x8981;&#x7684;&#x6b7b;&#x4ea1;&#x539f;&#x56e0;&#x4e4b;&#x4e00;&#xff0c;&#x5177;&#x6709;&#x9ad8;&#x53d1;&#x75c5;&#x7387;&#x548c;&#x6b7b;&#x4ea1;&#x7387;&#xff0c;&#x4ee3;&#x8c22;&#x6027;&#x75be;&#x75c5;&#x662f;CVD&#x7684;&#x91cd;&#x8981;&#x5371;&#x9669;&#x56e0;&#x7d20;&#x3002;&#x8fd1;&#x5e74;&#x6765;&#xff0c;&#x8d8a;&#x6765;&#x8d8a;&#x591a;&#x7684;&#x7814;&#x7a76;&#x8868;&#x660e;&#xff0c;&#x80a0;&#x9053;&#x83cc;&#x7fa4;&#x5728;&#x4ee3;&#x8c22;&#x6027;&#x75be;&#x75c5;&#x548c;CVD&#x7684;&#x53d1;&#x751f;&#x3001;&#x53d1;&#x5c55;&#x53ca;&#x75c5;&#x7406;&#x673a;&#x5236;&#x4e2d;&#x626e;&#x6f14;&#x7740;&#x91cd;&#x8981;&#x89d2;&#x8272;&#x3002;&#x55dc;&#x9ecf;&#x86cb;&#x767d;&#x963f;&#x514b;&#x66fc;&#x83cc;&#xff08;A.muciniphila&#xff09;&#x662f;&#x4e00;&#x79cd;&#x6709;&#x6f5c;&#x529b;&#x7684;&#x4e8c;&#x4ee3;&#x76ca;&#x751f;&#x83cc;&#xff0c;&#x56e0;&#x5176;&#x72ec;&#x7279;&#x7684;&#x4ee3;&#x8c22;&#x529f;&#x80fd;&#x548c;&#x514d;&#x75ab;&#x8c03;&#x8282;&#x7279;&#x6027;&#x800c;&#x5907;&#x53d7;&#x5173;&#x6ce8;&#x3002;&#x672c;&#x6587;&#x7cfb;&#x7edf;&#x9610;&#x8ff0;A. muciniphila&#x901a;&#x8fc7;&#x6539;&#x5584;&#x80a0;&#x9053;&#x5c4f;&#x969c;&#x529f;&#x80fd;&#x3001;&#x8c03;&#x8282;&#x8102;&#x8d28;&#x4e0e;&#x8461;&#x8404;&#x7cd6;&#x4ee3;&#x8c22;&#x3001;&#x589e;&#x52a0;&#x77ed;&#x94fe;&#x8102;&#x80aa;&#x9178;&#x751f;&#x6210;&#x3001;&#x6291;&#x5236;&#x708e;&#x75c7;&#x53cd;&#x5e94;&#x7b49;&#x591a;&#x79cd;&#x9014;&#x5f84;&#xff0c;&#x5bf9;&#x4ee3;&#x8c22;&#x6027;&#x75be;&#x75c5;&#x4ea7;&#x751f;&#x79ef;&#x6781;&#x5f71;&#x54cd;&#x3002;&#x540c;&#x65f6;&#xff0c;A. muciniphila&#x4e5f;&#x53c2;&#x4e0e;&#x6297;&#x52a8;&#x8109;&#x7ca5;&#x6837;&#x786c;&#x5316;&#x3001;&#x8840;&#x538b;&#x8c03;&#x63a7;&#x3001;&#x51cf;&#x8f7b;&#x5fc3;&#x623f;&#x98a4;&#x52a8;&#x548c;&#x80ba;&#x52a8;&#x8109;&#x9ad8;&#x538b;&#x7b49;&#x5fc3;&#x8840;&#x7ba1;&#x4fdd;&#x62a4;&#x8fc7;&#x7a0b;&#xff0c;&#x5176;&#x673a;&#x5236;&#x6d89;&#x53ca;&#x514d;&#x75ab;&#x8c03;&#x8282;&#x3001;&#x4ee3;&#x8c22;&#x7269;&#x8c03;&#x63a7;&#x53ca;&#x80a0;&#x9053;-&#x5fc3;&#x8840;&#x7ba1;&#x8f74;&#x7684;&#x591a;&#x91cd;&#x4ea4;&#x4e92;&#xff0c;&#x4e3a;&#x76f8;&#x5173;&#x75be;&#x75c5;&#x7684;&#x5e72;&#x9884;&#x63d0;&#x4f9b;&#x4e86;&#x65b0;&#x7684;&#x5fae;&#x751f;&#x7269;&#x9776;&#x70b9;&#x4e0e;&#x7b56;&#x7565;&#x3002;.",
+      "authors": [
+        "Sijie Jiang",
+        "Lan Gong",
+        "Hua Zheng"
+      ],
+      "year": 2026,
+      "journal": "Nan fang yi ke da xue xue bao = Journal of Southern Medical University",
+      "doi": "10.12122/j.issn.1673-4254.2026.02.25",
+      "pmid": "41633704",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41633704",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review",
+        "English Abstract"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Cardiovascular Diseases",
+        "Gastrointestinal Microbiome",
+        "Probiotics",
+        "Akkermansia",
+        "Metabolic Diseases",
+        "Verrucomicrobia"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Comparative insights into the gut-heart axis: cross-species and cross-population perspectives.",
+      "abstract": "Gut microbiota research has rapidly expanded our understanding of host-microbe interactions in cardiovascular diseases, yet translation of these insights remains challenged by species-specific differences and substantial population heterogeneity. In this review, we synthesize current evidence across rodents, swine, non-human primates, and multi-ethnic human cohorts to delineate conserved versus context-dependent features of the gut-heart axis. Rodent models remain indispensable for mechanistic discovery, enabling causal testing through germ-free, antibiotic-treated, and humanized microbiota platforms, whereas large-animal models better replicate human cardiac anatomy, physiology, and microbial ecology. Human studies provide essential clinical relevance, demonstrating that patients with myocardial infarction, coronary artery disease, atrial fibrillation, and heart failure harbor distinct microbial and metabolite signatures. However, these findings vary across populations due to differences in diet, lifestyle, host genetics, medication exposure, and environmental transitions. Despite taxonomic variability, several functional pathways, most notably short-chain fatty acid production, bile acid biotransformation, and aromatic amino acid metabolism generating molecules such as trimethylamine-N-oxide and phenylacetylglutamine, consistently associate with cardiovascular risk. At the same time, population-specific features, including glycan-microbe interactions shaped by ABO and FUT2 genotypes, diet-responsive metabolite profiles, and variable drug-microbiome interactions, highlight the importance of genetic and environmental context. By integrating cross-species and cross-population evidence, this review outlines a framework for identifying robust microbial pathways, clarifying their translational boundaries, and guiding the development of microbiota-informed diagnostics and interventions that account for biological, cultural, and environmental diversity.",
+      "authors": [
+        "Tony W H Tang",
+        "Kiramat Ullah",
+        "Jia-Jung Lee",
+        "Hung-Chih Chen",
+        "Patrick C H Hsieh"
+      ],
+      "year": 2026,
+      "journal": "Gut microbes",
+      "doi": "10.1080/19490976.2025.2611617",
+      "pmid": "41520281",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41520281",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Gastrointestinal Microbiome",
+        "Animals",
+        "Cardiovascular Diseases",
+        "Heart",
+        "Swine",
+        "Bacteria",
+        "Host Microbial Interactions",
+        "Species Specificity",
+        "Gastrointestinal Tract",
+        "Disease Models, Animal"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Correlation Between Dysbiosis and Atrial Fibrillation: What's New?",
+      "abstract": "Atrial fibrillation (AF), one of the most prevalent and widespread arrhythmias, has remained a heavy global burden in the past decade and directly influences the quality of human life. It is estimated that AF affects 2-4% of the world's adult population, and it is predicted to double due to (i) life expectancy increasing and (ii) the rising frequency of undiagnosed cases. Recent studies suggest that the alteration of gut microbiota (GM), known as dysbiosis, could increase the AF risk. Since dysbiosis is a modifiable risk factor, interventions aimed at restabilizing gut eubiosis by diet, probiotics, or prebiotic supplements may represent a promising strategy for AF prevention and/or treatment, although current clinical evidence remains limited. In this scenario, it is very critical to understand which types of GM alterations or metabolites may be involved in the development of atrial AF, as this could open new strategies for managing the pathology. However, many gaps still need to be filled, as it remains unclear how dysbiosis contributes to AF across different populations and no fine characterization of the underlying pathogenic mechanisms is available yet. This review summarizes the last evidence on the association between GM dysbiosis and AF, highlighting the main proposed mechanisms, key microbial genes and metabolites involved, clinical implications and the need for further prospective studies.",
+      "authors": [
+        "Beatrice Marinacci",
+        "Noemi Mencarelli",
+        "Giorgia Stornelli",
+        "Benedetta Pellegrini",
+        "Amedeo Amedei",
+        "Marialucia Gallorini",
+        "Rossella Grande"
+      ],
+      "year": 2025,
+      "journal": "International journal of molecular sciences",
+      "doi": "10.3390/ijms27010073",
+      "pmid": "41515953",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41515953",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Atrial Fibrillation",
+        "Dysbiosis",
+        "Gastrointestinal Microbiome",
+        "Probiotics",
+        "Animals",
+        "Risk Factors"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Protective Effect and Mechanism of Short-Chain Fatty Acids, the Metabolites of Gut Microbiota, on Atrial Fibrillation.",
+      "abstract": "Atrial fibrillation (AF) is one of the most common arrhythmias with complex pathogenesis. Recent studies showed that gut microbiota and its metabolic products, especially short-chain fatty acids (SCFAs), are closely linked to the onset and progression of AF. In this review, the alterations about SCFAs in AF patients were primarily summarized, and the potential mechanisms of SCFAs on the onset and progression of AF were further outlined. For the alterations, the contents of SCFAs in the circulatory system of AF patients were reduced, mainly ascribed to the dysregulation of SCFAs-producing gut microbiota and/or the reduction of genetic expression involved in the synthesis of SCFAs in the gut microbiota. For the potential mechanisms, SCFAs alleviate AF by inhibiting inflammation, relieving endoplasmic reticulum (ER) stress, mitigating oxidative stress, and improving atrial remodeling. Specifically, (1) SCFAs suppress inflammatory responses in AF mainly via activating GPCR, inhibiting the NLRP3 inflammasome, inhibiting HDAC activity, regulating vascular endothelial function, and maintaining gut barrier integrity. (2) SCFAs relieve ER stress in AF by reducing the expression of ER stress markers pPERK and/or CHOP, and correct ion current and calcium homeostasis disorders caused by TMAO. (3) SCFAs mitigate oxidative stress in AF by reducing mitochondrial damage and regulating Nrf2 pathways. (4) SCFAs improve atrial remodeling in AF by alleviating atrial structural and electrical remodeling. This review explores the regulatory mechanisms of SCFAs in alleviating AF from the gut-heart axis perspective, providing novel insights into AF prevention and treatment strategies.",
+      "authors": [
+        "Wen-Lu Ren",
+        "Zhong-Wei Yao",
+        "Xiang-Wei Ding",
+        "Hui-Tian Jia",
+        "Ling-Hui Pan",
+        "Ming Chu",
+        "He Zhu"
+      ],
+      "year": 2026,
+      "journal": "Comprehensive Physiology",
+      "doi": "10.1002/cph4.70093",
+      "pmid": "41492972",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41492972",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Atrial Fibrillation",
+        "Gastrointestinal Microbiome",
+        "Fatty Acids, Volatile",
+        "Protective Factors",
+        "Endoplasmic Reticulum Stress",
+        "Oxidative Stress",
+        "Atrial Remodeling"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Assessment of a novel functional food modulating the microbiota-inflammation-brain axis in patients with heart failure and/or /atrial fibrillation patients (the AMBROSIA study): Protocol for a randomized controlled trial.",
+      "abstract": "BACKGROUND AND AIMS: Atrial fibrillation (AF), heart failure (HF), and undernutrition represent a complex triad with major clinical and socioeconomic consequences in older adults, often predisposing to frailty. Undernutrition often remains underdiagnosed due to a reliance on weight-based measures and limited awareness of inflammation-related cachexia. The AMBROSIA study aims to fill these gaps by exploring the response of the microbiota-inflammation-brain axis to a targeted, fortified food product-based intervention, with comprehensive outcome assessments, alongside mechanistic/exploratory -omics analyses and gut microbiota (GM) functional profiling. METHODS AND RESULTS: This single-center, prospective, parallel-group randomized controlled trial aims to enroll 120 older adults with confirmed AF and/or HF. Participants will be randomized 1:1 into an intervention group (n&#xa0;=&#xa0;60) or control group (n&#xa0;=&#xa0;60). All participants receive individualized dietary counseling; the intervention group additionally consumes one AMBROSIA nutritional bar daily for six months. The bar contains hydrolyzed proteins, inulin, CoQ&#x2081;&#x2080;, and probiotics (L. rhamnosus IMC 501&#xae; and L. paracasei IMC 502&#xae;) in a flavonoid-rich chocolate matrix. Clinical, cognitive, and nutritional data, along with blood, saliva, urine, and stool samples, will be collected at baseline, 3, and 6&#xa0;months. The primary endpoint is the change in skeletal muscle mass, physical function and frailty, while secondary endpoints include changes in nutritional status, inflammation, GM, metabolomics, and quality of life. CONCLUSION: By integrating cutting-edge omics tools and a multidimensional nutritional strategy, AMBROSIA aims to uncover mechanisms driving undernutrition and identify biomarkers to support personalized interventions for older patients with AF and HF.",
+      "authors": [
+        "Simone Baldi",
+        "Francesca Cuffaro",
+        "Edda Russo",
+        "Kate Porter",
+        "William Cheung",
+        "Maria Magdalena Coman",
+        "Marco Garcia Vaquero",
+        "Thomas Lingner",
+        "Maria Cristina Verdenelli",
+        "Gwendolyn Barcel&#xf3;-Coblijn",
+        "Iain Brownlee",
+        "Stefano Fumagalli",
+        "Amedeo Amedei"
+      ],
+      "year": 2026,
+      "journal": "Contemporary clinical trials",
+      "doi": "10.1016/j.cct.2025.108170",
+      "pmid": "41325897",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41325897",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Clinical Trial Protocol"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Atrial Fibrillation",
+        "Heart Failure",
+        "Gastrointestinal Microbiome",
+        "Inflammation",
+        "Aged",
+        "Probiotics",
+        "Prospective Studies",
+        "Functional Food",
+        "Randomized Controlled Trials as Topic",
+        "Female",
+        "Malnutrition",
+        "Male",
+        "Ubiquinone",
+        "Quality of Life"
+      ],
+      "studyType": "rct",
+      "evidenceLevel": "II",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "The Inflammatory Response to Transcatheter Aortic Valve Replacement.",
+      "abstract": "Inflammation is common in response to transcatheter aortic valve replacement (TAVR), resulting from endothelial damage, procedure-related hypoperfusion, and immunogenicity against the bioprosthesis. The systemic inflammatory response after TAVR comprises a spectrum ranging from asymptomatic biomarker elevation to dramatic clinical manifestations. Although local inflammation post-TAVR is part of physiological healing, a hyperinflammatory response increases the risk for conduction disturbances, new-onset atrial fibrillation, acute kidney injury, prolonged hospitalization, mortality, and subclinical leaflet thrombosis. Unfavorable monocyte and T helper cell signatures can predispose to worse outcomes in connection with hyperinflammation. Strategies are needed to control key drivers of hyperinflammation after TAVR (eg, avoiding prolonged hypotension during transcatheter aortic valve deployment, periprocedural colchicine or glucocorticoids, targeted monoclonal antibodies, a healthy gut microbiome) and to identify patients in whom modulation of inflammatory pathways may optimize outcomes. This review provides a detailed description of the epidemiology, pathophysiology, and consequences of the inflammatory response to TAVR and discusses emerging treatment pathways.",
+      "authors": [
+        "Annette Maznyczka",
+        "Ole De Backer",
+        "Philippe G&#xe9;n&#xe9;reux",
+        "Daniel J Blackman",
+        "Thomas Pilgrim"
+      ],
+      "year": 2025,
+      "journal": "JACC. Cardiovascular interventions",
+      "doi": "10.1016/j.jcin.2025.09.023",
+      "pmid": "41297980",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41297980",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Transcatheter Aortic Valve Replacement",
+        "Treatment Outcome",
+        "Risk Factors",
+        "Inflammation",
+        "Inflammation Mediators",
+        "Aortic Valve",
+        "Risk Assessment",
+        "Anti-Inflammatory Agents",
+        "Heart Valve Prosthesis",
+        "Aortic Valve Stenosis"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Shouhui Tongbian Capsules ameliorate heart failure and atrial fibrillation via gut microbiota regulation.",
+      "abstract": "BACKGROUND: Heart failure (HF) with atrial fibrillation (AF) poses a significant therapeutic challenge due to its complex pathophysiology. Shouhui Tongbian Capsules (SHTB) contain multiple active components that have been proven to affect HF or AF through the intestinal flora. However, the specific therapeutic effects of this drug on HF combined with AF, as well as whether these effects are achieved by regulating the intestinal flora, still require systematic research. PURPOSE: This study aimed to elucidate the cardioprotective effects of SHTB in a doxorubicin (DOX)-induced HF/AF rat model, focusing on gut microbiota modulation and myocardial transcriptome regulation. METHODS: Rats were randomized into control, model (DOX-induced HF/AF), SHTB treatment (low/medium/high doses), and metoprolol groups. Pharmacodynamically, cardiac function was assessed via echocardiography and electrocardiography. And myocardial fibrosis was quantitatively evaluated using pathomorphology analysis. Mechanistically, microvascular integrity was examined via immunofluorescence, while the neural activity ligand-receptor interaction pathway-related protein expression was analyzed by immunohistochemistry. Additionally, gut microbiota composition was determined via 16S rRNA sequencing, and myocardial transcriptome profiling was performed using RNA sequencing. Furthermore, fecal microbiota transplantation (FMT) experiments were performed to validate the role of gut microbiota in the observed effects. RESULTS: The SHTB intervention significantly improved the cardiac function and electrophysiological stability of HF/AF rats, along with enhancing microvascular maturation and reducing myocardial fibrosis. The analysis of the intestinal microbiota showed that SHTB effectively restored the microbial ecological balance, especially regulating the abundance of key genera (such as Turicibacter) closely related to disease progression and treatment efficacy. Transcriptional analysis identified the neural activity ligand-receptor pathway as the key mechanism, and FMT experiments demonstrated that SHTB modulates the Edn1-Agtr1a-Bdkrb2 axis through gut microbiota, ultimately leading to improved cardiac function. The synergistic effect of the composition of the intestinal microbiota and myocardial molecular targets jointly contributed to the improvement of cardiac remodeling in HF/AF. CONCLUSION: SHTB ameliorates HF with AF by synergistically modulating the gut-heart axis, involving gut microbiota restoration, myocardial fibrosis suppression, and vascular tension regulation via the Edn1-Agtr1a-Bdkrb2 axis. This multi-target mechanism substantiates SHTB's potential as a promising adjunct therapy for HF/AF.",
+      "authors": [
+        "Linwei Chen",
+        "Weiping He",
+        "Lei Gao",
+        "Ying Lu",
+        "Li Zhu"
+      ],
+      "year": 2025,
+      "journal": "Phytomedicine : international journal of phytotherapy and phytopharmacology",
+      "doi": "10.1016/j.phymed.2025.157549",
+      "pmid": "41270390",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41270390",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [
+        "Animals",
+        "Gastrointestinal Microbiome",
+        "Heart Failure",
+        "Atrial Fibrillation",
+        "Drugs, Chinese Herbal",
+        "Male",
+        "Rats",
+        "Rats, Sprague-Dawley",
+        "Doxorubicin",
+        "Capsules",
+        "Fecal Microbiota Transplantation",
+        "Disease Models, Animal",
+        "Myocardium",
+        "Transcriptome"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Gut microbiome and atrial fibrillation: mechanistic insights metabolites and comorbidities. Systematic review.",
+      "abstract": "Emerging evidence indicates that the gut microbiome (GM) and its metabolites may play a role in the development of cardiometabolic diseases, including atrial fibrillation (AF). Although the current data are limited, studies suggest that the GM composition in AF mirrors that observed in associated conditions such as heart failure, hypertension, diabetes, and coronary artery disease (characterized by increased genera Lactobacillus, Enterococcus, Streptococcus, and decreased genus Faecalibacterium). Additionally, patients with AF appear to have distinct microbial alterations, including increased abundances of the genera Dialister, Dorea, Haemophilus, Klebsiella, Lachnospira, Parabacteroides, Ruminococcus, and Veillonella and decreased abundances of the genera Butyricicoccus, Hungatella, and Prevotella. Gut-derived metabolites also show associations with AF. Trimethylamine N-oxide and choline have been linked to new-onset and postoperative AF, potentially via autonomic, inflammatory, and fibrotic pathways. In contrast, short-chain fatty acids, which are reduced in AF patients, may offer protective effects. Elevated lipopolysaccharide levels are correlated with AF onset and recurrence through inflammation and structural remodeling. Indoxyl sulfate and bile acids may contribute to arrhythmogenesis via oxidative stress, apoptosis, and disrupted calcium signaling. These mechanisms contribute to AF by disrupting conduction and increasing automaticity. Emerging evidence also links gut microbes to other arrhythmias, but more research is needed to clarify causality and therapeutic potential.",
+      "authors": [
+        "Monika Gawa&#x142;ko",
+        "Wiktor Kociemba",
+        "Prashanthan Sanders",
+        "Dominik Linz"
+      ],
+      "year": 2025,
+      "journal": "Gut microbes",
+      "doi": "10.1080/19490976.2025.2570423",
+      "pmid": "41178126",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41178126",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Systematic Review",
+        "Journal Article"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Gastrointestinal Microbiome",
+        "Atrial Fibrillation",
+        "Bacteria",
+        "Comorbidity",
+        "Animals",
+        "Methylamines",
+        "Fatty Acids, Volatile"
+      ],
+      "studyType": "systematic_review",
+      "evidenceLevel": "I",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Microbial Metabolites and Cardiovascular Dysfunction: A New Era of Diagnostics and Therapy.",
+      "abstract": "Cardiovascular diseases (CVDs) pose a significant threat to human life and mortality worldwide, encompassing a variety of conditions that affect the heart and blood vessels. These diseases are influenced by both genetic and environmental factors, which play a critical role in their development. Recent research has highlighted the importance of gut microbes-the diverse community of bacteria in the gastrointestinal tract-that function as a \"super organ\" within the human body. These microbes have a remarkable impact on metabolic pathways and are increasingly recognized for their role in serious conditions like CVDs. They contribute to metabolic regulation, provide essential nutrients and vitamins, and help protect against diseases. Various internal and external factors influence the dynamic relationship between the human host and gut microbiota, thereby regulating overall metabolism. This review explores the complex connection between gut microbiota and microbial metabolites-such as short-chain fatty acids (SCFAs), bile acids (BAs), and trimethylamine N-oxide (TMAO)-and their potential influence on the development and progression of CVDs. We also examine the interaction between dietary interventions and gut microbes in the context of conditions including atherosclerosis, obesity, type 2 diabetes, heart failure, hypertension, atrial fibrillation, and myocardial infarction. Gaining a deeper understanding of the gut microbiota's role in maintaining physiological balance creates exciting possibilities for identifying novel diagnostic biomarkers and therapeutic targets for treating CVDs. This knowledge offers hope for early disease prediction, improved clinical management, and innovative treatments.",
+      "authors": [
+        "Jitendra Kumar"
+      ],
+      "year": 2025,
+      "journal": "Cells",
+      "doi": "10.3390/cells14161237",
+      "pmid": "40862716",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40862716",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Cardiovascular Diseases",
+        "Gastrointestinal Microbiome",
+        "Animals",
+        "Bile Acids and Salts"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Gut microbiota and cardiac arrhythmogenesis: Unveiling the gut-heart axis.",
+      "abstract": "BACKGROUND: Cardiac arrhythmias, a leading cause of morbidity and mortality, have traditionally been linked to structural heart disease and genetic factors. However, growing evidence indicates that the gut microbiota, via its interactions with the cardiovascular system, may also contribute to arrhythmogenesis. The gut-heart axis, involving microbial metabolites, inflammatory signaling, and neural modulation, has emerged as a key regulator of cardiac electrophysiology. METHODS: This review summarizes recent preclinical and clinical studies investigating the role of gut microbiota in the pathophysiology of cardiac arrhythmias. We examine mechanisms through which microbial products like short-chain fatty acids (SCFAs), trimethylamine N-oxide (TMAO), and bile acids influence arrhythmic risk, with a focus on their effects on ion channels, inflammation, and autonomic regulation. RESULTS: Evidence from both animal models and human studies indicates that dysbiosis, or imbalance in the gut microbiome, is associated with an increased risk of arrhythmias, including atrial fibrillation and ventricular tachycardia. Microbial metabolites have been shown to influence cardiac electrophysiology through direct and indirect mechanisms, including immune modulation and autonomic nervous system regulation. Furthermore, microbiome-based interventions, such as dietary changes, probiotics, and fecal microbiota transplantation, show promise in reducing arrhythmic burden. CONCLUSION: The gut microbiota's metabolic, inflammatory, and neural connections with the cardiovascular system increasingly suggest its role in arrhythmia risk. Targeting this gut-heart axis could lead to personalized arrhythmia prevention and treatment strategies.",
+      "authors": [
+        "Mostafa Cheraghi",
+        "Afshin Nazari",
+        "Faraz Souri"
+      ],
+      "year": 2025,
+      "journal": "Pathology, research and practice",
+      "doi": "10.1016/j.prp.2025.156125",
+      "pmid": "40675025",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40675025",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Gastrointestinal Microbiome",
+        "Animals",
+        "Arrhythmias, Cardiac",
+        "Dysbiosis",
+        "Heart"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Impact of gut microbiome on atrial fibrillation: Mechanistic insights and future directions in individualized medicine.",
+      "abstract": "Atrial fibrillation (AF) is a growing global health burden, with a prevalence of over 52.55 million cases. Rising disability-adjusted life-years, increasing age, and disparities in care have contributed to the worsening severity and mortality of AF. Modifiable risk factors, such as hypertension, obesity, and diabetes mellitus, are associated with alterations in gut microbiota, making the gut-heart axis a potential therapeutic target. Gut dysbiosis influences AF pathogenesis through inflammation, metabolic disruption, and autonomic dysfunction. Key mechanisms include gut barrier dysfunction, short-chain fatty acid (SCFA) depletion, lipopolysaccharides (LPS)-induced inflammation, and ferroptosis-mediated atrial remodeling. Trimethylamine N-oxide, bile acids, and tryptophan metabolites contribute to arrhythmogenic remodeling. Emerging evidence suggests that dietary interventions, including prebiotics and probiotics, as well as gut surveillance, may help mitigate AF progression. Clinical implications of gut modulation in AF include personalized dietary strategies, microbiome assessment through metagenomic sequencing, and targeted interventions such as SCFA-based therapies and ferroptosis inhibition. Metabolite surveillance, including LPS and indoxyl sulfate monitoring, may influence the effectiveness of anticoagulant and antiarrhythmic therapy. Despite growing mechanistic evidence linking gut dysbiosis to AF, clinical applications remain unexplored. This review summarizes the current understanding of the gut microbiome's role in AF.",
+      "authors": [
+        "Ajit Singh Brar",
+        "Shree Laya Vemula",
+        "Vishnu Yanamaladoddi",
+        "Sohail Sodhi",
+        "Juniali Hatwal",
+        "Aalam Sohal",
+        "Akash Batta"
+      ],
+      "year": 2025,
+      "journal": "World journal of cardiology",
+      "doi": "10.4330/wjc.v17.i6.107386",
+      "pmid": "40575430",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40575430",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Impact of Metabolic Surgery on Cardiovascular Disease Outcomes.",
+      "abstract": "Obesity is strongly associated with a range of cardiovascular conditions, including coronary artery disease, heart failure, atrial fibrillation, and stroke. Metabolic surgery has emerged as one of the most effective interventions for individuals with severe obesity, not only by promoting substantial and durable weight loss but also by improving cardiovascular risk factors and outcomes. Cardiovascular benefits may also be mediated via weight-independent mechanisms involving insulin sensitivity, gastrointestinal hormones, bile acid dynamics, and gut microbiome. Long-term cohort studies have documented that metabolic surgery is associated with a reduction in all-cause mortality and major adverse cardiovascular events in this population. In this narrative review we examine the role of metabolic surgery in the prevention and management of cardiovascular disease associated with severe obesity. It provides an overview of the most common metabolic surgery procedures, including sleeve gastrectomy, Roux-en-Y gastric bypass, and biliopancreatic diversion with duodenal switch, as well as newer procedures like single-anastomosis duodenal switch. We also evaluate the impact of these interventions on key cardiovascular risk factors, such as type 2 diabetes, hypertension, dyslipidemia, and obstructive sleep apnea, as well as their effects on cardiac structure and function. Metabolic surgery is associated with reductions in all-cause mortality and cardiovascular events, including myocardial infarction and heart failure, especially in individuals with obesity and pre-existing cardiovascular disease. The current evidence supporting the link between metabolic surgery and cardiovascular outcomes is reviewed. Notably, randomized trials specifically focusing on cardiovascular outcomes after metabolic surgery are lacking, which highlights an important knowledge gap and the crucial need for these studies. Addressing this gap is essential for guiding future clinical practice and optimizing patient care.",
+      "authors": [
+        "Marie-Eve Pich&#xe9;",
+        "Paul Poirier",
+        "Jorge A Wong"
+      ],
+      "year": 2025,
+      "journal": "The Canadian journal of cardiology",
+      "doi": "10.1016/j.cjca.2025.05.013",
+      "pmid": "40441298",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40441298",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Cardiovascular Diseases",
+        "Bariatric Surgery",
+        "Obesity, Morbid",
+        "Weight Loss"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Microbial modulation of digoxin bioavailability: A pharmacomicrobiome perspective on Eggerthella lenta's role in steroid-like drug metabolism and precision therapeutics.",
+      "abstract": "Digoxin is a cardiac glycoside used to treat heart failure and atrial fibrillation, but its narrow therapeutic index makes precise dosing critical. The effectiveness of digoxin is influenced by individual variations in drug metabolism, with recent studies showing that gut microbiota, particularly Eggerthella lenta (E. lenta), plays a key role. E. lenta can convert digoxin into its inactive form, dihydrodigoxin, potentially reducing its therapeutic efficacy. This paper explores how E. lenta affects the biotransformation of digoxin and other drugs like L-dopa and resveratrol. The aim is to investigate how the presence of E. lenta in the gut influences drug metabolism and therapeutic outcomes. The review also examines the broader implications of microbiome-driven drug interactions and highlights the need for precision dosing strategies based on an individual's microbiome composition which is also essential for patients with high E. lenta colonization. Further research into microbiome-driven drug and sterol interactions is needed to optimize treatment strategies, ensuring personalized and effective patient care.",
+      "authors": [
+        "Nila Ganamurali",
+        "Sarvesh Sabarathinam"
+      ],
+      "year": 2025,
+      "journal": "The Journal of steroid biochemistry and molecular biology",
+      "doi": "10.1016/j.jsbmb.2025.106792",
+      "pmid": "40425055",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40425055",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Digoxin",
+        "Gastrointestinal Microbiome",
+        "Biological Availability",
+        "Precision Medicine",
+        "Actinobacteria",
+        "Animals"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Bridging the gut and the heart-Exploring pathophysiology, risk factors, and therapeutic implications of cardiovascular disease in inflammatory bowel disease.",
+      "abstract": "Inflammatory bowel disease (IBD), including Crohn's disease and ulcerative colitis, is a chronic systemic immune dysregulated disorder affecting the gastrointestinal tract that often has extraintestinal manifestations. Limited data exist on the cardiovascular (CV) implications of IBD, but a higher prevalence of CV disease (CVD) has been observed compared to the general population, resulting in increased mortality risk. This review examines the pathophysiology and risk factors linking IBD to CVD, highlighting several key mechanisms: The \"lipid paradox\" in active IBD, arterial stiffness and endothelial dysfunction, proinflammatory cytokine activity, gut microbiota dysbiosis, and drug-induced myocardiopathy. The main findings include information about IBD patients exhibiting a higher incidence of CVD compared to the general population, independent of traditional risk factors. Chronic inflammation, altered lipid profiles, and gut microbiome imbalances play a significant role in heightened CV risk. Routine CV risk assessment should be considered during clinical assessment, to integrate into IBD management. Anti-inflammatory therapies may reduce CVD risk, while careful consideration is needed for drugs with potential CV side effects. Further research is required to understand the complex interplay between IBD and CVD, particularly regarding the impact of novel therapies and lifestyle interventions on long-term CV outcomes in IBD patients.",
+      "authors": [
+        "Diana Othon-Mart&#xed;nez",
+        "Sylvia Valeria Pe&#xf1;a-Mu&#xf1;oz",
+        "Margarita Riojas-Barrett",
+        "Genesis Vidales-L&#xf3;pez",
+        "Josu&#xe9; Mois&#xe9;s S&#xe1;nchez Guzm&#xe1;n",
+        "Lukasz Kwapisz"
+      ],
+      "year": 2025,
+      "journal": "Journal of investigative medicine : the official publication of the American Federation for Clinical Research",
+      "doi": "10.1177/10815589251346966",
+      "pmid": "40415193",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40415193",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Cardiovascular Diseases",
+        "Inflammatory Bowel Diseases",
+        "Risk Factors",
+        "Heart Disease Risk Factors",
+        "Gastrointestinal Tract",
+        "Gastrointestinal Microbiome"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Exploring the Axis of Gut Microbiota-Inflammatory Cytokine-Atrial Fibrillation in the Pathogenesis of Atrial Fibrillation.",
+      "abstract": "A relationship may exist between the gut microbiota, inflammatory factors and atrial fibrillation (AF); however, the precise biological mechanisms linking these components remain uncertain.In this study, 211 single-nucleotide polymorphisms associated with the gut microbiota were collected from the MiBioGen consortium. Summary data for AF were sourced from large-scale genome-wide association studies. Two-step Mendelian randomization (MR) was applied to estimate the possible mediating effect of inflammatory cytokines on the causality between the gut microbiota and AF. MR confirmed the effects of class Lentisphaeria, family Bifidobacteriaceae, family XIII, genus Anaerostipes, genus Howardella, genus Intestinibacter, genus Lachnospiraceae (NK4A136 group), genus Odoribacter, genus Ruminococcus gnavus, order Bifidobacteriales, order Victivallales and phylum Lentisphaerae on AF prevention. Moreover, MR revealed the role of Fms-related tyrosine kinase 3 ligand, interleukin-6, interleukin-7, leukaemia inhibitory factor receptor, sulfotransferase 1A1 and tumour necrosis factor ligand superfamily member 12 in protecting against AF. Fibroblast growth factor 5, interleukin-2 receptor subunit &#x3b2;, and tumour necrosis factor had a causal effect, increasing AF risk. The mediation exploration indicated that the indirect effect of genus Rikenellaceae (RC9 gut group) (id.11191) on AF mediated by interleukin-6 was OR 1.011 (95% confidence interval 1.002&#x2013;1.024; mediation proportion=23.913%). This study supplies genetic insights into the potential causal association between the gut microbiota and AF. These causal associations and mediating effects are useful for managing AF through manipulation of the gut microbiota.",
+      "authors": [
+        "Jun Chen",
+        "Yucheng Wang",
+        "Kangnan Wang",
+        "Ziwei Mei",
+        "Lihong Wang"
+      ],
+      "year": 2025,
+      "journal": "Journal of cellular and molecular medicine",
+      "doi": "10.1111/jcmm.70379",
+      "pmid": "39930552",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39930552",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [
+        "Gastrointestinal Microbiome",
+        "Humans",
+        "Atrial Fibrillation",
+        "Cytokines",
+        "Polymorphism, Single Nucleotide",
+        "Genome-Wide Association Study",
+        "Mendelian Randomization Analysis",
+        "Inflammation"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Lactobacillus gasseri prevents ibrutinib-associated atrial fibrillation through butyrate.",
+      "abstract": "BACKGROUND: Ibrutinib, a widely used anti-cancer drug, is known to significantly increase the susceptibility to atrial fibrillation (AF). While it is recognized that drugs can reshape the gut microbiota, influencing both therapeutic effectiveness and adverse events, the role of gut microbiota in ibrutinib-induced AF remains largely unexplored. METHOD: Utilizing 16S rRNA gene sequencing, faecal microbiota transplantation, metabonomics, electrophysiological examination, and molecular biology methodologies, we sought to validate the hypothesis that gut microbiota dysbiosis promotes ibrutinib-associated AF and to elucidate the underlying mechanisms. RESULT: We found that ibrutinib administration pre-disposes rats to AF. Interestingly, ibrutinib-associated microbial transplantation conferred increased susceptibility to AF in rats. Notably, ibrutinib induced a significantly decrease in the abundance of Lactobacillus gasseri (L. gasseri), and oral supplementation of L. gasseri or its metabolite, butyrate (BA), effectively prevented rats from ibrutinib-induced AF. Mechanistically, BA inhibits the generation of reactive oxygen species, thereby ameliorating atrial structural remodelling. Furthermore, we demonstrated that ibrutinib inhibited the growth of L. gasseri by disrupting the intestinal barrier integrity. CONCLUSION: Collectively, our findings provide compelling experimental evidence supporting the potential efficacy of targeting gut microbes in preventing ibrutinib-associated AF, opening new avenues for therapeutic interventions.",
+      "authors": [
+        "Ling Shi",
+        "Yu Duan",
+        "Ning Fang",
+        "Ning Zhang",
+        "Sen Yan",
+        "Kunna Wang",
+        "Te Hou",
+        "Zhiqi Wang",
+        "Xiaohui Jiang",
+        "Qianhui Gao",
+        "Song Zhang",
+        "Yue Li",
+        "Yun Zhang",
+        "Yongtai Gong"
+      ],
+      "year": 2025,
+      "journal": "Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology",
+      "doi": "10.1093/europace/euaf018",
+      "pmid": "39821305",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39821305",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [
+        "Animals",
+        "Adenine",
+        "Atrial Fibrillation",
+        "Gastrointestinal Microbiome",
+        "Piperidines",
+        "Disease Models, Animal",
+        "Male",
+        "Butyrates",
+        "Lactobacillus gasseri",
+        "Dysbiosis",
+        "Fecal Microbiota Transplantation",
+        "Pyrazoles",
+        "Pyrimidines",
+        "Rats, Sprague-Dawley",
+        "Rats",
+        "Protein Kinase Inhibitors",
+        "Reactive Oxygen Species",
+        "Heart Rate",
+        "Heart Atria"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Non-traditional risk factors for atrial fibrillation: epidemiology, mechanisms, and strategies.",
+      "abstract": "Atrial fibrillation (AF) has become the pre-dominant arrhythmia worldwide and is associated with high morbidity and mortality. Its pathogenesis is intricately linked to the deleterious impact of cardiovascular risk factors, emphasizing the pivotal imperative for early detection and mitigation strategies targeting these factors for the prevention of primary AF. While traditional risk factors are well recognized, an increasing number of novel risk factors have been identified in recent decades. This review explores the emerging non-traditional risk factors for the primary prevention of AF, including unhealthy lifestyle factors in current society (sleep, night shift work, and diet), biomarkers (gut microbiota, hyperuricaemia, and homocysteine), adverse conditions or diseases (depression, epilepsy, clonal haematopoiesis of indeterminate potential, infections, and asthma), and environmental factors (acoustic pollution and other environmental factors). Unlike traditional risk factors, individuals have limited control over many of these non-traditional risk factors, posing challenges to conventional prevention strategies. The purpose of this review is to outline the current evidence on the associations of non-traditional risk factors with new-onset AF and the potential mechanisms related to these risk factors. Furthermore, this review aims to explore potential interventions targeting these risk factors at both the individual and societal levels to mitigate the growing burden of AF, suggesting guideline updates for primary AF prevention.",
+      "authors": [
+        "Yingli Lu",
+        "Ying Sun",
+        "Lingli Cai",
+        "Bowei Yu",
+        "Yuying Wang",
+        "Xiao Tan",
+        "Heng Wan",
+        "Dachun Xu",
+        "Junfeng Zhang",
+        "Lu Qi",
+        "Prashanthan Sanders",
+        "Ningjian Wang"
+      ],
+      "year": 2025,
+      "journal": "European heart journal",
+      "doi": "10.1093/eurheartj/ehae887",
+      "pmid": "39716283",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39716283",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Atrial Fibrillation",
+        "Risk Factors",
+        "Life Style",
+        "Biomarkers",
+        "Diet",
+        "Gastrointestinal Microbiome",
+        "Heart Disease Risk Factors",
+        "Primary Prevention"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Trimethylamine N-oxide in cardiovascular disease: Pathophysiology and the potential role of statins.",
+      "abstract": "Cardiovascular diseases are one of the leading causes of mortality and morbidity worldwide, with the total number of cases increasing to 523 million in 2019. Despite the advent of new drugs, cardiovascular mortality has increased at an alarming rate of 53.7&#xa0;% from 12.1 million deaths in 1990. Recently, the role of gut microbiome metabolites, such as Trimethylamine N-Oxide (TMAO), in the pathogenesis of cardiovascular disease (CVD) has attracted significant attention. The gut microbiome is critical in various physiological processes including metabolism, immune function, and inflammation. Elevated TMAO levels are associated with atherosclerosis, heart failure, arrhythmia, and atrial fibrillation. TMAO accelerates atherosclerosis by promoting vascular inflammation and reducing reverse cholesterol transport, which leads to lipid accumulation and vessel narrowing. Previous research has indicated that a Mediterranean diet rich in fiber and phytochemicals can reduce TMAO levels by limiting precursors and fostering beneficial gut microbiota. Prebiotics and probiotics also decrease TMAO, while drugs such as meldonium, aspirin, and antibiotics have shown promise. However, recent studies have demonstrated major potential for the use of statins in reducing TMAO levels. Statin therapy can significantly reduce TMAO levels independent of their cholesterol-lowering effects. This reduction may involve direct interactions with the gut microbiome, changes in cholesterol metabolism, and changes in bile acid composition. This review aims to comprehensively evaluate the therapeutic potential of statins in reducing TMAO levels to improve CV outcomes.",
+      "authors": [
+        "Fakhar Latif",
+        "Ayesha Mubbashir",
+        "Muhammad Sohaib Khan",
+        "Zain Shaikh",
+        "Aaima Memon",
+        "Jenelle Alvares",
+        "Ayesha Azhar",
+        "Hritvik Jain",
+        "Raheel Ahmed",
+        "Sai Gautham Kanagala"
+      ],
+      "year": 2025,
+      "journal": "Life sciences",
+      "doi": "10.1016/j.lfs.2024.123304",
+      "pmid": "39672256",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39672256",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Methylamines",
+        "Cardiovascular Diseases",
+        "Gastrointestinal Microbiome",
+        "Hydroxymethylglutaryl-CoA Reductase Inhibitors",
+        "Animals"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "The Causal Relationship between Gut Microbiota and Atrial Fibrillation: A Two-Sample Mendelian Randomization Study.",
+      "abstract": "BACKGROUND: Previous studies have adequately characterized the gut microbiota (GM) in atrial fibrillation (AF). Nevertheless, the precise causality between GM and AF remains elusive. OBJECTIVES: This study utilized public data from genome-wide association studies to explore the causality between GM and AF. METHODS: In the first of two rounds of Mendelian randomization (MR) analysis, the instrumental variables (IVs) comprised single nucleotide polymorphisms (SNPs) that fell below the genome-wide statistical significance threshold (5 &#xd7; 10-8). To attain a more comprehensive and inclusive conclusion, we further selected SNPs falling below the locus-wide significance level (1 &#xd7; 10-5) as IVs for the second group. The MR analysis considered the statistically significant causal effect between the specific GM and AF when p &lt; 0.05. Furthermore, in sensitivity analysis, p &gt; 0.05 indicated no heterogeneity and pleiotropy. RESULTS: At the locus-wide significance threshold, the findings demonstrated a causal impact of GM on AF risk. The inverse variance weighting method indicated that Actinobacteria, Firmicutes, Alloprevotella, Bifidobacterium, Blautia, Eggerthella, Howardella, Ruminococcaceae UCG004, and Ruminococcus1 were negatively correlated with AF, while Pasteurellales, Pasteurellaceae, Oxalobacter, Ruminiclostridium5, and Turicibacter were positively correlated. Furthermore, at the genome-wide significance threshold, Actinobacteria, Bifidobacteriaceae, and Bifidobacterium were protective factors for the risk of developing AF, whereas Oxalobacteraceae and Erysipelatoclostridium were risk factors for AF. However, sensitivity analyses showed heterogeneity or horizontal pleiotropy within the outcomes for Actinobacteria, Howardella, Oxalobacter, and Firmicutes. CONCLUSIONS: This study provides evidence for the existence of both favorable and unfavorable causality of GM on AF risk. Figura Central : A Rela&#xe7;&#xe3;o Causal entre Microbiota Intestinal e Fibrila&#xe7;&#xe3;o Atrial: Um Estudo de Randomiza&#xe7;&#xe3;o Mendeliana de Duas Amostras Vis&#xe3;o geral do processo de an&#xe1;lise de randomiza&#xe7;&#xe3;o mendeliana (RM) e principais suposi&#xe7;&#xf5;es. FUNDAMENTO: Estudos anteriores caracterizaram adequadamente a microbiota intestinal (MI) na fibrila&#xe7;&#xe3;o atrial (FA). No entanto, a causalidade precisa entre a MI e a FA permanece obscura. OBJETIVOS: O presente estudo utilizou dados p&#xfa;blicos de estudos de associa&#xe7;&#xe3;o gen&#xf4;mica ampla para explorar a causalidade entre MI e FA. M&#xc9;TODOS: Na primeira de duas rodadas de an&#xe1;lise de randomiza&#xe7;&#xe3;o mendeliana (RM), as vari&#xe1;veis instrumentais (VIs) inclu&#xed;ram polimorfismos de nucleot&#xed;deo &#xfa;nico (SNPs) que ficaram abaixo do limite de signific&#xe2;ncia estat&#xed;stica de todo o genoma (5 &#xd7; 10-8). Para chegar a uma conclus&#xe3;o mais abrangente e inclusiva, selecionamos ainda SNPs abaixo do n&#xed;vel de signific&#xe2;ncia de todo o l&#xf3;cus (1 &#xd7; 10-5) como VIs para o segundo grupo. A an&#xe1;lise de RM considerou o efeito causal estatisticamente significativo entre MI espec&#xed;fica e FA quando p &lt; 0,05. Al&#xe9;m disso, na an&#xe1;lise de sensibilidade, p &gt; 0,05 n&#xe3;o indicou heterogeneidade nem pleiotropia. RESULTADOS: No limiar de signific&#xe2;ncia de todo o l&#xf3;cus, os resultados demonstraram um impacto causal da MI no risco de FA. O m&#xe9;todo de pondera&#xe7;&#xe3;o de vari&#xe2;ncia inversa indicou que Actinobacteria, Firmicutes, Alloprevotella, Bifidobacterium, Blautia, Eggerthella, Howardella, Ruminococcaceae UCG004 e Ruminococcus1 foram negativamente correlacionados com FA, ao passo que Pasteurellales, Pasteurellaceae, Oxalobacter, Ruminiclostridium5 e Turicibacter foram positivamente correlacionados. Al&#xe9;m disso, no limiar de signific&#xe2;ncia de todo o genoma, Actinobacteria, Bifidobacteriaceae e Bifidobacterium foram fatores de prote&#xe7;&#xe3;o para o risco de desenvolver FA, ao passo que Oxalobacteraceae e Erysipelatoclostridium foram fatores de risco para FA. Entretanto, an&#xe1;lises de sensibilidade mostraram heterogeneidade ou pleiotropia horizontal nos resultados para Actinobacteria, Howardella, Oxalobacter e Firmicutes. CONCLUS&#xd5;ES: Este estudo fornece evid&#xea;ncias da exist&#xea;ncia de causalidade favor&#xe1;vel e desfavor&#xe1;vel da MI no risco de FA. BACKGROUND: Previous studies have adequately characterized the gut microbiota (GM) in atrial fibrillation (AF). Nevertheless, the precise causality between GM and AF remains elusive. OBJECTIVES: This study utilized public data from genome-wide association studies to explore the causality between GM and AF. METHODS: In the first of two rounds of Mendelian randomization (MR) analysis, the instrumental variables (IVs) comprised single nucleotide polymorphisms (SNPs) that fell below the genome-wide statistical significance threshold (5 &#xd7; 10-8). To attain a more comprehensive and inclusive conclusion, we further selected SNPs falling below the locus-wide significance level (1 &#xd7; 10-5) as IVs for the second group. The MR analysis considered the statistically significant causal effect between the specific GM and AF when p &lt; 0.05. Furthermore, in sensitivity analysis, p &gt; 0.05 indicated no heterogeneity and pleiotropy. RESULTS: At the locus-wide significance threshold, the findings demonstrated a causal impact of GM on AF risk. The inverse variance weighting method indicated that Actinobacteria, Firmicutes, Alloprevotella, Bifidobacterium, Blautia, Eggerthella, Howardella, Ruminococcaceae UCG004, and Ruminococcus1 were negatively correlated with AF, while Pasteurellales, Pasteurellaceae, Oxalobacter, Ruminiclostridium5, and Turicibacter were positively correlated. Furthermore, at the genome-wide significance threshold, Actinobacteria, Bifidobacteriaceae, and Bifidobacterium were protective factors for the risk of developing AF, whereas Oxalobacteraceae and Erysipelatoclostridium were risk factors for AF. However, sensitivity analyses showed heterogeneity or horizontal pleiotropy within the outcomes for Actinobacteria, Howardella, Oxalobacter, and Firmicutes. CONCLUSIONS: This study provides evidence for the existence of both favorable and unfavorable causality of GM on AF risk.",
+      "authors": [
+        "Yuan Zhou",
+        "Xuan Wang",
+        "Jiongchao Guo",
+        "Lei Zhang",
+        "Huangsheng Zheng"
+      ],
+      "year": 2024,
+      "journal": "Arquivos brasileiros de cardiologia",
+      "doi": "10.36660/abc.20240357",
+      "pmid": "39661803",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39661803",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [
+        "Atrial Fibrillation",
+        "Mendelian Randomization Analysis",
+        "Humans",
+        "Gastrointestinal Microbiome",
+        "Genome-Wide Association Study",
+        "Polymorphism, Single Nucleotide",
+        "Risk Factors",
+        "Causality"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    }
+  ],
+  "total": 89
+}

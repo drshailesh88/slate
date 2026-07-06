@@ -1,0 +1,511 @@
+{
+  "source": "clinical_trials",
+  "query": "What are the effects of SGLT2 inhibitors on heart failure outcomes?",
+  "timestamp": "2026-03-02T17:09:35.825Z",
+  "results": [
+    {
+      "title": "Investigation of Biomarker Response to SGLT2 Inhibition Across Various Phenotypes of Heart Failure",
+      "authors": [
+        "Chris Watson, PHD",
+        "Lana Dixon, MD"
+      ],
+      "journal": "Queen's University, Belfast",
+      "year": 2023,
+      "abstract": "This is a 26-week, open label, single-arm prospective evaluation of the effects of sodium glucose cotransporter 2 (SGLT2) inhibition on cardiac biomarkers, myocardial remodeling and patient reported outcomes in heart failure with both impaired and preserved left ventricular fraction. | Status: UNKNOWN",
+      "citationCount": 0,
+      "publicationTypes": [
+        "clinical_trial_registration"
+      ],
+      "meshTerms": [
+        "Heart Failure"
+      ],
+      "studyType": "observational",
+      "evidenceLevel": "III",
+      "isOpenAccess": true,
+      "sources": [
+        "clinical_trials"
+      ],
+      "nctId": "NCT06140251",
+      "trialStatus": "UNKNOWN"
+    },
+    {
+      "title": "Impact of Finerenone in Combination With Sodium Glucose Cotransporter-2 Inhibitor in Patients With Heart Failure",
+      "authors": [
+        "Mansour Saad Alqahtani, PhD Candidate"
+      ],
+      "journal": "Mansoura University",
+      "year": 2026,
+      "abstract": "The goal of this clinical study is to evaluate whether adding finerenone to standard treatment with a sodium-glucose cotransporter-2 (SGLT2) inhibitor provides additional benefits in patients with heart failure.\n\nThe main question this study aims to answer is whether the combination of finerenone and an SGLT2 inhibitor improves clinical outcomes and is safe compared to treatment with an SGLT2 inhibitor alone.\n\nParticipants will receive standard therapy with an SGLT2 inhibitor, with or without the addition of finerenone and will be followed to assess clinical outcomes and safety. | Phase: PHASE4 | Status: NOT_YET_RECRUITING",
+      "citationCount": 0,
+      "publicationTypes": [
+        "clinical_trial_registration"
+      ],
+      "meshTerms": [
+        "Heart Failure"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": true,
+      "sources": [
+        "clinical_trials"
+      ],
+      "nctId": "NCT07351864",
+      "trialStatus": "NOT_YET_RECRUITING",
+      "trialPhase": "PHASE4"
+    },
+    {
+      "title": "Effect of Genetic Polymorphism on the Clinical Outcome to SGLT2 Inhibitors in Heart Failure Patients",
+      "authors": [
+        "Bassem Zarif, MD"
+      ],
+      "journal": "Ain Shams University",
+      "year": 2023,
+      "abstract": "Heart failure with reduced ejection fraction (HFrEF) is a significant cause of morbidity and mortality. Sodium-glucose co-transporter-2 (SGLT2) inhibitors have demonstrated efficacy in improving renal outcomes in patients with HFrEF. Pharmacogenetics, the study of how genetic variations influence drug response, could elucidate inter-individual variability in treatment outcomes. This study aims to assess the impact of specific genetic variants on renal outcomes in HFrEF patients treated with SGLT2 inhibitors. | Status: ACTIVE_NOT_RECRUITING",
+      "citationCount": 0,
+      "publicationTypes": [
+        "clinical_trial_registration"
+      ],
+      "meshTerms": [
+        "Heart Failure - NYHA II - IV",
+        "Cardiac Fibrosis",
+        "Cardiac Remodeling"
+      ],
+      "studyType": "observational",
+      "evidenceLevel": "III",
+      "isOpenAccess": true,
+      "sources": [
+        "clinical_trials"
+      ],
+      "nctId": "NCT06901609",
+      "trialStatus": "ACTIVE_NOT_RECRUITING"
+    },
+    {
+      "title": "Implementation of Sodium-Glucose Cotransporter (SGLT)-2 Inhibitors in Patients With Heart Failure Through a New Digital Strategy",
+      "authors": [
+        "Morten Schou, MD, PhD",
+        "Lars Køber, MD, DMSc"
+      ],
+      "journal": "Herlev and Gentofte Hospital",
+      "year": 2023,
+      "abstract": "The implementation of new medical therapies and guidelines, is a long and complex process that takes up to 10 years on average. This prolonged process is a global challenge and is mainly due to the complexity of cross-institutional patient care, involving primary care, out-patient clinics, nursing homes and patient associations.\n\nThe main objective of this clinical trial is to determine whether a new digital strategy that employs official digital letters to inform and invite patients to evaluate their eligibility for new therapies, specifically the sodium-glucose co-transporter-2 (SGLT-2) inhibitor for heart failure patients, can facilitate and optimise the implementation. The aim is to increase the number of eligible patients with heart failure who start taking SGLT-2 inhibitors and reduce the time it takes to initiate treatment compared to the current process. Ultimately, this approach may improve patient outcomes. | Phase: NA | Status: ACTIVE_NOT_RECRUITING",
+      "citationCount": 0,
+      "publicationTypes": [
+        "clinical_trial_registration"
+      ],
+      "meshTerms": [
+        "Heart Failure"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": true,
+      "sources": [
+        "clinical_trials"
+      ],
+      "nctId": "NCT05890131",
+      "trialStatus": "ACTIVE_NOT_RECRUITING",
+      "trialPhase": "NA"
+    },
+    {
+      "title": "Effect of Genetic Polymorphisms on the Clinical Response to Sodium-glucose Cotransporter 2 (SGLT2) Inhibitors in Prevention of Cardiac Remodeling and Fibrosis in Heart Failure Patients",
+      "authors": [
+        "Rania Sarhan, PhD",
+        "Neven Sarhan, PhD",
+        "Bassem Zarif, MD",
+        "Julio Duarte, PhD"
+      ],
+      "journal": "October 6 University",
+      "year": 2023,
+      "abstract": "Sodium-glucose cotransporter 2 (SGLT2) inhibitors have shown further reductions in heart failure hospitalization, cardiovascular events, and mortality, especially for heart failure patients.\n\nThe SGLT2 gene, also known as SLC5A2 (solute carrier family 5 member 2), is located on chromosome 16 and is responsible for encoding SGLT2.\n\nSeveral SLC5A2 mutations alter SGLT2 expression, membrane location, or transporter function.\n\nSeveral common genetic variations were found in the SLC5A2 gene that may affect the response to treatment with SGLT2 inhibitors. | Status: UNKNOWN",
+      "citationCount": 0,
+      "publicationTypes": [
+        "clinical_trial_registration"
+      ],
+      "meshTerms": [
+        "Genetic Polymorphisms",
+        "Heart Failure"
+      ],
+      "studyType": "observational",
+      "evidenceLevel": "III",
+      "isOpenAccess": true,
+      "sources": [
+        "clinical_trials"
+      ],
+      "nctId": "NCT06201000",
+      "trialStatus": "UNKNOWN"
+    },
+    {
+      "title": "Mitral Remodeling Index: A Novel Composite Measure the Effect of ARNI Alone Versus ARNI Combined With SGLT2 Inhibitors on Functional Mitral Regurgitation Remodeling.",
+      "authors": [
+        "Lamiaa Khedr, Ass Prof."
+      ],
+      "journal": "Damanhour University",
+      "year": 2025,
+      "abstract": "This study aimed to compare the effects of ARNI monotherapy versus combined ARNI and SGLT2 inhibitor therapy on Mitral Remodeling Index (MRIx) and Functional mitral regurgitation (FMR) remodeling in patients with heart failure with reduced ejection fraction (HFrEF). | Status: RECRUITING",
+      "citationCount": 0,
+      "publicationTypes": [
+        "clinical_trial_registration"
+      ],
+      "meshTerms": [
+        "Heart Failure"
+      ],
+      "studyType": "observational",
+      "evidenceLevel": "III",
+      "isOpenAccess": true,
+      "sources": [
+        "clinical_trials"
+      ],
+      "nctId": "NCT07379788",
+      "trialStatus": "RECRUITING"
+    },
+    {
+      "title": "The Effect of Sodium Glucose Co-transporter 2 (SGLT2)-Inhibitors on Sleep Disordered Breathing in Heart Failure Patients",
+      "authors": [
+        "Nir Uriel, MD"
+      ],
+      "journal": "Columbia University",
+      "year": 2023,
+      "abstract": "Heart Failure is a disease involving many different aspects of the human body, including changes in metabolism, the way the body produces and uses energy. Research shows that patients with heart failure often have a sleep disorder called sleep disordered breathing (SDB). It has been shown that SDB is associated with poor outcomes in heart failure patients, but the exact reason is unknown. It is likely that SDB leads to changes in metabolism and hormone status in the body, which is especially dangerous for heart failure patients. There is currently no treatment for SDB in heart failure patients. Recently, with Sodium glucose co-transporter 2 (SGLT2)-Inhibitors a new drug class has been approved for the treatment of advanced heart failure. This drug has effects on the metabolism in heart failure patients, among several other effects. This research project has the aim to investigate if SGLT2 inhibitors can help in the treatment of SDB, as many mechanisms of the drug overlap with the mechanisms how SDB develops. The drug has been approved by the FDA for the treatment of heart failure. The investigators want to study the effect of the drug on SDB by using a home sleep test called Watchpat, which has been approved to diagnose SDB. | Phase: PHASE2 | Status: WITHDRAWN",
+      "citationCount": 0,
+      "publicationTypes": [
+        "clinical_trial_registration"
+      ],
+      "meshTerms": [
+        "Heart Failure",
+        "Sleep Disordered Breathing"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": true,
+      "sources": [
+        "clinical_trials"
+      ],
+      "nctId": "NCT04640493",
+      "trialStatus": "WITHDRAWN",
+      "trialPhase": "PHASE2"
+    },
+    {
+      "title": "The Potential Beneficial Effects of SGLT2 Inhibitors in Patients With Acute Decompensated Heart Failure During Ventilator Weaning: a Prospective Multicenter Cohort Study.",
+      "authors": [],
+      "journal": "National Taiwan University Hospital",
+      "year": 2022,
+      "abstract": "This study will explore the potential benefits of sodium-glucose cotransporter 2 (SGLT2) inhibitors in preventing cardiac ischemia and cardiopulmonary edema in patients with acute decompensated heart failure during weaning from ventilators. | Phase: PHASE3 | Status: RECRUITING",
+      "citationCount": 0,
+      "publicationTypes": [
+        "clinical_trial_registration"
+      ],
+      "meshTerms": [
+        "Heart Failure Acute",
+        "Ventilator Lung"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": true,
+      "sources": [
+        "clinical_trials"
+      ],
+      "nctId": "NCT06142474",
+      "trialStatus": "RECRUITING",
+      "trialPhase": "PHASE3"
+    },
+    {
+      "title": "Impact of Sodium-glucose Cotransporter 2 Inhibitors on Post-operative Atrial Fibrillation in Cardiothoracic Surgery",
+      "authors": [],
+      "journal": "Hamad Medical Corporation",
+      "year": 2023,
+      "abstract": "SGLT2 inhibitors are oral anti-diabetic medications that were found to improve cardiorenal outcomes in patients with type 2 diabetes mellitus (DM), chronic heart failure with reduced and preserved ejection fraction, and chronic kidney disease. Recent evidence suggested that the use of SGLT2 inhibitors resulted in a significant reduction in atrial fibrillation (AF) over a mean follow-up duration of 2.6 years. Given the possible AF protective benefit with SGLT2 inhibitors use. | Status: UNKNOWN",
+      "citationCount": 0,
+      "publicationTypes": [
+        "clinical_trial_registration"
+      ],
+      "meshTerms": [
+        "Atrial Fibrillation"
+      ],
+      "studyType": "observational",
+      "evidenceLevel": "III",
+      "isOpenAccess": true,
+      "sources": [
+        "clinical_trials"
+      ],
+      "nctId": "NCT06251453",
+      "trialStatus": "UNKNOWN"
+    },
+    {
+      "title": "Impact of Sodium-Glucose Cotransporter 2 (SGLT2) Inhibitor Use After Acute Myocardial Infarction in Patients With Type 2 Diabetes: A Nationwide Population Cohort Study",
+      "authors": [
+        "Yongcheol Kim, MD, PhD"
+      ],
+      "journal": "Yonsei University",
+      "year": 2014,
+      "abstract": "This observational, retrospective cohort study aims to evaluate the impact of sodium-glucose cotransporter 2 (SGLT2) inhibitor use after acute myocardial infarction (AMI) in patients with type 2 diabetes mellitus (T2DM). Using the nationwide database from the Korean National Health Insurance Service, the investigators will compare cardiovascular outcomes between patients treated with SGLT2 inhibitors and those treated with dipeptidyl peptidase-4 (DPP4) inhibitors after AMI. The study period includes patients diagnosed with AMI between September 2014 and June 2021, with follow-up data available through June 2022. The primary outcomes include major cardiovascular events (death, myocardial infarction, stroke) and bleeding events. This study will provide real-world evidence on the effectiveness and safety of SGLT2 inhibitors in routine clinical practice following AMI among patients with T2DM in Korea. | Status: ACTIVE_NOT_RECRUITING",
+      "citationCount": 0,
+      "publicationTypes": [
+        "clinical_trial_registration"
+      ],
+      "meshTerms": [
+        "Acute Myocardial Infarction (AMI)",
+        "Type 2 Diabetes Mellitus (T2DM)"
+      ],
+      "studyType": "observational",
+      "evidenceLevel": "III",
+      "isOpenAccess": true,
+      "sources": [
+        "clinical_trials"
+      ],
+      "nctId": "NCT07198191",
+      "trialStatus": "ACTIVE_NOT_RECRUITING"
+    },
+    {
+      "title": "The Efficacy and Safety of SGLT2 Inhibitors in Improving Heart Failure in Patients With Chronic Heart Failure With Reduced Ejection Fraction (HFrEF) and Severe Renal Insufficiency",
+      "authors": [],
+      "journal": "Peking University People's Hospital",
+      "year": 2023,
+      "abstract": "In the treatment of heart failure (HF), SGLT-2 inhibitor (SGLT-2i) can significantly improve the clinical outcome and quality of life related to HF. The current data show that SGLT-2i is effective and safe in improving HF outcomes in patients with chronic kidney disease (CKD) stage 4, but there is little clinical evidence in patients with eGFR\\<20 ml/min/1.73 m2. Therefore, our research is designed to confirm that SGLT-2i can improve the outcome of HF in patients with chronic heart failure with reduced ejection fraction (HFrEF) and severe chronic renal insufficiency (eGFR\\<20ml/min/1.73m2). | Phase: PHASE4 | Status: TERMINATED",
+      "citationCount": 0,
+      "publicationTypes": [
+        "clinical_trial_registration"
+      ],
+      "meshTerms": [
+        "Heart Failure With Reduced Ejection Fraction",
+        "Renal Insufficiency, Chronic"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": true,
+      "sources": [
+        "clinical_trials"
+      ],
+      "nctId": "NCT05737186",
+      "trialStatus": "TERMINATED",
+      "trialPhase": "PHASE4"
+    },
+    {
+      "title": "Hydroxyl Free Radical Associated Effects of SGLT-2 Inhibitors in Type 2 Diabetes",
+      "authors": [],
+      "journal": "University of Pecs",
+      "year": 2022,
+      "abstract": "Beyond their metabolic effect, SGLT-2 inhibitors reduce the risk of heart failure and have cardiovascular and nephroprotective effects, yet their exact mechanism of action remains unclear. This prospective study included 40 patients with type 2 diabetes whose physician initiated SGLT-2 inhibitor therapy. Prior to and after 4 weeks of the initiation of use of SGLT-2 inhibitors, in addition to routine clinical and laboratory measurements, hydroxyl free radical and neuropathic evaluations were performed. | Status: COMPLETED",
+      "citationCount": 0,
+      "publicationTypes": [
+        "clinical_trial_registration"
+      ],
+      "meshTerms": [
+        "T2DM"
+      ],
+      "studyType": "observational",
+      "evidenceLevel": "III",
+      "isOpenAccess": true,
+      "sources": [
+        "clinical_trials"
+      ],
+      "nctId": "NCT06797115",
+      "trialStatus": "COMPLETED"
+    },
+    {
+      "title": "Peri-tREatment of SGLT-2 Inhibitor on Myocardial Infarct Size and Remodeling Index Measured by Cardiac maGnetic rEsonance Imaging in Patients With Acute Myocardial Infarction and High Risk of Heart Failure Undergoing Percutaneous Coronary Intervention",
+      "authors": [],
+      "journal": "Samsung Medical Center",
+      "year": 2021,
+      "abstract": "We aimed to identify whether SGLT-2 inhibitor administration before and after coronary intervention is effective in reducing the size of infarction and myocardial remodeling in patients with acute myocardial infarction (AMI) and high risk of heart failure, and its mechanism. For this reason, we compared cardiac magnetic resonance imaging (CMR) parameters and clinical outcomes between the SGLT-2 inhibitor group and the control group to confirm the efficacy and safety of SGLT-2 inhibitors. | Phase: PHASE4 | Status: RECRUITING",
+      "citationCount": 0,
+      "publicationTypes": [
+        "clinical_trial_registration"
+      ],
+      "meshTerms": [
+        "Acute Myocardial Infarction",
+        "Heart Failure"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": true,
+      "sources": [
+        "clinical_trials"
+      ],
+      "nctId": "NCT04899479",
+      "trialStatus": "RECRUITING",
+      "trialPhase": "PHASE4"
+    },
+    {
+      "title": "Sodium-Glucose Cotransporter 2 Inhibitors for Repaired Tetralogy of Fallot Patients for Enhancement of Cardio-Pulmonary Status Trial (STEPS Trial)",
+      "authors": [
+        "Chun-Ka Dr Wong, Clinical Assistant Professor"
+      ],
+      "journal": "The University of Hong Kong",
+      "year": 2025,
+      "abstract": "Repaired Tetralogy of Fallot (rTOF) is the leading cause of congenital cyanotic heart disease worldwide, involving up to 7-10% of congenital heart disease. With advances in open-heart surgical repair techniques and medical therapies, there is a significant increase in patients with rTOF surviving till late adulthood. One sequalae that nearly all rTOF patients develop during their lifetime is significant pulmonary regurgitation. Pulmonary regurgitation causes progressive right ventricular dilatation and systolic dysfunction, which in turn impairs cardio-pulmonary function and overall survival.\n\nThere is currently no pharmacological therapy proven to improve cardio-pulmonary function in rTOF patients. In a double-blind, placebo controlled, randomized controlled trial involving 33 rTOF patients, the use of beta-adrenergic receptor blocker Bisoprolol failed to improve maximal oxygen uptake (VO2 max) in the treatment group. Furthermore, there was no significant change in dimension of right ventricle on cardiac imaging, or heart failure biomarkers including brain natriuretic peptide (BNP) and atrial natriuretic peptide (ANP). In the APPROPRIATE trial involving 64 patients, angiotensin-converting-enzyme inhibitor (ACEI) Ramipril similarly failed to improve VO2 max despite an improved right ventricular long-axis shortening. In REDEFINE trial, 95 rTOF patients were randomized in to receive angiotensin receptor blocker (ARB) Losartan and control. At the end of study, there was no significant difference between the two groups in VO2 max, right ventricular ejection fraction, and other key outcomes.\n\nSodium-glucose cotransporter 2 (SGLT2) inhibitor is a promising therapy for rTOF patients. Clinical trials consistently demonstrated that SGLT2 inhibitors reduce heart failure hospitalization and mortality among patients with heart failure with or without diabetes mellitus. There have been growing body of evidence that demonstrate that SGLT2 inhibitors improve right ventricular function. In a preclinical study of rat with pulmonary hypertension induced right ventricular failure, empagliflozin was found to reduce pulmonary pressure, alleviate right ventricular hypertrophy and reduce myocardial fibrosis. In a pilot study involving 10 patients with adult congenital heart disease and systemic right ventricular failure, SGLT2 inhibitors improved cardio-pulmonary function as reflected by 6-minute walk test performance and New York Heart Association functional status. Most recently, investigators from DAPA-SERVE randomized controlled trial reported that among 92 patients with systemic right ventricular failure, those randomized to receive SGLT2 inhibitors had superior systemic right ventricular function with larger fractional area change (FAC) and more negative free-wall global longitudinal strain. Nevertheless, as these trials involve patients with right ventricular connections to the systemic circulation rather than pulmonary circulation in rTOF, it is uncertain whether the trial results can be extrapolated to the rTOF population. The critical knowledge gap our proposed randomized controlled trial seeks to address is whether SGLT2 inhibitors improve cardio-pulmonary function in rTOF patients. | Phase: PHASE4 | Status: RECRUITING",
+      "citationCount": 0,
+      "publicationTypes": [
+        "clinical_trial_registration"
+      ],
+      "meshTerms": [
+        "Congenital Heart Disease",
+        "Repaired Tetralogy of Fallot (rTOF)",
+        "Pulmonary Regurgitation",
+        "Sodium-glucose Cotransporter 2 (SGLT2) Inhibitor",
+        "Dapagliflozin (Forxiga)"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": true,
+      "sources": [
+        "clinical_trials"
+      ],
+      "nctId": "NCT06668389",
+      "trialStatus": "RECRUITING",
+      "trialPhase": "PHASE4"
+    },
+    {
+      "title": "Sodium-glucose Cotransporter 2 (SGLT2) Inhibitors and the Risk of Cardiovascular Events Among Patients with Type 2 Diabetes: a Multicenter Cohort Study",
+      "authors": [
+        "Pierre Ernst, MD, MSc, FRCPC"
+      ],
+      "journal": "Canadian Network for Observational Drug Effect Studies, CNODES",
+      "year": 2018,
+      "abstract": "The purpose of this study is to compare the risk of cardiovascular events associated with the use of sodium-glucose cotransporter 2 (SGLT2) inhibitors in comparison with the use of dipeptidyl peptidase-4 (DPP-4) inhibitors among patients with type 2 diabetes.\n\nThe investigators will carry out separate population-based cohort studies using health care databases in seven Canadian provinces and the United Kingdom. The study cohort will be defined by the initiation of a SGLT2 inhibitor or a DPP-4 inhibitor after SGLT2 inhibitors entered the market. Patients will be followed up until the occurrence of a cardiovascular event. The results from the separate sites will be combined by meta-analysis to provide an overall assessment of the risk of cardiovascular events in users of SGLT2 inhibitors.\n\nThe investigators hypothesize that the use of SGLT2 inhibitors will be associated with a decreased risk of cardiovascular events in comparison with the use of DPP-4 inhibitors. | Status: COMPLETED",
+      "citationCount": 0,
+      "publicationTypes": [
+        "clinical_trial_registration"
+      ],
+      "meshTerms": [
+        "Type2 Diabetes",
+        "Myocardial Infarction",
+        "Ischemic Stroke",
+        "Cardiovascular Death",
+        "Heart Failure",
+        "All-Cause Mortality"
+      ],
+      "studyType": "observational",
+      "evidenceLevel": "III",
+      "isOpenAccess": true,
+      "sources": [
+        "clinical_trials"
+      ],
+      "nctId": "NCT03939624",
+      "trialStatus": "COMPLETED"
+    },
+    {
+      "title": "Cardiovascular Effects of SGLT2 Inhibitors in Hemodialysis Patients: A Phase 2 Randomized Study",
+      "authors": [
+        "Carlos E Castellaro, MD, MSc"
+      ],
+      "journal": "Centro de Educación Medica e Investigaciones Clínicas Norberto Quirno",
+      "year": 2025,
+      "abstract": "Patients with end-stage kidney disease (ESKD) on hemodialysis face an unacceptably high rate of cardiovascular complications, including heart failure, arrhythmias, and sudden cardiac death. Many of these outcomes are driven by diastolic dysfunction and cardiac fibrosis-conditions that are not adequately addressed by current therapies. SGLT2 inhibitors, originally developed for the treatment of type 2 diabetes, have demonstrated cardiovascular and renal protective effects across multiple patient populations, independent of glycemic control.\n\nThis Phase 2, randomized, controlled clinical trial will evaluate the safety and efficacy of SGLT2 inhibitors in patients undergoing maintenance hemodialysis. A total of 80 participants will be randomized to receive either an SGLT2 inhibitor or standard care for 12 months. The primary objective is to determine whether SGLT2 inhibitors improve cardiac function, reduce myocardial fibrosis, and decrease the incidence of intradialytic hypotension. Secondary endpoints include cardiovascular events, hospitalization, and all-cause mortality. The study will also assess changes in key biomarkers and perform advanced cardiac imaging to evaluate structural and functional outcomes.\n\nThis trial represents a novel and timely investigation into a class of medications with promising pleiotropic effects, potentially offering new therapeutic options for a high-risk, underserved population. | Phase: PHASE2 | Status: RECRUITING",
+      "citationCount": 0,
+      "publicationTypes": [
+        "clinical_trial_registration"
+      ],
+      "meshTerms": [
+        "Chronic Kidney Disease Requiring Hemodialysis"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": true,
+      "sources": [
+        "clinical_trials"
+      ],
+      "nctId": "NCT06929169",
+      "trialStatus": "RECRUITING",
+      "trialPhase": "PHASE2"
+    },
+    {
+      "title": "Impact of SGLT2 Inhibitors on Cardioprotection in Patients Undergoing Heart Transplantation",
+      "authors": [],
+      "journal": "Universidade Federal do Ceara",
+      "year": 2023,
+      "abstract": "The goal of this clinical trial is to test if SGLT2 inhibitors could prevent or delay the development of Cardiac Allograft Vasculopathy (CAV) post-heart transplantation (TxC). The main questions it aims to answer are:\n\nPrimary outcome: CAV, according to ISHLT grading system diagnosed by CCTA; Secondary outcomes: cardiovascular death, all-cause mortality, hospitalization, worsening glomerular filtration rate, fasting glucose, weight, and blood pressure.\n\nExploratory and safety outcomes: Rejection, hypoglycemia, urinary tract infection, hypovolemia, and limb amputation.\n\nHYPOTHESIS The null hypothesis is that SGLT2 inhibitors do not reduce the incidence of CAV in transplanted patients.\n\nThe alternative hypothesis is that SGLT2 inhibitors reduce the incidence of CAV in transplanted patients.METHODOLOGY Study Design A randomized clinical trial of superiority with active control (2 arms), with central randomization and blinded evaluation of outcomes, to evaluate the efficacy and safety of adding dapagliflozin or empagliflozin 10 mg once daily to conventional post-TxC treatment compared with the treatment of isolated conventional post-TxC for 6-8 months.\n\nStudy Sample Sample: All adult patients undergoing a heart transplant between January 2017 and December 2023 at Hospital de Messejana.\n\nInclusion Criteria Included: Patients of both sexes, aged ≥ 18 years, who have undergone heart transplantation between January 2017 and December 2023 and are under the care of the Heart Transplant and Heart Failure Unit at Hospital de Messejana. | Phase: PHASE2 | Status: ENROLLING_BY_INVITATION",
+      "citationCount": 0,
+      "publicationTypes": [
+        "clinical_trial_registration"
+      ],
+      "meshTerms": [
+        "Transplant; Failure, Heart",
+        "Cardiac Allograft Vasculopathy",
+        "Rejection Heart Transplant"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": true,
+      "sources": [
+        "clinical_trials"
+      ],
+      "nctId": "NCT06147271",
+      "trialStatus": "ENROLLING_BY_INVITATION",
+      "trialPhase": "PHASE2"
+    },
+    {
+      "title": "Real World Observation of SGLT2 Inhibitors on Clinical Outcomes and Left Ventricular Remodeling in Type 2 Diabetic Patients with Acute Myocardial Infarction, a Prospective, Multi-center Registry Study",
+      "authors": [
+        "Kiyuk Chang, MD, PhD"
+      ],
+      "journal": "Seoul St. Mary's Hospital",
+      "year": 2020,
+      "abstract": "Prospective trials performed on type 2 diabetes patients without established cardiovascular disease has shown that SGLT2 inhibitors reduce cardiovascular risk. No studies have yet examined the occurrence of cardiovascular disease in patients with acute myocardial infarction.\n\nThe investigators designed the current study to evaluate the most ideal oral hypoglycemic agent in type 2 diabetes patients undergoing percutaneous coronary intervention for acute myocardial infarction. The investigators hypothesize that the use of SGLT-2 inhibitors will reduce cardiovascular events and modify left ventricular remodeling after myocardial infarctions. | Status: RECRUITING",
+      "citationCount": 0,
+      "publicationTypes": [
+        "clinical_trial_registration"
+      ],
+      "meshTerms": [
+        "Myocardial Infarction",
+        "Diabetes Mellitus, Type 2"
+      ],
+      "studyType": "observational",
+      "evidenceLevel": "III",
+      "isOpenAccess": true,
+      "sources": [
+        "clinical_trials"
+      ],
+      "nctId": "NCT05770687",
+      "trialStatus": "RECRUITING"
+    },
+    {
+      "title": "Early Metabolic Adaptations to SGLT2 Inhibition in Heart Failure",
+      "authors": [
+        "Kenneth Margulies, MD"
+      ],
+      "journal": "University of Pennsylvania",
+      "year": 2023,
+      "abstract": "The goal of this observational study is to learn about SGLT2 inhibition medications in patients with symptomatic heart failure who are clinically prescribed FDA-approved SGLT2 inhibitors. The main question it aims to answer is:\n\n* What are the impacts of SGLT2 inhibition on systemic metabolomic and proteomic profiles? Participants will be asked to do the following before and after being prescribed a SGLT2i.\n* Six-minute walk testd\n* Calf MRI with plantar flexion exercise\n* Blood sample collection | Status: ENROLLING_BY_INVITATION",
+      "citationCount": 0,
+      "publicationTypes": [
+        "clinical_trial_registration"
+      ],
+      "meshTerms": [
+        "Heart Failure NYHA Class II",
+        "Heart Failure NYHA Class III",
+        "Heart Failure"
+      ],
+      "studyType": "observational",
+      "evidenceLevel": "III",
+      "isOpenAccess": true,
+      "sources": [
+        "clinical_trials"
+      ],
+      "nctId": "NCT05885607",
+      "trialStatus": "ENROLLING_BY_INVITATION"
+    },
+    {
+      "title": "Incidence, Characterisation and Outcome-relevance of Perioperative SGLT2 Inhibitor Associated Ketoacidosis - A Multicentre Prospective Cohort Study",
+      "authors": [],
+      "journal": "Heinrich-Heine University, Duesseldorf",
+      "year": 2025,
+      "abstract": "The goal of this observational study is to generate data on the incidence and outcome-relevance of sodium-glucose cotransporter 2 (SGLT2) inhibitor associated ketoacidosis in adult patients with regular intake of any SGLT2 inhibitor within the last three months that are undergoing in-patient surgery. Further, it will describe strategies in current clinical practice to prevent and manage SGLT2 inhibitor associated ketoacidosis. The specific aims of this study are:\n\n1. To assess the incidence of SGLT2 inhibitor associated ketoacidosis in surgical patients\n2. To characterise fasting times in patients with SGLT2 inhibitor associated ketoacidosis\n3. To describe the management of SGLT2 inhibitor associated ketoacidosis in current clinical practice\n4. To assess the outcome impact of SGLT2 inhibitor associated ketoacidosis | Status: NOT_YET_RECRUITING",
+      "citationCount": 0,
+      "publicationTypes": [
+        "clinical_trial_registration"
+      ],
+      "meshTerms": [
+        "SGLT2 Inhibitor",
+        "Ketoacidosis, Eugylcemic"
+      ],
+      "studyType": "observational",
+      "evidenceLevel": "III",
+      "isOpenAccess": true,
+      "sources": [
+        "clinical_trials"
+      ],
+      "nctId": "NCT06838507",
+      "trialStatus": "NOT_YET_RECRUITING"
+    }
+  ],
+  "total": 295
+}

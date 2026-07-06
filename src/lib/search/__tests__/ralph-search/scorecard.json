@@ -1,0 +1,1740 @@
+{
+  "cycles": [
+    {
+      "id": "ralph-sr-001",
+      "name": "Baseline recall — SGLT2 inhibitors in heart failure",
+      "phase": 1,
+      "scores": {
+        "recall": 10,
+        "precision": 10,
+        "ranking": 10,
+        "metadata": 8.6,
+        "dedup": 10
+      },
+      "weighted": 9.8,
+      "pass": true,
+      "scoreDetails": [
+        {
+          "dimension": "recall",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ FOUND \"sglt2 inhibitors in heart failure\" → \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR-Pooled analysis.\" (rank 1, sources: pubmed,pubmed_expanded)",
+            "✓ FOUND \"empagliflozin\" → \"Effects of Empagliflozin on Right Ventricular Free-Wall Strain in Patients with Heart Failure and Reduced Ejection Fraction.\" (rank 3, sources: pubmed,pubmed_expanded)",
+            "✓ FOUND \"dapagliflozin\" → \"The sodium–glucose co‐transporter 2 inhibitor dapagliflozin improves prognosis in systolic heart failure independent of the obesity paradox\" (rank 7, sources: openalex)",
+            "✓ FOUND \"cardiovascular\" → \"Differential cardiovascular benefits of SGLT2 inhibitors, sacubitril/valsartan, omecamtiv mecarbil, and vericiguat across heart failure phenotypes: a systematic review and meta-analysis.\" (rank 2, sources: pubmed,pubmed_expanded)",
+            "○ BONUS \"sotagliflozin\" not found",
+            "○ BONUS \"canagliflozin\" found",
+            "○ BONUS \"meta-analysis\" found"
+          ]
+        },
+        {
+          "dimension": "precision",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "10/10 top-10 results are relevant",
+            "  #1 ✓ \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR...\" [I, pubmed,pubmed_expanded]",
+            "  #2 ✓ \"Differential cardiovascular benefits of SGLT2 inhibitors, sacubitril/valsartan, ...\" [I, pubmed,pubmed_expanded]",
+            "  #3 ✓ \"Effects of Empagliflozin on Right Ventricular Free-Wall Strain in Patients with ...\" [II, pubmed,pubmed_expanded]",
+            "  #4 ✓ \"SGLT-2 inhibitors in prevention of chemotherapy-induced cardiotoxicity: systemat...\" [I, pubmed]",
+            "  #5 ✓ \"Effect of SGLT2 inhibitors on heart failure outcomes in patients with and withou...\" [I, pubmed,pubmed_expanded]",
+            "  #6 ✓ \"EMPEROR-Preserved: SGLT2 inhibitors breakthrough in the management of heart fail...\" [II, openalex]",
+            "  #7 ✓ \"The sodium–glucose co‐transporter 2 inhibitor dapagliflozin improves prognosis i...\" [II, openalex]",
+            "  #8 ✓ \"Efficacy and Safety of Sodium-Glucose Cotransporter 2 Inhibitors (SGLT2i) in Car...\" [I, pubmed]",
+            "  #9 ✓ \"[The effect of empagliflozin on the quality of life in patients with heart failu...\" [III, pubmed,pubmed_expanded]",
+            "  #10 ✓ \"Management of Hyperglycemia in Type 2 Diabetes, 2018. A Consensus Report by the ...\" [V, openalex]"
+          ]
+        },
+        {
+          "dimension": "ranking",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ RCTs (Level II) should outnumber Level V papers in top 10: Top-10: Level II count=3 vs Level V count=1 → PASS",
+            "✓ Top results should be about SGLT2i and heart failure: Top-10: 10/10 on-topic (100%) vs threshold 70% → PASS",
+            "✓ High evidence (I-II) should outnumber low evidence (IV-V) in top 10: Top-10: High evidence (I-II)=8 vs Low (IV-V)=1 → PASS"
+          ]
+        },
+        {
+          "dimension": "metadata",
+          "score": 8.6,
+          "maxScore": 10,
+          "details": [
+            "all_have_doi: 56/56 (100%) — threshold 80% → PASS",
+            "study_type_not_other: 34/56 (61%) — threshold 50% → PASS",
+            "year_nonzero: 56/56 (100%) — threshold 95% → PASS",
+            "has_abstract: 47/56 (84%) — threshold 70% → PASS"
+          ]
+        },
+        {
+          "dimension": "dedup",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ \"genitourinary tract infections and sglt2 inhibitors\": 1 occurrence(s) ≤ 1",
+            "✓ \"sglt2 inhibitors and mechanisms of cardiovascular benefit\": 1 occurrence(s) ≤ 1"
+          ]
+        }
+      ],
+      "patchesApplied": [],
+      "regressionResults": "N/A — baseline",
+      "perSourceCounts": {
+        "pubmed": 20,
+        "semanticScholar": 3,
+        "openAlex": 20
+      },
+      "fusedCount": 56,
+      "dedupedCount": 56,
+      "timestamp": "2026-06-27T07:34:34.869Z"
+    },
+    {
+      "id": "ralph-sr-004",
+      "name": "Dedup hardening — fuzzy title matching + DOI normalization",
+      "phase": 1,
+      "scores": {
+        "recall": 10,
+        "precision": 10,
+        "ranking": 10,
+        "metadata": 8.6,
+        "dedup": 10
+      },
+      "weighted": 9.8,
+      "pass": true,
+      "scoreDetails": [
+        {
+          "dimension": "recall",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ FOUND \"sglt2 inhibitors in heart failure\" → \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR-Pooled analysis.\" (rank 1, sources: pubmed,pubmed_expanded)",
+            "✓ FOUND \"empagliflozin\" → \"Effects of Empagliflozin on Right Ventricular Free-Wall Strain in Patients with Heart Failure and Reduced Ejection Fraction.\" (rank 3, sources: pubmed,pubmed_expanded)",
+            "✓ FOUND \"dapagliflozin\" → \"The sodium–glucose co‐transporter 2 inhibitor dapagliflozin improves prognosis in systolic heart failure independent of the obesity paradox\" (rank 7, sources: openalex)",
+            "✓ FOUND \"cardiovascular\" → \"Differential cardiovascular benefits of SGLT2 inhibitors, sacubitril/valsartan, omecamtiv mecarbil, and vericiguat across heart failure phenotypes: a systematic review and meta-analysis.\" (rank 2, sources: pubmed,pubmed_expanded)",
+            "○ BONUS \"meta-analysis\" found"
+          ]
+        },
+        {
+          "dimension": "precision",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "10/10 top-10 results are relevant",
+            "  #1 ✓ \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR...\" [I, pubmed,pubmed_expanded]",
+            "  #2 ✓ \"Differential cardiovascular benefits of SGLT2 inhibitors, sacubitril/valsartan, ...\" [I, pubmed,pubmed_expanded]",
+            "  #3 ✓ \"Effects of Empagliflozin on Right Ventricular Free-Wall Strain in Patients with ...\" [II, pubmed,pubmed_expanded]",
+            "  #4 ✓ \"SGLT-2 inhibitors in prevention of chemotherapy-induced cardiotoxicity: systemat...\" [I, pubmed]",
+            "  #5 ✓ \"Effect of SGLT2 inhibitors on heart failure outcomes in patients with and withou...\" [I, pubmed,pubmed_expanded]",
+            "  #6 ✓ \"EMPEROR-Preserved: SGLT2 inhibitors breakthrough in the management of heart fail...\" [II, openalex]",
+            "  #7 ✓ \"The sodium–glucose co‐transporter 2 inhibitor dapagliflozin improves prognosis i...\" [II, openalex]",
+            "  #8 ✓ \"Efficacy and Safety of Sodium-Glucose Cotransporter 2 Inhibitors (SGLT2i) in Car...\" [I, pubmed]",
+            "  #9 ✓ \"[The effect of empagliflozin on the quality of life in patients with heart failu...\" [III, pubmed,pubmed_expanded]",
+            "  #10 ✓ \"Management of Hyperglycemia in Type 2 Diabetes, 2018. A Consensus Report by the ...\" [V, openalex]"
+          ]
+        },
+        {
+          "dimension": "ranking",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ RCTs (Level II) should outnumber Level V papers in top 10: Top-10: Level II count=3 vs Level V count=1 → PASS",
+            "✓ Top results should be about SGLT2i and heart failure: Top-10: 10/10 on-topic (100%) vs threshold 70% → PASS",
+            "✓ High evidence (I-II) should outnumber low evidence (IV-V) in top 10: Top-10: High evidence (I-II)=8 vs Low (IV-V)=1 → PASS"
+          ]
+        },
+        {
+          "dimension": "metadata",
+          "score": 8.6,
+          "maxScore": 10,
+          "details": [
+            "all_have_doi: 56/56 (100%) — threshold 80% → PASS",
+            "study_type_not_other: 34/56 (61%) — threshold 50% → PASS",
+            "year_nonzero: 56/56 (100%) — threshold 95% → PASS",
+            "has_abstract: 47/56 (84%) — threshold 70% → PASS"
+          ]
+        },
+        {
+          "dimension": "dedup",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ \"genitourinary tract infections and sglt2 inhibitors\": 1 occurrence(s) ≤ 1",
+            "✓ \"effects of empagliflozin on right ventricular\": 1 occurrence(s) ≤ 1",
+            "✓ \"differential cardiovascular benefits of sglt2 inhibitors\": 1 occurrence(s) ≤ 1"
+          ]
+        }
+      ],
+      "patchesApplied": [
+        "pubmed-sort-relevance",
+        "quality-ranker",
+        "journal-quality-enrichment",
+        "study-type-detector",
+        "fuzzy-dedup"
+      ],
+      "regressionResults": "",
+      "perSourceCounts": {
+        "pubmed": 20,
+        "semanticScholar": 3,
+        "openAlex": 20
+      },
+      "fusedCount": 56,
+      "dedupedCount": 56,
+      "timestamp": "2026-06-27T07:34:34.889Z"
+    },
+    {
+      "id": "ralph-sr-005",
+      "name": "MeSH expansion — drug-level synonym queries for broader recall",
+      "phase": 1,
+      "scores": {
+        "recall": 10,
+        "precision": 10,
+        "ranking": 10,
+        "metadata": 8.6,
+        "dedup": 10
+      },
+      "weighted": 9.8,
+      "pass": true,
+      "scoreDetails": [
+        {
+          "dimension": "recall",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ FOUND \"sglt2 inhibitors in heart failure\" → \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR-Pooled analysis.\" (rank 1, sources: pubmed,pubmed_expanded)",
+            "✓ FOUND \"empagliflozin\" → \"Effects of Empagliflozin on Right Ventricular Free-Wall Strain in Patients with Heart Failure and Reduced Ejection Fraction.\" (rank 3, sources: pubmed,pubmed_expanded)",
+            "✓ FOUND \"dapagliflozin\" → \"The sodium–glucose co‐transporter 2 inhibitor dapagliflozin improves prognosis in systolic heart failure independent of the obesity paradox\" (rank 7, sources: openalex)",
+            "✓ FOUND \"cardiovascular\" → \"Differential cardiovascular benefits of SGLT2 inhibitors, sacubitril/valsartan, omecamtiv mecarbil, and vericiguat across heart failure phenotypes: a systematic review and meta-analysis.\" (rank 2, sources: pubmed,pubmed_expanded)",
+            "○ BONUS \"sotagliflozin\" not found",
+            "○ BONUS \"canagliflozin\" found",
+            "○ BONUS \"meta-analysis\" found"
+          ]
+        },
+        {
+          "dimension": "precision",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "10/10 top-10 results are relevant",
+            "  #1 ✓ \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR...\" [I, pubmed,pubmed_expanded]",
+            "  #2 ✓ \"Differential cardiovascular benefits of SGLT2 inhibitors, sacubitril/valsartan, ...\" [I, pubmed,pubmed_expanded]",
+            "  #3 ✓ \"Effects of Empagliflozin on Right Ventricular Free-Wall Strain in Patients with ...\" [II, pubmed,pubmed_expanded]",
+            "  #4 ✓ \"SGLT-2 inhibitors in prevention of chemotherapy-induced cardiotoxicity: systemat...\" [I, pubmed]",
+            "  #5 ✓ \"Effect of SGLT2 inhibitors on heart failure outcomes in patients with and withou...\" [I, pubmed,pubmed_expanded]",
+            "  #6 ✓ \"EMPEROR-Preserved: SGLT2 inhibitors breakthrough in the management of heart fail...\" [II, openalex]",
+            "  #7 ✓ \"The sodium–glucose co‐transporter 2 inhibitor dapagliflozin improves prognosis i...\" [II, openalex]",
+            "  #8 ✓ \"Efficacy and Safety of Sodium-Glucose Cotransporter 2 Inhibitors (SGLT2i) in Car...\" [I, pubmed]",
+            "  #9 ✓ \"[The effect of empagliflozin on the quality of life in patients with heart failu...\" [III, pubmed,pubmed_expanded]",
+            "  #10 ✓ \"Management of Hyperglycemia in Type 2 Diabetes, 2018. A Consensus Report by the ...\" [V, openalex]"
+          ]
+        },
+        {
+          "dimension": "ranking",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ RCTs (Level II) should outnumber Level V papers in top 10: Top-10: Level II count=3 vs Level V count=1 → PASS",
+            "✓ Top results should be about SGLT2i: Top-10: 10/10 on-topic (100%) vs threshold 70% → PASS",
+            "✓ High evidence (I-II) should outnumber low evidence (IV-V) in top 10: Top-10: High evidence (I-II)=8 vs Low (IV-V)=1 → PASS"
+          ]
+        },
+        {
+          "dimension": "metadata",
+          "score": 8.6,
+          "maxScore": 10,
+          "details": [
+            "all_have_doi: 56/56 (100%) — threshold 80% → PASS",
+            "study_type_not_other: 34/56 (61%) — threshold 50% → PASS",
+            "year_nonzero: 56/56 (100%) — threshold 95% → PASS",
+            "has_abstract: 47/56 (84%) — threshold 70% → PASS"
+          ]
+        },
+        {
+          "dimension": "dedup",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ \"genitourinary tract infections and sglt2 inhibitors\": 1 occurrence(s) ≤ 1",
+            "✓ \"sglt2 inhibitors and mechanisms of cardiovascular benefit\": 1 occurrence(s) ≤ 1"
+          ]
+        }
+      ],
+      "patchesApplied": [
+        "pubmed-sort-relevance",
+        "quality-ranker",
+        "journal-quality-enrichment",
+        "study-type-detector",
+        "fuzzy-dedup",
+        "query-expansion"
+      ],
+      "regressionResults": "",
+      "perSourceCounts": {
+        "pubmed": 20,
+        "semanticScholar": 3,
+        "openAlex": 20
+      },
+      "fusedCount": 56,
+      "dedupedCount": 56,
+      "timestamp": "2026-06-27T07:34:34.898Z"
+    },
+    {
+      "id": "ralph-sr-006",
+      "name": "Narrow topic — PCSK9 inhibitors in South Asian populations (sparse evidence)",
+      "phase": 2,
+      "scores": {
+        "recall": 10,
+        "precision": 10,
+        "ranking": 10,
+        "metadata": 9.2,
+        "dedup": 10
+      },
+      "weighted": 9.9,
+      "pass": true,
+      "scoreDetails": [
+        {
+          "dimension": "recall",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ FOUND \"lipoprotein\" → \"Why, how and in whom should we measure levels of lipoprotein(a): A review of the latest evidence and clinical implications.\" (rank 1, sources: pubmed,openalex)",
+            "✓ FOUND \"cholesterol\" → \"2018 AHA/ACC/AACVPR/AAPA/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA Guideline on the Management of Blood Cholesterol: Executive Summary: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines\" (rank 3, sources: openalex)",
+            "○ BONUS \"pcsk9\" not found",
+            "○ BONUS \"evolocumab\" not found",
+            "○ BONUS \"alirocumab\" not found",
+            "○ BONUS \"south asian\" not found"
+          ]
+        },
+        {
+          "dimension": "precision",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "10/10 top-10 results are relevant",
+            "  #1 ✓ \"Why, how and in whom should we measure levels of lipoprotein(a): A review of the...\" [V, pubmed,openalex]",
+            "  #2 ✓ \"2021 ESC Guidelines on cardiovascular disease prevention in clinical practice...\" [V, openalex]",
+            "  #3 ✓ \"2018 AHA/ACC/AACVPR/AAPA/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA Guideline on the Ma...\" [V, openalex]",
+            "  #4 ✓ \"Genetic Causes of Monogenic Heterozygous Familial Hypercholesterolemia: A HuGE P...\" [V, openalex]",
+            "  #5 ✓ \"Efficacy and Safety of Ongericimab in Chinese Patients With Primary Hypercholest...\" [II, pubmed]",
+            "  #6 ✓ \"Efficacy and safety of ongericimab in Chinese patients with heterozygous familia...\" [II, pubmed]",
+            "  #7 ✓ \"Plasma proteomic associations with genetics and health in the UK Biobank...\" [V, openalex]",
+            "  #8 ✓ \"Global, regional, and national burden of stroke and its risk factors, 1990–2019:...\" [V, openalex]",
+            "  #9 ✓ \"Statin-associated muscle symptoms: impact on statin therapy—European Atheroscler...\" [V, openalex]",
+            "  #10 ✓ \"Lipoprotein(a) in atherosclerotic cardiovascular disease and aortic stenosis: a ...\" [V, openalex]"
+          ]
+        },
+        {
+          "dimension": "ranking",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ Majority of top 10 should be related to lipid/cardiovascular topics: Top-10: 9/10 on-topic (90%) vs threshold 50% → PASS"
+          ]
+        },
+        {
+          "dimension": "metadata",
+          "score": 9.2,
+          "maxScore": 10,
+          "details": [
+            "all_have_doi: 21/21 (100%) — threshold 70% → PASS",
+            "year_nonzero: 21/21 (100%) — threshold 90% → PASS",
+            "has_abstract: 16/21 (76%) — threshold 50% → PASS"
+          ]
+        },
+        {
+          "dimension": "dedup",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ \"why how and in whom should we measure levels of lipoprotein\": 1 occurrence(s) ≤ 1"
+          ]
+        }
+      ],
+      "patchesApplied": [
+        "pubmed-sort-relevance",
+        "quality-ranker",
+        "journal-quality-enrichment",
+        "study-type-detector",
+        "fuzzy-dedup",
+        "query-expansion"
+      ],
+      "regressionResults": "",
+      "perSourceCounts": {
+        "pubmed": 3,
+        "semanticScholar": 0,
+        "openAlex": 20
+      },
+      "fusedCount": 21,
+      "dedupedCount": 21,
+      "timestamp": "2026-06-27T07:34:34.902Z"
+    },
+    {
+      "id": "ralph-sr-007",
+      "name": "Comparison query — beta-blockers vs calcium channel blockers in AF",
+      "phase": 2,
+      "scores": {
+        "recall": 10,
+        "precision": 10,
+        "ranking": 10,
+        "metadata": 8.4,
+        "dedup": 10
+      },
+      "weighted": 9.8,
+      "pass": true,
+      "scoreDetails": [
+        {
+          "dimension": "recall",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ FOUND \"beta-blocker\" → \"Safety and efficiency of calcium channel blockers versus beta-blockers for rate control in patients with atrial fibrillation and no acute underlying medical illness.\" (rank 7, sources: semantic_scholar)",
+            "✓ FOUND \"calcium channel\" → \"&#x3b2;-Blockers versus calcium channel blockers for acute rate control of atrial fibrillation with rapid ventricular response: a systematic review.\" (rank 2, sources: pubmed,semantic_scholar,pubmed_expanded)",
+            "✓ FOUND \"atrial fibrillation\" → \"Esmolol versus diltiazem in the treatment of postoperative atrial fibrillation/atrial flutter after open heart surgery.\" (rank 1, sources: pubmed,semantic_scholar)",
+            "○ BONUS \"rate control\" found",
+            "○ BONUS \"metoprolol\" found",
+            "○ BONUS \"diltiazem\" found"
+          ]
+        },
+        {
+          "dimension": "precision",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "10/10 top-10 results are relevant",
+            "  #1 ✓ \"Esmolol versus diltiazem in the treatment of postoperative atrial fibrillation/a...\" [II, pubmed,semantic_scholar]",
+            "  #2 ✓ \"&#x3b2;-Blockers versus calcium channel blockers for acute rate control of atria...\" [I, pubmed,semantic_scholar,pubmed_expanded]",
+            "  #3 ✓ \"Comparison of diltiazem and metoprolol for atrial fibrillation with rapid ventri...\" [I, pubmed,pubmed_expanded]",
+            "  #4 ✓ \"Intravenous Metoprolol Versus Diltiazem for Rate Control in Atrial Fibrillation....\" [III, pubmed,semantic_scholar,pubmed_expanded]",
+            "  #5 ✓ \"Acute rate control with metoprolol versus diltiazem in atrial fibrillation with ...\" [III, pubmed,pubmed_expanded]",
+            "  #6 ✓ \"Comparative persistence on &#x3b2;-blockers versus calcium channel blockers for ...\" [III, pubmed,semantic_scholar]",
+            "  #7 ✓ \"Safety and efficiency of calcium channel blockers versus beta-blockers for rate ...\" [V, semantic_scholar]",
+            "  #8 ✓ \"Rate control in atrial fibrillation, calcium channel blockers versus beta-blocke...\" [V, semantic_scholar]",
+            "  #9 ✓ \"Intravenous Amiodarone versus Digoxin in Atrial Fibrillation Rate Control; a Cli...\" [V, pubmed,semantic_scholar]",
+            "  #10 ✓ \"Abstract 4366862: Direct To Catheter Ablation and Pre-Ablation Rate Control Have...\" [V, semantic_scholar]"
+          ]
+        },
+        {
+          "dimension": "ranking",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ Top results should be about rate control in AF: Top-10: 10/10 on-topic (100%) vs threshold 70% → PASS"
+          ]
+        },
+        {
+          "dimension": "metadata",
+          "score": 8.4,
+          "maxScore": 10,
+          "details": [
+            "all_have_doi: 41/44 (93%) — threshold 80% → PASS",
+            "study_type_not_other: 30/44 (68%) — threshold 40% → PASS",
+            "year_nonzero: 44/44 (100%) — threshold 95% → PASS",
+            "has_abstract: 33/44 (75%) — threshold 60% → PASS"
+          ]
+        },
+        {
+          "dimension": "dedup",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ \"efficacy and safety of intravenous diltiazem versus metoprolol\": 1 occurrence(s) ≤ 1"
+          ]
+        }
+      ],
+      "patchesApplied": [
+        "pubmed-sort-relevance",
+        "quality-ranker",
+        "journal-quality-enrichment",
+        "study-type-detector",
+        "fuzzy-dedup",
+        "query-expansion"
+      ],
+      "regressionResults": "",
+      "perSourceCounts": {
+        "pubmed": 10,
+        "semanticScholar": 20,
+        "openAlex": 20
+      },
+      "fusedCount": 44,
+      "dedupedCount": 44,
+      "timestamp": "2026-06-27T07:34:34.907Z"
+    },
+    {
+      "id": "ralph-sr-008",
+      "name": "Indian medical context — rheumatic heart disease in India",
+      "phase": 2,
+      "scores": {
+        "recall": 10,
+        "precision": 10,
+        "ranking": 10,
+        "metadata": 8.8,
+        "dedup": 10
+      },
+      "weighted": 9.8,
+      "pass": true,
+      "scoreDetails": [
+        {
+          "dimension": "recall",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ FOUND \"rheumatic heart disease\" → \"Digoxin in rheumatic heart disease: Rationale and design of a multicenter, placebo-controlled double-blind randomized controlled trial (Dig-RHD trial).\" (rank 2, sources: pubmed)",
+            "✓ FOUND \"india\" → \"Prevalence and outcome of subclinical rheumatic heart disease in India: The RHEUMATIC (Rheumatic Heart Echo Utilisation and Monitoring Actuarial Trends in Indian Children) study\" (rank 3, sources: openalex)",
+            "○ BONUS \"prevalence\" found",
+            "○ BONUS \"global burden\" found"
+          ]
+        },
+        {
+          "dimension": "precision",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "10/10 top-10 results are relevant",
+            "  #1 ✓ \"Clinico-Biochemical Profiles and Outcomes in Acute Decompensated Heart Failure....\" [III, pubmed]",
+            "  #2 ✓ \"Digoxin in rheumatic heart disease: Rationale and design of a multicenter, place...\" [II, pubmed]",
+            "  #3 ✓ \"Prevalence and outcome of subclinical rheumatic heart disease in India: The RHEU...\" [V, openalex]",
+            "  #4 ✓ \"Epidemiology of rheumatic fever and rheumatic heart disease in a rural community...\" [III, openalex]",
+            "  #5 ✓ \"A Comparative Study of Risk Factors across Young and Old Acute Ischemic Strokes:...\" [III, pubmed]",
+            "  #6 ✓ \"Epidemiological survey of rheumatic heart disease among school children in the S...\" [V, openalex]",
+            "  #7 ✓ \"Prevalence survey for chronic rheumatic heart disease and rheumatic fever in nor...\" [V, openalex]",
+            "  #8 ✓ \"Rheumatic heart disease in India...\" [III, openalex]",
+            "  #9 ✓ \"Sequelae of the initial attack of acute rheumatic fever in children from north I...\" [V, openalex]",
+            "  #10 ✓ \"Heart Diseases in Pregnancy: A Comprehensive Analysis of Maternal and Neonatal O...\" [III, pubmed]"
+          ]
+        },
+        {
+          "dimension": "ranking",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ Majority of top 10 should be on-topic (RHD-related): Top-10: 10/10 on-topic (100%) vs threshold 60% → PASS"
+          ]
+        },
+        {
+          "dimension": "metadata",
+          "score": 8.8,
+          "maxScore": 10,
+          "details": [
+            "all_have_doi: 34/40 (85%) — threshold 70% → PASS",
+            "year_nonzero: 40/40 (100%) — threshold 95% → PASS",
+            "has_abstract: 32/40 (80%) — threshold 60% → PASS"
+          ]
+        },
+        {
+          "dimension": "dedup",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ \"clinico-biochemical profiles and outcomes in acute decompensated heart failure\": 1 occurrence(s) ≤ 1"
+          ]
+        }
+      ],
+      "patchesApplied": [
+        "pubmed-sort-relevance",
+        "quality-ranker",
+        "journal-quality-enrichment",
+        "study-type-detector",
+        "fuzzy-dedup",
+        "query-expansion"
+      ],
+      "regressionResults": "",
+      "perSourceCounts": {
+        "pubmed": 20,
+        "semanticScholar": 0,
+        "openAlex": 20
+      },
+      "fusedCount": 40,
+      "dedupedCount": 40,
+      "timestamp": "2026-06-27T07:34:34.913Z"
+    },
+    {
+      "id": "ralph-sr-009",
+      "name": "Recent evidence — GLP-1 RA cardiovascular outcomes 2024-2025",
+      "phase": 2,
+      "scores": {
+        "recall": 10,
+        "precision": 10,
+        "ranking": 10,
+        "metadata": 9.2,
+        "dedup": 10
+      },
+      "weighted": 9.9,
+      "pass": true,
+      "scoreDetails": [
+        {
+          "dimension": "recall",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ FOUND \"glp-1\" → \"Effects of GLP-1 receptor agonists on kidney and cardiovascular disease outcomes: a meta-analysis of randomised controlled trials.\" (rank 1, sources: semantic_scholar)",
+            "○ BONUS \"semaglutide\" found",
+            "○ BONUS \"tirzepatide\" found",
+            "○ BONUS \"cardiovascular\" found",
+            "○ BONUS \"meta-analysis\" found"
+          ]
+        },
+        {
+          "dimension": "precision",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "10/10 top-10 results are relevant",
+            "  #1 ✓ \"Effects of GLP-1 receptor agonists on kidney and cardiovascular disease outcomes...\" [I, semantic_scholar]",
+            "  #2 ✓ \"GLP-1 Receptor Agonists as Treatment of Nondiabetic Ischemic Stroke: A Systemati...\" [I, pubmed]",
+            "  #3 ✓ \"Tirzepatide for adults living with obesity....\" [I, pubmed]",
+            "  #4 ✓ \"Liraglutide for adults living with obesity....\" [I, pubmed]",
+            "  #5 ✓ \"Efficacy and safety of glucagon-like peptide 1 receptor agonists across all heal...\" [I, pubmed]",
+            "  #6 ✓ \"Semaglutide for adults living with obesity....\" [I, pubmed]",
+            "  #7 ✓ \"A real-world observational study comparing cardiovascular outcomes in patients w...\" [III, semantic_scholar]",
+            "  #8 ✓ \"Prognostic benefit of glucagon-like peptide-1 receptor agonists addition to sodi...\" [III, semantic_scholar]",
+            "  #9 ✓ \"DIVINE-pilot trial: a phase 2 multicentre, randomised pilot trial of pharmacothe...\" [II, pubmed]",
+            "  #10 ✓ \"Effect of GLP-1RA on coronary progression and cardiovascular outcomes in type 2 ...\" [III, semantic_scholar]"
+          ]
+        },
+        {
+          "dimension": "ranking",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ High evidence (I-II) should outnumber low evidence (IV-V) in top 10: Top-10: High evidence (I-II)=7 vs Low (IV-V)=0 → PASS"
+          ]
+        },
+        {
+          "dimension": "metadata",
+          "score": 9.2,
+          "maxScore": 10,
+          "details": [
+            "all_have_doi: 60/60 (100%) — threshold 80% → PASS",
+            "study_type_not_other: 50/60 (83%) — threshold 40% → PASS",
+            "year_nonzero: 60/60 (100%) — threshold 95% → PASS",
+            "has_abstract: 51/60 (85%) — threshold 60% → PASS"
+          ]
+        },
+        {
+          "dimension": "dedup",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ \"glp-1 receptor agonists and sglt2 inhibitors in stable kidney\": 1 occurrence(s) ≤ 1"
+          ]
+        }
+      ],
+      "patchesApplied": [
+        "pubmed-sort-relevance",
+        "quality-ranker",
+        "journal-quality-enrichment",
+        "study-type-detector",
+        "fuzzy-dedup",
+        "query-expansion"
+      ],
+      "regressionResults": "",
+      "perSourceCounts": {
+        "pubmed": 20,
+        "semanticScholar": 20,
+        "openAlex": 20
+      },
+      "fusedCount": 60,
+      "dedupedCount": 60,
+      "timestamp": "2026-06-27T07:34:34.923Z"
+    },
+    {
+      "id": "ralph-sr-010",
+      "name": "Full pipeline integration — SGLT2i (all patches, strict criteria)",
+      "phase": 2,
+      "scores": {
+        "recall": 10,
+        "precision": 10,
+        "ranking": 10,
+        "metadata": 8.9,
+        "dedup": 10
+      },
+      "weighted": 9.8,
+      "pass": true,
+      "scoreDetails": [
+        {
+          "dimension": "recall",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ FOUND \"sglt2 inhibitors in heart failure\" → \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR-Pooled analysis.\" (rank 1, sources: pubmed,pubmed_expanded)",
+            "✓ FOUND \"empagliflozin\" → \"Effects of Empagliflozin on Right Ventricular Free-Wall Strain in Patients with Heart Failure and Reduced Ejection Fraction.\" (rank 3, sources: pubmed,pubmed_expanded)",
+            "✓ FOUND \"dapagliflozin\" → \"The sodium–glucose co‐transporter 2 inhibitor dapagliflozin improves prognosis in systolic heart failure independent of the obesity paradox\" (rank 7, sources: openalex)",
+            "○ BONUS \"meta-analysis\" found",
+            "○ BONUS \"systematic review\" found"
+          ]
+        },
+        {
+          "dimension": "precision",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "10/10 top-10 results are relevant",
+            "  #1 ✓ \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR...\" [I, pubmed,pubmed_expanded]",
+            "  #2 ✓ \"Differential cardiovascular benefits of SGLT2 inhibitors, sacubitril/valsartan, ...\" [I, pubmed,pubmed_expanded]",
+            "  #3 ✓ \"Effects of Empagliflozin on Right Ventricular Free-Wall Strain in Patients with ...\" [II, pubmed,pubmed_expanded]",
+            "  #4 ✓ \"SGLT-2 inhibitors in prevention of chemotherapy-induced cardiotoxicity: systemat...\" [I, pubmed]",
+            "  #5 ✓ \"Effect of SGLT2 inhibitors on heart failure outcomes in patients with and withou...\" [I, pubmed,pubmed_expanded]",
+            "  #6 ✓ \"EMPEROR-Preserved: SGLT2 inhibitors breakthrough in the management of heart fail...\" [II, openalex]",
+            "  #7 ✓ \"The sodium–glucose co‐transporter 2 inhibitor dapagliflozin improves prognosis i...\" [II, openalex]",
+            "  #8 ✓ \"Efficacy and Safety of Sodium-Glucose Cotransporter 2 Inhibitors (SGLT2i) in Car...\" [I, pubmed]",
+            "  #9 ✓ \"[The effect of empagliflozin on the quality of life in patients with heart failu...\" [III, pubmed,pubmed_expanded]",
+            "  #10 ✓ \"Management of Hyperglycemia in Type 2 Diabetes, 2018. A Consensus Report by the ...\" [V, openalex]"
+          ]
+        },
+        {
+          "dimension": "ranking",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ RCTs (Level II) should outnumber Level V papers in top 10: Top-10: Level II count=3 vs Level V count=1 → PASS",
+            "✓ High evidence (I-II) should outnumber low evidence (IV-V) in top 10: Top-10: High evidence (I-II)=8 vs Low (IV-V)=1 → PASS"
+          ]
+        },
+        {
+          "dimension": "metadata",
+          "score": 8.9,
+          "maxScore": 10,
+          "details": [
+            "all_have_doi: 56/56 (100%) — threshold 85% → PASS",
+            "study_type_not_other: 34/56 (61%) — threshold 50% → PASS",
+            "year_nonzero: 56/56 (100%) — threshold 95% → PASS",
+            "has_abstract: 47/56 (84%) — threshold 70% → PASS",
+            "has_authors: 56/56 (100%) — threshold 90% → PASS"
+          ]
+        },
+        {
+          "dimension": "dedup",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ \"genitourinary tract infections and sglt2 inhibitors\": 1 occurrence(s) ≤ 1",
+            "✓ \"effects of empagliflozin on right ventricular\": 1 occurrence(s) ≤ 1"
+          ]
+        }
+      ],
+      "patchesApplied": [
+        "pubmed-sort-relevance",
+        "quality-ranker",
+        "journal-quality-enrichment",
+        "study-type-detector",
+        "fuzzy-dedup",
+        "query-expansion",
+        "full-pipeline-integration"
+      ],
+      "regressionResults": "",
+      "perSourceCounts": {
+        "pubmed": 20,
+        "semanticScholar": 3,
+        "openAlex": 20
+      },
+      "fusedCount": 56,
+      "dedupedCount": 56,
+      "timestamp": "2026-06-27T07:34:34.931Z"
+    },
+    {
+      "id": "ralph-sr-011",
+      "name": "Synthesis — Summary mode on SGLT2i papers",
+      "phase": 3,
+      "scores": {
+        "recall": 10,
+        "precision": 10,
+        "ranking": 10,
+        "metadata": 9.2,
+        "dedup": 10
+      },
+      "weighted": 9.9,
+      "pass": true,
+      "scoreDetails": [
+        {
+          "dimension": "recall",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ FOUND \"sglt2\" → \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR-Pooled analysis.\" (rank 1, sources: pubmed,pubmed_expanded)",
+            "✓ FOUND \"heart failure\" → \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR-Pooled analysis.\" (rank 1, sources: pubmed,pubmed_expanded)",
+            "○ BONUS \"meta-analysis\" found"
+          ]
+        },
+        {
+          "dimension": "precision",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "10/10 top-10 results are relevant",
+            "  #1 ✓ \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR...\" [I, pubmed,pubmed_expanded]",
+            "  #2 ✓ \"Differential cardiovascular benefits of SGLT2 inhibitors, sacubitril/valsartan, ...\" [I, pubmed,pubmed_expanded]",
+            "  #3 ✓ \"Effects of Empagliflozin on Right Ventricular Free-Wall Strain in Patients with ...\" [II, pubmed,pubmed_expanded]",
+            "  #4 ✓ \"SGLT-2 inhibitors in prevention of chemotherapy-induced cardiotoxicity: systemat...\" [I, pubmed]",
+            "  #5 ✓ \"Effect of SGLT2 inhibitors on heart failure outcomes in patients with and withou...\" [I, pubmed,pubmed_expanded]",
+            "  #6 ✓ \"EMPEROR-Preserved: SGLT2 inhibitors breakthrough in the management of heart fail...\" [II, openalex]",
+            "  #7 ✓ \"The sodium–glucose co‐transporter 2 inhibitor dapagliflozin improves prognosis i...\" [II, openalex]",
+            "  #8 ✓ \"Efficacy and Safety of Sodium-Glucose Cotransporter 2 Inhibitors (SGLT2i) in Car...\" [I, pubmed]",
+            "  #9 ✓ \"[The effect of empagliflozin on the quality of life in patients with heart failu...\" [III, pubmed,pubmed_expanded]",
+            "  #10 ✓ \"Management of Hyperglycemia in Type 2 Diabetes, 2018. A Consensus Report by the ...\" [V, openalex]"
+          ]
+        },
+        {
+          "dimension": "ranking",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ High evidence (I-II) should outnumber low evidence (IV-V) in top 10: Top-10: High evidence (I-II)=8 vs Low (IV-V)=1 → PASS"
+          ]
+        },
+        {
+          "dimension": "metadata",
+          "score": 9.2,
+          "maxScore": 10,
+          "details": [
+            "all_have_doi: 56/56 (100%) — threshold 85% → PASS",
+            "has_abstract: 47/56 (84%) — threshold 70% → PASS"
+          ]
+        },
+        {
+          "dimension": "dedup",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ \"genitourinary tract infections and sglt2 inhibitors\": 1 occurrence(s) ≤ 1",
+            "✓ \"sglt2 inhibitors and mechanisms of cardiovascular benefit\": 1 occurrence(s) ≤ 1"
+          ]
+        }
+      ],
+      "patchesApplied": [
+        "pubmed-sort-relevance",
+        "quality-ranker",
+        "journal-quality-enrichment",
+        "study-type-detector",
+        "fuzzy-dedup",
+        "query-expansion",
+        "query-relevance-ranking",
+        "clinical-trials-integration",
+        "synthesis-verification",
+        "pico-extraction"
+      ],
+      "regressionResults": "",
+      "perSourceCounts": {
+        "pubmed": 20,
+        "semanticScholar": 3,
+        "openAlex": 20
+      },
+      "fusedCount": 56,
+      "dedupedCount": 56,
+      "timestamp": "2026-06-27T07:34:34.942Z"
+    },
+    {
+      "id": "ralph-sr-012",
+      "name": "Synthesis — Gaps mode on SGLT2i papers",
+      "phase": 3,
+      "scores": {
+        "recall": 10,
+        "precision": 10,
+        "ranking": 10,
+        "metadata": 9.2,
+        "dedup": 10
+      },
+      "weighted": 9.9,
+      "pass": true,
+      "scoreDetails": [
+        {
+          "dimension": "recall",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ FOUND \"sglt2\" → \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR-Pooled analysis.\" (rank 1, sources: pubmed,pubmed_expanded)",
+            "✓ FOUND \"heart failure\" → \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR-Pooled analysis.\" (rank 1, sources: pubmed,pubmed_expanded)"
+          ]
+        },
+        {
+          "dimension": "precision",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "10/10 top-10 results are relevant",
+            "  #1 ✓ \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR...\" [I, pubmed,pubmed_expanded]",
+            "  #2 ✓ \"Differential cardiovascular benefits of SGLT2 inhibitors, sacubitril/valsartan, ...\" [I, pubmed,pubmed_expanded]",
+            "  #3 ✓ \"Effects of Empagliflozin on Right Ventricular Free-Wall Strain in Patients with ...\" [II, pubmed,pubmed_expanded]",
+            "  #4 ✓ \"SGLT-2 inhibitors in prevention of chemotherapy-induced cardiotoxicity: systemat...\" [I, pubmed]",
+            "  #5 ✓ \"Effect of SGLT2 inhibitors on heart failure outcomes in patients with and withou...\" [I, pubmed,pubmed_expanded]",
+            "  #6 ✓ \"EMPEROR-Preserved: SGLT2 inhibitors breakthrough in the management of heart fail...\" [II, openalex]",
+            "  #7 ✓ \"The sodium–glucose co‐transporter 2 inhibitor dapagliflozin improves prognosis i...\" [II, openalex]",
+            "  #8 ✓ \"Efficacy and Safety of Sodium-Glucose Cotransporter 2 Inhibitors (SGLT2i) in Car...\" [I, pubmed]",
+            "  #9 ✓ \"[The effect of empagliflozin on the quality of life in patients with heart failu...\" [III, pubmed,pubmed_expanded]",
+            "  #10 ✓ \"Management of Hyperglycemia in Type 2 Diabetes, 2018. A Consensus Report by the ...\" [V, openalex]"
+          ]
+        },
+        {
+          "dimension": "ranking",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ High evidence (I-II) should outnumber low evidence (IV-V) in top 10: Top-10: High evidence (I-II)=8 vs Low (IV-V)=1 → PASS"
+          ]
+        },
+        {
+          "dimension": "metadata",
+          "score": 9.2,
+          "maxScore": 10,
+          "details": [
+            "all_have_doi: 56/56 (100%) — threshold 85% → PASS",
+            "has_abstract: 47/56 (84%) — threshold 70% → PASS"
+          ]
+        },
+        {
+          "dimension": "dedup",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ \"differential cardiovascular benefits of sglt2 inhibitors\": 1 occurrence(s) ≤ 1"
+          ]
+        }
+      ],
+      "patchesApplied": [
+        "pubmed-sort-relevance",
+        "quality-ranker",
+        "journal-quality-enrichment",
+        "study-type-detector",
+        "fuzzy-dedup",
+        "query-expansion",
+        "query-relevance-ranking",
+        "clinical-trials-integration",
+        "synthesis-verification",
+        "pico-extraction"
+      ],
+      "regressionResults": "",
+      "perSourceCounts": {
+        "pubmed": 20,
+        "semanticScholar": 3,
+        "openAlex": 20
+      },
+      "fusedCount": 56,
+      "dedupedCount": 56,
+      "timestamp": "2026-06-27T07:34:34.950Z"
+    },
+    {
+      "id": "ralph-sr-013",
+      "name": "PICO extraction on SGLT2i search results",
+      "phase": 3,
+      "scores": {
+        "recall": 10,
+        "precision": 10,
+        "ranking": 10,
+        "metadata": 8.2,
+        "dedup": 10
+      },
+      "weighted": 9.7,
+      "pass": true,
+      "scoreDetails": [
+        {
+          "dimension": "recall",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ FOUND \"sglt2\" → \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR-Pooled analysis.\" (rank 1, sources: pubmed,pubmed_expanded)",
+            "✓ FOUND \"heart failure\" → \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR-Pooled analysis.\" (rank 1, sources: pubmed,pubmed_expanded)"
+          ]
+        },
+        {
+          "dimension": "precision",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "10/10 top-10 results are relevant",
+            "  #1 ✓ \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR...\" [I, pubmed,pubmed_expanded]",
+            "  #2 ✓ \"Differential cardiovascular benefits of SGLT2 inhibitors, sacubitril/valsartan, ...\" [I, pubmed,pubmed_expanded]",
+            "  #3 ✓ \"Effects of Empagliflozin on Right Ventricular Free-Wall Strain in Patients with ...\" [II, pubmed,pubmed_expanded]",
+            "  #4 ✓ \"SGLT-2 inhibitors in prevention of chemotherapy-induced cardiotoxicity: systemat...\" [I, pubmed]",
+            "  #5 ✓ \"Effect of SGLT2 inhibitors on heart failure outcomes in patients with and withou...\" [I, pubmed,pubmed_expanded]",
+            "  #6 ✓ \"EMPEROR-Preserved: SGLT2 inhibitors breakthrough in the management of heart fail...\" [II, openalex]",
+            "  #7 ✓ \"The sodium–glucose co‐transporter 2 inhibitor dapagliflozin improves prognosis i...\" [II, openalex]",
+            "  #8 ✓ \"Efficacy and Safety of Sodium-Glucose Cotransporter 2 Inhibitors (SGLT2i) in Car...\" [I, pubmed]",
+            "  #9 ✓ \"[The effect of empagliflozin on the quality of life in patients with heart failu...\" [III, pubmed,pubmed_expanded]",
+            "  #10 ✓ \"Management of Hyperglycemia in Type 2 Diabetes, 2018. A Consensus Report by the ...\" [V, openalex]"
+          ]
+        },
+        {
+          "dimension": "ranking",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ High evidence (I-II) should outnumber low evidence (IV-V) in top 10: Top-10: High evidence (I-II)=8 vs Low (IV-V)=1 → PASS"
+          ]
+        },
+        {
+          "dimension": "metadata",
+          "score": 8.2,
+          "maxScore": 10,
+          "details": [
+            "all_have_doi: 56/56 (100%) — threshold 85% → PASS",
+            "has_abstract: 47/56 (84%) — threshold 70% → PASS",
+            "study_type_not_other: 34/56 (61%) — threshold 50% → PASS"
+          ]
+        },
+        {
+          "dimension": "dedup",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ \"genitourinary tract infections and sglt2 inhibitors\": 1 occurrence(s) ≤ 1",
+            "✓ \"differential cardiovascular benefits of sglt2 inhibitors\": 1 occurrence(s) ≤ 1"
+          ]
+        }
+      ],
+      "patchesApplied": [
+        "pubmed-sort-relevance",
+        "quality-ranker",
+        "journal-quality-enrichment",
+        "study-type-detector",
+        "fuzzy-dedup",
+        "query-expansion",
+        "query-relevance-ranking",
+        "clinical-trials-integration",
+        "synthesis-verification",
+        "pico-extraction"
+      ],
+      "regressionResults": "",
+      "perSourceCounts": {
+        "pubmed": 20,
+        "semanticScholar": 3,
+        "openAlex": 20
+      },
+      "fusedCount": 56,
+      "dedupedCount": 56,
+      "timestamp": "2026-06-27T07:34:34.961Z"
+    },
+    {
+      "id": "ralph-sr-014",
+      "name": "ClinicalTrials.gov integration — SGLT2i in heart failure",
+      "phase": 3,
+      "scores": {
+        "recall": 10,
+        "precision": 10,
+        "ranking": 10,
+        "metadata": 8.7,
+        "dedup": 10
+      },
+      "weighted": 9.8,
+      "pass": true,
+      "scoreDetails": [
+        {
+          "dimension": "recall",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ FOUND \"sglt2\" → \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR-Pooled analysis.\" (rank 1, sources: pubmed,pubmed_expanded)",
+            "✓ FOUND \"heart failure\" → \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR-Pooled analysis.\" (rank 1, sources: pubmed,pubmed_expanded)"
+          ]
+        },
+        {
+          "dimension": "precision",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "10/10 top-10 results are relevant",
+            "  #1 ✓ \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR...\" [I, pubmed,pubmed_expanded]",
+            "  #2 ✓ \"Differential cardiovascular benefits of SGLT2 inhibitors, sacubitril/valsartan, ...\" [I, pubmed,pubmed_expanded]",
+            "  #3 ✓ \"Effects of Empagliflozin on Right Ventricular Free-Wall Strain in Patients with ...\" [II, pubmed,pubmed_expanded]",
+            "  #4 ✓ \"SGLT-2 inhibitors in prevention of chemotherapy-induced cardiotoxicity: systemat...\" [I, pubmed]",
+            "  #5 ✓ \"Effect of SGLT2 inhibitors on heart failure outcomes in patients with and withou...\" [I, pubmed,pubmed_expanded]",
+            "  #6 ✓ \"EMPEROR-Preserved: SGLT2 inhibitors breakthrough in the management of heart fail...\" [II, openalex]",
+            "  #7 ✓ \"The sodium–glucose co‐transporter 2 inhibitor dapagliflozin improves prognosis i...\" [II, openalex]",
+            "  #8 ✓ \"Efficacy and Safety of Sodium-Glucose Cotransporter 2 Inhibitors (SGLT2i) in Car...\" [I, pubmed]",
+            "  #9 ✓ \"[The effect of empagliflozin on the quality of life in patients with heart failu...\" [III, pubmed,pubmed_expanded]",
+            "  #10 ✓ \"Management of Hyperglycemia in Type 2 Diabetes, 2018. A Consensus Report by the ...\" [V, openalex]"
+          ]
+        },
+        {
+          "dimension": "ranking",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ Results should include clinical trial registrations: Clinical trials found: 20 (need ≥3) → PASS",
+            "✓ Clinical trials should have proper NCT ID and metadata: Trials: 20, with status: 20, with phase: 9 (field fill 73%) → PASS",
+            "✓ High evidence (I-II) should outnumber low evidence (IV-V) in top 10: Top-10: High evidence (I-II)=8 vs Low (IV-V)=1 → PASS"
+          ]
+        },
+        {
+          "dimension": "metadata",
+          "score": 8.7,
+          "maxScore": 10,
+          "details": [
+            "all_have_doi: 56/76 (74%) — threshold 50% → PASS",
+            "year_nonzero: 76/76 (100%) — threshold 85% → PASS"
+          ]
+        },
+        {
+          "dimension": "dedup",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ \"investigation of biomarker response to sglt2 inhibition\": 1 occurrence(s) ≤ 1"
+          ]
+        }
+      ],
+      "patchesApplied": [
+        "pubmed-sort-relevance",
+        "quality-ranker",
+        "journal-quality-enrichment",
+        "study-type-detector",
+        "fuzzy-dedup",
+        "query-expansion",
+        "query-relevance-ranking",
+        "clinical-trials-integration",
+        "synthesis-verification",
+        "pico-extraction"
+      ],
+      "regressionResults": "",
+      "perSourceCounts": {
+        "pubmed": 20,
+        "semanticScholar": 3,
+        "openAlex": 20
+      },
+      "fusedCount": 76,
+      "dedupedCount": 76,
+      "timestamp": "2026-06-27T07:34:34.973Z"
+    },
+    {
+      "id": "ralph-sr-015",
+      "name": "Elicit-parity benchmark — 5 diverse queries",
+      "phase": 3,
+      "scores": {
+        "recall": 10,
+        "precision": 10,
+        "ranking": 10,
+        "metadata": 8.6,
+        "dedup": 10
+      },
+      "weighted": 9.8,
+      "pass": true,
+      "scoreDetails": [
+        {
+          "dimension": "recall",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ FOUND \"sglt2 inhibitors in heart failure\" → \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR-Pooled analysis.\" (rank 1, sources: pubmed,pubmed_expanded)",
+            "✓ FOUND \"empagliflozin\" → \"Effects of Empagliflozin on Right Ventricular Free-Wall Strain in Patients with Heart Failure and Reduced Ejection Fraction.\" (rank 3, sources: pubmed,pubmed_expanded)",
+            "○ BONUS \"meta-analysis\" found",
+            "○ BONUS \"systematic review\" found"
+          ]
+        },
+        {
+          "dimension": "precision",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "10/10 top-10 results are relevant",
+            "  #1 ✓ \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR...\" [I, pubmed,pubmed_expanded]",
+            "  #2 ✓ \"Differential cardiovascular benefits of SGLT2 inhibitors, sacubitril/valsartan, ...\" [I, pubmed,pubmed_expanded]",
+            "  #3 ✓ \"Effects of Empagliflozin on Right Ventricular Free-Wall Strain in Patients with ...\" [II, pubmed,pubmed_expanded]",
+            "  #4 ✓ \"SGLT-2 inhibitors in prevention of chemotherapy-induced cardiotoxicity: systemat...\" [I, pubmed]",
+            "  #5 ✓ \"Effect of SGLT2 inhibitors on heart failure outcomes in patients with and withou...\" [I, pubmed,pubmed_expanded]",
+            "  #6 ✓ \"EMPEROR-Preserved: SGLT2 inhibitors breakthrough in the management of heart fail...\" [II, openalex]",
+            "  #7 ✓ \"The sodium–glucose co‐transporter 2 inhibitor dapagliflozin improves prognosis i...\" [II, openalex]",
+            "  #8 ✓ \"Efficacy and Safety of Sodium-Glucose Cotransporter 2 Inhibitors (SGLT2i) in Car...\" [I, pubmed]",
+            "  #9 ✓ \"[The effect of empagliflozin on the quality of life in patients with heart failu...\" [III, pubmed,pubmed_expanded]",
+            "  #10 ✓ \"Management of Hyperglycemia in Type 2 Diabetes, 2018. A Consensus Report by the ...\" [V, openalex]"
+          ]
+        },
+        {
+          "dimension": "ranking",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ High evidence (I-II) should outnumber low evidence (IV-V) in top 10: Top-10: High evidence (I-II)=8 vs Low (IV-V)=1 → PASS"
+          ]
+        },
+        {
+          "dimension": "metadata",
+          "score": 8.6,
+          "maxScore": 10,
+          "details": [
+            "all_have_doi: 56/56 (100%) — threshold 85% → PASS",
+            "study_type_not_other: 34/56 (61%) — threshold 50% → PASS",
+            "has_abstract: 47/56 (84%) — threshold 70% → PASS",
+            "has_authors: 56/56 (100%) — threshold 90% → PASS"
+          ]
+        },
+        {
+          "dimension": "dedup",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ \"genitourinary tract infections and sglt2 inhibitors\": 1 occurrence(s) ≤ 1",
+            "✓ \"sglt2 inhibitors and mechanisms of cardiovascular benefit\": 1 occurrence(s) ≤ 1"
+          ]
+        }
+      ],
+      "patchesApplied": [
+        "pubmed-sort-relevance",
+        "quality-ranker",
+        "journal-quality-enrichment",
+        "study-type-detector",
+        "fuzzy-dedup",
+        "query-expansion",
+        "query-relevance-ranking",
+        "clinical-trials-integration",
+        "synthesis-verification",
+        "pico-extraction",
+        "elicit-parity-benchmark"
+      ],
+      "regressionResults": "",
+      "perSourceCounts": {
+        "pubmed": 20,
+        "semanticScholar": 3,
+        "openAlex": 20
+      },
+      "fusedCount": 56,
+      "dedupedCount": 56,
+      "timestamp": "2026-06-27T07:34:34.982Z"
+    },
+    {
+      "id": "ralph-sr-015b",
+      "name": "Benchmark — AI ECG interpretation accuracy",
+      "phase": 3,
+      "scores": {
+        "recall": 10,
+        "precision": 10,
+        "ranking": 10,
+        "metadata": 9.1,
+        "dedup": 10
+      },
+      "weighted": 9.9,
+      "pass": true,
+      "scoreDetails": [
+        {
+          "dimension": "recall",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ FOUND \"artificial intelligence\" → \"Diagnostic accuracy of a smartphone application for artificial intelligence-based interpretation of 12-lead ECG in primary care (AMSTELHEART-1)\" (rank 1, sources: semantic_scholar,openalex)",
+            "○ BONUS \"ecg\" found",
+            "○ BONUS \"electrocardiogram\" found",
+            "○ BONUS \"deep learning\" found"
+          ]
+        },
+        {
+          "dimension": "precision",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "10/10 top-10 results are relevant",
+            "  #1 ✓ \"Diagnostic accuracy of a smartphone application for artificial intelligence-base...\" [V, semantic_scholar,openalex]",
+            "  #2 ✓ \"A Talk with ChatGPT: The Role of Artificial Intelligence in Shaping the Future o...\" [V, semantic_scholar,openalex]",
+            "  #3 ✓ \"An artificial intelligence model for electrocardiogram detection of occlusion my...\" [III, pubmed]",
+            "  #4 ✓ \"ECG Interpretation: Clinical Relevance, Challenges, and Advances...\" [V, openalex]",
+            "  #5 ✓ \"Advances in machine and deep learning for ECG beat classification: a systematic ...\" [I, pubmed]",
+            "  #6 ✓ \"The opportunities and pitfalls of ChatGPT in clinical and translational medicine...\" [V, openalex]",
+            "  #7 ✓ \"A joint CNN-Bi-LSTM-transformer architecture with SHAP explanations for multi-la...\" [V, pubmed]",
+            "  #8 ✓ \"MM-GradCAM: an improved multimodal GradCAM method with 1D and 2D ECG data for de...\" [V, pubmed]",
+            "  #9 ✓ \"Detecting Digoxin Toxicity by Artificial Intelligence-Assisted Electrocardiograp...\" [V, openalex]",
+            "  #10 ✓ \"Performance of an artificial intelligence-powered smartphone application in the ...\" [V, semantic_scholar]"
+          ]
+        },
+        {
+          "dimension": "ranking",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ Majority of top 10 should be on-topic (AI + ECG related): Top-10: 10/10 on-topic (100%) vs threshold 60% → PASS"
+          ]
+        },
+        {
+          "dimension": "metadata",
+          "score": 9.1,
+          "maxScore": 10,
+          "details": [
+            "all_have_doi: 58/58 (100%) — threshold 80% → PASS",
+            "has_abstract: 47/58 (81%) — threshold 60% → PASS"
+          ]
+        },
+        {
+          "dimension": "dedup",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ \"current and future use of artificial intelligence in electrocardiography\": 1 occurrence(s) ≤ 1"
+          ]
+        }
+      ],
+      "patchesApplied": [
+        "pubmed-sort-relevance",
+        "quality-ranker",
+        "journal-quality-enrichment",
+        "study-type-detector",
+        "fuzzy-dedup",
+        "query-expansion",
+        "query-relevance-ranking",
+        "clinical-trials-integration",
+        "synthesis-verification",
+        "pico-extraction"
+      ],
+      "regressionResults": "",
+      "perSourceCounts": {
+        "pubmed": 20,
+        "semanticScholar": 20,
+        "openAlex": 20
+      },
+      "fusedCount": 58,
+      "dedupedCount": 58,
+      "timestamp": "2026-06-27T07:34:34.990Z"
+    },
+    {
+      "id": "ralph-sr-015c",
+      "name": "Benchmark — Colchicine post-MI anti-inflammatory",
+      "phase": 3,
+      "scores": {
+        "recall": 10,
+        "precision": 10,
+        "ranking": 10,
+        "metadata": 9.1,
+        "dedup": 10
+      },
+      "weighted": 9.9,
+      "pass": true,
+      "scoreDetails": [
+        {
+          "dimension": "recall",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ FOUND \"colchicine\" → \"The effect of colchicine on myocardial infarction: An updated systematic review and meta-analysis of randomized controlled trials.\" (rank 1, sources: pubmed,semantic_scholar)",
+            "○ BONUS \"myocardial infarction\" found",
+            "○ BONUS \"anti-inflammatory\" found",
+            "○ BONUS \"cardiovascular\" found"
+          ]
+        },
+        {
+          "dimension": "precision",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "10/10 top-10 results are relevant",
+            "  #1 ✓ \"The effect of colchicine on myocardial infarction: An updated systematic review ...\" [I, pubmed,semantic_scholar]",
+            "  #2 ✓ \"Assessing the Impact of Colchicine on Coronary Plaque Phenotype After Myocardial...\" [II, pubmed,semantic_scholar]",
+            "  #3 ✓ \"Optical coherence tomography assessment of the impact of colchicine on non-culpr...\" [II, pubmed]",
+            "  #4 ✓ \"Inflammation in Coronary Atherosclerosis and Its Therapeutic Implications....\" [V, pubmed,openalex]",
+            "  #5 ✓ \"22 Low dose colchicine post myocardial infarction-LoDoCo MI...\" [II, semantic_scholar]",
+            "  #6 ✓ \"Colchicine for prevention of post-operative atrial fibrillation: Meta-analysis o...\" [I, semantic_scholar]",
+            "  #7 ✓ \"Effects of Acute Colchicine Administration Prior to Percutaneous Coronary Interv...\" [II, semantic_scholar]",
+            "  #8 ✓ \"Low-Dose Colchicine in Patients With Type 2 Diabetes With Recent Myocardial Infa...\" [V, pubmed,semantic_scholar]",
+            "  #9 ✓ \"Colchicine to Prevent Periprocedural Myocardial Injury in Percutaneous Coronary ...\" [II, semantic_scholar]",
+            "  #10 ✓ \"Colchicine to reduce coronavirus disease-19-related inflammation and cardiovascu...\" [II, semantic_scholar]"
+          ]
+        },
+        {
+          "dimension": "ranking",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ Majority of top 10 should be on-topic (colchicine + cardio): Top-10: 10/10 on-topic (100%) vs threshold 60% → PASS"
+          ]
+        },
+        {
+          "dimension": "metadata",
+          "score": 9.1,
+          "maxScore": 10,
+          "details": [
+            "all_have_doi: 44/44 (100%) — threshold 80% → PASS",
+            "has_abstract: 36/44 (82%) — threshold 60% → PASS"
+          ]
+        },
+        {
+          "dimension": "dedup",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ \"low-dose colchicine in patients with type 2 diabetes\": 1 occurrence(s) ≤ 1"
+          ]
+        }
+      ],
+      "patchesApplied": [
+        "pubmed-sort-relevance",
+        "quality-ranker",
+        "journal-quality-enrichment",
+        "study-type-detector",
+        "fuzzy-dedup",
+        "query-expansion",
+        "query-relevance-ranking",
+        "clinical-trials-integration",
+        "synthesis-verification",
+        "pico-extraction"
+      ],
+      "regressionResults": "",
+      "perSourceCounts": {
+        "pubmed": 9,
+        "semanticScholar": 20,
+        "openAlex": 20
+      },
+      "fusedCount": 44,
+      "dedupedCount": 44,
+      "timestamp": "2026-06-27T07:34:34.996Z"
+    },
+    {
+      "id": "ralph-sr-015d",
+      "name": "Benchmark — Gut microbiome atrial fibrillation",
+      "phase": 3,
+      "scores": {
+        "recall": 10,
+        "precision": 10,
+        "ranking": 10,
+        "metadata": 9.9,
+        "dedup": 10
+      },
+      "weighted": 10,
+      "pass": true,
+      "scoreDetails": [
+        {
+          "dimension": "recall",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ FOUND \"gut microbi\" → \"Gut microbiome and atrial fibrillation: mechanistic insights metabolites and comorbidities. Systematic review.\" (rank 1, sources: pubmed,semantic_scholar,openalex)",
+            "✓ FOUND \"atrial fibrillation\" → \"Gut microbiome and atrial fibrillation: mechanistic insights metabolites and comorbidities. Systematic review.\" (rank 1, sources: pubmed,semantic_scholar,openalex)"
+          ]
+        },
+        {
+          "dimension": "precision",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "10/10 top-10 results are relevant",
+            "  #1 ✓ \"Gut microbiome and atrial fibrillation: mechanistic insights metabolites and com...\" [I, pubmed,semantic_scholar,openalex]",
+            "  #2 ✓ \"Factors of Risk in the Development of Coronary Heart Disease—Six-Year Follow-up ...\" [I, openalex]",
+            "  #3 ✓ \"Gut microbiome and atrial fibrillation—results from a large population-based stu...\" [III, semantic_scholar,openalex]",
+            "  #4 ✓ \"Shifts in gut microbiome and metabolome are associated with risk of recurrent at...\" [V, semantic_scholar,openalex]",
+            "  #5 ✓ \"Disordered gut microbiota and alterations in metabolic patterns are associated w...\" [V, semantic_scholar,openalex]",
+            "  #6 ✓ \"Metagenomic data-mining reveals enrichment of trimethylamine-N-oxide synthesis i...\" [V, semantic_scholar,openalex]",
+            "  #7 ✓ \"Trimethylamine N-oxide in cardiovascular disease: Pathophysiology and the potent...\" [V, pubmed,openalex]",
+            "  #8 ✓ \"Roles of gut microbiota in atrial fibrillation: insights from Mendelian randomiz...\" [III, semantic_scholar]",
+            "  #9 ✓ \"Hypomagnesemia and Cardiovascular Risk in Type 2 Diabetes...\" [V, openalex]",
+            "  #10 ✓ \"Impact of gut microbiome on atrial fibrillation: Mechanistic insights and future...\" [V, pubmed,semantic_scholar,openalex]"
+          ]
+        },
+        {
+          "dimension": "ranking",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ Majority of top 10 should be on-topic: Top-10: 10/10 on-topic (100%) vs threshold 50% → PASS"
+          ]
+        },
+        {
+          "dimension": "metadata",
+          "score": 9.9,
+          "maxScore": 10,
+          "details": [
+            "all_have_doi: 46/46 (100%) — threshold 70% → PASS",
+            "has_abstract: 45/46 (98%) — threshold 50% → PASS"
+          ]
+        },
+        {
+          "dimension": "dedup",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ \"gut microbiota-derived isovaleric acid alleviates atrial fibrillation\": 1 occurrence(s) ≤ 1"
+          ]
+        }
+      ],
+      "patchesApplied": [
+        "pubmed-sort-relevance",
+        "quality-ranker",
+        "journal-quality-enrichment",
+        "study-type-detector",
+        "fuzzy-dedup",
+        "query-expansion",
+        "query-relevance-ranking",
+        "clinical-trials-integration",
+        "synthesis-verification",
+        "pico-extraction"
+      ],
+      "regressionResults": "",
+      "perSourceCounts": {
+        "pubmed": 20,
+        "semanticScholar": 20,
+        "openAlex": 20
+      },
+      "fusedCount": 46,
+      "dedupedCount": 46,
+      "timestamp": "2026-06-27T07:34:35.002Z"
+    },
+    {
+      "id": "ralph-sr-015e",
+      "name": "Benchmark — Traditional Indian medicine cardiovascular",
+      "phase": 3,
+      "scores": {
+        "recall": 10,
+        "precision": 9,
+        "ranking": 10,
+        "metadata": 9,
+        "dedup": 10
+      },
+      "weighted": 9.7,
+      "pass": true,
+      "scoreDetails": [
+        {
+          "dimension": "recall",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ FOUND \"cardiovascular\" → \"Aerobic exercise interventions for promoting cardiovascular health and mobility after stroke: a systematic review with Bayesian network meta-analysis\" (rank 16, sources: semantic_scholar)",
+            "○ BONUS \"traditional\" found",
+            "○ BONUS \"ayurved\" not found",
+            "○ BONUS \"herbal\" found"
+          ]
+        },
+        {
+          "dimension": "precision",
+          "score": 9,
+          "maxScore": 10,
+          "details": [
+            "9/10 top-10 results are relevant",
+            "  #1 ✓ \"An updated coronary risk profile. A statement for health professionals....\" [I, openalex]",
+            "  #2 ✓ \"36th International Symposium on Intensive Care and Emergency Medicine : Brussels...\" [I, pubmed]",
+            "  #3 ✓ \"The World Bank Annual Report 2003...\" [I, openalex]",
+            "  #4 ✓ \"The World Bank Annual Report 2005...\" [I, openalex]",
+            "  #5 ✓ \"Traditional Chinese Medicine for Alzheimer's Disease: A Systematic Review and Me...\" [I, semantic_scholar]",
+            "  #6 ✓ \"Cancer Incidence, Mortality, Years of Life Lost, Years Lived With Disability, an...\" [I, pubmed]",
+            "  #7 ✓ \"Impact of bariatric surgery on gut microbiota in obese patients: A systematic re...\" [I, pubmed]",
+            "  #8 ✓ \"Combined traditional Chinese medicine and anti-hypertensive treatments for renal...\" [I, semantic_scholar]",
+            "  #9 ✓ \"Exploring plant-based alpha-glucosidase inhibitors: promising contenders for com...\" [I, pubmed]",
+            "  #10 ✗ \"Systematic review of the health benefits of physical activity and fitness in sch...\" [I, openalex] — off-topic"
+          ]
+        },
+        {
+          "dimension": "ranking",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ Majority of top 10 should be on-topic: Top-10: 9/10 on-topic (90%) vs threshold 40% → PASS"
+          ]
+        },
+        {
+          "dimension": "metadata",
+          "score": 9,
+          "maxScore": 10,
+          "details": [
+            "all_have_doi: 45/46 (98%) — threshold 60% → PASS",
+            "has_abstract: 38/46 (83%) — threshold 50% → PASS"
+          ]
+        },
+        {
+          "dimension": "dedup",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ \"clinical efficacy and safety of tulsi\": 1 occurrence(s) ≤ 1"
+          ]
+        }
+      ],
+      "patchesApplied": [
+        "pubmed-sort-relevance",
+        "quality-ranker",
+        "journal-quality-enrichment",
+        "study-type-detector",
+        "fuzzy-dedup",
+        "query-expansion",
+        "query-relevance-ranking",
+        "clinical-trials-integration",
+        "synthesis-verification",
+        "pico-extraction"
+      ],
+      "regressionResults": "",
+      "perSourceCounts": {
+        "pubmed": 6,
+        "semanticScholar": 20,
+        "openAlex": 20
+      },
+      "fusedCount": 46,
+      "dedupedCount": 46,
+      "timestamp": "2026-06-27T07:34:35.009Z"
+    },
+    {
+      "id": "ralph-sr-002",
+      "name": "Evidence-weighted ranking — SGLT2 inhibitors (with quality ranker)",
+      "phase": 1,
+      "scores": {
+        "recall": 10,
+        "precision": 10,
+        "ranking": 10,
+        "metadata": 8.6,
+        "dedup": 10
+      },
+      "weighted": 9.8,
+      "pass": true,
+      "scoreDetails": [
+        {
+          "dimension": "recall",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ FOUND \"sglt2 inhibitors in heart failure\" → \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR-Pooled analysis.\" (rank 1, sources: pubmed,pubmed_expanded)",
+            "✓ FOUND \"empagliflozin\" → \"Effects of Empagliflozin on Right Ventricular Free-Wall Strain in Patients with Heart Failure and Reduced Ejection Fraction.\" (rank 3, sources: pubmed,pubmed_expanded)",
+            "✓ FOUND \"dapagliflozin\" → \"The sodium–glucose co‐transporter 2 inhibitor dapagliflozin improves prognosis in systolic heart failure independent of the obesity paradox\" (rank 7, sources: openalex)",
+            "✓ FOUND \"cardiovascular\" → \"Differential cardiovascular benefits of SGLT2 inhibitors, sacubitril/valsartan, omecamtiv mecarbil, and vericiguat across heart failure phenotypes: a systematic review and meta-analysis.\" (rank 2, sources: pubmed,pubmed_expanded)",
+            "○ BONUS \"meta-analysis\" found"
+          ]
+        },
+        {
+          "dimension": "precision",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "10/10 top-10 results are relevant",
+            "  #1 ✓ \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR...\" [I, pubmed,pubmed_expanded]",
+            "  #2 ✓ \"Differential cardiovascular benefits of SGLT2 inhibitors, sacubitril/valsartan, ...\" [I, pubmed,pubmed_expanded]",
+            "  #3 ✓ \"Effects of Empagliflozin on Right Ventricular Free-Wall Strain in Patients with ...\" [II, pubmed,pubmed_expanded]",
+            "  #4 ✓ \"SGLT-2 inhibitors in prevention of chemotherapy-induced cardiotoxicity: systemat...\" [I, pubmed]",
+            "  #5 ✓ \"Effect of SGLT2 inhibitors on heart failure outcomes in patients with and withou...\" [I, pubmed,pubmed_expanded]",
+            "  #6 ✓ \"EMPEROR-Preserved: SGLT2 inhibitors breakthrough in the management of heart fail...\" [II, openalex]",
+            "  #7 ✓ \"The sodium–glucose co‐transporter 2 inhibitor dapagliflozin improves prognosis i...\" [II, openalex]",
+            "  #8 ✓ \"Efficacy and Safety of Sodium-Glucose Cotransporter 2 Inhibitors (SGLT2i) in Car...\" [I, pubmed]",
+            "  #9 ✓ \"[The effect of empagliflozin on the quality of life in patients with heart failu...\" [III, pubmed,pubmed_expanded]",
+            "  #10 ✓ \"Management of Hyperglycemia in Type 2 Diabetes, 2018. A Consensus Report by the ...\" [V, openalex]"
+          ]
+        },
+        {
+          "dimension": "ranking",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ RCTs (Level II) should outnumber Level V papers in top 10: Top-10: Level II count=3 vs Level V count=1 → PASS",
+            "✓ SGLT2i systematic review should appear in top 5: \"sglt2 inhibitors\" in top 5: PASS",
+            "✓ High evidence (I-II) should outnumber low evidence (IV-V) in top 10: Top-10: High evidence (I-II)=8 vs Low (IV-V)=1 → PASS"
+          ]
+        },
+        {
+          "dimension": "metadata",
+          "score": 8.6,
+          "maxScore": 10,
+          "details": [
+            "all_have_doi: 56/56 (100%) — threshold 80% → PASS",
+            "study_type_not_other: 34/56 (61%) — threshold 50% → PASS",
+            "year_nonzero: 56/56 (100%) — threshold 95% → PASS",
+            "has_abstract: 47/56 (84%) — threshold 70% → PASS"
+          ]
+        },
+        {
+          "dimension": "dedup",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ \"genitourinary tract infections and sglt2 inhibitors\": 1 occurrence(s) ≤ 1",
+            "✓ \"effects of empagliflozin on right ventricular\": 1 occurrence(s) ≤ 1"
+          ]
+        }
+      ],
+      "patchesApplied": [
+        "pubmed-sort-relevance",
+        "quality-ranker",
+        "journal-quality-enrichment"
+      ],
+      "regressionResults": "",
+      "perSourceCounts": {
+        "pubmed": 20,
+        "semanticScholar": 3,
+        "openAlex": 20
+      },
+      "fusedCount": 56,
+      "dedupedCount": 56,
+      "timestamp": "2026-06-27T07:34:35.017Z"
+    },
+    {
+      "id": "ralph-sr-003",
+      "name": "Study type detection — SGLT2 inhibitors (with title/abstract detector)",
+      "phase": 1,
+      "scores": {
+        "recall": 10,
+        "precision": 10,
+        "ranking": 10,
+        "metadata": 8.6,
+        "dedup": 10
+      },
+      "weighted": 9.8,
+      "pass": true,
+      "scoreDetails": [
+        {
+          "dimension": "recall",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ FOUND \"sglt2 inhibitors in heart failure\" → \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR-Pooled analysis.\" (rank 1, sources: pubmed,pubmed_expanded)",
+            "✓ FOUND \"empagliflozin\" → \"Effects of Empagliflozin on Right Ventricular Free-Wall Strain in Patients with Heart Failure and Reduced Ejection Fraction.\" (rank 3, sources: pubmed,pubmed_expanded)",
+            "✓ FOUND \"dapagliflozin\" → \"The sodium–glucose co‐transporter 2 inhibitor dapagliflozin improves prognosis in systolic heart failure independent of the obesity paradox\" (rank 7, sources: openalex)",
+            "✓ FOUND \"systematic review\" → \"SGLT-2 inhibitors in prevention of chemotherapy-induced cardiotoxicity: systematic review and meta-analysis.\" (rank 4, sources: pubmed)",
+            "○ BONUS \"meta-analysis\" found"
+          ]
+        },
+        {
+          "dimension": "precision",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "10/10 top-10 results are relevant",
+            "  #1 ✓ \"Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR...\" [I, pubmed,pubmed_expanded]",
+            "  #2 ✓ \"Differential cardiovascular benefits of SGLT2 inhibitors, sacubitril/valsartan, ...\" [I, pubmed,pubmed_expanded]",
+            "  #3 ✓ \"Effects of Empagliflozin on Right Ventricular Free-Wall Strain in Patients with ...\" [II, pubmed,pubmed_expanded]",
+            "  #4 ✓ \"SGLT-2 inhibitors in prevention of chemotherapy-induced cardiotoxicity: systemat...\" [I, pubmed]",
+            "  #5 ✓ \"Effect of SGLT2 inhibitors on heart failure outcomes in patients with and withou...\" [I, pubmed,pubmed_expanded]",
+            "  #6 ✓ \"EMPEROR-Preserved: SGLT2 inhibitors breakthrough in the management of heart fail...\" [II, openalex]",
+            "  #7 ✓ \"The sodium–glucose co‐transporter 2 inhibitor dapagliflozin improves prognosis i...\" [II, openalex]",
+            "  #8 ✓ \"Efficacy and Safety of Sodium-Glucose Cotransporter 2 Inhibitors (SGLT2i) in Car...\" [I, pubmed]",
+            "  #9 ✓ \"[The effect of empagliflozin on the quality of life in patients with heart failu...\" [III, pubmed,pubmed_expanded]",
+            "  #10 ✓ \"Management of Hyperglycemia in Type 2 Diabetes, 2018. A Consensus Report by the ...\" [V, openalex]"
+          ]
+        },
+        {
+          "dimension": "ranking",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ RCTs (Level II) should outnumber Level V papers in top 10: Top-10: Level II count=3 vs Level V count=1 → PASS",
+            "✓ Top results should be about SGLT2i and heart failure: Top-10: 10/10 on-topic (100%) vs threshold 70% → PASS",
+            "✓ High evidence (I-II) should outnumber low evidence (IV-V) in top 10: Top-10: High evidence (I-II)=8 vs Low (IV-V)=1 → PASS"
+          ]
+        },
+        {
+          "dimension": "metadata",
+          "score": 8.6,
+          "maxScore": 10,
+          "details": [
+            "all_have_doi: 56/56 (100%) — threshold 80% → PASS",
+            "study_type_not_other: 34/56 (61%) — threshold 50% → PASS",
+            "year_nonzero: 56/56 (100%) — threshold 95% → PASS",
+            "has_abstract: 47/56 (84%) — threshold 70% → PASS"
+          ]
+        },
+        {
+          "dimension": "dedup",
+          "score": 10,
+          "maxScore": 10,
+          "details": [
+            "✓ \"differential cardiovascular benefits of sglt2 inhibitors\": 1 occurrence(s) ≤ 1",
+            "✓ \"sglt2 inhibitors and mechanisms of cardiovascular benefit\": 1 occurrence(s) ≤ 1"
+          ]
+        }
+      ],
+      "patchesApplied": [
+        "pubmed-sort-relevance",
+        "quality-ranker",
+        "journal-quality-enrichment",
+        "study-type-detector"
+      ],
+      "regressionResults": "",
+      "perSourceCounts": {
+        "pubmed": 20,
+        "semanticScholar": 3,
+        "openAlex": 20
+      },
+      "fusedCount": 56,
+      "dedupedCount": 56,
+      "timestamp": "2026-06-27T07:34:35.024Z"
+    }
+  ],
+  "phaseAverages": {
+    "phase1": 9.8,
+    "phase2": 9.8,
+    "phase3": 9.8
+  },
+  "totalPassing": 19,
+  "totalFailing": 0
+}

@@ -1,0 +1,794 @@
+{
+  "source": "openalex",
+  "query": "Gut microbiome atrial fibrillation",
+  "timestamp": "2026-03-02T17:03:36.133Z",
+  "results": [
+    {
+      "title": "Gut microbiome and atrial fibrillation—results from a large population-based study",
+      "authors": [
+        "Joonatan Palmu",
+        "Christin S. Börschel",
+        "Alfredo Ortega‐Alonso",
+        "Lajos Markó",
+        "Michael Inouye",
+        "Pekka Jousilahti",
+        "Rodolfo A. Salido",
+        "Karenina Sanders",
+        "Caitriona Brennan",
+        "Gregory Humphrey",
+        "Jon G. Sanders",
+        "Friederike Gutmann",
+        "Dominik Linz",
+        "Veikko Salomaa",
+        "Aki S. Havulinna",
+        "Sofia K. Forslund",
+        "Rob Knight",
+        "Leo Lahti",
+        "Teemu Niiranen",
+        "Renate B. Schnabel"
+      ],
+      "journal": "EBioMedicine",
+      "year": 2023,
+      "doi": "10.1016/j.ebiom.2023.104583",
+      "openalexId": "https://openalex.org/W4367321391",
+      "citationCount": 76,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "http://www.thelancet.com/article/S2352396423001482/pdf",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Atrial fibrillation",
+        "Gut microbiome",
+        "Microbiome",
+        "Population",
+        "Medicine",
+        "Bioinformatics",
+        "Computational biology",
+        "Biology"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "The correlation between gut microbiome and atrial fibrillation: pathophysiology and therapeutic perspectives",
+      "authors": [
+        "Na Li",
+        "Ling Wang",
+        "Lei Li",
+        "Meng-Zhao Yang",
+        "Qingxiang Wang",
+        "Xiwen Bai",
+        "Feng Gao",
+        "Yiqiang Yuan",
+        "Zujiang Yu",
+        "Zhigang Ren"
+      ],
+      "journal": "Military Medical Research",
+      "year": 2023,
+      "doi": "10.1186/s40779-023-00489-1",
+      "openalexId": "https://openalex.org/W4388459310",
+      "citationCount": 25,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://mmrjournal.biomedcentral.com/counter/pdf/10.1186/s40779-023-00489-1",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Microbiome",
+        "Gut microbiome",
+        "Gut flora",
+        "Transcriptome",
+        "Medicine",
+        "Computational biology",
+        "Bioinformatics",
+        "Dysbiosis",
+        "Population",
+        "Atrial fibrillation",
+        "Disease",
+        "Proteome",
+        "Oral Microbiome",
+        "Biology"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Shifts in gut microbiome and metabolome are associated with risk of recurrent atrial fibrillation",
+      "authors": [
+        "Jing Li",
+        "Kun Zuo",
+        "Jing Zhang",
+        "Chaowei Hu",
+        "Pan Wang",
+        "Jie Jiao",
+        "Zheng Liu",
+        "Xiandong Yin",
+        "Xiaoqing Liu",
+        "Kuibao Li",
+        "Xinchun Yang"
+      ],
+      "journal": "Journal of Cellular and Molecular Medicine",
+      "year": 2020,
+      "doi": "10.1111/jcmm.15959",
+      "openalexId": "https://openalex.org/W3092678606",
+      "abstract": "Alternations of gut microbiota (GM) in atrial fibrillation (AF) with elevated diversity, perturbed composition and function have been described previously. The current work aimed to assess the association of GM composition with AF recurrence (RAF) after ablation based on metagenomic sequencing and metabolomic analyses and to construct a GM-based predictive model for RAF. Compared with non-AF controls (50 individuals), GM composition and metabolomic profile were significantly altered between patients with recurrent AF (17 individuals) and non-RAF group (23 individuals). Notably, discriminative taxa between the non-RAF and RAF groups, including the families Nitrosomonadaceae and Lentisphaeraceae, the genera Marinitoga and Rufibacter and the species Faecalibacterium spCAG:82, Bacillus gobiensis and Desulfobacterales bacterium PC51MH44, were selected to construct a taxonomic scoring system based on LASSO analysis. After incorporating the clinical factors of RAF, taxonomic score retained a significant association with RAF incidence (HR = 2.647, P = .041). An elevated AUC (0.954) and positive NRI (1.5601) for predicting RAF compared with traditional clinical scoring (AUC = 0.6918) were obtained. The GM-based taxonomic scoring system theoretically improves the model performance, and the nomogram and decision curve analysis validated the clinical value of the predicting model. These data provide novel possibility that incorporating the GM factor into future recurrent risk stratification.",
+      "citationCount": 40,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jcmm.15959",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Gut microbiome",
+        "Gut flora",
+        "Biology",
+        "Microbiome",
+        "Internal medicine",
+        "Metabolome",
+        "Medicine",
+        "Metabolomics"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Association of gut microbiome dysbiosis with the progression of atrial fibrillation: A systematic review",
+      "authors": [
+        "Sarim Rashid",
+        "Tayyiba Ahmed Noor",
+        "Hamayle Saeed",
+        "Asma Sabir Ali",
+        "Govinda Meheshwari",
+        "Asad Mehmood",
+        "Laveeza Fatima",
+        "Syed Muhammad Jawad Zaidi",
+        "Jahanzeb Malik",
+        "Amin Mehmoodi",
+        "Azmat Hayat"
+      ],
+      "journal": "Annals of Noninvasive Electrocardiology",
+      "year": 2023,
+      "doi": "10.1111/anec.13059",
+      "openalexId": "https://openalex.org/W4327900047",
+      "abstract": "Intestinal dysbiosis is a modifiable risk factor that might provide newer treatment strategies for AF prevention. Well-designed research and prospective randomized interventional studies are required to target the gut dysbiotic mechanisms and determine the gut dysbiotic-AF relationship.",
+      "citationCount": 35,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/anec.13059",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Medicine",
+        "Gut flora",
+        "Dysbiosis",
+        "Microbiome",
+        "Atrial fibrillation",
+        "Internal medicine",
+        "Gut microbiome",
+        "Prospective cohort study",
+        "Bioinformatics"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Metagenomic data-mining reveals enrichment of trimethylamine-N-oxide synthesis in gut microbiome in atrial fibrillation patients",
+      "authors": [
+        "Kun Zuo",
+        "Xiaoqing Liu",
+        "Pan Wang",
+        "Jie Jiao",
+        "Chunming Han",
+        "Zheng Liu",
+        "Xiandong Yin",
+        "Jing Li",
+        "Xinchun Yang"
+      ],
+      "journal": "BMC Genomics",
+      "year": 2020,
+      "doi": "10.1186/s12864-020-06944-w",
+      "openalexId": "https://openalex.org/W3045627279",
+      "citationCount": 42,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://bmcgenomics.biomedcentral.com/track/pdf/10.1186/s12864-020-06944-w",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Trimethylamine N-oxide",
+        "Gut flora",
+        "Biology",
+        "Trimethylamine",
+        "Microbiome",
+        "Metagenomics",
+        "Bacteria",
+        "Microbiology",
+        "Metabolic pathway",
+        "Enzyme",
+        "Lachnospiraceae",
+        "Biochemistry"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Disordered gut microbiota and alterations in metabolic patterns are associated with atrial fibrillation",
+      "authors": [
+        "Kun Zuo",
+        "Jing Li",
+        "Kuibao Li",
+        "Chaowei Hu",
+        "Yuanfeng Gao",
+        "Mulei Chen",
+        "Roumu Hu",
+        "Ye Liu",
+        "Hongjie Chi",
+        "Hongjiang Wang",
+        "Yanwen Qin",
+        "Xiaoyan Liu",
+        "Shichao Li",
+        "Jun Cai",
+        "Jiuchang Zhong",
+        "Xinchun Yang"
+      ],
+      "journal": "GigaScience",
+      "year": 2019,
+      "doi": "10.1093/gigascience/giz058",
+      "openalexId": "https://openalex.org/W2947352333",
+      "abstract": "Our findings characterize the disordered gut microbiota and microbial metabolite profiles in atrial fibrillation. Further research could determine whether intervention strategies targeting intestinal microbiome composition might be useful to counteract the progression of atrial fibrillation.",
+      "citationCount": 228,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://academic.oup.com/gigascience/article-pdf/8/6/giz058/28747138/giz058.pdf",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Gut flora",
+        "Atrial fibrillation",
+        "Ruminococcus",
+        "Gut microbiome",
+        "Microbiome",
+        "Biology",
+        "Medicine",
+        "Internal medicine"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Health Benefits of the Mediterranean Diet: Metabolic and Molecular Mechanisms",
+      "authors": [
+        "Valeria Tosti",
+        "Beatrice Bertozzi",
+        "Luigi Fontana"
+      ],
+      "journal": "The Journals of Gerontology Series A",
+      "year": 2017,
+      "doi": "10.1093/gerona/glx227",
+      "openalexId": "https://openalex.org/W2774826291",
+      "abstract": "Consuming a Mediterranean diet rich in minimally processed plant foods has been associated with a reduced risk of developing multiple chronic diseases and increased life expectancy. Data from several randomized clinic trials have demonstrated a beneficial effect in the primary and secondary prevention of cardiovascular disease, type 2 diabetes, atrial fibrillation, and breast cancer. The exact mechanism by which an increased adherence to the traditional Mediterranean diet exerts its favorable effects is not known. However, accumulating evidence indicates that the five most important adaptations induced by the Mediterranean dietary pattern are: (a) lipid-lowering effect, (b) protection against oxidative stress, inflammation and platelet aggregation, (c) modification of hormones and growth factors involved in the pathogenesis of cancer, (d) inhibition of nutrient sensing pathways by specific amino acid restriction, and (e) gut microbiota-mediated production of metabolites influencing metabolic health. More studies are needed to understand how single modifications of nutrients typical of the Mediterranean diet interact with energy intake, energy expenditure, and the microbiome in modulating the key mechanisms that promote cellular, tissue, and organ health during aging.",
+      "citationCount": 698,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://academic.oup.com/biomedgerontology/article-pdf/73/3/318/29101680/glx227.pdf",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Mediterranean diet",
+        "Oxidative stress",
+        "Diabetes mellitus",
+        "Disease",
+        "Biology",
+        "Microbiome",
+        "Medicine",
+        "Type 2 diabetes",
+        "Physiology",
+        "Bioinformatics"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Shifts in gut microbiome and metabolome are associated with risk of recurrent atrial fibrillation",
+      "authors": [
+        "Kun Zuo",
+        "Jing Li",
+        "Jing Zhang",
+        "Pan Wang",
+        "Jie Jiao",
+        "Zheng Liu",
+        "Xiandong Yin",
+        "Xiaoqing Liu",
+        "Kuibao Li",
+        "Xinchun Yang"
+      ],
+      "journal": "",
+      "year": 2020,
+      "doi": "10.1101/2020.01.26.920587",
+      "openalexId": "https://openalex.org/W3000785956",
+      "abstract": "ABSTRACT Specific alterations of gut microbiota (GM) in atrial fibrillation (AF) patients, including elevated microbial diversity, particularly perturbed composition, imbalanced microbial function, and associated metabolic pattern modifications have been described in our previous report. The current work aimed to assess the association of GM composition with AF recurrence (RAF) after ablation, and to construct a GM-based predictive model for RAF. Gut microbial composition and metabolic profiles were assessed based on metagenomic sequencing and metabolomic analyses. Compared with non-AF controls (50 individuals), GM composition and metabolomic profile were significantly altered between patients with recurrent AF (17 individuals) and the non-RAF group (23 individuals). Notably, discriminative taxa between the non-RAF and RAF groups, including the families Nitrosomonadaceae and Lentisphaeraceae , the genera Marinitoga and Rufibacter , and the species Faecalibacterium sp . CAG:82 , Bacillus gobiensis , and Desulfobacterales bacterium PC51MH44 , were selected to construct a taxonomic scoring system based on LASSO analysis. An elevated area under curve (0.954) and positive net reclassification index (1.5601) for predicting RAF compared with traditional clinical scoring (AUC=0.6918) were obtained. The GM-based taxonomic scoring system theoretically improves the model performance. These data provide novel evidence that supports incorporating the GM factor into future recurrent risk stratification.",
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.biorxiv.org/content/biorxiv/early/2020/01/27/2020.01.26.920587.full.pdf",
+      "publicationTypes": [
+        "preprint"
+      ],
+      "concepts": [
+        "Gut microbiome",
+        "Gut flora",
+        "Metabolome",
+        "Biology",
+        "Microbiome",
+        "Metabolomics",
+        "Metagenomics",
+        "Internal medicine",
+        "Computational biology",
+        "Bioinformatics"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Gut microbiome and atrial fibrillation: mechanistic insights metabolites and comorbidities. Systematic review",
+      "authors": [
+        "Monika Gawałko",
+        "Wiktor Kociemba",
+        "Prashanthan Sanders",
+        "Dominik Linz"
+      ],
+      "journal": "Gut Microbes",
+      "year": 2025,
+      "doi": "10.1080/19490976.2025.2570423",
+      "openalexId": "https://openalex.org/W4415782795",
+      "abstract": "Emerging evidence indicates that the gut microbiome (GM) and its metabolites may play a role in the development of cardiometabolic diseases, including atrial fibrillation (AF). Although the current data are limited, studies suggest that the GM composition in AF mirrors that observed in associated conditions such as heart failure, hypertension, diabetes, and coronary artery disease (characterized by increased genera <i>Lactobacillus, Enterococcus, Streptococcus</i>, and decreased genus <i>Faecalibacterium</i>). Additionally, patients with AF appear to have distinct microbial alterations, including increased abundances of the genera <i>Dialister, Dorea, Haemophilus, Klebsiella, Lachnospira, Parabacteroides, Ruminococcus</i>, and <i>Veillonella</i> and decreased abundances of the genera <i>Butyricicoccus, Hungatella</i>, and <i>Prevotella</i>. Gut-derived metabolites also show associations with AF. Trimethylamine <i>N</i>-oxide and choline have been linked to new-onset and postoperative AF, potentially via autonomic, inflammatory, and fibrotic pathways. In contrast, short-chain fatty acids, which are reduced in AF patients, may offer protective effects. Elevated lipopolysaccharide levels are correlated with AF onset and recurrence through inflammation and structural remodeling. Indoxyl sulfate and bile acids may contribute to arrhythmogenesis via oxidative stress, apoptosis, and disrupted calcium signaling. These mechanisms contribute to AF by disrupting conduction and increasing automaticity. Emerging evidence also links gut microbes to other arrhythmias, but more research is needed to clarify causality and therapeutic potential.",
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://doi.org/10.1080/19490976.2025.2570423",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Impact of gut microbiome on atrial fibrillation: Mechanistic insights and future directions in individualized medicine",
+      "authors": [
+        "Ajit Singh Brar",
+        "Shree Laya Vemula",
+        "Vishnu Yanamaladoddi",
+        "Sohail Sodhi",
+        "Juniali Hatwal",
+        "Aalam Sohal",
+        "Akash Batta"
+      ],
+      "journal": "World Journal of Cardiology",
+      "year": 2025,
+      "doi": "10.4330/wjc.v17.i6.107386",
+      "openalexId": "https://openalex.org/W4411441561",
+      "abstract": "Atrial fibrillation (AF) is a growing global health burden, with a prevalence of over 52.55 million cases. Rising disability-adjusted life-years, increasing age, and disparities in care have contributed to the worsening severity and mortality of AF. Modifiable risk factors, such as hypertension, obesity, and diabetes mellitus, are associated with alterations in gut microbiota, making the gut-heart axis a potential therapeutic target. Gut dysbiosis influences AF pathogenesis through inflammation, metabolic disruption, and autonomic dysfunction. Key mechanisms include gut barrier dysfunction, short-chain fatty acid (SCFA) depletion, lipopolysaccharides (LPS)-induced inflammation, and ferroptosis-mediated atrial remodeling. Trimethylamine N-oxide, bile acids, and tryptophan metabolites contribute to arrhythmogenic remodeling. Emerging evidence suggests that dietary interventions, including prebiotics and probiotics, as well as gut surveillance, may help mitigate AF progression. Clinical implications of gut modulation in AF include personalized dietary strategies, microbiome assessment through metagenomic sequencing, and targeted interventions such as SCFA-based therapies and ferroptosis inhibition. Metabolite surveillance, including LPS and indoxyl sulfate monitoring, may influence the effectiveness of anticoagulant and antiarrhythmic therapy. Despite growing mechanistic evidence linking gut dysbiosis to AF, clinical applications remain unexplored. This review summarizes the current understanding of the gut microbiome's role in AF.",
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://doi.org/10.4330/wjc.v17.i6.107386",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Medicine",
+        "Gut flora",
+        "Dysbiosis",
+        "Microbiome",
+        "Atrial fibrillation",
+        "Diabetes mellitus",
+        "Gut microbiome",
+        "Bioinformatics",
+        "Intensive care medicine"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Critical Correlation Between Obesity and Cardiovascular Diseases and Recent Advancements in Obesity",
+      "authors": [
+        "Mahesh Pakhare",
+        "Ashish Anjankar"
+      ],
+      "journal": "Cureus",
+      "year": 2024,
+      "doi": "10.7759/cureus.51681",
+      "openalexId": "https://openalex.org/W4390609136",
+      "abstract": "Scientific literature has investigated and well-documented the complex relationship between obesity and cardiovascular diseases. Obese people are much more likely to have atrial fibrillation, dyslipidemia, diabetes, and coronary artery disease, among other cardiovascular conditions. Additionally, obesity poses a severe risk for diseases like hypertension, heart failure, and atherosclerotic heart diseases, affecting various aspects relating to their underlying mechanisms, diagnosis, and clinical effects. This article summarizes recent developments in our understanding of and response to obesity. Pharmacotherapy, gut microbiome research, bariatric surgery, digital health solutions, behavioral interventions, and precision medicine are just a few of the fields in which these developments have been made. While liposuction offers a less invasive option for redistributing volume and getting positive results, bariatric surgery remains the most effective treatment for severe obesity. Emphasis is placed on the pathophysiological mechanisms that underlie the complex interactions between obesity and a number of diseases, such as atrial fibrillation, diabetes, hypertension, dyslipidemia, and coronary artery disease. The significance of lifestyle changes in reducing the cardiovascular risks associated with obesity, such as atrial fibrillation and heart disease, is emphasized. To improve overall cardiovascular health and achieve better clinical outcomes, obesity must be promptly identified and actively managed. Investigations into how the gut microbiome affects obesity, the creation of novel pharmacological treatments for appetite suppression and metabolic enhancement, improvements in bariatric surgery methods that emphasize patient success and safety, as well as creative digital health solutions and behavioral treatments, are some examples of emerging research fields. In addition, precision medicine approaches, including the modulation of the gut microbiome through dietary changes and supplements, hold great promise in combating obesity and its associated comorbidities and have the potential to revolutionize the management of obesity by tailoring treatments to the specific needs of individual patients.",
+      "citationCount": 29,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://assets.cureus.com/uploads/review_article/pdf/176913/20240105-32265-12bbvjy.pdf",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Medicine",
+        "Dyslipidemia",
+        "Obesity",
+        "Atrial fibrillation",
+        "Coronary artery disease",
+        "Intensive care medicine",
+        "Diabetes mellitus",
+        "Disease",
+        "Bioinformatics",
+        "Internal medicine",
+        "Cardiology"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "The Genus Alistipes: Gut Bacteria With Emerging Implications to Inflammation, Cancer, and Mental Health",
+      "authors": [
+        "Bianca J. Parker",
+        "Pamela A. Wearsch",
+        "A.C.M. Veloo",
+        "Alexander Rodriguez‐Palacios"
+      ],
+      "journal": "Frontiers in Immunology",
+      "year": 2020,
+      "doi": "10.3389/fimmu.2020.00906",
+      "openalexId": "https://openalex.org/W3026296114",
+      "abstract": "<i>Alistipes</i> is a relatively new genus of bacteria isolated primarily from medical clinical samples, although at a low rate compared to other genus members of the <i>Bacteroidetes</i> phylum, which are highly relevant in dysbiosis and disease. According to the taxonomy database at The National Center for Biotechnology Information, the genus consists of 13 species: <i>Alistipes finegoldii, Alistipes putredinis, Alistipes onderdonkii, Alistipes shahii, Alistipes indistinctus, Alistipes senegalensis, Alistipes timonensis, Alistipes obesi, Alistipes ihumii, Alistipes inops, Alistipes megaguti, Alistipes provencensis</i>, and <i>Alistipes massiliensis. Alistipes communis</i> and <i>A. dispar</i>, and the subspecies <i>A. Onderdonkii</i> subspecies vulgaris (vs. <i>onderdonkii</i> subsp.) are the newest strains featured outside that list. Although typically isolated from the human gut microbiome various species of this genus have been isolated from patients suffering from appendicitis, and abdominal and rectal abscess. It is possible that as <i>Alistipes</i> spp. emerge, their identification in clinical samples may be underrepresented as novel MS-TOF methods may not be fully capable to discriminate distinct species as separate since it will require the upgrading of MS-TOF identification databases. In terms of pathogenicity, there is contrasting evidence indicating that <i>Alistipes</i> may have protective effects against some diseases, including liver fibrosis, colitis, cancer immunotherapy, and cardiovascular disease. In contrast, other studies indicate <i>Alistipes</i> is pathogenic in colorectal cancer and is associated with mental signs of depression. Gut dysbiosis seems to play a role in determining the compositional abundance of <i>Alistipes</i> in the feces (<i>e.g</i>., in non-alcoholic steatohepatitis, hepatic encephalopathy, and liver fibrosis). Since <i>Alistipes</i> is a relatively recent sub-branch genus of the <i>Bacteroidetes</i> phylum, and since <i>Bacteroidetes</i> are commonly associated with chronic intestinal inflammation, this narrative review illustrates emerging immunological and mechanistic implications by which <i>Alistipes</i> spp. correlate with human health.",
+      "citationCount": 1561,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.frontiersin.org/articles/10.3389/fimmu.2020.00906/pdf",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Biology",
+        "Dysbiosis",
+        "Bacteroidetes",
+        "Microbiome"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Hypomagnesemia and Cardiovascular Risk in Type 2 Diabetes",
+      "authors": [
+        "Lynette J. Oost",
+        "Cees J. Tack",
+        "Jeroen H. F. de Baaij"
+      ],
+      "journal": "Endocrine Reviews",
+      "year": 2022,
+      "doi": "10.1210/endrev/bnac028",
+      "openalexId": "https://openalex.org/W4308554571",
+      "abstract": "Hypomagnesemia is 10-fold more common in individuals with type 2 diabetes (T2D) than in the healthy population. Factors that are involved in this high prevalence are low Mg2+ intake, gut microbiome composition, medication use, and presumably genetics. Hypomagnesemia is associated with insulin resistance, which subsequently increases the risk to develop T2D or deteriorates glycemic control in existing diabetes. Mg2+ supplementation decreases T2D-associated features like dyslipidemia and inflammation, which are important risk factors for cardiovascular disease (CVD). Epidemiological studies have shown an inverse association between serum Mg2+ and the risk of developing heart failure (HF), atrial fibrillation (AF), and microvascular disease in T2D. The potential protective effect of Mg2+ on HF and AF may be explained by reduced oxidative stress, fibrosis, and electrical remodeling in the heart. In microvascular disease, Mg2+ reduces the detrimental effects of hyperglycemia and improves endothelial dysfunction; however, clinical studies assessing the effect of long-term Mg2+ supplementation on CVD incidents are lacking, and gaps remain on how Mg2+ may reduce CVD risk in T2D. Despite the high prevalence of hypomagnesemia in people with T2D, routine screening of Mg2+ deficiency to provide Mg2+ supplementation when needed is not implemented in clinical care as sufficient clinical evidence is lacking. In conclusion, hypomagnesemia is common in people with T2D and is involved both as cause, probably through molecular mechanisms leading to insulin resistance, and as consequence and is prospectively associated with development of HF, AF, and microvascular complications. Whether long-term supplementation of Mg2+ is beneficial, however, remains to be determined.",
+      "citationCount": 55,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://academic.oup.com/edrv/article-pdf/44/3/357/50248314/bnac028.pdf",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Hypomagnesemia",
+        "Type 2 diabetes",
+        "Medicine",
+        "Diabetes mellitus",
+        "Internal medicine",
+        "Cardiology"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Factors of Risk in the Development of Coronary Heart Disease—Six-Year Follow-up Experience",
+      "authors": [
+        "William B. Kannel",
+        "THOMAS R. DAWBER",
+        "ABRAHAM KAGAN",
+        "NICHOLAS REVOTSKIE",
+        "JOSEPH STOKES"
+      ],
+      "journal": "Annals of Internal Medicine",
+      "year": 1961,
+      "doi": "10.7326/0003-4819-55-1-33",
+      "openalexId": "https://openalex.org/W2090443364",
+      "abstract": "Article1 July 1961Factors of Risk in the Development of Coronary Heart Disease—Six-Year Follow-up ExperienceThe Framingham StudyWILLIAM B. KANNEL, M.D., THOMAS R. DAWBER, M.D., F.A.C.P., ABRAHAM KAGAN, M.D., F.A.C.P., NICHOLAS REVOTSKIE, M.D., JOSEPH STOKES III, M.D.WILLIAM B. KANNEL, M.D.Search for more papers by this author, THOMAS R. DAWBER, M.D., F.A.C.P.Search for more papers by this author, ABRAHAM KAGAN, M.D., F.A.C.P.Search for more papers by this author, NICHOLAS REVOTSKIE, M.D.Search for more papers by this author, JOSEPH STOKES III, M.D.Search for more papers by this authorAuthor, Article, and Disclosure Informationhttps://doi.org/10.7326/0003-4819-55-1-33 SectionsAboutPDF ToolsAdd to favoritesDownload CitationsTrack CitationsPermissions ShareFacebookTwitterLinkedInRedditEmail ExcerptIncreasingly reliable estimates of the prevalence and incidence of coronary heart disease (CHD) emphasize the importance of this disease as a contemporary health hazard. Cardiovascular disease is now the leading cause of death, with coronary heart disease accounting for two-thirds of all heart disease deaths. While advances in the diagnosis and therapeutic management of CHD have been made in the past decade, no important reduction in morbidity and mortality from CHD has occurred. This is apparent in the relatively slight increase in life expectancy at age 40 which has been achieved in the past several decades, while life expectancy at...References1. DAWBERMOOREMANN TRFEGV: II. Coronary heart disease in the Framingham Study. Amer. J. Public Health 47: 4, 1957. CrossrefGoogle Scholar2. DAWBERMEADORSMOORE TRGFFE: Epidemiological approaches to heart disease: the Framingham Study. Amer. J. Public Health 41: 279, 1951. CrossrefGoogle Scholar3. DAWBERMOORE TRFE: Longitudinal study of heart disease in Framingham, Massachusetts. An interim report: research in public health. 1951 Annual Conference of the Milbank Memorial Fund. Milbank Mem. Fund Quart. 1952. Google Scholar4. DAWBERKANNEL TRWB: An epidemiological study of heart disease: the Framingham Study. Nutr. Rev. 16: 1, 1958. CrossrefMedlineGoogle Scholar5. GORDONMOORESHURTLEFFDAWBER TFEDTR: Some methodologic problems in the long-term study of cardiovascular disease: observations on the Framingham Study. J. Chron. Dis. 10: 186, 1959. CrossrefGoogle Scholar6. DAWBERKANNELREVOTSKIESTOKESKAGANGORDON TRWBNJAT: Some factors associated with the development of coronary heart disease. Six years' follow-up experience in the Framingham Study. Amer. J. Public Health 49: 1349, 1959. CrossrefGoogle Scholar7. Nomenclature and Criteria for Diagnosis of Diseases of the Heart and Blood Vessels, Criteria Committee of the N. Y. Heart Association, 5th Ed., New York, 1953. Google Scholar8. ABELLLEVYBRODIEKENDALL LLBBBBFE: A simplified method for the estimation of total cholesterol in serum and the demonstration of its specificity. J. Biol. Chem. 195: 357, 1952. CrossrefMedlineGoogle Scholar9. : An evaluation of serum lipoproteins and cholesterol measurements as predictors of clinical complications of atherosclerosis: a report of a cooperative study of lipoproteins and atherosclerosis. Circulation 14: 691, 1956. CrossrefMedlineGoogle Scholar10. FRIEDBERG CK: Diseases of the Heart, 2nd Ed., W. B. Saunders Company, Philadelphia, 1956, p. 455. Google Scholar11. FRIEDBERG CK: Diseases of the Heart, 2nd Ed., W. B. Saunders Company, Philadelphia, 1956, pp. 317, 433, 543. Google Scholar12. DOYLEHESLINHILLEBOEFORMELKORNS JTSAHEPFRF: A prospective study of degenerative cardiovascular disease in Albany: report of three years' experience. I. Ischemic heart disease. Amer. J. Public Health 47: 25, 1957. CrossrefGoogle Scholar13. CHAPMANGOERKEDIXONLOVELANDPHILLIPS JMLSWDBE: The clinical status of a population group in Los Angeles under observation for two to three years. Amer. J. Public Health 47: 43, 1957. CrossrefGoogle Scholar14. CORNFIELDGORDONSMITH JTW: Quantal response curves for experimentally uncontrolled variables. Proceedings of the 32nd Session of the International Statistical Institute, Tokyo, 1960. To be published. Google Scholar This content is PDF only. To continue reading please click on the PDF icon. Author, Article, and Disclosure InformationAffiliations: Framingham, MassachusettsReceived for publication April 19, 1961.From the Heart Disease Epidemiology Study, Framingham, Mass., and the National Heart Institute, National Institutes of Health, Public Health Service, U. S. Department of Health, Education, and Welfare, Washington, D. C.Presented at the Forty-second Annual Session, The American College of Physicians, May 8-12, 1961, Bal Harbour, Fla.Requests for reprints should be addressed to Thomas R. Dawber, M.D., F.A.C.P., Medical Director, Heart Disease Epidemiology Study, 25 Evergreen St., Framingham, Mass. PreviousarticleNextarticle Advertisement FiguresReferencesRelatedDetailsSee AlsoCelebrating the ACP Centennial: From the Annals Archive Deborah Cotton An Analysis of Calibration and Discrimination Among Multiple Cardiovascular Risk Scores in a Modern Multiethnic Cohort Andrew P. DeFilippis , Rebekah Young , Christopher J. Carrubba , John W. McEvoy , Matthew J. Budoff , Roger S. Blumenthal , Richard A. Kronmal , Robyn L. McClelland , Khurram Nasir , and Michael J. Blaha Metrics Cited byAtorvastatin impairs liver mitochondrial function in obese Göttingen Minipigs but heart and skeletal muscle are not affectedInfluence of Ile655Val polymorphism on trastuzumab-induced cardiotoxicity in early-stage HER2 positive breast cancerHemoglobin and hematocrit levels are positively associated with blood pressure in children and adolescents 10 to 18 years oldTemporal trends in cause-specific mortality among individuals with newly diagnosed atrial fibrillation in the Framingham Heart StudyUnsupervised Learning for Automated Detection of Coronary Artery Disease SubgroupsAtherosclerosis pathogenesis from the perspective of microvascular dysfunctionAssociation of Apolipoprotein B–Containing Lipoproteins and Risk of Myocardial Infarction in Individuals With and Without AtherosclerosisGut Microbiome Diversity and Composition Are Associated with Habitual Dairy Intakes: A Cross-Sectional Study in MenHypercholesterolemia risk associated Abca6 does not regulate lipoprotein metabolism in mice or hamsterGlobal epidemiology, health burden and effective interventions for elevated blood pressure and hypertensionVascular Tissue Specific miRNA Profiles Reveal Novel Correlations with Risk Factors in Coronary Artery DiseaseGut Microbiome in Chronic Coronary Syndrome PatientsWhich Microbes Like My Diet and What Does It Mean for My Heart?Medication-Related Osteonecrosis of the Jaw: A Critical Narrative ReviewThe Questions on Everyone’s Mind: What is and Why Do We Need Preventive Cardiology?Machine Learning Applications in Nephrology: A Bibliometric Analysis Comparing Kidney Studies to Other Medicine SubspecialitiesMiR-145-5p modulates lipid metabolism and M2 macrophage polarization by targeting PAK7 and regulating β-catenin signaling in hyperlipidemiaIs There a Role of Coronary CTA in Primary Prevention? Current State and Future DirectionsResilience of the Internal Mammary Artery to Atherogenesis: Shifting From Risk to Resistance to Address Unmet NeedsThe use of blood biomarkers in precision medicine for the primary prevention of atherosclerotic cardiovascular disease: a reviewTriglyceride-lowering and anti-inflammatory mechanisms of omega-3 polyunsaturated fatty acids for atherosclerotic cardiovascular risk reductionA unified framework identifies new links between plasma lipids and diseases from electronic medical records across large-scale cohortsCardiac well-being indexes: a decision support tool to monitor cardiovascular healthPredictability in Contemporary MedicineIs there more to a healthy-heart diet than cholesterol?Lead (Pb) exposure and heart failure riskFramingham Heart StudyVitamin D Deficiency Reduces Vascular Reactivity of Coronary Arterioles in Male RatsOmega-3 fatty acids ameliorate vascular inflammation: A rationale for their atheroprotective effectsGlucose variability and diabetes complications: Risk factor or biomarker? Can we disentangle the “Gordian Knot”?Utility of Coronary Artery Calcium Scores in Predicting Risk of Subclinical Cardiovascular Atherosclerotic Disease: An Analysis of Limitations to its Adoption With Policy RecommendationsA Compendium on HypertensionResveratrol enhances trans-intestinal cholesterol excretion through selective activation of intestinal liver X receptor alphaEfficacy and safety of non-vitamin K antagonist oral anticoagulants combined with antiplatelet drugs for patients with peripheral artery disease: A systematic review and meta-analysis of randomized controlled trialsGenetic Risk StratificationCardiovascular Disease Prediction Model Based on Logistic Regression and Euclidean DistanceAncel Keys: The legacy of a giant in physiology, nutrition, and public healthLipid reference values in an Irish populationMethodological education in response to the quality of COVID-19 publicationsThe Lymphatic System in Zebrafish Heart Development, Regeneration and Disease ModelingRole of Cardiac Biomarkers in Epidemiology and Risk OutcomesInflammation in Atherosclerosis—No Longer a TheoryPreventing Cardiovascular Disease Development Establishing Cardiac Well-Being IndexesSecondary Prevention and Cardiac RehabilitationPreventive Cardiology as Specialized Medical ArtCardiovascular Risk Assessment: From Global Risk Scoring to Risk Enhancing FactorsCardiovascular Disease in Women: Focus on Lipid ManagementThe Low-Density Lipoprotein Cholesterol Hypothesis: An UpdateBiomarkersProgress in ASCVD Risk Assessment in African Americans and Hispanic AmericansIdentifying endemic areas and estimating the prevalence of hyperlipidemia in Taiwan's townshipsFrancis Bacon, Vannevar Bush, and the coming fiscal pandemic of good healthThe traditional and modifiable risk factors of coronary artery disease – a community-based cross-sectional study among 2 populationsPatient-Perceived Versus Actual Risk of Cardiovascular Disease and Associated Willingness to Consider and Use Prevention TherapyPremature Mortality Due to Tobacco-Related Malignancies in PolandIt’s Time to Add Electrocardiography and Echocardiography to CVD Risk Prediction Models: Results from a Prospective Cohort StudyCardiovascular Assessment Tool for Breast Cancer Survivors and Oncology Providers: Usability StudyLipid profiling in maternal and fetal circulations in preeclampsia and fetal growth restriction-a prospective case control observational studyParental cardiovascular health predicts time to onset of cardiovascular disease in offspringInula racemosa and Digitalis purpurea from Kashmir: Fatty acid composition, antioxidant, antibacterial activities, and functional group evaluationEffect of coconut oil on cardio-metabolic risk: A systematic review and meta-analysis of interventional studiesCharacterisation of recent trends in cardiovascular risk factors in young and middle-aged patients with ischaemic stroke and/or transient ischaemic attackAssociation between lipid fractions and age of first myocardial infarctionPrevalence of atherogenic dyslipidemia in young asymptomatic medical professionals of a Tertiary Care Hospital in South India: A cross-sectional studyPremature Parental Cardiovascular Disease and Subclinical Disease Burden in the OffspringThe Potential Role of Gut Microbiota in the Prevention and Treatment of Lipid Metabolism DisordersA Journey through Genetic Architecture and Predisposition of Coronary Artery DiseaseTargeting Ca2 + Handling Proteins for the Treatment of Heart Failure and ArrhythmiasNew Recommendations and Revised Concepts in Recent Guidelines on the Management of Dyslipidemias to Prevent Cardiovascular Disease: the 2018 ACC/AHA and 2019 ESC/EAS GuidelinesWho Benefits From Taking a Statin, and When?Dietary treatment to lower cholesterol and triglyceride and reduce cardiovascular riskCardiovascular imaging to guide primary preventionCoronary and peripheral artery plaques: do differences in plaque characteristics translate to differences in lipid management?Artificial Intelligence in Cardiac Imaging With Statistical Atlases of Cardiac AnatomySingle-nucleotide polymorphisms based genetic risk score in the prediction of pancreatic cancer riskEditorial: JUMBO, MRFIT, and the Making of Public Health EpidemiologyThe Evolution of Ischemia Detection with EchocardiographyHealth and Economics of Lifestyle Medicine StrategiesThe institutionalisation and deinstitutionalisation of the cholesterol theoryIntroduction to a special issue on breaking the disciplinary matrix: the ever-changing view of organizational theoryCoronary Risks Associated with Diclofenac and Other NSAIDs: An UpdateDifferences in mineral composition and morphology between men and women in aortic valve calcificationThe evolution of the heart-healthy diet for vascular health: A walk through timeCardiovascular risk assessment: The foundation of preventive cardiologyAssociation of body composition indexes with cardio-metabolic risk factorsRisk scores, atherosclerotic cardiovascular disease and the crystal ballBiomarkers in primary preventionNational trends in total cholesterol obscure heterogeneous changes in HDL and non-HDL cholesterol and total-to-HDL cholesterol ratio: a pooled analysis of 458 population-based studies in Asian and Western countriesOmics and Cardiometabolic Disease Risk PredictionClinical Risk Assessment and PredictionComputed Tomography Imaging of Epicardial Adipose TissueA History of Mechanical Circulatory SupportOpportunities, challenges and expectations management for translating biobank research to precision medicineThe role of diet in chronic diseaseHitos históricos en el tratamiento hipolipemiante antes de la era de los inhibidores de la proproteina convertasa subtilisina/kexina tipo 9Lipoproteins and lipids in cardiovascular disease: from mechanistic insights to therapeutic targetingDevelopment and Validation of a Prognostic, Risk-Adjusted Scoring System for Operative Upper-Extremity InfectionsPreventive cardiology or cardiometabolic medicine: a new and emerging subspecialty?Alpinia zerumbet and Its Potential Use as an Herbal Medication for Atherosclerosis: Mechanistic Insights from Cell and Rodent StudiesToxin to medicine and bioisosterism in drug development: a study of the discovery and development of ACE inhibitors from snake venomGeneral concepts in biostatistics and clinical epidemiology: observational studies with cohort designAssociation of BUD13-ZNF259-APOA5-APOA1-SIK3 cluster polymorphism in 11q23.3 and structure of APOA5 with increased plasma triglyceride levels in a Korean populationEffect of using cardiovascular risk scoring in routine risk assessment in primary prevention of cardiovascular disease: an overview of systematic reviewsInnovatively Established Analysis Method for Lipoprotein Profiles Based on High-Performance Anion-Exchange Liquid ChromatographyST‐Segment–Elevation Myocardial Infarction (STEMI) Patients Without Standard Modifiable Cardiovascular Risk Factors—How Common Are They, and What Are Their Outcomes?Regulation of glucose and lipid metabolism in health and diseaseWill Social Determinants Reshape Pediatrics? Upstream Clinical Prevention Efforts Past, Present, and Future70-year legacy of the Framingham Heart StudyLipid Management for the Prevention of Atherosclerotic Cardiovascular DiseaseIs Late Left Ventricle Remodeling After Repair of Degenerative Mitral Regurgitation Worse in Women?Glucocentric risk factors for macrovascular complications in diabetes: Glucose ‘legacy’ and ‘variability’-what we see, know and try to comprehendDiagnosis: From classification to predictionIs mitral valve disease treated differently in men and women?Refining the Association Between Body Mass Index and Atrial Fibrillation: G‐Formula and Restricted Mean Survival TimesThe “All of Us” Research ProgramExtreme Atherosclerotic Cardiovascular Disease (ASCVD) Risk RecognitionFamily health history: underused for actionable risk assessmentComparison of Heart Rate Blood Pressure Product Versus Age-Predicted Maximum Heart Rate as Predictors of Cardiovascular Events During Exercise Stress EchocardiographyCoronary Artery Calcium Scores of Zero and Establishing the Concept of Negative Risk FactorsFamilial Clustering of Cardiac Conduction Defects and Pacemaker InsertionEstimating the distribution of a novel clinical biomarker (FGF-23) in the US population using findings from a regional research registryA large‐scale exome array analysis of venous thromboembolismHeart Failure With Preserved Ejection Fraction In PerspectivePrecision Preventive Medicine—Ready for Prime Time?Pretest probability for patients with suspected obstructive coronary artery disease: re-evaluating Diamond–Forrester for the contemporary era and clinical implications: insights from the PROMISE trialImpact of cumulative SBP and serious adverse events on efficacy of intensive blood pressure treatmentIntensive Cardiac Rehabilitation: an Underutilized ResourceRelationship between major depressive disorder, generalized anxiety disorder and coronary artery disease in the US general populationEnhancer deletion and allelic effects define a regulatory molecular mechanism at the VLDLR cholesterol GWAS locusHealth Factors Associated with Cardiovascular WellnessNon-Traditional Cardiovascular Risk Markers in the Era of Established Major Risk Factors and Multiple GuidelinesEffects of Cornelian Cherry on Atherosclerosis and Its Risk FactorsIncorporation of Novel Vascular Measures into Clinical Management: Recent Insights from the Framingham Heart StudyFacteurs de risque et maladies chroniques : le diabète en exempleUtilizing state-of-the-art “omics” technology and bioinformatics to identify new biological mechanisms and biomarkers for coronary artery diseaseEvidence for a Causal Role of the SH2B3 -β 2 M Axis in Blood Pressure RegulationCapitalizing on Insights from Human Genetics to Identify Novel Therapeutic Targets for Coronary Artery DiseaseRisk stratification for coronary artery disease in multi-ethnic populations: Are there broader considerations for cost efficiency?Atherosclerosis Risk FactorsA Historical Journey on the Physiology of Blood Pressure MonitoringCardiovascular Disease and Acute Coronary Syndrome in the Adult Patient with Congenital Heart DiseaseUnanswered Questions Regarding Blood Pressure Management for HF PreventionCardiovascular Risk: Assumptions, Limitations, and ResearchPrediction of Heart Disease Using Random Forest and Rough Set Based Feature SelectionUsing Electronic Health Records To Generate Phenotypes For ResearchHigh-density lipoprotein suppresses tumor necrosis factor alpha production by mycobacteria-infected human macrophagesMicroRNA interactome analysis predicts post-transcriptional regulation of ADRB2 and PPP3R1 in the hypercholesterolemic myocardiumQuantifying the added value of new biomarkers: how and how notEffects of Ramelteon and Other Sleep-Promoting Drugs on Serum Low-Density Lipoprotein and Non-high-density Lipoprotein Cholesterol: A to in Public and of the Lipid and Glucose the New in Cardiovascular Risk Heart of the cardiovascular 40 in cardiovascular de la cardiovascular 40 en cardiovascular and After an Acute Myocardial of analysis in research through the review of the development of the Framingham Physiology of of Risks in plasma cholesterol and intestinal cholesterol biological and risk in the Framingham Heart disease lipoprotein but not lipoprotein in chronic disease a cross-sectional and inflammation: The the in in Role of and of cardiovascular risk Risk Prediction for Primary and Prevention of Atherosclerotic Cardiovascular Disease: an risk factors but not ischaemic in obese New to an of health in the and cardiovascular disease among with for and – for patients with peripheral artery of in cardiovascular disease: The of the genetic risk prevention of cardiovascular disease: The and of blood and clinical management and of patients with coronary artery study of serum and Cardiovascular Disease: Do We Need to in Patients with Disease With or Without Acute Vascular of Therapeutic or with in Cardiovascular and as cardiovascular risk of Lipoprotein Metabolism Learning for the of from and and in Cardiovascular Health History and Health Risk Assessment For Cardiovascular Disease in Health and in Cardiovascular in Atherosclerosis: and Its of Coronary Stress in Current and Future of Cardiovascular Health and Coronary Artery Calcium in and in the Framingham Heart of Resistance and Chronic Kidney Disease on and Cardiovascular of Heart Disease Using Random Forest and Rough Set Based Feature between the for and the risk of coronary heart and omega-3 are in in in of lipid in the Hispanic health of analysis for a with and among Major Risk Factors and the Burden of Cardiovascular and Chronic of plasma is positively associated with the risk of in stratification of in of myocardial patients with coronary by modifiable risk An Based past and a of Making in Disease ManagementThe for Blood Pressure disease in A and heart from to between Disease and Acute Vascular Events a Study at and cardiovascular risk factors – A life Memorial Time to and as Risk Factors for Cardiovascular human to guide drug of in newly diagnosed a cohort The Framingham of Cardiovascular of Cardiovascular Diseases Among and signaling by in vascular and heart health: A genetic insights into lipoproteins and risk of cardiometabolic of genetic in from blood pressure and coronary are to cardiovascular to Analysis with and Between and of between polymorphisms and coronary artery disease Fatty and in Blood The Role of in Cardiovascular of Cell of Risk and Serum A Study in a of of the polymorphisms and serum lipid the risk of coronary artery disease and to Genetic Risk Social for Markers and of Cardiovascular Health History and Health Risk Assessment in Health of a cardiovascular cohort in a report of the Health in of in Chronic Kidney Associated with Cardiovascular Risk on a of for Cardiovascular or from electronic health records to in cardiovascular studies using from epidemiology, and in the disease research using studies and Electronic health Records and of a Apolipoprotein After Acute Myocardial and long-term in the Framingham Heart an of the for a the Patient in Primary Prevention as as a Risk vascular growth factor and the risk of cardiovascular and of of coronary artery disease on liver prediction of coronary heart in and Clinical and blood lipids in A analysis in and of in women mitral of on health: public health in is an factor in coronary artery among and of in Ischemic A to the safety and of a human myocardial the major from and cholesterol levels in A leading for and health in the of and Management of Individuals With in Atrial of on hyperlipidemia and in patients with coronary artery in the to the of Coronary Artery of heart is associated with in a human of Cell of and of Novel serum lipoprotein cholesterol and lipoprotein A randomized of cardiovascular disease: recent novel on risk factors and clinical for Lipid of GWAS in the of the plasma lipids of studies on the",
+      "citationCount": 1799,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Medicine",
+        "Coronary heart disease",
+        "Internal medicine",
+        "Myocardial infarction",
+        "Cardiology"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Multi-omics approaches to disease",
+      "authors": [
+        "Yehudit Hasin-Brumshtein",
+        "Marcus Seldin",
+        "Aldons J. Lusis"
+      ],
+      "journal": "Genome biology",
+      "year": 2017,
+      "doi": "10.1186/s13059-017-1215-1",
+      "openalexId": "https://openalex.org/W2611138580",
+      "citationCount": 2500,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://genomebiology.biomedcentral.com/counter/pdf/10.1186/s13059-017-1215-1",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Genome Biology",
+        "Biology",
+        "Human genetics",
+        "Omics",
+        "Computational biology",
+        "Disease",
+        "Genomics",
+        "Bioinformatics",
+        "Data science"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Epidemiology of Atrial Fibrillation in the 21st Century",
+      "authors": [
+        "Jelena Kornej",
+        "Christin S. Börschel",
+        "Emelia J. Benjamin",
+        "Renate B. Schnabel"
+      ],
+      "journal": "Circulation Research",
+      "year": 2020,
+      "doi": "10.1161/circresaha.120.316340",
+      "openalexId": "https://openalex.org/W3036116092",
+      "abstract": "Accompanying the aging of populations worldwide, and increased survival with chronic diseases, the incidence and prevalence of atrial fibrillation (AF) are rising, justifying the term global epidemic. This multifactorial arrhythmia is intertwined with common concomitant cardiovascular diseases, which share classical cardiovascular risk factors. Targeted prevention programs are largely missing. Prevention needs to start at an early age with primordial interventions at the population level. The public health dimension of AF motivates research in modifiable AF risk factors and improved precision in AF prediction and management. In this review, we summarize current knowledge in an attempt to untangle these multifaceted associations from an epidemiological perspective. We discuss disease trends, preventive opportunities offered by underlying risk factors and concomitant disorders, current developments in diagnosis and risk prediction, and prognostic implications of AF and its complications. Finally, we review current technological (eg, eHealth) and methodological (artificial intelligence) advances and their relevance for future prevention and disease management.",
+      "citationCount": 1392,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.ahajournals.org/doi/pdf/10.1161/CIRCRESAHA.120.316340",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Epidemiology",
+        "Medicine",
+        "Atrial fibrillation",
+        "Intensive care medicine",
+        "Disease",
+        "Population",
+        "Public health",
+        "Psychological intervention",
+        "eHealth"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "The Sick Adipose Tissue: New Insights Into Defective Signaling and Crosstalk With the Myocardium",
+      "authors": [
+        "Valmore Bermúdez",
+        "Pablo Durán",
+        "Edward Rojas",
+        "María P. Díaz",
+        "José Rivas",
+        "Manuel Nava",
+        "Maricarmen Chacín",
+        "Mayela Cabrera de Bravo",
+        "Rubén Carrasquero",
+        "Clímaco Cano Ponce",
+        "José Luis Górriz",
+        "Luis Marco"
+      ],
+      "journal": "Frontiers in Endocrinology",
+      "year": 2021,
+      "doi": "10.3389/fendo.2021.735070",
+      "openalexId": "https://openalex.org/W3199345553",
+      "abstract": "Adipose tissue (AT) biology is linked to cardiovascular health since obesity is associated with cardiovascular disease (CVD) and positively correlated with excessive visceral fat accumulation. AT signaling to myocardial cells through soluble factors known as adipokines, cardiokines, branched-chain amino acids and small molecules like microRNAs, undoubtedly influence myocardial cells and AT function <i>via</i> the endocrine-paracrine mechanisms of action. Unfortunately, abnormal total and visceral adiposity can alter this harmonious signaling network, resulting in tissue hypoxia and monocyte/macrophage adipose infiltration occurring alongside expanded intra-abdominal and epicardial fat depots seen in the human obese phenotype. These processes promote an abnormal adipocyte proteomic reprogramming, whereby these cells become a source of abnormal signals, affecting vascular and myocardial tissues, leading to meta-inflammation, atrial fibrillation, coronary artery disease, heart hypertrophy, heart failure and myocardial infarction. This review first discusses the pathophysiology and consequences of adipose tissue expansion, particularly their association with meta-inflammation and microbiota dysbiosis. We also explore the precise mechanisms involved in metabolic reprogramming in AT that represent plausible causative factors for CVD. Finally, we clarify how lifestyle changes could promote improvement in myocardiocyte function in the context of changes in AT proteomics and a better gut microbiome profile to develop effective, non-pharmacologic approaches to CVD.",
+      "citationCount": 27,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.frontiersin.org/articles/10.3389/fendo.2021.735070/pdf",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Adipose tissue",
+        "Adipokine",
+        "Inflammation",
+        "Adipocyte",
+        "Paracrine signalling",
+        "Medicine",
+        "Internal medicine",
+        "Bioinformatics",
+        "Biology",
+        "Endocrinology"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Non-alcoholic fatty liver disease and its relationship with cardiovascular disease and other extrahepatic diseases",
+      "authors": [
+        "Leon A. Adams",
+        "Quentin M. Anstee",
+        "Herbert Tilg",
+        "Giovanni Targher"
+      ],
+      "journal": "Gut",
+      "year": 2017,
+      "doi": "10.1136/gutjnl-2017-313884",
+      "openalexId": "https://openalex.org/W2595016203",
+      "abstract": "Key physiological functions of the liver, including glucose and lipid metabolism, become disturbed in the setting of non-alcoholic fatty liver disease (NAFLD) and may be associated with a systemic inflammatory '<i>milieu</i>' initiated in part by liver-secreted cytokines and molecules. Consequently, the pathophysiological effects of NAFLD extend beyond the liver with a large body of clinical evidence demonstrating NAFLD to be independently associated with both prevalent and incident cardiovascular disease (CVD), chronic kidney disease (CKD) and type 2 diabetes mellitus (T2DM). The magnitude of risk of developing these extrahepatic diseases parallels the underlying severity of NAFLD, such that patients with non-alcoholic steatohepatitis (NASH) appear to be at greater risk of incident CVD, CKD and T2DM than those with simple steatosis. Other modifiers of risk may include genetic variants (eg, patatin-like phospholipase domain-containing 3 and trans-membrane 6 superfamily member 2 polymorphisms), visceral adipose tissue accumulation, dietary intake and the gut microbiome. Emerging data also suggest that NAFLD may be a risk factor for colonic neoplasia and reduced bone mineral density, especially among men. Importantly, improvement/resolution of NAFLD is associated with a reduced incidence of T2DM and improved kidney function, adding weight to causality and suggesting liver focused treatments may reduce risk of extrahepatic complications. Awareness of these associations is important for the clinicians such that CVD risk factor management, screening for T2DM and CKD are part of the routine management of patients with NAFLD.",
+      "citationCount": 1153,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://gut.bmj.com/content/gutjnl/66/6/1138.full.pdf",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Fatty liver",
+        "Steatohepatitis",
+        "Medicine",
+        "Internal medicine",
+        "Kidney disease",
+        "Disease",
+        "Risk factor",
+        "Diabetes mellitus",
+        "Metabolic syndrome",
+        "Gastroenterology",
+        "Type 2 diabetes",
+        "Steatosis",
+        "Liver disease",
+        "Endocrinology"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Trimethylamine N-oxide in cardiovascular disease: Pathophysiology and the potential role of statins",
+      "authors": [
+        "Fakhar Latif",
+        "Ayesha Mubbashir",
+        "Muhammad Sohaib Khan",
+        "Z.A. Shaikh",
+        "Aaima Memon",
+        "Jenelle Alvares",
+        "Ayesha Azhar",
+        "Hritvik Jain",
+        "Raheel Ahmed",
+        "Sai Gautham Kanagala"
+      ],
+      "journal": "Life Sciences",
+      "year": 2024,
+      "doi": "10.1016/j.lfs.2024.123304",
+      "openalexId": "https://openalex.org/W4405287644",
+      "citationCount": 15,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Trimethylamine N-oxide",
+        "Microbiome",
+        "Medicine",
+        "Gut flora",
+        "Inflammation",
+        "Cholesterol",
+        "Disease",
+        "Statin",
+        "Aspirin",
+        "Pharmacology",
+        "Internal medicine",
+        "Bioinformatics"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "AASLD Practice Guidance on the clinical assessment and management of nonalcoholic fatty liver disease",
+      "authors": [
+        "Mary E. Rinella",
+        "Brent A. Neuschwander‐Tetri",
+        "Mohammad Shadab Siddiqui",
+        "Manal F. Abdelmalek",
+        "Stephen H. Caldwell",
+        "Diana Barb",
+        "David E. Kleiner",
+        "Rohit Loomba"
+      ],
+      "journal": "Hepatology",
+      "year": 2023,
+      "doi": "10.1097/hep.0000000000000323",
+      "openalexId": "https://openalex.org/W4318923555",
+      "abstract": "PREAMBLE The study of NAFLD has intensified significantly, with more than 1400 publications since 2018, when the last American Association for the Study of Liver Diseases (AASLD) Guidance document was published.1 This new AASLD Guidance document reflects many advances in the field pertinent to any practitioner caring for patients with NAFLD and emphasizes advances in noninvasive risk stratification and therapeutics. A separate guideline focused on the management of patients with NAFLD in the context of diabetes has been written jointly by the American Association of Clinical Endocrinology and AASLD.2 Given the significant growth in pediatric NAFLD, it will not be covered here to allow for a more robust discussion of the diagnosis and management of pediatric NAFLD in the upcoming AASLD Pediatric NAFLD Guidance. A “Guidance” differs from a “Guideline” in that it is not bound by the Grading of Recommendations, Assessment Development and Evaluation system. Thus, actionable statements rather than formal recommendations are provided herein. The highest available level of evidence was used to develop these statements, and, where high-level evidence was not available, expert opinion was used to develop guidance statements to inform clinical practice. Key points highlight important concepts relevant to understanding the disease and its management. The most profound advances in NAFLD relevant to clinical practice are in biomarkers and therapeutics. Biomarkers and noninvasive tests (NITs) can be used clinically to either exclude advanced diseases or identify those with a high probability of cirrhosis.3,4 NIT “cut points” vary with the populations studied, underlying disease severity, and clinical setting. Those proposed in this guidance are meant to aid decision-making in the clinic and are not meant to be interpreted in isolation. Identifying patients with “at-risk” NASH (biopsy-proven NASH with stage 2 or higher fibrosis) is a more recent area of interest. Although the definitive diagnosis and staging of NASH remain linked to histology, noninvasive tools can now be used to assess the likelihood of significant fibrosis, predict risk of disease progression and decompensation, make management decisions, and, to some degree, assess response to treatment. There is an ongoing debate over the nomenclature of fatty liver disease, which had not been finalized at the time this guidance was published. At the culmination of a rigorous consensus process, it is intended that any formal change in nomenclature will advance the field without a negative impact on disease awareness, clinical trial endpoints, or the drug development/approval process. Furthermore, it should allow for the emergence of newly recognized disease subtypes to address the impact of disease heterogeneity, including the role of alcohol, on disease progression and response to therapy. Input from patients has been central to all stages of the consensus process to ensure the minimization of nomenclature-related stigma. DEFINITIONS NAFLD is an overarching term that includes all disease grades and stages and refers to a population in which ≥5% of hepatocytes display macrovesicular steatosis in the absence of a readily identified alternative cause of steatosis (eg, medications, starvation, monogenic disorders) in individuals who drink little or no alcohol (defined as < 20 g/d for women and <30 g/d for men). The spectrum of disease includes NAFL, characterized by macrovesicular hepatic steatosis that may be accompanied by mild inflammation, and NASH, which is additionally characterized by the presence of inflammation and cellular injury (ballooning), with or without fibrosis, and finally cirrhosis, which is characterized by bands of fibrous septa leading to the formation of cirrhotic nodules, in which the earlier features of NASH may no longer be fully appreciated on a liver biopsy. UPDATE ON EPIDEMIOLOGY AND NATURAL HISTORY The prevalence of NAFLD and NASH is rising worldwide in parallel with increases in the prevalence of obesity and metabolic comorbid disease (insulin resistance, dyslipidemia, central obesity, and hypertension).5,6 The prevalence of NAFLD in adults is estimated to be 25%–30% in the general population7–9 and varies with the clinical setting, race/ethnicity, and geographic region studied but often remains undiagnosed.10–14 The associated economic burden attributable to NASH is substantial.15–17 The prevalence of NASH in the general population is challenging to determine with certainty; however, NASH was identified in 14% of asymptomatic patients undergoing colon cancer screening.14 This study also highlights that since the publication of a prior prospective prevalence study,18 the prevalence of clinically significant fibrosis (stage 2 or higher fibrosis) has increased >2-fold. This is supported by the projected rise in NAFLD prevalence by 2030, when patients with advanced hepatic fibrosis, defined as bridging fibrosis (F3) or compensated will the projected of the of hepatic decompensation, and to NASH are to to by Although to is the leading for liver in women and those of and is on with alcohol as the leading of disease progression from and that fibrosis and the presence of are the of disease The NASH and the fibrosis it it challenging to the of NASH to fibrosis and in Although fibrosis is the of increased and and are in patients with NAFLD in the absence of fibrosis on patients with NASH and at stage 2 fibrosis to as “at-risk” NASH, a higher risk of and progression is by many as the presence and of comorbid disease, and A of patients in NASH that or or may earlier of with a NAFLD fibrosis progression of stage in those with NASH for those with The diagnosis of cirrhosis, by or is important it clinical management. Those with for as as for and for or of patients with cirrhosis, progression to clinical from to Association disease stage and The most of in patients with NAFLD are disease and by liver The of liver fibrosis identified in patients with NAFLD has been linked to the of and fibrosis and are associated with an risk of and than earlier stages of a prospective study of in those with fibrosis stages was with in those with bridging fibrosis and in those with for hepatic was associated with has been associated with a in in clinical with NASH and fibrosis are at higher risk for and and are to “at-risk” The of fibrosis progression and hepatic vary on disease severity, and comorbid disease and are the most of in patients with NAFLD without advanced from liver disease in patients with advanced AND The presence and of and NASH are by that the and of fatty and and to and metabolic metabolic and in the of (eg, and the formation and of from There is in the role of patients with the of a role in the of NASH, with a higher risk associated with of NAFLD as of the that to the of NASH and its many of which can be are the many where may a role and where important as of fatty the and may also these A disease may be an of to that to without is which and the of NASH the of for patients with of that or NASH that (eg, (eg, (eg, A and fatty hepatic and and inflammation, and metabolic the with on the liver (eg, of growth growth and as that and is in patients with NAFLD and is in the and is characterized by increased of fatty from in the and with the progression of NAFLD to that the and of the of to an and that in response to in The and to in can be by and decisions, all of which in the of The of to the of NASH patients has the of tests and Although in some the and progression of NASH are by and resistance, in disease progression is by been associated with more advanced liver disease and the of in The of of in and in that a role in also been linked to the prevalence and of NAFLD, including 2 which may a role in and which in a that an that also to in been linked to NASH, fibrosis, and in a for of also been to be A of the of which is the of this to in disease and as to from the and hepatic may also to the NASH of of patients is to understanding of this disease and its The response of the liver to injury includes and of which to injury and as of a hepatic Although of been a in NASH, its role in the of NASH in remains of NASH an to the liver and and with in and disease inflammation, from to disease to the of NAFLD and disease NAFLD NAFLD is linked to and often the of metabolic (insulin resistance, dyslipidemia, central obesity, and metabolic an risk of progression of NASH and The NAFLD and metabolic may also the liver and (eg, the of that fatty and and The presence and of obesity are associated with NAFLD and disease is an important of the role of obesity in NAFLD characterized by increased and a higher risk of resistance, and hepatic fibrosis, of characterized by increased in the or to be which is more and than the of this more and is the of fatty leading to and of a with NAFLD recent and of NAFLD, or for alcohol including of and (eg, features of (eg, features of advanced liver disease (eg, tests with and and or to not as of liver or 2 diabetes 2 diabetes is the most risk for the of NAFLD, fibrosis and Given the central role that in the of and NAFLD, it is not that patients with a higher prevalence of NAFLD from to and a higher risk of NASH with Furthermore, the probability of advanced fibrosis increases with the of Although is for time and time these the and The NAFLD and is in in its NAFLD is associated with a in in the absence of The presence of NAFLD is associated with a to risk of and patients with NAFLD should be for the presence of Furthermore, as liver disease and diabetes more challenging to The role of in the progression of remains with 2 an and injury and liver not this Although NAFLD has also been in patients with its prevalence is than in and it is to metabolic risk (eg, higher is associated with There is a higher of in those with NAFLD the disease with of in disease to in those with The presence of is to metabolic with to the risk of and has been associated with fibrosis the of or the or are of underlying metabolic disease has not been with NAFLD are as to as those without and the are more in patients with NASH can to and and impact it is to this is by the of the patients to cirrhosis, to remain at high risk for the of and to hepatic of in NAFLD should the of to as on risk and risk of with as fatty or should be when with a not are in patients with NAFLD the disease including advanced liver disease, and to a in and in clinical are often patients with are also in the context of compensated and may on and are Although been used in patients with cirrhosis, the risk of be higher in this and more is patients with and high risk undergoing for liver can be with patients with NAFLD and (eg, or a of with fatty or should be used to the risk of may also when are and are is as an to to can be for of to its on should be when are used in with to a higher risk of is associated with and is also associated with more advanced a of has been linked to of and and increased hepatic Given the NAFLD and patients with NAFLD who are or should be for and or should be for those at high is an important cause of in patients with however, the to which NAFLD is A NAFLD and disease, and increased presence and of and the NAFLD and Furthermore, in a studied the of was the all fibrosis however, the of was the management of risk with the of and is to in patients with comorbid as dyslipidemia, and and is to in those at disease A of 20 that NAFLD was associated with a increased prevalence of NAFLD and NASH are also associated with from the NASH a higher prevalence of in patients with advanced fibrosis with fibrosis The to which the liver to the of of associated metabolic disease remains to be are and for risk in patients with NAFLD the disease including compensated on the and of in patients with cirrhosis, with be in patients with high can be and with fatty or with diabetes are at higher risk for NASH and advanced fibrosis and should be for advanced with NAFLD should be for the presence of Key and of is higher patients with NASH and advanced from is a cause of in patients with NAFLD, and to cancer has the to A NAFLD with NAFLD are most with hepatic steatosis on or liver is important to that provided by most are higher than should be in NAFLD, in which a from to in and from to in of patients should for metabolic of alcohol and of of liver disease as as to identify of and advanced liver disease the clinical is (eg, not associated with metabolic or accompanied by or of steatosis or should be of steatosis or can in or an NASH and should be in clinical can also to hepatic steatosis or or disease in those with underlying NAFLD and should be identified Although risk stratification is not in clinical of and NAFLD in the risk for NAFLD, NASH, and advanced 2 to for of hepatic steatosis and Clinical and advanced fibrosis in steatosis on liver (eg, disease on liver disease with to macrovesicular steatosis or of of steatosis and of hepatic to steatosis of of or may not be of metabolic risk and injury injury to of of metabolic of of hepatic of alcohol can be an important to fatty liver disease progression and should be in all can be as mild to 20 and and or and alcohol increases the probability of advanced in patients with obesity or of and alcohol on liver disease and alcohol the risk of liver cirrhosis, and from liver alcohol liver injury and fibrosis progression and should be in patients with a of mild alcohol on the of but in a alcohol (defined as was associated with in steatosis and and of NASH with patients who not alcohol may the risk for and is in to liver with an of on the to impact disease at an The impact of alcohol and on the of patients with NAFLD, alcohol can be a for liver disease and should be on a with clinically significant hepatic fibrosis should from alcohol Key for those patients with alcohol may the of fibrosis progression and hepatic and in patients with to its with obesity and metabolic risk higher of NAFLD been in patients with growth and the role of in the of hepatic the NAFLD and in remains significant NAFLD and or was in a however, a study of patients for a of was associated with a higher of and the of its metabolic growth are important of and and cellular is associated with and increased and can in resistance, and a growth in patients with NAFLD and associated with obesity and cause of is associated with resistance, and dyslipidemia, with a an increased risk for NASH and of in with and NAFLD been and a study of adults with with and liver in NASH with and hepatic steatosis by patients with and NAFLD, a which and increases growth without liver the a in the and NAFLD is linked to in and resistance, but is not for all A of and and A that NAFLD was associated with in but higher in a by The and NAFLD is often by the presence of obesity and resistance, of which are to be associated with can also resistance, and to the of hepatic study in that a level was associated with NAFLD, and the was for and in study including with by and liver histology, the and steatosis when for and obesity, with no to the of liver or in resistance, and a more role of on metabolic risk for NAFLD in but it should be for as it may The role of and in NAFLD is associated with increased liver as as a higher prevalence of NAFLD and advanced The prevalence of NAFLD is higher in with that higher in women are associated with an increased risk of NAFLD Furthermore, is a likelihood of NAFLD in higher of as as an and the of on NAFLD, hepatic in study that to from and are in The associated increased to the and progression of NAFLD, has not been of in and population a to in the prevalence of NAFLD and an increased risk of women with that is the of disease in a study of women with NAFLD was associated with the of and advanced fibrosis for and this study not for resistance, which may the NAFLD is more in with but not of is as by clinical or this should be Key Although and may be associated with hepatic role on the and progression of and fibrosis remains to be can in women with which with obesity and can NAFLD and more disease in this NAFLD Although NAFLD is associated with obesity, it can also in or in are with or and the prevalence of NAFLD in individuals varies from in the to as high as in with with NAFLD increased metabolic and and in the may also to NAFLD in a significant role in this but the to NAFLD individuals with NAFLD are more of or which is in by a higher prevalence of the in the which to NASH and fibrosis but is more in individuals with NAFLD with patients who or had but is not as it not can also a role and should be in patients of NAFLD in patients without obesity can be clinically may not be for patients with NAFLD, but and in this may be of populations at increased risk for advanced liver disease is to identify and those with clinically significant fibrosis (stage in as those with obesity with metabolic a of or significant alcohol also separate discussion on the role of may identify those with asymptomatic but clinically significant of patients for that may hepatic of is important of with NASH a higher risk of advanced Furthermore, the risk of NAFLD and advanced fibrosis may be of risk and recommendations are in for advanced fibrosis in populations of advanced fibrosis, obesity NAFLD in context of alcohol of a with to 2 diabetes of advanced fibrosis in population should NAFLD be in and practice most NAFLD is asymptomatic or associated with often patients The prevalence of advanced disease is in than in and the to is context to NAFLD on the of metabolic risk or identified as fatty liver by in the absence of of hepatic steatosis disease, disease, alcohol should risk The of this risk is to identify patients who are not to advanced fibrosis to the negative of in in advanced fibrosis, patients in can be in patients with metabolic risk those with or should more risk with patients with and advanced hepatic fibrosis a from available clinical and may be and allow for the of as progression to or decompensation, the of may be robust in patients with more are available, it is that the for in patients with will for the of patients at risk for or with NAFLD practice with steatosis on or for is a clinical of NAFLD, as those with metabolic risk or in liver should with a prevalence of advanced fibrosis, as in the setting, the is on advanced fibrosis a with a high negative the is patients can be in the and without 2 diabetes and metabolic risk can be with or 2 or more metabolic risk are at higher risk for disease and more (eg, should be patients than a of should be has in those should be in those with increased metabolic risk or liver should not be used in patients with a should be or Liver or the for risk stratification in a to should be in those with to exclude of liver disease or when to the increased risk of clinically significant higher prevalence as risk with may be when noninvasive tests (NITs) are or is clinical of more advanced of should for and or may identify patients with “at-risk” NASH with NAFLD and fibrosis stage who may from a as is on clinical or management may be without a liver biopsy. Liver should be when significant fibrosis the presence of “at-risk” NASH (eg, or NIT is are or are that in patients with or advanced fibrosis, an is a of and is for this of in risk is on expert at all stages of disease should be on and those with fibrosis for as of are supported by evidence and are meant to clinical management to rather than be interpreted in isolation. who may a or high risk of advanced disease on should risk the setting, or as are over as to The Liver is for when advanced fibrosis is it can be for risk the of may be in some risk is with an or high risk of fibrosis, patients should be to for and those patients with advanced hepatic fibrosis or cirrhosis, or of of or may the of are often used clinically to identify patients with liver disease but can be in patients with NASH, and advanced hepatic Although are for the of with advanced fibrosis, and or or a of may the presence of liver are the provided by most clinical which is to the of of patients with for NAFLD from risk stratification in the and practice The in the is the of patients with “at-risk” NASH or advanced patients and may from tools as or can be used to risk patients in been or not of clinical Liver should be when is as may with or and or features a diagnosis of advanced or (eg, or when is in liver for NAFLD is not patients with hepatic steatosis or clinically NAFLD on the presence of obesity and metabolic risk should risk with as those with obesity, of cirrhosis, or more than mild alcohol should be for advanced patients with or 2 or more metabolic risk evidence of hepatic risk with should be with NASH are at the highest risk for and for and for with advanced NASH or should be to a for are in patients with advanced liver disease to NASH and should not be used in to exclude the presence of NASH with clinically significant of patients with NASH should be increased risk and for advanced hepatic Key with “at-risk” NASH with at stage 2 fibrosis) are at increased risk of and AND NAFLD Although liver remains the for the and staging of NASH, it has important to and liver for and staging of NASH are not in clinical practice and should be for clinical biomarkers are as tools for more an important of liver of noninvasive biomarkers in with the and of will the diagnosis of patients with clinically disease and response to without the for liver and of hepatic steatosis Although used in clinical for of in those with and a of steatosis The absence of steatosis on not exclude the presence of NASH or the presence of fibrosis, can be when cirrhotic liver is identified or it evidence of (eg, the of hepatic the in with a of hepatic steatosis but not or in liver is an and for liver that is used in clinical role in clinical practice is it is used in Although is to in the diagnosis as as the of liver this is by and the of not a of liver fibrosis in patients with or NAFLD Clinical and fibrosis biomarkers from clinical can of the presence of advanced fibrosis been (eg, NAFLD however, is the most is a and and in its to identify patients with a probability of advanced of and also been associated with and in a change in from risk to risk to high risk may be used to assess clinical Although is to fibrosis as the and to advanced fibrosis, is as a for general and on its and The is a of in of and of patients with NAFLD at increased risk of progression to and clinical The is for clinical as a in the and fibrosis tests may be as risk when is not available for the noninvasive of NAFLD to clinical context of of hepatic steatosis with steatosis can as advanced fibrosis for ≥5% spectrum of to assess of “at-risk” NASH in the of and patients with at stage 2 fibrosis with of advanced fibrosis not in and individuals who high probability not in with obesity 2 to a to a of points not points not with advanced fibrosis, of of or for and for cirrhosis, is associated with increased risk of hepatic patients with by is associated with cirrhosis, but for is by has a for diagnosis of and is also associated with increased risk of hepatic “at-risk” NASH is defined as NASH with stage area the clinical Liver liver in and liver from and NAFLD Liver is a of the liver that increases with fibrosis as as as inflammation, and (eg, is the most used to assess liver and can be used to exclude significant hepatic A recent that a liver can be used to advanced fibrosis, used by and may be associated with NASH, and is associated with a high likelihood of advanced fibrosis, the is in liver may also be in disease that an in liver of on either or may be associated with disease progression and clinical patients with cirrhosis, a with a and by had a of an will some patients with to of these of points to exclude advanced fibrosis and high points to identify advanced fibrosis may be used more points for and are but not been with the more on is more than in the of fibrosis stage and is to be the most of fibrosis in Although is not a to risk stratification in a with NAFLD, it can be an important clinical is a for or when are patients with cirrhosis, by risk of hepatic and The of that with the stage of fibrosis is by is of the Liver by may also be to assess the risk of of and associated with risk of hepatic or that the for by and are but the are provided of these with a of and that associated with and risk of over of a in liver is associated with a higher risk of as as Although more are NIT in patients with may be as for in response to study for the of “at-risk” NASH and biomarkers are study for the of NASH, but these not the level of clinical evidence for in clinical practice. of biomarkers including and and and and biomarkers are in for “at-risk” as may also be for the of “at-risk” an of the this in not been and over remains to be that clinical with liver that may be of are The is a from liver and by and for the of “at-risk” with study on and a with has been to be to A with has been linked to increased risk of hepatic decompensation, and a negative with has a negative for a risk of hepatic A from and is also to identify “at-risk” as a on and may be but of over the over to be and the of in on the context of Although can hepatic it is not as a to identify hepatic steatosis to the NAFLD as a may be used to identify can additionally is or may be used to exclude advanced Key liver and can predict an increased risk of hepatic and AND of NAFLD should of of and staging of fibrosis assess these with a should be at in but in and are also the spectrum of",
+      "citationCount": 1970,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/pdf/nihms-1948413.pdf",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Nonalcoholic fatty liver disease",
+        "Medicine",
+        "Clinical Practice",
+        "Internal medicine",
+        "Intensive care medicine",
+        "Gastroenterology",
+        "Fatty liver",
+        "Disease"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    }
+  ],
+  "total": 1775
+}

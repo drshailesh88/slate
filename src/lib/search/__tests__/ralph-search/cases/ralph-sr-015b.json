@@ -1,0 +1,48 @@
+{
+  "id": "ralph-sr-015b",
+  "name": "Benchmark — AI ECG interpretation accuracy",
+  "phase": 3,
+  "category": "benchmark",
+  "query": "Artificial intelligence ECG interpretation accuracy",
+  "expectedPapers": [
+    {
+      "titleFragment": "artificial intelligence",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "ecg",
+      "mustFind": false
+    },
+    {
+      "titleFragment": "electrocardiogram",
+      "mustFind": false
+    },
+    {
+      "titleFragment": "deep learning",
+      "mustFind": false
+    }
+  ],
+  "rankingRules": [
+    {
+      "rule": "Majority of top 10 should be on-topic (AI + ECG related)",
+      "check": "majority_on_topic",
+      "params": { "n": 10, "keywords": ["artificial intelligence", "ecg", "electrocardiogram", "deep learning", "machine learning", "neural network"], "threshold": 0.6 }
+    }
+  ],
+  "metadataChecks": [
+    {
+      "check": "all_have_doi",
+      "threshold": 0.8
+    },
+    {
+      "check": "has_abstract",
+      "threshold": 0.6
+    }
+  ],
+  "dedupChecks": [
+    {
+      "titleFragments": ["current and future use of artificial intelligence in electrocardiography"],
+      "maxOccurrences": 1
+    }
+  ]
+}

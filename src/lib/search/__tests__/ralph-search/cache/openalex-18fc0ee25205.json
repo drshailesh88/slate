@@ -1,0 +1,885 @@
+{
+  "source": "openalex",
+  "query": "Colchicine post-MI anti-inflammatory cardiovascular",
+  "timestamp": "2026-03-02T17:03:19.128Z",
+  "results": [
+    {
+      "title": "Inflammation in Coronary Atherosclerosis and Its Therapeutic Implications",
+      "authors": [
+        "Nicholas J. Montarello",
+        "Mau T. Nguyen",
+        "Dennis T. L. Wong",
+        "Stephen J. Nicholls",
+        "Peter J. Psaltis"
+      ],
+      "journal": "Cardiovascular Drugs and Therapy",
+      "year": 2020,
+      "doi": "10.1007/s10557-020-07106-6",
+      "openalexId": "https://openalex.org/W4229071023",
+      "citationCount": 54,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Medicine",
+        "Canakinumab",
+        "Inflammation",
+        "Myocardial infarction",
+        "Coronary artery disease",
+        "Thrombosis",
+        "Cardiology",
+        "Pathogenesis",
+        "Disease",
+        "Internal medicine"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Inflammation in Coronary Atherosclerosis and Its Therapeutic Implications.",
+      "authors": [
+        "Nicholas J Montarello",
+        "Mau T Nguyen",
+        "Dennis T L Wong",
+        "Stephen J Nicholls",
+        "Peter J Psaltis"
+      ],
+      "journal": "PubMed",
+      "year": 2022,
+      "doi": "10.1007/s10557-020-07106-6",
+      "openalexId": "https://openalex.org/W3101142429",
+      "abstract": "Atherosclerotic coronary artery disease has a complex pathogenesis which extends beyond cholesterol intimal infiltration. It involves chronic inflammation of the coronary artery wall driven by systemic and local activation of both the adaptive and innate immune systems, which can ultimately result in the rupture or erosion of atherosclerotic plaque, leading to thrombosis and myocardial infarction (MI). Despite current best practice care, including the widespread use of cholesterol-lowering statins, atherothrombotic cardiovascular events recur at alarming rates post-MI. To a large extent, this reflects residual inflammation that is not adequately controlled by contemporary treatment. Consequently, there has been increasing interest in the pharmacological targeting of inflammation to improve outcomes in atherosclerotic cardiovascular disease. This has comprised both novel pathway-specific agents, most notably the anti-interleukin-1 beta monoclonal antibody, canakinumab, and the repurposing of established, broad-acting drugs, such as colchicine, that are already approved for the management of other inflammatory conditions. Here we discuss the importance of inflammation in mediating atherosclerosis and its complications and provide a timely update on \"new\" and \"old\" anti-inflammatory therapies currently being investigated to target it.",
+      "citationCount": 31,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "2021 ESC Guidelines on cardiovascular disease prevention in clinical practice",
+      "authors": [
+        "Frank L.J. Visseren",
+        "François Mach",
+        "Yvo M. Smulders",
+        "David Carballo",
+        "Konstantinos C. Koskinas",
+        "Maria Bäck",
+        "Athanase Bénétos",
+        "Alessandro Biffi",
+        "José-Manuel Boavida",
+        "Davide Capodanno",
+        "Bernard Cosyns",
+        "Carolyn Crawford",
+        "Constantinos H. Davos",
+        "Ileana Désormais",
+        "Emanuele Di Angelantonio",
+        "Oscar H. Franco",
+        "Sigrun Halvorsen",
+        "Richard Hobbs",
+        "Monika Hollander",
+        "Ewa A. Jankowska",
+        "Matthias Michal",
+        "Simona Sacco",
+        "Naveed Sattar",
+        "Lâle Tokgözoğlu",
+        "Serena Tonstad",
+        "Konstantinos Tsioufis",
+        "Ineke van Dis",
+        "Isabelle C. Van Gelder",
+        "Christoph Wanner",
+        "Bryan Williams",
+        "Guy De Backer",
+        "Vera Regitz‐Zagrosek",
+        "Anne Hege Aamodt",
+        "Magdy Abdelhamid",
+        "Victor Aboyans",
+        "Christian Albus",
+        "Riccardo Asteggiano",
+        "Magnus Bäck",
+        "Michael A. Borger",
+        "Carlos Brotons",
+        "Jelena Čelutkienė",
+        "Renata Cífková",
+        "Maja Čikeš",
+        "Francesco Cosentino",
+        "Nikolaos Dagres",
+        "Tine De Backer",
+        "Dirk De Bacquer",
+        "Victoria Delgado",
+        "Hester M. den Ruijter",
+        "Paul Dendale",
+        "Heinz Drexel",
+        "Volkmar Falk",
+        "Laurent Fauchier",
+        "Brian A. Ference",
+        "Jean Ferrières",
+        "Marc Ferrini",
+        "Miles Fisher",
+        "Danilo Fliser",
+        "Zlatko Fras",
+        "Dan Gaiță",
+        "Simona Giampaoli",
+        "Stephan Gielen",
+        "Ian Graham",
+        "Catriona Jennings",
+        "Torben Jørgensen",
+        "Alexandra Kautzky‐Willer",
+        "Maryam Kavousi",
+        "Wolfgang Köenig",
+        "А. О. Конради",
+        "Dipak Kotecha",
+        "Ulf Landmesser",
+        "Madalena Lettino",
+        "Basil S. Lewis",
+        "Aleš Linhart",
+        "Maja‐Lisa Løchen",
+        "Konstantinos Makrilakis",
+        "Giuseppe Mancia",
+        "Pedro Marques‐Vidal",
+        "John W. McEvoy",
+        "Paul McGreavy",
+        "Béla Merkely",
+        "Lis Neubeck",
+        "Jens Cosedis Nielsen",
+        "Joep Perk",
+        "Steffen E. Petersen",
+        "Anna Sonia Petronio",
+        "Massimo Piepoli",
+        "Nana Goar Pogosova",
+        "Eva Prescott",
+        "Kausik K. Ray",
+        "Željko Reiner",
+        "Dimitrios Richter",
+        "Lars Rydén",
+        "Е. V. Shlyakhto",
+        "Marta Sitges",
+        "Miguel Sousa‐Uva",
+        "Isabella Sudano",
+        "Monica Tiberi",
+        "Rhian M. Touyz",
+        "Andrea Ungar"
+      ],
+      "journal": "European Heart Journal",
+      "year": 2021,
+      "doi": "10.1093/eurheartj/ehab484",
+      "openalexId": "https://openalex.org/W3197233987",
+      "abstract": "The ESC Guidelines represent the views of the ESC and were produced after careful consideration of the scientific and medical knowledge and the evidence available at the time of their publication. The ESC is not responsible in the event of any contradiction, discrepancy and/or ambiguity between the ESC Guidelines and any other official recommendations or guidelines issued by the relevant public health authorities, in particular in relation to good use of healthcare or therapeutic strategies. Health professionals are encouraged to take the ESC Guidelines fully into account when exercising their clinical judgment, as well as in the determination and the implementation of preventive, diagnostic or therapeutic medical strategies; however, the ESC Guidelines do not override, in any way whatsoever, the individual responsibility of health professionals to make appropriate and accurate decisions in consideration of each patient's health condition and in consultation with that patient and, where appropriate and/or necessary, the patient's caregiver. Nor do the ESC Guidelines exempt health professionals from taking into full and careful consideration the relevant official updated recommendations or guidelines issued by the competent public health authorities, in order to manage each patient's case in light of the scientifically accepted data pursuant to their respective ethical and professional obligations. It is also the health professional's responsibility to verify the applicable rules and regulations relating to drugs and medical devices at the time of prescription.",
+      "citationCount": 5807,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://academic.oup.com/eurheartj/article-pdf/42/34/3227/45752329/ehab484.pdf",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Medicine",
+        "Medical prescription",
+        "Health professionals",
+        "Health care",
+        "Ambiguity",
+        "Contradiction",
+        "Public health",
+        "Public relations",
+        "Medical education"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "The inflammatory etiology of unstable angina",
+      "authors": [
+        "Rabih R. Azar",
+        "David D. Waters"
+      ],
+      "journal": "American Heart Journal",
+      "year": 1996,
+      "doi": "10.1016/s0002-8703(96)90041-1",
+      "openalexId": "https://openalex.org/W2043182512",
+      "citationCount": 36,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Medicine",
+        "Colchicine",
+        "Quality-adjusted life year",
+        "Population",
+        "Quality of life (healthcare)",
+        "Cost effectiveness",
+        "Cost–utility analysis",
+        "Cost–benefit analysis",
+        "Physical therapy",
+        "Internal medicine",
+        "Intensive care medicine"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Interplay between inflammation and thrombosis in cardiovascular pathology",
+      "authors": [
+        "Konstantin Stark",
+        "Steffen Maßberg"
+      ],
+      "journal": "Nature Reviews Cardiology",
+      "year": 2021,
+      "doi": "10.1038/s41569-021-00552-1",
+      "openalexId": "https://openalex.org/W3159729619",
+      "citationCount": 860,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.nature.com/articles/s41569-021-00552-1.pdf",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Medicine",
+        "Inflammation",
+        "Thrombosis",
+        "Intensive care medicine",
+        "Antithrombotic",
+        "Myocardial infarction",
+        "Platelet activation",
+        "Stroke (engine)",
+        "Mechanism (biology)",
+        "Bioinformatics",
+        "Immunology",
+        "Platelet"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "2013 ACCF/AHA Guideline for the Management of ST-Elevation Myocardial Infarction: Executive Summary",
+      "authors": [
+        "Patrick T. O’Gara",
+        "Frederick G. Kushner",
+        "Deborah D. Ascheim",
+        "Donald E. Casey",
+        "Mina K. Chung",
+        "James A. de Lemos",
+        "Steven M. Ettinger",
+        "James C. Fang",
+        "Francis M. Fesmire",
+        "Barry A. Franklin",
+        "Christopher B. Granger",
+        "Harlan M. Krumholz",
+        "Jane A. Linderbaum",
+        "David A. Morrow",
+        "L. Kristin Newby",
+        "Joseph P. Ornato",
+        "Narith N. Ou",
+        "Martha J. Radford",
+        "Jacqueline E. Tamis‐Holland",
+        "Jacqueline E. Tommaso",
+        "Cynthia M. Tracy",
+        "Y. Joseph Woo",
+        "David Zhao"
+      ],
+      "journal": "Circulation",
+      "year": 2012,
+      "doi": "10.1161/cir.0b013e3182742c84",
+      "openalexId": "https://openalex.org/W2744105079",
+      "citationCount": 2222,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.ahajournals.org/doi/pdf/10.1161/CIR.0b013e3182742c84",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Medicine",
+        "Guideline",
+        "Myocardial infarction",
+        "Cardiology",
+        "Internal medicine",
+        "Executive summary",
+        "ST elevation"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Will Colchicine Soon Be Part of Primary and Secondary Cardiovascular Prevention?",
+      "authors": [
+        "Michelle Samuel",
+        "David D. Waters"
+      ],
+      "journal": "Canadian Journal of Cardiology",
+      "year": 2020,
+      "doi": "10.1016/j.cjca.2020.06.012",
+      "openalexId": "https://openalex.org/W3036461851",
+      "citationCount": 7,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "http://www.onlinecjc.ca/article/S0828282X20305754/pdf",
+      "publicationTypes": [
+        "letter"
+      ],
+      "concepts": [
+        "Medicine",
+        "Statin",
+        "Clinical endpoint",
+        "Myocardial infarction",
+        "Acute coronary syndrome",
+        "Internal medicine",
+        "Aspirin",
+        "Clinical trial",
+        "Coronary artery disease",
+        "Colchicine",
+        "Atorvastatin",
+        "Observational study",
+        "Disease",
+        "Intensive care medicine"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Caspase Functions in Cell Death and Disease",
+      "authors": [
+        "David R. McIlwain",
+        "Thorsten Berger",
+        "TW Mak"
+      ],
+      "journal": "Cold Spring Harbor Perspectives in Biology",
+      "year": 2013,
+      "doi": "10.1101/cshperspect.a008656",
+      "openalexId": "https://openalex.org/W2133190342",
+      "abstract": "Caspases are a family of endoproteases that provide critical links in cell regulatory networks controlling inflammation and cell death. The activation of these enzymes is tightly controlled by their production as inactive zymogens that gain catalytic activity following signaling events promoting their aggregation into dimers or macromolecular complexes. Activation of apoptotic caspases results in inactivation or activation of substrates, and the generation of a cascade of signaling events permitting the controlled demolition of cellular components. Activation of inflammatory caspases results in the production of active proinflammatory cytokines and the promotion of innate immune responses to various internal and external insults. Dysregulation of caspases underlies human diseases including cancer and inflammatory disorders, and major efforts to design better therapies for these diseases seek to understand how these enzymes work and how they can be controlled.",
+      "citationCount": 2527,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "http://cshperspectives.cshlp.org/content/5/4/a008656.full.pdf",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Caspase",
+        "Biology",
+        "Proinflammatory cytokine",
+        "Cell biology",
+        "Apoptosis",
+        "Programmed cell death",
+        "Inflammation",
+        "Innate immune system",
+        "Signal transduction",
+        "Enzyme activator",
+        "Immunology",
+        "Immune system"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Interleukin-6 Signaling and Anti-Interleukin-6 Therapeutics in Cardiovascular Disease",
+      "authors": [
+        "Paul M. Ridker",
+        "Manas Rane"
+      ],
+      "journal": "Circulation Research",
+      "year": 2021,
+      "doi": "10.1161/circresaha.121.319077",
+      "openalexId": "https://openalex.org/W3160691741",
+      "abstract": "IL (interleukin)-6 is a pivotal cytokine of innate immunity, which enacts a broad set of physiological functions traditionally associated with host defense, immune cell regulation, proliferation, and differentiation. Following recognition of innate immune pathways leading from the NLRP3 (NOD-, LRR-, and pyrin domain-containing protein 3) inflammasome to IL-1 to IL-6 and on to the hepatically derived clinical biomarker CRP (C-reactive protein), an expanding literature has led to understanding of the proatherogenic role for IL-6 in cardiovascular disease and thus the potential for IL-6 inhibition as a novel method for vascular protection. In this review, we provide an overview of the mechanisms by which IL-6 signaling occurs and how that impacts upon pharmacological inhibition; describe murine models of IL-6 and atherogenesis; summarize human epidemiological data outlining the utility of IL-6 as a biomarker of vascular risk; outline genetic data suggesting a causal role for IL-6 in systemic atherothrombosis and aneurysm formation; and then detail the potential role of IL-6 inhibition in stable coronary disease, acute coronary syndromes, heart failure, and the atherothrombotic complications associated with chronic kidney disease and end-stage renal failure. Finally, we review anti-inflammatory and antithrombotic findings for ziltivekimab, a novel IL-6 ligand inhibitor being developed specifically for use in atherosclerotic disease and poised to be tested formally in a large-scale cardiovascular outcomes trial focused on individuals with chronic kidney disease and elevated levels of CRP, a population at high residual atherothrombotic risk, high residual inflammatory risk, and considerable unmet clinical need.",
+      "citationCount": 618,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.ahajournals.org/doi/pdf/10.1161/CIRCRESAHA.121.319077",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Inflammasome",
+        "Medicine",
+        "Immunology",
+        "Pyrin domain",
+        "Biomarker",
+        "Innate immune system",
+        "Population",
+        "Disease",
+        "Immune system",
+        "Inflammation"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Endothelial Dysfunction in Atherosclerotic Cardiovascular Diseases and Beyond: From Mechanism to Pharmacotherapies",
+      "authors": [
+        "Suowen Xu",
+        "Iqra Ilyas",
+        "Peter J. Little",
+        "Hong Li",
+        "Danielle Kamato",
+        "Xueying Zheng",
+        "Sihui Luo",
+        "Zhuoming Li",
+        "Peiqing Liu",
+        "Jihong Han",
+        "Ian C. Harding",
+        "Eno E. Ebong",
+        "Scott J. Cameron",
+        "Alastair G. Stewart",
+        "Jianping Weng"
+      ],
+      "journal": "Pharmacological Reviews",
+      "year": 2021,
+      "doi": "10.1124/pharmrev.120.000096",
+      "openalexId": "https://openalex.org/W3165793489",
+      "citationCount": 985,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://pharmrev.aspetjournals.org/content/pharmrev/73/3/924.full.pdf",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Endothelial dysfunction",
+        "Endothelium",
+        "Medicine",
+        "Angiogenesis",
+        "Endothelial stem cell",
+        "Inflammation",
+        "Pharmacology",
+        "Bioinformatics",
+        "Immunology"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Adipose Tissue Distribution, Inflammation and Its Metabolic Consequences, Including Diabetes and Cardiovascular Disease",
+      "authors": [
+        "Alan Chait",
+        "Laura J. den Hartigh"
+      ],
+      "journal": "Frontiers in Cardiovascular Medicine",
+      "year": 2020,
+      "doi": "10.3389/fcvm.2020.00022",
+      "openalexId": "https://openalex.org/W3008279587",
+      "abstract": "Adipose tissue plays essential roles in maintaining lipid and glucose homeostasis. To date several types of adipose tissue have been identified, namely white, brown, and beige, that reside in various specific anatomical locations throughout the body. The cellular composition, secretome, and location of these adipose depots define their function in health and metabolic disease. In obesity, adipose tissue becomes dysfunctional, promoting a pro-inflammatory, hyperlipidemic and insulin resistant environment that contributes to type 2 diabetes mellitus (T2DM). Concurrently, similar features that result from adipose tissue dysfunction also promote cardiovascular disease (CVD) by mechanisms that can be augmented by T2DM. The mechanisms by which dysfunctional adipose tissue simultaneously promote T2DM and CVD, focusing on adipose tissue depot-specific adipokines, inflammatory profiles, and metabolism, will be the focus of this review. The impact that various T2DM and CVD treatment strategies have on adipose tissue function and body weight also will be discussed.",
+      "citationCount": 1411,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.frontiersin.org/articles/10.3389/fcvm.2020.00022/pdf",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Adipose tissue",
+        "Adipokine",
+        "Inflammation",
+        "Type 2 diabetes",
+        "White adipose tissue",
+        "Medicine",
+        "Endocrinology",
+        "Diabetes mellitus",
+        "Type 2 Diabetes Mellitus",
+        "Internal medicine",
+        "Insulin resistance",
+        "Disease",
+        "Obesity",
+        "Biology"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Primary Biliary Cholangitis: 2018 Practice Guidance from the American Association for the Study of Liver Diseases",
+      "authors": [
+        "Keith D. Lindor",
+        "Christopher L. Bowlus",
+        "James L. Boyer",
+        "Cynthia Levy",
+        "Marlyn J. Mayo"
+      ],
+      "journal": "Hepatology",
+      "year": 2018,
+      "doi": "10.1002/hep.30145",
+      "openalexId": "https://openalex.org/W2886703787",
+      "abstract": "The funding for the development of this Practice Guidance was provided by the American Association for the Study of Liver Diseases.This practice guidance was approved by the American Association for the Study of Liver Diseases on April 26, 2018. Preamble This American Association for the Study of Liver Diseases (AASLD) 2018 Practice Guidance on Primary Biliary Cholangitis (PBC) is an update of the PBC guidelines published in 2009. The 2018 updated guidance on PBC includes updates on etiology and diagnosis, role of imaging, clinical manifestations, and treatment of PBC since 2009. The AASLD 2018 PBC Guidance provides a data‐supported approach to screening, diagnosis, and clinical management of patients with PBC. It differs from more recent AASLD practice guidelines, which are supported by systematic reviews and a multidisciplinary panel of experts that rates the quality (level) of the evidence and the strength of each recommendation using the Grading of Recommendations Assessment, Development, and Evaluation system. In contrast, this guidance was developed by consensus of an expert panel and provides guidance statements based on formal review and analysis of published literature on the topics. The quality (level) of the evidence and the strength of each guidance statement are not rated. Intended for use by health care providers, this guidance identifies preferred approaches to the diagnostic and therapeutic aspects of care for patients with PBC. As with clinical practice guidelines, it provides general guidance to optimize the care of the majority of patients and should not replace clinical judgment for a unique patient. The major changes from the last guideline to this guidance include information about obeticholic acid (OCA) and the adaptation of the guidance format. Etiology of Primary Biliary Cholangitis Primary Biliary Cholangitis (PBC) is considered an autoimmune disease because of its hallmark serologic signature, antimitochondrial antibody (AMA), and specific bile duct pathology.1The etiology of PBC is thought to be due to a combination of genetic risk factors and environmental triggers.5 AMA is a highly disease‐specific autoantibody8 that targets the lipoic acid present on the 2‐oxo‐acid dehydrogenase complexes located on the inner mitochondrial membrane.9 In addition to a loss in humoral tolerance, there is an increase of autoreactive cluster of differentiation (CD)4+CD8+ pyruvate dehydrogenase complex (PDC‐E2)‐specific T cells in the liver.10 In addition to the high concordance among monozygotic twins compared with dizygotic twins with PBC5, the strong association with human leukocyte antigen alleles, which vary by ethnicity, supports a genetic cause of inherited risk.12 Despite progress, only an estimated 15% of the variability of the disease has been accounted for by genetic studies.21 Environmental risks have been suggested by several large case‐control cohort studies that have found associations with urinary tract infections, reproductive hormone replacement, nail polish, and past cigarette smoking.22 Studies of geographic clustering have suggested environmental exposure and socioeconomic factors as well.25 The interaction between genetic and environmental effects has only begun to be assessed in PBC, with several possible gene‐modifying mechanisms being supported.15 Specific environmental agents that may lead to the loss of tolerance of PDC‐E2 are xenobiotics that may either mimic or modify lipoic acid, such as 2‐octynoic acid, which is common in cosmetics, and 6,8‐bis (acetylthio) octanoic acid, a metabolite of acetaminophen. AMA‐positive serum from PBC patients strongly cross‐reacts with these xenobiotics.30 Further experimental support for the role of xenobiotics in PBC pathogenesis comes from the ability of xenobiotics to induce a PBC‐like pathology, including AMA, in animal models.32 The enigma of PBC pathogenesis has been the specific targeting of the biliary epithelial cells in the setting of a ubiquitous autoantigen. The majority of AMA produced by plasmablasts is immunoglobulin A (IgA), which may undergo transcytosis through the biliary epithelium and disrupt mitochondrial function. Alternatively, the specificity of the immune attack may be due to the incomplete proteolysis of pyruvate dehydrogenase complex PDC‐E2 and other mitochondrial enzymes of biliary epithelial a unique of this the evidence strongly supports the antimitochondrial as a of the pathology, other mechanisms may a role as PBC is a disease with a that may The of among the past there have been changes in the and management of PBC. patients are being with and of these patients to In and the of for PBC is the of the disease is of and in the The of AMA in is not It is estimated that of the general in are AMA In a from of AMA AMA may be in serum patients are and are of AMA‐positive for to found that the of PBC was In a the from the AMA to was with a between and of these patients developed the The of clinical disease in has been to because of the of the vary between and of PBC recent has an of with a of in and in as to other studies a of to PBC may and with from the The of AMA in of PBC patients is compared with and of AMA was found in of PBC and in and PBC The of patients has been has been in several from the and of these studies evidence of disease in a of with between and from to and a from to the of between and In the of acid patients have a compared with a of The of patients in from to the of for patients from to from the of In an of patients from the for the of patients was the of for This in was not found in the from a by an of to disease in patients or because to only patients have been found to The of has been assessed in large of patients in the of a The to was the of in the of PBC was was in of patients only a of patients the by The development of disease or a of has been estimated to be 15% in a large of patients in and of the patients in a clinical of of the patients in studies The of development of and its on in a of patients of for a of A of of patients developed the development of the was a it was in the was the and only approved for the treatment of patients with PBC in the was approved by the and and studies have that not only and is the of for PBC In an the of to was in the in the In a a of In a of the risk of from to was with and with factors for the development of serum and to on the The of on the development of was in a of patients and for to a of patients and the risk of was for the patients and for the not the of which was in in the The was by in based on a of patients a of serum and or risk factors for a this its In a the was by be estimated the for the of a of are in recent and of which based on to The recent the and the are based on from and from The was developed from a cohort of patients and by a cohort of and American The the serum of treatment and of with a a an and The a cohort of patients and found that serum and of as and the risk of a or or the and are to in other and is of The is the of and is the in of in the of with treatment is a of treatment is as a to and treatment as of PBC The of PBC should be in the setting of of other of in a with an of serum The is with for A be to the is Liver patients with PBC have including of of or and of patients with PBC may have high or with The of is to the of the In patients the of in is strongly to the of and the increase in and the of and and and the of and biliary A in serum and acid with a in serum and are the of the development of and As in other serum are serum bile acid be are not AMA is found in of PBC antibody and antibody are found in In to of the AMA is or present only in are The or of AMA, the of antibody is in In are present and may with in other the major and acid dehydrogenase are present using or are common for AMA in clinical including and The has the with 15% of by to a combination of mitochondrial In PBC patients have including and which are present in of PBC patients for AMA by and have been found in and of PBC these are not are between the with these the on AMA is or A of an of PBC for to and found a of PBC of The from this was that only in patients with a AMA and PBC are these patients to there are Liver is for in PBC is by that and bile changes and bile the duct is The is in with the of and of and cells In are more in the of are In contrast, are and by the are in with of and in duct or is as of bile The of the is The of and bile duct with the of because of the of the to should be and should be to or and include with or and bile is not disease has are is by with or bile duct In this to the is by the increase of the to as and the is by or of by and are of The is which is the association of or with This is to the found in autoimmune is biliary which is by a to as is by and the with Studies of PBC patients have that of is highly of development of is by a of the with with the of a that bile duct and to a is a of PBC and should be from it may to in PBC with and a PBC with and bile PBC with PBC with of on for was the high disease specificity of a AMA the role of in PBC is is the and are the Liver may be in patients and to other such as and as in the of of the and biliary is in patients with evidence of the is may be with or to or other biliary tract is a that has a high of in in patients with a in PBC it in patients with of in PBC is of and have been with in The role of as an is being as is the of The of PBC is based on the of of the evidence of with of of evidence of and of or bile a is The includes a biliary and Guidance The of PBC be of the are evidence of based on of AMA, or other including or AMA is evidence of and of bile of PBC The major of PBC are and is not a between these and of patients with more disease have more is the common in it has been found in to of patients and has a on quality of may be with The etiology of the in PBC is in it may be with or of from from PBC is or studies that in to of patients with PBC. It is common because of the of patients with PBC are in the as or and by with or It has a and is in the The clinical of in PBC with of and has been to in The of in PBC is several in the of which for therapeutic have been including and bile acid is a that is in not patients with acid in a of the that acid, with in PBC patients with are in patients with PBC such as and cause the of and has been by of bile that in serum has been to to This is supported by the therapeutic of biliary or The of of serum bile acid with other as the is found in of patients with PBC. It is in not in not with disease or and etiology is are major autoimmune that have been in a cohort to more in PBC the and and and that patients with PBC have a risk of autoimmune the is common in the general It is disease is more common in PBC. The in disease is and may be is a in patients with are common may in or may be found in the setting of the may or PBC The PBC to serum AMA clinical and are to patients with AMA‐positive PBC. The or should not be with PBC. the specificity of to and the of PBC a only in the of these PBC a that should the of bile duct in a duct to a of PBC. PBC patients are to AMA‐positive PBC have been including a of and and serum with AMA‐positive PBC PBC patients have more autoimmune and quality of in and PBC has been to have bile duct and loss compared with AMA‐positive treatment to in and AMA‐positive PBC and there are in clinical has not been of with PBC is formal of the between PBC and to in patients have a of AMA‐positive PBC and should not be to to patients with have should not to PBC patients with serum antibody and a of because these are common of PBC. Studies to are of to with of a of PBC with is from PBC. that to with for is from that in patients with PBC A may to patients with PBC by by of are that have been to patients with PBC for evidence of of these are and developed as diagnostic for The is the the of which was in with This was to PBC that of PBC patients diagnostic to the was for the of with the of other including PBC, and are for the of factors to a of and are for AMA of biliary A has more been to PBC it patients the The the the of of the diagnostic the of the of Liver with or have been in to of PBC with rates found in PBC The variability among studies may be due to a of genetic and environmental factors as as the of and of studies have in patients with patients with for a of to compared to patients with This a in of of or for in patients with PBC and a or an estimated of patients in either treatment with and in a of other with or has been consensus on for these patients are that to patients thought to have with AMA‐positive PBC to may present with clinical of patients may have AMA and more of that to studies have found that of PBC patients a the found that only of patients with PBC developed are on the of serum AMA in patients have of may be from review of patients with in bile duct was on a of In this of the patients for AMA bile duct changes on of are of patients with AMA on these patients not there is a for analysis the of PBC with of in to is a clinical In the clinical and of to PBC patients with Guidance The of PBC not a other are including and such as or Liver to or other disease should be considered in PBC patients the is more the of In of treatment should be the of for PBC a of to is the for PBC. The is and in it be to The mechanisms of of are and include and A of studies have the of in this studies have evidence of studies with have information comes from to increase which has of the effects of have these these include studies of and that have is to be an of is and has the ability to a in for for In a including and compared with and and The is for patients with of PBC as as are patients with more to patients with patients with disease may in or with this The of is A of that a of to to either a of to or a of to in and The studies that an in have this of to A of has not been in patients with PBC. A of suggested in on the of and other bile as as may with In of these should be with the treatment or bile acid not to be for or is using serum and in this in are a and of the to of patients have of should be assessed of treatment with using of published in of these for to is to of PBC patients have an to In based on have been developed to of with as patients are risk for to or and may from be to patients with in with a more to with clinical or Liver is not as a to to by in from or of and and and of The use of has been with a of serum a risk of and not or autoimmune found in association with of the development of disease and with bile as or should be considered for patients with has effects and is A the of has been and is not of the have been was approved by the and in to be in combination with in patients with PBC have to of treatment with or as for patients are to is a that is more the bile acid and with a of In animal has and as A of and for in a including A to in was in the compared with in the more in patients in a and as in patients with PBC. by in the in the and by only in the was the to of of in the A patients for in a by an The was a combination of a serum of the of with a from and with to or a in which and increase to the and not the this was by of patients in the in the and of patients in the in other and in The is the in was through the of the As with the was the common it was common in patients studies the of on of patients with PBC are through that the use of a combination of and the of and on the the for patients with and PBC is the be to and the is the The of in patients with disease is not in the and a of in patients with to and which was with PBC and the use of in patients with PBC is not and about specific to use or are specific based on clinical evidence that be of or should be or In patients with and may have a be information on risks of use or or have been was in combination with other clinical evidence clinical or of other are only approved by the and as the a that is in a of including bile acid in and in bile acid and and of and have more effects on and as as and the have been in patients with PBC. patients with an more the of with for by the of the patients with an incomplete to treatment with the for a of the of patients and with more to patients on In a patients to to and for on combination in with and compared with with in and effects on of is the of on use of be with and and an in serum is This is and not with a in it is to an increase in an increase in and This has been to of the which bile and among other cause of which is is a of has been with that may not The use of has not been in patients with disease and should be of in patients with PBC have been have been found as agents to be of include and of these have been in combination with to in disease be the of and or have not been found to be of and that with may be this is agents include the and other Guidance in a of to is for patients with PBC have of patients bile acid should be or the bile acid to should be treatment to patients should be considered for are to should be considered for treatment with be considered as for patients with PBC and to of and is in patients with disease or of The of PBC quality of and not with or and of may be and other PBC should be include and such as may in an to not in a clinical a not with have a for was to in PBC in a to this there is for the from PBC. and for patients in to with these are is not a for because of have not been in clinical have been by patients and experts to be including or using to with or using to the and are highly that to such as bile It is not which in the may be to that to and clinical are have a of clinical The of is to a of or other to and patients with and are as and are preferred by patients the of was not in a of only patients other a has been to in patients with PBC in clinical from to have that is with of in to and in been with use such that use is in patients with with is an and has with such as should be with with the of patients with and are with in A the of the and and the of with a of The that are more to compared with with high may an to by high and this the should be be a of and by to the is Alternatively, patients be to the for of as by the to The is patients be on use of has been with of the and of from is of is a of to in a and in a The was from an in have not been in a was to was found to be in more is a strong that or and has been with the in not to be may be in patients with because of with PBC and may not the of is in by about to in clinical of should be with have using or biliary and be a for agents for the treatment of the of this include of the bile acid and Guidance should be as for patients with PBC have The agents be for to to such as to a of to of not in patients with PBC, for to in this be with or as the of the to should be to an may use agents such as or such as and be effects may include urinary or are several to including the with or to of or with to and to the with are risk of and should and be with of or and to as as the use of or to such as and be other effects may Guidance of include the should be or be in patients for are to or be in disease is to other the of an The should be for and be or be patients and The majority of have to disease with PBC. such may that a of is with of This of it for an to the of in PBC. not only to the management and of disease such as and In of disease the to patients with PBC as for other of and cigarette disease and may the risk of not being for a should the PBC patients with should be about the risk of using and should be to other and have that have and and may induce or may on in the and it may to in patients with PBC. are about or in PBC As with other with it is to for in the the with is in A of is because the may of patients with PBC are risk of the among including and The of has not been is for is by the serum it is for this be should be are of should be to This patients are to of of and the patients on to should be patients with with a risk or of to for should be to should be assessed on and of should be in patients with for should be in patients with and with PBC of PBC Liver and risk or a with or in patients with or and PBC, biliary by on or risk to with PBC have a risk of for or and patients with disease are to which was found a of in of to was an risk treatment with not the risk with was with clinical of PBC patients for with is for and patients with In patients should be considered for patients with a a risk or a of of with PBC may as a of biliary in the of the in association with The approach to and in patients with PBC the guidance published by the American Association for the Study of Liver Diseases (AASLD) in which includes a the the of is be to the for a of as a and with of be considered for this has to be that of patients with PBC that are found the risk is or is in patients with large with the published AASLD The guidelines that the to use be considered in the of and that not to and in patients with PBC in the of the disease a specific because is not in patients with function. In this are therapeutic are have not been with in patients with Guidance with should undergo for the of for with is for and patients with to with PBC have a risk of and and and using is As for and and may be there is of should be in patients with In patients as was in a to compared with was compared with was found to in and have been in a of PBC has to in these agents are because of Guidance with PBC should be provided to of and of in the and as or other should be considered patients are should be patients have acid or may be by the this is of in PBC, and studies that there is risk of disease in patients with PBC and This has been by a that a risk of and that be to PBC patients with and is the there is a of or disease risk treatment with may be A to be serum are and have been Guidance with and risk for disease be considered for PBC patients not and patients of is and are patients should be of and using the is and to a should be Guidance should be with or Liver for for patients with PBC are to with other of should be for in the setting of a for Liver of or a risk is an for is not an for because this is not In the PBC was the for in the a that an increase in the of in the in the the of patients with PBC by about In a more recent the for the of for PBC was to be The of for patients with PBC is more for other disease In the the and rates and and the and rates and may for the to and is a more treatment there are studies to the of As be a with is with compared with a and have a and to of patients with PBC undergo disease and to by of The to is to PBC or with a to be with of PBC, this is not factors for PBC may include and In a recent a for Liver the of was with and may of PBC. the of on the of disease in the of patients on to have rates compared with patients not is disease and and AMA may or not the of PBC. in a of patients with PBC, to to of patients Guidance with of PBC should be for for Liver of from and for and from and from and from and for and from and",
+      "citationCount": 829,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://aasldpubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/hep.30145",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Medicine",
+        "Internal medicine",
+        "Gastroenterology",
+        "Association (psychology)",
+        "General surgery"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Pyroptosis in inflammatory diseases and cancer",
+      "authors": [
+        "Zhiping Rao",
+        "Yutong Zhu",
+        "Peng Yang",
+        "Zhuang Chen",
+        "Yuqiong Xia",
+        "Chaoqiang Qiao",
+        "Weijing Liu",
+        "Hongzhang Deng",
+        "Jianxiong Li",
+        "Pengbo Ning",
+        "Zhongliang Wang"
+      ],
+      "journal": "Theranostics",
+      "year": 2022,
+      "doi": "10.7150/thno.71086",
+      "openalexId": "https://openalex.org/W4285243914",
+      "abstract": "Pyroptosis is a lytic and inflammatory type of programmed cell death that is usually triggered by inflammasomes and executed by gasdermin proteins. The main characteristics of pyroptosis are cell swelling, membrane perforation, and the release of cell contents. In normal physiology, pyroptosis plays a critical role in host defense against pathogen infection. However, excessive pyroptosis may cause immoderate and continuous inflammatory responses that involves in the occurrence of inflammatory diseases. Attractively, as immunogenic cell death, pyroptosis can serve as a new strategy for cancer elimination by inducing pyroptotic cell death and activating intensely antitumor immunity. To make good use of this double-edged sword, the molecular mechanisms, and therapeutic implications of pyroptosis in related diseases need to be fully elucidated. In this review, we first systematically summarize the signaling pathways of pyroptosis and then present the available evidences indicating the role of pyroptosis in inflammatory diseases and cancer. Based on this, we focus on the recent progress in strategies that inhibit pyroptosis for treatment of inflammatory diseases, and those that induce pyroptosis for cancer therapy. Overall, this should shed light on future directions and provide novel ideas for using pyroptosis as a powerful tool to fight inflammatory diseases and cancer.",
+      "citationCount": 641,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.thno.org/v12p4310.pdf",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Pyroptosis",
+        "Cancer",
+        "Inflammation",
+        "Medicine",
+        "Cancer research",
+        "Pathology"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Inflammatory cytokines in atherosclerosis: current therapeutic approaches",
+      "authors": [
+        "Dimitris Tousoulis",
+        "Evangelos K. Oikonomou",
+        "Evangelos K. Economou",
+        "Filippo Crea",
+        "Juan Carlos Kaski"
+      ],
+      "journal": "European Heart Journal",
+      "year": 2016,
+      "doi": "10.1093/eurheartj/ehv759",
+      "openalexId": "https://openalex.org/W2254568118",
+      "abstract": "The notion of atherosclerosis as a chronic inflammatory disease has intensified research on the role of cytokines and the way these molecules act and interact to initiate and sustain inflammation in the microenvironment of an atherosclerotic plaque. Cytokines are expressed by all types of cells involved in the pathogenesis of atherosclerosis, act on a variety of targets exerting multiple effects, and are largely responsible for the crosstalk among endothelial, smooth muscle cells, leucocytes, and other vascular residing cells. It is now understood that widely used drugs such as statins, aspirin, methotrexate, and colchicine act in an immunomodulatory way that may beneficially affect atherogenesis and/or cardiovascular disease progression. Moreover, advancement in pharmaceutical design has enabled the production of highly specific antibodies against key molecules involved in the perpetuation of the inflammatory cascade, raising hope for advances in the treatment of atherosclerosis. This review describes the actions and effects of these agents, their potential clinical significance, and future prospects.",
+      "citationCount": 447,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://academic.oup.com/eurheartj/article-pdf/37/22/1723/6733668/ehv759.pdf",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Medicine",
+        "Inflammation",
+        "Crosstalk",
+        "Pathogenesis",
+        "Immunology",
+        "Proinflammatory cytokine",
+        "Disease",
+        "Aspirin",
+        "Colchicine"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Signaling pathways and targeted therapy for myocardial infarction",
+      "authors": [
+        "Qing Zhang",
+        "Lu Wang",
+        "Shiqi Wang",
+        "Hongxin Cheng",
+        "Lin Xu",
+        "Gaiqin Pei",
+        "Yang Wang",
+        "Chenying Fu",
+        "Yangfu Jiang",
+        "Chengqi He",
+        "Quan Wei"
+      ],
+      "journal": "Signal Transduction and Targeted Therapy",
+      "year": 2022,
+      "doi": "10.1038/s41392-022-00925-z",
+      "openalexId": "https://openalex.org/W4220711829",
+      "abstract": "Although the treatment of myocardial infarction (MI) has improved considerably, it is still a worldwide disease with high morbidity and high mortality. Whilst there is still a long way to go for discovering ideal treatments, therapeutic strategies committed to cardioprotection and cardiac repair following cardiac ischemia are emerging. Evidence of pathological characteristics in MI illustrates cell signaling pathways that participate in the survival, proliferation, apoptosis, autophagy of cardiomyocytes, endothelial cells, fibroblasts, monocytes, and stem cells. These signaling pathways include the key players in inflammation response, e.g., NLRP3/caspase-1 and TLR4/MyD88/NF-κB; the crucial mediators in oxidative stress and apoptosis, for instance, Notch, Hippo/YAP, RhoA/ROCK, Nrf2/HO-1, and Sonic hedgehog; the controller of myocardial fibrosis such as TGF-β/SMADs and Wnt/β-catenin; and the main regulator of angiogenesis, PI3K/Akt, MAPK, JAK/STAT, Sonic hedgehog, etc. Since signaling pathways play an important role in administering the process of MI, aiming at targeting these aberrant signaling pathways and improving the pathological manifestations in MI is indispensable and promising. Hence, drug therapy, gene therapy, protein therapy, cell therapy, and exosome therapy have been emerging and are known as novel therapies. In this review, we summarize the therapeutic strategies for MI by regulating these associated pathways, which contribute to inhibiting cardiomyocytes death, attenuating inflammation, enhancing angiogenesis, etc. so as to repair and re-functionalize damaged hearts.",
+      "citationCount": 739,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.nature.com/articles/s41392-022-00925-z.pdf",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Medicine",
+        "Angiogenesis",
+        "Wnt signaling pathway",
+        "Cancer research",
+        "Signal transduction",
+        "PI3K/AKT/mTOR pathway",
+        "Protein kinase B",
+        "Cardioprotection",
+        "RHOA",
+        "Cell therapy",
+        "Cell biology",
+        "Bioinformatics",
+        "Stem cell"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Colchicine in Patients With Acute Coronary Syndrome",
+      "authors": [
+        "David Tong",
+        "Stephen Quinn",
+        "Arthur Nasis",
+        "C. Hiew",
+        "Philip Roberts‐Thomson",
+        "Heath Adams",
+        "R. Sriamareswaran",
+        "Nay Htun",
+        "William Wilson",
+        "Dion Stub",
+        "W. van Gaal",
+        "L. G. Howes",
+        "Nicholas Collins",
+        "A. Yong",
+        "Ravinay Bhindi",
+        "Robert Whitbourn",
+        "A. Lee",
+        "C. Hengel",
+        "Kaleab Asrress",
+        "Melanie Freeman",
+        "John Amerena",
+        "Amanda Wilson",
+        "Jamie Layland"
+      ],
+      "journal": "Circulation",
+      "year": 2020,
+      "doi": "10.1161/circulationaha.120.050771",
+      "openalexId": "https://openalex.org/W3082109297",
+      "abstract": "The addition of colchicine to standard medical therapy did not significantly affect cardiovascular outcomes at 12 months in patients with ACS and was associated with a higher rate of mortality. Registration: URL: https://www.anzctr.org.au; Unique identifier: ACTRN12615000861550.",
+      "citationCount": 359,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.ahajournals.org/doi/pdf/10.1161/CIRCULATIONAHA.120.050771",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Medicine",
+        "Colchicine",
+        "Acute coronary syndrome",
+        "Cardiology",
+        "Internal medicine",
+        "Coronary heart disease"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Chronic Heart Failure and Inflammation",
+      "authors": [
+        "Sarah A. Dick",
+        "Slava Epelman"
+      ],
+      "journal": "Circulation Research",
+      "year": 2016,
+      "doi": "10.1161/circresaha.116.308030",
+      "openalexId": "https://openalex.org/W2463195288",
+      "abstract": "As a greater proportion of patients survive their initial cardiac insult, medical systems worldwide are being faced with an ever-growing need to understand the mechanisms behind the pathogenesis of chronic heart failure (HF). There is a wealth of information about the role of inflammatory cells and pathways during acute injury and the reparative processes that are subsequently activated. We discuss the different causes that lead to chronic HF development and how the sum of initial inflammatory and reparative responses only sets the trajectory for disease progression. Unfortunately, comparatively little is known about the contribution of the immune system once the trajectory has been set, and chronic HF has been established-which clinically represents the majority of patients. It is known that chronic HF is associated with circulating inflammatory cytokines that can predict clinical outcomes, yet the causative role inflammation plays in disease progression is not well defined, and the majority of clinical trials that target aspects of inflammation in patients with chronic HF have largely been negative. This review will present what is currently known about inflammation in chronic HF in both humans and animal models as a means to highlight the gap in our knowledge base that requires further examination.",
+      "citationCount": 682,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.ahajournals.org/doi/pdf/10.1161/CIRCRESAHA.116.308030",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Inflammation",
+        "Medicine",
+        "Heart failure",
+        "Disease",
+        "Pathogenesis",
+        "Immune system",
+        "Immunology",
+        "Systemic inflammation",
+        "Clinical trial",
+        "Bioinformatics",
+        "Intensive care medicine"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "The potential risks of nanomaterials: a review carried out for ECETOC.",
+      "authors": [
+        "Paul J. A. Borm",
+        "David J. Robbins",
+        "Stephan Haubold",
+        "Thomas A. J. Kuhlbusch",
+        "H. Fißan",
+        "Ken Donaldson",
+        "Roel P. F. Schins",
+        "Vicki Stone",
+        "Wolfgang G. Kreyling",
+        "Jürgen Lademann",
+        "Jean Krutmann",
+        "David B. Warheit",
+        "Eva Oberdörster"
+      ],
+      "journal": "Particle and Fibre Toxicology",
+      "year": 2006,
+      "doi": "10.1186/1743-8977-3-11",
+      "openalexId": "https://openalex.org/W2130538711",
+      "citationCount": 1320,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://particleandfibretoxicology.biomedcentral.com/track/pdf/10.1186/1743-8977-3-11",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Nanoparticle",
+        "Systemic circulation",
+        "Inhalation exposure",
+        "Inhalation",
+        "Gastrointestinal tract",
+        "Oxidative stress",
+        "Nanotoxicology",
+        "Medicine",
+        "Nanotechnology"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Clinical Update: Cardiovascular Disease in Diabetes Mellitus",
+      "authors": [
+        "Cecilia C. Low Wang",
+        "Connie N. Hess",
+        "William R. Hiatt",
+        "Allison B. Goldfine"
+      ],
+      "journal": "Circulation",
+      "year": 2016,
+      "doi": "10.1161/circulationaha.116.022194",
+      "openalexId": "https://openalex.org/W2444268874",
+      "abstract": "Cardiovascular disease remains the principal cause of death and disability among patients with diabetes mellitus. Diabetes mellitus exacerbates mechanisms underlying atherosclerosis and heart failure. Unfortunately, these mechanisms are not adequately modulated by therapeutic strategies focusing solely on optimal glycemic control with currently available drugs or approaches. In the setting of multifactorial risk reduction with statins and other lipid-lowering agents, antihypertensive therapies, and antihyperglycemic treatment strategies, cardiovascular complication rates are falling, yet remain higher for patients with diabetes mellitus than for those without. This review considers the mechanisms, history, controversies, new pharmacological agents, and recent evidence for current guidelines for cardiovascular management in the patient with diabetes mellitus to support evidence-based care in the patient with diabetes mellitus and heart disease outside of the acute care setting.",
+      "citationCount": 1087,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.ahajournals.org/doi/pdf/10.1161/CIRCULATIONAHA.116.022194",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Medicine",
+        "Diabetes mellitus",
+        "Glycemic",
+        "Intensive care medicine",
+        "Disease",
+        "Heart failure",
+        "Cause of death",
+        "Complication",
+        "Internal medicine"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "The role of interleukin-1 in general pathology",
+      "authors": [
+        "Naoe Kaneko",
+        "Mie Kurata",
+        "Toshihiro Yamamoto",
+        "Shinnosuke Morikawa",
+        "Junya Masumoto"
+      ],
+      "journal": "Inflammation and Regeneration",
+      "year": 2019,
+      "doi": "10.1186/s41232-019-0101-5",
+      "openalexId": "https://openalex.org/W2948410175",
+      "citationCount": 591,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://inflammregen.biomedcentral.com/track/pdf/10.1186/s41232-019-0101-5",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Inflammation",
+        "Disease",
+        "Interleukin",
+        "Immunology",
+        "Cytokine",
+        "Immunity",
+        "Medicine",
+        "Pathological",
+        "Interleukin 1β",
+        "Neuroscience"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    }
+  ],
+  "total": 1090
+}

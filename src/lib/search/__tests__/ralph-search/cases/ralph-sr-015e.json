@@ -1,0 +1,48 @@
+{
+  "id": "ralph-sr-015e",
+  "name": "Benchmark — Traditional Indian medicine cardiovascular",
+  "phase": 3,
+  "category": "benchmark",
+  "query": "Traditional Indian medicine cardiovascular effects systematic review",
+  "expectedPapers": [
+    {
+      "titleFragment": "cardiovascular",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "traditional",
+      "mustFind": false
+    },
+    {
+      "titleFragment": "ayurved",
+      "mustFind": false
+    },
+    {
+      "titleFragment": "herbal",
+      "mustFind": false
+    }
+  ],
+  "rankingRules": [
+    {
+      "rule": "Majority of top 10 should be on-topic",
+      "check": "majority_on_topic",
+      "params": { "n": 10, "keywords": ["traditional", "ayurved", "herbal", "indian medicine", "cardiovascular", "yoga"], "threshold": 0.4 }
+    }
+  ],
+  "metadataChecks": [
+    {
+      "check": "all_have_doi",
+      "threshold": 0.6
+    },
+    {
+      "check": "has_abstract",
+      "threshold": 0.5
+    }
+  ],
+  "dedupChecks": [
+    {
+      "titleFragments": ["clinical efficacy and safety of tulsi"],
+      "maxOccurrences": 1
+    }
+  ]
+}

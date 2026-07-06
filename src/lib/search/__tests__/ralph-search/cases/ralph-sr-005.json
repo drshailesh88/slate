@@ -1,0 +1,81 @@
+{
+  "id": "ralph-sr-005",
+  "name": "MeSH expansion — drug-level synonym queries for broader recall",
+  "phase": 1,
+  "category": "recall",
+  "query": "What are the effects of SGLT2 inhibitors on heart failure outcomes?",
+  "expectedPapers": [
+    {
+      "titleFragment": "sglt2 inhibitors in heart failure",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "empagliflozin",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "dapagliflozin",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "cardiovascular",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "sotagliflozin",
+      "mustFind": false
+    },
+    {
+      "titleFragment": "canagliflozin",
+      "mustFind": false
+    },
+    {
+      "titleFragment": "meta-analysis",
+      "mustFind": false
+    }
+  ],
+  "rankingRules": [
+    {
+      "rule": "RCTs (Level II) should outnumber Level V papers in top 10",
+      "check": "topN_evidence_order",
+      "params": { "n": 10, "higherLevel": "II", "lowerLevel": "V" }
+    },
+    {
+      "rule": "Top results should be about SGLT2i",
+      "check": "majority_on_topic",
+      "params": { "n": 10, "keywords": ["sglt2", "sglt-2", "empagliflozin", "dapagliflozin", "canagliflozin", "sodium-glucose", "heart failure"], "threshold": 0.7 }
+    },
+    {
+      "rule": "High evidence (I-II) should outnumber low evidence (IV-V) in top 10",
+      "check": "higher_level_outnumbers_lower",
+      "params": { "n": 10 }
+    }
+  ],
+  "metadataChecks": [
+    {
+      "check": "all_have_doi",
+      "threshold": 0.8
+    },
+    {
+      "check": "study_type_not_other",
+      "threshold": 0.5
+    },
+    {
+      "check": "year_nonzero",
+      "threshold": 0.95
+    },
+    {
+      "check": "has_abstract",
+      "threshold": 0.7
+    }
+  ],
+  "dedupChecks": [
+    {
+      "titleFragments": [
+        "genitourinary tract infections and sglt2 inhibitors",
+        "sglt2 inhibitors and mechanisms of cardiovascular benefit"
+      ],
+      "maxOccurrences": 1
+    }
+  ]
+}

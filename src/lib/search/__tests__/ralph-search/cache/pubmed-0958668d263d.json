@@ -1,0 +1,175 @@
+{
+  "source": "pubmed",
+  "query": "PCSK9 inhibitors outcomes in South Asian populations",
+  "timestamp": "2026-03-02T14:57:17.028Z",
+  "results": [
+    {
+      "title": "Why, how and in whom should we measure levels of lipoprotein(a): A review of the latest evidence and clinical implications.",
+      "authors": [
+        "Razavi Alexander C",
+        "Bhatia Harpreet S",
+        "Blumenthal Roger S",
+        "Shapiro Michael D",
+        "Mehta Anurag"
+      ],
+      "journal": "Diabetes Obes Metab",
+      "year": 2025,
+      "doi": "10.1111/dom.16469",
+      "pmid": "40437821",
+      "abstract": "Lipoprotein(a) [Lp(a)] is a genetically determined, causal risk factor for atherosclerotic cardiovascular disease (ASCVD) and calcific aortic valve disease (CAVD). Despite robust evidence from epidemiological and genetic studies, Lp(a) remains underrecognised in clinical practice due to challenges in measurement, lack of guideline familiarity and limited therapeutic options. In this narrative review, we summarise the pathophysiological mechanisms linking Lp(a) to atherogenesis, thrombosis and inflammation, emphasising its unique structural features and causal role in cardiovascular disease. We discuss assay methodologies and make the case for a single lifetime measurement given the genetic stability of Lp(a). We review guideline-based indications for testing, highlighting high-risk populations such as those with premature ASCVD, a family history of cardiovascular disease and individuals of African or South Asian ancestry. We additionally outline clinical strategies to reduce ASCVD risk in individuals with elevated Lp(a), including lifestyle optimisation, statin therapy, PCSK9 inhibitors, and aspirin in select populations. Emerging targeted therapies, including antisense oligonucleotides and siRNA-based agents, demonstrate up to 90% Lp(a) reduction and are currently being evaluated in large-scale cardiovascular outcomes trials. As precision medicine advances, Lp(a) represents both a critical risk factor and a promising therapeutic target. Broader implementation of Lp(a) testing, particularly in high-risk individuals, will help improve ASCVD prevention efforts.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Lipoprotein(a)",
+        "Atherosclerosis",
+        "Aortic Valve Stenosis",
+        "Cardiovascular Diseases",
+        "Aortic Valve",
+        "Calcinosis",
+        "Risk Factors",
+        "Hydroxymethylglutaryl-CoA Reductase Inhibitors"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Efficacy and safety of ongericimab in Chinese patients with heterozygous familial hypercholesterolemia: A randomized, double-blind, placebo-controlled phase 3 trial.",
+      "authors": [
+        "Lin Jie",
+        "Ji Yuan",
+        "Wang Gaopin",
+        "Ma Xueping",
+        "Yao Zhuhua",
+        "Han Xuebin",
+        "Chen Jie",
+        "Chen Jiyan",
+        "Huang Wei",
+        "Xu Guangma",
+        "Peng Daoquan",
+        "Yan Peishi",
+        "Qiao Ping",
+        "He Yongming",
+        "Tang Yida",
+        "Wang Minghui",
+        "Zhang Mengqi",
+        "Yu Jianjun",
+        "Hao Yu",
+        "Ma Changsheng"
+      ],
+      "journal": "Atherosclerosis",
+      "year": 2025,
+      "doi": "10.1016/j.atherosclerosis.2025.119120",
+      "pmid": "39999660",
+      "abstract": "BACKGROUND AND AIMS: Heterozygous familial hypercholesterolemia (HeFH) is a prevalent autosomal dominant disorder of lipid metabolism but severely underdiagnosed and undertreated in China. This phase 3 trial aims to evaluate the efficacy and safety of ongericimab, a novel monoclonal antibody that targets proprotein convertase subtilisin/kexin type 9 (PCSK9), in Chinese patients with HeFH. METHODS: Patients who have been diagnosed with definite HeFH according to Dutch Lipid Clinical Network criteria and receiving stable and optimized lipid-lowering therapy were enrolled. A total of 135 patients were randomly assigned in a 2:1:2:1 ratio to receive either ongericimab 150&#xa0;mg or matching placebo every 2 weeks (Q2W), or ongericimab 450&#xa0;mg or matching placebo every 4 weeks (Q4W) for 24 weeks. Patients were stratified according to the use of high-intensity statins. The primary endpoint was the percentage change in LDL-C from baseline to week 24. RESULTS: Our findings demonstrated that treatment with ongericimab resulted in a significant reduction in LDL-C at week 24. The least-squares mean difference was -69.4&#xa0;% (95&#xa0;% confidence interval [CI]: -80.9&#xa0;%, -57.9&#xa0;%; p&#xa0;&lt;&#xa0;0.0001) for the ongericimab 150&#xa0;mg Q2W group, and -80.6&#xa0;% (95&#xa0;% CI: -92.1&#xa0;%, -69.1&#xa0;%; p &lt; 0.0001) for ongericimab 450&#xa0;mg Q4W group compared to respective matching placebo groups. Meanwhile, ongericimab also favorably altered other lipid parameters. A similar incidence of adverse events was observed in the ongericimab and placebo groups. CONCLUSIONS: Ongericimab administered at either 150&#xa0;mg Q2W or 450&#xa0;mg Q4W for 24 weeks, significantly reduced LDL-C levels and was well-tolerated in Chinese patients with HeFH. CLINICAL TRIAL REGISTRATION: http://www. CLINICALTRIALS: gov; Unique Identifier: NCT05325203.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Randomized Controlled Trial",
+        "Clinical Trial, Phase III",
+        "Multicenter Study",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Male",
+        "Double-Blind Method",
+        "Female",
+        "Hyperlipoproteinemia Type II",
+        "Middle Aged",
+        "Adult",
+        "Treatment Outcome",
+        "China",
+        "Cholesterol, LDL",
+        "Antibodies, Monoclonal, Humanized",
+        "Heterozygote",
+        "Proprotein Convertase 9",
+        "Anticholesteremic Agents",
+        "Biomarkers",
+        "PCSK9 Inhibitors",
+        "Time Factors",
+        "Hydroxymethylglutaryl-CoA Reductase Inhibitors",
+        "East Asian People"
+      ],
+      "studyType": "rct",
+      "evidenceLevel": "II",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Efficacy and Safety of Ongericimab in Chinese Patients With Primary Hypercholesterolemia and Mixed Dyslipidemia.",
+      "authors": [
+        "Wang Xiaozeng",
+        "Qiu Miaohan",
+        "Cheng Zhifeng",
+        "Ji Xianyou",
+        "Chen Jiyan",
+        "Zhu Hong",
+        "Tang Yida",
+        "Huang Zhouqing",
+        "Su Guohai",
+        "Wang Gaopin",
+        "Huang Zhijun",
+        "Yao Zhuhua",
+        "Lin Jinxiu",
+        "Sun Yihong",
+        "Li Shunhui",
+        "Shao Cong",
+        "Zhao Yi",
+        "Bai Xuelian",
+        "Han Yaling"
+      ],
+      "journal": "J Am Heart Assoc",
+      "year": 2024,
+      "doi": "10.1161/JAHA.123.033669",
+      "pmid": "38818934",
+      "abstract": "BACKGROUND: A phase 3 trial was conducted to evaluate the efficacy and safety of ongericimab, a monoclonal antibody that inhibits proprotein convertase subtilisin/kexin type 9, as an add-on treatment to optimized lipid-lowering therapy in Chinese patients with primary hypercholesterolemia and mixed dyslipidemia. METHODS AND RESULTS: A total of 806 patients who were receiving stable and optimized lipid-lowering therapy but did not achieve their low-density lipoprotein cholesterol (LDL-C) targets were enrolled and randomly assigned in a 2:1:2:1 ratio to receive either ongericimab 150&#x2009;mg or matching placebo every 2&#x2009;weeks, or ongericimab 300&#x2009;mg or matching placebo every 4&#x2009;weeks for 52&#x2009;weeks. Efficacy and safety were evaluated in 802 patients who received at least 1 dose of ongericimab or placebo. The primary end point was the percentage change in LDL-C from baseline to week 24. Our findings demonstrated that the least-squares mean difference of percentage change in LDL-C from baseline to week 24 was -67.7% (95% CI, -72.5% to -63.0%; P&lt;0.0001) in the ongericimab 150&#x2009;mg every 2&#x2009;weeks group compared with the placebo every 2&#x2009;weeks group, and -61.2% (95% CI, -67.1% to -55.2%; P&lt;0.0001) in the ongericimab 300&#x2009;mg every 4&#x2009;weeks group compared with the placebo every 4&#x2009;weeks group. These reductions were sustained up to week 52. Furthermore, treatment with ongericimab favorably altered other lipid parameters. A similar incidence of adverse events was observed in the ongericimab and placebo groups. CONCLUSIONS: Ongericimab, as an add-on treatment to optimized lipid-lowering therapy, significantly reduced LDL-C and was well-tolerated in Chinese patients with primary hyperlipidemia and mixed dyslipidemia who did not achieve their LDL-C targets. REGISTRATION: URL: https://www.clinicaltrials.gov; Unique identifier: NCT04781114.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Randomized Controlled Trial",
+        "Clinical Trial, Phase III",
+        "Multicenter Study"
+      ],
+      "meshTerms": [
+        "Adult",
+        "Aged",
+        "Female",
+        "Humans",
+        "Male",
+        "Middle Aged",
+        "Antibodies, Monoclonal",
+        "Antibodies, Monoclonal, Humanized",
+        "Anticholesteremic Agents",
+        "Biomarkers",
+        "China",
+        "Cholesterol, LDL",
+        "Double-Blind Method",
+        "Drug Therapy, Combination",
+        "Dyslipidemias",
+        "East Asian People",
+        "Hypercholesterolemia",
+        "PCSK9 Inhibitors",
+        "Proprotein Convertase 9",
+        "Time Factors",
+        "Treatment Outcome"
+      ],
+      "studyType": "rct",
+      "evidenceLevel": "II",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    }
+  ],
+  "total": 3
+}

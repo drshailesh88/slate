@@ -1,0 +1,64 @@
+{
+  "id": "ralph-sr-007",
+  "name": "Comparison query — beta-blockers vs calcium channel blockers in AF",
+  "phase": 2,
+  "category": "comparison",
+  "query": "Compare beta-blockers versus calcium channel blockers for rate control in atrial fibrillation",
+  "expectedPapers": [
+    {
+      "titleFragment": "beta-blocker",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "calcium channel",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "atrial fibrillation",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "rate control",
+      "mustFind": false
+    },
+    {
+      "titleFragment": "metoprolol",
+      "mustFind": false
+    },
+    {
+      "titleFragment": "diltiazem",
+      "mustFind": false
+    }
+  ],
+  "rankingRules": [
+    {
+      "rule": "Top results should be about rate control in AF",
+      "check": "majority_on_topic",
+      "params": { "n": 10, "keywords": ["beta-blocker", "beta blocker", "calcium channel", "rate control", "atrial fibrillation", "metoprolol", "diltiazem", "esmolol", "verapamil"], "threshold": 0.7 }
+    }
+  ],
+  "metadataChecks": [
+    {
+      "check": "all_have_doi",
+      "threshold": 0.8
+    },
+    {
+      "check": "study_type_not_other",
+      "threshold": 0.4
+    },
+    {
+      "check": "year_nonzero",
+      "threshold": 0.95
+    },
+    {
+      "check": "has_abstract",
+      "threshold": 0.6
+    }
+  ],
+  "dedupChecks": [
+    {
+      "titleFragments": ["efficacy and safety of intravenous diltiazem versus metoprolol"],
+      "maxOccurrences": 1
+    }
+  ]
+}

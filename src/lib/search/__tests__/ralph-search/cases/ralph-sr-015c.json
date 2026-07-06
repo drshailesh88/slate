@@ -1,0 +1,48 @@
+{
+  "id": "ralph-sr-015c",
+  "name": "Benchmark — Colchicine post-MI anti-inflammatory",
+  "phase": 3,
+  "category": "benchmark",
+  "query": "Colchicine post-MI anti-inflammatory cardiovascular",
+  "expectedPapers": [
+    {
+      "titleFragment": "colchicine",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "myocardial infarction",
+      "mustFind": false
+    },
+    {
+      "titleFragment": "anti-inflammatory",
+      "mustFind": false
+    },
+    {
+      "titleFragment": "cardiovascular",
+      "mustFind": false
+    }
+  ],
+  "rankingRules": [
+    {
+      "rule": "Majority of top 10 should be on-topic (colchicine + cardio)",
+      "check": "majority_on_topic",
+      "params": { "n": 10, "keywords": ["colchicine", "myocardial infarction", "anti-inflammatory", "cardiovascular", "coronary"], "threshold": 0.6 }
+    }
+  ],
+  "metadataChecks": [
+    {
+      "check": "all_have_doi",
+      "threshold": 0.8
+    },
+    {
+      "check": "has_abstract",
+      "threshold": 0.6
+    }
+  ],
+  "dedupChecks": [
+    {
+      "titleFragments": ["low-dose colchicine in patients with type 2 diabetes"],
+      "maxOccurrences": 1
+    }
+  ]
+}

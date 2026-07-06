@@ -1,0 +1,937 @@
+{
+  "source": "openalex",
+  "query": "Prevalence of rheumatic heart disease in India",
+  "timestamp": "2026-03-02T17:02:27.234Z",
+  "results": [
+    {
+      "title": "Incidence of rheumatic fever and prevalence of rheumatic heart disease in India",
+      "authors": [
+        "M Vijaykumar",
+        "Jagat Narula",
+        "K. Srinath Reddy",
+        "Edward L. Kaplan"
+      ],
+      "journal": "International Journal of Cardiology",
+      "year": 1994,
+      "doi": "10.1016/0167-5273(94)90199-6",
+      "openalexId": "https://openalex.org/W2075255205",
+      "citationCount": 50,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Medicine",
+        "Rheumatic fever",
+        "Incidence (geometry)",
+        "Heart disease",
+        "Public health",
+        "Disease",
+        "Pediatrics",
+        "Epidemiology"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Declining prevalence of rheumatic heart disease in rural schoolchildren in India: 2001-2002.",
+      "authors": [
+        "Jose Vj",
+        "M. Gomathi"
+      ],
+      "journal": "PubMed",
+      "year": 2003,
+      "openalexId": "https://openalex.org/W2412959010",
+      "abstract": "In the largest school survey conducted to date in India, we report the prevalence of rheumatic heart disease to be 0.68 per 1000 children. Our study suggests that there may have been a dramatic decline in the prevalence of rheumatic heart disease in India.",
+      "citationCount": 78,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Medicine",
+        "Heart disease",
+        "Rheumatic fever",
+        "Disease",
+        "Pediatrics",
+        "Rural area",
+        "Tertiary care",
+        "Hypertensive heart disease",
+        "Physical therapy"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Prevalence and outcome of subclinical rheumatic heart disease in India: The RHEUMATIC (Rheumatic Heart Echo Utilisation and Monitoring Actuarial Trends in Indian Children) study",
+      "authors": [
+        "Anitá Saxena",
+        "S Ramakrishnan",
+        "Ayan Roy",
+        "Sandeep Seth",
+        "Anand Krishnan",
+        "Puneet Misra",
+        "Mani Kalaivani",
+        "Balram Bhargava",
+        "Marcus Flather",
+        "Philip Poole‐Wilson"
+      ],
+      "journal": "Heart",
+      "year": 2011,
+      "doi": "10.1136/heartjnl-2011-300792",
+      "openalexId": "https://openalex.org/W2107560563",
+      "abstract": "The prevalence of RHD is several fold higher using echocardiographic screening compared with clinical examination. The prevalence is higher among girls and children of lower socioeconomic status. In the majority of cases, subclinical RHD appears to be non-progressive on medium term follow up. Routine echocardiographic screening may be indicated in populations at high risk of RHD.",
+      "citationCount": 187,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Medicine",
+        "Subclinical infection",
+        "Pediatrics",
+        "Heart disease",
+        "Cross-sectional study",
+        "Rheumatic fever",
+        "Internal medicine",
+        "Physical examination",
+        "Epidemiology",
+        "El Niño"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Prevalence survey for chronic rheumatic heart disease and rheumatic fever in northern India.",
+      "authors": [
+        "John N. Berry"
+      ],
+      "journal": "Heart",
+      "year": 1972,
+      "doi": "10.1136/hrt.34.2.143",
+      "openalexId": "https://openalex.org/W2022550261",
+      "abstract": "A house-to-house survey of a random sample of 33,36I subjects, comprising one-third of the total population of a town in northern India, shows the prevalence of chronic rheumatic heart disease and rheumatic fever to be .23/1i000 among male and 2 07/1I000 among female subjects. Of the 48 cases of rheumatic heart disease, 62 per cent gave a history suggestive of rheumatic fever in the past. Six of these had rheumatic activity. No cases were seen below the age of 5 years and above the age of 50. One-quarter of the cases of mitral stenosis and half the cases of mitral incompetence in both sexes were below the age of 20 years All the women and 84 per cent of the men with rheumatic heart disease had mitral valve involvement, while the aortic valve was involved in 42 per cent of men and 14 per cent of women. Mitral stenosis and mitral incompetence were equally common, singly or mixed, while aortic incompetence was the usual aortic lesion. Pure mitral stenosis was 321 times commoner and mitral incompetence twice as common in female than in male subjects. Among women, mitral stenosis developed earlier in many and was more often complicated by pulmonary hypertension. Previous published data, based on hospitalfigures alone, have given rise to the mistaken belief that it is less common among women in India and other Eastern coun- tries. It is probable that many of the other peculiarities of the disease like infrequency of chorea, subcutaneous nodules, lone mitral incompetence, and rheumatic fever as compared to rheumatic heart disease are also due to dependence on figures from teaching hospitals and specialized units which are biased by preselection.",
+      "citationCount": 49,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://heart.bmj.com/content/heartjnl/34/2/143.full.pdf",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Medicine",
+        "Rheumatic fever",
+        "Stenosis",
+        "Chorea",
+        "Mitral valve",
+        "Heart disease",
+        "Mitral valve stenosis",
+        "Internal medicine",
+        "Population",
+        "Mitral incompetence",
+        "Cardiology",
+        "Disease",
+        "Pulmonary hypertension",
+        "Pediatrics",
+        "Surgery"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Epidemiological survey of rheumatic heart disease among school children in the Shimla Hills of northern India: prevalence and risk factors.",
+      "authors": [
+        "JS Thakur",
+        "Prakash Chand Negi",
+        "S K Ahluwalia",
+        "Naveen K. Vaidya"
+      ],
+      "journal": "Journal of Epidemiology & Community Health",
+      "year": 1996,
+      "doi": "10.1136/jech.50.1.62",
+      "openalexId": "https://openalex.org/W2167158888",
+      "abstract": "RHD continues to be a serious health problem. Regular surveys are needed to identify cases early and to ensure secondary prophylaxis with penicillin is given thereby preventing recurrence of RF and progression of the severity of the valvular lesion. Echocardiography is necessary to identify cases of RF/RHD. Strategies for preventing RHD should involve primary prevention to avert the first attack of carditis and strengthening of secondary prophylaxis through improved education and motivation of patients, parents, and physicians.",
+      "citationCount": 79,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://jech.bmj.com/content/jech/50/1/62.full.pdf",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Medicine",
+        "Epidemiology",
+        "Overcrowding",
+        "Pediatrics",
+        "Rheumatic fever",
+        "Heart disease",
+        "Rural area",
+        "Socioeconomic status",
+        "Mitral valve prolapse",
+        "Disease",
+        "Acute rheumatic fever",
+        "Demography",
+        "Mitral valve"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Prevalence of rheumatic heart disease: has it declined in India?",
+      "authors": [
+        "S Ramakrishnan",
+        "Shyam S. Kothari",
+        "Rajnish Juneja",
+        "Balram Bhargava",
+        "Anitá Saxena",
+        "Vinay K. Bahl"
+      ],
+      "journal": "PubMed",
+      "year": 2009,
+      "openalexId": "https://openalex.org/W2115433209",
+      "abstract": "Rheumatic heart disease continues to be a major health problem in many parts of the world. The epidemiology of rheumatic heart disease in India is of special interest as it may help to understand the effects of economic transition on this enigmatic disease. Critical appraisal of the published literature suggests the possibility of a real decline in the occurrence of the disease in some parts of the country, but a continuing onslaught in several other regions. The rate of decline seems to correlate more with improved public health facilities than with economic development alone. However, the cumulative burden of the disease remains high, and sustained efforts for the prevention of rheumatic heart disease are warranted.",
+      "citationCount": 31,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Disease",
+        "Epidemiological transition",
+        "Heart disease",
+        "Medicine",
+        "Epidemiology",
+        "Rheumatic disease",
+        "Public health",
+        "Critical appraisal",
+        "Intensive care medicine",
+        "Environmental health"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Prevalence of rheumatic and congenital heart disease in school children of Andhra Pradesh, South India",
+      "authors": [
+        "Naina Kumari",
+        "I. Bhaskara Raju",
+        "A.N. Patnaik",
+        "Ramachandra Barik",
+        "Amarpal Singh",
+        "A. Pushpanjali",
+        "Vijay Laxmi",
+        "L. Satya Ramakrishna"
+      ],
+      "journal": "Journal of Cardiovascular Disease Research",
+      "year": 2013,
+      "doi": "10.1016/j.jcdr.2012.11.003",
+      "openalexId": "https://openalex.org/W1980067507",
+      "abstract": "RHD was detected several fold using echocardiographic screening than by clinical examination alone. Longitudinal follow-up of children with echocardiographically diagnosed subclinical RHD is needed.",
+      "citationCount": 24,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.sciencedirect.com/science/article/pii/S0975358313000260",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Medicine",
+        "Heart disease",
+        "Pediatrics",
+        "Environmental health"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Cardiovascular Disease in the Developing World",
+      "authors": [
+        "David S. Celermajer",
+        "Clara K Chow",
+        "Éloi Marijon",
+        "Nicholas M. Anstey",
+        "Kam S. Woo"
+      ],
+      "journal": "Journal of the American College of Cardiology",
+      "year": 2012,
+      "doi": "10.1016/j.jacc.2012.03.074",
+      "openalexId": "https://openalex.org/W1941358101",
+      "citationCount": 472,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Medicine",
+        "Disease",
+        "Developing country",
+        "Intensive care medicine",
+        "Developed country",
+        "Urbanization",
+        "China"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Heart failure: epidemiology and prevention in India.",
+      "authors": [
+        "Mark D. Huffman",
+        "Dorairaj Prabhakaran"
+      ],
+      "journal": "PubMed",
+      "year": 2011,
+      "openalexId": "https://openalex.org/W2182041459",
+      "abstract": "Reliable estimates of heart failure are lacking in India because of the absence of a surveillance programme to track incidence, prevalence, outcomes and key causes of heart failure. Nevertheless, we propose that the incidence and prevalence rates of heart failure are rising due to population, epidemiological and health transitions. Based on disease-specific estimates of prevalence and incidence rates of heart failure, we conservatively estimate the prevalence of heart failure in India due to coronary heart disease, hypertension, obesity, diabetes and rheumatic heart disease to range from 1.3 to 4.6 million, with an annual incidence of 491 600-1.8 million. The double burden of rising cardiovascular risk factors and persistent 'pre-transition' diseases such as rheumatic heart disease, limited healthcare infrastructure and social disparities contribute to these estimates. Staging of heart failure, introduced in 2005, provides a framework to target preventive strategies in patients at risk for heart failure (stage A), with structural disease alone (B), with heart failure symptoms (C) and with end-stage disease (D). Policy-level interventions, such as regulations to limit salt and tobacco consumption, are effective for primordial prevention and would have a wider impact on prevention of heart failure. Clinical preventive interventions and clinical quality improvement interventions, such as treatment of hypertension, atherosclerotic disease, diabetes and acute decompensated heart failure are effective for primary, secondary and even tertiary prevention.",
+      "citationCount": 166,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/3913650",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Heart failure",
+        "Medicine",
+        "Epidemiology",
+        "Incidence (geometry)",
+        "Psychological intervention",
+        "Heart disease",
+        "Diabetes mellitus",
+        "Epidemiological transition",
+        "Intensive care medicine",
+        "Population",
+        "Obesity",
+        "Disease",
+        "Internal medicine",
+        "Cardiology",
+        "Physical therapy"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Rheumatic fever and rheumatic heart disease in developing countries.",
+      "authors": [
+        "S Padmavati"
+      ],
+      "journal": "PubMed",
+      "year": 1978,
+      "openalexId": "https://openalex.org/W1562765380",
+      "abstract": "Studies on the prevalence and other epidemiological features of rheumatic fever and rheumatic heart disease and pilot prophylactic programmes have been carried out in India for the past 12 years or more. The results of these, together with data from other developing countries, have been taken into account in discussing the problems of these diseases in the developing world. Suggestions for their control, to be modified according to local conditions, are made.",
+      "citationCount": 106,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Rheumatic fever",
+        "Medicine",
+        "Developing country",
+        "Epidemiology",
+        "Heart disease",
+        "Rheumatic disease",
+        "Intensive care medicine",
+        "Pediatrics",
+        "Environmental health",
+        "Disease",
+        "Immunology"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "PREVALENCE OF RHEUMATIC FEVER/ RHEUMATIC HEART DISEASE IN INDIA: LESSONS FROM ACTIVE SURVEILLANCE AND A PASSIVE REGISTRY",
+      "authors": [
+        "Anil Bharani"
+      ],
+      "journal": "Journal of the American College of Cardiology",
+      "year": 2010,
+      "doi": "10.1016/s0735-1097(10)61416-7",
+      "openalexId": "https://openalex.org/W2059959236",
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Medicine",
+        "Rheumatic fever",
+        "Heart disease",
+        "Internal medicine"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Prevalence and follow‐up of subclinical rheumatic heart disease among asymptomatic school children in a north‐western district of India based on the World Heart Federation echocardiographic criteria",
+      "authors": [
+        "Dinesh Choudhary",
+        "Sadik Panwar",
+        "Bal Kishan Gupta",
+        "Raja Babu Panwar",
+        "Rajeev Gupta",
+        "Maneesha Bhaya",
+        "Rajesh Beniwal",
+        "Vasim Raja Panwar",
+        "Arvind Sharma",
+        "Jigyasa Gupta",
+        "Navin C. Nanda"
+      ],
+      "journal": "Echocardiography",
+      "year": 2021,
+      "doi": "10.1111/echo.15035",
+      "openalexId": "https://openalex.org/W3170260684",
+      "abstract": "The prevalence of subclinical RHD is high in the study population, and the disease seems to regress over time in the presence of appropriate antibiotic prophylaxis.",
+      "citationCount": 7,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Asymptomatic",
+        "Subclinical infection",
+        "Medicine",
+        "Heart disease",
+        "Disease",
+        "Pediatrics",
+        "Coronary heart disease",
+        "Internal medicine",
+        "Physical therapy",
+        "Cardiology"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Global, regional, and national incidence, prevalence, and years lived with disability for 354 diseases and injuries for 195 countries and territories, 1990–2017: a systematic analysis for the Global Burden of Disease Study 2017",
+      "authors": [
+        "Spencer L James",
+        "Degu Abate",
+        "Kalkidan Hassen Abate",
+        "Solomón Mequanente Abay",
+        "Cristiana Abbafati",
+        "Nooshin Abbasi",
+        "Hedayat Abbastabar",
+        "Foad Abd-Allah",
+        "Jemal Abdela",
+        "Ahmed Abdelalim",
+        "Ibrahim Abdollahpour",
+        "Rizwan Suliankatchi Abdulkader",
+        "Abebe Zegeye",
+        "Semaw Ferede Abera",
+        "Olifan Zewdie Abil",
+        "Haftom Niguse Abraha",
+        "Laith J. Abu‐Raddad",
+        "Niveen M. E. Abu-Rmeileh",
+        "Manfred Accrombessi",
+        "Dilaram Acharya",
+        "Pawan Acharya",
+        "Ilana N. Ackerman",
+        "Abdu A. Adamu",
+        "Oladimeji Adebayo",
+        "Victor Adekanmbi",
+        "Olatunji Adetokunboh",
+        "Mina G Adib",
+        "José Carmelo Adsuar",
+        "Kossivi Agbélénko Afanvi",
+        "Mohsen Afarideh",
+        "Ashkan Afshin",
+        "Gina Agarwal",
+        "Kareha M Agesa",
+        "Rakesh Aggarwal",
+        "Sargis A. Aghayan",
+        "Sutapa Agrawal",
+        "Alireza Ahmadi",
+        "Mehdi Ahmadi",
+        "Hamid Ahmadieh",
+        "Muktar Beshir Ahmed",
+        "Amani Nidhal Aichour",
+        "Ibtihel Aichour",
+        "Miloud Taki Eddine Aichour",
+        "Tomi Akinyemiju",
+        "Nadia Akseer",
+        "Ziyad Al‐Aly",
+        "Ayman Al‐Eyadhy",
+        "Hesham M. Al‐Mekhlafi",
+        "Rajaa Al‐Raddadi",
+        "Fares Alahdab",
+        "Khurshid Alam",
+        "Shazia Alam",
+        "Alaa Alashi",
+        "Seyed Moayed Alavian",
+        "Kefyalew Addis Alene",
+        "Mehran Alijanzadeh",
+        "Reza Alizadeh‐Navaei",
+        "Syed Mohamed Aljunid",
+        "Ala’a Alkerwi",
+        "François Alla",
+        "Peter Allebeck",
+        "Mohamed M L Alouani",
+        "Khalid A Altirkawi",
+        "Nelson Alvis‐Guzmán",
+        "Azmeraw T. Amare",
+        "Léopold Ndemnge Aminde",
+        "Walid Ammar",
+        "Yaw Ampem Amoako",
+        "Nahla Anber",
+        "Cătălina Liliana Andrei",
+        "Sofia Androudi",
+        "Megbaru Debalkie Animut",
+        "Mina Anjomshoa",
+        "Mustafa Geleto Ansha",
+        "Carl Abelardo T. Antonio",
+        "Palwasha Anwari",
+        "Jalal Arabloo",
+        "Antonio Araúz",
+        "Olatunde Aremu",
+        "Filippo Ariani",
+        "Bahram Armoon",
+        "Johan Ärnlöv",
+        "Amit Arora",
+        "Al Artaman",
+        "Kavumpurathu Raman Thankappan",
+        "Hamid Asayesh",
+        "Rana Jawad Asghar",
+        "Zerihun Ataro",
+        "Sachin Atre",
+        "Marcel Ausloos",
+        "Leticia Ávila‐Burgos",
+        "Euripide Avokpaho",
+        "Ashish Awasthi",
+        "Beatriz Paulina Ayala Quintanilla",
+        "Rakesh Ayer",
+        "Peter Azzopardi",
+        "Arefeh Babazadeh",
+        "Hamid Badali",
+        "Alaa Badawi",
+        "Ayele Geleto"
+      ],
+      "journal": "The Lancet",
+      "year": 2018,
+      "doi": "10.1016/s0140-6736(18)32279-7",
+      "openalexId": "https://openalex.org/W2912654919",
+      "citationCount": 13654,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "http://www.thelancet.com/article/S0140673618322797/pdf",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Incidence (geometry)",
+        "Burden of disease",
+        "Medicine",
+        "Disease",
+        "Environmental health",
+        "Demography",
+        "Geography"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Sequelae of the initial attack of acute rheumatic fever in children from north India. A prospective 5-year follow-up study.",
+      "authors": [
+        "Shyamal K. Sanyal",
+        "Amrit M. Berry",
+        "S Duggal",
+        "V. Hooja",
+        "S Ghosh"
+      ],
+      "journal": "Circulation",
+      "year": 1982,
+      "doi": "10.1161/01.cir.65.2.375",
+      "openalexId": "https://openalex.org/W2061363038",
+      "abstract": "We determined the outcome of acute rheumatic fever in 85 children from North India who had received regular antistreptococcal prophylaxis after their first attack. By the end of the 5-year follow-up, 33 patients had rheumatic heart disease. Mitral insufficiency, the most common valvular lesion, appeared in 91% of the patients, whereas mitral stenosis developed in only 18%. Initial carditis, congestive heart failure, cardiomegaly or moderate-to-severe mitral insufficiency significantly increased the risk of rheumatic heart disease (p less than 0.001). The recurrence rate of acute rheumatic fever in children who received continuous prophylaxis was 0.006 per patient-year. Most recurrence (92%) mimicked the first attack and produced further cardiac damage in five patients with carditis and in one patient with chorea. Cardiac status during the first attack of rheumatic fever and the continuity of prophylaxis were the major determinants of outcome. Statistical comparisons disclosed that with continuous prophylaxis, the prevalence rate, evolution and clinical spectrum of the sequelae of acute rheumatic fever in children from India do not differ significantly from those in the West.",
+      "citationCount": 93,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Medicine",
+        "Chorea",
+        "Carditis",
+        "Rheumatic fever",
+        "Acute rheumatic fever",
+        "Heart disease",
+        "Internal medicine",
+        "Heart failure",
+        "Cardiology",
+        "Pediatrics",
+        "Prospective cohort study",
+        "Stenosis",
+        "Disease",
+        "Surgery"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Epidemiology of rheumatic fever and rheumatic heart disease in a rural community in northern India.",
+      "authors": [
+        "Anil Grover",
+        "Andrew Dhawan",
+        "S. D. Iyengar",
+        "Inder S. Anand",
+        "P. L. Wahi",
+        "Nirmal Kumar Ganguly"
+      ],
+      "journal": "PubMed",
+      "year": 1993,
+      "openalexId": "https://openalex.org/W1523797738",
+      "abstract": "The epidemiology of rheumatic fever and rheumatic heart disease in a rural community (total population 114,610) in northern India was studied by setting up a registry based on primary health care centres. Health workers and schoolteachers were trained to identify suspected patients in school and village surveys (121 villages). Medical specialists screened 5-15-year-olds (n = 31,200). The population was followed up for 3 years (from March 1988 to March 1991). All suspected and registered cases were investigated by serial echocardiography and Doppler ultrasonography at a tertiary care centre. A total of 102 cases were confirmed to have rheumatic fever/rheumatic heart disease (prevalence, 0.09%); 66 were aged 5-15 years (prevalence, 0.21%). A total of 48 patients (24 males, 24 females; mean age, 12.11 +/- 3.7 years) were diagnosed to have a possible first attack of rheumatic fever (incidence, 0.54 per 1000 per year). Arthritis was observed in 36 (75%) and carditis in 18 (37.5%) of cases. Prolapse of the anterior mitral leaflet into the left atrium occurred in 5 (22%) cases with carditis. Mitral regurgitation was observed in all 18 cases of carditis; over the period of observation it disappeared in three cases and progressed to mitral stenosis in a further three. A total of 22 patients (11 males, 11 females; mean age, 19.41 +/- 8.1 years) were registered as rheumatic fever recurrences, and 32 patients (18 females, 14 males; mean age, 22.1 +/- 10.1 years) had chronic rheumatic heart disease. Of those with recurrences, 9 (41%) had carditis and 11 (50%) had arthritis.(ABSTRACT TRUNCATED AT 250 WORDS)",
+      "citationCount": 100,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Medicine",
+        "Carditis",
+        "Rheumatic fever",
+        "Epidemiology",
+        "Population",
+        "Incidence (geometry)",
+        "Heart disease",
+        "Pediatrics",
+        "Myocarditis",
+        "Internal medicine",
+        "Mitral valve",
+        "Surgery"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Current status of rheumatic heart disease in India",
+      "authors": [
+        "Prakash Chand Negi",
+        "Sachin Sondhi",
+        "Sanjeev Asotra",
+        "Kunal Mahajan",
+        "Ayushi Mehta"
+      ],
+      "journal": "Indian Heart Journal",
+      "year": 2019,
+      "doi": "10.1016/j.ihj.2018.12.007",
+      "openalexId": "https://openalex.org/W2907825018",
+      "abstract": "The rheumatic heart disease continues to be an important cause of disease burden in India, affecting the population in their prime and productive phase of the life. The prevalence of rheumatic heart disease is varied in different Indian studies, because of the inclusion of different populations at different point of times and using different screening methods for the diagnosis. The data on incidence and prevalence on a nationally represented sample are lacking. There is a need for establishing a population-based surveillance system in the country for monitoring trends, management practices, and outcomes to formulate informed guidelines for initiating contextual interventions for prevention and control of rheumatic heart disease.",
+      "citationCount": 63,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://doi.org/10.1016/j.ihj.2018.12.007",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Medicine",
+        "Heart disease",
+        "Psychological intervention",
+        "Disease",
+        "Incidence (geometry)",
+        "Population",
+        "Disease management",
+        "Rheumatic fever",
+        "Environmental health",
+        "Physical therapy",
+        "Intensive care medicine",
+        "Pediatrics"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Global, regional, and national incidence, prevalence, and years lived with disability for 328 diseases and injuries for 195 countries, 1990–2016: a systematic analysis for the Global Burden of Disease Study 2016",
+      "authors": [
+        "Theo Vos",
+        "Amanuel Alemu Abajobir",
+        "Kalkidan Hassen Abate",
+        "Cristiana Abbafati",
+        "Kaja Abbas",
+        "Foad Abd-Allah",
+        "Rizwan Suliankatchi Abdulkader",
+        "Abdishakur Abdulle",
+        "Teshome Abuka Abebo",
+        "Semaw Ferede Abera",
+        "Victor Aboyans",
+        "Laith J. Abu‐Raddad",
+        "Ilana N. Ackerman",
+        "Abdu A. Adamu",
+        "Olatunji Adetokunboh",
+        "Mohsen Afarideh",
+        "Ashkan Afshin",
+        "Sanjay Agarwal",
+        "Rakesh Aggarwal",
+        "Anurag Agrawal",
+        "Sutapa Agrawal",
+        "Hamid Ahmadieh",
+        "Muktar Beshir Ahmed",
+        "Miloud Taki Eddine Aichour",
+        "Amani Nidhal Aichour",
+        "Ibtihel Aichour",
+        "Sneha Aiyar",
+        "Rufus Akinyemi",
+        "Nadia Akseer",
+        "Faris Lami",
+        "Fares Alahdab",
+        "Ziyad Al‐Aly",
+        "Khurshid Alam",
+        "Noore Alam",
+        "Shazia Alam",
+        "Deena Alasfoor",
+        "Kefyalew Addis Alene",
+        "Raghib Ali",
+        "Reza Alizadeh‐Navaei",
+        "Ala’a Alkerwi",
+        "François Alla",
+        "Peter Allebeck",
+        "Christine A. Allen",
+        "Fatma Al‐Maskari",
+        "Rajaa Al‐Raddadi",
+        "Ubai Alsharif",
+        "Shirina Alsowaidi",
+        "Khalid A Altirkawi",
+        "Azmeraw T. Amare",
+        "Erfan Amini",
+        "Walid Ammar",
+        "Yaw Ampem Amoako",
+        "Hjalte Holm Andersen",
+        "Carl Abelardo T. Antonio",
+        "Palwasha Anwari",
+        "Johan Ärnlöv",
+        "Al Artaman",
+        "Krishna Kumar Aryal",
+        "Hamid Asayesh",
+        "Solomon Weldegebreal Asgedom",
+        "Reza Assadi",
+        "Tesfay Mehari Atey",
+        "Niguse Tadele Atnafu",
+        "Sachin Atre",
+        "Leticia Ávila‐Burgos",
+        "Euripide Frinel G Arthur Avokphako",
+        "Ashish Awasthi",
+        "Umar Bacha",
+        "Alaa Badawi",
+        "Kalpana Balakrishnan",
+        "Amitava Banerjee",
+        "Marlena S. Bannick",
+        "Aleksandra Barać",
+        "Ryan M Barber",
+        "Suzanne Barker‐Collo",
+        "Till Bärnighausen",
+        "Sı́món Barquera",
+        "Lars Barregård",
+        "Lope H. Barrero",
+        "Sanjay Basu",
+        "Bob Battista",
+        "Katherine E. Battle",
+        "Bernhard T. Baune",
+        "Shahrzad Bazargan‐Hejazi",
+        "Justin Beardsley",
+        "Neeraj Bedi",
+        "Ettore Beghi",
+        "Yannick Béjot",
+        "Bayu Begashaw Bekele",
+        "Michelle L. Bell",
+        "Derrick Bennett",
+        "Isabela M. Benseñor",
+        "Jennifer Benson",
+        "Adugnaw Berhane",
+        "Derbew Fikadu Berhe",
+        "Eduardo Bernabé",
+        "Balem Demtsu Betsu",
+        "Mircea Beuran",
+        "Addisu Shunu Beyene",
+        "Neeraj Bhala"
+      ],
+      "journal": "The Lancet",
+      "year": 2017,
+      "doi": "10.1016/s0140-6736(17)32154-2",
+      "openalexId": "https://openalex.org/W2751884637",
+      "citationCount": 13343,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "http://www.thelancet.com/article/S0140673617321542/pdf",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Incidence (geometry)",
+        "Medicine",
+        "Burden of disease",
+        "Disease",
+        "Environmental health",
+        "Demography"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Systematic Literature Review on the Incidence and Prevalence of Heart Failure in Children and Adolescents",
+      "authors": [
+        "Robert E. Shaddy",
+        "Aneesh Thomas George",
+        "Thomas Jaecklin",
+        "Eimear Nic Lochlainn",
+        "Lalit Thakur",
+        "Rumjhum Agrawal",
+        "Susan Solar‐Yohay",
+        "Fabian Chen",
+        "Joseph W. Rossano",
+        "Thomas Severin",
+        "Michael Burch"
+      ],
+      "journal": "Pediatric Cardiology",
+      "year": 2017,
+      "doi": "10.1007/s00246-017-1787-2",
+      "openalexId": "https://openalex.org/W2780002035",
+      "abstract": "While the epidemiology of adult heart failure has been extensively researched, this systematic review addresses the less well characterized incidence and prevalence of pediatric HF. The search strategy used Cochrane methodology and identified 83 unique studies for inclusion. Studies were categorized according to whether the HF diagnosis was reported as primary (n = 10); associated with other cardiovascular diseases (CVDs) (n = 49); or associated with non-CVDs (n = 24). A narrative synthesis of the evidence is presented. For primary HF, the incidence ranged from 0.87/100,000 (UK and Ireland) to 7.4/100,000 (Taiwan). A prevalence of 83.3/100,000 was reported in one large population-based study from Spain. HF etiology varied across regions with lower respiratory tract infections and severe anemia predominating in lower income countries, and cardiomyopathies and congenital heart disease major causes in higher income countries. Key findings for the other categories included a prevalence of HF associated with cardiomyopathies ranging from 36.1% (Japan) to 79% (US); associated with congenital heart disease from 8% (Norway) to 82.2% (Nigeria); associated with rheumatic heart diseases from 1.5% (Turkey) to 74% (Zimbabwe); associated with renal disorders from 3.8% (India) to 24.1% (Nigeria); and associated with HIV from 1% (US) to 29.3% (Brazil). To our knowledge, this is the first systematic review of the topic and strengthens current knowledge of pediatric HF epidemiology. Although a large body of research was identified, heterogeneity in study design and diagnostic criteria limited the ability to compare regional data. Standardized definitions of pediatric HF are required to facilitate cross-regional comparisons of epidemiological data.",
+      "citationCount": 100,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://link.springer.com/content/pdf/10.1007/s00246-017-1787-2.pdf",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Medicine",
+        "Epidemiology",
+        "Incidence (geometry)",
+        "Etiology",
+        "Population",
+        "Heart failure",
+        "Pediatrics",
+        "Heart disease"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Prevalence of rheumatic heart disease in Railway school children in India.",
+      "authors": [
+        "Malhotra Sl",
+        "Maity Bk"
+      ],
+      "journal": "PubMed",
+      "year": 1973,
+      "openalexId": "https://openalex.org/W2416597937",
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Medicine",
+        "Pediatrics",
+        "Rheumatic disease",
+        "Disease",
+        "Heart disease"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Rheumatic heart disease in India",
+      "authors": [
+        "Arjun Agarwal",
+        "Mohammad Yunus",
+        "Jamal Ahmad",
+        "Adnan Khan"
+      ],
+      "journal": "Journal of the Royal Society of Health",
+      "year": 1995,
+      "doi": "10.1177/146642409511500509",
+      "openalexId": "https://openalex.org/W2051885055",
+      "abstract": "A cross-sectional study was carried out in rural areas of Jawan Block, District Aligarh, Uttar Pradesh, India, covering a total population of 3760 drawn from 11 villages. The total number of confirmed cases of rheumatic heart disease was 24 with a prevalence rate of 6.4 per 1000 of the general rural population. The prevalence of rheumatic heart disease increased with age until the age of 25 years. Females were more prone to rheumatic heart disease compared to males. Socio-economic class had a direct impact on the occurrence of rheumatic heart disease.",
+      "citationCount": 44,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Medicine",
+        "Heart disease",
+        "Uttar pradesh",
+        "Population",
+        "Epidemiology",
+        "Prevalence",
+        "Disease",
+        "Rural population",
+        "Rheumatic fever",
+        "Rural area",
+        "Veterinary medicine",
+        "Demography",
+        "Environmental health"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    }
+  ],
+  "total": 4793
+}

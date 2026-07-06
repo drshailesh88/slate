@@ -1,0 +1,789 @@
+{
+  "source": "openalex",
+  "query": "GLP-1 receptor agonists cardiovascular outcomes 2024 2025",
+  "timestamp": "2026-03-02T17:02:44.820Z",
+  "results": [
+    {
+      "title": "Benefits and harms of drug treatment for type 2 diabetes: systematic review and network meta-analysis of randomised controlled trials",
+      "authors": [
+        "Qingyang Shi",
+        "Kailei Nong",
+        "Per Olav Vandvik",
+        "Gordon Guyatt",
+        "Oliver Schnell",
+        "Lars Rydén",
+        "Nikolaus Marx",
+        "Frank C. Brosius",
+        "Reem A. Mustafa",
+        "Arnav Agarwal",
+        "Xinyu Zou",
+        "Yunhe Mao",
+        "Aminreza Asadollahifar",
+        "Saifur Rahman Chowdhury",
+        "Chunjuan Zhai",
+        "Sana Gupta",
+        "Ya Gao",
+        "João Pedro Lima",
+        "Kenji Numata",
+        "Zhi Qiao",
+        "Qinlin Fan",
+        "Qinbo Yang",
+        "Yinghui Jin",
+        "Long Ge",
+        "Qiuyu Yang",
+        "Hongfei Zhu",
+        "Fan Yang",
+        "Zhe Chen",
+        "Xi Lü",
+        "Siyu He",
+        "Xiangyang Chen",
+        "Xiafei Lyu",
+        "Xingxing An",
+        "Yaolong Chen",
+        "Qiukui Hao",
+        "Eberhard Standl",
+        "Reed Siemieniuk",
+        "Thomas Agoritsas",
+        "Haoming Tian",
+        "Sheyu Li"
+      ],
+      "journal": "BMJ",
+      "year": 2023,
+      "doi": "10.1136/bmj-2022-074068",
+      "openalexId": "https://openalex.org/W4362693001",
+      "abstract": "PROSPERO CRD42022325948.",
+      "citationCount": 247,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.bmj.com/content/bmj/381/bmj-2022-074068.full.pdf",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Medicine",
+        "Type 2 diabetes",
+        "Internal medicine",
+        "Randomized controlled trial",
+        "Meta-analysis",
+        "Odds ratio",
+        "Diabetes mellitus"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Bile acid metabolism and signaling in health and disease: molecular mechanisms and therapeutic targets",
+      "authors": [
+        "Joshua S. Fleishman",
+        "Sunil Kumar"
+      ],
+      "journal": "Signal Transduction and Targeted Therapy",
+      "year": 2024,
+      "doi": "10.1038/s41392-024-01811-6",
+      "openalexId": "https://openalex.org/W4395445997",
+      "citationCount": 302,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.nature.com/articles/s41392-024-01811-6.pdf",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Bile acid",
+        "Disease",
+        "Metabolism",
+        "Receptor",
+        "Signal transduction",
+        "Drug discovery",
+        "Biology",
+        "Bioinformatics",
+        "Medicine",
+        "Biochemistry",
+        "Computational biology"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "The Role of Obesity in Type 2 Diabetes Mellitus—An Overview",
+      "authors": [
+        "Preethi Chandrasekaran",
+        "Ralf Weiskirchen"
+      ],
+      "journal": "International Journal of Molecular Sciences",
+      "year": 2024,
+      "doi": "10.3390/ijms25031882",
+      "openalexId": "https://openalex.org/W4391533471",
+      "abstract": "Obesity or excessive weight gain is identified as the most important and significant risk factor in the development and progression of type 2 diabetes mellitus (DM) in all age groups. It has reached pandemic dimensions, making the treatment of obesity crucial in the prevention and management of type 2 DM worldwide. Multiple clinical studies have demonstrated that moderate and sustained weight loss can improve blood glucose levels, insulin action and reduce the need for diabetic medications. A combined approach of diet, exercise and lifestyle modifications can successfully reduce obesity and subsequently ameliorate the ill effects and deadly complications of DM. This approach also helps largely in the prevention, control and remission of DM. Obesity and DM are chronic diseases that are increasing globally, requiring new approaches to manage and prevent diabetes in obese individuals. Therefore, it is essential to understand the mechanistic link between the two and design a comprehensive approach to increase life expectancy and improve the quality of life in patients with type 2 DM and obesity. This literature review provides explicit information on the clinical definitions of obesity and type 2 DM, the incidence and prevalence of type 2 DM in obese individuals, the indispensable role of obesity in the pathophysiology of type 2 DM and their mechanistic link. It also discusses clinical studies and outlines the recent management approaches for the treatment of these associated conditions. Additionally, in vivo studies on obesity and type 2 DM are discussed here as they pave the way for more rigorous development of therapeutic approaches.",
+      "citationCount": 332,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.mdpi.com/1422-0067/25/3/1882/pdf?version=1707039825",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Obesity",
+        "Medicine",
+        "Diabetes mellitus",
+        "Type 2 Diabetes Mellitus",
+        "Type 2 diabetes",
+        "Life expectancy",
+        "Weight loss",
+        "Management of obesity",
+        "Intensive care medicine",
+        "Bioinformatics"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Clinical trials of new drugs for Alzheimer disease: a 2020–2023 update",
+      "authors": [
+        "Li‐Kai Huang",
+        "Yi‐Chun Kuan",
+        "Ho-Wei Lin",
+        "Chaur‐Jong Hu"
+      ],
+      "journal": "Journal of Biomedical Science",
+      "year": 2023,
+      "doi": "10.1186/s12929-023-00976-6",
+      "openalexId": "https://openalex.org/W4387259038",
+      "citationCount": 212,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://jbiomedsci.biomedcentral.com/counter/pdf/10.1186/s12929-023-00976-6",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Medicine",
+        "Clinical trial",
+        "Disease",
+        "Dementia",
+        "Alzheimer's disease",
+        "Bioinformatics",
+        "Intensive care medicine"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "evoke and evoke+: design of two large-scale, double-blind, placebo-controlled, phase 3 studies evaluating efficacy, safety, and tolerability of semaglutide in early-stage symptomatic Alzheimer’s disease",
+      "authors": [
+        "Jeffrey L. Cummings",
+        "Alireza Atri",
+        "Howard Feldman",
+        "Oskar Hansson",
+        "Mary Sano",
+        "Filip K. Knop",
+        "Peter Johannsen",
+        "Teresa León",
+        "Philip Scheltens"
+      ],
+      "journal": "Alzheimer s Research & Therapy",
+      "year": 2025,
+      "doi": "10.1186/s13195-024-01666-7",
+      "openalexId": "https://openalex.org/W4406156729",
+      "citationCount": 95,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://alzres.biomedcentral.com/counter/pdf/10.1186/s13195-024-01666-7",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Tolerability",
+        "Medicine",
+        "Placebo",
+        "Semaglutide",
+        "Neurology",
+        "Disease",
+        "Stage (stratigraphy)",
+        "Internal medicine",
+        "Adverse effect"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Obesity and cardiovascular health",
+      "authors": [
+        "Aimee Welsh",
+        "Muhammad Hammad",
+        "Ileana L. Piña",
+        "Jacquelyn Kulinski"
+      ],
+      "journal": "European Journal of Preventive Cardiology",
+      "year": 2024,
+      "doi": "10.1093/eurjpc/zwae025",
+      "openalexId": "https://openalex.org/W4391050623",
+      "abstract": "Obesity has risen to epidemic levels worldwide over the past few decades and has become a huge global health burden owing to its direct contribution to the development of some of the most prevalent chronic diseases including diabetes, hypertension, hyperlipidaemia, and other cardiovascular diseases. Obesity is a disease of positive energy balance resulting from complex interactions between abnormal neurohumoral responses and an individual's socioeconomic, environmental, behavioural, and genetic factors leading to a state of chronic inflammation. Understanding the complex nature of the disease is crucial in determining the best approach to combat its rising numbers. Despite recent advancements in pharmacological therapy for the treatment of obesity, reversing weight gain and maintaining weight loss is challenging due to the relapsing nature of the disease. Prevention, therefore, remains the key which needs to start in utero and continued throughout life. This review summarizes the role obesity plays in the pathophysiology of various cardiovascular diseases both by directly affecting endothelial and myocyte function and indirectly by enhancing major cardiovascular risk factors like diabetes, hypertension, and hyperlipidaemia. We highlight the importance of a holistic approach needed to prevent and treat this debilitating disease. Particularly, we analyse the effects of plant-based diet, regular exercise, and non-exercise activity thermogenesis on obesity and overall cardiorespiratory fitness. Moreover, we discuss the significance of individualizing obesity management with a multimodal approach including lifestyle modifications, pharmacotherapy, and bariatric surgery to tackle this chronic disease.",
+      "citationCount": 140,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://academic.oup.com/eurjpc/advance-article-pdf/doi/10.1093/eurjpc/zwae025/56261770/zwae025.pdf",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Medicine",
+        "Obesity",
+        "Disease",
+        "Cardiorespiratory fitness",
+        "Diabetes mellitus",
+        "Management of obesity",
+        "Intensive care medicine",
+        "Weight loss",
+        "Type 2 diabetes",
+        "Bioinformatics"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Steatotic Liver Disease: Pathophysiology and Emerging Pharmacotherapies",
+      "authors": [
+        "Michail Kokkorakis",
+        "Emir Muzurović",
+        "Špela Volčanšek",
+        "Marlene Chakhtoura",
+        "Michael A. Hill",
+        "Dimitri P. Mikhailidis",
+        "Christos S. Mantzoros"
+      ],
+      "journal": "Pharmacological Reviews",
+      "year": 2024,
+      "doi": "10.1124/pharmrev.123.001087",
+      "openalexId": "https://openalex.org/W4391340567",
+      "citationCount": 66,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://pharmrev.aspetjournals.org/content/pharmrev/early/2024/01/30/pharmrev.123.001087.full.pdf",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Medicine",
+        "Intensive care medicine",
+        "Clinical trial",
+        "Disease",
+        "Repurposing",
+        "Tolerability",
+        "Fatty liver",
+        "Steatohepatitis",
+        "Psychological intervention",
+        "Bioinformatics",
+        "Drug development",
+        "Drug"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Extracellular signalling molecules in the ischaemic/reperfused heart – druggable and translatable for cardioprotection?",
+      "authors": [
+        "Petra Kleinbongard",
+        "Gerd Heusch"
+      ],
+      "journal": "British Journal of Pharmacology",
+      "year": 2014,
+      "doi": "10.1111/bph.12902",
+      "openalexId": "https://openalex.org/W1528865994",
+      "abstract": "In patients with acute myocardial infarction, timely reperfusion is essential to limit infarct size. However, reperfusion also adds to myocardial injury. Brief episodes of ischaemia/reperfusion in the myocardium or on organ remote from the heart, before or shortly after sustained myocardial ischaemia effectively reduce infarct size, provided there is eventual reperfusion. Such conditioning phenomena have been established in many experimental studies and also translated to humans. The underlying signal transduction, that is the molecular identity of triggers, mediators and effectors, is not clear yet in detail, but several extracellular signalling molecules, such as adenosine, bradykinin and opioids, have been identified to contribute to cardioprotection by conditioning manoeuvres. Several trials have attempted the translation of cardioprotection by such autacoids into a clinical scenario of myocardial ischaemia and reperfusion. Adenosine and its selective agonists reduced infarct size in a few studies, but this benefit was not translated into improved clinical outcome. All studies with bradykinin or drugs which increase bradykinin's bioavailability reported reduced infarct size and some of them also improved clinical outcome. Synthetic opioid agonists did not result in a robust infarct size reduction, but this failure of translation may relate to the cardioprotective properties of the underlying anaesthesia per se or of the comparator drugs. The translation of findings in healthy, young animals with acute coronary occlusion/reperfusion to patients of older age, with a variety of co-morbidities and co-medications, suffering from different scenarios of myocardial ischaemia/reperfusion remains a challenge.",
+      "citationCount": 70,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://bpspubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/bph.12902",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Cardioprotection",
+        "Medicine",
+        "Bradykinin",
+        "Myocardial infarction",
+        "Ischemia",
+        "Reperfusion injury",
+        "Cardiology",
+        "Reperfusion therapy",
+        "Ischemic preconditioning",
+        "Adenosine",
+        "Internal medicine",
+        "Pharmacology",
+        "Anesthesia"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Proteomic changes upon treatment with semaglutide in individuals with obesity",
+      "authors": [
+        "Lasse Maretty",
+        "Dipender Gill",
+        "Lotte Simonsen",
+        "Keng Lin Soh",
+        "Loukas Zagkos",
+        "Michael Galanakis",
+        "Jonas A. Sibbesen",
+        "Miquel Triana",
+        "Anna Secher",
+        "Dirk Valkenborg",
+        "Jonathan Q. Purnell",
+        "Lotte Bjerre Knudsen",
+        "Abd A. Tahrani",
+        "Milan Geybels"
+      ],
+      "journal": "Nature Medicine",
+      "year": 2025,
+      "doi": "10.1038/s41591-024-03355-2",
+      "openalexId": "https://openalex.org/W4406051813",
+      "abstract": "Obesity and type 2 diabetes are prevalent chronic diseases effectively managed by semaglutide. Here we studied the effects of semaglutide on the circulating proteome using baseline and end-of-treatment serum samples from two phase 3 trials in participants with overweight or obesity, with or without diabetes: STEP 1 (n = 1,311) and STEP 2 (n = 645). We identified evidence supporting broad effects of semaglutide, implicating processes related to body weight regulation, glycemic control, lipid metabolism and inflammatory pathways. Several proteins were regulated with semaglutide, after accounting for changes in body weight and HbA<sub>1c</sub> at end of trial, suggesting effects of semaglutide on the proteome beyond weight loss and glucose lowering. A comparison of semaglutide with real-world proteomic profiles revealed potential benefits on disease-specific proteomic signatures including the downregulation of specific proteins associated with cardiovascular disease risk, supporting its reported effects of lowering cardiovascular disease risk and potential drug repurposing opportunities. This study showcases the potential of proteomics data gathered from randomized trials for providing insights into disease mechanisms and drug repurposing opportunities. These data also highlight the unmet need for, and importance of, examining proteomic changes in response to weight loss pharmacotherapy in future trials.",
+      "citationCount": 49,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.nature.com/articles/s41591-024-03355-2.pdf",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Semaglutide",
+        "Glycemic",
+        "Repurposing",
+        "Diabetes mellitus",
+        "Proteome",
+        "Drug repositioning",
+        "Medicine",
+        "Overweight",
+        "Weight loss",
+        "Disease",
+        "Obesity",
+        "Type 2 diabetes",
+        "Clinical trial",
+        "Pharmacology",
+        "Internal medicine",
+        "Drug"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Current Clinical Trial Status and Future Prospects of PPAR-Targeted Drugs for Treating Nonalcoholic Fatty Liver Disease",
+      "authors": [
+        "Shotaro Kamata",
+        "Akihiro Honda",
+        "Isao Ishii"
+      ],
+      "journal": "Biomolecules",
+      "year": 2023,
+      "doi": "10.3390/biom13081264",
+      "openalexId": "https://openalex.org/W4385987388",
+      "abstract": "The number of patients with nonalcoholic fatty liver disease (NAFLD)/nonalcoholic steatohepatitis (NASH) is increasing globally and is raising serious concerns regarding the increasing medical and economic burden incurred for their treatment. The progression of NASH to more severe conditions such as cirrhosis and hepatocellular carcinoma requires liver transplantation to avoid death. Therefore, therapeutic intervention is required in the NASH stage, although no therapeutic drugs are currently available for this. Several anti-NASH candidate drugs have been developed that enable treatment via the modulation of distinct signaling cascades and include a series of drugs targeting peroxisome proliferator-activated receptor (PPAR) subtypes (PPARα/δ/γ) that are considered to be attractive because they can regulate both systemic lipid metabolism and inflammation. Multiple PPAR dual/pan agonists have been developed but only a few of them have been evaluated in clinical trials for NAFLD/NASH. Herein, we review the current clinical trial status and future prospects of PPAR-targeted drugs for treating NAFLD/NASH. In addition, we summarize our recent findings on the binding modes and the potencies/efficacies of several candidate PPAR dual/pan agonists to estimate their therapeutic potentials against NASH. Considering that the development of numerous PPAR dual/pan agonists has been abandoned because of their serious side effects, we also propose a repositioning of the already approved, safety-proven PPAR-targeted drugs against NAFLD/NASH.",
+      "citationCount": 56,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.mdpi.com/2218-273X/13/8/1264/pdf?version=1692362480",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Nonalcoholic fatty liver disease",
+        "Medicine",
+        "Liver transplantation",
+        "Cirrhosis",
+        "Peroxisome proliferator-activated receptor",
+        "Fatty liver",
+        "Bioinformatics",
+        "Disease",
+        "Pharmacology"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "The interface of depression and diabetes: treatment considerations",
+      "authors": [
+        "Giuseppe Fanelli",
+        "Emanuel Raschi",
+        "Gaye Hafez",
+        "Silke Matura",
+        "Carmen Schiweck",
+        "Elisabetta Poluzzi",
+        "Carlotta Lunghi"
+      ],
+      "journal": "Translational Psychiatry",
+      "year": 2025,
+      "doi": "10.1038/s41398-025-03234-5",
+      "openalexId": "https://openalex.org/W4406791435",
+      "citationCount": 43,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.nature.com/articles/s41398-025-03234-5.pdf",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Depression (economics)",
+        "Diabetes mellitus",
+        "Psychiatry",
+        "Schizophrenia (object-oriented programming)",
+        "Interface (matter)",
+        "Psychology",
+        "Psychotherapist",
+        "Medicine"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Cardioprotective Glucose-Lowering Agents and Dementia Risk",
+      "authors": [
+        "Allie Seminer",
+        "Alfredi Mulihano",
+        "Clare O’Brien",
+        "Finn Krewer",
+        "Maria Costello",
+        "Conor Judge",
+        "Martin O’Donnell",
+        "Catriona Reddin"
+      ],
+      "journal": "JAMA Neurology",
+      "year": 2025,
+      "doi": "10.1001/jamaneurol.2025.0360",
+      "openalexId": "https://openalex.org/W4409218088",
+      "abstract": "While cardioprotective glucose-lowering therapies were not associated with an overall reduction in all-cause dementia, this meta-analysis of randomized clinical trials found that glucose lowering with GLP-1RAs was associated with a statistically significant reduction in all-cause dementia.",
+      "citationCount": 38,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://jamanetwork.com/journals/jamaneurology/articlepdf/2831975/jamaneurology_seminer_2025_oi_250011_1742578411.98653.pdf",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Dementia",
+        "Medicine",
+        "Randomized controlled trial",
+        "Clinical trial",
+        "Vascular dementia",
+        "Pioglitazone",
+        "Cognitive decline",
+        "Internal medicine",
+        "Diabetes mellitus",
+        "Type 2 diabetes"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Integrated Management of Cardiovascular–Renal–Hepatic–Metabolic Syndrome: Expanding Roles of SGLT2is, GLP-1RAs, and GIP/GLP-1RAs",
+      "authors": [
+        "Nikolaos Theodorakis",
+        "Maria Nikolaou"
+      ],
+      "journal": "Biomedicines",
+      "year": 2025,
+      "doi": "10.3390/biomedicines13010135",
+      "openalexId": "https://openalex.org/W4406155608",
+      "abstract": "Cardiovascular-Kidney-Metabolic syndrome, introduced by the American Heart Association in 2023, represents a complex and interconnected spectrum of diseases driven by shared pathophysiological mechanisms. However, this framework notably excludes the liver-an organ fundamental to metabolic regulation. Building on this concept, Cardiovascular-Renal-Hepatic-Metabolic (CRHM) syndrome incorporates the liver's pivotal role in this interconnected disease spectrum, particularly through its involvement via metabolic dysfunction-associated steatotic liver disease (MASLD). Despite the increasing prevalence of CRHM syndrome, unified management strategies remain insufficiently explored. This review addresses the following critical question: How can novel anti-diabetic agents, including sodium-glucose cotransporter-2 inhibitors (SGLT2is), glucagon-like peptide-1 receptor agonists (GLP-1RAs), and dual gastric inhibitory polypeptide (GIP)/GLP-1RA, offer an integrated approach to managing CRHM syndrome beyond the boundaries of traditional specialties? By synthesizing evidence from landmark clinical trials, we highlight the paradigm-shifting potential of these therapies. SGLT2is, such as dapagliflozin and empagliflozin, have emerged as cornerstone guideline-directed treatments for heart failure (HF) and chronic kidney disease (CKD), providing benefits that extend beyond glycemic control and are independent of diabetes status. GLP-1RAs, e.g., semaglutide, have transformed obesity management by enabling weight reductions exceeding 15% and improving outcomes in atherosclerotic cardiovascular disease (ASCVD), diabetic CKD, HF, and MASLD. Additionally, tirzepatide, a dual GIP/GLP-1RA, enables unprecedented weight loss (>20%), reduces diabetes risk by over 90%, and improves outcomes in HF with preserved ejection fraction (HFpEF), MASLD, and obstructive sleep apnea. By moving beyond the traditional organ-specific approach, we propose a unified framework that integrates these agents into holistic management strategies for CRHM syndrome. This paradigm shift moves away from fragmented, organ-centric management toward a more unified approach, fostering collaboration across specialties and marking progress in precision cardiometabolic medicine.",
+      "citationCount": 27,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.mdpi.com/2227-9059/13/1/135/pdf?version=1736341131",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Medicine",
+        "Metabolic syndrome",
+        "Internal medicine"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Sodium‐glucose co‐transporter‐2 inhibitors in patients with type 2 diabetes: Barriers and solutions for improving uptake in routine clinical practice",
+      "authors": [
+        "Kamlesh Khunti",
+        "Serge Jabbour",
+        "Xavier Cos",
+        "Sunder Mudaliar",
+        "Christian W. Mende",
+        "Marc P. Bonaca",
+        "Paola Fioretto"
+      ],
+      "journal": "Diabetes Obesity and Metabolism",
+      "year": 2022,
+      "doi": "10.1111/dom.14684",
+      "openalexId": "https://openalex.org/W4214944309",
+      "abstract": "Recent advances in type 2 diabetes (T2D) research have highlighted the benefits of sodium-glucose co-transporter-2 (SGLT-2) inhibitors, including cardiovascular and renal protection. However, uptake rates of these drugs remain low in patients with T2D, particularly in subpopulations most likely to benefit from them. This review considers the potential barriers to prescribing SGLT-2 inhibitors in T2D in clinical practice and outlines potential multidisciplinary recommendations to overcome these barriers. Safety concerns and a lack of clarity in and divergence of guidelines around the introduction of SGLT-2 inhibitors into treatment regimens may represent a barrier to uptake from the clinicians' perspective, including a general lack of understanding of the benefits associated with SGLT-2 inhibitors. Patient characteristics, such as socioeconomic status, may influence uptake because of the cost of SGLT-2 inhibitors, especially in the United States, where health insurance coverage could be a concern. SGLT-2 inhibitor prescription rates vary between clinical specialty (endocrinology, primary care, cardiology, and nephrology) and country, with cardiologists the lowest prescribers, and endocrinologists the highest. Primary care practitioners may experience more challenges in following SGLT-2 inhibitor-related guidelines than diabetes specialists as there may be fewer opportunities for education on how this drug class improves cardiovascular and renal outcomes in patients with T2D. Uptake rates appear to vary between countries because of differences in guidelines and health insurance systems. The amendment of SGLT-2 inhibitor-related guidelines for more multidisciplinary use and the implementation of patient and clinician education may encourage uptake of these drugs, potentially improving long-term health outcomes among patients with T2D.",
+      "citationCount": 37,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/dom.14684",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Medicine",
+        "Type 2 diabetes",
+        "Intensive care medicine",
+        "Medical prescription",
+        "Specialty",
+        "Diabetes mellitus",
+        "Pharmacology",
+        "Internal medicine"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Tirzepatide Associated With Reduced Albuminuria in Participants With Type 2 Diabetes: Pooled Post Hoc Analysis From the Randomized Active- and Placebo-Controlled SURPASS-1–5 Clinical Trials",
+      "authors": [
+        "Ellen M. Apperloo",
+        "Katherine R. Tuttle",
+        "Imre Pávó",
+        "Axel Haupt",
+        "Rebecca Taylor",
+        "Russell J. Wiese",
+        "Andrea Hemmingway",
+        "David Z.I. Cherney",
+        "Naveed Sattar",
+        "Hiddo J.L. Heerspink"
+      ],
+      "journal": "Diabetes Care",
+      "year": 2025,
+      "doi": "10.2337/dc24-1773",
+      "openalexId": "https://openalex.org/W4406010846",
+      "abstract": "In this post hoc analysis in people with type 2 diabetes, including those with chronic kidney disease, tirzepatide was associated with a clinically relevant decreased UACR versus comparators, suggesting a potential kidney-protective effect.",
+      "citationCount": 30,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://diabetesjournals.org/care/article-pdf/doi/10.2337/dc24-1773/793817/dc241773.pdf",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Medicine",
+        "Post-hoc analysis",
+        "Albuminuria",
+        "Type 2 diabetes",
+        "Placebo",
+        "Population",
+        "Internal medicine",
+        "Renal function",
+        "Diabetes mellitus",
+        "Creatinine",
+        "Urology",
+        "Endocrinology"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Combination therapy in preclinical studies and clinical trials: Evidence, gaps and the path ahead",
+      "authors": [
+        "Shanshan Li",
+        "Leonie Dreher",
+        "A.H. Jan Danser",
+        "Ulrich Wenzel"
+      ],
+      "journal": "British Journal of Pharmacology",
+      "year": 2025,
+      "doi": "10.1111/bph.70140",
+      "openalexId": "https://openalex.org/W4412464048",
+      "abstract": "The cannabinoid-1 receptor (CB1R) contributes to albuminuria and renal fibrosis. Although animal studies support the use of CB1R antagonism in diabetic nephropathy, a recent clinical trial failed to confirm this approach in humans. Pointeau and colleagues have now re-investigated the CB1R as a potential therapeutic target in diabetic nephropathy, speculating that its effect might become particularly apparent during combination treatment. Indeed, the CB1R inverse agonist monlunabant, administered either alone or in combination with the sodium-glucose co-transporter 2 (SGLT2) inhibitor empagliflozin, ameliorated renal injury in a murine model of diabetic nephropathy. This study is noteworthy in two respects: first, for confirming CB1R as a potential therapeutic target in chronic kidney disease and, second, for evaluating its effects in combination with SGLT2 inhibition (Pointeau et al., 2025). Not all basic science discoveries reach clinical application. This translational gap has multiple causes, one of which is the potential oversimplification by basic scientists who often focus on single-agent interventions—such as knocking out a single gene or administering a single inhibitor. Of course, preclinical studies often simplify in order to investigate mechanisms; however, once a novel mechanism is identified, it is essential to take the next step and conduct experiments that are more clinically relevant. In addition, such interventions are often initiated before disease onset, which does not reflect the clinical reality. In 2025, patients with diabetic nephropathy are commonly treated with combination therapies that are initiated after disease manifestation. As physicians, we face yet another challenge: keeping pace with evolving guidelines and ensuring that our treatment strategies for patients with diabetic nephropathy align with current recommendations. So, should we now treat all our patients with diabetic nephropathy using the currently advocated four-drug regimen? A number of respected experts say “yes”—and these voices carry significant weight. They publish extensively in high-impact journals and advocate their positions at major congresses (Neuen et al., 2024). As clinicians, we may be inclined to prescribe all four therapies. Yet, guided by evidence rather than eminence, we must ask: in which trial has this combination actually been tested? The answer is sobering. Despite broad enthusiasm, such combination therapy remains largely untested in randomised controlled trials. In the pivotal FIDELIO-DKD and FIGARO-DKD trials of finerenone in diabetic nephropathy, 99.9% of patients received RAS blockade, but only 5–8% an SGLT2 inhibitor and 7–8% a GLP-1 receptor agonist (Bakris et al., 2020; Pitt et al., 2021). The recent FLOW trial showed that the GLP-1 receptor agonist semaglutide reduces kidney outcomes and cardiovascular death in patients with diabetic nephropathy. Whereas 95% received RAS inhibition, only 16% were treated with an SGLT2 inhibitor, and the use of finerenone was not even mentioned (Perkovic et al., 2024). Of course, planning and conducting megatrials requires considerable effort, with additional time for data analysis and publication. During this period, new therapies often emerge—meaning that enrolled patients may not receive what is later seen as optimal background therapy. This problem partly explains why optimal background therapy is not always used in trials. Moreover, demonstrating treatment effects is more challenging when background therapy is near-optimal, as clinical event rates decline (Zhu et al., 2025). This challenge necessitates longer trials or larger sample sizes, substantially increasing costs. Megatrials with hard cardiovascular endpoints in chronic kidney disease or heart failure are already highly complex and expensive, making further expansion not always feasible. Endpoints: Drug approval for highly prevalent chronic conditions such as diabetes, heart failure or arterial hypertension should rely on reductions in hard endpoints. At the same time, improvements in surrogate parameters—such as blood glucose levels, serum brain natriuretic peptide levels or blood pressure—are insufficient to justify regulatory approval. But what exactly qualifies as a hard endpoint? In renal disease, doubling of serum creatinine or progression to end-stage renal disease (ESRD) are gold-standard trial endpoints. The slope of estimated glomerular filtration rate (eGFR) decline is increasingly discussed as an alternative. However, most nephroprotective therapies cause an initial eGFR drop before slowing long-term decline, reducing a trial's sensitivity to detect long-term benefits. To address this issue, trials often use two-slope models or a pre-randomisation run-in phase. Yet, is it appropriate to disregard early, temporary kidney function worsening when evaluating long-term outcomes? Albuminuria is another common endpoint and a major risk factor for end-stage renal disease (ESRD). This raises a key regulatory question: Should every drug that meaningfully lowers albuminuria be eligible for approval? And what is a meaningful decrease of albuminuria? 10, 30 or 50%? The debate continues, balancing the need for robust trials with hard endpoints—which may no longer be feasible—and the adoption of softer endpoints that may not always reflect true patient benefit. Combination therapy: Megatrials must ensure that all participants receive optimal background medication. Investigators and authorities must remain flexible to adapt protocols if new treatment strategies emerge shortly before trial initiation. Fixed-combination trials, such as the recently launched EASi-KIDNEY study, testing empagliflozin with the aldosterone synthase (CYP11B2) inhibitor vicadrostat in 11,000 patients, may serve as a model for future research (Judge et al., 2025). Another approach is to test therapies that have reduced hard endpoints in earlier trials under suboptimal background therapy in follow-up studies using the state-of-the-art background and combination therapy but with surrogate endpoints. The CONFIDENCE trial (COmbinatioN effect of FInerenone anD EmpaglifloziN) is evaluating finerenone and empagliflozin, alone or in combination, using albuminuria reduction as the primary endpoint (Agarwal et al., 2025). An added advantage of fixed combinations might be a reduced occurrence of side effects. For instance, SGLT2 inhibition on top of aldosterone blockade lowers the risk of hyperkalaemia that is associated with the latter (Tuttle et al., 2024). Preclinical studies also must incorporate optimal background therapy, to be recognised and published in high-impact journals. Moreover, treatment should not be administered solely before disease onset, but also after the disease has been established—reflecting real-world clinical conditions. In this regard, the study of Pointeau and colleagues is exemplary: they applied combination therapy and studied mice with established renal injury. Particularly mentioned should be the recent work by Zhu et al., which serves as a model of best practice. In this study, mice with established Alport disease were randomised to receive ramipril monotherapy, ramipril plus empagliflozin, or a triple combination of ramipril, empagliflozin and finerenone. The primary endpoint was survival. Notably, experiments were conducted in both male and female mice—an approach that should become standard in preclinical research (Zhu et al., 2023). In conclusion, there is room for improvement in both clinical and preclinical research. Scientists, funding agencies, authorities and journals must ensure that experimental and clinical approaches address real-world needs. Many journals, such as the British Journal of Pharmacology, already require a statement on translational relevance. The study by Pointeau et al. is commendable because it exactly addresses a real-world need (pairing a validated drug with a novel target) using a clinically relevant model and starting treatment after the onset of disease. Patient needs also must remain central in clinical trials. We must balance scientific rigour—including optimal background therapy and meaningful endpoints—with the feasibility of real-world studies. Translational success depends on uniting rigorous preclinical design with clinically relevant research. The ideas exist; their execution must follow. Shanshan Li, Leonie Dreher, A. H. Jan Danser and Ulrich O. Wenzel wrote the manuscript, and Ulrich O. Wenzel prepared the figure. The study was supported by RECORD (Research Center on Rare Kidney Diseases), iDfellows (German Research Foundation) to Leonie Dreher and German Research Foundation grant We 1688/19-3 to Ulrich O. Wenzel. Open Access funding enabled and organized by Projekt DEAL. The authors declare no conflicts of interest.",
+      "citationCount": 1,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/bph.70140",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Clinical trial",
+        "Medicine",
+        "Path (computing)",
+        "MEDLINE",
+        "Intensive care medicine"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "The potential of short-chain fatty acid epigenetic regulation in chronic low-grade inflammation and obesity",
+      "authors": [
+        "Julia Kopczyńska",
+        "Magdalena Kowalczyk"
+      ],
+      "journal": "Frontiers in Immunology",
+      "year": 2024,
+      "doi": "10.3389/fimmu.2024.1380476",
+      "openalexId": "https://openalex.org/W4393231186",
+      "abstract": "Obesity and chronic low-grade inflammation, often occurring together, significantly contribute to severe metabolic and inflammatory conditions like type 2 diabetes (T2D), cardiovascular disease (CVD), and cancer. A key player is elevated levels of gut dysbiosis-associated lipopolysaccharide (LPS), which disrupts metabolic and immune signaling leading to metabolic endotoxemia, while short-chain fatty acids (SCFAs) beneficially regulate these processes during homeostasis. SCFAs not only safeguard the gut barrier but also exert metabolic and immunomodulatory effects via G protein-coupled receptor binding and epigenetic regulation. SCFAs are emerging as potential agents to counteract dysbiosis-induced epigenetic changes, specifically targeting metabolic and inflammatory genes through DNA methylation, histone acetylation, microRNAs (miRNAs), and long non-coding RNAs (lncRNAs). To assess whether SCFAs can effectively interrupt the detrimental cascade of obesity and inflammation, this review aims to provide a comprehensive overview of the current evidence for their clinical application. The review emphasizes factors influencing SCFA production, the intricate connections between metabolism, the immune system, and the gut microbiome, and the epigenetic mechanisms regulated by SCFAs that impact metabolism and the immune system.",
+      "citationCount": 77,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2024.1380476/pdf",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Epigenetics",
+        "Inflammation",
+        "Dysbiosis",
+        "Immune system",
+        "Biology",
+        "Gut flora",
+        "Microbiome",
+        "Immunology",
+        "microRNA",
+        "Bioinformatics"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Investigating nutrient intake during use of glucagon-like peptide-1 receptor agonist: a cross-sectional study",
+      "authors": [
+        "Brittany Johnson",
+        "Mary Milstead",
+        "Owen Thomas",
+        "Tyler McGlasson",
+        "Lauren Green",
+        "Richard B. Kreider",
+        "Rachel Jones"
+      ],
+      "journal": "Frontiers in Nutrition",
+      "year": 2025,
+      "doi": "10.3389/fnut.2025.1566498",
+      "openalexId": "https://openalex.org/W4409825229",
+      "abstract": "Participants on a GLP-1RA are not meeting the DRI for several vital nutrients through their diet or higher protein needs during weight loss. Patient-centered nutritional guidance is essential to optimize health outcomes and prevent unintended health consequences. Future large-scale studies are needed to assess the replicability of these findings and provide custom nutritional guidance for those on a GLP-1RA medication.",
+      "citationCount": 26,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2025.1566498/pdf",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Agonist",
+        "Cross-sectional study",
+        "Nutrient",
+        "Receptor",
+        "Chemistry",
+        "Medicine",
+        "Endocrinology",
+        "Internal medicine"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Mapping the Diabetes Comorbidome: A New Frontier in Personalised Medicine",
+      "authors": [
+        "Abhishek Pachauri"
+      ],
+      "journal": "Preventive Medicine Research & Reviews",
+      "year": 2025,
+      "doi": "10.4103/pmrr.pmrr_39_25",
+      "openalexId": "https://openalex.org/W4413166995",
+      "abstract": "Introduction Diabetes is a complex, multi-faceted endocrine disorder affecting various systems in the body, leading to elevated blood glucose levels. This condition arises from partial or complete insulin deficiency, impaired insulin functioning, or a combination of both factors.[1] Nowadays, diabetes is recognised as a systemic condition, with serious consequences that extend far beyond glycaemic control, affecting various organs or overall health outcomes. Globally, it is recognised as a significant health crisis, and India stands amongst the most affected nations by this escalating epidemic. According to The International Diabetes Federation (IDF) Diabetes Atlas (11th edition, 2025), 589 million adults aged 20–79 are living with diabetes, representing 11.1% of the global population in this age group. Projections indicate that the number will increase to 853 million (13%) by 2050. Notably, about 252 million adults with diabetes remain undiagnosed, and nearly one in four affected individuals, approximately 158 million amongst them, are over 65 years old. In addition, roughly 635 million adults (12%) have impaired glucose tolerance. In 2024, diabetes contributed to over 1 trillion USD in health care costs, which accounts for 12% of worldwide health spending and is linked to more than 3.4 million deaths, accounting for 9.3% of global mortality. Furthermore, an estimated 9.1 million people have type 1 diabetes, with the majority (69%) aged 20–59. Meanwhile, hyperglycaemia during pregnancy is increasingly common, affecting one in every five live births an estimated 23 million pregnancies annually.[2,3] As of 2021, an estimated 541 million people worldwide were suffering either from diabetes or impaired glucose tolerance. Diabetes is also associated with a significant risk of mortality, with estimates indicating more than 6.7 million individuals dying from complications related to diabetes in 2021. The incidence of diabetes amongst children and adolescents is on the rise, with over 1.2 million cases of type 1 diabetes reported in those under the age of 19. The financial impact of diabetes is economically phenomenal, with global health care costs approaching one trillion USD, a figure that is projected to exceed this amount by 2030.[4,5] There is an increasing epidemic in comorbidities associated with diabetes, such as cardiovascular diseases, chronic kidney disease, neuropathy, retinopathy, non-alcoholic fatty liver disease and mental health disorders. The presence of comorbidities not only worsens prognosis but also reduces medication adherence. As a result, this reduction further impacts quality of life, complicates therapeutic choices, and increases health care costs.[6] The Comorbidome: Concept and Clinical Relevance The ‘comorbidome’ is defined as a graphical and analytical framework that effectively visualise and quantifies the prevalence and risk of death related to various dynamic, interconnected network of comorbidities associated with primary diseases like diabetes. It is often depicted as a ‘solar system’, with the primary disease at its core and the associated comorbidities radiating outward according to their impact and significance. This model provides a clear understanding of the interconnections between diseases and their effects on health.[7] In addition, it represents a complex network of related comorbidities along with mortality rates linked to diabetes-related conditions. Understanding these conditions can provide insights into how they interrelate and affect overall health outcomes by creating a visual map of their connections and impacts. In diabetes, the comorbidome offers an organised framework in a structured way to visualise and quantify how various conditions, such as renal dysfunction, cardiovascular diseases, interact with and amplify the effects of hyperglycaemia, insulin resistance, inflammation and metabolic dysfunction.[8] Hence, unlike traditional comorbidity indices, which simply score the presence of comorbid conditions, the comorbidome visually maps their interactions and relative impact, which distinguishes it from the broader concept of multimorbidity. This holistic perspective is paramount in type 2 diabetes mellitus, which rarely occurs in isolation. Historically, diabetes management has been critical and filled with complexities due to rising comorbidities associated with the condition. Each and every patient requires a personalised focus on treatment regimens, as there has been a reported decline in medication adherence and quality of life among patients.[9,10] However, due to the diversity in comorbidity profiles amongst diabetic patients, a one-size-fits-all model is no longer sustainable. Thus, indicates the need for personalised medication regimen for every patient, which tailors the interventions based on individual variability in genetics, environment, lifestyle and comorbidity burden, and offers a more effective and patient-centric approach.[11] Personalising Diabetes Care Through Comorbidome Mapping Mapping the patient-specific comorbidity clusters information in the comorbidome enables clinicians to develop targeted, personalised treatment strategies that improve adherence and quality of life by reducing medication complexities. For example, cardiovascular disease or other associated comorbidities with diabetes may benefit more from newer treatment approaches, which signifies a better benefit-to-risk ratio. As SGLT2 inhibitors or GLP-1 receptor agonists have shown higher cardiac benefits, while in the case of renal involvement, other therapeutic regimens are required. Comorbidome mapping thus supports optimal treatment selection, risk stratification and patient-centric care.[12,13] Advances in Comorbidome Research and Clinical Application Recent advancements in data mining, epidemiological modelling, and machine learning techniques reveal distinct comorbidity clusters associated with diabetes. Some researchers are utilising the UK Biobank and other larger databases to identify five clusters: cardio-renal diseases, neurovascular, metabolic, inflammatory, musculoskeletal and neuropsychiatric. These identified clusters not only differ in associated complications but also in their progression and treatment approaching responses.[14] Moreover, mapping these comorbidities within the comorbidome enables risk stratification and personalised interventions, directly improving patient outcomes.[15] Hence, this reveals that the comorbidities exert an independent effect on disease outcomes, and the comorbidome should be integral to clinical decision-making [Box 1].Box 1: Case illustration: Application of the diabetes comorbidome in clinical practiceChallenges and Future Directions Despite the promising benefits of the comorbidome, there are several challenges to consider when implementing comorbidome-guided personalised care regimens. One major issue is the lack of standardised tools to visualise and measure the interconnected networks of comorbidities. Existing indexes, such as the Charlson and Elixhauser Scores, have limited scope and fail to capture the dynamic interactions among different comorbidities.[16,17] The integration of electronic health records (EHRs) to create a comorbidome has not yet been optimized in comorbidity mapping algorithms. In addition, challenges such as interoperability, data quality and privacy concerns limit the functionality of interconnected comorbidome frameworks.[18] The integration of emerging techniques like artificial intelligence in forming a comorbidome offers hope and collates the collection and integration of omics data with comorbidity profile can yield highly personalised risk maps for personalised treatment regimen and reduction of medication regimen complexity and yield a groundwork for precision medicine for the future.[19] Hence, it underscores the need for future research, such as longitudinal or network-based studies, which should focus on capturing the evolving interactions amongst various comorbidities. Pathways to Clinical Implementation The process of translating the concept of comorbidome into clinical practice assumes an extensive, multifactorial, and prolonged approach. Foremost, there exists the necessity of the establishment of validated standardised tools that quantified and visualises the comorbidity networks and their mortalities, such as Charlson and Elixhauser scores, which largely expresses a narrow focus.[7,20] Combining diabetes comorbidome with EHR will make real-time risk stratification and allow personalized care planning, although there are many challenges associated with privacy, interoperability, and quality to be tackled. Comorbidities associated with diabetes should require effective treatment care plans which should be personalized using multidisciplinary collaborations between endocrinologists, cardiologists, nephrologists, etc., and primary care providers to provide extensive patient-based care.[21,22] In addition, the synchronisation of AI and omics data in diabetes comorbidome has the potential to bring a substantial benefit in terms of creating personalised risk road maps and the discovery of comorbidity clusters that can assist in the promotion of precision medicine in diabetes as well. On a systemic level, the current primary health care programs by the government of India, like National Programme for Prevention and Control of Cancer, Diabetes, Cardiovascular Diseases and Stroke, are the key towards inculcating the community-based strategies in the management of chronic diseases, which is in line with comorbidome-guided care. The integration of the concept of comorbidome into primary healthcare can significantly enhance comprehensive comorbidity management. By facilitating early detection of coexisting conditions and enabling risk stratification in patients, healthcare providers can tailor interventions more effectively. Simultaneously, government investments in health information technology and standardized data reporting across healthcare centers will support the population-level implementation of comorbidome framework, ultimately improving healthcare outcomes and resource allocations. Therefore, the integrated management of diabetes with a focus on patient-centered care underscores the necessity of adopting comorbidity-based strategies worldwide. This approach is endorsed by organisations such as the IDF and the World Health Organization, which offer guidance for the development of diabetes treatment.[23,24] Conclusion Diabetes is a complex and escalating global health challenge that is intricately linked with a wide array of comorbidities that significantly impact patient outcomes in the form of increased care costs and overall quality of life. The concept of comorbidome, which is a web of comorbid conditions associated with diabetes, offers a more holistic and patient-centered approach. Moreover, the adoption of the comorbidome concept in clinical practice, supported by advancements in data science such as artificial intelligence and omics technologies, can help clinicians to select and stratify the risks and in the selection of patient-centric personalized treatment regimens, which not only enhance the medication adherence of the patient towards associated comorbidities but also improve the overall patient outcomes. However, the introduction of the comorbidome concept requires overcoming significant challenges such as the development of visualising aids, robust data integration and multidisciplinary collaborations. Nowadays, several national health programs and international guidelines recognise and underscore the value of such approaches and suggest the need for continued investment. Thus, the adoption of comorbidome-guided strategies into diabetes management holds promising results not only for enhancing personalised care but also for enhancing in population-level health outcomes. This paradigm shift not only paves the way for more individualised, comprehensive and effective patient care.",
+      "citationCount": 3,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://doi.org/10.4103/pmrr.pmrr_39_25",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Frontier",
+        "Diabetes mellitus",
+        "Medicine",
+        "Data science",
+        "Computer science"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Treatment of Alzheimer’s Disease: Beyond Symptomatic Therapies",
+      "authors": [
+        "Francesca R. Buccellato",
+        "Marianna D’Anca",
+        "Gianluca Martino Tartaglia",
+        "Massimo Del Fabbro",
+        "Elio Scarpini",
+        "Daniela Galimberti"
+      ],
+      "journal": "International Journal of Molecular Sciences",
+      "year": 2023,
+      "doi": "10.3390/ijms241813900",
+      "openalexId": "https://openalex.org/W4386602162",
+      "abstract": "In an ever-increasing aged world, Alzheimer's disease (AD) represents the first cause of dementia and one of the first chronic diseases in elderly people. With 55 million people affected, the WHO considers AD to be a disease with public priority. Unfortunately, there are no final cures for this pathology. Treatment strategies are aimed to mitigate symptoms, i.e., acetylcholinesterase inhibitors (AChEI) and the N-Methyl-D-aspartate (NMDA) antagonist Memantine. At present, the best approaches for managing the disease seem to combine pharmacological and non-pharmacological therapies to stimulate cognitive reserve. Over the last twenty years, a number of drugs have been discovered acting on the well-established biological hallmarks of AD, deposition of β-amyloid aggregates and accumulation of hyperphosphorylated tau protein in cells. Although previous efforts disappointed expectations, a new era in treating AD has been working its way recently. The Food and Drug Administration (FDA) gave conditional approval of the first disease-modifying therapy (DMT) for the treatment of AD, aducanumab, a monoclonal antibody (mAb) designed against Aβ plaques and oligomers in 2021, and in January 2023, the FDA granted accelerated approval for a second monoclonal antibody, Lecanemab. This review describes ongoing clinical trials with DMTs and non-pharmacological therapies. We will also present a future scenario based on new biomarkers that can detect AD in preclinical or prodromal stages, identify people at risk of developing AD, and allow an early and curative treatment.",
+      "citationCount": 73,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.mdpi.com/1422-0067/24/18/13900/pdf?version=1694501912",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Memantine",
+        "Medicine",
+        "Disease",
+        "Dementia",
+        "Clinical trial",
+        "Alzheimer's disease",
+        "Cognitive decline",
+        "Drug development",
+        "Drug",
+        "Pharmacology",
+        "Bioinformatics",
+        "Intensive care medicine"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    }
+  ],
+  "total": 517
+}

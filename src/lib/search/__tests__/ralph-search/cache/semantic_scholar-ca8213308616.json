@@ -1,0 +1,751 @@
+{
+  "source": "semantic_scholar",
+  "query": "Gut microbiome atrial fibrillation",
+  "timestamp": "2026-03-02T17:03:31.510Z",
+  "results": [
+    {
+      "title": "Gut microbiome and atrial fibrillation: mechanistic insights metabolites and comorbidities. Systematic review",
+      "authors": [
+        "M. Gawałko",
+        "Wiktor Kociemba",
+        "Prashanthan Sanders",
+        "Dominik Linz"
+      ],
+      "journal": "Gut Microbes",
+      "year": 2025,
+      "doi": "10.1080/19490976.2025.2570423",
+      "pmid": "41178126",
+      "s2Id": "30d25adefca84d52b481ca421767638a65745b0f",
+      "abstract": "Abstract Emerging evidence indicates that the gut microbiome (GM) and its metabolites may play a role in the development of cardiometabolic diseases, including atrial fibrillation (AF). Although the current data are limited, studies suggest that the GM composition in AF mirrors that observed in associated conditions such as heart failure, hypertension, diabetes, and coronary artery disease (characterized by increased genera Lactobacillus, Enterococcus, Streptococcus, and decreased genus Faecalibacterium). Additionally, patients with AF appear to have distinct microbial alterations, including increased abundances of the genera Dialister, Dorea, Haemophilus, Klebsiella, Lachnospira, Parabacteroides, Ruminococcus, and Veillonella and decreased abundances of the genera Butyricicoccus, Hungatella, and Prevotella. Gut-derived metabolites also show associations with AF. Trimethylamine N-oxide and choline have been linked to new-onset and postoperative AF, potentially via autonomic, inflammatory, and fibrotic pathways. In contrast, short-chain fatty acids, which are reduced in AF patients, may offer protective effects. Elevated lipopolysaccharide levels are correlated with AF onset and recurrence through inflammation and structural remodeling. Indoxyl sulfate and bile acids may contribute to arrhythmogenesis via oxidative stress, apoptosis, and disrupted calcium signaling. These mechanisms contribute to AF by disrupting conduction and increasing automaticity. Emerging evidence also links gut microbes to other arrhythmias, but more research is needed to clarify causality and therapeutic potential. Graphical abstract Associations between atrial fibrillation, associated comorbidities and gut microbiome Abbreviations: BAs, bile acids; LPS, lipopolysaccharide; SCFAs, short chain fatty acids; TMAO, trimethylamine N-oxide. Legend: *differences in bacterial genera abundance in the majority (not all) of studies. Comorbidities, as listed in Table 2, are represented by corresponding icons in the graphical abstract.",
+      "tldr": "The gut microbiome and its metabolites may play a role in the development of cardiometabolic diseases, including atrial fibrillation, but more research is needed to clarify causality and therapeutic potential.",
+      "citationCount": 1,
+      "influentialCitationCount": 0,
+      "referenceCount": 91,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Impact of gut microbiome on atrial fibrillation: Mechanistic insights and future directions in individualized medicine",
+      "authors": [
+        "Ajit Brar",
+        "S. L. Vemula",
+        "Vishnu R. Yanamaladoddi",
+        "S. Sodhi",
+        "Juniali Hatwal",
+        "Aalam Sohal",
+        "Akash Batta"
+      ],
+      "journal": "World Journal of Cardiology",
+      "year": 2025,
+      "doi": "10.4330/wjc.v17.i6.107386",
+      "pmid": "40575430",
+      "s2Id": "f11a1df2f8dc661dd34c73d3feed80b1cfb22855",
+      "abstract": "Atrial fibrillation (AF) is a growing global health burden, with a prevalence of over 52.55 million cases. Rising disability-adjusted life-years, increasing age, and disparities in care have contributed to the worsening severity and mortality of AF. Modifiable risk factors, such as hypertension, obesity, and diabetes mellitus, are associated with alterations in gut microbiota, making the gut-heart axis a potential therapeutic target. Gut dysbiosis influences AF pathogenesis through inflammation, metabolic disruption, and autonomic dysfunction. Key mechanisms include gut barrier dysfunction, short-chain fatty acid (SCFA) depletion, lipopolysaccharides (LPS)-induced inflammation, and ferroptosis-mediated atrial remodeling. Trimethylamine N-oxide, bile acids, and tryptophan metabolites contribute to arrhythmogenic remodeling. Emerging evidence suggests that dietary interventions, including prebiotics and probiotics, as well as gut surveillance, may help mitigate AF progression. Clinical implications of gut modulation in AF include personalized dietary strategies, microbiome assessment through metagenomic sequencing, and targeted interventions such as SCFA-based therapies and ferroptosis inhibition. Metabolite surveillance, including LPS and indoxyl sulfate monitoring, may influence the effectiveness of anticoagulant and antiarrhythmic therapy. Despite growing mechanistic evidence linking gut dysbiosis to AF, clinical applications remain unexplored. This review summarizes the current understanding of the gut microbiome's role in AF.",
+      "tldr": "The current understanding of the gut microbiome's role in AF is summarized and emerging evidence suggests that dietary interventions, including prebiotics and probiotics, as well as gut surveillance, may help mitigate AF progression.",
+      "citationCount": 1,
+      "influentialCitationCount": 0,
+      "referenceCount": 116,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Age-related atrial fibrillation: is there a role for the gut microbiome?",
+      "authors": [
+        "Michael Li",
+        "Eduardo Castañeda",
+        "Robert M. Lust"
+      ],
+      "journal": "Exploration of Cardiology",
+      "year": 2025,
+      "doi": "10.37349/ec.2025.101251",
+      "s2Id": "e5aefa35f73d06940ba0fe0053154b8b082ddb59",
+      "abstract": "Age-related atrial fibrillation (AF) is a common condition that has yet to be fully understood, with mechanisms to explain its development under investigation. Notably, cellular senescence, cardiac fibrosis, coronary ischemia, cardiac valvular disease, autonomic dysfunction, channelopathies, and immune system remodeling are processes that have been seen to occur with aging and ample evidence has shown their association with the development of AF. Despite robust therapeutic approaches, the incidence of AF continues to rise, suggesting that the dynamic, multi-faceted interactions leading to AF are incompletely understood. One of the newer mechanisms currently being investigated is the gut microbiome. Although more research is needed to understand its impact on the development of age-related AF and targets for therapies, the gut microbiome is a promising new avenue of research that may provide future benefits in AF prophylaxis or enhanced management. As the field works towards developing this knowledge, there are important questions to answer as to the optimal role of potential gut microbiome targeting therapies and their potential risks versus the benefits they provide. This commentary first summarizes the currently understood mechanisms contributing to age-related AF, which is then followed by an analysis of the current work investigating the role of the gut microbiome in the development of age-related AF, and concludes by highlighting notable questions to consider in future work on the role of the gut microbiome and its relationship to age-related AF.",
+      "tldr": "Although more research is needed to understand its impact on the development of age-related AF and targets for therapies, the gut microbiome is a promising new avenue of research that may provide future benefits in AF prophylaxis or enhanced management.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 57,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Gut microbiome and atrial fibrillation—results from a large population-based study",
+      "authors": [
+        "J. Palmu",
+        "Christin S. Börschel",
+        "A. Ortega‐Alonso",
+        "L. Markó",
+        "M. Inouye",
+        "P. Jousilahti",
+        "Rodolfo A. Salido",
+        "Karenina Sanders",
+        "C. Brennan",
+        "G. Humphrey",
+        "Jon G. Sanders",
+        "Friederike Gutmann",
+        "D. Linz",
+        "V. Salomaa",
+        "A. Havulinna",
+        "S. Forslund",
+        "Rob Knight",
+        "L. Lahti",
+        "T. Niiranen",
+        "R. Schnabel"
+      ],
+      "journal": "eBioMedicine",
+      "year": 2023,
+      "doi": "10.1016/j.ebiom.2023.104583",
+      "pmid": "37119735",
+      "s2Id": "d0c9a3e97fb019a4dd26307c03ad494cdd125ee2",
+      "abstract": "Summary Background Atrial fibrillation (AF) is an important heart rhythm disorder in aging populations. The gut microbiome composition has been previously related to cardiovascular disease risk factors. Whether the gut microbial profile is also associated with the risk of AF remains unknown. Methods We examined the associations of prevalent and incident AF with gut microbiota in the FINRISK 2002 study, a random population sample of 6763 individuals. We replicated our findings in an independent case–control cohort of 138 individuals in Hamburg, Germany. Findings Multivariable-adjusted regression models revealed that prevalent AF (N = 116) was associated with nine microbial genera. Incident AF (N = 539) over a median follow-up of 15 years was associated with eight microbial genera with false discovery rate (FDR)-corrected P < 0.05. Both prevalent and incident AF were associated with the genera Enorma and Bifidobacterium (FDR-corrected P < 0.001). AF was not significantly associated with bacterial diversity measures. Seventy-five percent of top genera (Enorma, Paraprevotella, Odoribacter, Collinsella, Barnesiella, Alistipes) in Cox regression analyses showed a consistent direction of shifted abundance in an independent AF case–control cohort that was used for replication. Interpretation Our findings establish the basis for the use of microbiome profiles in AF risk prediction. However, extensive research is still warranted before microbiome sequencing can be used for prevention and targeted treatment of AF. Funding This study was funded by 10.13039/501100000781European Research Council, German Ministry of Research and Education, 10.13039/501100002341Academy of Finland, 10.13039/100008723Finnish Medical Foundation, and the 10.13039/501100005633Finnish Foundation for Cardiovascular Research, the 10.13039/501100004756Emil Aaltonen Foundation, and the 10.13039/501100008484Paavo Nurmi Foundation.",
+      "tldr": "The findings establish the basis for the use of microbiome profiles in AF risk prediction, however, extensive research is still warranted before microbiome sequencing can be used for prevention and targeted treatment of AF.",
+      "citationCount": 46,
+      "influentialCitationCount": 0,
+      "referenceCount": 65,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "http://www.thelancet.com/article/S2352396423001482/pdf",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "The correlation between gut microbiome and atrial fibrillation: pathophysiology and therapeutic perspectives",
+      "authors": [
+        "Na Li",
+        "Ling Wang",
+        "Lei Li",
+        "Meng-Zhao Yang",
+        "Qing-xiang Wang",
+        "X. Bai",
+        "Feng Gao",
+        "Yiqiang Yuan",
+        "Zu-jiang Yu",
+        "Z. Ren"
+      ],
+      "journal": "Military Medical Research",
+      "year": 2023,
+      "doi": "10.1186/s40779-023-00489-1",
+      "pmid": "37936201",
+      "s2Id": "9a5819022baae8fa073a2246e5026bdc13b97964",
+      "abstract": "Regulation of gut microbiota and its impact on human health is the theme of intensive research. The incidence and prevalence of atrial fibrillation (AF) are continuously escalating as the global population ages and chronic disease survival rates increase; however, the mechanisms are not entirely clarified. It is gaining awareness that alterations in the assembly, structure, and dynamics of gut microbiota are intimately engaged in the AF progression. Owing to advancements in next-generation sequencing technologies and computational strategies, researchers can explore novel linkages with the genomes, transcriptomes, proteomes, and metabolomes through parallel meta-omics approaches, rendering a panoramic view of the culture-independent microbial investigation. In this review, we summarized the evidence for a bidirectional correlation between AF and the gut microbiome. Furthermore, we proposed the concept of “gut-immune-heart” axis and addressed the direct and indirect causal roots between the gut microbiome and AF. The intricate relationship was unveiled to generate innovative microbiota-based preventive and therapeutic interventions, which shed light on a definite direction for future experiments.",
+      "tldr": "The evidence for a bidirectional correlation between atrial fibrillation and the gut microbiome is summarized and the concept of “gut-immune-heart” axis is proposed and addressed the direct and indirect causal roots between the gut microbiota and AF.",
+      "citationCount": 27,
+      "influentialCitationCount": 0,
+      "referenceCount": 146,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://mmrjournal.biomedcentral.com/counter/pdf/10.1186/s40779-023-00489-1",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Association of gut microbiome dysbiosis with the progression of atrial fibrillation: A systematic review",
+      "authors": [
+        "Sarim Rashid",
+        "Tayyiba Ahmed Noor",
+        "Hamayle Saeed",
+        "A. Ali",
+        "Govinda Meheshwari",
+        "Asad Mehmood",
+        "Laveeza Fatima",
+        "S. M. Zaidi",
+        "J. Malik",
+        "Amin Mehmoodi",
+        "Azmat Hayat"
+      ],
+      "journal": "Annals of Noninvasive Electrocardiology",
+      "year": 2023,
+      "doi": "10.1111/anec.13059",
+      "pmid": "36940225",
+      "s2Id": "0eed86cbb65f51ab8a2c68cb715f7c7c7348afc7",
+      "abstract": "Many clinical and preclinical studies have implicated an association between atrial fibrillation (AF) and its progression to imbalances in the gut microbiome composition. The gut microbiome is a diverse and complex ecosystem containing billions of microorganisms that produce biologically active metabolites influencing the host disease development.",
+      "citationCount": 10,
+      "influentialCitationCount": 0,
+      "referenceCount": 42,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/anec.13059",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Metagenomic data-mining reveals enrichment of trimethylamine-N-oxide synthesis in gut microbiome in atrial fibrillation patients",
+      "authors": [
+        "K. Zuo",
+        "Xiaoqing Liu",
+        "Pan Wang",
+        "Jie Jiao",
+        "Chunming Han",
+        "Zheng Liu",
+        "X. Yin",
+        "Jing Li",
+        "Xin-chun Yang"
+      ],
+      "journal": "BMC Genomics",
+      "year": 2020,
+      "doi": "10.1186/s12864-020-06944-w",
+      "pmid": "32731896",
+      "s2Id": "3dd18b9bed900acf1d086ce3aa65b1d86167b28b",
+      "abstract": "Background The gut bacteria-derived metabolite trimethylamine-N-oxide (TMAO) has been discussed in various cardiometabolic diseases. However, evidence characterizing the microbial population responsible for TMAO accumulation in patients with atrial fibrillation (AF), an increasingly prevalent arrhythmia, is yet lacking. In order to understand the key gut microorganisms that produce TMAO in AF, trimethylamine (TMA)-synthesis enzymes and metabolic pathways, as well as the potential TMA-producers in gut microbiome were assessed based on metagenomic data-mining in a northern Chinese cohort consisting of 50 non-AF controls and 50 patients with different types of AF. Results Compared to the control subjects, AF patients showed a marked increase in the microbial genes underlying TMA formation in the gut, which included 12 potential TMA-synthesis functional orthologs and 1 module. The specific bacterial genes, including choline-TMA lyase , carnitine monooxygenase , glycine betaine reductase , and TMAO reductase , were elevated in the gut of AF patients. Furthermore, 16 genera were assigned and significantly correlated with TMA-enzymatic genes, where 9 genera were remarkably enriched in the gut communities of AF patients. Neither of these TMA-synthesis pathways nor the microbial players showed a significant discrepancy between different types of AF in the current cohort. These gut microbes might participate in the formation of TMA by activating the key TMA-synthesis enzymes and contributing to the functional pathways in AF patients. Conclusions The present study provides an in-depth insight into the potential bacteria and metabolic pathways involved in TMA production in the gut of AF patients. These findings emphasize a key role of the gut bacteria in driving TMAO formation during AF pathogenesis, thereby indicating its therapeutic potential as an intervention strategy of AF by targeting TMA-synthesis pathways and dysbiotic gut microbiota.",
+      "tldr": "A key role of the gut bacteria in driving TMAO formation during AF pathogenesis is emphasized, thereby indicating its therapeutic potential as an intervention strategy of AF by targeting TMA-synthesis pathways and dysbiotic gut microbiota.",
+      "citationCount": 34,
+      "influentialCitationCount": 0,
+      "referenceCount": 46,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null,
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://bmcgenomics.biomedcentral.com/track/pdf/10.1186/s12864-020-06944-w",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Shifts in gut microbiome and metabolome are associated with risk of recurrent atrial fibrillation",
+      "authors": [
+        "K. Zuo",
+        "Jing Li",
+        "Jing Zhang",
+        "Pan Wang",
+        "Jie Jiao",
+        "Zheng Liu",
+        "X. Yin",
+        "Xiaoqing Liu",
+        "Kuibao Li",
+        "Xinchun Yang"
+      ],
+      "journal": "bioRxiv",
+      "year": 2020,
+      "doi": "10.1111/jcmm.15959",
+      "s2Id": "147cf73214881243d94d4e4ac24d34203f657242",
+      "abstract": "Specific alterations of gut microbiota (GM) in atrial fibrillation (AF) patients, including elevated microbial diversity, particularly perturbed composition, imbalanced microbial function, and associated metabolic pattern modifications have been described in our previous report. The current work aimed to assess the association of GM composition with AF recurrence (RAF) after ablation, and to construct a GM-based predictive model for RAF. Gut microbial composition and metabolic profiles were assessed based on metagenomic sequencing and metabolomic analyses. Compared with non-AF controls (50 individuals), GM composition and metabolomic profile were significantly altered between patients with recurrent AF (17 individuals) and the non-RAF group (23 individuals). Notably, discriminative taxa between the non-RAF and RAF groups, including the families Nitrosomonadaceae and Lentisphaeraceae, the genera Marinitoga and Rufibacter, and the species Faecalibacterium sp. CAG:82, Bacillus gobiensis, and Desulfobacterales bacterium PC51MH44, were selected to construct a taxonomic scoring system based on LASSO analysis. An elevated area under curve (0.954) and positive net reclassification index (1.5601) for predicting RAF compared with traditional clinical scoring (AUC=0.6918) were obtained. The GM-based taxonomic scoring system theoretically improves the model performance. These data provide novel evidence that supports incorporating the GM factor into future recurrent risk stratification.",
+      "tldr": "Assessment of the association of GM composition with AF recurrence (RAF) after ablation and a GM-based predictive model for RAF provide novel evidence that supports incorporating the GM factor into future recurrent risk stratification.",
+      "citationCount": 34,
+      "influentialCitationCount": 3,
+      "referenceCount": 81,
+      "publicationTypes": [],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jcmm.15959",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Metagenomic data-mining reveals enrichment of trimethylamine-N-oxide synthesis in gut microbiome in atrial fibrillation patients",
+      "authors": [
+        "K. Zuo",
+        "Xiaoqing Liu",
+        "Pan Wang",
+        "Jie Jiao",
+        "Chunming Han",
+        "Zheng Liu",
+        "X. Yin",
+        "Jing Li",
+        "Xinchun Yang"
+      ],
+      "journal": "BMC Genomics",
+      "year": 2020,
+      "doi": "10.1186/s12864-020-06944-w",
+      "s2Id": "55f8c21597807aaedc00441b2003a7eccf308407",
+      "abstract": "The gut bacteria-derived metabolite trimethylamine-N-oxide (TMAO) has been discussed in various cardiometabolic diseases. However, evidence characterizing the microbial population responsible for TMAO accumulation in patients with atrial fibrillation (AF), an increasingly prevalent arrhythmia, is yet lacking. In order to understand the key gut microorganisms that produce TMAO in AF, trimethylamine (TMA)-synthesis enzymes and metabolic pathways, as well as the potential TMA-producers in gut microbiome were assessed based on metagenomic data-mining in a northern Chinese cohort consisting of 50 non-AF controls and 50 patients with different types of AF. Compared to the control subjects, AF patients showed a marked increase in the microbial genes underlying TMA formation in the gut, which included 12 potential TMA-synthesis functional orthologs and 1 module. The specific bacterial genes, including choline-TMA lyase, carnitine monooxygenase, glycine betaine reductase, and TMAO reductase, were elevated in the gut of AF patients. Furthermore, 16 genera were assigned and significantly correlated with TMA-enzymatic genes, where 9 genera were remarkably enriched in the gut communities of AF patients. Neither of these TMA-synthesis pathways nor the microbial players showed a significant discrepancy between different types of AF in the current cohort. These gut microbes might participate in the formation of TMA by activating the key TMA-synthesis enzymes and contributing to the functional pathways in AF patients. The present study provides an in-depth insight into the potential bacteria and metabolic pathways involved in TMA production in the gut of AF patients. These findings emphasize a key role of the gut bacteria in driving TMAO formation during AF pathogenesis, thereby indicating its therapeutic potential as an intervention strategy of AF by targeting TMA-synthesis pathways and dysbiotic gut microbiota.",
+      "tldr": "A key role of the gut bacteria in driving TMAO formation during AF pathogenesis is emphasized, thereby indicating its therapeutic potential as an intervention strategy of AF by targeting TMA-synthesis pathways and dysbiotic gut microbiota.",
+      "citationCount": 6,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [],
+      "fieldsOfStudy": [],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://bmcgenomics.biomedcentral.com/track/pdf/10.1186/s12864-020-06944-w",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Shifts in gut microbiome and metabolome are associated with risk of recurrent atrial fibrillation",
+      "authors": [
+        "Jing Li",
+        "K. Zuo",
+        "Jing Zhang",
+        "Chaowei Hu",
+        "Pan Wang",
+        "Jie Jiao",
+        "Zheng Liu",
+        "X. Yin",
+        "Xiaoqing Liu",
+        "Kuibao Li",
+        "Xinchun Yang"
+      ],
+      "journal": "Journal of Cellular and Molecular Medicine",
+      "year": 2020,
+      "doi": "10.1111/jcmm.15959",
+      "pmid": "33058365",
+      "s2Id": "79e6076016d34b0003af1a703684ac016b15b311",
+      "abstract": "Abstract Alternations of gut microbiota (GM) in atrial fibrillation (AF) with elevated diversity, perturbed composition and function have been described previously. The current work aimed to assess the association of GM composition with AF recurrence (RAF) after ablation based on metagenomic sequencing and metabolomic analyses and to construct a GM‐based predictive model for RAF. Compared with non‐AF controls (50 individuals), GM composition and metabolomic profile were significantly altered between patients with recurrent AF (17 individuals) and non‐RAF group (23 individuals). Notably, discriminative taxa between the non‐RAF and RAF groups, including the families Nitrosomonadaceae and Lentisphaeraceae, the genera Marinitoga and Rufibacter and the species Faecalibacterium spCAG:82, Bacillus gobiensis and Desulfobacterales bacterium PC51MH44, were selected to construct a taxonomic scoring system based on LASSO analysis. After incorporating the clinical factors of RAF, taxonomic score retained a significant association with RAF incidence (HR = 2.647, P = .041). An elevated AUC (0.954) and positive NRI (1.5601) for predicting RAF compared with traditional clinical scoring (AUC = 0.6918) were obtained. The GM‐based taxonomic scoring system theoretically improves the model performance, and the nomogram and decision curve analysis validated the clinical value of the predicting model. These data provide novel possibility that incorporating the GM factor into future recurrent risk stratification.",
+      "tldr": "The GM‐based taxonomic scoring system theoretically improves the model performance, and the nomogram and decision curve analysis validated the clinical value of the predicting model, providing novel possibility that incorporating the GM factor into future recurrent risk stratification is possible.",
+      "citationCount": 3,
+      "influentialCitationCount": 0,
+      "referenceCount": 54,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null,
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jcmm.15959",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Gut microbiota metabolism disturbance is associated with postoperative atrial fibrillation after coronary artery bypass grafting",
+      "authors": [
+        "Yuhua Liu",
+        "Zhiyong Du",
+        "Yingyuan Lu",
+        "Ying Ma",
+        "Y. Yang",
+        "Florian Osmanaj",
+        "Yifan Zhang",
+        "Xiaoyu Guo",
+        "Yanwen Qin",
+        "Xiubin Yang",
+        "K. Hua"
+      ],
+      "journal": "npj Cardiovascular Health",
+      "year": 2024,
+      "doi": "10.1038/s44325-024-00003-z",
+      "s2Id": "58eeb9cc61e3268fc7aad6e658090ab3540bc47c",
+      "abstract": "Postoperative atrial fibrillation (POAF) is a common complication after coronary artery bypass grafting (CABG) surgery. Gut microbiota and its metabolites have been implicated in the development of AF. However, whether the gut–host metabolic interaction contributes to POAF is still unknown. This study aimed to investigate the POAF-associated gut microbiota metabolism biomarkers and related risk model. The POAF (N = 30) patients and non-POAF (N = 60) patients from the discovery cohort exhibited significantly different microbiome and metabolome profiles. The differentiated features were mainly implicated in the bile acids (BAs) and short-chain fatty acids metabolism, inflammation, and oxidative stress. Random forest analysis identified the combination of five secondary BAs showed a powerful performance on predicting POAF in the discovery cohort, highlighting significant values of area under the curve (AUC = 0.954) and correct classification rate (CCR, 93.3%). In addition, the five secondary BAs-based risk model also exhibited good performance in differentiating the POAF (N = 114) and non-POAF individuals (N = 253) in an independent validation cohort (AUC = 0.872; CCR = 90.4%). This work revealed perturbed microbial and metabolic traits in POAF, providing potential avenues for the prediction and prevention of POAF after CABG.",
+      "tldr": "Investigating the POAF-associated gut microbiota metabolism biomarkers and related risk model revealed perturbed microbial and metabolic traits in POAF, providing potential avenues for the prediction and prevention of POAF after CABG.",
+      "citationCount": 8,
+      "influentialCitationCount": 1,
+      "referenceCount": 45,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://www.nature.com/articles/s44325-024-00003-z.pdf",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Integrative Approaches to Atrial Fibrillation Prevention and Management: Leveraging Gut Health for Improved Cardiovascular Outcomes in the Aging Population.",
+      "authors": [
+        "E. Williams",
+        "Olivia Smith",
+        "Mahdi H Alsugoor",
+        "G. S. Albakri",
+        "M. Marber"
+      ],
+      "journal": "Current problems in cardiology",
+      "year": 2024,
+      "doi": "10.1016/j.cpcardiol.2024.102952",
+      "pmid": "39626858",
+      "s2Id": "6009db772fd70e6593989822a56bd9dd485d3b3f",
+      "abstract": "Atrial fibrillation (AF) is a prevalent clinical arrhythmia associated with a high incidence and severe complications such as cerebral embolism and heart failure. While the etiology and pathogenesis of AF involve numerous factors, recent research emphasizes the significant role of intestinal microbiota imbalance in the emergence and progression of AF, particularly among older adults. This review investigates the mechanisms by which intestinal flora and their metabolites contribute to the onset of AF in the elderly, highlighting novel interactions between gut health and cardiac function. Current literature often overlooks these critical connections, indicating a substantial research gap in understanding how dysbiosis may exacerbate AF and hinder recovery. Furthermore, exploring the bidirectional relationship between the gut microbiome and systemic inflammation in the context of AF provides a unique perspective that has yet to be thoroughly investigated. Future research should focus on longitudinal studies assessing gut microbiota composition and function in AF patients and consider probiotics or prebiotics as potential adjunctive therapies for mitigating AF. This comprehensive approach may pave the way for innovative treatments integrating cardiology with gastroenterology, enhancing patient outcomes through a holistic understanding of health.",
+      "tldr": "Investigating the mechanisms by which intestinal flora and their metabolites contribute to the onset of AF in the elderly highlights novel interactions between gut health and cardiac function, and explores the bidirectional relationship between the gut microbiome and systemic inflammation in the context of AF.",
+      "citationCount": 2,
+      "influentialCitationCount": 1,
+      "referenceCount": 64,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Exploring the Gut-Atrial Fibrillation Link: A Comprehensive Review",
+      "authors": [
+        "Mohammad Abdallah",
+        "Rima Othman",
+        "Gaelle Antar",
+        "Maya Atwi",
+        "Tony Butrus",
+        "Elias Hajjar",
+        "Osamah Jaafar",
+        "Marita Machrekeki",
+        "Eddy Mikhael",
+        "Tatiana Rbeiz",
+        "Jessica Swesa",
+        "Firas Alani",
+        "M. T. Zaatar"
+      ],
+      "journal": "New Emirates Medical Journal",
+      "year": 2024,
+      "doi": "10.2174/0102506882332720241004072452",
+      "s2Id": "2bde7e521fd9bfddb2b0a9658f8cd3ddd329af3b",
+      "abstract": "\n\nThis literature review explores the correlation between atrial fibrillation (AF) and the gut microbiome by elucidating its significance in\ncardiovascular health. AF stands as a prevalent cardiac arrhythmia associated with increased morbidity and mortality rates worldwide. The gut\nmicrobiome, a complex ecosystem of microorganisms inhabiting the gastrointestinal tract, plays a crucial role in systemic health through its\ninfluence on immune modulation, metabolic processes, and host-microbe interactions. Emerging evidence suggests a potential link between AF\nand alterations in gut microbial composition, raising intriguing questions about underlying mechanisms and clinical implications.\n\nRecent investigations have shed light on the potential interplay between AF and gut microbial composition. Alterations in gut microbiota diversity\nand abundance have been observed in AF patients compared to healthy controls, suggesting a possible link between gut dysbiosis and arrhythmia\nsusceptibility. Mechanistic studies propose several pathways through which gut microbial metabolites and immune modulation may influence atrial\nelectrophysiology and arrhythmogenesis.\n\n\nThe clinical implications of the AF-gut microbiome connection are profound. Microbiome-based biomarkers hold promise for risk stratification,\nenabling early identification of individuals at elevated risk of AF development or recurrence. Furthermore, interventions targeting the gut\nmicrobiome, such as probiotics, prebiotics, and dietary modifications, offer innovative therapeutic avenues for AF management, potentially\naugmenting traditional treatment modalities.\n\n\nDespite significant progress, challenges such as methodological limitations and the need for further validation in diverse patient cohorts remain\npresent. Longitudinal studies are warranted to elucidate the temporal relationship between gut microbiome alterations and AF onset or progression.\nNevertheless, understanding the AF-gut microbiome connection provides a foundation for personalized medicine approaches, optimizing AF\nmanagement and improving cardiovascular health outcomes.\n",
+      "tldr": "Understanding the AF-gut microbiome connection provides a foundation for personalized medicine approaches, optimizing AF management and improving cardiovascular health outcomes, according to a literature review.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Roles of gut microbiota in atrial fibrillation: insights from Mendelian randomization analysis and genetic data from over 430,000 cohort study participants",
+      "authors": [
+        "H. Dai",
+        "T. Hou",
+        "Qi Wang",
+        "Y. Hou",
+        "Zheng Zhu",
+        "Yijie Zhu",
+        "Zhiyun Zhao",
+        "Mian Li",
+        "Hong Lin",
+        "Shuangyuan Wang",
+        "R. Zheng",
+        "Yu Xu",
+        "Jieli Lu",
+        "Tiange Wang",
+        "G. Ning",
+        "Weiqing Wang",
+        "Jie Zheng",
+        "Yufang Bi",
+        "Min Xu"
+      ],
+      "journal": "Cardiovascular Diabetology",
+      "year": 2023,
+      "doi": "10.1186/s12933-023-02045-6",
+      "pmid": "37940997",
+      "s2Id": "a1c5e6ec017288a071909c38e9bc5602c16ad3f7",
+      "abstract": "Background Gut microbiota imbalances have been suggested as a contributing factor to atrial fibrillation (AF), but the causal relationship is not fully understood. Objectives To explore the causal relationships between the gut microbiota and AF using Mendelian randomization (MR) analysis. Methods Summary statistics were from genome-wide association studies (GWAS) of 207 gut microbial taxa (5 phyla, 10 classes, 13 orders, 26 families, 48 genera, and 105 species) (the Dutch Microbiome Project) and two large meta-GWASs of AF. The significant results were validated in FinnGen cohort and over 430,000 UK Biobank participants. Mediation MR analyses were conducted for AF risk factors, including type 2 diabetes, coronary artery disease (CAD), body mass index (BMI), blood lipids, blood pressure, and obstructive sleep apnea, to explore the potential mediation effect of these risk factors in between the gut microbiota and AF. Results Two microbial taxa causally associated with AF: species Eubacterium ramulus (odds ratio [OR] 1.08, 95% confidence interval [CI] 1.04–1.12, P = 0.0001, false discovery rate (FDR) adjusted p-value = 0.023) and genus Holdemania (OR 1.15, 95% CI 1.07–1.25, P = 0.0004, FDR adjusted p-value = 0.042). Genus Holdemania was associated with incident AF risk in the UK Biobank. The proportion of mediation effect of species Eubacterium ramulus via CAD was 8.05% (95% CI 1.73% − 14.95%, P = 0.008), while the proportion of genus Holdemania on AF via BMI was 12.01% (95% CI 5.17% − 19.39%, P = 0.0005). Conclusions This study provided genetic evidence to support a potential causal mechanism between gut microbiota and AF and suggested the mediation role of AF risk factors.",
+      "tldr": "This study provided genetic evidence to support a potential causal mechanism between gut microbiota and AF and suggested the mediation role of AF risk factors.",
+      "citationCount": 23,
+      "influentialCitationCount": 1,
+      "referenceCount": 53,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://cardiab.biomedcentral.com/counter/pdf/10.1186/s12933-023-02045-6",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Gut Microbiota in Patients with Postoperative Atrial Fibrillation Undergoing Off-Pump Coronary Bypass Graft Surgery",
+      "authors": [
+        "Yang Wang",
+        "Yuanchen He",
+        "Ruixiang Li",
+        "Hui Jiang",
+        "D. Tao",
+        "Keyan Zhao",
+        "Z. Yin",
+        "Jian Zhang",
+        "Huishan Wang"
+      ],
+      "journal": "Journal of Clinical Medicine",
+      "year": 2023,
+      "doi": "10.3390/jcm12041493",
+      "pmid": "36836027",
+      "s2Id": "efb79da1f5c5b2c24b5b02831ce4d87eceb6ba9a",
+      "abstract": "Background: Post-operative atrial fibrillation (POAF) is one of the most common complications of cardiac surgery. However, the underlying mechanism is not well understood. Alterations in the gut microbiota are associated with the development of atrial fibrillation (AF). The aim of this study was to explore the relationship between gut microbiota and POAF. Methods: Fecal samples were collected before surgery from 45 patients who underwent coronary artery bypass grafting with POAF and 90 matched patients without POAF (1:2). 16S rRNA sequencing was used to detect the microbiome profiles of 45 POAF patients and 89 matched patients (one sample in the no-POAF group was deleted owing to low quality after sequencing). Plasma 25-hydroxy vitamin D level was measured by ELISA. Results: Compared to the patients without POAF, gut microbiota composition was remarkably changed in the patients with POAF, with an increase in Lachnospira, Acinetobacter, Veillonella and Aeromonas, and a decrease in Escherichia–Shigella, Klebsiella, Streptococcus, Brevundimonas and Citrobacter. Furthermore, plasma 25-hydroxy vitamin D levels were decreased in POAF patients and negatively correlated with an abundance of Lachnospira. Conclusions: The gut microbiota composition between patients with and without POAF is significantly different, implying that gut microbiota may play a role in the pathogenesis of POAF. Further studies are needed to fully clarify the role of gut microbiota in the initiation of AF.",
+      "tldr": "The gut microbiota composition between patients with and without POAF is significantly different, implying that gut microbiota may play a role in the pathogenesis of POAF, which is one of the most common complications of cardiac surgery.",
+      "citationCount": 10,
+      "influentialCitationCount": 1,
+      "referenceCount": 40,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://www.mdpi.com/2077-0383/12/4/1493/pdf?version=1677045944",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Disordered gut microbiota and alterations in metabolic patterns are associated with atrial fibrillation",
+      "authors": [
+        "K. Zuo",
+        "Jing Li",
+        "Kuibao Li",
+        "Chaowei Hu",
+        "Yuanfeng Gao",
+        "Mulei Chen",
+        "R. Hu",
+        "Ye Liu",
+        "Hongjie Chi",
+        "Hongjiang Wang",
+        "Yanwen Qin",
+        "Xiaoyan Liu",
+        "Shichao Li",
+        "Jun Cai",
+        "Jiuchang Zhong",
+        "Xin-chun Yang"
+      ],
+      "journal": "GigaScience",
+      "year": 2019,
+      "doi": "10.1093/gigascience/giz058",
+      "pmid": "31149718",
+      "s2Id": "77049b40fe6152bbb32ee5373afd913a4ea2c61b",
+      "abstract": "Abstract Background With the establishment of the heart-gut axis concept, accumulating studies suggest that the gut microbiome plays an important role in the pathogenesis of cardiovascular diseases. Yet, little evidence has been reported in characterizing the gut microbiota shift in atrial fibrillation. Methods We include the result of the global alterations that occur in the intestinal microbiota in a cohort of 50 patients with atrial fibrillation and 50 matched controls based on a strategy of metagenomic and metabolomic analyses. Results The alterations include a dramatic elevation in microbial diversity and a specific perturbation of gut microbiota composition. Overgrowth of Ruminococcus, Streptococcus, and Enterococcus, as well as reduction of Faecalibacterium, Alistipes, Oscillibacter, and Bilophila were detected in patients with atrial fibrillation. A gut microbial function imbalance and correlated metabolic pattern changes were observed with atrial fibrillation in both fecal and serum samples. The differential gut microbiome signatures could be used to identify patients with atrial fibrillation. Conclusions Our findings characterize the disordered gut microbiota and microbial metabolite profiles in atrial fibrillation. Further research could determine whether intervention strategies targeting intestinal microbiome composition might be useful to counteract the progression of atrial fibrillation.",
+      "tldr": "The findings characterize the disordered gut microbiota and microbial metabolite profiles in atrial fibrillation and could determine whether intervention strategies targeting intestinal microbiome composition might be useful to counteract the progression of atrialfibrillation.",
+      "citationCount": 189,
+      "influentialCitationCount": 5,
+      "referenceCount": 74,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://academic.oup.com/gigascience/article-pdf/8/6/giz058/28747138/giz058.pdf",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Gut Microbiome and Its Role in Valvular Heart Disease: Not a “Gutted” Relationship",
+      "authors": [
+        "Gyanaranjan Nayak",
+        "K. Dimitriadis",
+        "N. Pyrpyris",
+        "M. Manti",
+        "Nikolaos Kamperidis",
+        "Vasileios Kamperidis",
+        "A. Ziakas",
+        "K. Tsioufis"
+      ],
+      "journal": "Life",
+      "year": 2024,
+      "doi": "10.3390/life14040527",
+      "pmid": "38672797",
+      "s2Id": "8abb80aa16dac035c4ffa3d869c8902be0a422a3",
+      "abstract": "The role of the gut microbiome (GM) and oral microbiome (OM) in cardiovascular disease (CVD) has been increasingly being understood in recent years. It is well known that GM is a risk factor for various CVD phenotypes, including hypertension, dyslipidemia, heart failure and atrial fibrillation. However, its role in valvular heart disease (VHD) is less well understood. Research shows that, direct, microbe-mediated and indirect, metabolite-mediated damage as a result of gut dysbiosis and environmental factors results in a subclinical, chronic, systemic inflammatory state, which promotes inflammatory cell infiltration in heart valves and subsequently, via pro-inflammatory molecules, initiates a cascade of reaction, resulting in valve calcification, fibrosis and dysfunction. This relationship between GM and VHD adds a pathophysiological link to the pathogenesis of VHD, which can be aimed therapeutically, in order to prevent or regress any risk for valvular pathologies. Therapeutic interventions include dietary modifications and lifestyle interventions, in order to influence environmental factors that can promote gut dysbiosis. Furthermore, the combination of probiotics and prebiotics, as well as fecal m transplantation and targeted treatment with inducers or inhibitors of microbial enzymes have showed promising results in animal and/or clinical studies, with the potential to reduce the inflammatory state and restore the normal gut flora in patients. This review, thus, is going to discuss the pathophysiological links behind the relationship of GM, CVD and VHD, as well as explore the recent data regarding the effect of GM-altering treatment in CVD, cardiac function and systemic inflammation.",
+      "tldr": "The pathophysiological links behind the relationship of GM, CVD and VHD are discussed, as well as the recent data regarding the effect of GM-altering treatment in CVD, cardiac function and systemic inflammation are explored.",
+      "citationCount": 7,
+      "influentialCitationCount": 0,
+      "referenceCount": 92,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://www.mdpi.com/2075-1729/14/4/527/pdf?version=1713535523",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Analysis of Gut Microbiome Dysbiosis in Acute Myocardial Infarction Patients",
+      "authors": [
+        "Xiao Mei"
+      ],
+      "journal": "Cardiology Research and Reports",
+      "year": 2024,
+      "doi": "10.31579/2692-9759/133",
+      "s2Id": "2bd12bcfcbdbd0b8f844b6fca8801cc4beaf6807",
+      "abstract": "Background and Aim: This study aims to detect the structure of gut microbiota in acute myocardial infarction (AMI) patients complicated with newly diagnosed atrial fibrillation (AF) through high-throughput sequencing and LC–MS Based Metabolomics so as to explore the characteristic changes of gut microbiota in these patients. Methods and Results: This prospective research recruited AMI patients, in the Fourth Affiliated Hospital of Soochow University. Patients who underwent physical examination were also included in this study. The characteristic of gut microbiota was conducted by high-throughput sequencing and LC–MS Based Metabolomics. At genus classification level, the abundance of Prevotella (P=0.009), Parabacteroides (P=0.036) in AMI patients with newly diagnosed AF were lower than that in AMI patients, while the abundance of Bifidobacterium (P=0.018), Dorea (P=0.036) Eggerthella (P=0.013), Peptoniphilus (P=0.039), Acinetobacter (P=0.016) tended to be higher. The species diversity of AMI patients with newly diagnosed AF was lower than that of AMI patients (P=0.037). Beta diversity analysis revealed a highly significant separation. The results of correlation analysis between differential metabolites and differential microbiota showed that the decrease of Prevotella and Parabacteroides in AMI patients with newly diagnosed AF may lead to an increase in some metabolites such as N-Acetyltyrosine, L-Isoleucine, 7-Methylguanine, L-Tyrosine, Sphingosine, 6-methoxyquinoline and 4-Hydroxybenzaldehyde. These changes will influence multiple metabolic pathways, thus affecting the prognosis of patients. Conclusions: There was an imbalance of gut microbiota in AMI patients, including AMI patients with newly diagnosed AF.",
+      "tldr": "There was an imbalance of gut microbiota in AMI patients, including AMI patients with newly diagnosed atrial fibrillation, which will influence multiple metabolic pathways, thus affecting the prognosis of patients.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://doi.org/10.31579/2692-9759/133",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Plasma trimethylamine-n-oxide associates with reduced hippocampal volume and cognitive impairment in atrial fibrillation",
+      "authors": [
+        "T. Ziswiler",
+        "P. Lee",
+        "M. Luciani",
+        "T. Diteepeng",
+        "M. Allemann",
+        "S. Aeschbacher",
+        "L. Pirpamer",
+        "M. Duering",
+        "A. von Eckardstein",
+        "D. Mueller",
+        "D. Conen",
+        "M. Kuehne",
+        "L. Bonati",
+        "S. Osswald",
+        "J. H. Beer"
+      ],
+      "journal": "European Heart Journal",
+      "year": 2024,
+      "doi": "10.1093/eurheartj/ehae666.2652",
+      "s2Id": "be8f4bc10caf906f2439c50427ec2de32d93b1dd",
+      "abstract": "\n \n \n Atrial fibrillation (AF) is the most common cardiac arrhythmia in modern society and affected patients appear particularly vulnerable to cognitive dysfunction. Yet, the pathomechanism of this association other than thromboembolism (TE) is not fully understood. We have shown earlier an association of cognitive dysfunction with the gut microbiome derivate trimethylamine-N-oxide (TMAO), which predominantly results from the consumption of red meat. We therefore hypothesized that TMAO may affect hippocampal volume (HV) as a brain structure relevant for cognition.\n \n \n \n To demonstrate the structure-function correlation of high TMAO levels with reduced cognitive function and lower HV in a large cohort of patients with atrial fibrillation.\n \n \n \n We included 1’736 patients with confirmed AF from the Swiss-AF-cohort with both, available blood samples for TMAO measurement and with brain magnetic resonance imaging (bMRI) for the determination of HV at baseline. TMAO levels were measured by liquid chromatography-mass spectrometry (LC-MS). bMRI were obtained by 1.5 or 3 Tesla scanners. HV was assessed by the FreeSurfer software (v 7.4.0) subregion segmentation module and normalized by using Sequence Adaptive Multimodal SEGmentation (SAMSEG) to determine the segmentation based intracranial volume. Patients were divided into TMAO quartiles (Q1: 0.6-3.8, Q2: 3.8-5.5, Q3: 5.5-8.5, Q4: 8.5-164.3μmol/l). Their TMAO levels were compared with their HV (unit = mm3) in linear mixed effect models adjusted for multiple covariates (model 1: age, sex, total intracranial volume (ICV), education level; model 2 = model 1 + smoking status, body mass index (BMI), alcohol consumption, physical activity; model 3 = model 2 + hypertension, coronary artery disease, previous stroke, geriatric depression scale). We assessed both unilateral HV (right = RHV, left = LHV) and bilateral HV standardized by the individual total ICV.\n \n \n \n Overall mean age was 72.5 years (+/-8.4 SD), 27.2% were female. Most of the patients were well educated (39.4% advanced, 48.8% middle education) and 44% never smoked. After multivariable adjustments, patients in the highest TMAO quartile showed a significant reduction of bilateral HV volume of 93.4mm3 (95% CI -179.0 to -7.8, p = 0.03). The RHV appeared more affected and was significantly reduced by 48.2mm3 (CI -93.4, -3.0, p=0.04), whereas LHV was decreased by 44.2mm3 (-89.4, 1.0, p=0.06) in the highest TMAO quartile.\n \n \n \n TMAO negatively associates with bilateral HV in patients with AF. Our results suggest a structure-function-correlation between high TMAO levels and cognitive dysfunction. The findings may be relevant for the high TMAO-exposed patients and advocates for the importance of (possible dietary) prevention in AF.\n",
+      "tldr": "A structure-function-correlation between high TMAO levels and cognitive dysfunction in patients with atrial fibrillation is suggested and may be relevant for the high TMAO-exposed patients and advocates for the importance of (possible dietary) prevention in AF.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Causal associations between gut microbiome and cardiovascular disease: A Mendelian randomization study",
+      "authors": [
+        "Yuxuan Zhang",
+        "Xinyi Zhang",
+        "Delong Chen",
+        "J. Lu",
+        "Qinyan Gong",
+        "Jiacheng Fang",
+        "Jun Jiang"
+      ],
+      "journal": "Frontiers in Cardiovascular Medicine",
+      "year": 2022,
+      "doi": "10.3389/fcvm.2022.971376",
+      "pmid": "36110421",
+      "s2Id": "ce4a4f5347343e6f4a960563f506f5b3ee2f93ca",
+      "abstract": "Background Observational studies have shown gut microbiomes were associated with cardiovascular diseases (CVDs), but their roles remain controversial, and these associations have not yet been established causally. Methods Two-sample Mendelian randomization (MR) was used to investigate whether gut microbiome had a causal effect on the risk of CVDs. To obtain comprehensive results, we performed two sets of MR analyses, one with single nucleotide polymorphisms (SNPs) that smaller than the genome-wide statistical significance threshold (5 × 10−8) as instrumental variables, and the other with SNPs that lower than the locus-wide significance level (1 × 10−5). Summary-level statistics for CVDs, including coronary artery disease (CAD), myocardial infarction, heart failure, atrial fibrillation, stroke and its subtypes were collected. The ME estimation was performed using the inverse-variance weighted and Wald ratio methods. Sensitivity analysis was performed using the weighted median, MR-Egger, leave-one-out analysis, MR pleiotropy residual sum and outlier and MR Steiger. Results Based on the locus-wide significance level, genetically predicted genus Oxalobacter was positively associated with the risk of CAD (odds ratio (OR) = 1.06, 95% confidence interval (CI), 1.03 – 1.10, P = 1.67 × 10−4), family Clostridiaceae_1 was negatively correlated with stroke risk (OR = 0.83,95% CI, 0.75–0.93, P = 7.76 × 10−4) and ischemic stroke risk (OR = 0.823,95% CI, 0.74–0.92, P = 4.15 × 10−4). There was no causal relationship between other genetically predicted gut microbiome components and CVDs risk. Based on the genome-wide statistical significance threshold, the results showed that the gut microbiome had no causal relationship with CVDs risk. Conclusion Our findings reveal that there are beneficial or adverse causal effects of gut microbiome components on CVDs risk and provide novel insights into strategies for the prevention and management of CVDs through the gut microbiome.",
+      "tldr": "It is revealed that there are beneficial or adverse causal effects of gut microbiome components on CVDs risk and novel insights into strategies for the prevention and management of CVDS through the gut microbiome are provided.",
+      "citationCount": 40,
+      "influentialCitationCount": 1,
+      "referenceCount": 45,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://www.frontiersin.org/articles/10.3389/fcvm.2022.971376/pdf",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    }
+  ],
+  "total": 320
+}

@@ -1,0 +1,52 @@
+{
+  "id": "ralph-sr-008",
+  "name": "Indian medical context — rheumatic heart disease in India",
+  "phase": 2,
+  "category": "regional",
+  "query": "Prevalence of rheumatic heart disease in India",
+  "expectedPapers": [
+    {
+      "titleFragment": "rheumatic heart disease",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "india",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "prevalence",
+      "mustFind": false
+    },
+    {
+      "titleFragment": "global burden",
+      "mustFind": false
+    }
+  ],
+  "rankingRules": [
+    {
+      "rule": "Majority of top 10 should be on-topic (RHD-related)",
+      "check": "majority_on_topic",
+      "params": { "n": 10, "keywords": ["rheumatic heart disease", "rheumatic fever", "rhd"], "threshold": 0.6 }
+    }
+  ],
+  "metadataChecks": [
+    {
+      "check": "all_have_doi",
+      "threshold": 0.7
+    },
+    {
+      "check": "year_nonzero",
+      "threshold": 0.95
+    },
+    {
+      "check": "has_abstract",
+      "threshold": 0.6
+    }
+  ],
+  "dedupChecks": [
+    {
+      "titleFragments": ["clinico-biochemical profiles and outcomes in acute decompensated heart failure"],
+      "maxOccurrences": 1
+    }
+  ]
+}

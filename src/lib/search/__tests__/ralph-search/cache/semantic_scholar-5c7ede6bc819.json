@@ -1,0 +1,772 @@
+{
+  "source": "semantic_scholar",
+  "query": "GLP-1 receptor agonists cardiovascular outcomes 2024 2025",
+  "timestamp": "2026-03-02T17:02:39.384Z",
+  "results": [
+    {
+      "title": "Kidney and Cardiovascular Outcomes Among Patients With CKD Receiving GLP-1 Receptor Agonists: A Systematic Review and Meta-Analysis of Randomized Trials.",
+      "authors": [
+        "Jui-Yi Chen",
+        "Tsuen-Wei Hsu",
+        "Jungang Liu",
+        "Heng-Chih Pan",
+        "Chun-Fu Lai",
+        "Shao-Yu Yang",
+        "Vin-Cent Wu"
+      ],
+      "journal": "American journal of kidney diseases : the official journal of the National Kidney Foundation",
+      "year": 2025,
+      "doi": "10.1053/j.ajkd.2024.11.013",
+      "pmid": "39863261",
+      "s2Id": "3c4ff9fe75190fdf7e58cb693011dfb1bcbb5bf1",
+      "abstract": "RATIONALE & OBJECTIVE\nGlucagon-like peptide-1 receptor agonists (GLP-1RAs) improve cardiac and kidney outcomes in patients with diabetes; however their efficacy in individuals with reduced estimated glomerular filtration rate (eGFR) is uncertain. This study evaluated the effects of GLP-1RAs on kidney and cardiovascular (CV) outcomes in patients with chronic kidney disease (CKD).\n\n\nSTUDY DESIGN\nSystematic review and meta-analysis of randomized controlled trials (RCTs) reported through May 25, 2024.\n\n\nSETTING & STUDY POPULATIONS\nAdult participants in RCTs with baseline eGFR <60 mL/min/1.73 m2.\n\n\nSELECTION CRITERIA FOR STUDIES\nRCTs including adults (≥18 years old) with varying degrees of kidney function, including individuals with CKD characterized by a baseline eGFR of less than 60 mL/min/1.73 m2, that compared GLP-1RAs with control treatments with respect to a composite kidney outcome, all-cause mortality, or a composite CV disease outcome. From among 212 screened studies, 12 trials involving that included participants with baseline eGFR <60 mL/min/1.73 m2 were included.\n\n\nDATA EXTRACTION\nTwo independent investigators extracted the data.\n\n\nANALYTICAL APPROACH\nPooled odds ratios (ORs) for composite kidney outcome, all-cause mortality, and composite CV outcome were estimated using random-effects models. Evidence certainty was assessed using the GRADE system.\n\n\nRESULTS\n17,996 RCT participants with baseline eGFR <60 mL/min/1.73 m2 were included in analyses. GLP-1RAs were significantly associated with a reduced risk of the composite kidney outcome (OR: 0.85 [95% CI 0.77-0.94]; p=0.001) with low heterogeneity (I2<0.01%). GLP-1RAs were also associated with a reduced the risk of a >30% eGFR decline (OR: 0.78, p=0.004), a >40% decline (OR: 0.76, p=0.01), and a >50% decline (OR: 0.72, p<0.001). Risk of all-cause mortality was also lower in the GLP-1RA group (OR: 0.77 [95% CI 0.60-0.98]; p=0.03), though there was high heterogeneity (I2=71.6%). Composite CV outcomes were also lower with the use of GLP-1R (OR: 0.86 [95% CI 0.74-0.99]; p=0.03; I2=40.3%). Sensitivity analyses restricted to human GLP-1 backbone agents showed enhanced benefits.\n\n\nLIMITATIONS\nInconsistent kidney outcome definitions, focus on diabetic populations in most studies, and potential publication bias.\n\n\nCONCLUSIONS\nGLP-1RAs improved kidney and cardiovascular outcomes, and survival in patients with CKD enrolled in an array of clinical trials.",
+      "tldr": "GLP-1RAs improved kidney and cardiovascular outcomes, and survival in patients with CKD enrolled in an array of clinical trials and evidence certainty was assessed using the GRADE system.",
+      "citationCount": 19,
+      "influentialCitationCount": 1,
+      "referenceCount": 66,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Impact of GLP-1 receptor agonists on cardiovascular outcomes in heart failure with preserved ejection fraction (HFpEF): systematic review and meta-analysis.",
+      "authors": [
+        "Antony Gonzales-Uribe",
+        "Renato Ruiz-Cortez",
+        "Nicole Collantes-Silva",
+        "Lorenzo Olivero",
+        "Raksheeth Agarwal",
+        "Sebastian Arambulo-Castillo",
+        "Alonso Garcia-Geng",
+        "Xiajie Lyu",
+        "Daniel Mendoza-Quispe",
+        "Victor Becerra-Gonzales",
+        "Hoda Butrous"
+      ],
+      "journal": "Clinical research in cardiology : official journal of the German Cardiac Society",
+      "year": 2025,
+      "doi": "10.1007/s00392-025-02710-8",
+      "pmid": "40637782",
+      "s2Id": "ed0d0024a33c0b914801abca3c436a89162393f9",
+      "tldr": "GLP-1 RAs may significantly lower the combined risk of mortality and hospitalization in patients with HFpEF, according to a meta-analysis of six studies.",
+      "citationCount": 2,
+      "influentialCitationCount": 1,
+      "referenceCount": 30,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Comparative Efficacy of Glucagon-Like Peptide 1 Receptor Agonists for Cardiovascular Outcomes in Asian Versus White Populations: Systematic Review and Meta-analysis of Randomized Trials of Populations With or Without Type 2 Diabetes and/or Overweight or Obesity.",
+      "authors": [
+        "Matthew M. Y. Lee",
+        "N. Ghouri",
+        "Anoop Misra",
+        "Yu Mi Kang",
+        "M. Rutter",
+        "H. Gerstein",
+        "Darren K. McGuire",
+        "N. Sattar"
+      ],
+      "journal": "Diabetes care",
+      "year": 2025,
+      "doi": "10.2337/dc24-1533",
+      "pmid": "39977628",
+      "s2Id": "82dd5408823a5bc13a40f86c6f3a8111588a1037",
+      "abstract": "BACKGROUND\nCardiovascular outcome trials (CVOTs) suggest glucagon-like peptide 1 receptor agonists (GLP-1RAs) provide greater cardiovascular (CV) benefits in Asian compared with White individuals.\n\n\nPURPOSE\nCompare CV efficacy of GLP-1RAs between Asian and White individuals.\n\n\nDATA SOURCES\nSystematic review of PubMed and ClinicalTrials.gov (1 January 2015 to 1 November 2024).\n\n\nSTUDY SELECTION\nRandomized placebo-controlled CVOTs of GLP-1RAs. Risk of bias was assessed (RoB 2).\n\n\nDATA EXTRACTION\nEthnicity-specific hazard ratios (HRs) for major adverse cardiovascular events (MACE).\n\n\nDATA SYNTHESIS\nRandom-effects meta-analyses per Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines included eight trials (5,909 Asian individuals, 55,855 White individuals). GLP-1RA-associated MACE HR was 0.69 (95% CI 0.58, 0.83) in Asian people and 0.85 (95% CI 0.79, 0.91) in White people (Pinteraction = 0.045). Absolute MACE risk reduction was 2.9% (95% CI 1.5, 4.2) in Asian people versus 1.4% (0.9, 1.9) in White people.\n\n\nLIMITATIONS\nLack of individual patient-level data precluded detailed subclassification of the Asian group.\n\n\nCONCLUSIONS\nGLP-1RAs may offer greater MACE reductions in Asian compared with White individuals.",
+      "tldr": "GLP-1RAs may offer greater MACE reductions in Asian compared with White individuals, and random-effects meta-analyses per Preferred Reporting Items for Systematic Reviews and Meta-Analyses guidelines included eight trials.",
+      "citationCount": 38,
+      "influentialCitationCount": 2,
+      "referenceCount": 20,
+      "publicationTypes": [
+        "Review",
+        "MetaAnalysis",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://figshare.com/articles/figure/Comparative_efficacy_of_glucagon-like_peptide-1_receptor_agonists_for_cardiovascular_outcomes_in_Asian_versus_White_persons_systematic_review_and_meta-analyses_of_randomized_trials_with_and_without_type_2_diabetes_and_or_overweight_obesity/28074674/1/files/51335159.pdf",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "GLP-1 receptor agonists efficacy in managing comorbidities associated with diabetes mellitus: a narrative review",
+      "authors": [
+        "M. Gholami",
+        "N. Z. Balajam",
+        "Samira Rakhsha",
+        "Sayed Mahmoud Sajjadi-Jazi",
+        "G. Shafiee",
+        "R. Heshmat"
+      ],
+      "journal": "Journal of Diabetes & Metabolic Disorders",
+      "year": 2025,
+      "doi": "10.1007/s40200-025-01604-w",
+      "pmid": "40182581",
+      "s2Id": "895369ae090b719c4c957f931db2dd0819db688e",
+      "tldr": "GLP1RAs offer a multifaceted approach to treating not only diabetes but also its associated comorbidities, improving patient outcomes across multiple health domains, however, further research is required to confirm these benefits and optimize treatment strategies for diverse patient populations.",
+      "citationCount": 2,
+      "influentialCitationCount": 0,
+      "referenceCount": 56,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "MON-684 Comparative Effectiveness and Safety of GLP-1 Receptor Agonist versus Traditional Anti-obesity Medications: A Real-world Evidence Study",
+      "authors": [
+        "Jo-Ching Chen",
+        "Shao-Chia Chen",
+        "Shun-Fa Yang",
+        "Yu-Nan Huang",
+        "Pen hua SU"
+      ],
+      "journal": "Journal of the Endocrine Society",
+      "year": 2025,
+      "doi": "10.1210/jendso/bvaf149.023",
+      "s2Id": "16a2361b647995d306ebcb6584d9eb44d7f712c1",
+      "abstract": "Abstract Disclosure: J. Chen: None. S. Chen: None. S. Yang: None. Y. Huang: None. P. Su: None. Background: While GLP-1 receptor agonists have shown promise in obesity treatment, their comparative safety and efficacy versus established medications remain unclear. Aims: We investigated whether semaglutide demonstrated superior cardiovascular and renal outcomes compared to Qsymia, phentermine, and Contrave in adults with obesity over two years. Methods: We conducted a retrospective cohort study using the TriNetX US Collaborative Network database (2015-2024). After excluding patients with diabetes, HIV, end-stage renal disease, and prior bariatric surgery, we matched 10,544 patients in each treatment group using propensity scores. To minimize selection bias, we balanced 42 baseline characteristics including demographics, comorbidities, and laboratory values. We assessed outcomes using Cox proportional hazards models with robust standard errors. Primary outcomes included all-cause mortality, cardiovascular events, and adverse events. Results: Semaglutide reduced all-cause mortality compared to Qsymia (HR 0.16, 95% CI 0.05-0.52), Contrave (HR 0.17, 95% CI 0.04-0.72), and phentermine (HR 0.28, 95% CI 0.12-0.68). Primary hypertension risk decreased with semaglutide versus all comparators (HRs ranging 0.69-0.84, all p<0.05). Semaglutide users experienced fewer strokes versus Qsymia (HR 0.40, 95% CI 0.19-0.85) and showed improved chronic kidney disease outcomes (HR 0.56, 95% CI 0.32-0.97). However, gastrointestinal events were more frequent with semaglutide, particularly vomiting (HRs 1.28-1.50 versus comparators) and constipation. Sensitivity analyses stratified by age, sex, and race showed consistent results across subgroups. Conclusions: In this large real-world study, semaglutide demonstrated superior cardiovascular and renal protection compared to other obesity medications, despite increased gastrointestinal side effects. These findings suggest the need for individualized benefit-risk assessment when selecting obesity pharmacotherapy. Future randomized trials should validate these observational findings. Presentation: Monday, July 14, 2025",
+      "tldr": "In this large real-world study, semaglutide demonstrated superior cardiovascular and renal protection compared to other obesity medications, despite increased gastrointestinal side effects, which suggest the need for individualized benefit-risk assessment when selecting obesity pharmacotherapy.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Prognostic benefit of glucagon-like peptide-1 receptor agonists addition to sodium-glucose cotransporter 2 inhibitors in patients with atherosclerotic cardiovascular disease and heart failure: a cohort study",
+      "authors": [
+        "Sih-Yao Chen",
+        "Jheng-Yan Wu",
+        "Kuang-Ming Liao",
+        "Yu-Min Lin"
+      ],
+      "journal": "European Heart Journal. Cardiovascular Pharmacotherapy",
+      "year": 2025,
+      "doi": "10.1093/ehjcvp/pvaf014",
+      "pmid": "39963713",
+      "s2Id": "974d9d3533d8fdea5d80772d181d7d1e1b72bdd5",
+      "abstract": "Abstract Aims Managing patients with atherosclerotic cardiovascular disease (ASCVD) and heart failure (HF) is challenging. While sodium-glucose cotransporter 2 inhibitors (SGLT2i) and glucagon-like peptide-1 receptor agonists (GLP-1 RA) show cardiovascular benefits, the impact of combining these agents is unclear. This study evaluated whether adding GLP-1 RA to SGLT2i provides additional benefits in patients with both ASCVD and HF. Methods and results This retrospective observational study utilized the TriNetX database to analyse patients with ASCVD and HF who initiated GLP-1 RA with SGLT2i or SGLT2i alone from 1 August 2016 to 30 September 2024. A total of 2 797 317 patients were identified, with 96 051 patients meeting inclusion criteria. After propensity score matching, 5272 patients in each group were analysed. Primary outcomes included mortality or hospitalization within 1 year; secondary outcomes examined mortality, hospitalization, and heart failure exacerbation (HFE). Patients receiving GLP-1RA and SGLT2i therapies had significantly lower risk of mortality or hospitalization [hazard ratio (HR) 0.78; 95% confidence interval (CI) 0.74–0.83], mortality (HR 0.72; 95% CI 0.62–0.84), hospitalization (HR 0.78; 95% CI 0.73–0.83), and HFE (HR 0.77; 95% CI 0.72–0.83) vs. SGLT2i alone. Subgroup analyses showed consistent benefits in patients with HFpEF, HFrEF, patients with diabetes, obesity, chronic kidney disease, or those using semaglutide or dulaglutide, while liraglutide use showed a neutral effect. Drug-related side effects were monitored as safety outcomes, which showed no significant differences between groups. Conclusions In ASCVD and HF patients, adding GLP-1 RA to SGLT2i reduces 1-year mortality and hospitalization, warranting further investigation in diverse settings.",
+      "tldr": "In ASCVD and HF patients, adding GLP-1 RA to SGLT2i reduces 1-year mortality and hospitalization, warranting further investigation in diverse settings.",
+      "citationCount": 5,
+      "influentialCitationCount": 0,
+      "referenceCount": 35,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Cardiovascular and Kidney Outcomes of Glucagon-Like Peptide 1 Receptor Agonist Therapy in Type 2 Diabetes Mellitus and Chronic Kidney Disease: A Systematic Review and Meta-Analysis",
+      "authors": [
+        "Nicole Felix",
+        "Mateus M. Gauza",
+        "Vinicius Bittar",
+        "Alleh Nogueira",
+        "T. A. Costa",
+        "A. Godoi",
+        "Larissa Araújo de Lucena",
+        "O. Ribeiro Gonçalves",
+        "Luís Cláudio Santos Pinto",
+        "Lucas Tramujas",
+        "José A. Moura-Neto",
+        "Maria Gabriela Motta Guimarães"
+      ],
+      "journal": "Cardiorenal Medicine",
+      "year": 2025,
+      "doi": "10.1159/000543149",
+      "pmid": "39746343",
+      "s2Id": "79b0d19db57ac9969fd2fde6ee6e1883a40888b9",
+      "abstract": "Abstract Introduction: The effects of glucagon-like peptide 1 receptor agonists (GLP-1 RA) in patients with diabetes and established chronic kidney disease (CKD) remain unclear. Methods: We systematically searched PubMed, Embase, and Cochrane Library from inception to May 2024 for randomized controlled trials (RCTs) and respective post hoc studies comparing GLP-1 RAs versus placebo in patients with type 2 diabetes mellitus (T2DM) and established CKD (as per study definition or otherwise defined as having an estimated glomerular filtration rate less than 60 mL/min/1.73 m2 and/or urine albumin-to-creatinine ratio more than 30 mg/g). We applied a random-effects model to pool risk ratios (RRs), hazard ratios (HRs), and 95% confidence intervals (CIs). Results: We included 10 RCTs and post hoc analyses comprising 18,042 patients, of whom 9,164 (50.8%) were treated with GLP-1 RAs. There were significantly lower rates of major adverse kidney events (RR 0.82; 95% CI: 0.74–0.90; p < 0.001; high certainty) and a slightly lower incidence of all-cause mortality (HR 0.84; 95% CI: 0.71–1.00; p = 0.046; moderate certainty) with the use of GLP-1 RAs relative to placebo. This kidney protection remained consistent in patients with stage 3b CKD (RR 0.78; 95% CI: 0.65–0.94; p = 0.009; high certainty). No significant differences were observed in major adverse cardiovascular events (HR 0.89; 95% CI: 0.78–1.02; p = 0.090; low certainty) or cardiovascular mortality (HR 0.80; 95% CI: 0.60–1.09; p = 0.155; very low certainty), possibly due to a lack of statistical power. Conclusion: GLP-1 RAs were tied to a lower incidence of all-cause mortality and major adverse kidney events in patients with T2DM and established CKD.",
+      "tldr": "GLP-1 RAs were tied to a lower incidence of all-cause mortality and major adverse kidney events in patients with T2DM and established CKD and applied a random-effects model to pool risk ratios, hazard ratios, and 95% confidence intervals.",
+      "citationCount": 13,
+      "influentialCitationCount": 0,
+      "referenceCount": 24,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://doi.org/10.1159/000543149",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Comparative efficacy of GLP-1 RAs/SGLT-2 inhibitors in reducing cardiovascular events in type 2 diabetes according to baseline use of metformin: a systematic review and meta-analysis of randomized controlled trials",
+      "authors": [
+        "Yuxin Zhang",
+        "Zhaoji Li",
+        "Y. Hao"
+      ],
+      "journal": "European Journal of Medical Research",
+      "year": 2025,
+      "doi": "10.1186/s40001-024-02241-4",
+      "pmid": "39773332",
+      "s2Id": "413abaf449c812491c3ec5c70b49aa8b7a30293d",
+      "abstract": "Sodium–glucose transporters 2 inhibitors (SGLT-2i) and glucagon-like peptide 1 receptor agonists (GLP-1 RAs) are recommended along with metformin for the potential cardiovascular benefits among type 2 diabetes. This meta-analysis aims to evaluate whether the effects of SGLT-2i or GLP-1 RAs on cardiovascular outcomes are consistent with and without baseline metformin use. PubMed, Cochrane, Web of Science and Embase were searched for randomized placebo-controlled trials with SGLT-2i or GLP-1 RAs as interventions of type 2 diabetes patients up to June, 2024. The main outcomes were major adverse cardiovascular events (MACE), hospitalization for heart failure (HHF) or cardiovascular death. Both random-effects model and fixed model were adopted to estimate pooled hazard ratios (HR) and 95% confidence intervals (95% CI). A total of 81,738 patients (median age: 62–66 years, 53.7–71.5% men, median follow-up: 1.3–5.4 years) from 11 studies (7 studies of SGLT-2i and 4 of GLP-1 RAs) were included in the study. The metformin-naive portions ranged from 28.90% to 81.98%. Among patients using metformin at baseline, SGLT-2i or GLP-1 RAs reduced MACE risk (HR = 0.95, 95% CI 0.91–0.99, P = 0.02). In metformin-naive patients, similar reductions were observed (HR = 0.79, 95% CI 0.65–0.95, P = 0.01). No statistically significant interaction was found between metformin users and non-users for any outcome (all P values for interaction > 0.05), indicating consistent cardiovascular benefits regardless of baseline metformin therapy. SGLT-2i and GLP-1 RAs have the effects of cardiovascular benefits for T2DM patients regardless of baseline metformin use.",
+      "tldr": "SGLT-2i and GLP-1 RAs have the effects of cardiovascular benefits for T2DM patients regardless of baseline metformin use, indicating consistent cardiovascular benefits regardless of baseline metformin therapy.",
+      "citationCount": 5,
+      "influentialCitationCount": 0,
+      "referenceCount": 38,
+      "publicationTypes": [
+        "Review",
+        "Study",
+        "MetaAnalysis",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://doi.org/10.1186/s40001-024-02241-4",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Effect of GLP-1RA on coronary progression and cardiovascular outcomes in type 2 diabetic patients after PCI: a prospective cohort study",
+      "authors": [
+        "Huasu Zeng",
+        "Jingchao Hu",
+        "Yang Zhuo",
+        "Min Wang",
+        "Lin Gao",
+        "Zhengde Tang",
+        "Junfeng Zhang",
+        "Ping Yin",
+        "Jun Gu",
+        "Changqian Wang"
+      ],
+      "journal": "Scientific Reports",
+      "year": 2025,
+      "doi": "10.1038/s41598-025-17574-1",
+      "pmid": "40883386",
+      "s2Id": "8a68b370a58a08fec404cf9f700184c2bd5676ba",
+      "abstract": "Glucagon-like peptide-1 receptor agonists (GLP-1RAs) reduce incidence of cardiovascular events in type 2 diabetes (T2D) patients. Yet, the impact of GLP-1RAs on coronary lesion progression and cardiovascular outcomes after coronary stent implantation remains unclear. We aimed to investigate the effects of GLP-1RAs on coronary lesion progression and major adverse cardiovascular events (MACEs) after percutaneous coronary intervention (PCI). This prospective cohort study enrolled 1664 patients with T2D who underwent PCI from January 2020 to March 2024. Matched GLP-1RAs-treated and non-treated cohorts were formed using the propensity score matching method. The primary endpoint was the incidence of MACEs (cardiovascular death, non-fatal myocardial infarction, non-fatal stroke, hospitalization for heart failure). Secondary endpoints included in-stent restenosis and non-target lesion progression. Two 131-patient cohorts with balanced baseline characteristics were formed by propensity score matching. During the median follow-up period of 20 months (ranging from 6 to 48 months), the incidence of MACEs was significantly lower in the GLP-1RA group (7.63%)compared to the control group (19.85%) (HR 0.444; 95%CI, 0.215–0.918; P = 0.024). During a median follow-up period of 12 months, 79.39% (104/131) of patients in the control group and 82.44% (108/131) of patients in the GLP-1RA group successfully underwent coronary angiography follow-up. The incidence of in-stent restenosis was 2.78% (3/108) in the GLP-1RA group and 11.54% (12/104) in the control group (P = 0.028). Non-target lesion progression was found in 10.19% (11/108) patient of the GLP-1RA group and 22.12% (23/104) in the control group (P = 0.037). Notable disparities were observed between the two groups regarding improvements of BMI, SBP, HbA1c, LDL-C, CRP. GLP-1RAs significantly reduced the incidence of MACEs and coronary lesion progression in patients with T2D after coronary stent implantation. These findings suggest that GLP-1RAs may have beneficial effects on cardiovascular outcomes and coronary artery disease progression in this population.",
+      "tldr": "GLP-1RAs significantly reduced the incidence of MACEs and coronary lesion progression in patients with T2D after coronary stent implantation, suggesting that GLP-1RAs may have beneficial effects on cardiovascular outcomes and coronary artery disease progression in this population.",
+      "citationCount": 2,
+      "influentialCitationCount": 0,
+      "referenceCount": 23,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "A real-world observational study comparing cardiovascular outcomes in patients with type 2 diabetes initiating mixed insulin versus newer oral antidiabetic agents as first injectable therapy",
+      "authors": [
+        "Iyad Khalifah Ahmad Al-Domi"
+      ],
+      "journal": "International Journal of Science and Research Archive",
+      "year": 2025,
+      "doi": "10.30574/ijsra.2025.17.3.3364",
+      "s2Id": "12b1c34382104ef5e07b73261a25a09b5a407594",
+      "abstract": "This retrospective observational investigation comprehensively compared cardiovascular event rates among individuals with Type 2 Diabetes Mellitus (T2DM) whose first injectable therapeutic regimen consisted of either premixed insulin or contemporary oral glucose-lowering medications, specifically sodium-glucose cotransporter-2 inhibitors (SGLT2i) or glucagon-like peptide-1 receptor agonists (GLP-1 RA). Data from 427 patients managed at a single center were critically analyzed from August 2024 to November 2025. The principal endpoint comprised a composite of heart failure hospitalization, non-fatal acute myocardial infarction, or non-fatal cerebrovascular accident. After statistical adjustment for baseline variables via propensity score matching, initiation of contemporary oral agents (n=142) was strongly associated with a substantially lower occurrence of the primary cardiovascular composite compared to initiation of premixed insulin (n=142) (12.0% versus 22.5%; Hazard Ratio: 0.48; 95% Confidence Interval: 0.29–0.79). This divergence was predominantly attributable to a profoundly pronounced decrease in hospitalizations for heart failure (3.5% versus 12.0%; Hazard Ratio: 0.28). Glycemic management, assessed by HbA1c reduction, was significantly more effective with contemporary oral agents, consistently accompanied by a markedly lower incidence of significant hypoglycemic episodes. These findings from clinical practice strongly indicate that selecting newer oral agents with clearly documented cardiometabolic advantages as the initial injectable therapy may reliably confer superior cardiovascular protection relative to traditional premixed insulin, offering a highly persuasive rationale for urgently reevaluating established therapeutic sequences.",
+      "tldr": "Findings from clinical practice strongly indicate that selecting newer oral agents with clearly documented cardiometabolic advantages as the initial injectable therapy may reliably confer superior cardiovascular protection relative to traditional premixed insulin, offering a highly persuasive rationale for urgently reevaluating established therapeutic sequences.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "GLP-1RA Use and Thyroid Cancer Risk.",
+      "authors": [
+        "Juan P. Brito",
+        "J. Herrin",
+        "K. Swarna",
+        "Naykky M Singh Ospina",
+        "Victor M. Montori",
+        "David Toro-Tobón",
+        "Guillermo E. Umpierrez",
+        "R. J. Galindo",
+        "Yihong Deng",
+        "Mindy M. Mickelson",
+        "Hui Shao",
+        "Eric C. Polley",
+        "Rozalina G McCoy"
+      ],
+      "journal": "JAMA otolaryngology-- head & neck surgery",
+      "year": 2025,
+      "doi": "10.1001/jamaoto.2024.4852",
+      "pmid": "39847346",
+      "s2Id": "26bdd5a3668e10e3ae92b2d26a269200b1697350",
+      "abstract": "Importance\nThe increasing use of glucagon-like peptide-1 receptor agonists (GLP-1RA) demands a better understanding of their association with thyroid cancer.\n\n\nObjective\nTo estimate the risk of incident thyroid cancer among adults with type 2 diabetes being treated with GLP-1RA vs other common glucose-lowering medications.\n\n\nDesign, Setting, and Participants\nThis was a prespecified secondary analysis of a target trial emulation of a comparative effectiveness study using claims data for enrollees in commercial, Medicare Advantage, and Medicare fee-for-service plans across the US. Eligible participants were adults with type 2 diabetes at moderate risk for cardiovascular disease and without history of thyroid cancer who had newly filled prescriptions for GLP-1RA, sodium-glucose cotransporter 2 inhibitor (SGLT2i), dipeptidyl peptidase-4 inhibitor (DPP4i), or sulfonylurea from January 1, 2014, to December 31, 2021. Data were analyzed February 1 to October 31, 2024.\n\n\nMain Outcomes and Measures\nOverall and piecewise (<1, 1-2, and ≥2 years since treatment initiation) hazard ratios (HRs) for thyroid cancer with use of GLP-1RA vs the other 3 drug classes were estimated using inverse propensity score weighted Cox proportional hazards models. Modified intention-to-treat (mITT) (primary) and as-treated (sensitivity) analyses were performed.\n\n\nResults\nOf 351 913 patients (mean [SD] age, 65.3 [8.5] years; 173 391 [49.3%] females and 178 522 [50.7%] males), 41 112 started treatment with GLP-1RA; 76 093, with DPP4i; 43 499, with SGLT2i; and 191 209, with sulfonylurea therapy. The numbers of patients diagnosed with thyroid cancer were 69 (0.17%) in the GLP-1RA group, 172 (0.23%) in the DPP4i group, 72 (0.17%) in the SGLT2i group, and 381 (0.20%) in the sulfonylurea group. In the mITT analysis, GLP-1RA initiation was not significantly associated with increased overall risk for thyroid cancer compared to the other 3 diabetes drugs (HR, 1.24; 95% CI, 0.88-1.76). However, the risk for thyroid cancer was significantly higher within the first year after GLP-1RA initiation (HR, 1.85; 95% CI, 1.11-3.08) and was amplified in the overall as-treated analysis that censored patients when therapy was discontinued or another medication was added (HR, 2.07; 95% CI, 1.10-3.95).\n\n\nConclusions and Relevance\nThis secondary analysis of a target trial emulation of a comparative effectiveness study found that despite the low absolute risk of thyroid cancer among patients receiving GLP-1RA therapy, there was an increased risk of new thyroid cancer diagnoses within the first year of GLP-1RA initiation compared to 3 other diabetes drugs. This finding may have been due to enhanced early detection; therefore, further research is necessary to understand the underlying causes of this association.",
+      "tldr": "Despite the low absolute risk of thyroid cancer among patients receiving GLP-1RA therapy, there was an increased risk of new thyroid cancer diagnoses within the first year of GLP-1RA initiation compared to 3 other diabetes drugs.",
+      "citationCount": 29,
+      "influentialCitationCount": 1,
+      "referenceCount": 41,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Medications for adults with type 2 diabetes: a living systematic review and network meta-analysis",
+      "authors": [
+        "Kailei Nong",
+        "Britta Tendal Jeppesen",
+        "Qingyang Shi",
+        "T. Agoritsas",
+        "Gordon H. Guyatt",
+        "Heath White",
+        "Yiyuan Gao",
+        "Arnav Agarwal",
+        "Helen Macdonald",
+        "Xinyu Zou",
+        "Tanya Millard",
+        "Oliver Schnell",
+        "N. Marx",
+        "F. Brosius",
+        "Steven McDonald",
+        "M. Quigley",
+        "Xin Tian",
+        "Qinlin Fan",
+        "Barbara White",
+        "Yunhe Mao",
+        "Xiaohui Pan",
+        "Changhai Liu",
+        "Chunjuan Zhai",
+        "Chi Yuan",
+        "Qiang Li",
+        "Jing An",
+        "Yu Gan",
+        "Yanyan Wang",
+        "Yinghui Jin",
+        "Feng Sun",
+        "Zhiming Zhu",
+        "L. Rydén",
+        "E. Standl",
+        "Tari Turner",
+        "P. Vandvik",
+        "Sheyu Li"
+      ],
+      "journal": "BMJ",
+      "year": 2025,
+      "doi": "10.1136/bmj-2024-083039",
+      "pmid": "40813122",
+      "s2Id": "14cc70526eb062964b839253d8b50cd87b9a852c",
+      "tldr": "This living systematic review provides a comprehensive summary of the cardiovascular, kidney, and weight loss benefits, as well as medication-specific harms of medications for adults with type 2 diabetes, including effects of SGLT-2 inhibitors, GLP-1RAs, finerenone and tirzepatide.",
+      "citationCount": 12,
+      "influentialCitationCount": 4,
+      "referenceCount": 57,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Comparative effectiveness of GLP-1 receptor agonists on cardiovascular outcomes among adults with type 2 diabetes and moderate cardiovascular risk: emulation of a target trial.",
+      "authors": [
+        "Stacey Sklepinski",
+        "Yihong Deng",
+        "K. Swarna",
+        "Jeph Herrin",
+        "Eric C. Polley",
+        "Joshua J. Neumiller",
+        "Rodolfo J. Galindo",
+        "Guillermo E. Umpierrez",
+        "Joseph S. Ross",
+        "Bijan J. Borah",
+        "Bradley A Maron",
+        "Mindy M Mickelsonb",
+        "Rozalina G. McCoy"
+      ],
+      "journal": "Diabetes research and clinical practice",
+      "year": 2025,
+      "doi": "10.1016/j.diabres.2025.112910",
+      "pmid": "40983112",
+      "s2Id": "817dd0f3139671d82bd10aa0c090fbae9eda59df",
+      "abstract": "AIM\nTo compare the cardiovascular outcomes of glucagon-like peptide-1 receptor agonists (GLP-1RAs) among adults with type 2 diabetes mellitus (T2D) at moderate cardiovascular risk.\n\n\nMETHODS\nWe emulated a target trial using claims data of adults with T2D at moderate cardiovascular risk who initiated dulaglutide, exenatide, liraglutide, or semaglutide between 01/01/2014-12/31/2021. Random treatment assignment was emulated by propensity scores and incorporated into inverse probability of treatment weighted (IPTW) Cox models. Outcomes were time to composite major adverse cardiovascular events (MACE: myocardial infarction, stroke, and all-cause mortality), expanded MACE (MACE, hospitalization for heart failure, and revascularization) and its components, and severe hypoglycemia.\n\n\nRESULTS\nAfter IPTW, 35,572 patients initiated dulaglutide, 4376 initiated exenatide, 8843 initiated liraglutide, and 33,063 initiated semaglutide. Compared to dulaglutide, semaglutide was associated with lower risk of MACE (HR 0.85, 95CI% 0.78-0.93), expanded MACE (HR 0.92, 95CI% 0.87-0.96), all-cause mortality (HR 0.81, 95CI% 0.71-0.92), stroke (HR 0.82, 95CI% 0.70-0.97), and revascularization (HR 0.93, 95CI% 0.88-0.99), while liraglutide was associated with lower risk of MACE (HR 0.84, 95CI% 0.72-0.97) and all-cause mortality (HR 0.79, 95CI% 0.64-0.99).\n\n\nCONCLUSIONS\nAmong GLP-1RAs, semaglutide and liraglutide were associated with the greatest cardiovascular risk reduction in patients with T2D at moderate cardiovascular risk.",
+      "tldr": "Among GLP-1RAs, semaglutide and liraglutide were associated with the greatest cardiovascular risk reduction in patients with T2D at moderate cardiovascular risk.",
+      "citationCount": 4,
+      "influentialCitationCount": 0,
+      "referenceCount": 29,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "GLP-1 Receptor Agonists and Cardiovascular Outcomes in Adults with Diabetes and Peripheral Artery Disease: An Updated Systematic Review and Meta-Analysis.",
+      "authors": [
+        "S. Shuja",
+        "M. H. Shuja",
+        "Ayesha Shaukat",
+        "Ramish Hannat",
+        "Ilsa Ahmed",
+        "Siad Adam",
+        "A. Abdelkhalek",
+        "M. I. K. Changez",
+        "Irfan Ullah",
+        "Raheel Ahmed",
+        "Bernardo Cortese"
+      ],
+      "journal": "The American journal of cardiology",
+      "year": 2025,
+      "doi": "10.1016/j.amjcard.2025.09.039",
+      "pmid": "41022246",
+      "s2Id": "280a5a2cd29526eb729cb9ac1633bd4678ee9d12",
+      "abstract": "Glucagon-like peptide-1 receptor agonists (GLP-1 RAs) provide proven cardiovascular benefits in type 2 diabetes mellitus (T2DM) and heart failure, but their effects in patients with peripheral artery disease (PAD) remain unclear. PAD is common in T2DM and increases the risk of adverse cardiovascular and limb outcomes. This meta-analysis assessed the impact of GLP-1 RAs on cardiovascular and limb-related outcomes in patients with T2DM and PAD. A systematic search of PubMed, Cochrane CENTRAL, ScienceDirect, and ClinicalTrials.gov was conducted through May 24, 2025. Primary outcomes included all-cause mortality (ACM) and cardiovascular mortality (CVM). Secondary outcomes were major adverse cardiovascular events (MACE),), myocardial infarction, stroke, major adverse limb events (MALE), glycemic control (HbA1c), body weight, and adverse events. Pooled risk ratios and mean differences were calculated using random-effects models. Six randomized controlled trials, including 7,645 participants met the inclusion criteria. GLP-1 RAs significantly reduced ACM (RR 0.83, 95% CI 0.70-0.99, p = 0.04, I² = 0%), MACE (RR 0.86, 95% CI 0.76-0.98, p = 0.02, I² = 0%), and improved HbA1c (MD -0.72%, p = 0.02), with no significant effect on weight, MALE, CVM, myocardial infarction, or stroke. In conclusion, GLP-1 RAs lower MACE and ACM in patients with T2DM and PAD but do not clearly benefit limb-specific outcomes, highlighting the need for larger, PAD-focused trials to clarify their role in limb protection.",
+      "tldr": "It is concluded that GLP-1 RAs lower MACE and ACM in patients with T2DM and PAD but do not clearly benefit limb-specific outcomes, highlighting the need for larger, PAD-focused trials to clarify their role in limb protection.",
+      "citationCount": 4,
+      "influentialCitationCount": 0,
+      "referenceCount": 25,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Effect of GLP-1 receptor agonists on weight and cardiovascular outcomes: A review",
+      "authors": [
+        "F. Raza",
+        "Rafiya Altaf",
+        "Talha Bashir",
+        "Fatima Asghar",
+        "R. Altaf",
+        "Sohaib Tousif",
+        "A. Goyal",
+        "Aisha Mohammed",
+        "M. F. Mohammad",
+        "Mahfuza Anan",
+        "Sajjad Ali"
+      ],
+      "journal": "Medicine",
+      "year": 2024,
+      "doi": "10.1097/MD.0000000000040364",
+      "pmid": "39496023",
+      "s2Id": "478c41bcc674d53b99f247804f489e02ff1a9f34",
+      "abstract": "Diet and lifestyle modifications remain the foundation of obesity treatment, but they have historically proven insufficient for significant, long-term weight loss. As a result, there is a high demand for new pharmacologic treatments to promote weight loss and prevent life-threatening diseases associated with obesity. Researchers are particularly interested in 1 type of drug, glucagon-like peptide 1 receptor agonists (GLP-1 RAs), because of its promising potential in addressing the limitations of non-pharmacologic treatments. In addition to their role in weight loss, these drugs have shown promising early evidence of cardiovascular benefits in obese patients, further enhancing their clinical relevance. Semaglutide and liraglutide, which were initially approved for the treatment of type 2 diabetes, have since been approved by the Food and Drug Administration as weight loss medications due to their effectiveness in promoting significant and sustained weight loss. In this narrative review, we will explore the mechanism of GLP-1 RAs, their effects on weight loss, cardiovascular risk factors and outcomes, common adverse effects, and strategies for managing these effects.",
+      "tldr": "A narrative review of the mechanism of glucagon-like peptide 1 receptor agonists, their effects on weight loss, cardiovascular risk factors and outcomes, common adverse effects, and strategies for managing these effects is explored.",
+      "citationCount": 7,
+      "influentialCitationCount": 0,
+      "referenceCount": 147,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://doi.org/10.1097/md.0000000000040364",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Association Between the Magnitude of Glycemic Control and Body Weight Loss With GLP-1 Receptor Agonists and Risk of Atherosclerotic Cardiovascular Disease: A Systematic Review and Meta-analyses of Randomized Diabetes Cardiovascular Outcomes Trials",
+      "authors": [
+        "D. Gomes",
+        "J. Presume",
+        "P. de Araújo Gonçalves",
+        "Manuel S. Almeida",
+        "Miguel Mendes",
+        "Jorge Ferreira"
+      ],
+      "journal": "Cardiovascular Drugs and Therapy",
+      "year": 2024,
+      "doi": "10.1007/s10557-024-07547-3",
+      "pmid": "38214869",
+      "s2Id": "9433a70177054985602737673c407c2a436ae936",
+      "tldr": "In T2DM patients, more potent GLP-1 RAs in reducing HbA1c and body weight were associated with greater reductions of MACE, and more potent GLP-1 RAs in reducing HbA1c and body weight were associated with greater reductions of MACE.",
+      "citationCount": 8,
+      "influentialCitationCount": 0,
+      "referenceCount": 45,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Long-Term Cardiovascular Outcomes of Glucagon-Like Peptide-1 (GLP-1) Receptor Agonists in Type 2 Diabetes: A Systematic Review",
+      "authors": [
+        "Salman Tariq",
+        "Mirza Ahmed Ali",
+        "Hafiz Muhammad Hassan Iftikhar",
+        "Muhammad Fareh Ali",
+        "Syed Hashim Ali Shah",
+        "F. Perveen",
+        "Tahir Zaman"
+      ],
+      "journal": "Cureus",
+      "year": 2024,
+      "doi": "10.7759/cureus.73705",
+      "pmid": "39568487",
+      "s2Id": "5b3f1cdd6c0d66bd0ee36695195f74fbccdfc445",
+      "abstract": "Glucagon-like peptide-1 receptor agonists (GLP-1 RAs) have emerged as a promising class of medications for type 2 diabetes (T2D) management. While their glucose-lowering effects are well-established, their long-term impact on cardiovascular outcomes remains a subject of ongoing research and debate. This systematic review aims to assess the long-term cardiovascular effects of GLP-1 RAs in adults with T2D compared to placebo, standard care, or other glucose-lowering medications. We systematically searched PubMed, Embase, and the Cochrane Library for randomized controlled trials (RCTs) and observational studies published from database inception to April 2024. Two independent reviewers screened the studies and extracted the data. The primary outcome was major adverse cardiovascular events (MACE), a composite of cardiovascular death, non-fatal myocardial infarction (MI), and non-fatal stroke. Secondary outcomes included individual components of MACE, hospitalization for heart failure, and all-cause mortality. We included 15 studies (eight RCTs and seven observational studies) involving over 180,000 participants. GLP-1 RAs were associated with a significant reduction in MACE compared to placebo or standard care (risk ratio: 0.88, 95% CI: 0.82-0.94, p<0.001). GLP-1 RAs also demonstrated superior cardiovascular protection compared to DPP-4 inhibitors and sulfonylureas. The benefits were particularly pronounced in reducing the risk of stroke and MI. Notably, some studies found larger cardiovascular benefits in frail patients. The effects on heart failure outcomes were mixed, with potential attenuated benefits in patients with baseline heart failure. GLP-1 RAs also showed promising effects on renal outcomes and metabolic parameters. The quality of evidence ranged from moderate to high across outcomes. This systematic review provides strong evidence that GLP-1 RAs offer significant cardiovascular benefits in adults with T2D, particularly in reducing MACE, stroke, and MI. The findings support current guidelines recommending GLP-1 RAs as preferred agents in patients with established cardiovascular disease or high cardiovascular risk. However, the variability in effects across different patient subgroups underscores the need for personalized treatment approaches. Future research should focus on head-to-head comparisons between different GLP-1 RAs, long-term follow-up studies, and investigation of combination therapies to further optimize the use of these agents in clinical practice.",
+      "tldr": "There is strong evidence that GLP-1 RAs offer significant cardiovascular benefits in adults with T2D, particularly in reducing MACE, stroke, and MI, and the findings support current guidelines recommending GLP-1 RAs as preferred agents in patients with established cardiovascular disease or high cardiovascular risk.",
+      "citationCount": 4,
+      "influentialCitationCount": 0,
+      "referenceCount": 45,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Effects of GLP-1 receptor agonists on kidney and cardiovascular disease outcomes: a meta-analysis of randomised controlled trials.",
+      "authors": [
+        "S. Badve",
+        "A. Bilal",
+        "Matthew M Y Lee",
+        "N. Sattar",
+        "H. Gerstein",
+        "Christian T. Ruff",
+        "John J. V. McMurray",
+        "P. Rossing",
+        "G. Bakris",
+        "Kenneth W Mahaffey",
+        "J. F. Mann",
+        "H. Colhoun",
+        "K. Tuttle",
+        "R. Pratley",
+        "V. Perkovic"
+      ],
+      "journal": "The lancet. Diabetes & endocrinology",
+      "year": 2024,
+      "doi": "10.1016/s2213-8587(24)00271-7",
+      "pmid": "39608381",
+      "s2Id": "976f8e7244a381e653779b0508b853d79bd140df",
+      "abstract": "BACKGROUND\nGLP-1 receptor agonists reduce the risk of major adverse cardiovascular events (MACE) and can also have kidney benefits. However, whether GLP-1 receptor agonists improve clinically important kidney outcomes remains uncertain. We aimed to comprehensively assess the effects of GLP-1 receptor agonists on kidney and cardiovascular disease outcomes by performing a meta-analysis of randomised controlled trials.\n\n\nMETHODS\nFor this meta-analysis, we searched MEDLINE, Embase, and the Cochrane Central Register of Controlled Trials for randomised controlled trials that included at least 500 participants with type 2 diabetes, compared a GLP-1 receptor agonist with placebo with at least 12 months of follow-up, and reported a primary clinical kidney or cardiovascular outcome, from database inception to March 26, 2024. Post hoc, we included the SELECT trial (NCT03574597), which enrolled participants with cardiovascular disease and a BMI of 27 kg/m2 or more without diabetes. Study-level summary data were extracted independently by two authors for inclusion in this random-effects analysis. The main kidney outcome was a composite outcome, consisting of kidney failure (kidney replacement therapy or a persistent estimated glomerular filtration rate [eGFR] <15 mL/min per 1·73 m2), a sustained reduction in eGFR by at least 50% or the nearest equivalent, or death from kidney failure. The main cardiovascular outcome was MACE, consisting of cardiovascular death, non-fatal myocardial infarction, or non-fatal stroke. This study is registered with PROSPERO, CRD42024528864.\n\n\nFINDINGS\nOf the 5140 records identified through the literature search, 11 trials, involving 85 373 participants (29 386 female, 55 987 male), were included in the meta-analysis. In participants with type 2 diabetes (67 769), GLP-1 receptor agonists reduced the composite kidney outcome by 18% compared with placebo (hazard ratio [HR] 0·82, 95% CI 0·73-0·93; I2 =26·41%), kidney failure by 16% (HR 0·84, 0·72-0·99; I2 =0%), MACE by 13% (HR 0·87, 0·81-0·93; I2 =49·75%), and all-cause death by 12% (HR 0·88, 0·83-0·93; I2 =0%). The effect on the composite kidney outcome (HR 0·81, 95% CI 0·72-0·92; I2 =23·11%), kidney failure (HR 0·84, 0·72-0·98; I2 =0%), MACE (HR 0·86, 0·80-0·92; I2 =48·9%), and all-cause death (HR 0·87, 0·82-0·91; I2 =0%) was similar when the SELECT trial was included, with no evidence of heterogeneity between this trial and those including participants with type 2 diabetes (pheterogeneity >0·05). There was no difference in the risk of serious adverse events, including acute pancreatitis and severe hypoglycaemia, between the GLP-1 receptor agonist and placebo groups (risk ratio [RR] 0·95, 95% CI 0·90-1·01; I2 =88·5%). However, treatment discontinuation due to adverse events occurred more frequently in the GLP-1 receptor agonist groups (RR 1·51, 95% CI 1·18-1·94; I2 =96·3%).\n\n\nINTERPRETATION\nWe found evidence that GLP-1 receptor agonists significantly reduce clinically important kidney events, kidney failure, and cardiovascular events.\n\n\nFUNDING\nNone.",
+      "tldr": "Evidence is found that GLP-1 receptor agonists significantly reduce clinically important kidney events, kidney failure, and cardiovascular events.",
+      "citationCount": 138,
+      "influentialCitationCount": 9,
+      "referenceCount": 48,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Cardiovascular, Kidney, and Safety Outcomes With GLP-1 Receptor Agonists Alone and in Combination With SGLT2 Inhibitors in Type 2 Diabetes: A Systematic Review and Meta-Analysis",
+      "authors": [
+        "B. Neuen",
+        "R. Fletcher",
+        "L. Heath",
+        "A. Perkovic",
+        "M. Vaduganathan",
+        "S. Badve",
+        "Katherine R. Tuttle",
+        "R. Pratley",
+        "H. Gerstein",
+        "V. Perkovic",
+        "Hiddo J. L. Heerspink"
+      ],
+      "journal": "Circulation",
+      "year": 2024,
+      "doi": "10.1161/CIRCULATIONAHA.124.071689",
+      "pmid": "39210781",
+      "s2Id": "a1fe7238f0da84c31cd3fed6636a9a66bb83d513",
+      "abstract": "BACKGROUND: GLP-1 (glucagon-like peptide-1) receptor agonists and SGLT2 (sodium-glucose cotransporter 2) inhibitors both improve cardiovascular and kidney outcomes in people with type 2 diabetes. We conducted a systematic review and meta-analysis to assess the effects of GLP-1 receptor agonists on clinical outcomes with and without SGLT2 inhibitors. METHODS: We searched MEDLINE and Embase databases from inception until July 12, 2024, for randomized, double-blind, placebo-controlled outcome trials of GLP-1 receptor agonists in type 2 diabetes that reported treatment effects by baseline use of SGLT2 inhibitors, with findings supplemented by unpublished data. We estimated treatment effects by baseline SGLT2 inhibitor use using inverse variance-weighted meta-analysis. The main cardiovascular outcomes were major adverse cardiovascular events (nonfatal myocardial infarction, stroke, or cardiovascular death) and hospitalization for heart failure. Kidney outcomes included a composite of ≥50% reduction in estimated glomerular filtration rate, kidney failure or death caused by kidney failure, and annualized rate of decline in estimated glomerular filtration rate (estimated glomerular filtration rate slope). Serious adverse events and severe hypoglycemia were also evaluated. This meta-analysis was registered on the International Prospective Register of Systematic Reviews (PROSPERO; CRD42024565765). RESULTS: We identified 3 trials with 1743 of 17 072 (10.2%) participants with type 2 diabetes receiving an SGLT2 inhibitor at baseline. GLP-1 receptor agonists reduced the risk of major adverse cardiovascular events by 21% (hazard ratio [HR], 0.79 [95% CI, 0.71–0.87]), with consistent effects in those receiving and not receiving SGLT2 inhibitors at baseline (HR, 0.77 [95% CI, 0.54–1.09] and HR, 0.79 [95% CI, 0.71–0.87], respectively; P-heterogeneity=0.78). The effect on hospitalization for heart failure was similarly consistent regardless of SGLT2 inhibitor use (HR, 0.58 [95% CI, 0.36–0.93] and HR, 0.73 [95% CI, 0.63–0.85]; P-heterogeneity=0.26). Effects on the composite kidney outcome (risk ratio, 0.79 [95% CI, 0.66–0.95]) and estimated glomerular filtration rate slope (0.78 mL/min/1.73 m2/y [95% CI, 0.57–0.98]) also did not vary according to SGLT2 inhibitor use (P-heterogeneity=0.53 and 0.94, respectively). Serious adverse effects and severe hypoglycemia were also similar regardless of SGLT2 inhibitor use (P-heterogeneity=0.29 and 0.50, respectively). CONCLUSIONS: In people with type 2 diabetes, the cardiovascular and kidney benefits of GLP-1 receptor agonists are consistent regardless of SGLT2 inhibitor use.",
+      "tldr": "In people with type 2 diabetes, the cardiovascular and kidney benefits of GLP-1 receptor agonists are consistent regardless of SGLT2 inhibitor use.",
+      "citationCount": 70,
+      "influentialCitationCount": 2,
+      "referenceCount": 26,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://www.ahajournals.org/doi/pdf/10.1161/CIRCULATIONAHA.124.071689",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Cardiovascular and kidney outcomes of GLP‐1 receptor agonists in adults with obesity: A target trial emulation study",
+      "authors": [
+        "Huilin Tang",
+        "Yiwen Lu",
+        "Bingyu Zhang",
+        "Ting Zhou",
+        "Dazheng Zhang",
+        "Jiajie Chen",
+        "Yong Chen",
+        "David A. Asch",
+        "Yong Chen"
+      ],
+      "journal": "Diabetes, Obesity & Metabolism",
+      "year": 2025,
+      "doi": "10.1111/dom.70054",
+      "pmid": "40874398",
+      "s2Id": "13f6dc39da478256d024606becbae6c3a1f0ba4a",
+      "abstract": "Glucagon‐like peptide‐1 receptor agonists (GLP‐1RAs) provide cardiovascular and renal benefits in type 2 diabetes, but their real‐world effects in individuals with obesity without diabetes are unclear. This study aimed to evaluate the cardiovascular and kidney outcomes of GLP‐1RAs versus other anti‐obesity medications (AOMs) in adults with obesity.",
+      "tldr": "This study aimed to evaluate the cardiovascular and kidney outcomes of GLP‐1RAs versus other anti‐obesity medications (AOMs) in adults with obesity.",
+      "citationCount": 2,
+      "influentialCitationCount": 0,
+      "referenceCount": 39,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    }
+  ],
+  "total": 2428
+}

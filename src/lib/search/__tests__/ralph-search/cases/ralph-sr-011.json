@@ -1,0 +1,44 @@
+{
+  "id": "ralph-sr-011",
+  "name": "Synthesis — Summary mode on SGLT2i papers",
+  "phase": 3,
+  "category": "synthesis",
+  "query": "What are the effects of SGLT2 inhibitors on heart failure outcomes?",
+  "expectedPapers": [
+    {
+      "titleFragment": "sglt2",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "heart failure",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "meta-analysis",
+      "mustFind": false
+    }
+  ],
+  "rankingRules": [
+    {
+      "rule": "High evidence (I-II) should outnumber low evidence (IV-V) in top 10",
+      "check": "higher_level_outnumbers_lower",
+      "params": { "n": 10 }
+    }
+  ],
+  "metadataChecks": [
+    {
+      "check": "all_have_doi",
+      "threshold": 0.85
+    },
+    {
+      "check": "has_abstract",
+      "threshold": 0.7
+    }
+  ],
+  "dedupChecks": [
+    {
+      "titleFragments": ["genitourinary tract infections and sglt2 inhibitors", "sglt2 inhibitors and mechanisms of cardiovascular benefit"],
+      "maxOccurrences": 1
+    }
+  ]
+}
