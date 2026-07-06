@@ -1,0 +1,380 @@
+/* Members / Team screen — frozen skin (docs/design/design.md): tokens only,
+   hairline borders, no shadows/gradients, serif title, sans body, mono numbers,
+   Lucide icons, motion on transform/opacity only. */
+
+.stage {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 32px 64px;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
+.title {
+  margin: 6px 0 0;
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: -0.3px;
+  color: var(--ink);
+}
+
+.lead {
+  margin: 8px 0 0;
+  max-width: 68ch;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink3);
+}
+
+/* Banners */
+.warn,
+.okBanner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 11px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.warn {
+  border: 1px solid var(--excln);
+  background: var(--excbg);
+  color: var(--exc);
+}
+
+.okBanner {
+  border: 1px solid var(--incln);
+  background: var(--incbg);
+  color: var(--inc);
+}
+
+/* Cards */
+.card {
+  margin-top: 22px;
+  padding: 16px 18px 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+}
+
+.table {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 4px;
+  border-top: 1px solid var(--line2);
+}
+
+.row:first-child {
+  border-top: none;
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--active);
+  color: var(--ink3);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  user-select: none;
+}
+
+.aiAvatar {
+  background: var(--accentbg);
+  color: var(--accent);
+}
+
+.who {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.email {
+  margin-top: 1px;
+  font-size: 12px;
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.you {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 1px 5px;
+}
+
+.aiTag {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  background: var(--accentbg);
+  border: 1px solid var(--accentln);
+  border-radius: 5px;
+  padding: 1px 5px;
+}
+
+/* Role display */
+.roleCell {
+  flex-shrink: 0;
+  min-width: 148px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.roleBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink2);
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--rail);
+}
+
+.roleSelect {
+  font-family: var(--sans);
+  font-size: 12.5px;
+  color: var(--ink);
+  padding: 6px 9px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--paper);
+}
+
+.roleSelect:disabled {
+  opacity: 0.55;
+}
+
+/* Status pills */
+.pendPill,
+.okPill {
+  flex-shrink: 0;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.03em;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.pendPill {
+  color: var(--may);
+  background: var(--maybg);
+  border: 1px solid var(--mayln);
+}
+
+.okPill {
+  color: var(--inc);
+  background: var(--incbg);
+  border: 1px solid var(--incln);
+}
+
+/* Buttons */
+.iconBtn {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--paper);
+  color: var(--ink3);
+  transition: background var(--motion-micro) var(--ease-inout);
+}
+
+.iconBtn:hover:not(:disabled) {
+  background: var(--excbg);
+  color: var(--exc);
+  border-color: var(--excln);
+}
+
+.iconBtn:disabled {
+  opacity: 0.4;
+}
+
+.iconSpacer {
+  flex-shrink: 0;
+  width: 30px;
+}
+
+.inkBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: 1px solid var(--ink);
+  border-radius: 8px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background var(--motion-micro) var(--ease-inout);
+}
+
+.inkBtn:hover:not(:disabled) {
+  background: var(--ink2);
+}
+
+.inkBtn:disabled {
+  opacity: 0.45;
+}
+
+.ghostBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 13px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink2);
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background var(--motion-micro) var(--ease-inout);
+}
+
+.ghostBtn:hover:not(:disabled) {
+  background: var(--active);
+}
+
+.ghostBtn:disabled {
+  opacity: 0.45;
+}
+
+.aiActions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Invite form */
+.inviteForm {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.input {
+  flex: 1 1 220px;
+  min-width: 180px;
+  font-family: var(--sans);
+  font-size: 13.5px;
+  color: var(--ink);
+  padding: 8px 11px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.input:focus {
+  border-color: var(--ink3);
+  outline: none;
+}
+
+.hint {
+  margin: 10px 2px 0;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+/* One-time invite-link reveal */
+.linkReveal {
+  margin-top: 14px;
+  padding: 13px 14px;
+  border: 1px solid var(--accentln);
+  border-radius: 10px;
+  background: var(--accentbg);
+}
+
+.linkLabel {
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--ink3);
+}
+
+.linkRow {
+  margin-top: 9px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.linkCode {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--ink2);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 7px 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .stage {
+    padding: 24px 18px 56px;
+  }
+  .roleCell {
+    min-width: auto;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .iconBtn,
+  .inkBtn,
+  .ghostBtn {
+    transition: none;
+  }
+}

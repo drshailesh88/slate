@@ -336,4 +336,68 @@ later task.
   Neon privilege-wall roles is the founder step, so the seeded shell renders in
   the app only after that.
 
+### The Members/Team screen + invitation security model (T7 · ★ security-sensitive)
+
+The per-review Team screen (`/[reviewId]/members`) and its invitation flow. Net-new
+(the precursor had only a `team-progress` readout). All state changes are
+server-authoritative, owner-gated, and audited.
+
+- **Feature module** `src/lib/sr/members/**` — grouped by feature, not type:
+  - `roles.ts` (pure) — the five per-review roles, labels, capability one-liners
+    (FOUNDATION §1), display order.
+  - `token.ts` — invite-token minting via `node:crypto`. 256-bit random token;
+    only its **SHA-256 hash** is persisted (`review_invitations.tokenHash`), never
+    the token. Lookup is by hash against the UNIQUE column → non-enumerable.
+  - `invitation-policy.ts` (pure) — `evaluateInviteForAccept` enforces the three
+    token guarantees together: **single-use** (status must be `pending`),
+    **expiring** (short TTL, `expiresAt`), **email-bound** (normalized-email match).
+    Plus rate-limit + email-format decisions. Exhaustively unit-tested.
+  - `errors.ts` — typed `MemberActionError`s (owner-required 403, rate-limited 429,
+    last-owner 409, invitation-invalid 404/410, AI-validation-required 422, …),
+    each with a `.status` for the route boundary.
+  - `service.ts` — the owner-gated, audited DB operations. Reads VISIBLE tables
+    only (never the three blinded base tables). Every mutation writes `audit_log`.
+- **Accept is single-use WITHOUT interactive transactions.** The runtime driver is
+  neon-http (the codebase invariant: "single idempotent statement", no
+  `SELECT … FOR UPDATE`). `acceptInvitation` therefore enforces no-double-accept
+  with an **atomic conditional UPDATE (compare-and-swap)**:
+  `UPDATE … SET status='accepted' WHERE id=$ AND status='pending' AND expiresAt > now() RETURNING …`.
+  The row transitions `pending → accepted` in ONE statement; two concurrent accepts
+  race on that row, exactly one sees a RETURNING row, the loser sees zero and is
+  refused. This is an equal-or-stronger single-accept guarantee than row locking.
+  Follow-on writes (supersede prior pending invites, upsert the member active,
+  audit) are idempotent + forward-only. If a future task adds a genuine multi-write
+  transaction need, use `@neondatabase/serverless` `Pool` (Node 22 has native
+  `WebSocket`; set `neonConfig.webSocketConstructor` for Node ≤ 21) — do NOT weaken
+  the CAS gate.
+- **Roles are enforced server-side.** `assertOwner(actor)` gates every mutation on
+  `actor.member.role === 'owner'` (the LIVE `review_members` role from
+  `requireMember`, never a client flag). A non-owner gets 403. Demoting/revoking the
+  **last active owner** is refused (409) so a review is never orphaned.
+- **Arbitrator independence is enforced at role assignment.** Promoting/adding a
+  user to `arbitrator` calls `assertArbitratorIndependentForReview` (new, review-wide
+  analog of `assertArbitratorIndependent`, added to the wall-allowed
+  `src/lib/sr/authz/arbitrator.ts`) — refuses (422) if the user authored ANY
+  screening/extraction/RoB row in the review, read only through the audited
+  `sr_read_*` definer functions, disclosing just a boolean about the assignee.
+- **Add-existing-member** (no token) attaches a user who already has a Neon `users`
+  row (WorkOS org members sync in via T4) directly as `active`; **email invite**
+  is for people without an account yet.
+- **Invite email is a surfaced side effect, never silent.** No email provider is
+  wired, so `createEmailInvitation` returns the raw token ONCE and the screen shows
+  the invite link for the owner to send manually (FOUNDATION §7).
+- **AI-member row** renders in the members table with **Validate / Activate**. The
+  recall-validation GATE lands in M3 (T14); here Activate REFUSES (422) unless a
+  passing `ai_validations` row already exists — so **AI can never screen
+  unvalidated** — and Validate is a wired, audited stub pointing at the M3 flow.
+- **Accept route** `src/app/api/sr/invitations/accept/route.ts` (POST, SR's own
+  API namespace) + landing page `systematic-review/invite/[token]` (outside the
+  `[reviewId]` layout — the invitee is not a member yet). Server actions in
+  `[reviewId]/members/actions.ts` re-resolve `requireMember` (defense in depth) and
+  surface known action/authz errors (owner-required, arbitrator-refused,
+  rate-limited) as warnings rather than 500s.
+- **Browser-verify needs live Neon** (members reads the DB via `requireMember` +
+  `getReviewTeam`); the accept landing page renders without a DB. Full data path
+  waits on the founder's Neon role provisioning + `pnpm sr:seed`.
+
 - Add durable project-specific notes here as they are discovered through real work.

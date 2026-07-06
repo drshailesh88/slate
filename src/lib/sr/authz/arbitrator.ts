@@ -63,3 +63,52 @@ export async function assertArbitratorIndependent(
     throw new ArbitratorIndependenceError();
   }
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Review-wide arbitrator independence — the Members/Team screen (T7) assigns the
+// review-wide `arbitrator` ROLE, not a per-study arbitration. A user who has
+// authored ANY screening / extraction / RoB row on ANY study in the review is
+// not a neutral arbitrator (they would be adjudicating conflicts on studies they
+// themselves reviewed). This is the same disclosure posture as the per-study
+// check: it reads participation ONLY through the audited definer functions and
+// discloses just a single boolean about the assignee.
+// ─────────────────────────────────────────────────────────────────────────────
+
+type ReviewParticipationArgs = { reviewId: string; userId: string };
+
+// True if `userId` authored ANY blinded row (screening / extraction / RoB) on
+// ANY study within `reviewId`. Same legal read path as hasStudyParticipation,
+// with the study filter dropped.
+export async function hasReviewParticipation({
+  reviewId,
+  userId,
+}: ReviewParticipationArgs): Promise<boolean> {
+  const db = getDb();
+  const result = await db.execute<{ found: number }>(sql`
+    SELECT 1 AS found
+    FROM sr_read_screening_decisions(${reviewId})
+    WHERE reviewer_id = ${userId}
+    UNION ALL
+    SELECT 1 AS found
+    FROM sr_read_extraction_entries(${reviewId})
+    WHERE reviewer_id = ${userId}
+    UNION ALL
+    SELECT 1 AS found
+    FROM sr_read_rob_assessments(${reviewId})
+    WHERE reviewer_id = ${userId}
+    LIMIT 1
+  `);
+
+  return result.rows.length > 0;
+}
+
+// Refuse to give `userId` the review-wide arbitrator role if they have reviewed
+// any study in the review. Throws ArbitratorIndependenceError (422). Call BEFORE
+// writing the role assignment.
+export async function assertArbitratorIndependentForReview(
+  args: ReviewParticipationArgs,
+): Promise<void> {
+  if (await hasReviewParticipation(args)) {
+    throw new ArbitratorIndependenceError();
+  }
+}

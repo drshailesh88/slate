@@ -174,5 +174,7 @@ export {
 } from './errors';
 export {
   assertArbitratorIndependent,
+  assertArbitratorIndependentForReview,
+  hasReviewParticipation,
   hasStudyParticipation,
 } from './arbitrator';
