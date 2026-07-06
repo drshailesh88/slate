@@ -336,4 +336,46 @@ later task.
   Neon privilege-wall roles is the founder step, so the seeded shell renders in
   the app only after that.
 
+### The create-review wizard (T8 — SCREEN-SPECS §1)
+
+`/systematic-review/new` (`src/app/(app)/systematic-review/new/`) — the 3-step
+wizard the SR home links to. Flag-gated (404s when SR is off), additive, renders
+in the global app shell (NOT the review-context layout — there is no reviewId
+yet).
+
+- **Steps:** ① **Info** (title, review type, staffing mode) → ② **Import**
+  (informational + skippable — real import happens on the review's Import screen
+  once it exists) → ③ **Team** (optional email + per-review-role invite rows).
+  The wizard is a client component (`create-review-wizard.tsx`) holding all
+  state; step transitions use the Orient entrance (tokens only).
+- **Blind Mode is locked ON, not a toggle.** Every review is created with all
+  three firewall phases (`screeningPhase`/`extractionPhase`/`robPhase`) hard-set
+  to `independent` in `createReview` — there is no input that can start a review
+  in `reconcile`. The wizard shows a non-interactive "Blind Mode — On" strip.
+- **`reviewMode` (`two_reviewer` | `ai_co_reviewer`) is chosen here and stated
+  FACTUALLY** — copy lives in `src/lib/sr/review-modes.ts`; `ai_co_reviewer`
+  shows ONE informational line (AI is recall-validated + blinded like a human),
+  never a rigor scold. `review-modes.test.ts` asserts the copy against a scold
+  regex so the wording can't regress.
+- **Persistence core** `src/lib/sr/create-review.ts` (`createReview`,
+  `validateCreateReviewInput`) is UI/auth-free and unit-tested at the `getDb()`
+  boundary (`create-review.test.ts`): a review + the creator's **active owner**
+  `review_members` row + an `audit_log` entry, plus any Step-3 rows as **pending
+  `review_invitations`** (hashed single-use token via `src/lib/sr/invitations.ts`
+  — only the SHA-256 hash is stored; delivery + acceptance are a later
+  Members/Team task, so they land `pending`). neon-http has no interactive
+  transactions, so writes are ordered review → owner → audit → invitations.
+- **Server action** `new/actions.ts` (`createReviewAction`) owns the trust
+  boundary the core does not: flag gate, session → JIT-provisioned creator
+  (`upsertUserFromWorkOs`), and org scope — the creator must be an **active
+  member of a WorkOS org** (`getActiveOrgContext().organizationId`, else
+  `OrgScopeError`). Dev-bypass attaches the review to the same demo org the seed
+  uses (`org_dev_demo`). On success it `redirect()`s (outside the try) to
+  `/systematic-review/[reviewId]`; validation/authz failures return an
+  actionable message the wizard shows.
+- **DB caveat:** end-to-end create needs a live Neon `DATABASE_URL` (the runtime
+  neon-http driver can't talk to a plain local Postgres), which is a founder
+  step — so the create→redirect path is proven by unit tests + build, and the
+  wizard UI/skin is browser-verified under dev-bypass.
+
 - Add durable project-specific notes here as they are discovered through real work.
