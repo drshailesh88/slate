@@ -3,6 +3,7 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { AcademicResultCard } from '../academic-result-card';
 import { JournalQuartileBadge } from '../journal-quartile-badge';
+import badgeStyles from '../journal-quartile-badge.module.css';
 import { formatCitation } from '../format-citation';
 import type { UnifiedSearchResult } from '@/types/search';
 
@@ -33,14 +34,32 @@ describe('JournalQuartileBadge', () => {
     expect(container).toBeEmptyDOMElement();
   });
 
-  it('renders Q1 and Q2 as top-tier text', () => {
-    render(<JournalQuartileBadge quartile="Q1" />);
-    expect(screen.getByText('Q1')).toBeInTheDocument();
+  it.each([
+    ['Q1', 'topTier'],
+    ['Q2', 'topTier'],
+    ['Q3', 'lowerTier'],
+    ['Q4', 'lowerTier'],
+  ] as const)('applies the %s tier class for %s', (quartile, tierKey) => {
+    render(<JournalQuartileBadge quartile={quartile} />);
+    const badge = screen.getByText(quartile);
+
+    expect(badge.className).toContain(badgeStyles[tierKey]);
   });
 
-  it('renders Q3 and Q4 as lower-tier text', () => {
-    render(<JournalQuartileBadge quartile="Q4" />);
-    expect(screen.getByText('Q4')).toBeInTheDocument();
+  it('applies the top-tier class (not the lower-tier class) for Q1', () => {
+    render(<JournalQuartileBadge quartile="Q1" />);
+    const badge = screen.getByText('Q1');
+
+    expect(badge.className).toContain(badgeStyles.topTier);
+    expect(badge.className).not.toContain(badgeStyles.lowerTier);
+  });
+
+  it('applies the lower-tier class (not the top-tier class) for Q3', () => {
+    render(<JournalQuartileBadge quartile="Q3" />);
+    const badge = screen.getByText('Q3');
+
+    expect(badge.className).toContain(badgeStyles.lowerTier);
+    expect(badge.className).not.toContain(badgeStyles.topTier);
   });
 });
 
