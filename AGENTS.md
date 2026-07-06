@@ -256,4 +256,40 @@ WorkOS identity/orgs. Contract source: `FOUNDATION-auth-tenancy.md` §4.
   no-resurrect guard. It matches `FOUNDATION-auth-tenancy.md` §3's `users` shape;
   the founder-locked PK model is untouched.
 
+### The adversarial blinding suite (T6 — the M1 EXIT GATE)
+
+The blinding foundation is proven airtight by an **adversarial** suite: every
+test is a genuine attack that primes the DB so a co-reviewer's row is physically
+present, then proves that value cannot escape through the channel under test
+during `independent`. Nine channel-classes, each with a reconcile-phase positive
+control (so no assertion passes vacuously):
+
+1. direct read · 2. aggregate/progress · 3. export · 4. full-text search ·
+2. cached counters · 6. reconciliation view · 7. admin/owner preview ·
+3. phase-transition window (TOCTOU) · 9. DB-privilege backstop.
+
+- **Logic attacks (channels 1–8 + the aggregate/progress half of 2):**
+  `src/lib/sr/authz/blinding-adversarial.test.ts` — attacks THROUGH the
+  chokepoint public API (`getScreeningDecisions`/`getExtractionEntries`/
+  `getRobAssessments`/`getScreeningTally`/`getSafeProgress`), never by importing
+  the blinded tables.
+- **Structural guard (channel 2 structural + channel 9 fast proxy):**
+  `src/lib/sr/authz/blinding-wall-guard.test.ts` — a runtime scan asserting no
+  blinded-table read path exists in `src/` outside `db/schema/**` + `sr/authz/**`,
+  plus a static check that `0002_sr_privilege_wall.sql` still REVOKEs SELECT and
+  grants only INSERT/UPDATE to `slate_runtime`.
+- **DB-privilege proof (channel 9, real Postgres):** `pnpm test:blinded-wall`
+  (`scripts/test-blinded-wall.sh`) stands up throwaway Postgres (no Docker/Neon,
+  needs `postgresql@16`) and proves runtime `SELECT`/`COUNT` on each of the three
+  blinded tables is denied while the SECURITY DEFINER readers return rows.
+
+**Run it:** `pnpm test` (the Vitest suite, incl. both blinding files) **and**
+`pnpm test:blinded-wall` (the DB wall). Both must be green.
+
+**This is the M1 exit gate: no SR screen work starts until it passes.** The
+suite re-runs against every ★ blinding-bearing screen (T12 screening, T15
+extraction, T16 RoB) — a screen is not "done" until these side-channel attacks
+pass on it. If any attack ever leaks, that is a genuine breach + invalidated
+science: fix the boundary, never weaken the test.
+
 - Add durable project-specific notes here as they are discovered through real work.
