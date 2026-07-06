@@ -1,0 +1,7 @@
+# frozen design authority — never reformat
+docs/design/
+
+.next/
+node_modules/
+pnpm-lock.yaml
+drizzle/
