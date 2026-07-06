@@ -1,0 +1,20 @@
+/* SR module frame: rail + canvas, filling the app content area. The global app
+   shell (sidebar/topbar) is untouched — this is a second panel inside it. */
+
+.module {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  flex: 1;
+  min-height: 0;
+}
+
+.canvas {
+  min-width: 0;
+  overflow-y: auto;
+}
+
+@media (max-width: 767px) {
+  .module {
+    grid-template-columns: 1fr;
+  }
+}
