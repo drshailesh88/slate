@@ -63,4 +63,58 @@ foundation (shell + Home) landed as the genesis on `main`.
   (not `<body>`) — token vars in `:root` reference them, and var() chains
   resolve against `:root`.
 
+## Systematic-Review (SR) module
+
+The SR module ships on the long-lived integration branch `feat/systematic-review`
+(merges to `main` only at the founder gate), not directly to `main`.
+
+### Schema location
+
+- SR Drizzle schema lives under `src/lib/db/schema/`:
+  - `sr-enums.ts` — all SR pgEnums (shared, no table imports → no cycle).
+  - `sr.ts` — visible tables (`organizations`, `reviews`, `review_members`,
+    `review_invitations`, `studies`, `ai_validations`, `workos_events`,
+    `audit_log`) + re-exports the enums and the blinded tables.
+  - `sr-blinded.ts` — the **three blinded base tables**: `screening_decisions`,
+    `extraction_entries`, `rob_assessments`.
+- The single barrel line `export * from './schema/sr'` in `src/lib/db/schema.ts`
+  wires SR into the drizzle client + drizzle-kit. `users` is unchanged (internal
+  `uuid` PK + `workos_user_id` unique, founder-locked); `review_members.userId`
+  FKs `users.id`.
+- Migrations: `0001_late_viper.sql` (additive tables) and
+  `0002_sr_privilege_wall.sql` (the two-role wall, authored as a drizzle-kit
+  `--custom` migration so the journal/snapshot stay consistent).
+
+### The blinding privilege-wall invariant (science- + security-critical)
+
+- Two Postgres roles: **`slate_migrator`** (DDL/definer, retains SELECT on the
+  blinded tables, owns the reader functions) and **`slate_runtime`** (the app —
+  has INSERT/UPDATE but **NO SELECT** on the three blinded tables). A stray
+  Drizzle SELECT from the runtime role fails at the DB with `permission denied`.
+- The only read path is the audited `SECURITY DEFINER` functions
+  `public.sr_read_{screening_decisions,extraction_entries,rob_assessments}(uuid)`
+  (search_path pinned to `pg_catalog`). The blinding chokepoint (T2, future
+  `src/lib/sr/authz/**`) is their only intended caller; aggregates are blinded
+  data and must be computed inside the chokepoint.
+- **Founder step:** applying to live Neon requires provisioning the two roles via
+  the Neon console/API and pointing the runtime `DATABASE_URL` at `slate_runtime`.
+  The migration's role-creation `DO` blocks no-op if the roles already exist.
+- Acceptance test: `pnpm test:blinded-wall` (`scripts/test-blinded-wall.sh`)
+  stands up a throwaway local Postgres (no Docker/Neon), applies 0000–0002, and
+  proves runtime `SELECT`/`COUNT` on each blinded table is denied while the
+  definer path reads. Needs the `postgresql@16` binaries (auto-detected).
+
+### Guard mechanism (later crewmates physically cannot regress the wall)
+
+Three layers keep the blinded tables from being read outside `src/lib/sr/authz/**`:
+
+1. **ESLint** `no-restricted-imports` (`eslint.config.mjs`) forbids importing
+   `screeningDecisions`/`extractionEntries`/`robAssessments` outside the schema
+   definition and `src/lib/sr/authz/**`.
+2. **CI grep** `pnpm check:blinded-wall` (`scripts/check-blinded-wall.mjs`, run by
+   `.github/workflows/blinded-wall.yml`) fails the build if any blinded table
+   symbol or DB name appears outside those two locations.
+3. **CODEOWNERS** (`.github/CODEOWNERS`) reserves `sr-blinded.ts`,
+   `src/lib/sr/authz/**`, and the wall migration/scripts.
+
 - Add durable project-specific notes here as they are discovered through real work.

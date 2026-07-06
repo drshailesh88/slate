@@ -11,7 +11,9 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "db:generate": "drizzle-kit generate",
-    "db:migrate": "node scripts/migrate.mjs"
+    "db:migrate": "node scripts/migrate.mjs",
+    "check:blinded-wall": "node scripts/check-blinded-wall.mjs",
+    "test:blinded-wall": "bash scripts/test-blinded-wall.sh"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.1.0",
