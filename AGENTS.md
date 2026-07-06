@@ -336,4 +336,51 @@ later task.
   Neon privilege-wall roles is the founder step, so the seeded shell renders in
   the app only after that.
 
+### Import + dedup (T9 — `/[reviewId]/import`)
+
+Bring references into a review and deduplicate them **reversibly**. Ported the
+precursor's ledger/queue math and UI; rebuilt persistence server-side.
+
+- **Schema (migration `0004_loose_meltdown.sql`, additive):** new
+  `import_batches` table (one row per import action; `undoneAt` marks it undone
+  **without deleting studies** — reversible, never a silent drop) + four columns
+  on `studies`: `batch_id` (FK), `dupe_status` (`sr_dupe_status`:
+  unique/auto_merged/needs_review/merged/kept), `dupe_of_study_id` (self-FK to
+  the kept original), `dupe_matched_on` (jsonb `string[]`). New enums
+  `sr_dupe_status` + `sr_import_target` in `sr-enums.ts`. Pre-T9 rows default to
+  `unique` (stay in the pool).
+- **Pure math** `src/lib/sr/import.ts` — ported `deriveImportLedger` /
+  `deriveDupeQueue` (near-verbatim, retyped to a DB-fed `ImportView`) PLUS the
+  duplicate DETECTION the precursor lacked: `detectDuplicates(incoming, seen)`
+  matches on **DOI / source-id → auto_merged**; **title + (year | first author),
+  no shared id → needs_review** (queued for a human); else unique. Confident dupes
+  leave the pool; uncertain ones stay until decided. `canManageImport(role)` gates
+  writes to owner/collaborator.
+- **Parsers** `src/lib/sr/import-parse.ts` — pure, offline: `parseRis`,
+  `parseCsv` (RFC4180-ish quoted-field splitter + header aliases), `parsePubmedIds`
+  (PMID list → identifier-only stubs). Every parser reports a `skipped` count for
+  malformed records — nothing is silently dropped.
+- **Persistence** — the T4 store-port pattern: `import-store.ts` (the `ImportStore`
+  port), `import-drizzle-store.ts` (neon-http impl, reads always reviewId-scoped),
+  `import-service.ts` (orchestration; DB-free unit-testable via an in-memory fake).
+  Every mutation writes an append-only `audit_log` row and is reversible:
+  `importReferences` → parse/dedup/persist; `mergeDuplicate` /
+  `markNotDuplicate` / `undoDedupDecision` (needs_review ⇄ merged/kept);
+  `undoImport` / `restoreImport` (batch.undoneAt ⇄ null). IDOR: a foreign
+  study/batch id 404s (`ReviewAccessError`) — imported from the pure `authz/errors`
+  (not `require-member`, which pulls WorkOS→`next/cache` and breaks Vitest).
+- **Screen** `src/components/sr/import/import-screen.tsx` (+ `.module.css`,
+  tokens-only skin) is a client component fed the chokepoint-safe (non-blinded)
+  study data by the server `page.tsx`; mutations call the `'use server'` actions
+  in `import/actions.ts` (re-resolve `requireMember`, gate on role, `revalidatePath`).
+  The AI-discovery strip is informational only (the schema's `ai` flag is ready
+  for when AI import lands). Ledger line is the honest "N references · M
+  duplicates · Undo"; undone imports show a reversible "Restore" row.
+- **Tests:** `import.test.ts` (ledger/queue port + matcher + gate),
+  `import-parse.test.ts`, `import-service.test.ts` (persist, reversible dedup +
+  undo/restore, ledger counts, IDOR — in-memory fake store), and
+  `import-screen.test.tsx` (skin + action wiring). Browser-verified the skin
+  visually; a live route render needs the founder DB step (neon-http + seeded
+  review), same as the rest of SR.
+
 - Add durable project-specific notes here as they are discovered through real work.
