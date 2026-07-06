@@ -1,0 +1,26 @@
+.note {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid var(--mayln);
+  border-radius: 8px;
+  background: var(--maybg);
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  flex-shrink: 0;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: var(--may);
+}
+
+.text {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--may);
+}
