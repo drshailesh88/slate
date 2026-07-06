@@ -1,0 +1,135 @@
+/* Shared skin for the SR stage canvas: loading shimmer, error block, and the
+   summary placeholder. Frozen skin — tokens only, hairlines, no shadows. */
+
+.stage {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 32px 32px 64px;
+}
+
+/* Status shimmer — a Status job (design.md §8.1). Animates opacity only. */
+.shimmer {
+  border-radius: 8px;
+  background: var(--line2);
+  animation: sr-shimmer var(--motion-panel) var(--ease-inout) infinite alternate;
+}
+
+@keyframes sr-shimmer {
+  from {
+    opacity: 0.55;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Error block */
+.errorBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  max-width: 520px;
+  margin-top: 24px;
+  padding: 20px;
+  border: 1px solid var(--excln);
+  border-radius: 12px;
+  background: var(--excbg);
+  color: var(--exc);
+}
+
+.errorTitle {
+  margin: 4px 0 0;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.errorBody {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--ink3);
+}
+
+.retry {
+  margin-top: 8px;
+  padding: 8px 15px;
+  border: 1px solid var(--ink);
+  border-radius: 8px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.retry:hover {
+  background: var(--ink2);
+}
+
+/* Summary placeholder */
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
+.title {
+  margin: 6px 0 0;
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: -0.3px;
+  color: var(--ink);
+}
+
+.lead {
+  margin: 8px 0 0;
+  max-width: 70ch;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink3);
+}
+
+.statRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.statCard {
+  flex: 1 1 140px;
+  min-width: 140px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+}
+
+.statValue {
+  font-family: var(--mono);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.statLabel {
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.note {
+  margin-top: 26px;
+  padding: 13px 16px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--rail);
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ink3);
+}
