@@ -1,0 +1,156 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  flex-shrink: 0;
+  background: var(--rail);
+  border-right: 1px solid var(--line);
+}
+
+.collapsed {
+  width: 60px;
+}
+
+.collapsed .head {
+  justify-content: center;
+}
+
+.collapsed .newProject,
+.collapsed .navRow {
+  justify-content: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.collapsed .account {
+  justify-content: center;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 14px 10px;
+}
+
+.wordmark {
+  font-family: var(--serif);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.iconButton {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+}
+
+.iconButton:hover {
+  background: var(--active);
+  color: var(--ink3);
+}
+
+.newProject {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin: 0 12px 12px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0 8px;
+}
+
+.navRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 10px;
+  border-radius: 6px;
+  color: var(--ink3);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.navRow:hover {
+  background: var(--line2);
+}
+
+.navRowActive,
+.navRowActive:hover {
+  background: var(--active);
+  color: var(--ink);
+}
+
+.navIcon {
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+.navRowActive .navIcon {
+  color: var(--ink);
+}
+
+.recent {
+  padding: 20px 18px;
+  overflow-y: auto;
+}
+
+.recentEmpty {
+  margin: 10px 0 0;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  padding: 12px 14px;
+  border-top: 1px solid var(--line);
+}
+
+.accountText {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.accountName {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.accountPlan {
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+}

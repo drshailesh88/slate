@@ -1,0 +1,55 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  height: 48px;
+  padding: 0 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.pageLabel {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.searchLauncher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.searchLauncher:hover {
+  background: var(--rail);
+}
+
+.kbd {
+  padding: 1px 5px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--rail);
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.mobileAccount {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .searchLauncher {
+    display: none;
+  }
+
+  .mobileAccount {
+    display: block;
+  }
+}

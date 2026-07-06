@@ -1,0 +1,77 @@
+.composer {
+  width: 100%;
+  max-width: 620px;
+  padding: 14px 14px 12px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.composer:focus-within {
+  border-color: var(--muted);
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  resize: none;
+  background: transparent;
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.input::placeholder {
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.catalogueButton {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper);
+  color: var(--muted);
+}
+
+.catalogueButton:hover {
+  background: var(--rail);
+  color: var(--ink3);
+}
+
+/* Send: dim at rest, ink once there is text (Feedback, §8 — opacity only) */
+.sendButton {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  background: var(--ink);
+  color: var(--paper);
+  opacity: 0.35;
+  transition: opacity var(--motion-micro) var(--ease-out);
+}
+
+.sendButton:disabled {
+  cursor: default;
+}
+
+.sendButton:not(:disabled) {
+  opacity: 1;
+}

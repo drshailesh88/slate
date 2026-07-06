@@ -1,0 +1,10 @@
+/* Home — true-centered column, the composer is the single hero. */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  flex: 1;
+  padding: 24px;
+}
