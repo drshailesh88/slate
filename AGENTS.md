@@ -117,4 +117,39 @@ Three layers keep the blinded tables from being read outside `src/lib/sr/authz/*
 3. **CODEOWNERS** (`.github/CODEOWNERS`) reserves `sr-blinded.ts`,
    `src/lib/sr/authz/**`, and the wall migration/scripts.
 
+### Authorization contract (T3 — `src/lib/sr/authz/require-member.ts`)
+
+Every SR handler (server component, server action, route) MUST start by resolving
+access here. Per-review roles are **NEVER** read from the JWT — always a live
+`review_members` lookup. Deny-by-default; the entrypoints throw typed
+`SrAuthzError`s carrying the HTTP status a route boundary should return.
+
+- `requireMember(reviewId)` → `MemberContext { userId, member, sessionUser }`.
+  Resolves session → internal `users.id` → the **active** `review_members` row.
+  A non-member, an unprovisioned user, and a nonexistent review are
+  **indistinguishable** — all raise `ReviewAccessError` (404), never leaking
+  existence (IDOR kill). `pending`/`inactive` members are not active → deny. Gate
+  on `ctx.member.role`; do not trust any JWT role.
+- `requireStudyInReview({ reviewId, studyId })` → the study, joined through
+  `studies.reviewId = reviewId`. A study in another review 404s identically to a
+  nonexistent one. **Never fetch a study by `studyId` alone** — always scope it to
+  the review the caller was authorized for.
+- `requireOrgScope(reviewId)` — org-admin actions only: asserts the caller's
+  **active WorkOS org** (`withAuth().organizationId`) owns `reviews.orgId`, else
+  `OrgScopeError` (403). Review _membership_ is org-independent and must NOT call
+  this. Skipped under dev bypass (no WorkOS org context).
+- `assertArbitratorIndependent({ reviewId, studyId, userId })` — server-enforced
+  arbitrator independence: refuses (`ArbitratorIndependenceError`, 422) to make a
+  user the arbitrator of a study they screened/extracted/appraised. Call it
+  BEFORE writing the assignment. It reads participation ONLY through the audited
+  `sr_read_*` definer functions and discloses just a boolean about the assignee —
+  no co-reviewer data. This is the one authz path that touches blinded data, and
+  it lives inside the wall-allowed `src/lib/sr/authz/**`.
+- **Errors → HTTP:** `ReviewAccessError` 404 · `OrgScopeError` 403 ·
+  `ArbitratorIndependenceError` 422 (all `instanceof SrAuthzError`, `.status`).
+- **Tests:** `require-member.test.ts` (Vitest) fakes the DB at the `getDb()`
+  boundary — runs once T5's harness lands. Test files are excluded from the
+  production `tsconfig.json` so `pnpm typecheck`/`pnpm build` stay green before
+  the runner exists.
+
 - Add durable project-specific notes here as they are discovered through real work.
