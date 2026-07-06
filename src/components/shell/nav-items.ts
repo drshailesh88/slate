@@ -21,9 +21,19 @@ export const navItems: NavItem[] = [
   { href: '/settings', label: 'Settings', icon: Settings },
 ];
 
+// Routes reachable without a sidebar entry (e.g. the composer routes into Explore).
+const auxiliaryLabels: Record<string, string> = {
+  '/explore': 'Explore',
+};
+
 export function pageLabelFor(pathname: string): string {
   const match = navItems.find((item) =>
     item.href === '/' ? pathname === '/' : pathname.startsWith(item.href),
   );
-  return match?.label ?? 'Home';
+  if (match) return match.label;
+
+  const aux = Object.entries(auxiliaryLabels).find(([href]) =>
+    pathname.startsWith(href),
+  );
+  return aux?.[1] ?? 'Home';
 }
