@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScholarSync — design prototype</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --ink:#1A1D21;--ink2:#23262B;--ink3:#3a3f47;--muted:#9098a3;
+    --paper:#FCFCFD;--rail:#F8F8FA;--line:#E4E5E9;--active:#ECEDF0;
+    --accent:#3D5A80;--accentbg:#ECF0F5;
+    --inc:#2F6F4F;--incbg:#E7F0EA;--may:#8A6D3B;--maybg:#F3ECDD;--exc:#9B4A3A;--excbg:#F2E3DF;
+  }
+  body{background:#DEDFE3;font-family:-apple-system,system-ui,'Segoe UI',sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+  .bar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:12px;padding:9px 16px;background:#fff;border-bottom:1px solid var(--line)}
+  .bar .logo{font-family:Georgia,serif;font-weight:700;font-size:15px}
+  .bar .seg{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;font-size:12px}
+  .bar .seg button{border:none;background:#fff;padding:6px 13px;cursor:pointer;color:var(--ink3)}
+  .bar .seg button.on{background:var(--ink);color:#fff}
+  .bar .hint{margin-left:auto;font-size:11.5px;color:var(--muted)}
+  .bar .kbtn{font-family:ui-monospace,monospace;font-size:11px;color:var(--ink2);border:1px solid var(--line);border-radius:7px;padding:5px 9px;background:#fff;cursor:pointer}
+  .wrap{display:flex;justify-content:center;padding:22px}
+  /* ---------- desktop shell ---------- */
+  .win{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;width:1280px;max-width:96vw;height:760px;box-shadow:0 4px 18px rgba(20,22,30,.10)}
+  .rail{width:228px;background:var(--rail);border-right:1px solid var(--line);padding:14px 11px;font-size:12.5px;color:var(--ink2);display:flex;flex-direction:column;flex:none;overflow:auto}
+  .brand{font-family:Georgia,serif;font-weight:700;font-size:16px;padding:2px 6px 12px}
+  .top{display:flex;gap:7px;margin-bottom:11px}
+  .new{flex:1;background:var(--ink);color:#fff;border-radius:7px;padding:6px 9px;font-size:11.5px;font-weight:600;text-align:center;cursor:pointer}
+  .cmdk{background:#fff;border:1px solid var(--line);border-radius:7px;padding:6px 8px;font-family:ui-monospace,monospace;font-size:10.5px;color:var(--muted);cursor:pointer}
+  .item{padding:5px 7px;border-radius:6px;display:flex;align-items:center;gap:8px;color:var(--ink2);cursor:pointer}
+  .item:hover{background:var(--active)}
+  .item .k{margin-left:auto;font-family:ui-monospace,monospace;font-size:10px;color:var(--muted)}
+  .item .b{margin-left:auto;background:var(--ink);color:#fff;font-size:9px;border-radius:9px;padding:0 5px}
+  .lbl{font-size:9.5px;letter-spacing:.7px;color:var(--muted);padding:11px 7px 3px;font-weight:600}
+  .nav-item{padding:4px 7px 4px 18px;color:var(--ink3);font-size:12px;border-radius:6px;cursor:pointer}
+  .nav-item:hover{background:var(--active)}
+  .nav-item.active{background:var(--active);color:var(--ink);font-weight:600}
+  .door{padding:5px 7px;border-radius:6px;display:flex;align-items:center;gap:8px;color:var(--ink2);cursor:pointer}
+  .door:hover{background:var(--active)}
+  .door .g{width:15px;height:15px;border:1.4px solid var(--ink3);border-radius:4px;flex:none}
+  .door.active{background:var(--active);color:var(--ink);font-weight:600}
+  .door.active .g{border-color:var(--accent);background:var(--accentbg)}
+  .door.assist .g{border-color:var(--accent);background:var(--accentbg)}
+  .door.assist{color:var(--ink);font-weight:600}
+  .spacer{flex:1}
+  .foot{border-top:1px solid var(--line);margin-top:8px;padding-top:7px}
+  .chip{background:#fff;border:1px solid var(--line);padding:4px 7px;border-radius:6px;display:flex;gap:6px;align-items:center;font-weight:600;font-size:12px}
+  /* main */
+  .main{flex:1;min-width:0;overflow:auto;position:relative}
+  .pad{padding:22px 28px}
+  .crumb{font-family:ui-monospace,monospace;font-size:9.5px;color:var(--muted)}
+  .h1{font-family:Georgia,serif;font-size:24px;font-weight:700;color:var(--ink);line-height:1.2;margin-top:6px}
+  .h1.sm{font-size:20px}
+  .meta{font-size:11px;color:var(--muted);margin-top:6px}
+  .para{font-size:13px;color:var(--ink3);line-height:1.85;margin-top:15px;max-width:62ch}
+  .cite{font-family:ui-monospace,monospace;font-size:9px;color:var(--accent);background:var(--accentbg);border-radius:4px;padding:0 4px;vertical-align:super;cursor:pointer}
+  .edhint{margin-top:16px;font-family:ui-monospace,monospace;font-size:10px;color:var(--muted)}
+  /* assistant rail */
+  .assist{width:300px;flex:none;border-left:1px solid var(--line);background:#FBFBFC;display:flex;flex-direction:column}
+  .ah{padding:12px 14px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:8px}
+  .ah .dot{width:8px;height:8px;border-radius:50%;background:var(--accent)}
+  .ah .t{font-weight:700;font-size:13px}
+  .ah .scope{margin-left:auto;font-size:10px;color:var(--accent);background:var(--accentbg);border-radius:6px;padding:3px 8px;cursor:pointer}
+  .conv{flex:1;padding:13px 14px;display:flex;flex-direction:column;gap:11px;overflow:auto}
+  .umsg{align-self:flex-end;background:var(--ink);color:#fff;border-radius:12px 12px 4px 12px;padding:8px 11px;font-size:11.5px;max-width:230px}
+  .amsg{font-size:11.5px;color:var(--ink2);line-height:1.65}
+  .acts{display:flex;gap:6px;margin-top:9px;flex-wrap:wrap}
+  .acts span{border:1px solid var(--line);background:#fff;border-radius:7px;padding:4px 9px;font-size:10.5px;color:var(--ink2);cursor:pointer}
+  .acts span.pri{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .verify{font-size:9.5px;color:var(--muted);margin-top:8px;font-style:italic}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;padding:11px 14px;border-top:1px solid var(--line)}
+  .chips span{border:1px solid var(--line);border-radius:14px;padding:4px 10px;font-size:10.5px;color:var(--ink3);background:#fff;cursor:pointer}
+  .chips span.dr{border-color:var(--accent);color:var(--accent);font-weight:600}
+  .composer{margin:0 14px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;padding:9px 11px;font-size:11px;color:var(--muted);display:flex;align-items:center}
+  .composer .send{margin-left:auto;width:22px;height:22px;border-radius:6px;background:var(--ink)}
+  /* cards / tables */
+  .secl{font-size:9.5px;letter-spacing:.6px;color:var(--muted);font-weight:600;margin:16px 0 8px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:11px;padding:13px 15px;cursor:pointer}
+  .card:hover{border-color:#cfd2d8}
+  .card .t{font-size:13.5px;font-weight:600}
+  .card .m{font-size:11px;color:var(--muted);margin-top:3px}
+  .tbar{display:flex;gap:8px;align-items:center;margin-top:14px}
+  .tbar .v{font-size:11px;border:1px solid var(--line);border-radius:7px;padding:4px 10px;background:#fff;cursor:pointer;color:var(--ink3)}
+  .tbar .v.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .tbl{margin-top:14px;border:1px solid var(--line);border-radius:9px;overflow:hidden;font-size:11.5px}
+  .tr{display:grid;grid-template-columns:2fr .5fr .8fr .5fr 1.1fr 1fr}
+  .tr.lib{grid-template-columns:2.2fr 1.4fr .5fr .9fr 1fr}
+  .tr>div{padding:8px 11px;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}
+  .tr>div:last-child{border-right:none}
+  .tr:last-child>div{border-bottom:none}
+  .th>div,.th{background:#F4F5F6;font-size:10px;letter-spacing:.3px;color:var(--muted);font-weight:600}
+  .pill{border-radius:11px;padding:1px 8px;font-size:10px;font-weight:600;display:inline-block}
+  .pill.inc{background:var(--incbg);color:var(--inc)}.pill.may{background:var(--maybg);color:var(--may)}.pill.exc{background:var(--excbg);color:var(--exc)}
+  .gal{display:grid;grid-template-columns:1fr 1fr 1fr;gap:11px;margin-top:14px}
+  .gcard{background:#fff;border:1px solid var(--line);border-radius:11px;overflow:hidden}
+  .gcard .cover{height:70px;background:linear-gradient(135deg,#EEF0F3,#E2E5EA)}
+  .gcard .body{padding:10px 12px}
+  .gcard .t{font-size:12px;font-weight:600;line-height:1.3}
+  .gcard .m{font-size:10px;color:var(--muted);margin-top:4px}
+  /* SR stepper */
+  .step{display:flex;margin-top:14px}
+  .st{flex:1;border:1px solid var(--line);border-right:none;padding:10px 14px;background:#fff;cursor:pointer}
+  .st:last-child{border-right:1px solid var(--line);border-radius:0 9px 9px 0}
+  .st:first-child{border-radius:9px 0 0 9px}
+  .st.on{background:var(--accentbg);border-color:var(--accent)}
+  .st .n{font-size:10px;letter-spacing:.5px;color:var(--muted);font-weight:600}
+  .st .c{font-family:Georgia,serif;font-size:21px;font-weight:700;margin-top:3px}
+  .st.on .c{color:var(--accent)}
+  .st .s{font-size:10px;color:var(--ink3);margin-top:1px}
+  .srnote{margin-top:13px;background:#F1F2F4;border:1px solid var(--line);border-radius:9px;padding:10px 13px;font-size:11px;color:var(--ink3)}
+  .srnote b{color:var(--ink)}
+  .reader{display:flex;gap:14px;margin-top:14px}
+  .pdf{flex:1.3;background:#fff;border:1px solid var(--line);border-radius:9px;padding:18px;min-height:380px}
+  .pdf .ln{height:8px;background:#EEF0F2;border-radius:3px;margin:9px 0}
+  .pdf .ln.s{width:60%}
+  .notes{flex:1;background:#fff;border:1px solid var(--line);border-radius:9px;padding:14px}
+  .canvas{margin-top:14px;background:#fff;border:1px solid var(--line);border-radius:9px;height:420px;position:relative;background-image:radial-gradient(#E7E9ED 1px,transparent 1px);background-size:18px 18px}
+  .ccard{position:absolute;background:#fff;border:1px solid var(--line);border-radius:9px;padding:9px 11px;width:150px;box-shadow:0 2px 8px rgba(20,22,30,.07);font-size:10.5px}
+  .ccard .t{font-weight:600;font-size:11px}
+  .ccard .m{color:var(--muted);margin-top:3px}
+  .cline{position:absolute;height:1.5px;background:#C9CDD4;transform-origin:left center}
+  /* palette */
+  .scrim{position:fixed;inset:0;background:rgba(26,29,33,.40);z-index:40;display:none;align-items:flex-start;justify-content:center}
+  .scrim.open{display:flex}
+  .palette{margin-top:9vh;width:600px;max-width:94vw;background:#fff;border:1px solid var(--line);border-radius:13px;box-shadow:0 24px 70px rgba(15,17,25,.35);overflow:hidden}
+  .pin{display:flex;align-items:center;gap:9px;padding:14px 16px;border-bottom:1px solid var(--line)}
+  .pin input{border:none;outline:none;font-size:15px;color:var(--ink);width:100%;background:transparent}
+  .psec{font-size:9.5px;letter-spacing:.7px;color:var(--muted);padding:9px 16px 4px;font-weight:600}
+  .prow{display:flex;align-items:center;gap:10px;padding:8px 16px;font-size:12.5px;color:var(--ink2);cursor:pointer}
+  .prow:hover,.prow.sel{background:var(--accentbg)}
+  .prow .ico{width:17px;height:17px;border:1.4px solid var(--ink3);border-radius:4px;flex:none}
+  .prow.ask .ico{border-color:var(--accent);background:var(--accentbg)}
+  .prow .kind{margin-left:auto;font-size:10px;color:var(--muted);font-family:ui-monospace,monospace}
+  .pfoot{border-top:1px solid var(--line);padding:8px 16px;font-size:10px;color:var(--muted);display:flex;justify-content:space-between}
+  /* ---------- mobile ---------- */
+  .mwrap{display:none;justify-content:center;padding:8px}
+  .mwrap.show{display:flex}
+  .phw{background:var(--ink);border-radius:40px;padding:8px;box-shadow:0 8px 30px rgba(20,22,30,.18)}
+  .scr{background:var(--paper);border-radius:33px;overflow:hidden;width:330px;height:710px;display:flex;flex-direction:column;position:relative}
+  .stat{display:flex;justify-content:space-between;padding:11px 22px 4px;font-size:11px;font-weight:600}
+  .mh{font-family:Georgia,serif;font-size:19px;font-weight:700;padding:6px 18px 2px;display:flex;align-items:center}
+  .mh .sc{margin-left:auto;font-size:10px;font-weight:400;color:var(--accent);background:var(--accentbg);border-radius:6px;padding:3px 8px}
+  .msub{font-size:11px;color:var(--muted);padding:0 18px 8px}
+  .mbody{flex:1;padding:2px 15px;overflow:auto}
+  .mcard{background:#fff;border:1px solid var(--line);border-radius:11px;padding:11px 13px;margin-bottom:9px}
+  .mcard .t{font-size:13.5px;font-weight:600}.mcard .m{font-size:10.5px;color:var(--muted);margin-top:3px}
+  .mnav{border-top:1px solid var(--line);display:flex;justify-content:space-around;padding:10px 4px 16px;background:#fff}
+  .mtab{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:9px;color:var(--muted);cursor:pointer;flex:1}
+  .mtab .ic{width:21px;height:21px;border:1.7px solid var(--muted);border-radius:6px}
+  .mtab.on{color:var(--ink)}.mtab.on .ic{border-color:var(--ink);background:var(--active)}
+  .mtab.add .ic{background:var(--ink);border-color:var(--ink)}
+  .mtab.assist.on{color:var(--accent)}.mtab.assist.on .ic{border-color:var(--accent);background:var(--accentbg)}
+  .mchat{flex:1;padding:12px 15px;display:flex;flex-direction:column;gap:10px;overflow:auto}
+  .mu{align-self:flex-end;background:var(--ink);color:#fff;border-radius:13px 13px 4px 13px;padding:8px 11px;font-size:12px;max-width:220px}
+  .ma{font-size:12px;color:var(--ink2);line-height:1.6}
+  .srcsheet{border-top:1px solid var(--line);background:#F8F8FA;padding:10px 15px}
+  .srcsheet .hh{font-size:10.5px;font-weight:600;color:var(--ink2);display:flex}
+  .srcsheet .hh .n{margin-left:auto;color:var(--muted)}
+  .srcrow{font-size:10.5px;color:var(--ink3);margin-top:6px;display:flex;gap:7px}
+  .srcrow .num{font-family:ui-monospace,monospace;color:var(--accent)}
+  .mcomposer{margin:9px 15px 13px;border:1px solid var(--line);border-radius:22px;background:#fff;padding:9px 15px;font-size:11.5px;color:var(--muted)}
+  .sccard{margin:16px 15px;border:1px solid var(--line);border-radius:16px;padding:16px;background:#fff;box-shadow:0 2px 10px rgba(20,22,30,.06)}
+  .sccard .yr{font-family:ui-monospace,monospace;font-size:10.5px;color:var(--muted)}
+  .sccard .ti{font-family:Georgia,serif;font-size:16px;font-weight:700;margin-top:6px;line-height:1.25}
+  .sccard .ab{font-size:11.5px;color:var(--ink3);line-height:1.55;margin-top:9px}
+  .scbtns{display:flex;gap:10px;margin-top:15px}
+  .scbtns .x{flex:1;text-align:center;padding:11px;border-radius:11px;font-size:13px;font-weight:600;cursor:pointer}
+  .scbtns .exc{background:var(--excbg);color:var(--exc)}.scbtns .may{background:var(--maybg);color:var(--may)}.scbtns .inc{background:var(--incbg);color:var(--inc)}
+  .scprog{text-align:center;font-size:10.5px;color:var(--muted);margin-top:8px}
+</style>
+</head>
+<body>
+  <div class="bar">
+    <span class="logo">ScholarSync</span>
+    <span style="font-size:11px;color:var(--muted)">design prototype · A-split</span>
+    <div class="seg" style="margin-left:18px">
+      <button id="segDesk" class="on" onclick="setMode('desk')">Desktop</button>
+      <button id="segMob" onclick="setMode('mob')">Mobile</button>
+    </div>
+    <span class="hint">tip: press <b>⌘K</b> / Ctrl-K anywhere · click the sidebar &amp; tabs</span>
+    <button class="kbtn" onclick="openPalette()">⌘K</button>
+  </div>
+
+  <!-- DESKTOP -->
+  <div class="wrap" id="deskWrap">
+    <div class="win">
+      <div class="rail" id="rail"></div>
+      <div class="main" id="main"></div>
+      <div class="assist" id="assist"></div>
+    </div>
+  </div>
+
+  <!-- MOBILE -->
+  <div class="mwrap" id="mobWrap">
+    <div class="phw"><div class="scr" id="phone"></div></div>
+  </div>
+
+  <!-- PALETTE -->
+  <div class="scrim" id="scrim" onclick="if(event.target===this)closePalette()">
+    <div class="palette">
+      <div class="pin"><span style="color:var(--muted)">⌕</span><input id="pq" placeholder="Go to anything · run a verb · ask the assistant…" oninput="renderPalette()"></div>
+      <div id="presults"></div>
+      <div class="pfoot"><span>one box searches papers, notes, drafts &amp; every action</span><span>Everything you can do →</span></div>
+    </div>
+  </div>
+
+<script>
+/* ---------------- state ---------------- */
+let view = 'manuscript';
+let libView = 'table';
+let mtab = 'home';
+
+const WORK = [['Manuscript','manuscript'],['Lit notes','notes'],['Evidence table','evidence'],['Figures','figures']];
+const DOORS = [['Library','library'],['Reading Room','reading'],['Explore','explore'],['Systematic Review','sr']];
+
+/* ---------------- sidebar ---------------- */
+function railHTML(){
+  const work = WORK.map(([n,v])=>`<div class="nav-item ${view===v?'active':''}" onclick="go('${v}')">${n}</div>`).join('');
+  const doors = DOORS.map(([n,v])=>`<div class="door ${view===v?'active':''}" onclick="go('${v}')"><span class="g"></span>${n}</div>`).join('');
+  return `
+    <div class="brand">ScholarSync</div>
+    <div class="top"><span class="new" onclick="openPalette()">+ New</span><span class="cmdk" onclick="openPalette()">⌘K</span></div>
+    <div class="item ${view==='home'?'':''}" onclick="go('home')">⌂ &nbsp;Home</div>
+    <div class="item" onclick="openPalette()">⌕ &nbsp;Search<span class="k">⌘K</span></div>
+    <div class="item" onclick="go('home')">◔ &nbsp;Inbox<span class="b">3</span></div>
+    <div class="lbl">PROJECT</div>
+    <div class="chip" style="margin:0 1px">▾ SGLT2 meta-analysis</div>
+    <div class="lbl">YOUR WORK</div>${work}
+    <div class="lbl">DO</div>${doors}
+    <div class="spacer"></div>
+    <div class="foot"><div class="door assist" onclick="go('manuscript')"><span class="g"></span>Ask the Assistant</div></div>
+    <div class="item" style="color:var(--muted)">⚙ Settings</div>`;
+}
+
+/* ---------------- main views ---------------- */
+function vHome(){
+  return `<div class="pad">
+    <div class="crumb">SGLT2 meta-analysis</div>
+    <div class="h1">Good evening — pick up where you left off</div>
+    <div class="secl">CONTINUE</div>
+    <div class="grid">
+      <div class="card" onclick="go('manuscript')"><div class="t">Manuscript — SGLT2 &amp; HF</div><div class="m">Draft · 2,140 words · edited 2h ago</div></div>
+      <div class="card" onclick="go('sr')"><div class="t">Systematic Review</div><div class="m">388 screened · 124 included</div></div>
+      <div class="card" onclick="go('evidence')"><div class="t">Evidence table</div><div class="m">18 papers · 6 columns</div></div>
+      <div class="card" onclick="go('library')"><div class="t">Library</div><div class="m">1,204 sources · 12 tags</div></div>
+    </div>
+    <div class="secl">SUGGESTED BY THE ASSISTANT</div>
+    <div class="card" onclick="go('sr')" style="border-color:var(--accent);background:var(--accentbg)"><div class="t">You have 18 screened papers ready to extract</div><div class="m">Build an evidence table &amp; draft a synthesis →</div></div>
+    <div class="secl">JOURNAL FEED</div>
+    <div class="card"><div class="t">New in Circulation — 3 papers match “SGLT2 · HFpEF”</div><div class="m">2 with full text in your library</div></div>
+  </div>`;
+}
+function vManuscript(){
+  return `<div class="pad">
+    <div class="crumb">SGLT2 meta-analysis › Manuscript</div>
+    <div class="h1">Effect of SGLT2 inhibitors on<br>heart-failure outcomes</div>
+    <div class="meta">Draft · 2,140 words · edited 2h ago</div>
+    <div class="para">Across 41 randomised trials, SGLT2 inhibitors reduced heart-failure hospitalisation (HR 0.69, 95% CI 0.61–0.78)<span class="cite">1</span>. The effect was consistent across ejection-fraction strata<span class="cite">2</span>, though several trials carried a high risk of attrition bias that the synthesis must address.</div>
+    <div class="para">In preserved-ejection-fraction cohorts the signal was smaller but directionally consistent<span class="cite">3</span>, supporting a class effect rather than an agent-specific one.</div>
+    <div class="edhint">Type <b style="color:var(--ink)">/</b> for blocks · <b style="color:var(--ink)">space</b> to ask the assistant</div>
+  </div>`;
+}
+function vNotes(){
+  return `<div class="pad"><div class="crumb">SGLT2 meta-analysis › Lit notes</div>
+    <div class="h1 sm">Lit notes</div>
+    <div class="para">A free-form note surface — same block editor as the manuscript, just a different document. <span class="cite">▤</span> linked to 6 papers.</div>
+    <div class="secl">BACKLINKS</div>
+    <div class="card"><div class="t">Cited in: Manuscript › Limitations</div><div class="m">“…high risk of attrition bias…”</div></div></div>`;
+}
+function vEvidence(){
+  const row=(p,y,d,n,eff,cls,lab)=>`<div class="tr"><div>${p}</div><div>${y}</div><div>${d}</div><div>${n}</div><div>${eff}</div><div><span class="pill ${cls}">${lab}</span></div></div>`;
+  return `<div class="pad"><div class="crumb">SGLT2 meta-analysis › Evidence table</div>
+    <div class="h1 sm">Evidence table <span style="font-size:12px;color:var(--muted)">— a database lens over your Paper objects</span></div>
+    <div class="tbar"><span class="v on">Table</span><span class="v" onclick="go('explore')">Board</span><span class="v" onclick="go('explore')">Timeline</span><span style="margin-left:auto;font-size:11px;color:var(--muted)">+ add a column = a question</span></div>
+    <div class="tbl"><div class="tr th"><div>Paper</div><div>Year</div><div>Design</div><div>n</div><div>Effect (HR)</div><div>Quality</div></div>
+      ${row('EMPEROR-Preserved','2021','RCT','5,988','0.79','inc','Low risk')}
+      ${row('DAPA-HF','2019','RCT','4,744','0.70','inc','Low risk')}
+      ${row('DELIVER','2022','RCT','6,263','0.82','inc','Low risk')}
+      ${row('PRESERVED-HF','2021','RCT','324','—','may','Some risk')}
+    </div>
+    <div class="srnote"><b>Row = a page.</b> Click any paper to open it as a side-peek with its properties + notes. Same data renders as Table, Board, or Timeline — a lens, not a new module.</div></div>`;
+}
+function vFigures(){
+  return `<div class="pad"><div class="crumb">SGLT2 meta-analysis › Figures</div><div class="h1 sm">Figures</div>
+    <div class="gal">
+      <div class="gcard"><div class="cover"></div><div class="body"><div class="t">Forest plot — HF hospitalisation</div><div class="m">Figure 1 · used in Manuscript</div></div></div>
+      <div class="gcard"><div class="cover"></div><div class="body"><div class="t">PRISMA flow diagram</div><div class="m">auto-generated from the review</div></div></div>
+      <div class="gcard"><div class="cover"></div><div class="body"><div class="t">Subgroup effects</div><div class="m">Figure 2</div></div></div>
+    </div></div>`;
+}
+function vLibrary(){
+  const table = ()=>{
+    const row=(p,a,y,d,cls,lab)=>`<div class="tr lib"><div>${p}</div><div>${a}</div><div>${y}</div><div>${d}</div><div><span class="pill ${cls}">${lab}</span></div></div>`;
+    return `<div class="tbl"><div class="tr lib th"><div>Title</div><div>Authors</div><div>Year</div><div>Type</div><div>In review?</div></div>
+      ${row('Empagliflozin in Heart Failure with a Preserved EF','Anker et al.','2021','RCT','inc','Included')}
+      ${row('Dapagliflozin in Patients with HFrEF','McMurray et al.','2019','RCT','exc','Excluded')}
+      ${row('Dapagliflozin in HF with Mildly Reduced/Preserved EF','Solomon et al.','2022','RCT','inc','Included')}
+      ${row('SGLT2 inhibitors: a class review','Vaduganathan','2020','Review','may','Maybe')}</div>`;
+  };
+  const gallery = ()=>`<div class="gal">
+      <div class="gcard"><div class="cover"></div><div class="body"><div class="t">Empagliflozin in HFpEF</div><div class="m">Anker · 2021 · RCT</div></div></div>
+      <div class="gcard"><div class="cover"></div><div class="body"><div class="t">Dapagliflozin in HFrEF</div><div class="m">McMurray · 2019 · RCT</div></div></div>
+      <div class="gcard"><div class="cover"></div><div class="body"><div class="t">DELIVER trial</div><div class="m">Solomon · 2022 · RCT</div></div></div>
+      <div class="gcard"><div class="cover"></div><div class="body"><div class="t">SGLT2: a class review</div><div class="m">Vaduganathan · 2020</div></div></div>
+    </div>`;
+  return `<div class="pad"><div class="crumb">Library</div>
+    <div class="h1 sm">Library <span style="font-size:12px;color:var(--muted)">— 1,204 Paper objects</span></div>
+    <div class="tbar">
+      <span class="v ${libView==='table'?'on':''}" onclick="libView='table';render()">Table</span>
+      <span class="v ${libView==='gallery'?'on':''}" onclick="libView='gallery';render()">Gallery</span>
+      <span style="margin-left:auto;font-size:11px;color:var(--muted)"># cardiology · # methods · # 2024</span>
+    </div>
+    ${libView==='table'?table():gallery()}</div>`;
+}
+function vReading(){
+  return `<div class="pad"><div class="crumb">Reading Room › Anker 2021</div>
+    <div class="h1 sm">Reading Room</div>
+    <div class="reader">
+      <div class="pdf"><div style="font-family:Georgia,serif;font-weight:700;font-size:14px">Empagliflozin in Heart Failure with a Preserved Ejection Fraction</div>
+        <div class="ln"></div><div class="ln"></div><div class="ln s"></div><div class="ln"></div><div class="ln"></div><div class="ln s"></div><div class="ln"></div></div>
+      <div class="notes"><div class="secl" style="margin-top:0">YOUR NOTES &amp; HIGHLIGHTS</div>
+        <div class="card" style="cursor:default"><div class="m">p.4 · highlighted</div><div class="t" style="font-size:12px;font-weight:500">“primary outcome … hospitalisation for HF”</div></div>
+        <div style="font-size:11px;color:var(--muted);margin-top:10px">Select text → Ask AI · Cite · Note</div></div>
+    </div></div>`;
+}
+function vExplore(){
+  return `<div class="pad"><div class="crumb">Explore · canvas</div>
+    <div class="h1 sm">Explore <span style="font-size:12px;color:var(--muted)">— lay your papers out and reason across them</span></div>
+    <div class="canvas">
+      <div class="ccard" style="left:40px;top:40px"><div class="t">EMPEROR-Preserved</div><div class="m">HFpEF · HR 0.79</div></div>
+      <div class="ccard" style="left:250px;top:90px"><div class="t">DELIVER</div><div class="m">HFmrEF/HFpEF · 0.82</div></div>
+      <div class="ccard" style="left:160px;top:240px;border-color:var(--accent)"><div class="t" style="color:var(--accent)">✦ Synthesis</div><div class="m">class effect across EF strata</div></div>
+      <div class="ccard" style="left:430px;top:200px"><div class="t">DAPA-HF</div><div class="m">HFrEF · 0.70</div></div>
+      <div class="cline" style="left:115px;top:75px;width:150px;transform:rotate(14deg)"></div>
+      <div class="cline" style="left:235px;top:130px;width:130px;transform:rotate(56deg)"></div>
+      <div class="cline" style="left:310px;top:120px;width:140px;transform:rotate(34deg)"></div>
+    </div></div>`;
+}
+function vSR(){
+  const row=(p,y,d,n,pico,cls,lab)=>`<div class="tr"><div>${p}</div><div>${y}</div><div>${d}</div><div>${n}</div><div>${pico}</div><div><span class="pill ${cls}">${lab}</span></div></div>`;
+  return `<div class="pad"><div class="crumb">SGLT2 meta-analysis › Systematic Review</div>
+    <div class="h1 sm">SGLT2 inhibitors &amp; HF outcomes</div>
+    <div class="step">
+      <div class="st"><div class="n">GATHER</div><div class="c">412</div><div class="s">imported</div></div>
+      <div class="st on"><div class="n">SCREEN</div><div class="c">388</div><div class="s">124 included</div></div>
+      <div class="st"><div class="n">EXTRACT</div><div class="c">124</div><div class="s">6 columns</div></div>
+      <div class="st"><div class="n">REPORT</div><div class="c">—</div><div class="s">Methods auto-drafted</div></div>
+    </div>
+    <div class="tbl"><div class="tr th"><div>Paper</div><div>Year</div><div>Design</div><div>n</div><div>Population = HFpEF?</div><div>Decision</div></div>
+      ${row('Anker — EMPEROR-Preserved','2021','RCT','5,988','Yes — explicit','inc','Include')}
+      ${row('McMurray — DAPA-HF','2019','RCT','4,744','No — HFrEF only','exc','Exclude')}
+      ${row('Solomon — DELIVER','2022','RCT','6,263','Yes','inc','Include')}
+      ${row('Nassif — PRESERVED-HF','2021','RCT','324','Partial — mixed','may','Maybe')}
+    </div>
+    <div class="srnote"><b>Column = a question.</b> Each criterion declares an output shape (Yes/No/Maybe) with per-cell reasoning + a live count. <b>Methods prose writes itself</b> — PRISMA-ready.</div></div>`;
+}
+const VIEWS={home:vHome,manuscript:vManuscript,notes:vNotes,evidence:vEvidence,figures:vFigures,library:vLibrary,reading:vReading,explore:vExplore,sr:vSR};
+
+/* ---------------- assistant rail ---------------- */
+function scopeFor(){return view==='library'?'Library ▾':view==='sr'?'This review ▾':view==='explore'?'Project ▾':'Current file ▾';}
+function assistHTML(){
+  return `<div class="ah"><span class="dot"></span><span class="t">Assistant</span><span class="scope">${scopeFor()}</span></div>
+    <div class="conv">
+      <div class="umsg">Draft a limitations paragraph from my evidence table</div>
+      <div><div class="amsg">Three limitations are supported by your sources: attrition bias in 6 of 41 trials<span class="cite">1</span>, limited HFpEF representation<span class="cite">3</span>, and short median follow-up (18 mo)<span class="cite">2</span>.</div>
+        <div class="acts"><span class="pri">Insert below</span><span>Replace</span><span>Copy</span></div>
+        <div class="verify">Uses AI · every claim cites your library · verify results</div></div>
+    </div>
+    <div class="chips"><span onclick="openPalette()">Summarise this paper</span><span onclick="openPalette()">Find counter-evidence</span><span class="dr" onclick="openPalette()">✦ Deep Research</span></div>
+    <div class="composer">Ask about this ${view==='sr'?'review':'draft'}…<span class="send"></span></div>`;
+}
+
+/* ---------------- render ---------------- */
+function render(){
+  document.getElementById('rail').innerHTML = railHTML();
+  document.getElementById('main').innerHTML = (VIEWS[view]||vManuscript)();
+  document.getElementById('assist').innerHTML = assistHTML();
+}
+function go(v){view=v;render();}
+
+/* ---------------- palette ---------------- */
+const PROWS=[
+  ['ASK THE ASSISTANT',[['ask','Ask: “{q}”','↵ ask','openPalette']]],
+  ['GO TO',[['','Manuscript','object','manuscript'],['','Evidence table','object','evidence'],['','Library — 1,204 papers','object','library'],['','Systematic Review','object','sr']]],
+  ['DO',[['','New systematic review','verb','sr'],['','Run Deep Research','agent','manuscript'],['','Generate slides · poster · figure','verb','figures'],['','Check integrity / reporting standards','verb','manuscript']]],
+];
+function renderPalette(){
+  const q=(document.getElementById('pq').value||'').trim();
+  let html='';
+  for(const [sec,rows] of PROWS){
+    html+=`<div class="psec">${sec}</div>`;
+    for(const [cls,label,kind,act] of rows){
+      const lab=label.replace('{q}', q||'…');
+      html+=`<div class="prow ${cls} ${cls==='ask'?'sel':''}" onclick="paletteGo('${act}')"><span class="ico"></span>${lab}<span class="kind">${kind}</span></div>`;
+    }
+  }
+  document.getElementById('presults').innerHTML=html;
+}
+function paletteGo(act){ if(act==='openPalette'){closePalette();return;} closePalette(); go(act); }
+function openPalette(){document.getElementById('scrim').classList.add('open');renderPalette();const i=document.getElementById('pq');i.value='';i.focus();}
+function closePalette(){document.getElementById('scrim').classList.remove('open');}
+
+/* ---------------- mobile ---------------- */
+function phoneHTML(){
+  const nav=(arr)=>`<div class="mnav">${arr.map(([l,t,c])=>`<div class="mtab ${c}" onclick="mgo('${t}')"><span class="ic"></span>${l}</div>`).join('')}</div>`;
+  const tabs=t=>[['Home','home',t==='home'?'on':''],['Library','library',t==='library'?'on':''],['Review','review',t==='review'?'on':''],['Create','create','add'],['Assistant','assistant','assist '+(t==='assistant'?'on':'')]];
+  let body='';
+  if(mtab==='home'){
+    body=`<div class="mh">Home</div><div class="msub">pick up where you left off</div><div class="mbody">
+      <div class="secl" style="margin-top:4px">CONTINUE</div>
+      <div class="mcard" onclick="mgo('review')"><div class="t">Manuscript — SGLT2 &amp; HF</div><div class="m">edited 2h ago · Draft</div></div>
+      <div class="mcard" onclick="mgo('review')"><div class="t">Systematic Review</div><div class="m">388 screened · 124 included</div></div>
+      <div class="mcard" onclick="mgo('library')"><div class="t">Evidence table</div><div class="m">18 papers · 6 columns</div></div>
+      <div class="secl">SUGGESTED</div>
+      <div class="mcard" style="border-color:var(--accent);background:var(--accentbg)"><div class="t">18 papers ready to extract</div><div class="m">build an evidence table →</div></div></div>`;
+  } else if(mtab==='library'){
+    body=`<div class="mh">Library</div><div class="msub">1,204 papers · tap to open</div><div class="mbody">
+      <div class="mcard"><div class="t">EMPEROR-Preserved</div><div class="m">Anker · 2021 · RCT · <span style="color:var(--inc)">Included</span></div></div>
+      <div class="mcard"><div class="t">DAPA-HF</div><div class="m">McMurray · 2019 · RCT · <span style="color:var(--exc)">Excluded</span></div></div>
+      <div class="mcard"><div class="t">DELIVER</div><div class="m">Solomon · 2022 · RCT · <span style="color:var(--inc)">Included</span></div></div>
+      <div class="mcard"><div class="t">PRESERVED-HF</div><div class="m">Nassif · 2021 · RCT · <span style="color:var(--may)">Maybe</span></div></div></div>`;
+  } else if(mtab==='review'){
+    body=`<div class="mh">Screen<span class="sc">124 / 388</span></div>
+      <div style="flex:1;overflow:auto"><div class="sccard">
+        <div class="yr">2021 · RCT · n=324</div>
+        <div class="ti">PRESERVED-HF: dapagliflozin in heart failure</div>
+        <div class="ab">Effects of dapagliflozin on symptoms and physical limitation in patients with HF and preserved ejection fraction…</div>
+        <div style="margin-top:11px;font-size:10.5px"><span class="pill may">Maybe</span> Population = HFpEF? · mixed cohort</div>
+        <div class="scbtns"><div class="x exc" onclick="nextCard()">Exclude</div><div class="x may" onclick="nextCard()">Maybe</div><div class="x inc" onclick="nextCard()">Include</div></div>
+      </div><div class="scprog">tap a decision · ← exclude · → include</div></div>`;
+  } else if(mtab==='assistant'){
+    body=`<div class="mh">Assistant<span class="sc">Project ▾</span></div>
+      <div class="mchat">
+        <div class="mu">Which trials included HFpEF patients?</div>
+        <div class="ma">Three in your library: EMPEROR-Preserved<span class="cite">1</span>, DELIVER<span class="cite">2</span>, partially PRESERVED-HF<span class="cite">3</span>. DAPA-HF was HFrEF-only<span class="cite">4</span>.</div>
+      </div>
+      <div class="srcsheet"><div class="hh">Sources<span class="n">4 ⌃</span></div>
+        <div class="srcrow"><span class="num">1</span> Anker 2021 · EMPEROR-Preserved</div>
+        <div class="srcrow"><span class="num">2</span> Solomon 2022 · DELIVER</div></div>
+      <div class="mcomposer">Ask about this project…</div>`;
+  }
+  return `<div class="stat"><span>9:41</span><span>● ● ●  ▮</span></div>${body}${nav(tabs(mtab))}`;
+}
+function mgo(t){ if(t==='create'){openPalette();return;} mtab=t; document.getElementById('phone').innerHTML=phoneHTML(); }
+function nextCard(){ document.getElementById('phone').innerHTML=phoneHTML(); }
+
+/* ---------------- mode toggle ---------------- */
+function setMode(m){
+  document.getElementById('segDesk').classList.toggle('on',m==='desk');
+  document.getElementById('segMob').classList.toggle('on',m==='mob');
+  document.getElementById('deskWrap').style.display = m==='desk'?'flex':'none';
+  document.getElementById('mobWrap').classList.toggle('show',m==='mob');
+  if(m==='mob') document.getElementById('phone').innerHTML=phoneHTML();
+}
+
+document.addEventListener('keydown',e=>{
+  if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();openPalette();}
+  if(e.key==='Escape')closePalette();
+});
+
+render();
+</script>
+</body>
+</html>

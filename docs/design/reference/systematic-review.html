@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScholarSync — Systematic Review module</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   ScholarSync · Systematic Review module
+   Rebuilt from the LLM-council ruling (Opus + Codex + Grok).
+   Ink is the brand. Saturated colour encodes a DECISION only.
+   Zero invention on workflow: Covidence (rigor) + Elicit (AI).
+   ============================================================ */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#1A1D21; --ink2:#23262B; --ink3:#3a3f47; --muted:#9098a3;
+  --paper:#FCFCFD; --rail:#F8F8FA; --line:#E4E5E9; --line2:#EEEFF2; --active:#ECEDF0;
+  --accent:#3D5A80; --accentbg:#ECF0F5; --accentln:#C9D5E3;
+  --inc:#2F6F4F; --incbg:#E7F0EA; --incln:#BCD6C6;
+  --may:#8A6D3B; --maybg:#F3ECDD; --mayln:#E0D2B4;
+  --exc:#9B4A3A; --excbg:#F2E3DF; --excln:#E2C4BB;
+  --con:#7A4A86; --conbg:#F0E8F3; --conln:#DEC9E4;
+  --serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,system-ui,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace;
+}
+html,body{height:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.5;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--accentbg)}
+
+/* ---- top bar ---- */
+.topbar{height:52px;display:flex;align-items:center;gap:14px;padding:0 24px;border-bottom:1px solid var(--line);
+  background:#fff;position:sticky;top:0;z-index:50}
+.brand{font-family:var(--serif);font-weight:700;font-size:17px;letter-spacing:-.2px}
+.crumb{font-size:12.5px;color:var(--muted)}
+.crumb b{color:var(--ink3);font-weight:600}
+.legend{margin-left:auto;display:flex;gap:8px;align-items:center}
+.srcchip{font-family:var(--mono);font-size:10px;border-radius:5px;padding:2px 7px;display:inline-flex;gap:4px;
+  align-items:center;border:1px solid var(--line);white-space:nowrap}
+.srcchip.cov{color:var(--ink2);background:#F1F2F4}
+.srcchip.eli{color:var(--accent);background:var(--accentbg);border-color:var(--accentln)}
+.who-am-i{width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;font-size:11px;font-weight:600;
+  display:flex;align-items:center;justify-content:center}
+
+/* ---- app shell ---- */
+.app{display:grid;grid-template-columns:280px 1fr;height:calc(100vh - 52px)}
+.app.has-rail{grid-template-columns:280px 1fr 320px}
+
+/* ---- stage rail (the funnel spine) ---- */
+.rail{background:var(--rail);border-right:1px solid var(--line);padding:20px 14px 14px;display:flex;flex-direction:column;overflow:auto}
+.proj{font-family:var(--serif);font-weight:700;font-size:16px;padding:0 8px;line-height:1.25}
+.projmeta{font-size:11.5px;color:var(--muted);padding:3px 8px 0}
+.railgroup{font-size:10.5px;letter-spacing:.07em;color:var(--muted);font-weight:600;text-transform:uppercase;padding:18px 8px 7px}
+.spine{position:relative}
+.spine:before{content:"";position:absolute;left:18px;top:14px;bottom:14px;width:1.5px;
+  background:linear-gradient(var(--line),var(--line) 60%,transparent);z-index:0}
+.stage{position:relative;z-index:1;display:block;width:100%;text-align:left;border:1px solid transparent;border-radius:9px;
+  padding:8px 9px;margin-bottom:2px;cursor:pointer;background:transparent;font-family:var(--sans)}
+.stage:hover{background:var(--active)}
+.stage.on{background:#fff;border-color:var(--line);box-shadow:0 1px 2px rgba(20,22,30,.05)}
+.stage .r1{display:flex;align-items:center;gap:9px}
+.stage .num{width:21px;height:21px;border-radius:6px;background:var(--ink);color:#fff;font-family:var(--mono);
+  font-size:10.5px;font-weight:600;flex:none;display:flex;align-items:center;justify-content:center}
+.stage.on .num{background:var(--accent)}
+.stage.done .num{background:#fff;color:var(--inc);border:1.5px solid var(--incln)}
+.stage .nm{font-size:13.5px;font-weight:600;color:var(--ink2)}
+.stage .ct{margin-left:auto;font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+.stage .ct.conf{color:var(--con)}
+.stage .prog{height:2px;border-radius:2px;background:var(--line2);margin:7px 0 1px 30px;overflow:hidden}
+.stage .prog i{display:block;height:100%;background:var(--inc)}
+.railfoot{margin-top:auto;display:flex;gap:6px;padding-top:14px;border-top:1px solid var(--line)}
+.railfoot button{flex:1;font-family:var(--sans);font-size:11px;font-weight:600;color:var(--ink3);
+  border:1px solid var(--line);border-radius:7px;padding:6px;background:#fff;cursor:pointer}
+.railfoot button:hover{background:var(--active)}
+
+/* ---- canvas shared ---- */
+.canvas{overflow:auto;position:relative}
+.cv-inner{padding:32px 32px 64px}
+.cv-inner.wide{max-width:1140px;margin:0 auto}
+.cv-inner.narrow{max-width:900px}
+.cv-inner.bleed{max-width:none;padding:0}
+.eyebrow{font-family:var(--mono);font-size:10.5px;color:var(--muted);letter-spacing:.02em}
+.display{font-family:var(--serif);font-size:30px;font-weight:600;line-height:1.18;letter-spacing:-.3px;margin-top:6px}
+.h2stage{font-family:var(--serif);font-size:22px;font-weight:600;line-height:1.27;letter-spacing:-.2px;margin-top:6px}
+.lead{font-size:14px;color:var(--ink3);line-height:1.6;max-width:78ch;margin-top:8px}
+.lead b{color:var(--ink2);font-weight:600}
+.srcpair{display:flex;gap:6px;margin-top:8px}
+.seclabel{font-size:10.5px;letter-spacing:.07em;color:var(--muted);font-weight:600;text-transform:uppercase;margin:26px 2px 11px;display:flex;align-items:center;gap:10px}
+.seclabel a{color:var(--accent);cursor:pointer;font-weight:600;letter-spacing:0;text-transform:none;font-size:12px}
+.seclabel .sp{flex:1;height:1px;background:var(--line)}
+
+/* AI strip */
+.aistrip{margin-top:20px;display:flex;align-items:center;gap:12px;background:var(--accentbg);border:1px solid var(--accentln);
+  border-radius:11px;padding:13px 16px;font-size:13px;color:var(--ink2);line-height:1.5}
+.aistrip .tag{flex:none}
+.aistrip b{color:var(--accent);font-weight:600}
+.aistrip .sysrec{margin-left:auto;flex:none;font-size:11.5px;color:var(--accent);border-left:1px solid var(--accentln);
+  padding-left:14px;font-weight:600}
+
+/* buttons */
+.btn{font-family:var(--sans);font-size:13px;font-weight:600;border-radius:8px;padding:9px 15px;cursor:pointer;
+  border:1px solid var(--line);background:#fff;color:var(--ink2)}
+.btn:hover{background:var(--active)}
+.btn.pri{background:var(--ink);color:#fff;border-color:var(--ink)}
+.btn.pri:hover{background:#000}
+.btn.sm{padding:6px 11px;font-size:12px}
+.btnrow{display:flex;gap:9px}
+
+/* provenance value chip + not-reported */
+.vchip{display:inline-flex;align-items:center;justify-content:center;width:15px;height:15px;border-radius:50%;
+  background:var(--accentbg);border:1px solid var(--accentln);color:var(--accent);font-size:8.5px;vertical-align:super;
+  margin-left:3px;cursor:pointer}
+.nr{font-style:italic;font-size:12px;color:var(--muted);border:1px dashed var(--line);border-radius:11px;padding:1px 8px;display:inline-block}
+.pill{border-radius:20px;padding:2px 9px;font-size:10.5px;font-weight:600;display:inline-flex;align-items:center;gap:5px}
+.pill.con{background:var(--conbg);color:var(--con)}
+.pill.inc{background:var(--incbg);color:var(--inc)}
+.pill.exc{background:var(--excbg);color:var(--exc)}
+.pill.may{background:var(--maybg);color:var(--may)}
+
+/* ===== FUNNEL (summary) ===== */
+.funnel{margin-top:24px;display:flex;flex-direction:column;gap:12px}
+.fstage{border:1px solid var(--line);border-radius:12px;background:#fff}
+.fstage>.top{display:flex;align-items:center;gap:12px;padding:18px 24px;cursor:pointer}
+.fstage .chev{color:var(--muted);font-size:12px;width:14px;flex:none;transition:transform .15s}
+.fstage.open .chev{transform:rotate(90deg)}
+.fstage .fname{font-family:var(--serif);font-size:17px;font-weight:600}
+.fstage .fmeta{font-family:var(--mono);font-size:11px;color:var(--muted);margin-left:6px}
+.fstage .flinks{margin-left:auto;display:flex;gap:20px;font-size:12.5px}
+.fstage .flinks a{color:var(--accent);cursor:pointer}
+.fstage .flinks a:hover{text-decoration:underline}
+.fstage .flinks a .arr{color:var(--muted)}
+.fbody{display:none;padding:0 24px 22px;border-top:1px solid var(--line2)}
+.fstage.open .fbody{display:flex;gap:0}
+.fprogress{flex:1;padding:20px 28px 4px 0}
+.flabel{font-size:10.5px;letter-spacing:.07em;color:var(--muted);font-weight:600;text-transform:uppercase;margin-bottom:10px}
+.pbar{height:12px;border-radius:7px;background:#EDEEF1;overflow:hidden;display:flex}
+.pbar i{display:block;height:100%}
+.plegend{display:flex;gap:22px;margin-top:13px;flex-wrap:wrap}
+.plegend .c{display:flex;align-items:baseline;gap:7px}
+.plegend .n{font-family:var(--mono);font-size:15px;font-weight:500;color:var(--ink)}
+.plegend .dot{width:9px;height:9px;border-radius:50%;align-self:center}
+.plegend .l{font-size:11px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;font-weight:600}
+.contrib{margin-top:20px}
+.contrib .ch{font-size:10.5px;letter-spacing:.07em;color:var(--muted);font-weight:600;text-transform:uppercase;margin-bottom:9px}
+.crow{display:grid;grid-template-columns:120px 42px 1fr;align-items:center;gap:10px;margin-bottom:7px}
+.crow .cn{font-size:12.5px;color:var(--ink3)}
+.crow .cv{font-family:var(--mono);font-size:12px;color:var(--ink2);text-align:right}
+.cbar{height:7px;border-radius:4px;background:#EDEEF1;overflow:hidden}
+.cbar i{display:block;height:100%;background:var(--accent);opacity:.8}
+.fcta{width:320px;flex:none;border-left:1px solid var(--line2);padding:20px 0 4px 28px}
+.fcta .you{font-size:11px;color:var(--ink3);font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+.fcta .pair{display:flex;gap:32px;margin:14px 0 16px}
+.fcta .stat .big{font-family:var(--mono);font-size:26px;font-weight:500;line-height:1}
+.fcta .stat .sm{font-size:10px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-top:5px;font-weight:600}
+.fcta .since{font-size:11.5px;color:var(--muted);margin-top:14px;display:flex;align-items:center;gap:6px}
+.fcta .since .spark{color:var(--inc)}
+
+/* ===== tabs / queue ===== */
+.tabbar{display:flex;align-items:center;gap:2px;border-bottom:1px solid var(--line);margin-top:18px}
+.tab{font-size:13px;padding:9px 14px;cursor:pointer;color:var(--ink3);border-bottom:2px solid transparent;display:flex;align-items:center;gap:7px}
+.tab b{font-family:var(--mono);font-size:12px;color:var(--muted);font-weight:600}
+.tab.on{color:var(--ink);border-bottom-color:var(--accent);font-weight:600}
+.tab.on b{color:var(--accent)}
+.tab.conf b{color:var(--con)}
+.kbd-hint{margin-left:auto;font-size:11.5px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.kbd{font-family:var(--mono);font-size:10.5px;background:#fff;border:1px solid var(--line);border-bottom-width:2px;
+  border-radius:5px;padding:1px 6px;color:var(--ink3)}
+.queuebar{display:flex;align-items:center;gap:14px;margin:16px 0 2px}
+.queuebar .pos{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.queuebar .nav{display:flex;gap:6px;margin-left:auto}
+.queuebar .nav button{width:30px;height:30px;border:1px solid var(--line);background:#fff;border-radius:7px;cursor:pointer;color:var(--ink3);font-size:13px}
+.queuebar .nav button:hover{background:var(--active)}
+
+/* ===== reference card (work surface) ===== */
+.refcard{border:1px solid var(--line);border-radius:14px;background:#fff;padding:24px 28px;margin-top:14px}
+.refid{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.reftitle{font-family:var(--serif);font-size:18px;font-weight:600;line-height:1.35;margin-top:6px;max-width:62ch}
+.refauth{font-size:13px;color:var(--ink3);margin-top:9px}
+.refmeta{font-size:12.5px;color:var(--muted);margin-top:7px;line-height:1.6}
+.refmeta a{color:var(--accent)}
+.refmeta .ext{font-size:10px}
+.abstoggle{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:12.5px;font-weight:600;color:var(--ink3);cursor:pointer}
+.absblock{margin-top:11px;font-size:14px;color:var(--ink3);line-height:1.7;border-left:2px solid var(--line);padding-left:16px;max-width:80ch}
+.absblock b{color:var(--ink2);font-weight:600}
+.hl-i{background:var(--incbg);color:var(--inc);padding:0 3px;border-radius:3px;font-weight:500}
+.hl-e{background:var(--excbg);color:var(--exc);padding:0 3px;border-radius:3px;font-weight:500}
+.refactions{display:flex;gap:18px;margin-top:18px;padding-top:16px;border-top:1px solid var(--line2)}
+.refactions a{font-size:12.5px;color:var(--ink3);cursor:pointer;display:flex;align-items:center;gap:6px}
+.refactions a:hover{color:var(--ink)}
+.crit{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+.critbox{border:1px solid var(--line);border-radius:11px;padding:16px 18px;background:var(--rail)}
+.critbox h4{font-size:10.5px;letter-spacing:.07em;color:var(--muted);font-weight:600;text-transform:uppercase;margin-bottom:10px}
+.critbox ul{list-style:none}
+.critbox li{font-size:13px;color:var(--ink3);line-height:1.5;padding:4px 0 4px 18px;position:relative}
+.critbox li:before{content:"";position:absolute;left:2px;top:11px;width:5px;height:5px;border-radius:50%;background:var(--muted)}
+.critbox.inc li:before{background:var(--inc)}
+.critbox.exc li:before{background:var(--exc)}
+.eligck li:before{content:none}
+.eligck li{padding-left:22px}
+.eligck li .ck{position:absolute;left:0;top:3px;color:var(--inc);font-weight:700}
+
+/* ===== control rail ===== */
+.ctrlrail{background:var(--rail);border-left:1px solid var(--line);overflow:auto;padding:20px 18px}
+.railsec{font-size:10.5px;letter-spacing:.07em;color:var(--muted);font-weight:600;text-transform:uppercase;margin:4px 2px 10px}
+.aibox{border:1px solid var(--accentln);background:var(--accentbg);border-radius:12px;padding:16px;margin-bottom:18px}
+.aibox .h{display:flex;align-items:center;gap:8px}
+.aibox .h .lab{font-size:10.5px;letter-spacing:.06em;color:var(--accent);font-weight:700;text-transform:uppercase}
+.aibox .score{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--accent);background:#fff;border:1px solid var(--accentln);border-radius:20px;padding:2px 9px;font-weight:600}
+.aibox .verdict{font-family:var(--serif);font-size:17px;font-weight:600;margin-top:11px;color:var(--inc)}
+.aibox .verdict.exc{color:var(--exc)}
+.aibox .crlist{margin-top:12px;display:flex;flex-direction:column;gap:8px}
+.aibox .cr{display:flex;gap:8px;font-size:12.5px;color:var(--ink3);line-height:1.35}
+.aibox .cr .tick{color:var(--inc);font-weight:700;flex:none}
+.aibox .cr b{color:var(--ink2);font-weight:600}
+.aibox .more{font-size:12px;color:var(--accent);cursor:pointer;margin-top:11px;display:inline-block}
+.aibox .sysrule{border-top:1px solid var(--accentln);margin-top:13px;padding-top:10px;font-size:11px;color:var(--ink3);line-height:1.45}
+.aibox .sysrule b{color:var(--accent)}
+.votes{display:flex;flex-direction:column;gap:9px;margin-bottom:16px}
+.vote{position:relative;display:flex;align-items:center;height:56px;border-radius:10px;border:1.5px solid;background:#fff;cursor:pointer;padding:0 16px 0 18px;overflow:hidden}
+.vote:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px}
+.vote .vlab{font-size:16px;font-weight:600}
+.vote .vsug{margin-left:9px;font-size:9.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;border-radius:20px;padding:2px 7px;background:#fff}
+.vote .vkey{margin-left:auto;font-family:var(--mono);font-size:12px;font-weight:600;width:24px;height:24px;border-radius:6px;display:flex;align-items:center;justify-content:center}
+.vote.no{border-color:var(--excln);color:var(--exc)}.vote.no:before{background:var(--exc)}.vote.no .vkey{background:var(--excbg);color:var(--exc)}.vote.no:hover{background:var(--excbg)}
+.vote.maybe{border-color:var(--mayln);color:var(--may)}.vote.maybe:before{background:var(--may)}.vote.maybe .vkey{background:var(--maybg);color:var(--may)}.vote.maybe:hover{background:var(--maybg)}
+.vote.yes{border-color:var(--incln);color:var(--inc)}.vote.yes:before{background:var(--inc)}.vote.yes .vkey{background:var(--incbg);color:var(--inc)}.vote.yes:hover{background:var(--incbg)}
+.vote.suggested{box-shadow:0 0 0 3px var(--incbg)}
+.vote.suggested.no{box-shadow:0 0 0 3px var(--excbg)}
+.vote.suggested .vsug{color:var(--inc);border:1px solid var(--incln)}
+.vote.suggested.no .vsug{color:var(--exc);border:1px solid var(--excln)}
+.vote.sel.yes{background:var(--inc);color:#fff;border-color:var(--inc)}
+.vote.sel.no{background:var(--exc);color:#fff;border-color:var(--exc)}
+.vote.sel.maybe{background:var(--may);color:#fff;border-color:var(--may)}
+.vote.sel .vkey{background:rgba(255,255,255,.22);color:#fff}
+.blindstat{font-size:12px;color:var(--ink3);background:#fff;border:1px solid var(--line);border-radius:9px;padding:11px 13px;line-height:1.5;display:flex;align-items:flex-start;gap:9px;margin-bottom:9px}
+.blindstat .av{width:24px;height:24px;border-radius:50%;background:var(--accentbg);border:1px solid var(--accentln);color:var(--accent);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none}
+.blindstat .pend{color:var(--muted);font-style:italic}
+.blindstat .hidden{color:var(--con);font-weight:600}
+.railnote{font-size:11px;color:var(--muted);text-align:center;margin-top:6px;font-style:italic}
+.todaybar{margin-top:18px}
+.todaybar .tb{height:6px;border-radius:4px;background:#EDEEF1;overflow:hidden;margin-top:8px}
+.todaybar .tb i{display:block;height:100%;background:var(--inc)}
+.todaybar .tl{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:7px}
+
+/* exclusion-reason block (full text) */
+.reqblock{border:1px solid var(--excln);background:var(--excbg);border-radius:11px;padding:14px;margin-top:4px}
+.reqblock .h{font-size:10px;color:var(--exc);font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+.reqblock select,.reqblock .sel{width:100%;margin-top:9px;font-family:var(--sans);font-size:12.5px;border:1px solid var(--excln);
+  border-radius:8px;padding:8px 10px;background:#fff;color:var(--ink2)}
+.reqblock .reasons{margin-top:10px;font-size:11.5px;color:var(--ink3);line-height:1.7}
+.reqblock .reasons span{display:block;padding-left:12px;position:relative}
+.reqblock .reasons span:before{content:"›";position:absolute;left:0;color:var(--exc)}
+
+/* ===== import ledger ===== */
+.ledger{display:flex;gap:12px;flex-wrap:wrap}
+.lcard{border:1px solid var(--line);border-radius:11px;padding:15px 17px;width:236px;background:#fff}
+.lcard .stg{font-size:11px;color:var(--accent);font-weight:600}
+.lcard .stg.ai{color:var(--accent)}
+.lcard .nums{display:flex;gap:18px;margin-top:10px}
+.lcard .nm{font-family:var(--mono);font-size:20px;font-weight:500}
+.lcard .nl{font-size:9px;color:var(--muted);letter-spacing:.05em;text-transform:uppercase;margin-top:3px}
+.lcard .meta{font-size:11px;color:var(--muted);margin-top:12px;padding-top:11px;border-top:1px solid var(--line2);display:flex;justify-content:space-between}
+.lcard .meta a{color:var(--accent);cursor:pointer}
+.dupe{display:flex;align-items:center;gap:14px;border:1px solid var(--line);border-radius:11px;background:#fff;padding:14px 17px}
+.dupe .dt{font-size:13px}
+.dupe .dm{font-size:11.5px;color:var(--muted);margin-top:2px}
+
+/* ===== RoB ===== */
+.robhdr{display:flex;align-items:center;gap:12px;border:1px solid var(--accentln);background:var(--accentbg);border-radius:11px;padding:13px 17px;margin-top:14px}
+.robhdr .nm{font-size:13px;font-weight:600}
+.robhdr .ov{margin-left:auto;font-size:11px;font-weight:600}
+.robdomain{border:1px solid var(--line);border-radius:11px;background:#fff;margin-bottom:9px;overflow:hidden}
+.robhead{display:flex;align-items:center;gap:11px;padding:13px 16px;cursor:pointer}
+.robhead .light{width:14px;height:14px;border-radius:50%;flex:none}
+.robhead .nm{font-weight:600;font-size:13px}
+.robhead .j{margin-left:auto;font-size:11.5px;font-weight:600;display:flex;align-items:center;gap:7px}
+.robhead .chev{color:var(--muted);font-size:11px;transition:transform .15s}
+.robdomain.open .robhead .chev{transform:rotate(90deg)}
+.robbody{display:none;padding:2px 16px 16px;border-top:1px solid var(--line2)}
+.robdomain.open .robbody{display:block}
+.robq{margin:13px 0 0}
+.robq .qt{font-size:12.5px;color:var(--ink3)}
+.opts{display:flex;gap:7px;margin-top:7px;flex-wrap:wrap}
+.opt{border:1px solid var(--line);border-radius:8px;padding:5px 11px;font-size:12px;cursor:pointer;color:var(--ink3)}
+.opt.sel{background:var(--accentbg);border-color:var(--accentln);color:var(--accent);font-weight:600}
+.robjust{margin-top:13px;border:1px solid var(--accentln);background:var(--accentbg);border-radius:9px;padding:11px 13px;font-size:12px;color:var(--ink3);line-height:1.55}
+.robjust b{color:var(--accent)}
+/* study list rail */
+.studylist .sl{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:9px;background:#fff;padding:10px 12px;margin-bottom:8px;cursor:pointer}
+.studylist .sl.on{border-color:var(--accentln);background:var(--accentbg)}
+.studylist .sl .lt{width:11px;height:11px;border-radius:50%;flex:none}
+.studylist .sl .st{font-size:12.5px;font-weight:600;color:var(--ink2)}
+.studylist .sl .sy{font-size:11px;color:var(--muted)}
+.studylist .sl .ov{margin-left:auto;font-size:10px;font-weight:600}
+
+/* ===== extraction consensus grid ===== */
+.exwrap{display:flex;height:calc(100vh - 52px)}
+.pdfpane{width:42%;min-width:340px;flex:none;background:#F4F4F6;border-right:1px solid var(--line);padding:18px;overflow:auto}
+.pdfdoc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:20px 22px;min-height:100%}
+.pdfdoc .pt{font-family:var(--serif);font-size:14px;font-weight:700;line-height:1.3}
+.pdfdoc .pm{font-size:10px;color:var(--muted);margin-top:5px}
+.pdfdoc .ln{height:7px;background:#EEF0F2;border-radius:3px;margin:9px 0}
+.pdfdoc .ln.s{width:58%}
+.pdfdoc .ln.hl{background:var(--accentbg);border:1px solid var(--accentln)}
+.gridpane{flex:1;min-width:0;overflow:auto;display:flex;flex-direction:column}
+.gridhead{display:flex;align-items:center;gap:12px;padding:18px 22px 14px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--paper);z-index:3}
+.gridhead .gt{font-family:var(--serif);font-size:18px;font-weight:600}
+.gridhead .cf{font-size:11px;color:var(--con);font-weight:600;background:var(--conbg);border-radius:20px;padding:3px 10px}
+.densitytoggle{margin-left:auto;display:flex;border:1px solid var(--line);border-radius:7px;overflow:hidden}
+.densitytoggle button{font-family:var(--sans);font-size:11px;font-weight:600;color:var(--ink3);padding:5px 10px;background:#fff;border:0;border-right:1px solid var(--line);cursor:pointer}
+.densitytoggle button:last-child{border-right:0}
+.densitytoggle button.on{background:var(--ink);color:#fff}
+.cgrid{overflow:auto}
+.secgroup{font-size:10px;letter-spacing:.07em;color:var(--muted);font-weight:700;text-transform:uppercase;background:var(--rail);
+  padding:8px 22px;border-bottom:1px solid var(--line)}
+.ctr{display:grid;grid-template-columns:200px 1.15fr 1fr 1fr;border-bottom:1px solid var(--line2);font-size:12.5px;align-items:stretch}
+.ctr>div{padding:11px 14px;border-right:1px solid var(--line2)}
+.ctr>div:last-child{border-right:none}
+.ctr.head>div{background:#fff;font-size:10px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.05em;position:sticky;top:0}
+.ctr .field{color:var(--ink3);font-weight:600;background:var(--rail)}
+.ctr .final{font-weight:500;color:var(--ink)}
+.ctr .rv{color:var(--ink3);font-family:var(--mono);font-size:12px}
+.ctr.conflict .final{background:var(--conbg);position:relative}
+.ctr.conflict{box-shadow:inset 3px 0 0 var(--con)}
+.reqcell{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;color:var(--con)}
+
+/* ===== PRISMA ===== */
+.prisma{display:flex;gap:32px;margin-top:18px}
+.pcol{display:flex;flex-direction:column}
+.pbox{border:1px solid var(--line);border-radius:10px;background:#fff;padding:14px 18px;width:320px}
+.pbox b{font-family:var(--serif);font-size:22px;font-weight:600;display:block}
+.pbox span{font-size:12.5px;color:var(--ink3)}
+.pbox.inc{border-color:var(--accentln);background:var(--accentbg)}
+.parrow{width:2px;height:30px;background:var(--ink3);margin:0 auto;position:relative}
+.parrow:after{content:"";position:absolute;bottom:0;left:-3px;border:4px solid transparent;border-top-color:var(--ink3)}
+.pside{display:flex;flex-direction:column;gap:14px;padding-top:6px}
+.harrow{display:flex;align-items:center;gap:11px}
+.harrow .ha{color:var(--ink3);font-size:17px}
+.psbox{border:1px dashed var(--line);border-radius:10px;padding:12px 16px;width:300px;font-size:12.5px;color:var(--ink3);background:#fff}
+.psbox b{font-family:var(--mono);font-size:14px;color:var(--ink);font-weight:600}
+.psbox .sr{color:var(--accent);font-size:11.5px;cursor:pointer;margin-top:5px;display:inline-block}
+
+/* ===== report ===== */
+.report{max-width:720px}
+.rtitle{font-family:var(--serif);font-size:32px;font-weight:600;line-height:1.18;letter-spacing:-.4px;margin-top:10px}
+.rmeta{font-size:12px;color:var(--muted);margin-top:12px;font-family:var(--mono)}
+.rlead{font-size:15px;color:var(--ink2);line-height:1.75;margin-top:18px;border-left:3px solid var(--accent);padding:4px 0 4px 18px}
+.rlead .lb{font-weight:600}
+.rh{font-size:10.5px;letter-spacing:.08em;color:var(--muted);font-weight:700;text-transform:uppercase;margin:30px 0 4px;padding-top:18px;border-top:1px solid var(--line)}
+.rh2{font-family:var(--serif);font-size:18px;font-weight:600;margin:8px 0 0}
+.rp{font-size:14.5px;color:var(--ink2);line-height:1.8;margin-top:12px}
+.ci{font-family:var(--mono);font-size:9px;color:var(--accent);background:var(--accentbg);border:1px solid var(--accentln);border-radius:3px;padding:0 3px;cursor:pointer;vertical-align:super}
+.rtbl{margin-top:16px;border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:12px}
+.rtr{display:grid;grid-template-columns:1.5fr .8fr 1fr .7fr .9fr}
+.rtr>div{padding:9px 12px;border-bottom:1px solid var(--line2);border-right:1px solid var(--line2)}
+.rtr>div:last-child{border-right:none}.rtr:last-child>div{border-bottom:none}
+.rtr.h>div{background:var(--rail);font-size:9.5px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.rtr .mono{font-family:var(--mono)}
+
+/* ===== export ===== */
+.exgrid{display:flex;gap:14px;margin-top:18px}
+.excard{border:1px solid var(--line);border-radius:12px;padding:22px 18px;flex:1;text-align:center;cursor:pointer;background:#fff}
+.excard:hover{background:var(--active)}
+.excard .ic{font-size:24px;color:var(--ink3)}
+.excard .t{font-weight:600;font-size:14px;margin-top:10px}
+.excard .m{font-size:11.5px;color:var(--muted);margin-top:5px;line-height:1.4}
+.note{border:1px solid var(--accentln);background:var(--accentbg);border-radius:12px;padding:16px 18px;margin-top:18px}
+.note b{font-size:13px;color:var(--accent)}
+.note p{font-size:13px;color:var(--ink3);line-height:1.65;margin-top:6px}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="brand">ScholarSync</span>
+  <span class="crumb"><b>SGLT2 inhibitors &amp; heart failure</b> &nbsp;›&nbsp; Systematic Review</span>
+  <div class="legend">
+    <span class="srcchip cov">◆ Covidence — rigor</span>
+    <span class="srcchip eli">✦ Elicit — AI</span>
+    <span class="who-am-i">SS</span>
+  </div>
+</div>
+
+<div class="app" id="app">
+  <aside class="rail" id="rail"></aside>
+  <main class="canvas" id="canvas"></main>
+  <aside class="ctrlrail" id="ctrl" style="display:none"></aside>
+</div>
+
+<script>
+var stage='summary';
+var STAGES=[
+  {id:'import',lab:'Import',ct:'412 · 24⊘',n:1,done:true},
+  {id:'screen',lab:'Title & abstract',ct:'191',n:2,prog:72},
+  {id:'conflicts',lab:'Resolve conflicts',ct:'74',n:3,conf:true},
+  {id:'fulltext',lab:'Full-text review',ct:'124',n:4},
+  {id:'rob',lab:'Risk of bias',ct:'RoB 2',n:5},
+  {id:'extract',lab:'Data extraction',ct:'124',n:6},
+  {id:'prisma',lab:'PRISMA',ct:'auto',n:7},
+  {id:'report',lab:'Report',ct:'draft',n:8},
+  {id:'export',lab:'Export',n:9}
+];
+var CTRL={screen:1,conflicts:1,fulltext:1,rob:1,report:1}; // extract uses its own bleed layout
+var COV='<span class="srcchip cov">◆ Covidence</span>', ELI='<span class="srcchip eli">✦ Elicit</span>';
+
+function railHTML(){
+  function row(s){
+    var cls='stage'+(stage===s.id?' on':'')+(s.done?' done':'');
+    var prog=(s.prog && (stage===s.id||s.id==='screen'))?'<div class="prog"><i style="width:'+s.prog+'%"></i></div>':'';
+    return '<button class="'+cls+'" onclick="go(\''+s.id+'\')"><div class="r1"><span class="num">'+s.n+'</span>'
+      +'<span class="nm">'+s.lab+'</span>'+(s.ct?'<span class="ct'+(s.conf?' conf':'')+'">'+s.ct+'</span>':'')+'</div>'+prog+'</button>';
+  }
+  var fun=STAGES.map(row).join('');
+  var sumcls='stage'+(stage==='summary'?' on':'');
+  return '<div class="proj">SGLT2i &amp; HF</div><div class="projmeta">Cochrane-style review · 2 reviewers</div>'
+    +'<div class="railgroup">Review</div>'
+    +'<button class="'+sumcls+'" onclick="go(\'summary\')"><div class="r1"><span class="num">★</span><span class="nm">Review Summary</span></div></button>'
+    +'<div class="railgroup">The funnel</div><div class="spine">'+fun+'</div>'
+    +'<div class="railfoot"><button onclick="go(\'prisma\')">PRISMA</button><button onclick="go(\'export\')">Export</button><button>Settings</button></div>';
+}
+
+function head(eyebrow,title,h2,srcs,lead){
+  var cls=h2?'h2stage':'display';
+  return '<div class="eyebrow">'+eyebrow+'</div><h1 class="'+cls+'">'+title+'</h1>'
+    +(srcs?'<div class="srcpair">'+srcs+'</div>':'')
+    +(lead?'<p class="lead">'+lead+'</p>':'');
+}
+
+var V={};
+
+/* ---------- 0 · SUMMARY ---------- */
+V.summary=function(){return {cls:'wide',cv:
+  head('SGLT2 META-ANALYSIS · SYSTEMATIC REVIEW','Review Summary',false,COV+ELI,
+   'The review home is a four-stage funnel with live counts and per-stage calls to action — modelled on Covidence\'s Review Summary. The human vote is always the system of record; Elicit\'s AI gives every reviewer a running head-start.')
+  +'<div class="aistrip"><span class="srcchip eli tag">✦ Elicit</span>'
+  +'<span><b>AI pre-screened 388 studies</b> · suggested <b>124 to include</b> with per-criterion reasoning · pre-filled <b>6 extraction fields</b> per study. You confirm.</span>'
+  +'<span class="sysrec">Human vote = system of record</span></div>'
+  +'<div class="funnel">'
+  + fstageCollapsed('Import references','412 imported',[['24 duplicates removed','import'],['Import more →','import']])
+  + fstageOpen()
+  + fstageCollapsed('Full-text review','124 to assess',[['23 excluded','fulltext'],['124 to screen →','fulltext']])
+  + fstageCollapsed('Extraction &amp; quality assessment','0 of 124',[['0 extracted','extract'],['124 to extract →','extract']])
+  +'</div>'
+};};
+function fstageCollapsed(name,meta,links){
+  var l=links.map(function(x){return '<a onclick="go(\''+x[1]+'\')">'+x[0]+'</a>';}).join('');
+  return '<section class="fstage"><div class="top" onclick="this.parentNode.classList.toggle(\'open\')">'
+    +'<span class="chev">▸</span><span class="fname">'+name+'</span><span class="fmeta">'+meta+'</span>'
+    +'<div class="flinks">'+l+'</div></div></section>';
+}
+function fstageOpen(){
+  return '<section class="fstage open"><div class="top" onclick="this.parentNode.classList.toggle(\'open\')">'
+   +'<span class="chev">▸</span><span class="fname">Title &amp; abstract screening</span>'
+   +'<div class="flinks"><a onclick="go(\'screen\')">191 to screen</a><a onclick="go(\'screen\')">Continue →</a></div></div>'
+   +'<div class="fbody"><div class="fprogress"><div class="flabel">Team progress</div>'
+   +'<div class="pbar"><i style="width:64.6%;background:var(--inc)"></i><i style="width:3.6%;background:var(--con)"></i><i style="width:31.8%;background:#D7DAE0"></i></div>'
+   +'<div class="plegend">'
+   +'<span class="c"><span class="dot" style="background:var(--inc)"></span><span class="n">1339</span><span class="l">Done</span></span>'
+   +'<span class="c"><span class="dot" style="background:var(--con)"></span><span class="n">74</span><span class="l">Conflicts</span></span>'
+   +'<span class="c"><span class="dot" style="background:var(--incbg);border:1px solid var(--incln)"></span><span class="n">0</span><span class="l">One vote</span></span>'
+   +'<span class="c"><span class="dot" style="background:#D7DAE0"></span><span class="n">191</span><span class="l">No votes</span></span></div>'
+   +'<div class="contrib"><div class="ch">Reviewer contribution</div>'
+   +'<div class="crow"><span class="cn">Emma Reyes</span><span class="cv">742</span><span class="cbar"><i style="width:92%"></i></span></div>'
+   +'<div class="crow"><span class="cn">Katherine Ng</span><span class="cv">531</span><span class="cbar"><i style="width:66%"></i></span></div>'
+   +'<div class="crow"><span class="cn">Shailesh S.</span><span class="cv">140</span><span class="cbar"><i style="width:18%"></i></span></div></div></div>'
+   +'<div class="fcta"><div class="you">Shailesh, you can still</div>'
+   +'<div class="pair"><div class="stat"><div class="big">74</div><div class="sm">Resolve</div></div><div class="stat"><div class="big">191</div><div class="sm">Screen</div></div></div>'
+   +'<div class="btnrow"><button class="btn" onclick="go(\'conflicts\')">Resolve conflicts</button><button class="btn pri" onclick="go(\'screen\')">Continue screening</button></div>'
+   +'<div class="since"><span class="spark">▦</span> You\'ve screened 123 studies so far</div></div></div></section>';
+}
+
+/* ---------- 1 · IMPORT ---------- */
+V.import=function(){return {cls:'wide',cv:
+  head('STAGE 1 · THE FUNNEL','Import references',true,COV+ELI,
+   'You import your own search results (RIS / EndNote / PubMed / CSV) into a chosen stage; Covidence auto-deduplicates on title · year · volume · authors and keeps a reversible ledger. Elicit\'s AI discovery can feed this queue — but import, dedupe and provenance stay the Covidence system of record. <b>There is no search-strategy builder</b> — you arrive with your results.')
+  +'<div class="aistrip"><span class="srcchip eli tag">✦ Elicit</span><span><b>Find papers with AI</b> — ask a research question, AI retrieves candidates → they flow into this import queue (deduped like any other source).</span></div>'
+  +'<div class="seclabel">Import history <span class="sp"></span> <a>24 total duplicates removed · view details</a></div>'
+  +'<div class="ledger">'
+  + lcard('Added to Title &amp; abstract',214,11,'PubMed',false)
+  + lcard('Added to Title &amp; abstract',142,9,'Embase, +2',false)
+  + lcard('Added via ✦ Elicit AI',56,4,'Elicit search',true)
+  +'</div>'
+  +'<div class="seclabel">Duplicate queue <span class="sp"></span></div>'
+  +'<div class="dupe"><span class="pill con">◆ Possible duplicate</span><div><div class="dt">McMurray 2019 · DAPA-HF</div><div class="dm">Matched on title + year + first author</div></div>'
+  +'<div class="btnrow" style="margin-left:auto"><button class="btn sm">Not a duplicate</button><button class="btn pri sm">Merge</button></div></div>'
+};};
+function lcard(stg,refs,dupes,src,ai){
+  return '<div class="lcard"><div class="stg'+(ai?' ai':'')+'">'+stg+'</div>'
+    +'<div class="nums"><div><div class="nm">'+refs+'</div><div class="nl">References</div></div><div><div class="nm">'+dupes+'</div><div class="nl">Duplicates</div></div></div>'
+    +'<div class="meta"><span>'+src+'</span><a>Undo import</a></div></div>';
+}
+
+/* ---------- 2 · SCREENING ---------- */
+V.screen=function(){return {cls:'narrow',ctrlOn:true, cv:
+  head('SGLT2 META-ANALYSIS · SYSTEMATIC REVIEW','Title &amp; abstract screening',true,COV+ELI,
+   'Two reviewers vote <b>No / Maybe / Yes</b> independently and blinded (Maybe is a positive vote — it advances). Keyboard-first. Inclusion terms highlight green, exclusion red. Elicit pre-votes with an inclusion score and per-criterion reasoning — you confirm or override.')
+  +'<div class="tabbar"><span class="tab on">To screen <b>191</b></span><span class="tab conf" onclick="go(\'conflicts\')">Conflicts <b>74</b></span>'
+  +'<span class="tab">Awaiting other <b>312</b></span><span class="tab">Irrelevant <b>191</b></span>'
+  +'<span class="kbd-hint">Blinded &nbsp;<span class="kbd">N</span><span class="kbd">M</span><span class="kbd">Y</span>&nbsp;·&nbsp;<span class="kbd">←</span><span class="kbd">→</span></span></div>'
+  +'<div class="queuebar"><span class="pos">Study 1 of 191 · to screen</span><div class="nav"><button>←</button><button>→</button></div></div>'
+  + refcardAnker(true)
+  ,
+  ctrl:
+   '<div class="railsec">AI screening</div>'
+   +'<div class="aibox"><div class="h"><span class="lab">✦ Elicit AI</span><span class="score">4.9 / 5</span></div>'
+   +'<div class="verdict">Suggests: Include</div>'
+   +'<div class="crlist">'
+   +'<div class="cr"><span class="tick">✓</span><span><b>Population</b> — adults with HF (HFpEF, EF &gt;40%)</span></div>'
+   +'<div class="cr"><span class="tick">✓</span><span><b>Intervention</b> — empagliflozin, an SGLT2 inhibitor</span></div>'
+   +'<div class="cr"><span class="tick">✓</span><span><b>Design</b> — randomised, double-blind RCT (n=5,988)</span></div>'
+   +'<div class="cr"><span class="tick">✓</span><span><b>Outcome</b> — reports HF hospitalisation &amp; CV death</span></div></div>'
+   +'<a class="more">Show full per-criterion reasoning ▸</a>'
+   +'<div class="sysrule">Your vote is the <b>system of record</b>. The AI suggestion never advances a study on its own.</div></div>'
+   +'<div class="railsec">Your vote</div>'
+   + voteTriad('yes')
+   +'<div class="blindstat"><span class="av">KN</span><div><b>Reviewer 2 · Katherine</b><br><span class="pend">vote pending — blinded until both submit</span></div></div>'
+   +'<div class="railnote">Maybe is a positive vote — it advances the study.</div>'
+   +'<div class="todaybar"><div class="railsec" style="margin-bottom:0">Your progress today</div><div class="tb"><i style="width:38%"></i></div>'
+   +'<div class="tl"><span>47 screened today</span><span>191 remaining</span></div></div>'
+};};
+function voteTriad(suggest){
+  function v(c,lab,key){var sug=(suggest===c)?' suggested':'';var sg=(suggest===c)?'<span class="vsug">AI suggests</span>':'';
+    return '<button class="vote '+c+sug+'"><span class="vlab">'+lab+'</span>'+sg+'<span class="vkey">'+key+'</span></button>';}
+  return '<div class="votes">'+v('no','No','N')+v('maybe','Maybe','M')+v('yes','Yes','Y')+'</div>';
+}
+function refcardAnker(withCrit){
+  return '<article class="refcard"><div class="refid">#2241 · 2021</div>'
+   +'<h2 class="reftitle">Empagliflozin in Heart Failure with a Preserved Ejection Fraction</h2>'
+   +'<div class="refauth">Anker SD; Butler J; Filippatos G; Ferreira JP; Bocchi E; Böhm M; et al.</div>'
+   +'<div class="refmeta">New England Journal of Medicine · 2021;385(16):1451–1461 · DOI <a>10.1056/NEJMoa2107038 <span class="ext">↗</span></a> · Ref ID 34449189</div>'
+   +'<div class="abstoggle">▾ Abstract</div>'
+   +'<div class="absblock"><b>Background.</b> <span class="hl-i">SGLT2 inhibitors</span> reduce the risk of hospitalisation for <span class="hl-i">heart failure</span> in patients with a reduced ejection fraction, but their effects in patients with a preserved ejection fraction are uncertain. '
+   +'<b>Methods.</b> In this <span class="hl-i">randomised, double-blind trial</span>, we assigned 5,988 patients with class II–IV heart failure and an <span class="hl-i">ejection fraction of more than 40%</span> to receive empagliflozin (10 mg once daily) or placebo. We excluded patients with an <span class="hl-e">eGFR below 20</span> mL/min/1.73 m². '
+   +'<b>Results.</b> Empagliflozin reduced the composite of cardiovascular death or hospitalisation for heart failure (hazard ratio 0.79; 95% CI 0.69–0.90; P&lt;0.001), driven principally by a lower risk of <span class="hl-i">HF hospitalisation</span>.</div>'
+   +'<div class="refactions"><a>⊘ Mark duplicate</a><a>↻ History</a><a>✎ Add note</a><a>⌖ Show criteria</a></div>'
+   +(withCrit?'<div class="crit"><div class="critbox inc"><h4>Inclusion criteria</h4><ul><li>Adults with heart failure</li><li>SGLT2-inhibitor intervention</li><li>Randomised controlled trial</li><li>Reports HF hospitalisation or mortality</li></ul></div>'
+   +'<div class="critbox exc"><h4>Exclusion criteria</h4><ul><li>Conference abstract only</li><li>Non-human / mechanistic</li><li>eGFR &lt;20 populations</li></ul></div></div>':'')
+   +'</article>';
+}
+
+/* ---------- 3 · CONFLICTS ---------- */
+V.conflicts=function(){return {cls:'narrow',ctrlOn:true, cv:
+  head('STAGE 3 · THE FUNNEL','Resolve conflicts',true,COV,
+   'When two reviewers disagree (one positive vs one No — or both Exclude on different reasons) the study lands here. Resolution stays <b>blinded</b>: you see <b>who</b> voted, not <b>what</b> — to avoid anchoring bias — then record the agreed final decision. Elicit has no concept of a conflict; this is pure Covidence.')
+  +'<div class="tabbar"><span class="tab conf on">Decision conflicts <b>61</b></span><span class="tab conf">Reason conflicts <b>13</b></span>'
+  +'<span class="kbd-hint"><span class="pill con">◆ Anti-anchoring: votes hidden until you decide</span></span></div>'
+  +'<div class="queuebar"><span class="pos">Conflict 1 of 61 · decision conflict</span><div class="nav"><button>←</button><button>→</button></div></div>'
+  +'<article class="refcard"><div class="refid">#1904 · 2022</div>'
+  +'<h2 class="reftitle">Dapagliflozin in Heart Failure with Mildly Reduced or Preserved Ejection Fraction (DELIVER)</h2>'
+  +'<div class="refauth">Solomon SD; McMurray JJV; Claggett B; de Boer RA; et al.</div>'
+  +'<div class="refmeta">New England Journal of Medicine · 2022;387(12):1089–1098 · DOI <a>10.1056/NEJMoa2206286 <span class="ext">↗</span></a></div>'
+  +'<div class="abstoggle">▾ Abstract</div>'
+  +'<div class="absblock"><b>Background.</b> <span class="hl-i">SGLT2 inhibitors</span> reduce the risk of cardiovascular death or worsening <span class="hl-i">heart failure</span> in HFrEF; whether benefits extend to a mildly reduced or <span class="hl-i">preserved ejection fraction</span> is unclear. '
+  +'<b>Methods.</b> We randomly assigned 6,263 patients with HF and an <span class="hl-i">ejection fraction &gt;40%</span> to <span class="hl-i">dapagliflozin</span> or placebo. '
+  +'<b>Results.</b> Dapagliflozin reduced the composite of worsening HF or CV death (HR 0.82; 95% CI 0.73–0.92; P&lt;0.001).</div>'
+  +'<div class="refactions"><a>↻ History</a><a>✎ Add note</a><a>⌖ Show criteria</a></div></article>'
+  ,
+  ctrl:
+   '<div class="railsec">Why this is a conflict</div>'
+   +'<div class="blindstat"><span class="av">ER</span><div><b>Emma Reyes</b><br><span class="hidden">voted · hidden</span> · 2 days ago</div></div>'
+   +'<div class="blindstat"><span class="av">KN</span><div><b>Katherine Ng</b><br><span class="hidden">voted · hidden</span> · 1 day ago</div></div>'
+   +'<div class="railnote" style="text-align:left;margin:2px 2px 18px">You see who voted, never what — so their decision can\'t anchor yours.</div>'
+   +'<div class="railsec">Agreed final decision</div>'
+   + voteTriad(null)
+   +'<div class="blindstat" style="margin-top:6px"><span class="av" style="background:#fff;border-color:var(--line);color:var(--ink3)">⚑</span>'
+   +'<div>Resolver permission: <b>1st or 2nd reviewer only</b><br><span class="pend">set in Team settings · a 3rd reviewer breaks genuine deadlock</span></div></div>'
+};};
+
+/* ---------- 4 · FULL TEXT ---------- */
+V.fulltext=function(){return {cls:'narrow',ctrlOn:true, cv:
+  head('STAGE 4 · THE FUNNEL','Full-text review',true,COV,
+   'Reviewers read the actual PDF and vote a binary <b>Include / Exclude</b>. Every exclusion <b>requires a structured reason</b> from a managed, hierarchical list — that is what makes the PRISMA "excluded with reasons" box real and auditable. Pure Covidence.')
+  +'<div class="tabbar"><span class="tab on">To screen <b>124</b></span><span class="tab conf" onclick="go(\'conflicts\')">Resolve conflicts <b>6</b></span>'
+  +'<span class="tab">Awaiting other <b>40</b></span><span class="tab">Excluded <b>23</b></span></div>'
+  +'<div class="queuebar"><span class="pos">Study 1 of 124 · full text</span><div class="nav"><button>←</button><button>→</button></div></div>'
+  +'<article class="refcard"><div class="refid">#1660 · 2019</div>'
+  +'<h2 class="reftitle">Dapagliflozin in Patients with Heart Failure and a Reduced Ejection Fraction (DAPA-HF)</h2>'
+  +'<div class="refauth">McMurray JJV; Solomon SD; Inzucchi SE; Køber L; Kosiborod MN; et al.</div>'
+  +'<div class="refmeta">New England Journal of Medicine · 2019;381(21):1995–2008 · DOI <a>10.1056/NEJMoa1911303 <span class="ext">↗</span></a></div>'
+  +'<div class="btnrow" style="margin-top:14px"><button class="btn sm">☁ Add full text (PDF)</button><button class="btn sm">✎ Add a note</button></div>'
+  +'<div class="crit"><div class="critbox inc eligck"><h4>Eligibility checklist</h4><ul>'
+  +'<li><span class="ck">✓</span>Randomised controlled trial</li><li><span class="ck">✓</span>Adults with heart failure</li>'
+  +'<li><span class="ck">✓</span>SGLT2-inhibitor intervention</li><li><span class="ck">✓</span>Reports CV mortality</li>'
+  +'<li><span class="ck">✓</span>Full text available</li></ul></div></div></article>'
+  ,
+  ctrl:
+   '<div class="railsec">Your decision</div>'
+   +'<div class="votes"><button class="vote yes"><span class="vlab">Include</span><span class="vkey">I</span></button>'
+   +'<button class="vote no"><span class="vlab">Exclude</span><span class="vkey">E</span></button></div>'
+   +'<div class="reqblock"><div class="h">Exclude requires a reason</div>'
+   +'<div class="sel">Select a reason ▾</div>'
+   +'<div class="reasons"><span>Wrong population</span><span>Wrong intervention</span><span>Wrong comparator</span><span>Wrong outcome</span><span>Wrong study design</span><span>Conference abstract only</span><span>Duplicate</span></div></div>'
+   +'<div class="railnote" style="text-align:left;margin-top:14px">Reasons are configured in Settings → Criteria &amp; exclusion reasons, ordered into a hierarchy by the team.</div>'
+};};
+
+/* ---------- 5 · RISK OF BIAS ---------- */
+V.rob=function(){return {cls:'narrow',ctrlOn:true, cv:
+  head('STAGE 5 · THE FUNNEL','Risk of bias',true,COV,
+   'A structured, domain-by-domain quality instrument with per-domain judgement and a justification comment, dual-assessed and reconciled. Covidence ships Cochrane RoB v1 by default — <b>ScholarSync ships RoB 2 first-class</b> (the one place we exceed the source). Elicit suggests the justification from the methods text; you confirm.')
+  +'<div class="robhdr"><span class="nm">EMPEROR-Preserved · Anker 2021</span><span class="pill may" style="margin-left:auto">Overall: Some concerns</span></div>'
+  + robDomain('1 · Randomisation process','var(--inc)','Low','inc',true,
+      [['Was the allocation sequence random?','Yes'],['Was the allocation sequence concealed?','Yes']],
+      '"Computer-generated 1:1 randomisation, stratified by region and diabetes status; concealment via an interactive web system." ✦ AI suggested this from the methods text — you confirm.')
+  + robDomainClosed('2 · Deviations from intended intervention','var(--inc)','Low','inc')
+  + robDomainClosed('3 · Missing outcome data','var(--may)','Some concerns','may')
+  + robDomainClosed('4 · Measurement of the outcome','var(--inc)','Low','inc')
+  + robDomainClosed('5 · Selection of the reported result','var(--inc)','Low','inc')
+  ,
+  ctrl:
+   '<div class="railsec">Studies to assess · RoB 2</div><div class="studylist">'
+   + slRow('EMPEROR-Preserved','Anker 2021','var(--may)','Some concerns',true)
+   + slRow('DAPA-HF','McMurray 2019','var(--inc)','Low',false)
+   + slRow('DELIVER','Solomon 2022','var(--inc)','Low',false)
+   + slRow('Meta-analysis','Banerjee 2023','var(--exc)','High',false)
+   +'</div><div class="railnote" style="text-align:left;margin-top:6px">Each study is assessed by two reviewers, then reconciled — like extraction.</div>'
+};};
+function robDomain(nm,light,j,jc,open,qs,just){
+  var q=qs.map(function(x){return '<div class="robq"><div class="qt">'+x[0]+'</div><div class="opts">'
+    +['Yes','Probably yes','Probably no','No'].map(function(o){return '<span class="opt'+(o===x[1]?' sel':'')+'">'+o+'</span>';}).join('')+'</div></div>';}).join('');
+  return '<div class="robdomain'+(open?' open':'')+'"><div class="robhead" onclick="this.parentNode.classList.toggle(\'open\')">'
+    +'<span class="light" style="background:'+light+'"></span><span class="nm">'+nm+'</span>'
+    +'<span class="j" style="color:var(--'+jc+')">'+j+' <span class="chev">▸</span></span></div>'
+    +'<div class="robbody">'+q+'<div class="robjust"><b>Justification.</b> '+just+'</div></div></div>';
+}
+function robDomainClosed(nm,light,j,jc){
+  return '<div class="robdomain"><div class="robhead" onclick="this.parentNode.classList.toggle(\'open\')">'
+    +'<span class="light" style="background:'+light+'"></span><span class="nm">'+nm+'</span>'
+    +'<span class="j" style="color:var(--'+jc+')">'+j+' <span class="chev">▸</span></span></div>'
+    +'<div class="robbody"><div class="robjust">Signalling questions and AI-suggested justification appear here — confirm or override.</div></div></div>';
+}
+function slRow(st,sy,lt,ov,on){
+  return '<div class="sl'+(on?' on':'')+'"><span class="lt" style="background:'+lt+'"></span><div><div class="st">'+st+'</div><div class="sy">'+sy+'</div></div><span class="ov" style="color:'+lt+'">'+ov+'</span></div>';
+}
+
+/* ---------- 6 · EXTRACTION (consensus grid) ---------- */
+V.extract=function(){return {cls:'bleed', cv:
+  '<div class="exwrap">'
+  +'<div class="pdfpane"><div class="pdfdoc"><div class="pt">Empagliflozin in Heart Failure with a Preserved Ejection Fraction</div><div class="pm">Anker et al., NEJM 2021 · source for the Final column</div>'
+  +'<div class="ln"></div><div class="ln"></div><div class="ln hl"></div><div class="ln s"></div><div class="ln"></div><div class="ln"></div><div class="ln hl"></div><div class="ln s"></div><div class="ln"></div><div class="ln"></div><div class="ln s"></div><div class="ln"></div></div></div>'
+  +'<div class="gridpane"><div class="gridhead"><span class="gt">Data extraction · consensus</span><span class="cf">3 conflicts to resolve</span>'
+  +'<div class="densitytoggle"><button>Comfortable</button><button class="on">Compact</button></div></div>'
+  +'<div class="cgrid">'
+  +'<div class="ctr head"><div>Field</div><div>Final decision</div><div>Reviewer 1 · Emma</div><div>Reviewer 2 · Katherine</div></div>'
+  +'<div class="secgroup">General information</div>'
+  + ctr('Study ID','EMPEROR-Preserved'+vchip(),'EMPEROR-Preserved','EMPEROR-Preserved',false)
+  + ctr('Study type','RCT'+vchip(),'RCT','RCT',false)
+  + ctr('Sample size','','5,988','5,888',true)
+  + ctr('Intervention','Empagliflozin 10 mg'+vchip(),'Empagliflozin','Empagliflozin 10 mg',false)
+  +'<div class="secgroup">Characteristics &amp; outcomes</div>'
+  + ctr('EF category','HFpEF (EF &gt;40%)'+vchip(),'HFpEF','HFpEF &gt;40%',false)
+  + ctr('Follow-up','','26.2 months','2.2 years',true)
+  + ctr('Diabetes status','','Mixed','<span class="nr">Not reported</span>',true)
+  + ctr('Primary HR (HF hosp.)','0.73 (0.61–0.88)'+vchip(),'0.73','0.73 [0.61–0.88]',false)
+  +'</div>'
+  +'<div style="padding:14px 22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;background:#fff">'
+  +'<span style="font-size:12px;color:var(--muted)">✦ Final column pre-filled by Elicit from the PDF · every value carries a source chip · reviewers verify</span>'
+  +'<div class="btnrow"><button class="btn sm">Save</button><button class="btn pri sm">Complete consensus →</button></div></div></div></div>'
+};};
+function vchip(){return '<span class="vchip" title="Elicit · click to see source passage">✦</span>';}
+function ctr(field,fin,r1,r2,conflict){
+  var finalCell = conflict ? '<span class="reqcell"><span class="pill con">Decision required</span></span>' : fin;
+  return '<div class="ctr'+(conflict?' conflict':'')+'"><div class="field">'+field+'</div><div class="final">'+finalCell+'</div><div class="rv">'+r1+'</div><div class="rv">'+r2+'</div></div>';
+}
+
+/* ---------- 7 · PRISMA ---------- */
+V.prisma=function(){return {cls:'wide',cv:
+  head('STAGE 7 · THE FUNNEL','PRISMA 2020 flow diagram',true,COV,
+   'Auto-generated from your live review counts — no manual diagramming. Drill into "excluded ▸ show reasons" (the reasons captured at full-text) and "▸ show sources". Downloads as a PRISMA-2020-compliant Word figure — a marquee trust artifact Elicit doesn\'t produce.')
+  +'<div class="btnrow" style="margin-top:14px"><button class="btn pri">⬇ Download DOCX (PRISMA 2020)</button><button class="btn">Copy figure</button></div>'
+  +'<div class="prisma"><div class="pcol">'
+  +'<div class="pbox"><b>412</b><span>studies imported for screening</span><div class="psbox sr" style="border:none;padding:6px 0 0;width:auto">▸ Show sources</div></div>'
+  +'<div class="parrow"></div><div class="pbox"><b>388</b><span>studies screened (title &amp; abstract)</span></div>'
+  +'<div class="parrow"></div><div class="pbox"><b>124</b><span>full-text studies assessed for eligibility</span></div>'
+  +'<div class="parrow"></div><div class="pbox inc"><b>12</b><span>studies included in synthesis</span></div></div>'
+  +'<div class="pside">'
+  +'<div class="harrow"><span class="ha">→</span><div class="psbox"><b>24</b> duplicates removed before screening</div></div>'
+  +'<div class="harrow" style="margin-top:24px"><span class="ha">→</span><div class="psbox"><b>264</b> studies irrelevant at title &amp; abstract</div></div>'
+  +'<div class="harrow" style="margin-top:22px"><span class="ha">→</span><div class="psbox"><b>112</b> full-text studies excluded<div class="sr">▸ Show reasons</div></div></div></div></div>'
+};};
+
+/* ---------- 8 · REPORT ---------- */
+V.report=function(){return {cls:'narrow',ctrlOn:true, cv:
+  '<div class="report">'
+  + '<div class="eyebrow">✦ ELICIT · AUTO-WRITTEN NARRATIVE</div>'
+  + '<h1 class="rtitle">Effect of SGLT2 inhibitors on heart-failure outcomes across the ejection-fraction spectrum</h1>'
+  + '<div class="rmeta">12 included studies · 6 screening criteria · drafted from your consensus data</div>'
+  + '<div class="rlead"><span class="lb">Abstract.</span> SGLT2 inhibitors reduce heart-failure hospitalisation by 21–30% across the ejection-fraction spectrum, with consistent benefits in both HFpEF<span class="ci">1,3</span> and HFrEF<span class="ci">2,5</span>. Mortality benefits diverge by EF: in HFrEF, SGLT2 inhibitors reduce CV death by 14–27%<span class="ci">2</span>, while in HFpEF CV mortality shows no significant reduction (HR 0.88–0.96)<span class="ci">3,6</span>.</div>'
+  + '<div class="rh">Characteristics of included studies</div>'
+  + '<div class="rtbl"><div class="rtr h"><div>Study</div><div>Type</div><div>Intervention</div><div>n</div><div>EF category</div></div>'
+  + '<div class="rtr"><div>Anker 2021 '+vchip()+'</div><div>RCT</div><div>Empagliflozin</div><div class="mono">5,988</div><div>HFpEF &gt;40%</div></div>'
+  + '<div class="rtr"><div>McMurray 2019 '+vchip()+'</div><div>RCT</div><div>Dapagliflozin</div><div class="mono">4,744</div><div>HFrEF ≤40%</div></div>'
+  + '<div class="rtr"><div>Solomon 2022 '+vchip()+'</div><div>RCT</div><div>Dapagliflozin</div><div class="mono">6,263</div><div>HFpEF &gt;40%</div></div>'
+  + '<div class="rtr"><div>Banerjee 2023 '+vchip()+'</div><div>Meta-analysis</div><div>SGLT2i</div><div class="mono">15,769</div><div><span class="nr">Not reported</span></div></div></div>'
+  + '<div class="rh">Effects on heart-failure hospitalisation</div>'
+  + '<div class="rp">In patients with HFpEF, SGLT2 inhibitors consistently reduced HF hospitalisations by 21–27%. EMPEROR-Preserved showed a 27% reduction with empagliflozin (HR 0.73, 95% CI 0.61–0.88)<span class="ci">1</span>, while DELIVER showed a 21% reduction with dapagliflozin (HR 0.79, 0.69–0.91)<span class="ci">3</span>.</div>'
+  + '<div class="rtbl"><div class="rtr h"><div>Study</div><div>Population</div><div>Effect</div><div>95% CI</div><div>p</div></div>'
+  + '<div class="rtr"><div>Anker 2021</div><div>HFpEF</div><div class="mono">HR 0.73</div><div class="mono">0.61–0.88</div><div class="mono">&lt;0.001</div></div>'
+  + '<div class="rtr"><div>Solomon 2022</div><div>HFpEF</div><div class="mono">HR 0.79</div><div class="mono">0.69–0.91</div><div class="mono">&lt;0.001</div></div>'
+  + '<div class="rtr"><div>McMurray 2019</div><div>HFrEF</div><div class="mono">HR 0.70</div><div class="mono">0.59–0.83</div><div class="mono">&lt;0.001</div></div></div>'
+  + '</div>'
+  ,
+  ctrl:
+   '<div class="railsec">Report status</div>'
+   +'<div class="aibox" style="padding:14px"><div class="crlist">'
+   +'<div class="cr"><span class="tick">✓</span><span><b>Gather</b> — 412 papers</span></div>'
+   +'<div class="cr"><span class="tick">✓</span><span><b>Screen</b> — 124 included</span></div>'
+   +'<div class="cr"><span class="tick">✓</span><span><b>Extract</b> — consensus data</span></div>'
+   +'<div class="cr"><span class="tick" style="color:var(--may)">◷</span><span><b>Generate</b> — draft ready to verify</span></div></div></div>'
+   +'<div class="railsec">Sources &amp; export</div>'
+   +'<div class="btnrow" style="flex-direction:column;gap:8px"><button class="btn" style="justify-content:flex-start">⬇ BibTeX</button>'
+   +'<button class="btn">⬇ RIS</button><button class="btn">⬇ Save PDF</button><button class="btn pri">✎ Send to manuscript</button></div>'
+   +'<div class="railnote" style="text-align:left;margin-top:14px">Every figure carries a ✦ source chip back to the included study. "Not reported" is shown where a paper is silent — never invented.</div>'
+};};
+
+/* ---------- 9 · EXPORT ---------- */
+V.export=function(){return {cls:'wide',cv:
+  head('STAGE 9 · THE FUNNEL','Export',true,COV,
+   'Final consensus data and quality assessments export to the formats the field actually uses — Covidence\'s interop. Statistical synthesis (meta-analysis / forest plots) happens in <b>RevMan or R</b>, not here: ScholarSync exports, it doesn\'t invent a stats engine.')
+  +'<div class="exgrid">'
+  +'<div class="excard"><div class="ic">▤</div><div class="t">CSV / Excel</div><div class="m">one row per study · all extracted fields + RoB</div></div>'
+  +'<div class="excard"><div class="ic">◆</div><div class="t">RevMan 5</div><div class="m">Cochrane meta-analysis &amp; forest plots</div></div>'
+  +'<div class="excard"><div class="ic">▦</div><div class="t">Word / DOCX</div><div class="m">characteristics tables + PRISMA figure</div></div>'
+  +'</div>'
+  +'<div class="note"><b>Why no forest plot here?</b><p>Neither Covidence nor Elicit computes statistics — Covidence <b>exports to RevMan / R</b> for the meta-analysis. The earlier spec\'s built-in forest plot was invention, and it\'s cut. ScholarSync hands off cleanly to the tool methodologists already trust.</p></div>'
+};};
+
+/* ---------- render ---------- */
+function go(s){stage=s;render();var c=document.getElementById('canvas');if(c)c.scrollTop=0;window.scrollTo(0,0);}
+function render(){
+  document.getElementById('rail').innerHTML=railHTML();
+  var view=(V[stage]||V.summary)();
+  var app=document.getElementById('app'), canvas=document.getElementById('canvas'), ctrl=document.getElementById('ctrl');
+  var wrapCls = view.cls==='bleed' ? 'cv-inner bleed' : 'cv-inner '+(view.cls||'wide');
+  canvas.innerHTML='<div class="'+wrapCls+'">'+view.cv+'</div>';
+  if(view.ctrlOn){app.classList.add('has-rail');ctrl.style.display='';ctrl.innerHTML=view.ctrl;}
+  else{app.classList.remove('has-rail');ctrl.style.display='none';ctrl.innerHTML='';}
+}
+/* delegated interactions */
+document.addEventListener('click',function(e){
+  var vote=e.target.closest('.vote');
+  if(vote){var box=vote.closest('.votes');box.querySelectorAll('.vote').forEach(function(x){x.classList.remove('sel');});vote.classList.add('sel');return;}
+  var ab=e.target.closest('.abstoggle');
+  if(ab){var blk=ab.nextElementSibling;var open=blk.style.display!=='none';blk.style.display=open?'none':'block';ab.textContent=(open?'▸':'▾')+' Abstract';}
+});
+render();
+</script>
+</body>
+</html>
