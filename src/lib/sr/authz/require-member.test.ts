@@ -83,6 +83,7 @@ const activeMember = {
 };
 
 beforeEach(() => {
+  vi.clearAllMocks();
   rowsByTable = new Map();
   executeRows = [];
   vi.mocked(getSessionUser).mockResolvedValue(sessionUser);
