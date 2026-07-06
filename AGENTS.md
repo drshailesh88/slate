@@ -93,8 +93,8 @@ The SR module ships on the long-lived integration branch `feat/systematic-review
   Drizzle SELECT from the runtime role fails at the DB with `permission denied`.
 - The only read path is the audited `SECURITY DEFINER` functions
   `public.sr_read_{screening_decisions,extraction_entries,rob_assessments}(uuid)`
-  (search_path pinned to `pg_catalog`). The blinding chokepoint (T2, future
-  `src/lib/sr/authz/**`) is their only intended caller; aggregates are blinded
+  (search_path pinned to `pg_catalog`). The blinding chokepoint
+  (`src/lib/sr/authz/**`) is their only intended caller; aggregates are blinded
   data and must be computed inside the chokepoint.
 - **Founder step:** applying to live Neon requires provisioning the two roles via
   the Neon console/API and pointing the runtime `DATABASE_URL` at `slate_runtime`.
@@ -116,5 +116,41 @@ Three layers keep the blinded tables from being read outside `src/lib/sr/authz/*
    symbol or DB name appears outside those two locations.
 3. **CODEOWNERS** (`.github/CODEOWNERS`) reserves `sr-blinded.ts`,
    `src/lib/sr/authz/**`, and the wall migration/scripts.
+
+### The blinding chokepoint contract (T2 — `src/lib/sr/authz/`)
+
+The chokepoint is the app-layer policy brain sitting behind the DB wall. It is
+the **only** module that calls the definer reader functions, and it never lets a
+raw or aggregated blinded value out except through deny-by-default policy.
+
+- `policy.ts` — the **pure** decision brain (no DB). Exhaustively unit-testable.
+  - `resolveRowVisibility(role, phase)` → `'none' | 'own' | 'all'`. The matrix:
+    during `independent` every authoring role (owner/collaborator/reviewer/
+    arbitrator) sees `own` rows only and `viewer` sees `none` — **no role ever
+    gets `all` while independent**, so a co-reviewer's row can never surface
+    (owner/arbitrator get no peek). At `reconcile` those roles get `all`;
+    `viewer` still gets `none` (it reads derived consensus, not raw rows).
+    Anything unmatched (unknown role/phase) → `none`.
+  - `resolveAggregateVisibility(role, phase)` → aggregates are blinded data, so a
+    count/distribution is permitted **only when full rows are** (never during
+    `independent`).
+  - `computeSurfaceProgress` / `BlindedAccessError` / `applyRowVisibility`.
+- `blinded-read.ts` — the DB wiring + public API. It reads the per-surface phase
+  from `reviews` itself (a caller can never spoof "we're in reconcile"), calls
+  the definer function, then applies policy. A denied read **throws
+  `BlindedAccessError`** (never a silently-empty result). Public surface:
+  `getScreeningDecisions` / `getExtractionEntries` / `getRobAssessments`,
+  `getScreeningTally` (reconcile-gated aggregate), and **`getSafeProgress(reviewId)`**.
+- **`getSafeProgress` is the ONLY progress surface during `independent`**:
+  completion counts only (`{ finishedReviewers, totalReviewers }` per surface) —
+  no decision distribution, no conflict count, no per-study/partner status.
+- Callers pass a `BlindedContext { reviewId, requesterId, role }` where `role` is
+  the **live `review_members` role** resolved by the authorization layer (T3),
+  never a JWT claim. Every new count/PRISMA/conflict number MUST be computed
+  inside this module — no `COUNT(*)` on the blinded tables lives anywhere else.
+- Tests: `policy.test.ts` (exhaustive `role × phase` matrix + progress shape) and
+  `blinded-read.test.ts` (per-table matrix with a mocked DB, aggregate gating,
+  safe-progress leak checks). They import `vitest` and carry `@ts-nocheck` so
+  `tsc` stays green until T5's harness installs the runner — do not add a runner.
 
 - Add durable project-specific notes here as they are discovered through real work.
