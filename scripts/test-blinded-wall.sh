@@ -79,10 +79,14 @@ INSERT INTO reviews (org_id, title, review_type, review_mode, created_by)
 INSERT INTO studies (review_id, title) VALUES (:'review_id', 'Study A') RETURNING id AS study_id \gset
 INSERT INTO screening_decisions (review_id, study_id, reviewer_id, stage, decision)
   VALUES (:'review_id', :'study_id', :'user_id', 'title_abstract', 'include');
+INSERT INTO extraction_entries (review_id, study_id, field_id, reviewer_id, value, state)
+  VALUES (:'review_id', :'study_id', 'sample_size', :'user_id', '120', 'reported');
+INSERT INTO rob_assessments (review_id, study_id, reviewer_id, domain, judgement)
+  VALUES (:'review_id', :'study_id', :'user_id', 'randomization', 'low');
 SELECT :'review_id';
 SQL
 )"
-echo "  seeded review $REVIEW_ID with 1 screening_decision"
+echo "  seeded review $REVIEW_ID with 1 row in each blinded table"
 
 PASS=0
 FAIL=0
@@ -122,8 +126,10 @@ echo "=== THE WALL: runtime role must NOT SELECT the three blinded tables ==="
 check_denied "SELECT screening_decisions" "SELECT * FROM screening_decisions;"
 check_denied "SELECT extraction_entries"  "SELECT * FROM extraction_entries;"
 check_denied "SELECT rob_assessments"     "SELECT * FROM rob_assessments;"
-echo "--- aggregates are blinded data too: COUNT(*) must also be denied ---"
+echo "--- aggregates are blinded data too: COUNT(*) must also be denied on ALL three ---"
 check_denied "COUNT screening_decisions"  "SELECT count(*) FROM screening_decisions;"
+check_denied "COUNT extraction_entries"   "SELECT count(*) FROM extraction_entries;"
+check_denied "COUNT rob_assessments"      "SELECT count(*) FROM rob_assessments;"
 
 echo
 echo "=== Runtime CAN still write its own rows to the blinded tables ==="
@@ -131,8 +137,10 @@ check_ok "INSERT screening_decisions" \
   "INSERT INTO screening_decisions (review_id, study_id, reviewer_id, stage, decision) SELECT review_id, study_id, reviewer_id, stage, 'maybe' FROM sr_read_screening_decisions('$REVIEW_ID') LIMIT 1;"
 
 echo
-echo "=== The SECURITY DEFINER reader IS the read path (returns rows) ==="
+echo "=== The SECURITY DEFINER readers ARE the read path (each returns rows) ==="
 check_reads_rows "sr_read_screening_decisions" "SELECT decision FROM sr_read_screening_decisions('$REVIEW_ID') LIMIT 1;"
+check_reads_rows "sr_read_extraction_entries"  "SELECT state FROM sr_read_extraction_entries('$REVIEW_ID') LIMIT 1;"
+check_reads_rows "sr_read_rob_assessments"     "SELECT judgement FROM sr_read_rob_assessments('$REVIEW_ID') LIMIT 1;"
 
 echo
 echo "=== The wall is targeted: runtime CAN read a non-blinded table ==="
