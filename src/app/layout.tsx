@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { DM_Sans, JetBrains_Mono, Source_Serif_4 } from 'next/font/google';
+import { AuthKitProvider } from '@workos-inc/authkit-nextjs/components';
 import './globals.css';
 
 const sans = DM_Sans({
@@ -38,7 +39,9 @@ export default function RootLayout({
       lang="en"
       className={`${sans.variable} ${serif.variable} ${mono.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <AuthKitProvider>{children}</AuthKitProvider>
+      </body>
     </html>
   );
 }
