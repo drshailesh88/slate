@@ -208,4 +208,52 @@ raw or aggregated blinded value out except through deny-by-default policy.
   `blinded-read.test.ts` (per-table matrix with a mocked DB, aggregate gating,
   safe-progress leak checks). They import `vitest` and carry `@ts-nocheck` so
   `tsc` stays green until T5's harness installs the runner — do not add a runner.
+
+### WorkOS → Neon mirror sync (T4)
+
+Keeps SR tenancy (`users`, `organizations`, `review_members` access) in step with
+WorkOS identity/orgs. Contract source: `FOUNDATION-auth-tenancy.md` §4.
+
+- **Webhook route:** `src/app/api/sr/webhooks/workos/route.ts` (SR's own API
+  namespace — never under the reserved `/api/search/**`). It verifies the WorkOS
+  signature **first**, before any DB work, via the SDK's built-in verifier
+  `workos.webhooks.constructEvent({ payload, sigHeader, secret })`
+  (`@workos-inc/node`, added as a direct dep; verified against v10.7.0 — the
+  param is `sigHeader`, not `signature`). Bad/missing signature → **401**;
+  processing failure → **500** (WorkOS retries; every mirror write is idempotent).
+  Needs `WORKOS_API_KEY` + `WORKOS_WEBHOOK_SECRET` (see `.env.example`).
+- **Sync core** lives in `src/lib/sr/sync/`: `workos.ts` (SDK boundary +
+  `normalizeEvent`), `process-event.ts` (ledger + dispatch, SDK-free & unit-
+  testable), `store.ts` (the `SyncStore` port) + `drizzle-store.ts` (neon-http
+  impl). The core depends only on the port, so tests use an in-memory fake — no
+  DB or network. neon-http has no interactive transactions, so every write is a
+  single idempotent statement.
+- **Events handled:** `user.created/updated/deleted`,
+  `organization.created/updated/deleted`,
+  `organization_membership.created/updated/deleted`, `role.*`.
+  - `user.created/updated` → idempotent `users` mirror upsert.
+  - `user.deleted` (GDPR) → **tombstone**: anonymize PII (`email=''`, `name=null`),
+    set `users.deleted_at`, keep the row (scientific-record FKs stay valid),
+    inactivate the user's `review_members` rows. Scientific records are **never**
+    cascade-deleted (runtime also has no DELETE path to them).
+  - `organization.created/updated` → `organizations` mirror upsert.
+    `organization.deleted` → retained (reviews FK it); ledgered only.
+  - `organization_membership.deleted` → **inactivate** the user's access to that
+    org's reviews (`review_members.status='inactive'`). `created/updated` are
+    ledgered only — org membership **never auto-grants** review access; per-review
+    roles are never trusted from the JWT.
+  - `role.*` → ledgered only (WorkOS org roles are not mirrored).
+- **Idempotency ledger** `workos_events`: `getEventState` short-circuits an
+  already-processed `eventId` to a no-op (dedup). **No-resurrect**: a stale
+  `user.updated` arriving after `user.deleted` is dropped — enforced in
+  application code (checks `deleted_at`) and backstopped by the mirror upsert's
+  `setWhere deleted_at IS NULL`.
+- **Lazy-provision unchanged:** `/auth/callback` still JIT-upserts the `users`
+  row from session claims (`src/app/auth/callback/route.ts`); the sync never
+  blocks a request.
+- **Schema note:** T4 adds one nullable column, `users.deleted_at`
+  (migration `0003_flippant_hex.sql`), required for the GDPR tombstone +
+  no-resurrect guard. It matches `FOUNDATION-auth-tenancy.md` §3's `users` shape;
+  the founder-locked PK model is untouched.
+
 - Add durable project-specific notes here as they are discovered through real work.

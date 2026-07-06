@@ -11,6 +11,10 @@ export const users = pgTable('users', {
   updatedAt: timestamp('updated_at', { withTimezone: true })
     .notNull()
     .defaultNow(),
+  // GDPR tombstone: set on a WorkOS `user.deleted` event. The row is kept (so
+  // scientific-record FKs stay valid) and its PII is anonymized. A non-null
+  // value also blocks a stale `user.updated` from resurrecting the mirror.
+  deletedAt: timestamp('deleted_at', { withTimezone: true }),
 });
 
 export type User = typeof users.$inferSelect;
