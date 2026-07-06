@@ -9,9 +9,12 @@ import {
   timestamp,
   unique,
   uuid,
+  type AnyPgColumn,
 } from 'drizzle-orm/pg-core';
 import { users } from '../schema';
 import {
+  dupeStatusEnum,
+  importTargetEnum,
   invitationStatusEnum,
   memberStatusEnum,
   reviewModeEnum,
@@ -118,6 +121,33 @@ export const reviewInvitations = pgTable(
   (t) => [index('review_invitations_review_email_idx').on(t.reviewId, t.email)],
 );
 
+// A reversible import batch — one row per import action (T9). `undoneAt` marks
+// the batch as undone WITHOUT deleting its studies (undo is reversible; never a
+// silent drop). Counts (refs / duplicates) are derived from the studies rows.
+export const importBatches = pgTable(
+  'import_batches',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    reviewId: uuid('review_id')
+      .notNull()
+      .references(() => reviews.id),
+    // Human label of where the references came from (e.g. "PubMed", "RIS file").
+    source: text('source').notNull(),
+    target: importTargetEnum('target').notNull().default('screen'),
+    // Batch came from AI discovery rather than a file.
+    ai: boolean('ai').notNull().default(false),
+    createdBy: uuid('created_by')
+      .notNull()
+      .references(() => users.id),
+    createdAt: timestamp('created_at', { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+    // Set when the batch is undone; cleared to restore. Reversible, non-destructive.
+    undoneAt: timestamp('undone_at', { withTimezone: true }),
+  },
+  (t) => [index('import_batches_review_idx').on(t.reviewId)],
+);
+
 // Every studyId is ALWAYS joined through studies.reviewId = reviewId (IDOR kill).
 export const studies = pgTable(
   'studies',
@@ -135,11 +165,26 @@ export const studies = pgTable(
     // Identifier from the import source (PubMed PMID, RIS id, etc).
     externalId: text('external_id'),
     source: text('source'),
+    // The reversible import batch this study entered on (T9). Nullable: rows
+    // predating T9 (e.g. the dev seed) carry no batch.
+    batchId: uuid('batch_id').references(() => importBatches.id),
+    // Duplicate-detection state (T9). Defaults `unique` so pre-T9 rows stay in
+    // the pool. Removal (auto_merged / merged) is reversible, never a delete.
+    dupeStatus: dupeStatusEnum('dupe_status').notNull().default('unique'),
+    // The study this one appears to duplicate (self-reference; the kept original).
+    dupeOfStudyId: uuid('dupe_of_study_id').references(
+      (): AnyPgColumn => studies.id,
+    ),
+    // Which fields matched, e.g. ["title", "year", "first author"].
+    dupeMatchedOn: jsonb('dupe_matched_on').$type<string[]>(),
     createdAt: timestamp('created_at', { withTimezone: true })
       .notNull()
       .defaultNow(),
   },
-  (t) => [index('studies_review_idx').on(t.reviewId)],
+  (t) => [
+    index('studies_review_idx').on(t.reviewId),
+    index('studies_batch_idx').on(t.batchId),
+  ],
 );
 
 // ── Support tables (NOT blinded) ─────────────────────────────────────────────
@@ -195,6 +240,8 @@ export type ReviewMember = typeof reviewMembers.$inferSelect;
 export type NewReviewMember = typeof reviewMembers.$inferInsert;
 export type ReviewInvitation = typeof reviewInvitations.$inferSelect;
 export type NewReviewInvitation = typeof reviewInvitations.$inferInsert;
+export type ImportBatch = typeof importBatches.$inferSelect;
+export type NewImportBatch = typeof importBatches.$inferInsert;
 export type Study = typeof studies.$inferSelect;
 export type NewStudy = typeof studies.$inferInsert;
 export type AiValidation = typeof aiValidations.$inferSelect;
