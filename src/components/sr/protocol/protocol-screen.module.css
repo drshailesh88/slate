@@ -1,0 +1,508 @@
+/* Protocol / eligibility-criteria editor (SR1). Frozen skin — tokens only,
+   hairline borders, no shadows/gradients. Re-expresses the ScholarSync precursor
+   sr.css protocol classes as module-scoped rules. Animates opacity/transform
+   only and honors prefers-reduced-motion. */
+
+.screen {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 32px 64px;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.title {
+  margin: 6px 0 0;
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+  color: var(--ink);
+}
+
+.lead {
+  margin: 8px 0 0;
+  max-width: 78ch;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink3);
+}
+
+.lead b {
+  color: var(--ink2);
+  font-weight: 600;
+}
+
+/* ── status + notices ─────────────────────────────────────────────────────── */
+.badgeRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 10.5px;
+  font-weight: 600;
+  transition: opacity var(--motion-base) var(--ease-out);
+}
+
+.pillLocked {
+  background: var(--incbg);
+  color: var(--inc);
+}
+
+.pillDraft {
+  background: var(--maybg);
+  color: var(--may);
+}
+
+.versionTag {
+  font-family: var(--mono);
+}
+
+.readNote,
+.errorNote {
+  margin-top: 14px;
+  padding: 11px 14px;
+  border-radius: 10px;
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+.readNote {
+  border: 1px solid var(--line);
+  background: var(--rail);
+  color: var(--ink3);
+}
+
+.errorNote {
+  border: 1px solid var(--excln);
+  background: var(--excbg);
+  color: var(--exc);
+}
+
+/* ── section headers ──────────────────────────────────────────────────────── */
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 26px 2px 11px;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.rule {
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+/* ── inputs (research question, PICO, criteria) ───────────────────────────── */
+.rqInput,
+.picoInput,
+.critName,
+.critInstruction,
+.reasonInput {
+  width: 100%;
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--ink2);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 9px 11px;
+  resize: vertical;
+}
+
+.rqInput:focus,
+.picoInput:focus,
+.critName:focus,
+.critInstruction:focus,
+.reasonInput:focus {
+  outline: none;
+  border-color: var(--accentln);
+  box-shadow: 0 0 0 3px var(--accentbg);
+}
+
+/* ── read-only display ────────────────────────────────────────────────────── */
+.readValue {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink2);
+  white-space: pre-wrap;
+}
+
+.readValueMuted {
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ── PICO grid ────────────────────────────────────────────────────────────── */
+.picoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.picoField {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.picoLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink3);
+}
+
+/* ── criteria columns ─────────────────────────────────────────────────────── */
+.critCols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.critCol {
+  min-width: 0;
+}
+
+.critColHead {
+  margin-bottom: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink3);
+}
+
+.critEdit {
+  margin-bottom: 10px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--paper);
+}
+
+.critEditHead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.critName {
+  flex: 1;
+  font-weight: 600;
+}
+
+.critRemove {
+  flex: none;
+  display: inline-flex;
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+  transition:
+    color var(--motion-micro) var(--ease-out),
+    border-color var(--motion-micro) var(--ease-out),
+    background var(--motion-micro) var(--ease-out);
+}
+
+.critRemove:hover {
+  color: var(--exc);
+  border-color: var(--excln);
+  background: var(--excbg);
+}
+
+.critInstruction {
+  margin-bottom: 0;
+}
+
+.critAnswer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 9px;
+}
+
+.critAnswerLabel {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.segmented {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.seg {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink3);
+  padding: 5px 10px;
+  background: var(--paper);
+  border: 0;
+  border-right: 1px solid var(--line);
+  cursor: pointer;
+}
+
+.seg:last-child {
+  border-right: 0;
+}
+
+.segOn {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+/* suggested-criteria chips */
+.suggested {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 4px;
+}
+
+.suggChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--sans);
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accentbg);
+  border: 1px solid var(--accentln);
+  border-radius: 20px;
+  padding: 4px 11px;
+  cursor: pointer;
+  transition: background var(--motion-micro) var(--ease-out);
+}
+
+.suggChip:hover {
+  background: var(--paper);
+}
+
+/* read-only criteria list (locked view) */
+.readCrit {
+  padding: 13px 15px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--paper);
+}
+
+.readCritHead {
+  margin-bottom: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.readCritInc .readCritHead {
+  color: var(--inc);
+}
+
+.readCritExc .readCritHead {
+  color: var(--exc);
+}
+
+.readCritItem {
+  padding: 6px 0;
+  border-top: 1px solid var(--line2);
+  font-size: 13px;
+  color: var(--ink2);
+}
+
+.readCritItem:first-of-type {
+  border-top: 0;
+}
+
+.readCritInstruction {
+  margin-top: 2px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.readCritEmpty {
+  font-size: 12.5px;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ── amendment form + history ─────────────────────────────────────────────── */
+.amendBox {
+  margin-top: 8px;
+  padding: 14px 15px;
+  border: 1px solid var(--mayln);
+  border-radius: 12px;
+  background: var(--maybg);
+}
+
+.amendTitle {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--may);
+}
+
+.amendHint {
+  margin: 4px 0 10px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ink3);
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.historyItem {
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--paper);
+}
+
+.historyHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.historyVersion {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.historyMeta {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.historyBaseline {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--inc);
+}
+
+.historyReason {
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ink3);
+}
+
+.historyReason b {
+  color: var(--ink2);
+  font-weight: 600;
+}
+
+/* ── buttons ──────────────────────────────────────────────────────────────── */
+.btnRow {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 9px 15px;
+  cursor: pointer;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink2);
+  transition: background var(--motion-micro) var(--ease-out);
+}
+
+.btn:hover:not(:disabled) {
+  background: var(--active);
+}
+
+.btnPrimary {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+.btnPrimary:hover:not(:disabled) {
+  background: var(--ink2);
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.saveState {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.saveStateDirty {
+  color: var(--may);
+}
+
+@media (max-width: 720px) {
+  .screen {
+    padding: 24px 18px 56px;
+  }
+
+  .picoGrid,
+  .critCols {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pill,
+  .btn,
+  .critRemove,
+  .suggChip {
+    transition: none;
+  }
+}

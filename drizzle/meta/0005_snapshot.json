@@ -1,6 +1,6 @@
 {
-  "id": "a29029d6-6bb8-4bab-983b-8d08b663aa1e",
-  "prevId": "5954de61-4160-4c13-b09f-2549586d1ba8",
+  "id": "35d763d3-4d0f-4254-9868-a891b994207f",
+  "prevId": "a29029d6-6bb8-4bab-983b-8d08b663aa1e",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -957,6 +957,182 @@
       },
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.protocol_versions": {
+      "name": "protocol_versions",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "review_id": {
+          "name": "review_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "version": {
+          "name": "version",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "research_question": {
+          "name": "research_question",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "''"
+        },
+        "pico": {
+          "name": "pico",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "criteria": {
+          "name": "criteria",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "reason": {
+          "name": "reason",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "locked_at": {
+          "name": "locked_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "locked_by": {
+          "name": "locked_by",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_by": {
+          "name": "created_by",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "protocol_versions_one_draft_idx": {
+          "name": "protocol_versions_one_draft_idx",
+          "columns": [
+            {
+              "expression": "review_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "where": "\"protocol_versions\".\"version\" is null",
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "protocol_versions_review_idx": {
+          "name": "protocol_versions_review_idx",
+          "columns": [
+            {
+              "expression": "review_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "version",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "protocol_versions_review_id_reviews_id_fk": {
+          "name": "protocol_versions_review_id_reviews_id_fk",
+          "tableFrom": "protocol_versions",
+          "tableTo": "reviews",
+          "columnsFrom": [
+            "review_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "protocol_versions_locked_by_users_id_fk": {
+          "name": "protocol_versions_locked_by_users_id_fk",
+          "tableFrom": "protocol_versions",
+          "tableTo": "users",
+          "columnsFrom": [
+            "locked_by"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "protocol_versions_created_by_users_id_fk": {
+          "name": "protocol_versions_created_by_users_id_fk",
+          "tableFrom": "protocol_versions",
+          "tableTo": "users",
+          "columnsFrom": [
+            "created_by"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "protocol_versions_review_version_unique": {
+          "name": "protocol_versions_review_version_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "review_id",
+            "version"
+          ]
+        }
+      },
       "policies": {},
       "checkConstraints": {},
       "isRLSEnabled": false

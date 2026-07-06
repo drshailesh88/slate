@@ -1,3 +1,4 @@
+import { sql } from 'drizzle-orm';
 import {
   boolean,
   index,
@@ -8,10 +9,17 @@ import {
   text,
   timestamp,
   unique,
+  uniqueIndex,
   uuid,
   type AnyPgColumn,
 } from 'drizzle-orm/pg-core';
 import { users } from '../schema';
+// Type-only imports are erased by esbuild before drizzle-kit resolves modules,
+// so this stays relative-safe for the drizzle-kit bundler (no `@/` alias).
+import type {
+  Pico as ProtocolPico,
+  EligibilityCriterion as ProtocolCriterion,
+} from '../../sr/protocol/types';
 import {
   dupeStatusEnum,
   importTargetEnum,
@@ -187,6 +195,53 @@ export const studies = pgTable(
   ],
 );
 
+// ── Protocol / eligibility criteria (SR1) ────────────────────────────────────
+//
+// The review protocol (PICO + inclusion/exclusion criteria) as an append-only
+// version ledger — the methodological audit trail. Exactly ONE mutable draft row
+// per review carries `version = NULL`; it is edited freely until the protocol is
+// LOCKED. Locking stamps that row as version 1 (immutable). Every later edit is a
+// dated AMENDMENT: a fresh row with the next version, a required `reason`, its
+// author, and a timestamp — never a silent overwrite. Locked rows are never
+// updated, so the full history (v1 baseline + every reasoned amendment) is
+// preserved. `pico`/`criteria` are typed JSONB (structural types owned by the
+// protocol module; erased type-only imports keep drizzle-kit relative-safe).
+export const protocolVersions = pgTable(
+  'protocol_versions',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    reviewId: uuid('review_id')
+      .notNull()
+      .references(() => reviews.id),
+    // NULL = the single working draft; 1..N = immutable locked versions.
+    version: integer('version'),
+    researchQuestion: text('research_question').notNull().default(''),
+    pico: jsonb('pico').$type<ProtocolPico>().notNull(),
+    criteria: jsonb('criteria').$type<ProtocolCriterion[]>().notNull(),
+    // The amendment reason. NULL for the draft and the v1 baseline lock; required
+    // (non-empty) for every amendment (v2+) — enforced in the service layer.
+    reason: text('reason'),
+    lockedAt: timestamp('locked_at', { withTimezone: true }),
+    lockedBy: uuid('locked_by').references(() => users.id),
+    createdBy: uuid('created_by').references(() => users.id),
+    createdAt: timestamp('created_at', { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+    updatedAt: timestamp('updated_at', { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (t) => [
+    // Locked versions are unique per review. NULLs don't collide, so the single
+    // draft coexists; the partial index below caps drafts at one per review.
+    unique('protocol_versions_review_version_unique').on(t.reviewId, t.version),
+    uniqueIndex('protocol_versions_one_draft_idx')
+      .on(t.reviewId)
+      .where(sql`${t.version} is null`),
+    index('protocol_versions_review_idx').on(t.reviewId, t.version),
+  ],
+);
+
 // ── Support tables (NOT blinded) ─────────────────────────────────────────────
 
 // Recall/sensitivity validation of an AI reviewer on this review's includes.
@@ -244,6 +299,8 @@ export type ImportBatch = typeof importBatches.$inferSelect;
 export type NewImportBatch = typeof importBatches.$inferInsert;
 export type Study = typeof studies.$inferSelect;
 export type NewStudy = typeof studies.$inferInsert;
+export type ProtocolVersionRow = typeof protocolVersions.$inferSelect;
+export type NewProtocolVersionRow = typeof protocolVersions.$inferInsert;
 export type AiValidation = typeof aiValidations.$inferSelect;
 export type NewAiValidation = typeof aiValidations.$inferInsert;
 export type WorkosEvent = typeof workosEvents.$inferSelect;
