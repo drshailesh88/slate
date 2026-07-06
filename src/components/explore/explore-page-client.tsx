@@ -11,6 +11,7 @@ import { AcademicResultCard } from './academic-result-card';
 import { ResultsSkeleton } from './results-skeleton';
 import { NoResults } from './no-results';
 import { SourceDegradedNote } from './source-degraded-note';
+import { SourcesUnavailable } from './sources-unavailable';
 import { SearchError } from './search-error';
 import { SearchBar } from './search-bar';
 import styles from './explore-page-client.module.css';
@@ -64,7 +65,18 @@ function ExploreResults({
   if (!data) return null;
 
   if (data.results.length === 0) {
-    return <NoResults query={query} />;
+    // A source absent from sourceStatuses (or "ok") is silent about health,
+    // so emptiness there reads as genuine — only when every reported source
+    // is non-"ok" is this a whole-tab outage, never "no papers matched".
+    const statuses = Object.values(data.sourceStatuses ?? {});
+    const allSourcesDown =
+      statuses.length > 0 && !statuses.some((s) => s.status === 'ok');
+
+    return allSourcesDown ? (
+      <SourcesUnavailable onRetry={onRetry} />
+    ) : (
+      <NoResults query={query} />
+    );
   }
 
   // A degraded source's zero count must never read as "no results" — the

@@ -142,6 +142,53 @@ describe('ExplorePageClient', () => {
     ).toBeInTheDocument();
   });
 
+  it('renders the No-results serif line for a genuine zero-match result even when one source is ok', () => {
+    const data = searchResponse({
+      results: [],
+      total: 0,
+      matchedTotal: 0,
+      sourceCounts: { pubmed: 0, semantic_scholar: 0 },
+      sourceStatuses: {
+        pubmed: { status: 'ok' },
+        semantic_scholar: { status: 'timeout' },
+      },
+    });
+    useUnifiedSearchMock.mockReturnValue({ status: 'success', data });
+
+    render(<ExplorePageClient initialQuery="asdkjqweqwe" />);
+
+    expect(
+      screen.getByText('No papers matched "asdkjqweqwe" in Academic.'),
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByText(/temporarily unavailable/i),
+    ).not.toBeInTheDocument();
+  });
+
+  it('renders the whole-tab Sources-unavailable state (not No-results) when every source is down', () => {
+    const data = searchResponse({
+      results: [],
+      total: 0,
+      matchedTotal: 0,
+      sourceCounts: { pubmed: 0, europepmc: 0 },
+      sourceStatuses: {
+        pubmed: { status: 'timeout' },
+        europepmc: { status: 'error' },
+      },
+    });
+    useUnifiedSearchMock.mockReturnValue({ status: 'success', data });
+
+    render(<ExplorePageClient initialQuery="SGLT2" />);
+
+    expect(
+      screen.getByText('Academic search is temporarily unavailable'),
+    ).toBeInTheDocument();
+    expect(screen.queryByText(/No papers matched/)).not.toBeInTheDocument();
+    expect(
+      screen.getByRole('button', { name: /try again/i }),
+    ).toBeInTheDocument();
+  });
+
   it('renders the error state with a working Try again that preserves the query and re-triggers the search', async () => {
     const user = userEvent.setup();
     useUnifiedSearchMock.mockReturnValue({ status: 'error', error: 'boom' });
