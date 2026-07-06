@@ -336,4 +336,46 @@ later task.
   Neon privilege-wall roles is the founder step, so the seeded shell renders in
   the app only after that.
 
+### The Protocol / eligibility-criteria screen (SR1 — T10)
+
+The Protocol screen (`/systematic-review/[reviewId]/protocol`) is PICO +
+inclusion/exclusion criteria with **lock + dated amendments** — the
+methodological audit trail. Ported from the ScholarSync precursor
+(`protocol-screen.tsx`, `criterion-editor.tsx`, `protocol.ts`) into the frozen
+skin and rewired from the precursor's in-memory Zustand store to persisted,
+versioned server actions.
+
+- **Schema — one append-only table `protocol_versions`** (migration
+  `0004_absurd_wolfpack.sql`, additive; **renumbers at integration**). Exactly
+  ONE mutable draft row per review carries `version = NULL` (a partial unique
+  index `protocol_versions_one_draft_idx` caps it at one); it is edited freely
+  until locked. **Locking** stamps that row as `version = 1` (immutable).
+  Every later edit is a dated **amendment**: a fresh row with the next version,
+  a required `reason`, its author (`locked_by`), and `locked_at` — never a
+  silent overwrite. Locked rows are only ever INSERTed, so the full history
+  (v1 baseline + every amendment) is preserved. `pico`/`criteria` are typed
+  JSONB (structural types in `src/lib/sr/protocol/types.ts`; the schema uses an
+  erased `import type` so drizzle-kit stays relative-safe). The migration also
+  `GRANT SELECT, INSERT, UPDATE` (no DELETE — append-only) to `slate_runtime`,
+  guarded on the wall role existing (0002 creates it); new tables get NO default
+  privilege, so per-table grants are required — mirror this for future tables.
+- **The versioning state machine is pure + port-backed** (`src/lib/sr/protocol/`):
+  `service.ts` (`loadProtocol`/`saveDraft`/`lockProtocol`/`amendProtocol`, clock
+  injected) depends only on `store.ts` (`ProtocolStore` port + in-memory fake),
+  so the contract is unit-tested with no DB (`service.test.ts`). `drizzle-store.ts`
+  is the neon-http impl (single statements — no transactions). `saveDraft` is
+  **refused once locked** (→ `ProtocolLockedError`); `amend` requires a non-empty
+  reason (→ `AmendmentReasonRequiredError`); locking an empty protocol is refused
+  (→ `ProtocolIncompleteError`, ≥1 criterion). Every mutation writes an
+  `audit_log` row (`protocol.save_draft` / `protocol.lock` / `protocol.amend`).
+- **Writes gate on role** (`roles.ts`): only `owner` + `collaborator` edit/lock/
+  amend; everyone else sees it read-only. Server actions (`actions.ts`,
+  `'use server'`) re-authorize via `requireMember` (defense in depth), sanitize
+  the untrusted payload (`validate.ts` — never trusts the client), and return
+  `{ ok:false, message }` for domain failures (infra errors reject → 500).
+- Flag-gated + membership-gated by the `[reviewId]` layout (nothing new to wire);
+  `protocol` is already in `BUILT_STAGES`, so the stage rail links it. Additive —
+  no global shell/nav or reserved search paths touched. Tests: 207 green
+  (was 174; +33 across service/constants/validate/screen).
+
 - Add durable project-specific notes here as they are discovered through real work.
