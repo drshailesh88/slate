@@ -31,14 +31,21 @@ export function useUnifiedSearch(query: string, tab: 'academic'): SearchState {
         return (await r.json()) as SearchResponse;
       })
       .then((data) => {
-        setResult({ query: trimmedQuery, tab, state: { status: 'success', data } });
+        setResult({
+          query: trimmedQuery,
+          tab,
+          state: { status: 'success', data },
+        });
       })
       .catch((err: unknown) => {
         if (err instanceof DOMException && err.name === 'AbortError') return;
         setResult({
           query: trimmedQuery,
           tab,
-          state: { status: 'error', error: err instanceof Error ? err.message : 'Search failed' },
+          state: {
+            status: 'error',
+            error: err instanceof Error ? err.message : 'Search failed',
+          },
         });
       });
     return () => controller.abort();
@@ -50,5 +57,9 @@ export function useUnifiedSearch(query: string, tab: 'academic'): SearchState {
   if (result === null || result.query !== trimmedQuery || result.tab !== tab) {
     return { status: 'loading' };
   }
+  // Re-entering the exact last-completed query renders that result immediately
+  // (stale-while-revalidate) while the effect above refetches in the background;
+  // this is intentional, since clearing `result` here would re-trip
+  // react-hooks/set-state-in-effect.
   return result.state;
 }
