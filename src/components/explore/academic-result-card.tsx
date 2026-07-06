@@ -15,6 +15,18 @@ function getResultUrl(
   return undefined;
 }
 
+const MAX_DISPLAYED_AUTHORS = 3;
+
+/**
+ * The meta line is a one-line-ish glance, not a citation — a 20-author paper
+ * must not turn it into a 5+ line author block. `formatCitation` (the Cite
+ * action) always uses the full list; only this display truncates.
+ */
+function formatDisplayedAuthors(authors: string[]): string {
+  if (authors.length <= MAX_DISPLAYED_AUTHORS) return authors.join(', ');
+  return `${authors.slice(0, MAX_DISPLAYED_AUTHORS).join(', ')} et al.`;
+}
+
 export function AcademicResultCard({
   result,
 }: {
@@ -22,7 +34,7 @@ export function AcademicResultCard({
 }) {
   const [copied, setCopied] = useState(false);
   const href = getResultUrl(result);
-  const authors = result.authors.join(', ');
+  const authors = formatDisplayedAuthors(result.authors);
 
   async function handleCite() {
     try {

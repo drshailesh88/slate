@@ -131,4 +131,47 @@ describe('AcademicResultCard', () => {
 
     expect(container.querySelectorAll('p').length).toBe(1);
   });
+
+  it('shows all authors in the meta line when there are 3 or fewer', () => {
+    const result = makeResult({
+      authors: ['Zannad F', 'Ferreira JP', 'Pocock SJ'],
+    });
+    render(<AcademicResultCard result={result} />);
+
+    expect(
+      screen.getByText(/Zannad F, Ferreira JP, Pocock SJ/),
+    ).toBeInTheDocument();
+    expect(screen.queryByText(/et al\./)).not.toBeInTheDocument();
+  });
+
+  it('truncates the meta line to the first 3 authors + "et al." when there are more than 3', () => {
+    const result = makeResult({
+      authors: [
+        'Zannad F',
+        'Ferreira JP',
+        'Pocock SJ',
+        'McMurray JJV',
+        'Packer M',
+      ],
+    });
+    render(<AcademicResultCard result={result} />);
+
+    expect(
+      screen.getByText(/Zannad F, Ferreira JP, Pocock SJ et al\./),
+    ).toBeInTheDocument();
+    expect(screen.queryByText(/McMurray JJV/)).not.toBeInTheDocument();
+  });
+
+  it('still uses the full author list for formatCitation even when the card truncates', () => {
+    const authors = [
+      'Zannad F',
+      'Ferreira JP',
+      'Pocock SJ',
+      'McMurray JJV',
+      'Packer M',
+    ];
+    const result = makeResult({ authors, doi: '10.1016/x' });
+
+    expect(formatCitation(result)).toContain(authors.join(', '));
+  });
 });

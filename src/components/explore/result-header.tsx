@@ -21,17 +21,22 @@ function renderCountLine(line: string) {
 }
 
 export function ResultHeader({ data }: { data: SearchResponse }) {
-  const model = sourceStatusModel(
-    data.sourceStatuses,
-    Object.keys(data.sourceCounts).length,
-  );
+  const model = sourceStatusModel(data.sourceStatuses, data.sourceCounts);
 
   return (
     <div className={styles.header}>
       <p className={styles.count}>{renderCountLine(honestCount(data))}</p>
       <div className={styles.sources}>
         <SourceStatusChip model={model} />
-        <button type="button" className={styles.sourcesButton}>
+        {/* Slice 1 has no source list to open — Slice 2 wires this. Present,
+            not yet active (FilterPills/Beta-tab discipline), not a dead
+            control that pretends to work. */}
+        <button
+          type="button"
+          className={styles.sourcesButton}
+          disabled
+          aria-disabled="true"
+        >
           Sources
           <ChevronDown size={14} strokeWidth={1.75} />
         </button>

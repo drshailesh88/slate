@@ -81,10 +81,7 @@ function ExploreResults({
 
   // A degraded source's zero count must never read as "no results" — the
   // note is derived from sourceStatusModel, not from re-inspecting counts.
-  const model = sourceStatusModel(
-    data.sourceStatuses,
-    Object.keys(data.sourceCounts).length,
-  );
+  const model = sourceStatusModel(data.sourceStatuses, data.sourceCounts);
 
   return (
     <>

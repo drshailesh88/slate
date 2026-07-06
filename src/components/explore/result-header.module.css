@@ -36,3 +36,11 @@
 .sourcesButton:hover {
   color: var(--ink3);
 }
+
+.sourcesButton:disabled {
+  cursor: default;
+}
+
+.sourcesButton:disabled:hover {
+  color: var(--muted);
+}
