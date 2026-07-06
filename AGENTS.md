@@ -292,4 +292,48 @@ extraction, T16 RoB) — a screen is not "done" until these side-channel attacks
 pass on it. If any attack ever leaks, that is a genuine breach + invalidated
 science: fix the boundary, never weaken the test.
 
+### The SR route-group shell (M2)
+
+The `/systematic-review` route group is the medicine-only overlay's frame —
+a contextual second panel rendered INSIDE Slate's locked app shell. It never
+touches the global shell/nav (anti-frankenstein); the Home-launcher wiring is a
+later task.
+
+- **Flag gate:** the whole group is gated on `NEXT_PUBLIC_ENABLE_SR`
+  (`src/lib/sr/flag.ts::isSrEnabled`, read as a STATIC reference so Next inlines
+  it client-side too). `"true"` = on; anything else / unset = off → the routes
+  404 (unreachable, nothing about SR appears in the app). Documented in
+  `.env.example`. Verified both ways in the browser.
+- **Review-context layout** `src/app/(app)/systematic-review/[reviewId]/layout.tsx`
+  (server): (1) flag gate → 404; (2) `requireMember` (T3) → deny→404 for a
+  non-member / nonexistent review (no existence leak — infra errors are NOT
+  masked as 404, only `SrAuthzError`); (3) loads the visible `reviews` row +
+  study count + `getSafeProgress` (T2 chokepoint) — NEVER the blinded tables;
+  (4) provides a client `SrReviewProvider` (`src/components/sr/review-context.tsx`,
+  `useSrReview`) carrying ONLY safe facts (id / title / role / studyCount /
+  safeProgress) and renders the stage rail. `loading.tsx` / `error.tsx` are
+  Status-shimmer skins (no spinner). A layout error bubbles to the parent
+  `systematic-review/error.tsx` (Next behavior); the review's `error.tsx`
+  catches its page's errors.
+- **Stage rail** `src/lib/sr/stage-rail.ts` (pure) + `src/components/sr/sr-stage-rail.tsx`.
+  `BUILT_STAGES` is an in-file list (replaces the precursor's `enabled-stages`
+  module): summary / members / protocol / import link; the M3+ funnel stages
+  (screening…export) render disabled "Soon". Grow `BUILT_STAGES` as screens land.
+- **SR home** `src/app/(app)/systematic-review/page.tsx` lists the caller's
+  ACTIVE-member reviews (`src/lib/sr/reviews.ts`, membership-scoped, org-
+  independent) or an empty state pointing to `/systematic-review/new` (the create
+  wizard — a separate task; may 404 until it lands). The `[reviewId]` index
+  `page.tsx` is a shell placeholder for the Summary screen (its own M2 task will
+  replace it).
+- **Module manifest** `src/lib/sr/manifest.ts` (`systematicReviewManifest`) — the
+  stable `{ id, name, icon, entryRoute, flag }` seam a future Home launcher will
+  consume. Exported, deliberately NOT wired into the global nav yet.
+- **Dev seed** `src/lib/sr/dev-seed.ts` (`seedDevReview`) + `pnpm sr:seed`
+  (`scripts/sr-dev-seed.ts`, via tsx). Inserts a demo org + review + owner
+  (keyed on the dev-bypass mock `user_dev_mock`, so `requireMember` resolves the
+  mock caller as owner) + reviewer + 3 studies as REAL rows — idempotent (fixed
+  ids), refused in production. Needs a live `DATABASE_URL`; provisioning the two
+  Neon privilege-wall roles is the founder step, so the seeded shell renders in
+  the app only after that.
+
 - Add durable project-specific notes here as they are discovered through real work.
