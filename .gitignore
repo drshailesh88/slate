@@ -43,3 +43,9 @@ next-env.d.ts
 
 # neon cli local link state
 .neon
+
+# playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

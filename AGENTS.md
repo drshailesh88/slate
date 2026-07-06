@@ -26,6 +26,27 @@ foundation (shell + Home) landed as the genesis on `main`.
   `DATABASE_URL` (pooled, runtime), `DATABASE_URL_UNPOOLED` (direct,
   drizzle-kit). Never commit `.env*` (only `.env.example` is tracked).
 
+## Testing (Vitest + Playwright)
+
+- **Unit / integration — Vitest** (`vitest.config.ts`): `pnpm test` (single run,
+  CI-safe) · `pnpm test:watch` (watch mode). Environment is `jsdom` with
+  `globals: true` (use `describe`/`it`/`expect`/`vi` without importing them; the
+  `vitest/globals` types are wired via `vitest-env.d.ts`). Tests are colocated —
+  `include` is `src/**/*.{test,spec}.{ts,tsx}` — and the `@/…` alias mirrors
+  `tsconfig` so tests import the same way as app code.
+- **E2E — Playwright** (`playwright.config.ts`): `pnpm test:e2e`. Specs live in
+  `e2e/**/*.spec.ts`. Playwright boots its **own** dev server via `webServer`
+  (`pnpm dev --port 3100`, override with `E2E_PORT`) — a dedicated port so it
+  never reuses an unrelated `pnpm dev` on 3000. Browsers install once with
+  `pnpm exec playwright install chromium`.
+- **Dev-auth bypass for E2E (no live WorkOS login):** the Playwright `webServer`
+  blanks `WORKOS_API_KEY`/`WORKOS_CLIENT_ID`/`WORKOS_COOKIE_PASSWORD` and pins
+  `NODE_ENV=development`, which forces `isDevAuthBypassActive()`
+  (`src/lib/auth/config.ts`) on. Both `src/proxy.ts` and `getSessionUser`
+  short-circuit to the mock `Dr. Singh` session, so journeys render the shell
+  without signing in. This replaces the precursor's Clerk `__playwright` cookie.
+  Do not add secrets to the E2E env — absence of creds _is_ the bypass trigger.
+
 ## Design authority (FROZEN)
 
 - `docs/design/design.md` is the frozen skin: tokens, typography, spacing,
