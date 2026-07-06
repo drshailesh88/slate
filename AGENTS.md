@@ -323,8 +323,7 @@ later task.
   ACTIVE-member reviews (`src/lib/sr/reviews.ts`, membership-scoped, org-
   independent) or an empty state pointing to `/systematic-review/new` (the create
   wizard — a separate task; may 404 until it lands). The `[reviewId]` index
-  `page.tsx` is a shell placeholder for the Summary screen (its own M2 task will
-  replace it).
+  `page.tsx` is the **Review Summary funnel home** (T11 — see below).
 - **Module manifest** `src/lib/sr/manifest.ts` (`systematicReviewManifest`) — the
   stable `{ id, name, icon, entryRoute, flag }` seam a future Home launcher will
   consume. Exported, deliberately NOT wired into the global nav yet.
@@ -335,5 +334,32 @@ later task.
   ids), refused in production. Needs a live `DATABASE_URL`; provisioning the two
   Neon privilege-wall roles is the founder step, so the seeded shell renders in
   the app only after that.
+
+### Review Summary — the funnel home (T11)
+
+Screen 0, the index of a review, at `src/app/(app)/systematic-review/[reviewId]/page.tsx`.
+Ported from the ScholarSync precursor's `summary/*` components, re-skinned to
+tokens. It renders the per-stage funnel cards (Import → Export, in shell-rail
+order, built stages link / un-built show "Soon"), the imported-study hero, and a
+team-progress readout.
+
+- **Funnel counts MUST route through the chokepoint — never a client store, never
+  the blinded tables, never a `COUNT(*)` outside `src/lib/sr/authz/**`.** The
+  precursor derived every count in the browser from a monolithic store holding all
+  votes (the structural blinding hole); that call site is relocated. Non-blinded
+  numbers (imported/total studies) come from `studies`; every blinded-derived
+  number comes from the chokepoint (`getSafeProgress`, or a reconcile-gated tally).
+- **Data seam:** `summary/review-summary-container.tsx` reads the safe review
+  context (`useSrReview`) the `[reviewId]` layout resolved once server-side — the
+  imported count from `studies` and completion progress from `getSafeProgress`
+  (T2). The context carries ONLY safe facts, so the funnel can only render safe
+  counts; `buildFunnelSummary` (`src/lib/sr/summary/funnel.ts`, pure) shapes them.
+- **Independent-safe by construction:** during `independent` the summary shows
+  **completion counts only** ("2 of 3 reviewers finished" per surface). It never
+  renders the precursor's decision distribution (done/conflicts/one-vote/no-votes)
+  or per-reviewer contribution rows — the safe `summary/team-progress.tsx` replaces
+  the leaky one. A leak here would silently invalidate the review + breach blinding
+  (report §2.2). Tests: `funnel.test.ts` (safe-model shape), `review-summary.test.tsx`
+  - `review-summary-container.test.tsx` (assert no distribution/per-partner leak).
 
 - Add durable project-specific notes here as they are discovered through real work.

@@ -1,57 +1,11 @@
-'use client';
+import { ReviewSummaryContainer } from '@/components/sr/summary/review-summary-container';
 
-import { useSrReview } from '@/components/sr/review-context';
-import styles from './sr-stage.module.css';
-
-// Shell placeholder for the review Summary (the funnel index). The full Summary
-// screen lands in its own M2 task and will replace this file; for now it proves
-// the review-context seam by reading the layout-provided, blinding-safe context.
+// The review Summary — the funnel home / index of a review. It renders inside
+// the [reviewId] layout (which already gated the flag, authorized membership via
+// requireMember, and resolved the blinding-safe review context). All funnel
+// counts route through the chokepoint: the imported total from `studies`
+// (non-blinded) and completion progress from `getSafeProgress` — never a client
+// store and never the blinded tables. See sr-build-plan-p4/report.md §4 (row 0).
 export default function ReviewSummaryPage() {
-  const review = useSrReview();
-  const { screening, extraction, rob } = review.safeProgress;
-
-  return (
-    <div className={styles.stage}>
-      <div className={styles.eyebrow}>Systematic review</div>
-      <h1 className={styles.title}>{review.title}</h1>
-      <p className={styles.lead}>
-        {review.reviewType} · you are {article(review.role)}{' '}
-        <strong>{review.role}</strong> on this review.
-      </p>
-
-      <div className={styles.statRow}>
-        <div className={styles.statCard}>
-          <div className={styles.statValue}>{review.studyCount}</div>
-          <div className={styles.statLabel}>Studies imported</div>
-        </div>
-        <div className={styles.statCard}>
-          <div className={styles.statValue}>
-            {screening.finishedReviewers}/{screening.totalReviewers}
-          </div>
-          <div className={styles.statLabel}>Screening complete</div>
-        </div>
-        <div className={styles.statCard}>
-          <div className={styles.statValue}>
-            {extraction.finishedReviewers}/{extraction.totalReviewers}
-          </div>
-          <div className={styles.statLabel}>Extraction complete</div>
-        </div>
-        <div className={styles.statCard}>
-          <div className={styles.statValue}>
-            {rob.finishedReviewers}/{rob.totalReviewers}
-          </div>
-          <div className={styles.statLabel}>Risk of bias complete</div>
-        </div>
-      </div>
-
-      <p className={styles.note}>
-        This is the review shell. Pick a built stage from the rail — the funnel
-        stages beyond Import arrive in later milestones.
-      </p>
-    </div>
-  );
-}
-
-function article(role: string): string {
-  return /^[aeiou]/i.test(role) ? 'an' : 'a';
+  return <ReviewSummaryContainer />;
 }
