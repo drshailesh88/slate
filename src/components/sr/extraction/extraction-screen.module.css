@@ -1,0 +1,754 @@
+/* Data extraction (T15). Frozen skin — tokens only, hairline borders, no
+   shadows/gradients. Phase 2 shows both extractions as symmetric, equal-weight
+   cells (no "primary"). Animates opacity/transform only; honors reduced motion. */
+
+.screen {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 32px 32px 64px;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.title {
+  margin: 6px 0 0;
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+  color: var(--ink);
+}
+
+.lead {
+  margin: 8px 0 0;
+  max-width: 78ch;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink3);
+}
+
+.lead b {
+  color: var(--ink2);
+  font-weight: 600;
+}
+
+/* ── blind banner ──────────────────────────────────────────────────────────── */
+.blindBanner {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 18px;
+  border: 1px solid var(--mayln);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink2);
+  background: var(--maybg);
+}
+
+.blindBanner b {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* ── progress / stat pills ─────────────────────────────────────────────────── */
+.progressRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.progressPill,
+.waitPill,
+.verifyPill,
+.qcPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 20px;
+  padding: 4px 11px;
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  border: 1px solid var(--line);
+  background: var(--panel, var(--paper));
+  color: var(--ink2);
+}
+
+.waitPill {
+  color: var(--may);
+  border-color: var(--mayln);
+  background: var(--maybg);
+}
+
+.verifyPill {
+  color: var(--ink);
+}
+
+.qcPill {
+  color: var(--muted);
+}
+
+/* ── state blocks ──────────────────────────────────────────────────────────── */
+.stateBlock {
+  margin-top: 20px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 22px 24px;
+  background: var(--panel, var(--paper));
+}
+
+.stateTitle {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.stateBody {
+  margin: 6px 0 0;
+  max-width: 70ch;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--ink3);
+}
+
+/* ── Phase 1 workspace ─────────────────────────────────────────────────────── */
+.workspace {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 18px;
+  margin-top: 18px;
+  align-items: start;
+}
+
+.studyList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 8px;
+  background: var(--panel, var(--paper));
+}
+
+.studyItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+  background: transparent;
+  transition: background var(--motion-base) var(--ease-out);
+}
+
+.studyItem:hover {
+  background: var(--paper);
+  border-color: var(--line);
+}
+
+.studyItemActive {
+  background: var(--paper);
+  border-color: var(--line2);
+}
+
+.studyRef {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.studyItemTitle {
+  font-size: 12.5px;
+  line-height: 1.35;
+  color: var(--ink2);
+}
+
+.formPane {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px 22px;
+  background: var(--panel, var(--paper));
+}
+
+.formHead {
+  margin-bottom: 8px;
+}
+
+.formTitle {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.formMeta {
+  margin-top: 3px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.section {
+  margin-top: 20px;
+}
+
+.sectionLabel {
+  margin: 0 0 10px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 6px;
+}
+
+/* ── field editor ──────────────────────────────────────────────────────────── */
+.field {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  background: var(--paper);
+}
+
+.fieldHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.fieldLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+.fieldHint {
+  margin-top: 2px;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.lockedTag,
+.savedTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+.lockedTag {
+  color: var(--ink3);
+  background: var(--line);
+}
+
+.savedTag {
+  color: var(--inc);
+  background: var(--incbg);
+}
+
+.valueInput,
+.formulaInput,
+.provInput,
+.typedInput {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 7px 10px;
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--ink2);
+  background: var(--panel, var(--paper));
+}
+
+.valueInput:focus,
+.formulaInput:focus,
+.provInput:focus,
+.typedInput:focus {
+  outline: none;
+  border-color: var(--ink3);
+}
+
+.dashedState,
+.dashedInline {
+  display: inline-block;
+  margin-top: 8px;
+  border: 1px dashed var(--line2);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12.5px;
+  color: var(--muted);
+  background: transparent;
+}
+
+.dashedInline {
+  margin-top: 0;
+}
+
+/* ── 4-state picker ────────────────────────────────────────────────────────── */
+.states {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.stateBtn {
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--ink3);
+  background: var(--paper);
+  transition: border-color var(--motion-micro) var(--ease-out);
+}
+
+.stateBtn:hover:not(:disabled) {
+  border-color: var(--ink3);
+}
+
+.stateBtnOn {
+  border-color: var(--ink);
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.derivedRow {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 10px;
+  font-size: 12.5px;
+  color: var(--ink3);
+}
+
+.provenance {
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+  gap: 6px;
+}
+
+.saveBtn,
+.recordBtn,
+.finishBtn,
+.unblindBtn,
+.pickBtn,
+.ladderBtn,
+.sourceBtn,
+.aiRevealBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink2);
+  transition:
+    opacity var(--motion-base) var(--ease-out),
+    transform var(--motion-micro) var(--ease-out);
+}
+
+.saveBtn {
+  margin-top: 12px;
+}
+
+.saveBtn:hover:not(:disabled),
+.pickBtn:hover:not(:disabled),
+.recordBtn:hover:not(:disabled),
+.ladderBtn:hover:not(:disabled),
+.sourceBtn:hover:not(:disabled),
+.aiRevealBtn:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.finishBtn,
+.unblindBtn,
+.recordBtn {
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+}
+
+.lockBar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line2);
+}
+
+.lockNote {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.saveBtn:disabled,
+.recordBtn:disabled,
+.finishBtn:disabled,
+.unblindBtn:disabled,
+.pickBtn:disabled,
+.ladderBtn:disabled,
+.sourceBtn:disabled,
+.aiRevealBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ── Phase 2 reconcile ─────────────────────────────────────────────────────── */
+.studyCard {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-top: 16px;
+  background: var(--panel, var(--paper));
+}
+
+.studyCardHead {
+  margin-bottom: 6px;
+}
+
+.reconField {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-top: 12px;
+  background: var(--paper);
+}
+
+.fieldConflict {
+  border-left: 2px solid var(--exc);
+}
+
+.fieldAgreed {
+  border-left: 2px solid var(--inc);
+}
+
+.fieldResolved {
+  border-left: 2px solid var(--ink3);
+}
+
+.reconHead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.reconLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.agreedTag,
+.resolvedTag,
+.conflictTag,
+.qcTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 5px;
+}
+
+.agreedTag {
+  color: var(--inc);
+  background: var(--incbg);
+}
+
+.resolvedTag {
+  color: var(--ink3);
+  background: var(--line);
+}
+
+.conflictTag {
+  color: var(--exc);
+  background: var(--excbg);
+}
+
+.qcTag {
+  color: var(--may);
+  background: var(--maybg);
+}
+
+/* Two extractions, EQUAL weight — symmetric grid, no preferred column. */
+.reviewerGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.reviewerCell {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 11px 13px;
+  background: var(--panel, var(--paper));
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.reviewerName {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+.valueText {
+  font-size: 13.5px;
+  color: var(--ink);
+}
+
+.derivedTag {
+  margin-left: 6px;
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 1px 5px;
+  border-radius: 4px;
+  color: var(--accent);
+  background: var(--accentbg);
+}
+
+.prov,
+.noProv {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--muted);
+}
+
+.noProv {
+  font-style: italic;
+}
+
+.pickBtn {
+  align-self: flex-start;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+/* ── AI reveal (hidden until source opened) ────────────────────────────────── */
+.aiRow {
+  margin-top: 12px;
+}
+
+.sourceBox {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: var(--panel, var(--paper));
+}
+
+.sourceQuote {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--ink3);
+  border-left: 2px solid var(--line2);
+  padding-left: 10px;
+}
+
+.aiRevealBtn {
+  margin-top: 10px;
+}
+
+.aiCell {
+  margin-top: 10px;
+  border: 1px solid var(--accentln, var(--line));
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: var(--accentbg);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.aiHeadRow {
+  display: flex;
+  align-items: center;
+}
+
+.aiLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--accent);
+}
+
+/* ── consensus (empty until picked) ────────────────────────────────────────── */
+.consensusRow {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line2);
+}
+
+.consensusLabel {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.consensusEmpty {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.consensusValue {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.consensusMeta {
+  font-weight: 400;
+  color: var(--muted);
+}
+
+/* ── record-a-value bar + ladder ───────────────────────────────────────────── */
+.typedBar,
+.ladderBody {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line2);
+}
+
+.typedLabel,
+.ladderStepLabel {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.typedInput {
+  flex: 1 1 180px;
+  min-width: 140px;
+  margin-top: 0;
+}
+
+.ladder {
+  margin-top: 12px;
+}
+
+.ladderToggle {
+  border: none;
+  background: none;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink3);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.ladderStep {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  flex-basis: 100%;
+}
+
+.contactNote {
+  flex-basis: 100%;
+  font-size: 12px;
+  color: var(--ink3);
+}
+
+.readonlyNote {
+  margin-top: 16px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.error {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--exc);
+}
+
+@media (max-width: 720px) {
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+  /* Mobile: the two reviewer columns STACK with equal labels (never shrink one). */
+  .reviewerGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .saveBtn,
+  .recordBtn,
+  .finishBtn,
+  .unblindBtn,
+  .pickBtn,
+  .ladderBtn,
+  .sourceBtn,
+  .aiRevealBtn,
+  .studyItem,
+  .stateBtn {
+    transition: none;
+  }
+  .saveBtn:hover:not(:disabled),
+  .pickBtn:hover:not(:disabled),
+  .recordBtn:hover:not(:disabled),
+  .ladderBtn:hover:not(:disabled),
+  .sourceBtn:hover:not(:disabled),
+  .aiRevealBtn:hover:not(:disabled) {
+    transform: none;
+  }
+}

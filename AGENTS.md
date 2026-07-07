@@ -707,4 +707,60 @@ is provable against a deterministic **mock model** — no key, no network.
   the real chokepoint), `ai/rail.test.ts`, `ai/vercel-model.test.ts` (adapter vs the SDK's
   MockLanguageModel), `authz/ai-screening-write.test.ts`. The T6 adversarial suite stays green.
 
+### Two-phase data extraction — the firewall (T15 · ★ science-critical)
+
+The extraction screen (`/[reviewId]/extraction`) is the strictest science surface:
+two reviewers extract **independently and blind**, then reconcile via a symmetric
+per-field picker. Same firewall as screening; the reconciliation adds a corrected
+`resolveFinal` and the full resolution ladder. Feature module: `src/lib/sr/extraction/**`.
+
+- **The firewall (the core).** Phase is `reviews.extraction_phase`
+  (`independent`|`reconcile`), read SERVER-SIDE, never trusted from the client. In
+  **Phase 1** the seam (`extraction/load.ts` → `own-entries.ts`) reads the caller's
+  entries ONLY through the read chokepoint (`getExtractionEntries`), re-filtered to
+  `reviewerId === requester` AND `!isAi` — so neither a co-reviewer's value nor the
+  AI's can reach the screen before both reviewers **lock**. The DTO shape
+  (`IndependentExtractionViewDTO`) carries no field that could hold partner/AI data.
+  **Phase 2** appears only after the owner's one-way unblind (`phase.ts::unblindExtraction`,
+  atomic CAS `independent→reconcile`, audited); the chokepoint then returns `all`
+  rows and `deriveReconciliation` (pure) assembles the picker.
+- **The corrected `resolveFinal` (`extraction/resolve-final.ts`) — the anti-pattern
+  removed.** The precursor (`ScholarSync src/lib/sr/extraction.ts:27-31`) had a
+  `kind:"ai"` branch that returned the AI value as the Final answer. That is GONE.
+  `resolveFinal` does not even ACCEPT an AI argument, so **an AI value can never be
+  Final** (structural guarantee). Its three kinds: `{kind:'agreed'}` (both HUMAN
+  reviewers matched — **agreed ≠ AI**, value is the human value), `{kind:'resolved'}`
+  (a human explicitly picked, via discuss/arbitrator), `{kind:'conflict', value:null}`
+  (empty until a human acts). An `author_contact` log or an `unresolved` park is NOT
+  a decided value — Final stays empty.
+- **Write chokepoint** `src/lib/sr/authz/extraction-write.ts` — the only WRITE path to
+  the blinded `extraction_entries` (in `authz/**`). Own-row upsert on the new unique
+  index `(review,study,reviewer,field)` (migration `0008`, renumbers at integration),
+  `setWhere lockedAt IS NULL`, **no `.returning()`** (runtime role has no SELECT).
+  `reviewerId` is always `ctx.userId`.
+- **Consensus kept SEPARATE (non-neg #8).** The reconciled value lands in a NEW
+  non-blinded table `extraction_consensus` (migration `0008`; per-table
+  `GRANT SELECT,INSERT,UPDATE`, no DELETE) — it **never overwrites** either reviewer's
+  as-extracted `extraction_entries` row, which stay queryable/exportable forever.
+  Store port + neon-http impl + service mirror the T13 pattern; the service
+  (`extraction/service.ts`) is the **no-auto-resolve** state machine (every consensus
+  needs an actor id) + the **resolution ladder**: `resolveExtractionField`
+  (discuss/arbitrator; arbitrator satisfies `assertArbitratorIndependent`),
+  `logAuthorContact` (an in-app LOG of attempt+response — **never auto-sends email**),
+  `leaveUnresolved` (allowed ONLY after a recorded rationale + author-contacted y/n).
+- **Four states / provenance / derived.** `reported`/`not_reported`/`na`/`unclear`
+  are distinct — a blank is never a `0` (enforced in the write, the service, and the
+  DTO). Provenance (report + page/table/figure) is kept per value; a non-`reported`
+  state renders as a designed dashed cell, never blank. A calculated value is tagged
+  `derived` with its formula, kept separate from as-reported.
+- **QC sampling (non-neg #9).** `reviews.extraction_qc_sample_rate` (default **0.2**)
+  deterministically samples AGREED CRITICAL fields for a source re-check (`extraction/qc.ts`).
+  Header framing is **"N fields to verify,"** never "drive conflicts to 0".
+- **T6-gated.** The screen has its own side-channel test
+  (`extraction/own-entries.test.ts` — partner + AI rows primed, proven unreachable
+  during independent) + `extraction-screen.test.tsx` (Final-empty, agreed≠AI, AI
+  hidden-until-source, 4 states). The full T6 suite (`blinding-adversarial` incl.
+  `getExtractionEntries` + `blinding-wall-guard` + `pnpm test:blinded-wall`) stays
+  green. Full route render needs the founder Neon step, same as every SR screen.
+
 - Add durable project-specific notes here as they are discovered through real work.

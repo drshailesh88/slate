@@ -108,6 +108,17 @@ export const extractionEntries = pgTable(
   },
   (t) => [
     index('extraction_entries_review_study_idx').on(t.reviewId, t.studyId),
+    // One entry per (reviewer, study, field). Makes the T15 extraction write
+    // chokepoint an atomic, race-free upsert — a reviewer revises their OWN
+    // field value rather than stacking duplicate rows. The AI reviewer carries a
+    // distinct synthetic reviewer id, so its blinded row coexists on the same
+    // (study, field) without colliding with a human's.
+    uniqueIndex('extraction_entries_reviewer_study_field_idx').on(
+      t.reviewId,
+      t.studyId,
+      t.reviewerId,
+      t.fieldId,
+    ),
   ],
 );
 

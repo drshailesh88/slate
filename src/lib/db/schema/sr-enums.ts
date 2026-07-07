@@ -61,6 +61,25 @@ export const robJudgementEnum = pgEnum('sr_rob_judgement', [
   'high',
 ]);
 
+// Which input a human explicitly PICKED as the reconciled extraction value
+// (T15). `ai` here means a human chose the AI-suggested value — the AI is never
+// the system of record on its own; nothing here is ever auto-selected.
+export const extractionConsensusSourceEnum = pgEnum(
+  'sr_extraction_consensus_source',
+  ['reviewer1', 'reviewer2', 'ai', 'typed'],
+);
+
+// The escalation-ladder rung that settled (or parked) an extraction field (T15,
+// Cochrane §5.5.3 / MECIR C49). `discuss` = the two extractors agreed a value;
+// `arbitrator` = an independent third reviewer decided; `author_contact` = a
+// value settled after contacting the study authors; `unresolved` = left
+// unresolved, allowed ONLY after the ladder is recorded (author-contacted y/n +
+// rationale). Recorded per field for PRISMA reporting.
+export const extractionResolutionMethodEnum = pgEnum(
+  'sr_extraction_resolution_method',
+  ['discuss', 'arbitrator', 'author_contact', 'unresolved'],
+);
+
 // How a screening conflict was resolved (T13). `align_on_one` = a human
 // explicitly picked include or exclude (never an auto-vote / majority);
 // `send_to_arbitrator` = handed to an independent arbitrator (≠ the study's
