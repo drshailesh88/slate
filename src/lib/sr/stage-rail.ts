@@ -36,6 +36,7 @@ export const BUILT_STAGES: readonly SrStageId[] = [
   'members',
   'protocol',
   'import',
+  'conflicts',
 ];
 
 export type StageRailGroupId = 'review' | 'funnel';

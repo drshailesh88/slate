@@ -43,6 +43,13 @@
       "when": 1783355241499,
       "tag": "0005_absurd_wolfpack",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1783391803498,
+      "tag": "0006_wealthy_devos",
+      "breakpoints": true
     }
   ]
 }

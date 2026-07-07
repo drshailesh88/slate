@@ -557,4 +557,56 @@ team-progress readout.
   (report §2.2). Tests: `funnel.test.ts` (safe-model shape), `review-summary.test.tsx`
   - `review-summary-container.test.tsx` (assert no distribution/per-partner leak).
 
+### The Conflicts / adjudication screen (T13 · ★-adjacent)
+
+Post-unblind screening reconciliation (`/[reviewId]/conflicts`). Ported the
+precursor's UI (`conflicts-screen.tsx`) + κ math (`conflicts.ts::cohensKappa`)
+into the frozen skin; **rebuilt the reveal gate server-side** (the precursor
+stripped opposing votes in the browser — client-trust — Slate never _sends_ them
+pre-reconcile).
+
+- **The reveal gate IS the chokepoint.** Conflicts + Cohen's κ are aggregates
+  over every reviewer's calls, so they are computed inside
+  `src/lib/sr/authz/blinded-read.ts::getScreeningConflicts(ctx, stage)`, gated by
+  `resolveAggregateVisibility` — it throws `BlindedAccessError` during
+  `independent` and for `viewer` at reconcile. The opposing calls physically do
+  not leave the chokepoint pre-unblind. The page catches that throw and renders a
+  blinded **"withheld"** state carrying zero conflict rows / no κ. The pure
+  derivation (`src/lib/sr/conflicts/derive.ts`: `deriveScreeningConflicts` +
+  ported `cohensKappa`, κ over the first two HUMAN calls, positive=include|maybe)
+  takes a structural row type so it names no blinded symbol — the _math_ is pure,
+  the _call site_ is the chokepoint (the §2.2 rule for all blinded aggregates).
+- **Equal weight, unmissable, no auto-resolve** (non-negotiables 1/2/3): both
+  opposing calls render in a symmetric grid — same `decisionCell` class, no
+  `aria-selected`, no "primary"; every conflict card is fully expanded (never
+  collapsed). A conflict is a study with BOTH an include and an exclude (a lone
+  Maybe is tentative; AI counts as one more reviewer). Nothing resolves without an
+  explicit human action + actor id — the service (`conflicts/service.ts`) refuses
+  `align_on_one` without an explicit include/exclude pick (no majority/auto-vote)
+  and refuses any resolution without an `actorId`. There is deliberately no code
+  path anywhere that derives a resolution from the votes.
+- **Resolution methods + persistence.** `align_on_one` (a human picks
+  include/exclude) or `send_to_arbitrator`. New **non-blinded** table
+  `screening_conflict_resolutions` (migration `0006_wealthy_devos.sql`, additive;
+  renumbers at integration; per-table `GRANT SELECT,INSERT,UPDATE` to
+  `slate_runtime`, no DELETE) records method + decision/arbitrator + `resolvedBy`
+  (never null) + note, one active row per `(review, study, stage)` (upsert on
+  re-resolution); **every** resolution also writes `audit_log` (`conflict.resolve`)
+  — the full history is append-only there. Rows only exist at reconcile, so it is
+  safe to be visible.
+- **Server trust boundary** (`conflicts/actions.ts`): re-`requireMember`,
+  `canResolveConflict(role)` (owner/collaborator/reviewer/arbitrator; viewer
+  never), PROVE `reviews.screeningPhase === 'reconcile'` (else 409),
+  `requireStudyInReview` (IDOR kill), and for send-to-arbitrator
+  `assertArbitratorIndependent` (T3 authz — refuses 422 if the assignee reviewed
+  the study, read only through the definer functions). Store port + neon-http
+  impl mirror the protocol/import pattern; the service is DB-free + unit-tested.
+- Additive: `conflicts` added to `BUILT_STAGES`; flag- + membership-gated by the
+  `[reviewId]` layout; no global shell/nav or reserved search paths touched. The
+  T6 adversarial suite gains `authz/blinding-conflicts.test.ts` (opposing rows
+  primed → `getScreeningConflicts` withholds them pre-reconcile, reconcile
+  positive control). Tests: 384 green (+31 across derive/service/roles/gate/screen).
+  Full route render (real data) waits on the founder's Neon role provisioning +
+  `pnpm sr:seed`, same as every SR screen; the skin was browser-verified.
+
 - Add durable project-specific notes here as they are discovered through real work.

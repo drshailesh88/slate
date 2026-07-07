@@ -21,12 +21,14 @@ import type {
   EligibilityCriterion as ProtocolCriterion,
 } from '../../sr/protocol/types';
 import {
+  conflictResolutionMethodEnum,
   dupeStatusEnum,
   importTargetEnum,
   invitationStatusEnum,
   memberStatusEnum,
   reviewModeEnum,
   reviewRoleEnum,
+  screeningDecisionEnum,
   screeningStageEnum,
   phaseEnum,
 } from './sr-enums';
@@ -242,6 +244,55 @@ export const protocolVersions = pgTable(
   ],
 );
 
+// ── Screening conflict resolutions (T13) ─────────────────────────────────────
+//
+// The record of HOW an opposing screening conflict was reconciled after unblind
+// — the human adjudication trail. A conflict is resolved ONLY by an explicit
+// human action (there is no auto-resolve / majority path): `align_on_one` stamps
+// the explicit include/exclude the reconciler picked; `send_to_arbitrator` hands
+// the study to an independent arbitrator (server-enforced ≠ the study's
+// reviewers). `resolvedBy` is never null — nothing writes a final screening
+// status without an actor. One active resolution per (review, study, stage); a
+// re-resolution upserts, and every change is also appended to `audit_log`.
+// Non-blinded: rows only exist at reconcile, so the runtime role reads + writes it.
+export const screeningConflictResolutions = pgTable(
+  'screening_conflict_resolutions',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    reviewId: uuid('review_id')
+      .notNull()
+      .references(() => reviews.id),
+    studyId: uuid('study_id')
+      .notNull()
+      .references(() => studies.id),
+    stage: screeningStageEnum('stage').notNull(),
+    method: conflictResolutionMethodEnum('method').notNull(),
+    // The picked call for `align_on_one`; NULL when sent to an arbitrator.
+    decision: screeningDecisionEnum('decision'),
+    // The independent arbitrator for `send_to_arbitrator`; NULL otherwise.
+    arbitratorId: uuid('arbitrator_id').references(() => users.id),
+    note: text('note'),
+    // The human who recorded the resolution — never null (no auto-resolve).
+    resolvedBy: uuid('resolved_by')
+      .notNull()
+      .references(() => users.id),
+    createdAt: timestamp('created_at', { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+    updatedAt: timestamp('updated_at', { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (t) => [
+    unique('screening_conflict_resolutions_review_study_stage_unique').on(
+      t.reviewId,
+      t.studyId,
+      t.stage,
+    ),
+    index('screening_conflict_resolutions_review_idx').on(t.reviewId),
+  ],
+);
+
 // ── Support tables (NOT blinded) ─────────────────────────────────────────────
 
 // Recall/sensitivity validation of an AI reviewer on this review's includes.
@@ -301,6 +352,10 @@ export type Study = typeof studies.$inferSelect;
 export type NewStudy = typeof studies.$inferInsert;
 export type ProtocolVersionRow = typeof protocolVersions.$inferSelect;
 export type NewProtocolVersionRow = typeof protocolVersions.$inferInsert;
+export type ScreeningConflictResolution =
+  typeof screeningConflictResolutions.$inferSelect;
+export type NewScreeningConflictResolution =
+  typeof screeningConflictResolutions.$inferInsert;
 export type AiValidation = typeof aiValidations.$inferSelect;
 export type NewAiValidation = typeof aiValidations.$inferInsert;
 export type WorkosEvent = typeof workosEvents.$inferSelect;

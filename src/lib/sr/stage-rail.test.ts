@@ -25,12 +25,13 @@ function itemFor(id: SrStageId, studyCount?: number): StageRailItem {
 }
 
 describe('BUILT_STAGES', () => {
-  it('is exactly the four M2 screens', () => {
+  it('is the M2 setup spine plus the built M3 conflicts screen', () => {
     expect([...BUILT_STAGES]).toEqual([
       'summary',
       'members',
       'protocol',
       'import',
+      'conflicts',
     ]);
   });
 
