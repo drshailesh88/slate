@@ -136,7 +136,20 @@ export const robAssessments = pgTable(
       .notNull()
       .defaultNow(),
   },
-  (t) => [index('rob_assessments_review_study_idx').on(t.reviewId, t.studyId)],
+  (t) => [
+    index('rob_assessments_review_study_idx').on(t.reviewId, t.studyId),
+    // One judgement per (reviewer, study, domain). Makes the authz write
+    // chokepoint an atomic, race-free upsert — a reviewer revises their OWN
+    // domain judgement rather than stacking duplicate rows. The synthetic AI
+    // reviewer has its own reviewer_id, so its is_ai suggestion coexists with the
+    // humans' rows for the same domain. Mirrors the screening unique index.
+    uniqueIndex('rob_assessments_reviewer_study_domain_idx').on(
+      t.reviewId,
+      t.studyId,
+      t.reviewerId,
+      t.domain,
+    ),
+  ],
 );
 
 export type ScreeningDecision = typeof screeningDecisions.$inferSelect;
