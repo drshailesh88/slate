@@ -35,9 +35,11 @@ function resultKey(result: UnifiedSearchResult, index: number): string {
 
 // `?tab=` only ever seeds/serializes one of the five known tabs — anything
 // else (missing, stale, or hand-edited) falls back to Academic rather than
-// rendering a broken tablist.
+// rendering a broken tablist. Must check own-property, not `in` — `in` walks
+// the prototype chain, so a value like "toString" or "constructor" would
+// pass validation and then blow up `NOUNS[tab]` downstream as not-a-tuple.
 function isExploreTab(value: string | null): value is ExploreTab {
-  return value !== null && value in TAB_LABELS;
+  return value !== null && Object.hasOwn(TAB_LABELS, value);
 }
 
 /**

@@ -4,10 +4,10 @@ import styles from './no-results.module.css';
 
 /**
  * Clear filters stays disabled always — FilterPills are still inert
- * (Slice 2c). The switch-tab action is live only when `onSwitchTab` is
- * passed in: the pre-tabs caller in `explore-page-client.tsx` still renders
- * `<NoResults query={query} />` with no `onSwitchTab`, so it keeps getting
- * the same disabled, "present, not yet active" button it always has.
+ * (Slice 2c). The switch-tab action is gated on `onSwitchTab` being passed;
+ * the only caller (`explore-page-client.tsx`) always supplies `tab` and
+ * `onSwitchTab`, so `tab` and `onSwitchTab` default only for other
+ * call sites (e.g. tests) that omit them.
  */
 export function NoResults({
   query,

@@ -392,6 +392,43 @@ describe('ExplorePageClient', () => {
       expect(useUnifiedSearchMock).toHaveBeenCalledWith('SGLT2', 'academic');
     });
 
+    // Regression: `?tab=` used to be validated with `value in TAB_LABELS`,
+    // which walks the prototype chain — "toString", "constructor", and
+    // "__proto__" all pass that check even though they aren't real tabs.
+    // Under the old check these values seed `activeTab`, and
+    // `NOUNS[tab]` (a Record keyed by real tabs only) resolves to
+    // Object.prototype methods instead of a [one, many] tuple, throwing
+    // "function is not iterable" once a zero-result render destructures it.
+    // A malicious or mistyped `?tab=` must fall back to Academic, not crash.
+    it.each(['toString', 'constructor', '__proto__'])(
+      'does not throw and falls back to Academic when ?tab=%s (prototype-chain property name)',
+      (maliciousTab) => {
+        useSearchParamsMock.mockReturnValue(
+          new URLSearchParams(`tab=${maliciousTab}`),
+        );
+        useUnifiedSearchMock.mockReturnValue({
+          status: 'success',
+          data: searchResponse({ results: [], total: 0, sourceCounts: {} }),
+        });
+
+        expect(() =>
+          render(<ExplorePageClient initialQuery="SGLT2" />),
+        ).not.toThrow();
+
+        expect(screen.getByRole('tab', { name: /academic/i })).toHaveAttribute(
+          'aria-selected',
+          'true',
+        );
+        expect(useUnifiedSearchMock).toHaveBeenCalledWith('SGLT2', 'academic');
+        // Renders the Academic no-results copy, not a web/other-tab card or
+        // a "No {noun} for ..." line derived from a bogus tab.
+        expect(
+          screen.getByText('No papers matched "SGLT2" in Academic.'),
+        ).toBeInTheDocument();
+        expect(screen.queryByText(/No web results/)).not.toBeInTheDocument();
+      },
+    );
+
     it('syncs ?tab= via router.replace (preserving other params) after the user switches tabs', async () => {
       const user = userEvent.setup();
       useSearchParamsMock.mockReturnValue(new URLSearchParams('q=SGLT2'));
