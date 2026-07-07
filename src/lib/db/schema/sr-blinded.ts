@@ -5,6 +5,7 @@ import {
   pgTable,
   text,
   timestamp,
+  uniqueIndex,
   uuid,
 } from 'drizzle-orm/pg-core';
 import { users } from '../schema';
@@ -60,6 +61,16 @@ export const screeningDecisions = pgTable(
   },
   (t) => [
     index('screening_decisions_review_study_idx').on(t.reviewId, t.studyId),
+    // One decision per (reviewer, study, stage). Makes the authz write chokepoint
+    // an atomic, race-free upsert — a reviewer revises their OWN call rather than
+    // stacking duplicate rows. Full-text is its own stage, so a study can carry a
+    // distinct title/abstract and full-text decision from the same reviewer.
+    uniqueIndex('screening_decisions_reviewer_study_stage_idx').on(
+      t.reviewId,
+      t.studyId,
+      t.reviewerId,
+      t.stage,
+    ),
   ],
 );
 

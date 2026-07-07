@@ -56,11 +56,10 @@ describe('ReviewSummary — renders safe chokepoint counts', () => {
   it('links built stages and marks unbuilt funnel stages as coming soon', () => {
     const html = render(412);
     expect(html).toContain(`href="/systematic-review/${REVIEW_ID}/import"`);
-    // Screening has no route yet → coming-soon marker, never a link target.
+    // Screening now has a route (T12) → linked.
+    expect(html).toContain(`href="/systematic-review/${REVIEW_ID}/screening"`);
+    // Unbuilt funnel stages still show a coming-soon marker, never a link target.
     expect(html).toContain('Soon');
-    expect(html).not.toContain(
-      `href="/systematic-review/${REVIEW_ID}/screening"`,
-    );
     expect(html).not.toContain(`href="/systematic-review/${REVIEW_ID}/export"`);
   });
 

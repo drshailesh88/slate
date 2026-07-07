@@ -557,4 +557,51 @@ team-progress readout.
   (report §2.2). Tests: `funnel.test.ts` (safe-model shape), `review-summary.test.tsx`
   - `review-summary-container.test.tsx` (assert no distribution/per-partner leak).
 
+### Blind title/abstract screening (T12 · ★ server-enforced blinding, T6-gated)
+
+The screening screen (`/[reviewId]/screening`) is the most security-critical SR
+surface: the blinding is **enforced server-side**, never by the client. Two
+reviewers label Include/Maybe/Exclude independently and blind; a co-reviewer's
+vote and the AI's verdict/score never reach the screen during `independent`.
+
+- **The blinding is a property of the SEAM, not the UI.** The screen's data is
+  assembled by `src/lib/sr/screening/load.ts` (`buildScreeningView`): the
+  authoritative phase is read server-side from `reviews.screening_phase` (never
+  trusted from the client); decisions come ONLY through the read chokepoint
+  (`getScreeningDecisions`) via `own-decisions.ts`, which re-filters to
+  `reviewerId === requester` AND `!isAi` AND the current stage. So even at
+  `reconcile` (where the chokepoint would return every row) THIS screen stays
+  own-only — reconciliation is a different screen (T13). The `ScreeningViewDTO`
+  shape carries no field that could hold a co-reviewer vote, an AI verdict, or an
+  AI relevance score, so the client literally cannot render one.
+- **The write chokepoint is `src/lib/sr/authz/screening-write.ts`** — the only
+  place outside the schema that names the blinded table for a WRITE (inside the
+  wall-allowed `authz/**`). It upserts the caller's OWN row via
+  `onConflictDoUpdate` on the new unique index
+  `screening_decisions_reviewer_study_stage_idx` (review/study/reviewer/stage —
+  migration `0006`), with `setWhere lockedAt IS NULL` and **no `.returning()`**
+  (the runtime role has INSERT/UPDATE but NO SELECT — RETURNING would fail).
+  `reviewerId` is ALWAYS `ctx.userId` from the server action, never a client
+  value, so a reviewer can only ever write their own decision. `finishOwnScreening`
+  locks own rows (feeds `getSafeProgress`).
+- **AI, science-safe:** the AI relevance SCORE is NEVER rendered (FOUNDATION §10).
+  The AI verdict/reasoning is blinded like a human's — withheld until reconcile.
+  AI ranking may only reorder the queue as a labeled, off-by-default toggle
+  (`aiRanking` is a NON-blinded study-id order, `null` until the AI reviewer lands
+  in T14 — ordering by the blinded AI score would be a side channel).
+- **Owner unblind** (`phase.ts::unblindScreening`) is a one-way, atomic
+  compare-and-swap `UPDATE reviews … WHERE screening_phase='independent'` (visible
+  table → RETURNING ok), audited, cache-busted via `revalidatePath`.
+- **T6-gated:** a ★ blinding-bearing screen is not done until the adversarial
+  suite passes against it. The screen has its own side-channel tests
+  (`screening/own-decisions.test.ts` — attack the read seam; `screening-screen.test.tsx`
+  — assert the rendered DOM shows no AI score/verdict and only own decisions), and
+  the T6 suite (`blinding-adversarial` + `blinding-wall-guard` + `pnpm
+  test:blinded-wall`) + wall guards (ESLint/grep) stay green. If a leak is ever
+  found here, fix the boundary — never weaken a test.
+- **Browser render needs live Neon** (`requireMember` → DB), the founder step
+  (role provisioning + `pnpm sr:seed`), same as every SR screen. Skin + wiring are
+  proven by the jsdom component tests + build; the route is registered under the
+  flag-gated `[reviewId]` layout.
+
 - Add durable project-specific notes here as they are discovered through real work.
