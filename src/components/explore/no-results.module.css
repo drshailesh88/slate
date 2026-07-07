@@ -39,3 +39,12 @@
 .action:disabled {
   cursor: default;
 }
+
+.action:not(:disabled) {
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.action:not(:disabled):hover {
+  background: var(--paper);
+}

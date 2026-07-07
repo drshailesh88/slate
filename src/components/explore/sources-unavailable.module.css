@@ -30,6 +30,13 @@
   color: var(--muted);
 }
 
+.muted {
+  margin: 4px 0 0;
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--muted);
+}
+
 .retry {
   display: inline-flex;
   align-items: center;
