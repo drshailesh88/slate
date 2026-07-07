@@ -1,13 +1,20 @@
 import { ExternalLink, Globe } from 'lucide-react';
 import type { UnifiedSearchResult } from '@/types/search';
 import { getResultUrl } from './result-url';
+import { renderWithMonoNumerals } from './mono-numerals';
 import styles from './web-result-card.module.css';
 
 export type WebResultVariant = 'web' | 'news' | 'discussions';
 
+// 'none' — plain prose, never mono.
+// 'whole' — the entire value is a numeral-like token (e.g. a date).
+// 'digits' — prose mixed with counts (e.g. engagement); only the digit
+// runs render in --mono (design.md §4), never the surrounding words.
+type MonoMode = 'none' | 'whole' | 'digits';
+
 interface MetaPart {
   text: string;
-  isNumeral: boolean;
+  mono: MonoMode;
 }
 
 function formatDate(iso?: string): string {
@@ -28,8 +35,8 @@ function buildMetaParts(
   if (variant === 'discussions') {
     const source = result.platform ?? result.sourceLabel;
     return [
-      source && { text: source, isNumeral: false },
-      result.engagement && { text: result.engagement, isNumeral: true },
+      source && { text: source, mono: 'none' },
+      result.engagement && { text: result.engagement, mono: 'digits' },
     ].filter((part): part is MetaPart => Boolean(part));
   }
 
@@ -37,8 +44,8 @@ function buildMetaParts(
     variant === 'news' ? (result.sourceLabel ?? result.domain) : result.domain;
   const date = formatDate(result.publishedAt);
   return [
-    source && { text: source, isNumeral: false },
-    date && { text: date, isNumeral: true },
+    source && { text: source, mono: 'none' },
+    date && { text: date, mono: 'whole' },
   ].filter((part): part is MetaPart => Boolean(part));
 }
 
@@ -78,9 +85,15 @@ export function WebResultCard({
           {metaParts.map((part, index) => (
             <span key={part.text}>
               {index > 0 && ' · '}
-              <span className={part.isNumeral ? styles.numeral : undefined}>
-                {part.text}
-              </span>
+              {part.mono === 'digits' ? (
+                renderWithMonoNumerals(part.text, styles.numeral)
+              ) : (
+                <span
+                  className={part.mono === 'whole' ? styles.numeral : undefined}
+                >
+                  {part.text}
+                </span>
+              )}
             </span>
           ))}
         </p>

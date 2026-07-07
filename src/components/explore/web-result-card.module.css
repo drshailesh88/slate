@@ -18,10 +18,6 @@
   text-decoration: none;
 }
 
-a.title {
-  color: var(--accent);
-}
-
 a.title:hover {
   text-decoration: underline;
 }

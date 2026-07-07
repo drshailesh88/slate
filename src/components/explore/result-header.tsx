@@ -1,23 +1,14 @@
-import { Fragment } from 'react';
 import { ChevronDown } from 'lucide-react';
 import type { SearchResponse } from '@/types/search';
 import { honestCount } from './honest-count';
+import { renderWithMonoNumerals } from './mono-numerals';
 import { sourceStatusModel, SourceStatusChip } from './source-status-chip';
 import styles from './result-header.module.css';
 
 // The count line mixes prose and grouped numerals; only the numerals render
-// in --mono (design.md §3), so split on digit runs (with thousands commas)
-// and wrap just those spans.
+// in --mono (design.md §3).
 function renderCountLine(line: string) {
-  return line.split(/(\d[\d,]*)/g).map((chunk, index) =>
-    /^\d/.test(chunk) ? (
-      <span key={index} className={styles.num}>
-        {chunk}
-      </span>
-    ) : (
-      <Fragment key={index}>{chunk}</Fragment>
-    ),
-  );
+  return renderWithMonoNumerals(line, styles.num);
 }
 
 export function ResultHeader({ data }: { data: SearchResponse }) {
