@@ -44,6 +44,30 @@ foundation (shell + Home) landed as the genesis on `main`.
   gradients.
 - `docs/design/` is excluded from Prettier — never reformat it.
 
+## Brand / identity
+
+- `docs/design/BRAND.md` is the brand authority (sibling to the frozen skin);
+  the full asset kit lives in `docs/design/brand/**` (`01-mark`, `02-wordmark`,
+  `03-lockup`, `04-favicon`, `05-app-icon`, `06-og`, plus `concept/`). BRAND.md
+  says "append to DESIGN.md" — ignore that; `design.md` is FROZEN, so BRAND.md
+  stands beside it instead.
+- **Achromatic mark** — "the Slate": a framed tablet + one ascending chalk
+  stroke. Two colors only (`#171717` light / `#EDEDED` dark). Never render the
+  logo in blue, and never add gradients, shadows, opacity, rotation, or skew.
+- **In-app logo is `src/components/shell/brand.tsx`** (`<Brand variant="lockup|mark">`),
+  faithful to the kit SVGs and drawn with `currentColor` so it inherits `--ink`
+  and tracks the `[data-theme]` toggle. Do not hardcode the logo color; do not
+  live-type "Slate" (the wordmark is Geist, which the app does not load — a
+  fixed-color `<img>` also can't follow the theme toggle). Use the SVG assets.
+- Respect BRAND.md clear-space (25% of mark height) and min sizes (mark 16 px;
+  small variant, stroke 2.4, ≤ 24 px; lockup ≥ 20 px, else mark alone).
+- Favicons/OG/manifest use App Router file conventions in `src/app`
+  (`favicon.ico`, `icon.svg`, `apple-icon.png`, `opengraph-image.png`,
+  `twitter-image.png`, `manifest.ts`); PWA icons live in `public/`.
+- Open conflict for a human: BRAND.md names interaction blue `#0072F5`, but
+  `design.md §9.1` kills Google-blue and `--accent` is `#3d5a80`. The mark is
+  achromatic so nothing wires the blue — left unresolved on purpose.
+
 ## Architecture notes
 
 - **`src/` layout is load-bearing**: a search engine will later be imported
