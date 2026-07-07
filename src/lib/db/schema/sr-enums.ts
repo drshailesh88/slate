@@ -61,6 +61,15 @@ export const robJudgementEnum = pgEnum('sr_rob_judgement', [
   'high',
 ]);
 
+// How a screening conflict was resolved (T13). `align_on_one` = a human
+// explicitly picked include or exclude (never an auto-vote / majority);
+// `send_to_arbitrator` = handed to an independent arbitrator (≠ the study's
+// reviewers). The method is recorded per conflict — there is no auto-resolve.
+export const conflictResolutionMethodEnum = pgEnum(
+  'sr_conflict_resolution_method',
+  ['align_on_one', 'send_to_arbitrator'],
+);
+
 // The stage a batch of references is imported into (Covidence: import into a
 // named stage). Mirrors the precursor `ImportBatch.target`.
 export const importTargetEnum = pgEnum('sr_import_target', [

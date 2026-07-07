@@ -1,6 +1,12 @@
 import { sql } from 'drizzle-orm';
 import { getDb } from '@/lib/db/client';
 import {
+  cohensKappa,
+  deriveScreeningConflicts,
+  type KappaReadout,
+  type ScreeningConflict,
+} from '@/lib/sr/conflicts/derive';
+import {
   applyRowVisibility,
   BlindedAccessError,
   computeSurfaceProgress,
@@ -310,6 +316,32 @@ export async function getScreeningTally(
     else if (row.decision === 'maybe') tally.maybe += 1;
   }
   return tally;
+}
+
+// The set of screening conflicts + inter-rater agreement for a stage. Both are
+// aggregates over EVERY reviewer's calls, so this is refused during `independent`
+// for every role (and always for `viewer`, who reads derived consensus, not raw
+// conflicts) — it only resolves once the surface is in `reconcile` and the caller
+// may see all rows. This is the server-side gate the Conflicts screen (T13) reads
+// through: the opposing calls physically do not leave the chokepoint pre-unblind.
+export type ScreeningConflicts = {
+  conflicts: ScreeningConflict[];
+  kappa: KappaReadout;
+};
+
+export async function getScreeningConflicts(
+  ctx: BlindedContext,
+  stage: string,
+): Promise<ScreeningConflicts> {
+  const phase = await fetchPhase(ctx.reviewId, 'screening');
+  if (resolveAggregateVisibility(ctx.role, phase) !== 'all') {
+    throw new BlindedAccessError('screening', ctx.role, phase, 'aggregate');
+  }
+  const rows = await fetchScreeningRows(ctx.reviewId);
+  return {
+    conflicts: deriveScreeningConflicts(rows, stage),
+    kappa: cohensKappa(rows.filter((r) => r.stage === stage)),
+  };
 }
 
 // ── Safe progress — the ONLY progress surface during `independent`. ───────────

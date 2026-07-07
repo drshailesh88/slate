@@ -50,6 +50,13 @@
       "when": 1783391768474,
       "tag": "0006_swift_silver_surfer",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1783395228413,
+      "tag": "0007_wealthy_devos",
+      "breakpoints": true
     }
   ]
 }
