@@ -1,17 +1,9 @@
 'use client';
 
-import { NON_ACADEMIC_TABS } from './tab-meta';
+import { NON_ACADEMIC_TABS, TAB_LABELS } from './tab-meta';
 import styles from './tab-bar.module.css';
 
 export type ExploreTab = 'academic' | 'web' | 'news' | 'discussions' | 'videos';
-
-const TAB_LABELS: Record<ExploreTab, string> = {
-  academic: 'Academic',
-  web: 'Web',
-  news: 'News',
-  discussions: 'Discussions',
-  videos: 'Videos',
-};
 
 const TABS: ExploreTab[] = ['academic', 'web', 'news', 'discussions', 'videos'];
 

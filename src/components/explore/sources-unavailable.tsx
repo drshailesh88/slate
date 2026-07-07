@@ -2,15 +2,8 @@
 
 import { CloudOff, RefreshCw } from 'lucide-react';
 import type { ExploreTab } from './tab-bar';
+import { TAB_LABELS } from './tab-meta';
 import styles from './sources-unavailable.module.css';
-
-const TAB_LABELS: Record<ExploreTab, string> = {
-  academic: 'Academic',
-  web: 'Web',
-  news: 'News',
-  discussions: 'Discussions',
-  videos: 'Videos',
-};
 
 /**
  * Whole-tab-down variant of the Source-degraded state (design.md

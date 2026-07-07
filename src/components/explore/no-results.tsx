@@ -29,7 +29,9 @@ export function NoResults({
     <div className={styles.wrap}>
       <p className={styles.headline}>{headline}</p>
       <p className={styles.body}>
-        Try broader terms, widen the time window, or search the Web.
+        {isAcademic
+          ? 'Try broader terms, widen the time window, or search the Web.'
+          : 'Try broader terms or widen the time window.'}
       </p>
       <div className={styles.actions}>
         <button

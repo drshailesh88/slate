@@ -29,6 +29,25 @@ describe('NoResults', () => {
     ).toBeInTheDocument();
   });
 
+  it('keeps the "or search the Web" clause in the Academic body (it names the very action offered)', () => {
+    render(<NoResults query="SGLT2 in HFpEF" tab="academic" />);
+
+    expect(
+      screen.getByText(
+        'Try broader terms, widen the time window, or search the Web.',
+      ),
+    ).toBeInTheDocument();
+  });
+
+  it('drops the "or search the Web" clause from a non-academic body — it makes no sense on the Web/News/Discussions tabs', () => {
+    render(<NoResults query="tirzepatide" tab="web" />);
+
+    expect(
+      screen.getByText('Try broader terms or widen the time window.'),
+    ).toBeInTheDocument();
+    expect(screen.queryByText(/search the Web/)).not.toBeInTheDocument();
+  });
+
   it('enables the action and calls onSwitchTab("web") from Academic when provided', async () => {
     const user = userEvent.setup();
     const onSwitchTab = vi.fn();

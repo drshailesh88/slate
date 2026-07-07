@@ -1,13 +1,16 @@
 'use client';
 
-import { useState } from 'react';
-import type { UnifiedSearchResult } from '@/types/search';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { useRouter, usePathname, useSearchParams } from 'next/navigation';
+import type { SearchResponse, UnifiedSearchResult } from '@/types/search';
 import { useUnifiedSearch } from './use-unified-search';
 import { sourceStatusModel } from './source-status-chip';
 import { ResultHeader } from './result-header';
-import { TabBar } from './tab-bar';
+import { TabBar, type ExploreTab } from './tab-bar';
+import { TabCaveat } from './tab-caveat';
+import { TAB_LABELS, isAcademicTab } from './tab-meta';
 import { FilterPills } from './filter-pills';
-import { AcademicResultCard } from './academic-result-card';
+import { ResultCard } from './result-card';
 import { ResultsSkeleton } from './results-skeleton';
 import { NoResults } from './no-results';
 import { SourceDegradedNote } from './source-degraded-note';
@@ -30,21 +33,78 @@ function resultKey(result: UnifiedSearchResult, index: number): string {
   );
 }
 
+// `?tab=` only ever seeds/serializes one of the five known tabs — anything
+// else (missing, stale, or hand-edited) falls back to Academic rather than
+// rendering a broken tablist.
+function isExploreTab(value: string | null): value is ExploreTab {
+  return value !== null && value in TAB_LABELS;
+}
+
+/**
+ * A source absent from `sourceStatuses` (or "ok") is silent about health, so
+ * emptiness there reads as genuine — only when every reported source is
+ * non-"ok" is this a whole-tab outage, never "no papers/results matched".
+ */
+function academicSourcesDown(
+  sourceStatuses: SearchResponse['sourceStatuses'],
+): boolean {
+  const statuses = Object.values(sourceStatuses ?? {});
+  return statuses.length > 0 && !statuses.some((s) => s.status === 'ok');
+}
+
+type SearchResultsState = ReturnType<typeof useUnifiedSearch>;
+
 /**
  * Owns the actual `useUnifiedSearch` call and is remounted (via a `key` on
- * the parent) whenever the query changes OR a retry is requested — that's
- * what makes "Try again" force a fresh fetch even when the query text is
+ * the parent) whenever the query, tab, or retry attempt changes — that's
+ * what makes "Try again" force a fresh fetch even when the query/tab are
  * unchanged, without needing to add a refetch escape hatch to the hook.
+ *
+ * The tab chrome (TabBar + TabCaveat) renders before the state-dependent
+ * body in every branch below, so a tab is switchable from idle/loading/error
+ * too — not just from a populated result list.
  */
 function ExploreResults({
   query,
+  tab,
+  onSelectTab,
   onRetry,
 }: {
   query: string;
+  tab: ExploreTab;
+  onSelectTab: (tab: ExploreTab) => void;
   onRetry: () => void;
 }) {
-  const state = useUnifiedSearch(query, 'academic');
+  const state = useUnifiedSearch(query, tab);
 
+  return (
+    <>
+      <TabBar active={tab} onSelect={onSelectTab} />
+      <TabCaveat tab={tab} />
+      <ExploreResultsBody
+        query={query}
+        tab={tab}
+        state={state}
+        onSelectTab={onSelectTab}
+        onRetry={onRetry}
+      />
+    </>
+  );
+}
+
+function ExploreResultsBody({
+  query,
+  tab,
+  state,
+  onSelectTab,
+  onRetry,
+}: {
+  query: string;
+  tab: ExploreTab;
+  state: SearchResultsState;
+  onSelectTab: (tab: ExploreTab) => void;
+  onRetry: () => void;
+}) {
   if (state.status === 'idle') {
     return (
       <p className={styles.idle}>
@@ -65,29 +125,28 @@ function ExploreResults({
   if (!data) return null;
 
   if (data.results.length === 0) {
-    // A source absent from sourceStatuses (or "ok") is silent about health,
-    // so emptiness there reads as genuine — only when every reported source
-    // is non-"ok" is this a whole-tab outage, never "no papers matched".
-    const statuses = Object.values(data.sourceStatuses ?? {});
-    const allSourcesDown =
-      statuses.length > 0 && !statuses.some((s) => s.status === 'ok');
+    const isDown = isAcademicTab(tab)
+      ? academicSourcesDown(data.sourceStatuses)
+      : data.searxngUnavailable === true;
 
-    return allSourcesDown ? (
-      <SourcesUnavailable onRetry={onRetry} />
+    return isDown ? (
+      <SourcesUnavailable tab={tab} onRetry={onRetry} />
     ) : (
-      <NoResults query={query} />
+      <NoResults query={query} tab={tab} onSwitchTab={onSelectTab} />
     );
   }
 
   // A degraded source's zero count must never read as "no results" — the
   // note is derived from sourceStatusModel, not from re-inspecting counts.
+  // Only Academic aggregates across sources, so the note is Academic-only.
   const model = sourceStatusModel(data.sourceStatuses, data.sourceCounts);
 
   return (
     <>
-      <ResultHeader data={data} />
-      {model.degraded && <SourceDegradedNote model={model} />}
-      <TabBar active="academic" onSelect={() => {}} />
+      <ResultHeader data={data} tab={tab} />
+      {isAcademicTab(tab) && model.degraded && (
+        <SourceDegradedNote model={model} />
+      )}
       <FilterPills />
       <ol className={styles.results}>
         {data.results.map((result, index) => {
@@ -104,7 +163,7 @@ function ExploreResults({
                   : undefined
               }
             >
-              <AcademicResultCard result={result} />
+              <ResultCard result={result} tab={tab} />
             </li>
           );
         })}
@@ -114,16 +173,47 @@ function ExploreResults({
 }
 
 export function ExplorePageClient({ initialQuery }: { initialQuery: string }) {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
   const [query, setQuery] = useState(initialQuery);
+  const [activeTab, setActiveTab] = useState<ExploreTab>(() => {
+    const tabParam = searchParams.get('tab');
+    return isExploreTab(tabParam) ? tabParam : 'academic';
+  });
   const [attempt, setAttempt] = useState(0);
+
+  const searchParamsString = searchParams.toString();
+  const isFirstRender = useRef(true);
+
+  // Keep `?tab=` in sync with a *switched* tab so it survives a reload/share
+  // — preserves every other param (notably `q`) untouched. Skips the first
+  // render so a plain page load doesn't rewrite the URL before the user has
+  // touched a tab (the seed effect above already reads `?tab=` correctly).
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+    const params = new URLSearchParams(searchParamsString);
+    if (params.get('tab') === activeTab) return;
+    params.set('tab', activeTab);
+    router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeTab]);
+
+  const handleRetry = useCallback(() => setAttempt((a) => a + 1), []);
 
   return (
     <div className={styles.page}>
       <SearchBar value={query} onSubmit={setQuery} />
       <ExploreResults
-        key={`${query}::${attempt}`}
+        key={`${query}::${activeTab}::${attempt}`}
         query={query}
-        onRetry={() => setAttempt((a) => a + 1)}
+        tab={activeTab}
+        onSelectTab={setActiveTab}
+        onRetry={handleRetry}
       />
     </div>
   );

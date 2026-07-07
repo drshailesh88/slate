@@ -11,6 +11,14 @@ export function isAcademicTab(tab: ExploreTab): boolean {
   return tab === 'academic';
 }
 
+export const TAB_LABELS: Record<ExploreTab, string> = {
+  academic: 'Academic',
+  web: 'Web',
+  news: 'News',
+  discussions: 'Discussions',
+  videos: 'Videos',
+};
+
 export const WEB_CAVEAT =
   "Web results are early — we're still tuning quality. Academic is our strongest.";
 
