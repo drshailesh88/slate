@@ -10,7 +10,10 @@ export function honestCount(
     SearchResponse,
     'matchedTotal' | 'total' | 'sourceCounts' | 'sourceStatuses'
   >,
-  tab: ExploreTab,
+  // Defaults to academic so the pre-Task-6 caller (ResultHeader, which only
+  // renders for the academic tab until tab switching lands) stays correct
+  // without a required arg. Task 4 onward passes the active tab explicitly.
+  tab: ExploreTab = 'academic',
 ): string {
   if (!isAcademicTab(tab)) {
     return `${group(res.total)} ${resultNoun(tab, res.total)}`;
