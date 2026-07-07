@@ -4,16 +4,9 @@ import { useState } from 'react';
 import { ExternalLink, Copy, Check, Quote } from 'lucide-react';
 import type { UnifiedSearchResult } from '@/types/search';
 import { formatCitation } from './format-citation';
+import { getResultUrl } from './result-url';
 import { JournalQuartileBadge } from './journal-quartile-badge';
 import styles from './academic-result-card.module.css';
-
-function getResultUrl(
-  result: Pick<UnifiedSearchResult, 'url' | 'doi'>,
-): string | undefined {
-  if (result.url) return result.url;
-  if (result.doi) return `https://doi.org/${result.doi}`;
-  return undefined;
-}
 
 const MAX_DISPLAYED_AUTHORS = 3;
 
