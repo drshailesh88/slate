@@ -1,0 +1,468 @@
+/* Import + dedup skin (T9). Frozen skin: tokens only, hairlines, no shadows or
+   gradients. Serif title, mono numbers. Motion animates opacity only and honors
+   prefers-reduced-motion (design.md §8/§9). */
+
+.screen {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 32px 32px 64px;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
+.title {
+  margin: 6px 0 0;
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: -0.3px;
+  color: var(--ink);
+}
+
+.lead {
+  margin: 8px 0 0;
+  max-width: 70ch;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink3);
+}
+
+.lead strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* AI discovery strip — accent used only because it encodes AI/link (§9.2). */
+.aiStrip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 12px 16px;
+  border: 1px solid var(--accentln);
+  border-radius: 12px;
+  background: var(--accentbg);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink3);
+}
+
+.aiChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.02em;
+}
+
+.aiStrip strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* Section label with a trailing hairline rule and an aligned count. */
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 34px 0 14px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.sectionLabel::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+.sectionCount {
+  flex: none;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink3);
+}
+
+/* Import form panel */
+.panel {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--paper);
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fieldWide {
+  grid-column: 1 / -1;
+}
+
+.fieldLabel {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink3);
+}
+
+.select,
+.input,
+.textarea {
+  width: 100%;
+  padding: 9px 11px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+.textarea {
+  min-height: 132px;
+  resize: vertical;
+  font-family: var(--mono);
+  font-size: 12.5px;
+}
+
+.select:focus,
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--ink);
+}
+
+.formats {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.formFooter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+/* Buttons — primary is ink with a white label (§9.5). */
+.primaryBtn {
+  padding: 9px 17px;
+  border: 1px solid var(--ink);
+  border-radius: 9px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity var(--motion-micro) var(--ease-out);
+}
+
+.primaryBtn:hover {
+  opacity: 0.9;
+}
+
+.primaryBtn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.ghostBtn {
+  padding: 8px 15px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 12.5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity var(--motion-micro) var(--ease-out);
+}
+
+.ghostBtn:hover {
+  opacity: 0.75;
+}
+
+.ghostBtn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Ledger */
+.ledger {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.ledgerCard {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+  animation: sr-fade var(--motion-panel) var(--ease-out);
+}
+
+.stageTag {
+  align-self: flex-start;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--rail);
+  border: 1px solid var(--line);
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--ink3);
+}
+
+.stageTagAi {
+  background: var(--accentbg);
+  border-color: var(--accentln);
+  color: var(--accent);
+}
+
+.nums {
+  display: flex;
+  gap: 26px;
+}
+
+.num {
+  font-family: var(--mono);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.numLabel {
+  margin-top: 2px;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.cardMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line2);
+  font-size: 12px;
+  color: var(--ink3);
+}
+
+.undoBtn {
+  border: none;
+  background: none;
+  padding: 0;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.undoBtn:hover {
+  text-decoration: underline;
+}
+
+.undoBtn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Undone batches — muted, reversible via restore */
+.undoneRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px;
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  background: var(--rail);
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.undoneRow + .undoneRow {
+  margin-top: 8px;
+}
+
+.undoneSource {
+  color: var(--ink3);
+}
+
+/* Duplicate queue */
+.queue {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dupeCard {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+  animation: sr-fade var(--motion-panel) var(--ease-out);
+}
+
+.dupePill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+  padding: 4px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--conln);
+  background: var(--conbg);
+  color: var(--con);
+  font-family: var(--mono);
+  font-size: 10.5px;
+  white-space: nowrap;
+}
+
+.dupeBody {
+  min-width: 0;
+  flex: 1;
+}
+
+.dupeTitle {
+  font-size: 13.5px;
+  color: var(--ink);
+  line-height: 1.4;
+}
+
+.dupeMeta {
+  margin-top: 3px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.dupeActions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* Empty + note + feedback */
+.empty {
+  padding: 22px;
+  border: 1px dashed var(--line);
+  border-radius: 12px;
+  background: var(--rail);
+}
+
+.empty h3 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.empty p {
+  margin: 6px 0 0;
+  max-width: 60ch;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ink3);
+}
+
+.queueEmpty {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ink3);
+}
+
+.note {
+  margin-top: 12px;
+  padding: 11px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--rail);
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ink3);
+}
+
+.feedback {
+  margin-top: 12px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--inc);
+}
+
+.feedbackError {
+  color: var(--exc);
+}
+
+@keyframes sr-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ledgerCard,
+  .dupeCard {
+    animation: none;
+  }
+  .primaryBtn,
+  .ghostBtn {
+    transition: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .screen {
+    padding: 24px 18px 56px;
+  }
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+  .dupeCard {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .dupeActions {
+    justify-content: flex-end;
+  }
+}

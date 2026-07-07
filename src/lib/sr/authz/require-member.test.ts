@@ -55,6 +55,7 @@ import {
   OrgScopeError,
   ReviewAccessError,
   assertArbitratorIndependent,
+  assertArbitratorIndependentForReview,
   requireMember,
   requireOrgScope,
   requireStudyInReview,
@@ -211,6 +212,31 @@ describe('assertArbitratorIndependent — server-enforced', () => {
       assertArbitratorIndependent({
         reviewId: REVIEW_ID,
         studyId: STUDY_ID,
+        userId: USER_UUID,
+      }),
+    ).resolves.toBeUndefined();
+  });
+});
+
+describe('assertArbitratorIndependentForReview — review-wide (T7 Team screen)', () => {
+  it('refuses (422) when the user reviewed ANY study in the review', async () => {
+    executeRows = [{ found: 1 }]; // participation somewhere in the review
+
+    const refused = await assertArbitratorIndependentForReview({
+      reviewId: REVIEW_ID,
+      userId: USER_UUID,
+    }).catch((e) => e);
+
+    expect(refused).toBeInstanceOf(ArbitratorIndependenceError);
+    expect(refused.status).toBe(422);
+  });
+
+  it('allows when the user has no participation anywhere in the review', async () => {
+    executeRows = [];
+
+    await expect(
+      assertArbitratorIndependentForReview({
+        reviewId: REVIEW_ID,
         userId: USER_UUID,
       }),
     ).resolves.toBeUndefined();
