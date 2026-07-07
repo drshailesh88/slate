@@ -64,7 +64,9 @@ describe('ReviewSummary — renders safe chokepoint counts', () => {
     expect(html).toContain(`href="/systematic-review/${REVIEW_ID}/export"`);
     // Unbuilt funnel stages still show a coming-soon marker, never a link target.
     expect(html).toContain('Soon');
-    expect(html).not.toContain(`href="/systematic-review/${REVIEW_ID}/full-text"`);
+    expect(html).not.toContain(
+      `href="/systematic-review/${REVIEW_ID}/full-text"`,
+    );
   });
 
   it('shows the first-run guidance and no funnel when nothing is imported', () => {

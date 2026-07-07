@@ -43,9 +43,9 @@ describe('extractNumericTokens', () => {
   });
 
   it('a digit inside an identifier (SGLT2, RoB2) is not a numeric claim', () => {
-    expect(extractNumericTokens('SGLT2 inhibitors appraised with RoB2')).toEqual(
-      [],
-    );
+    expect(
+      extractNumericTokens('SGLT2 inhibitors appraised with RoB2'),
+    ).toEqual([]);
     expect(extractNumericTokens('SGLT2 inhibitors in 412 records')).toEqual([
       412,
     ]);
