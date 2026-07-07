@@ -1,0 +1,396 @@
+/* Report (T18). Frozen skin — tokens only, hairline borders, no shadows or
+   gradients. Serif for the manuscript voice, mono for every number. Animates
+   nothing beyond the shared transitions; honors reduced motion by default. */
+
+.screen {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 32px 32px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.title {
+  margin: 6px 0 0;
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+  color: var(--ink);
+}
+
+.lead {
+  margin: 8px 0 0;
+  max-width: 78ch;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink3);
+}
+
+.lead b {
+  color: var(--ink2);
+  font-weight: 600;
+}
+
+.countRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.countPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 4px 11px;
+  font-size: 12.5px;
+  color: var(--ink3);
+  background: var(--paper);
+}
+
+.countValue {
+  font-family: var(--mono);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* ── section scaffolding ───────────────────────────────────────────────────── */
+
+.sectionHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 8px;
+  margin-bottom: 14px;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.autoBadge,
+.aiBadge,
+.humanBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.autoBadge {
+  border: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.aiBadge {
+  border: 1px solid var(--accentln);
+  color: var(--accent);
+  background: var(--accentbg);
+}
+
+.humanBadge {
+  border: 1px solid var(--incln);
+  color: var(--inc);
+  background: var(--incbg);
+}
+
+.sourceChip {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 1px 8px;
+  margin-left: 4px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--muted);
+  vertical-align: 1px;
+  white-space: nowrap;
+}
+
+/* ── methods block ─────────────────────────────────────────────────────────── */
+
+.methodsItem {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+}
+
+.methodsItemLabel {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.methodsStatement {
+  margin: 6px 0 0;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--ink2);
+}
+
+/* ── body copy / numbers / lists ───────────────────────────────────────────── */
+
+.bodyText {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--ink2);
+}
+
+.num {
+  font-family: var(--mono);
+  font-weight: 600;
+  font-style: normal;
+  color: var(--ink);
+}
+
+.reasonList {
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink3);
+}
+
+.emptyNote,
+.helperText {
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ink3);
+}
+
+.errorText {
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--exc);
+}
+
+.droppedNote {
+  margin: 0 0 10px;
+  border: 1px solid var(--mayln);
+  border-radius: 8px;
+  background: var(--maybg);
+  padding: 8px 12px;
+  font-size: 12.5px;
+  color: var(--may);
+}
+
+/* ── withheld (blinded) note ───────────────────────────────────────────────── */
+
+.withheld {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  border: 1px solid var(--mayln);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink2);
+  background: var(--maybg);
+}
+
+/* ── characteristics table ─────────────────────────────────────────────────── */
+
+.table {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tr {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.2fr 0.6fr 1.4fr;
+  gap: 10px;
+  padding: 9px 14px;
+  border-top: 1px solid var(--line2);
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--ink2);
+}
+
+.tr:first-child {
+  border-top: none;
+}
+
+.th {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: var(--rail);
+}
+
+.refKey {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.stateCell {
+  border-bottom: 1px dashed var(--line);
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ── draft panel ───────────────────────────────────────────────────────────── */
+
+.draftButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--ink);
+  border-radius: 8px;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 7px 14px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity var(--motion-micro) var(--ease-out);
+}
+
+.draftButton:hover {
+  opacity: 0.9;
+}
+
+.draftButton:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.draftSection {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+
+.draftHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.draftHeading {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.draftSentences {
+  margin-top: 8px;
+  font-family: var(--serif);
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink2);
+}
+
+.citeChip {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--accentln);
+  border-radius: 6px;
+  padding: 0 5px;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--accent);
+  background: var(--accentbg);
+  vertical-align: 2px;
+}
+
+.editLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 12px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.editArea {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink2);
+  padding: 10px 12px;
+  font-family: var(--sans);
+  font-size: 13.5px;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+.editArea:focus {
+  outline: none;
+  border-color: var(--ink3);
+}
+
+/* ── references ────────────────────────────────────────────────────────────── */
+
+.refList {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ink3);
+}
+
+@media (max-width: 720px) {
+  .screen {
+    padding: 24px 16px 48px;
+  }
+
+  .tr {
+    grid-template-columns: 1fr 1fr;
+  }
+}
