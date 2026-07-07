@@ -135,6 +135,22 @@ describe('useUnifiedSearch', () => {
     expect(result.current.data).toEqual(bodyBeta);
   });
 
+  it('requests the given tab and transitions loading to success', async () => {
+    const body = searchResponse({ total: 43 });
+    const { fetchMock, calls } = createMockFetch();
+    vi.stubGlobal('fetch', fetchMock);
+
+    const { result } = renderHook(() => useUnifiedSearch('q', 'web'));
+
+    expect(result.current).toEqual({ status: 'loading' });
+    expect(calls[0].url).toContain('&tab=web');
+
+    calls[0].resolve(fakeResponse(body));
+
+    await waitFor(() => expect(result.current.status).toBe('success'));
+    expect(result.current.data).toEqual(body);
+  });
+
   it('surfaces an error state when the response is not ok', async () => {
     const { fetchMock, calls } = createMockFetch();
     vi.stubGlobal('fetch', fetchMock);
