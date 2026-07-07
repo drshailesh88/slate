@@ -813,4 +813,42 @@ Per-study, per-domain RoB appraisal (`/[reviewId]/risk-of-bias`), dual + indepen
   screening), not yet filtered to screening-included studies — inclusion-gating is a
   follow-up once full-text/inclusion state is wired.
 
+### The PRISMA flow screen (T17)
+
+The PRISMA 2020 flow diagram (`/[reviewId]/prisma`) — the auditable record of
+where every study went, auto-derived from the review's real data.
+
+- **PRISMA counts MUST route through the chokepoint.** Stage counts, drill-down
+  bucket membership, and the per-reason full-text exclusions (Item 16b) are
+  aggregates over the blinded screening rows, so they are computed ONLY inside
+  `src/lib/sr/authz/blinded-read.ts::getPrismaFlow`, gated by
+  `resolveAggregateVisibility` — refused (`BlindedAccessError`) during
+  `independent` for every role and always for `viewer`. Never derive a PRISMA
+  number from a client store or a raw blinded-table COUNT. The one exception is
+  the Identification block (records identified / per-source / duplicates
+  removed), which is non-blinded and comes from `studies`.
+- **Pure math** `src/lib/sr/prisma/derive.ts` (`derivePrismaFlow`,
+  `derivePrismaIdentification`) — ported from the precursor's
+  `derivePrismaCounts` and rebuilt for the server row model with structural
+  types (names no blinded symbol; same split as `conflicts/derive.ts`). Every
+  pool record lands in EXACTLY ONE terminal bucket (duplicate / TA-excluded /
+  TA-in-progress / FT-excluded / FT-in-progress / included), so the flow
+  reconciles at every stage (in = out + excluded) — asserted by
+  `derive.test.ts::expectReconciled`. Unresolved conflicts, pending
+  arbitrations, and missing calls are an explicit "in progress" bucket, never a
+  silent exclusion; a reason-less full-text exclusion lands in an explicit
+  "not recorded" reason bucket (the precursor silently dropped those).
+- **Pool definition matches screening** (`dupeStatus ∉ {auto_merged, merged}`,
+  `undoneAt` ignored) so PRISMA reconciles with what reviewers actually see.
+- **Seam + screen:** `src/lib/sr/prisma/load.ts::buildPrismaView` catches
+  `BlindedAccessError` → the DTO carries `flow: null` and the screen
+  (`src/components/sr/prisma/prisma-screen.tsx`) renders an honest withheld
+  state: Identification + `getSafeProgress` completion counts only — the DTO
+  shape cannot carry a stage count early. At reconcile every count is a
+  drill-down (click → the underlying records, authz-scoped server-side).
+- **T6 extension:** `src/lib/sr/authz/blinding-prisma.test.ts` primes
+  co-reviewer rows and proves `getPrismaFlow` withholds the whole flow during
+  `independent` (with a reconcile positive control that also asserts the
+  reconciliation invariants).
+
 * Add durable project-specific notes here as they are discovered through real work.

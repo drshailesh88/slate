@@ -1,11 +1,19 @@
 import { sql } from 'drizzle-orm';
 import { getDb } from '@/lib/db/client';
+import { requiredHumanReviewers } from '@/lib/sr/ai/coverage';
 import {
   cohensKappa,
   deriveScreeningConflicts,
   type KappaReadout,
   type ScreeningConflict,
 } from '@/lib/sr/conflicts/derive';
+import {
+  derivePrismaFlow,
+  type PrismaFlow,
+  type PrismaResolutionRow,
+  type PrismaStudyRow,
+} from '@/lib/sr/prisma/derive';
+import type { ReviewMode } from '@/lib/sr/review-modes';
 import {
   applyRowVisibility,
   BlindedAccessError,
@@ -342,6 +350,84 @@ export async function getScreeningConflicts(
     conflicts: deriveScreeningConflicts(rows, stage),
     kappa: cohensKappa(rows.filter((r) => r.stage === stage)),
   };
+}
+
+// ── The PRISMA 2020 flow (T17) — an aggregate over every reviewer's calls. ────
+//
+// PRISMA stage counts (screened / excluded / assessed / included, and the
+// per-reason full-text exclusions — Item 16b) are derived from the blinded
+// screening rows, so the WHOLE flow is blinded data and is computed HERE:
+// refused during `independent` for every role, and always for `viewer` (same
+// gate as getScreeningConflicts). The page shows only the non-blinded
+// Identification block (from `studies`) plus getSafeProgress until the owner
+// unblinds screening. The pure math lives in @/lib/sr/prisma/derive — this is
+// its only call site with real rows.
+export async function getPrismaFlow(ctx: BlindedContext): Promise<PrismaFlow> {
+  const review = await getDb().execute<{ phase: Phase; mode: ReviewMode }>(
+    sql`select screening_phase as phase, review_mode as mode
+        from reviews where id = ${ctx.reviewId}`,
+  );
+  const row = review.rows[0];
+  if (!row) {
+    throw new Error(
+      `Cannot resolve blinding phase: review ${ctx.reviewId} not found. ` +
+        `The authorization layer must reject unknown reviews (404) before calling the chokepoint.`,
+    );
+  }
+  if (resolveAggregateVisibility(ctx.role, row.phase) !== 'all') {
+    throw new BlindedAccessError('screening', ctx.role, row.phase, 'aggregate');
+  }
+
+  const decisions = await fetchScreeningRows(ctx.reviewId);
+  const studies = await fetchPrismaStudies(ctx.reviewId);
+  const resolutions = await fetchPrismaResolutions(ctx.reviewId);
+
+  return derivePrismaFlow({
+    studies,
+    decisions,
+    resolutions,
+    requiredHumans: requiredHumanReviewers(row.mode),
+  });
+}
+
+// The visible study pool + recorded resolutions the flow reconciles over. Both
+// are non-blinded tables, read here so the ENTIRE flow derives from one
+// snapshot inside the gate — a caller never assembles PRISMA numbers itself.
+async function fetchPrismaStudies(reviewId: string): Promise<PrismaStudyRow[]> {
+  const result = await getDb().execute<{
+    id: string;
+    source: string | null;
+    dupe_status: string;
+  }>(
+    sql`select id, source, dupe_status from studies
+        where review_id = ${reviewId}`,
+  );
+  return result.rows.map((r) => ({
+    id: r.id,
+    source: r.source,
+    dupeStatus: r.dupe_status,
+  }));
+}
+
+async function fetchPrismaResolutions(
+  reviewId: string,
+): Promise<PrismaResolutionRow[]> {
+  const result = await getDb().execute<{
+    study_id: string;
+    stage: string;
+    method: string;
+    decision: string | null;
+  }>(
+    sql`select study_id, stage, method, decision
+        from screening_conflict_resolutions
+        where review_id = ${reviewId}`,
+  );
+  return result.rows.map((r) => ({
+    studyId: r.study_id,
+    stage: r.stage,
+    method: r.method,
+    decision: r.decision,
+  }));
 }
 
 // ── Safe progress — the ONLY progress surface during `independent`. ───────────
