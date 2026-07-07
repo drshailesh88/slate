@@ -13,7 +13,15 @@ import {
   type PrismaResolutionRow,
   type PrismaStudyRow,
 } from '@/lib/sr/prisma/derive';
+import {
+  deriveRobOutcomes,
+  deriveScreeningOutcomes,
+  type OutcomeResolutionRow,
+  type RobOutcomes,
+  type ScreeningOutcomes,
+} from '@/lib/sr/report/outcomes';
 import type { ReviewMode } from '@/lib/sr/review-modes';
+import { isRobInstrument, type RobInstrument } from '@/lib/sr/rob/domains';
 import {
   applyRowVisibility,
   BlindedAccessError,
@@ -428,6 +436,108 @@ async function fetchPrismaResolutions(
     method: r.method,
     decision: r.decision,
   }));
+}
+
+// ── Report outcome aggregates (T18) — reconcile-gated, computed HERE. ─────────
+// The report's included/excluded/RoB numbers are aggregates over EVERY
+// reviewer's blinded rows, so — like getScreeningConflicts — the derivation is
+// pure math in src/lib/sr/report/outcomes.ts and its ONLY call sites are these
+// two gated functions. During `independent` they throw BlindedAccessError and
+// the report renders "withheld"; no number leaves early.
+
+// Visible-table support reads (screening_conflict_resolutions / reviews /
+// studies) — the pool rule mirrors extraction: confidently removed duplicates
+// are out.
+async function fetchScreeningResolutions(
+  reviewId: string,
+): Promise<OutcomeResolutionRow[]> {
+  const result = await getDb().execute<{
+    study_id: string;
+    stage: string;
+    method: string;
+    decision: string | null;
+    arbitrator_id: string | null;
+  }>(
+    sql`select study_id, stage, method, decision, arbitrator_id
+        from screening_conflict_resolutions where review_id = ${reviewId}`,
+  );
+  return result.rows.map((r) => ({
+    studyId: r.study_id,
+    stage: r.stage,
+    method: r.method,
+    decision: r.decision,
+    arbitratorId: r.arbitrator_id,
+  }));
+}
+
+async function fetchReviewMode(
+  reviewId: string,
+): Promise<'two_reviewer' | 'ai_co_reviewer'> {
+  const result = await getDb().execute<{ review_mode: string }>(
+    sql`select review_mode from reviews where id = ${reviewId}`,
+  );
+  return result.rows[0]?.review_mode === 'ai_co_reviewer'
+    ? 'ai_co_reviewer'
+    : 'two_reviewer';
+}
+
+async function fetchStudyPool(
+  reviewId: string,
+): Promise<Array<{ id: string; instrument: RobInstrument }>> {
+  const result = await getDb().execute<{
+    id: string;
+    rob_instrument: string;
+  }>(
+    sql`select id, rob_instrument from studies
+        where review_id = ${reviewId}
+          and dupe_status not in ('auto_merged', 'merged')
+        order by created_at`,
+  );
+  return result.rows.map((r) => ({
+    id: r.id,
+    instrument: isRobInstrument(r.rob_instrument) ? r.rob_instrument : 'rob2',
+  }));
+}
+
+export async function getReportScreeningOutcomes(
+  ctx: BlindedContext,
+  stage: string,
+): Promise<ScreeningOutcomes> {
+  const phase = await fetchPhase(ctx.reviewId, 'screening');
+  if (resolveAggregateVisibility(ctx.role, phase) !== 'all') {
+    throw new BlindedAccessError('screening', ctx.role, phase, 'aggregate');
+  }
+  const [decisions, resolutions, pool, reviewMode] = await Promise.all([
+    fetchScreeningRows(ctx.reviewId),
+    fetchScreeningResolutions(ctx.reviewId),
+    fetchStudyPool(ctx.reviewId),
+    fetchReviewMode(ctx.reviewId),
+  ]);
+  return deriveScreeningOutcomes({
+    decisions,
+    resolutions,
+    studyIds: pool.map((s) => s.id),
+    stage,
+    reviewMode,
+  });
+}
+
+export async function getReportRobOutcomes(
+  ctx: BlindedContext,
+): Promise<RobOutcomes> {
+  const phase = await fetchPhase(ctx.reviewId, 'rob');
+  if (resolveAggregateVisibility(ctx.role, phase) !== 'all') {
+    throw new BlindedAccessError('rob', ctx.role, phase, 'aggregate');
+  }
+  const [rows, pool] = await Promise.all([
+    fetchRobRows(ctx.reviewId),
+    fetchStudyPool(ctx.reviewId),
+  ]);
+  return deriveRobOutcomes(
+    rows,
+    new Map(pool.map((s) => [s.id, s.instrument])),
+    pool.map((s) => s.id),
+  );
 }
 
 // ── Safe progress — the ONLY progress surface during `independent`. ───────────
