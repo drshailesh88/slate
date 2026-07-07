@@ -1,0 +1,634 @@
+/* Blind screening skin (T12). Frozen skin: tokens only, hairline borders, no
+   shadows or gradients. Serif title, mono numbers/keys. Decision colors are the
+   one place saturated colour lives (design.md §6). Motion animates opacity /
+   transform only and honors prefers-reduced-motion (globals.css §8.4). */
+
+.screen {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 32px 32px 64px;
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+.header {
+  margin-bottom: 12px;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
+.title {
+  margin: 6px 0 0;
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: -0.3px;
+  color: var(--ink);
+}
+
+.lead {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ink3);
+}
+
+.kbd {
+  display: inline-block;
+  min-width: 16px;
+  padding: 1px 4px;
+  margin: 0 1px;
+  font-family: var(--mono);
+  font-size: 10px;
+  text-align: center;
+  color: var(--ink2);
+  background: var(--rail);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+/* ── Action bar (lead + finish / unblind) ───────────────────────────────── */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 8px 0 16px;
+}
+
+.actionsSpacer {
+  flex: 1 1 auto;
+}
+
+.finishButton,
+.unblindButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  font-family: var(--sans);
+  font-size: 12.5px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity var(--motion-micro) var(--ease-out);
+}
+
+/* Primary action = solid ink with a white label (never a colored button). */
+.finishButton {
+  color: #fff;
+  background: var(--ink);
+  border: 1px solid var(--ink);
+}
+
+.unblindButton {
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+
+.finishButton:disabled,
+.unblindButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.finishButton:hover:not(:disabled),
+.unblindButton:hover:not(:disabled) {
+  opacity: 0.86;
+}
+
+/* ── Feedback / state strips ────────────────────────────────────────────── */
+.error {
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: var(--exc);
+  background: var(--excbg);
+  border: 1px solid var(--excln);
+  border-radius: 8px;
+}
+
+.finishedBanner {
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink2);
+  background: var(--incbg);
+  border: 1px solid var(--incln);
+  border-radius: 10px;
+}
+
+.confirm {
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  background: var(--maybg);
+  border: 1px solid var(--mayln);
+  border-radius: 10px;
+}
+
+.confirm p {
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink2);
+}
+
+.confirmActions {
+  display: flex;
+  gap: 8px;
+}
+
+.confirmCancel,
+.confirmProceed {
+  padding: 7px 14px;
+  font-size: 12.5px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.confirmCancel {
+  color: var(--ink2);
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+
+.confirmProceed {
+  color: #fff;
+  background: var(--ink);
+  border: 1px solid var(--ink);
+}
+
+.confirmCancel:disabled,
+.confirmProceed:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ── Two-zone layout (center study · right decision) ────────────────────── */
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 24px;
+  align-items: start;
+}
+
+.main {
+  min-width: 0;
+}
+
+.queueBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.position {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.nav {
+  display: flex;
+  gap: 6px;
+}
+
+.nav button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 28px;
+  color: var(--ink2);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  cursor: pointer;
+  transition: opacity var(--motion-micro) var(--ease-out);
+}
+
+.nav button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ── Reference card (center study) ──────────────────────────────────────── */
+.refCard {
+  padding: 22px 24px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  animation: cardIn var(--motion-base) var(--ease-out);
+}
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(var(--motion-shift));
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.refId {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.refTitle {
+  margin: 6px 0 8px;
+  font-family: var(--serif);
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.28;
+  color: var(--ink);
+}
+
+.refAuthors {
+  font-size: 13px;
+  color: var(--ink3);
+}
+
+.refMeta {
+  margin-top: 4px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.refDoi {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.refDoi:hover {
+  text-decoration: underline;
+}
+
+.abstractToggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin: 16px 0 8px;
+  padding: 0;
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.abstract {
+  font-size: 14px;
+  line-height: 1.68;
+  color: var(--ink2);
+}
+
+.noAbstract {
+  margin-top: 14px;
+  font-size: 13px;
+  font-style: italic;
+  color: var(--muted);
+}
+
+/* Inclusion terms Jade, exclusion terms Tomato (design.md decision colors). */
+.hlInclude {
+  background: var(--incbg);
+  box-shadow: inset 0 -1px 0 var(--incln);
+  border-radius: 2px;
+}
+
+.hlExclude {
+  background: var(--excbg);
+  box-shadow: inset 0 -1px 0 var(--excln);
+  border-radius: 2px;
+}
+
+/* ── Decision rail (right zone) ─────────────────────────────────────────── */
+.rail {
+  position: sticky;
+  top: 16px;
+  padding: 18px;
+  background: var(--rail);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.blindBanner {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--ink2);
+  background: var(--maybg);
+  border: 1px solid var(--mayln);
+  border-radius: 8px;
+}
+
+.blindDot {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  margin-top: 4px;
+  border-radius: 50%;
+  background: var(--may);
+}
+
+.railSubhead {
+  display: block;
+  margin: 0 0 8px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.railNote {
+  margin: 8px 0 16px;
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+/* ── Vote triad ─────────────────────────────────────────────────────────── */
+.votes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+.vote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 6px;
+  font-family: var(--sans);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  cursor: pointer;
+  transition:
+    background var(--motion-micro) var(--ease-out),
+    border-color var(--motion-micro) var(--ease-out),
+    transform var(--motion-micro) var(--ease-out);
+}
+
+.vote:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.voteLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+.voteKey {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--muted);
+}
+
+/* Selected fills the button its decision color (the Feedback commit beat). */
+.voteInclude.voteSelected {
+  background: var(--incbg);
+  border-color: var(--incln);
+}
+.voteInclude.voteSelected .voteLabel {
+  color: var(--inc);
+}
+.voteMaybe.voteSelected {
+  background: var(--maybg);
+  border-color: var(--mayln);
+}
+.voteMaybe.voteSelected .voteLabel {
+  color: var(--may);
+}
+.voteExclude.voteSelected {
+  background: var(--excbg);
+  border-color: var(--excln);
+}
+.voteExclude.voteSelected .voteLabel {
+  color: var(--exc);
+}
+
+.vote:not(:disabled):hover {
+  border-color: var(--ink3);
+}
+
+/* ── Exclusion reason ───────────────────────────────────────────────────── */
+.excludeReason {
+  margin-top: 12px;
+}
+
+.reasonSelect,
+.reasonNote {
+  width: 100%;
+  font-family: var(--sans);
+  font-size: 12.5px;
+  color: var(--ink2);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.reasonSelect {
+  padding: 7px 10px;
+  margin-bottom: 8px;
+}
+
+.reasonNote {
+  padding: 8px 10px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.reasonSelect:disabled,
+.reasonNote:disabled {
+  opacity: 0.6;
+}
+
+/* ── Criteria checklist ─────────────────────────────────────────────────── */
+.criteria {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.critBox {
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.critBox h4 {
+  margin: 0 0 6px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.critBox ul {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.critBox li {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--ink2);
+}
+
+.critInclude h4 {
+  color: var(--inc);
+}
+.critExclude h4 {
+  color: var(--exc);
+}
+
+/* ── AI (verdict-free) ──────────────────────────────────────────────────── */
+.aiLine {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: var(--ink3);
+  background: var(--accentbg);
+  border: 1px solid var(--accentln);
+  border-radius: 8px;
+}
+
+.aiChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.aiOrder {
+  margin-bottom: 14px;
+}
+
+.aiOrderToggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  color: var(--ink2);
+  cursor: pointer;
+}
+
+.aiOrderToggle input:disabled {
+  cursor: not-allowed;
+}
+
+/* ── Progress + tags ────────────────────────────────────────────────────── */
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.progressCount {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink2);
+}
+
+.finishedTag,
+.savedTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 12px;
+  font-size: 11.5px;
+  color: var(--inc);
+}
+
+.finishedTag {
+  color: var(--ink3);
+}
+
+/* ── Hand-off / empty states ────────────────────────────────────────────── */
+.handoff {
+  max-width: 520px;
+  margin: 32px auto;
+  padding: 28px;
+  text-align: center;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  animation: cardIn var(--motion-base) var(--ease-out);
+}
+
+.handoff h2 {
+  margin: 12px 0 8px;
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.handoff p {
+  margin: 0 auto 16px;
+  max-width: 42ch;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--ink3);
+}
+
+.handoffLink {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  background: var(--ink);
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* ── Mobile: one zone at a time; decision rail below the study ──────────── */
+@media (max-width: 860px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .rail {
+    position: static;
+  }
+}

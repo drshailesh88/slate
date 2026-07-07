@@ -646,10 +646,14 @@ export async function revokeInvitation(args: {
 }
 
 // ── AI reviewer member row (Activate / Validate) ─────────────────────────────
-// The recall-validation GATE itself lands in M3 (T14). Here the entry points are
-// wired: Activate REFUSES unless a passing validation already exists (so AI can
-// never screen unvalidated), and Validate records the request and points at the
-// M3 flow. Both are owner-only and audited.
+// The recall-validation GATE is built in M3 (T14): the flow lives in
+// `src/lib/sr/ai/validation.ts` (`runRecallValidation` → records `ai_validations`,
+// enforced by `hasPassingValidation`). Activate REFUSES unless a passing
+// validation already exists (so the AI can never screen unvalidated); Validate
+// records the request and points at that flow. Running a real validation needs
+// two FOUNDER-provisioned inputs — the LLM provider key and a human-labelled
+// calibration sample (see AGENTS.md) — so this entry stays a wired request until
+// both land. Both actions are owner-only and audited.
 
 export async function activateAiReviewer(args: {
   actor: MemberContext;
@@ -699,6 +703,6 @@ export async function validateAiReviewer(args: {
   return {
     pending: true,
     message:
-      'AI recall validation runs during Screening (M3). This entry point is wired; the validation gate lands there.',
+      'The AI recall-validation gate is built (recall ≥ target on the includes → ai_validations). Running it needs the founder LLM key and a human-labelled calibration sample; until both land, the AI stays unvalidated and cannot screen.',
   };
 }

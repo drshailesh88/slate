@@ -121,10 +121,20 @@ describe('buildFunnelSummary — links stay consistent with the shell rail', () 
     expect(importStage.built).toBe(true);
     expect(importStage.href).toBe(`/systematic-review/${REVIEW_ID}/import`);
 
-    // Screening et al. have no route yet → coming soon, no href.
+    // Screening now has a route (T12) → built + linked.
     const screening = stageById(model.stages, 'screening');
-    expect(screening.built).toBe(false);
-    expect(screening.href).toBeNull();
+    expect(screening.built).toBe(true);
+    expect(screening.href).toBe(`/systematic-review/${REVIEW_ID}/screening`);
+
+    // Conflicts now has a route (T13) → built + linked.
+    const conflicts = stageById(model.stages, 'conflicts');
+    expect(conflicts.built).toBe(true);
+    expect(conflicts.href).toBe(`/systematic-review/${REVIEW_ID}/conflicts`);
+
+    // Full-text et al. have no route yet → coming soon, no href.
+    const fulltext = stageById(model.stages, 'fulltext');
+    expect(fulltext.built).toBe(false);
+    expect(fulltext.href).toBeNull();
   });
 
   it('renders exactly the shell rail funnel group, in order', () => {

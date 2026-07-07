@@ -44,6 +44,8 @@ describe('SrStageRail', () => {
       `${base}/members`,
       `${base}/protocol`,
       `${base}/import`,
+      `${base}/screening`,
+      `${base}/conflicts`,
     ]) {
       expect(html).toContain(`href="${href}"`);
     }
@@ -55,7 +57,7 @@ describe('SrStageRail', () => {
     // Coming-soon stages carry the disabled marker and never a link target.
     expect(html).toContain('aria-disabled="true"');
     expect(html).toContain('Soon');
-    expect(html).not.toContain(`href="${base}/screening"`);
+    expect(html).not.toContain(`href="${base}/full-text"`);
     expect(html).not.toContain(`href="${base}/export"`);
   });
 

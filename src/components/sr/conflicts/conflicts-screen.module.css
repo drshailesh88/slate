@@ -1,0 +1,348 @@
+/* Conflicts / adjudication (T13). Frozen skin — tokens only, hairline borders,
+   no shadows/gradients. Both opposing calls render as symmetric, equal-weight
+   cells (no "primary"). Animates opacity/transform only; honors reduced motion. */
+
+.screen {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 32px 64px;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.title {
+  margin: 6px 0 0;
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+  color: var(--ink);
+}
+
+.lead {
+  margin: 8px 0 0;
+  max-width: 78ch;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink3);
+}
+
+.lead b {
+  color: var(--ink2);
+  font-weight: 600;
+}
+
+/* ── stat row (κ + counts) ─────────────────────────────────────────────────── */
+.statRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.kappaPill,
+.countPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 20px;
+  padding: 4px 11px;
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  border: 1px solid var(--line);
+  background: var(--panel, var(--paper));
+  color: var(--ink2);
+}
+
+.countPill {
+  color: var(--ink3);
+}
+
+/* ── state blocks (withheld / empty) ───────────────────────────────────────── */
+.stateBlock {
+  margin-top: 20px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 22px 24px;
+  background: var(--panel, var(--paper));
+}
+
+.blindPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 10.5px;
+  font-weight: 600;
+  background: var(--maybg);
+  color: var(--may);
+}
+
+.stateTitle {
+  margin: 12px 0 0;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.stateBody {
+  margin: 6px 0 0;
+  max-width: 70ch;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--ink3);
+}
+
+/* ── conflict list ─────────────────────────────────────────────────────────── */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px 20px;
+  background: var(--panel, var(--paper));
+}
+
+.cardHead {
+  margin-bottom: 14px;
+}
+
+.studyTitle {
+  font-size: 14.5px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.studyMeta {
+  margin-top: 3px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* Two opposing calls, EQUAL weight — a symmetric grid, no preferred column. */
+.decisions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.decisionCell {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: var(--paper);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+.aiTag {
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: var(--accentbg);
+  color: var(--accent);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  align-self: flex-start;
+  border-radius: 7px;
+  padding: 4px 9px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.chipInc {
+  background: var(--incbg);
+  color: var(--inc);
+  border-color: var(--incln);
+}
+
+.chipExc {
+  background: var(--excbg);
+  color: var(--exc);
+  border-color: var(--excln);
+}
+
+.chipMay {
+  background: var(--maybg);
+  color: var(--may);
+  border-color: var(--mayln);
+}
+
+.reason {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--ink3);
+}
+
+/* ── resolved banner ───────────────────────────────────────────────────────── */
+.resolved {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 14px;
+  border: 1px solid var(--incln);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12.5px;
+  color: var(--inc);
+  background: var(--incbg);
+}
+
+.resolved b {
+  font-weight: 700;
+}
+
+/* ── resolve controls ──────────────────────────────────────────────────────── */
+.resolveBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line2);
+}
+
+.resolveGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.resolveLabel {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.pickBtn,
+.arbBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink2);
+  transition:
+    opacity var(--motion-base) var(--ease-out),
+    transform var(--motion-micro) var(--ease-out);
+}
+
+.pickBtn:hover:not(:disabled),
+.arbBtn:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.pickInc:hover:not(:disabled) {
+  border-color: var(--incln);
+  color: var(--inc);
+}
+
+.pickExc:hover:not(:disabled) {
+  border-color: var(--excln);
+  color: var(--exc);
+}
+
+.pickBtn:disabled,
+.arbBtn:disabled,
+.select:disabled,
+.note:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.arbBtn {
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+}
+
+.select {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12.5px;
+  color: var(--ink2);
+  background: var(--paper);
+}
+
+.noArb {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.note {
+  flex: 1 1 200px;
+  min-width: 160px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12.5px;
+  color: var(--ink2);
+  background: var(--paper);
+}
+
+.error {
+  flex-basis: 100%;
+  font-size: 12px;
+  color: var(--exc);
+}
+
+.readonlyNote {
+  margin-top: 14px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pickBtn,
+  .arbBtn {
+    transition: none;
+  }
+  .pickBtn:hover:not(:disabled),
+  .arbBtn:hover:not(:disabled) {
+    transform: none;
+  }
+}

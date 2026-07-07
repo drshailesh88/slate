@@ -23,11 +23,13 @@
     "@neondatabase/serverless": "^1.1.0",
     "@workos-inc/authkit-nextjs": "^4.2.0",
     "@workos-inc/node": "^10.7.0",
+    "ai": "7.0.16",
     "drizzle-orm": "^0.45.2",
     "lucide-react": "^1.23.0",
     "next": "16.2.10",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "zod": "4.4.3"
   },
   "devDependencies": {
     "@playwright/test": "^1.61.1",

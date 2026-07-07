@@ -25,19 +25,22 @@ function itemFor(id: SrStageId, studyCount?: number): StageRailItem {
 }
 
 describe('BUILT_STAGES', () => {
-  it('is exactly the four M2 screens', () => {
+  it('is the M2 setup spine plus the built M3 screening and conflicts screens', () => {
     expect([...BUILT_STAGES]).toEqual([
       'summary',
       'members',
       'protocol',
       'import',
+      'screening',
+      'conflicts',
     ]);
   });
 
   it('isStageBuilt agrees with the list', () => {
     expect(isStageBuilt('summary')).toBe(true);
     expect(isStageBuilt('import')).toBe(true);
-    expect(isStageBuilt('screening')).toBe(false);
+    expect(isStageBuilt('screening')).toBe(true);
+    expect(isStageBuilt('conflicts')).toBe(true);
     expect(isStageBuilt('export')).toBe(false);
   });
 });

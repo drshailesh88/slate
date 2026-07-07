@@ -557,4 +557,154 @@ team-progress readout.
   (report §2.2). Tests: `funnel.test.ts` (safe-model shape), `review-summary.test.tsx`
   - `review-summary-container.test.tsx` (assert no distribution/per-partner leak).
 
+### Blind title/abstract screening (T12 · ★ server-enforced blinding, T6-gated)
+
+The screening screen (`/[reviewId]/screening`) is the most security-critical SR
+surface: the blinding is **enforced server-side**, never by the client. Two
+reviewers label Include/Maybe/Exclude independently and blind; a co-reviewer's
+vote and the AI's verdict/score never reach the screen during `independent`.
+
+- **The blinding is a property of the SEAM, not the UI.** The screen's data is
+  assembled by `src/lib/sr/screening/load.ts` (`buildScreeningView`): the
+  authoritative phase is read server-side from `reviews.screening_phase` (never
+  trusted from the client); decisions come ONLY through the read chokepoint
+  (`getScreeningDecisions`) via `own-decisions.ts`, which re-filters to
+  `reviewerId === requester` AND `!isAi` AND the current stage. So even at
+  `reconcile` (where the chokepoint would return every row) THIS screen stays
+  own-only — reconciliation is a different screen (T13). The `ScreeningViewDTO`
+  shape carries no field that could hold a co-reviewer vote, an AI verdict, or an
+  AI relevance score, so the client literally cannot render one.
+- **The write chokepoint is `src/lib/sr/authz/screening-write.ts`** — the only
+  place outside the schema that names the blinded table for a WRITE (inside the
+  wall-allowed `authz/**`). It upserts the caller's OWN row via
+  `onConflictDoUpdate` on the new unique index
+  `screening_decisions_reviewer_study_stage_idx` (review/study/reviewer/stage —
+  migration `0006`), with `setWhere lockedAt IS NULL` and **no `.returning()`**
+  (the runtime role has INSERT/UPDATE but NO SELECT — RETURNING would fail).
+  `reviewerId` is ALWAYS `ctx.userId` from the server action, never a client
+  value, so a reviewer can only ever write their own decision. `finishOwnScreening`
+  locks own rows (feeds `getSafeProgress`).
+- **AI, science-safe:** the AI relevance SCORE is NEVER rendered (FOUNDATION §10).
+  The AI verdict/reasoning is blinded like a human's — withheld until reconcile.
+  AI ranking may only reorder the queue as a labeled, off-by-default toggle
+  (`aiRanking` is a NON-blinded study-id order, `null` until the AI reviewer lands
+  in T14 — ordering by the blinded AI score would be a side channel).
+- **Owner unblind** (`phase.ts::unblindScreening`) is a one-way, atomic
+  compare-and-swap `UPDATE reviews … WHERE screening_phase='independent'` (visible
+  table → RETURNING ok), audited, cache-busted via `revalidatePath`.
+- **T6-gated:** a ★ blinding-bearing screen is not done until the adversarial
+  suite passes against it. The screen has its own side-channel tests
+  (`screening/own-decisions.test.ts` — attack the read seam; `screening-screen.test.tsx`
+  — assert the rendered DOM shows no AI score/verdict and only own decisions), and
+  the T6 suite (`blinding-adversarial` + `blinding-wall-guard` + `pnpm
+  test:blinded-wall`) + wall guards (ESLint/grep) stay green. If a leak is ever
+  found here, fix the boundary — never weaken a test.
+- **Browser render needs live Neon** (`requireMember` → DB), the founder step
+  (role provisioning + `pnpm sr:seed`), same as every SR screen. Skin + wiring are
+  proven by the jsdom component tests + build; the route is registered under the
+  flag-gated `[reviewId]` layout.
+### The Conflicts / adjudication screen (T13 · ★-adjacent)
+
+Post-unblind screening reconciliation (`/[reviewId]/conflicts`). Ported the
+precursor's UI (`conflicts-screen.tsx`) + κ math (`conflicts.ts::cohensKappa`)
+into the frozen skin; **rebuilt the reveal gate server-side** (the precursor
+stripped opposing votes in the browser — client-trust — Slate never _sends_ them
+pre-reconcile).
+
+- **The reveal gate IS the chokepoint.** Conflicts + Cohen's κ are aggregates
+  over every reviewer's calls, so they are computed inside
+  `src/lib/sr/authz/blinded-read.ts::getScreeningConflicts(ctx, stage)`, gated by
+  `resolveAggregateVisibility` — it throws `BlindedAccessError` during
+  `independent` and for `viewer` at reconcile. The opposing calls physically do
+  not leave the chokepoint pre-unblind. The page catches that throw and renders a
+  blinded **"withheld"** state carrying zero conflict rows / no κ. The pure
+  derivation (`src/lib/sr/conflicts/derive.ts`: `deriveScreeningConflicts` +
+  ported `cohensKappa`, κ over the first two HUMAN calls, positive=include|maybe)
+  takes a structural row type so it names no blinded symbol — the _math_ is pure,
+  the _call site_ is the chokepoint (the §2.2 rule for all blinded aggregates).
+- **Equal weight, unmissable, no auto-resolve** (non-negotiables 1/2/3): both
+  opposing calls render in a symmetric grid — same `decisionCell` class, no
+  `aria-selected`, no "primary"; every conflict card is fully expanded (never
+  collapsed). A conflict is a study with BOTH an include and an exclude (a lone
+  Maybe is tentative; AI counts as one more reviewer). Nothing resolves without an
+  explicit human action + actor id — the service (`conflicts/service.ts`) refuses
+  `align_on_one` without an explicit include/exclude pick (no majority/auto-vote)
+  and refuses any resolution without an `actorId`. There is deliberately no code
+  path anywhere that derives a resolution from the votes.
+- **Resolution methods + persistence.** `align_on_one` (a human picks
+  include/exclude) or `send_to_arbitrator`. New **non-blinded** table
+  `screening_conflict_resolutions` (migration `0006_wealthy_devos.sql`, additive;
+  renumbers at integration; per-table `GRANT SELECT,INSERT,UPDATE` to
+  `slate_runtime`, no DELETE) records method + decision/arbitrator + `resolvedBy`
+  (never null) + note, one active row per `(review, study, stage)` (upsert on
+  re-resolution); **every** resolution also writes `audit_log` (`conflict.resolve`)
+  — the full history is append-only there. Rows only exist at reconcile, so it is
+  safe to be visible.
+- **Server trust boundary** (`conflicts/actions.ts`): re-`requireMember`,
+  `canResolveConflict(role)` (owner/collaborator/reviewer/arbitrator; viewer
+  never), PROVE `reviews.screeningPhase === 'reconcile'` (else 409),
+  `requireStudyInReview` (IDOR kill), and for send-to-arbitrator
+  `assertArbitratorIndependent` (T3 authz — refuses 422 if the assignee reviewed
+  the study, read only through the definer functions). Store port + neon-http
+  impl mirror the protocol/import pattern; the service is DB-free + unit-tested.
+- Additive: `conflicts` added to `BUILT_STAGES`; flag- + membership-gated by the
+  `[reviewId]` layout; no global shell/nav or reserved search paths touched. The
+  T6 adversarial suite gains `authz/blinding-conflicts.test.ts` (opposing rows
+  primed → `getScreeningConflicts` withholds them pre-reconcile, reconcile
+  positive control). Tests: 384 green (+31 across derive/service/roles/gate/screen).
+  Full route render (real data) waits on the founder's Neon role provisioning +
+  `pnpm sr:seed`, same as every SR screen; the skin was browser-verified.
+
+### The AI screening reviewer + validation gate (T14 · ★ science-critical)
+
+The AI is a **validated, blinded, non-autonomous** participant in screening. Its
+safeguards (FOUNDATION §8–9) are all enforced in `src/lib/sr/ai/**`, with the one
+blinded write in `src/lib/sr/authz/ai-screening-write.ts`. LLM calls go through the
+**Vercel AI SDK** (`ai` v7 + `zod`), kept behind a narrow port so every safeguard
+is provable against a deterministic **mock model** — no key, no network.
+
+- **Port / adapter:** `ai/types.ts` is the `ScreeningModel` port; `ai/vercel-model.ts`
+  is the ONLY file that touches the SDK (`generateObject` + a Zod `{decision, reasoning}`
+  schema — **no score field is ever requested**); `ai/mock-model.ts` is the fake used
+  by tests + dev. Public surface: `ai/index.ts`.
+- **Recall-validation GATE (`ai/validation.ts` + `ai/recall.ts`):** the AI may NOT
+  screen until it is recall-validated on the **includes** (sensitivity ≥ target,
+  default **0.95**) against a human-labelled sample — recorded in `ai_validations`
+  (`passed`, model, version, date, sampleSize, recall). `hasPassingValidation` is the
+  gate read; `runAiScreening` throws `AiNotValidatedError` and casts nothing without a
+  `passed=true` row. Recall counts an AI `exclude` on a true include as the only miss
+  (a `maybe` keeps it in the pool). Concordance/agreement is deliberately NOT used
+  (true-negative dominated → hides missed includes).
+- **Blinded like a human:** the AI casts `is_ai=true` rows through the same chokepoint
+  as any reviewer; the AI's synthetic reviewer id ≠ any human's, so its verdict +
+  reasoning are hidden during `independent` and revealed only at `reconcile`. Its
+  relevance **score is never produced** (not in the schema, not in the run result, not
+  in the rail — `showScore` is the literal `false`). Optional labelled queue _order_ is
+  the only AI signal allowed pre-reconcile.
+- **Never autonomous (flag-only):** the writer only INSERTs blinded verdicts and never
+  touches `studies` — the AI cannot exclude/remove a record; a human makes the exclusion
+  at reconcile. Verdicts are reversible (`retractAiScreeningDecisions`) and PRISMA-counted.
+- **Coverage-preserving:** the AI is a synthetic `users` row (`ensureAiReviewerUser`),
+  **never a `review_members` row**, so `requiredHumanReviewers(mode)` (2 for two_reviewer,
+  1 for ai_co_reviewer) and the `getSafeProgress` human denominator are untouched by it.
+- **Phase-1 timing — ONE switch (`ai/config.ts` `SR_AI_PHASE1_MODE`, default
+  `silent_hold`):** silent_hold runs the AI during `independent` and holds its verdict
+  (blinded) until reconcile; `defer_to_phase2` is a clean no-op until reconcile. Flipping
+  it is trivial and changes nothing else (founder may flip — NOTED as changeable).
+- **T12 integration:** `buildAiReviewerRail` (`ai/rail.ts`, pure) is the composable rail
+  hook the screening screen renders; the service + validation flow are exposed via
+  `ai/index.ts`. The Team screen (T7) Activate/Validate wire to the gate (`activateAiReviewer`
+  refuses without `passed=true`).
+- **FOUNDER steps (like the Neon role step — build does not block on them):**
+  1. **LLM provider key** — provision the Vercel AI Gateway / provider key and set
+     `SR_AI_MODEL` (default `openai/gpt-4o-mini`). Without it, live screening fails at
+     call time; build + tests use the mock model.
+  2. **Labelled calibration sample** — recall validation needs a human-labelled sample
+     from the review (source is a product/UX follow-up; the gate + flow are built + tested).
+- **Tests (mocked LLM):** `ai/recall.test.ts`, `ai/validation.test.ts`,
+  `ai/screen-reviewer.test.ts` (gate · never-autonomous · phase switch · coverage ·
+  score-hidden), `ai/ai-blinded-integration.test.ts` (verdict withheld until reconcile via
+  the real chokepoint), `ai/rail.test.ts`, `ai/vercel-model.test.ts` (adapter vs the SDK's
+  MockLanguageModel), `authz/ai-screening-write.test.ts`. The T6 adversarial suite stays green.
+
 - Add durable project-specific notes here as they are discovered through real work.
