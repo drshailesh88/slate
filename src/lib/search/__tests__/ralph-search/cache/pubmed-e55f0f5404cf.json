@@ -1,0 +1,670 @@
+{
+  "source": "pubmed",
+  "query": "Artificial intelligence ECG interpretation accuracy",
+  "timestamp": "2026-03-02T17:02:48.241Z",
+  "results": [
+    {
+      "title": "A joint CNN-Bi-LSTM-transformer architecture with SHAP explanations for multi-label arrhythmia detection from 12-lead ECGs.",
+      "abstract": "Interpretable, automated Artificial Intelligence (AI) solutions are essential for accurate 12-lead electrocardiogram (ECG) arrhythmia classification because they remove the time-consuming and inconsistent aspects of manual interpretation. Current models are limited in complexity, data variety, and validation. This paper proposes a novel Deep Learning (DL) architecture that combines Convolutional Neural Networks (CNNs), Bidirectional Long Short-Term Memory (Bi-LSTMs), and transformer layers to jointly extract morphological, temporal, and spatial patterns from ECG signals. The model was trained and evaluated on the PhysioNet/Computing in Cardiology Challenge 2020 dataset, comprising more than 43,000 multi-label ECG recordings across 27 arrhythmia classes. It achieved an accuracy of [Formula: see text], a macro-F1 score of [Formula: see text], and an Area Under the ROC Curve (AUC) exceeding [Formula: see text] for life-threatening arrhythmias such as Ventricular Premature Beats (VPB) and Atrial Fibrillation (AF). To ensure clinical transparency, the model integrates SHAP (SHAPley Additive exPlanations), enabling case-by-case interpretability by attributing predictions to physiologically relevant waveform segments and ECG leads. This approach aligns with cardiologists' diagnostic reasoning and supports real-world decision-making. Additionally, the model is computationally efficient, with a footprint of [Formula: see text] and inference latency of [Formula: see text], enabling deployment in telemedicine, wearable monitoring systems, and critical care settings. The proposed framework achieves high diagnostic performance, robustness to class imbalance, and human-level interpretability simultaneously, providing a reliable, scalable solution for automated ECG analysis. These findings advance the application of explainable DL algorithms in cardiovascular diagnostics.",
+      "authors": [
+        "Mohammed T Al-Bairmani",
+        "Mohammadreza Yazdchi",
+        "Fahimeh Nasimi"
+      ],
+      "year": 2026,
+      "journal": "Scientific reports",
+      "doi": "10.1038/s41598-026-40925-5",
+      "pmid": "41748772",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41748772",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Development and explanation of electrocardiogram-based deep learning for predicting short-term mortality in heart failure patients.",
+      "abstract": "BACKGROUND: Heart failure mortality has risen sharply after years of decline, highlighting the limitations of current risk assessment tools in accuracy, complexity, and cost, and the need for improved predictive models. To address this gap, we developed and validated a deep learning model to improve short-term mortality prediction in heart failure patients. METHODS: In this retrospective study, we leveraged the Medical Information Mart for Intensive Care IV database to develop HF-ECGNet, combining an EfficientNet neural network and a Transformer architecture. We also developed a composite model integrating electrocardiogram-based (ECG) predictions and clinical features. We evaluated model performance using the area under the curve (AUC) and other metrics, with gradient-weighted class activation mapping (Grad-CAM) and Shapley additive explanations (SHAP) analyses for interpretability. We conducted comparisons with N-terminal pro-B-type natriuretic peptide and sequential organ failure assessment (SOFA) scores. RESULTS: We analysed a total of 104&#x2009;844 ECGs from 36&#x2009;222 admissions. HF-ECGNet achieved an AUC of 0.664 for the first ECG during initial admission, improving to 0.721 for the last ECG. Incorporating three-day ECG data further enhanced performance, with AUCs of 0.691 (first admission) and 0.698 (last admission). HF-ECGNet outperformed NT-proBNP and SOFA. A composite model integrating ECG data and clinical features achieved the highest AUC of 0.725. Grad-CAM identified critical ECG patterns, while SHAP analysis highlighted ECG-derived features as the most influential predictors. CONCLUSIONS: HF-ECGNet demonstrates potential as a powerful tool for predicting short-term mortality in heart failure patients. Its innovative architecture and integration of clinical data enable more accurate and interpretable risk stratification. Future multi-centre validation is the critical step to fully ascertain its clinical utility and generalisability.",
+      "authors": [
+        "Yan Li",
+        "Lixia Cheng",
+        "Hongmin Zhou",
+        "Hongwei Yu",
+        "Zeyuan Liu",
+        "Qiuju Zhang"
+      ],
+      "year": 2026,
+      "journal": "Journal of global health",
+      "doi": "10.7189/jogh.16.04048",
+      "pmid": "41678824",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41678824",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Heart Failure",
+        "Electrocardiography",
+        "Deep Learning",
+        "Retrospective Studies",
+        "Male",
+        "Female",
+        "Aged",
+        "Risk Assessment",
+        "Middle Aged"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "MM-GradCAM: an improved multimodal GradCAM method with 1D and 2D ECG data for detection of cardiac arrhythmia.",
+      "abstract": "As cardiac arrhythmia remains one of the leading causes of death worldwide, early and accurate diagnosis of cardiac arrhythmia is critical to improving patient outcomes. Electrocardiogram (ECG) analysis plays a critical role in the diagnosis of these diseases, and recent advances in deep learning have led to significant advances in automated ECG interpretation. However, the \"black box\" nature of these models limits clinical confidence and highlights the need for explainable artificial intelligence methods. This study presents an innovative MM-GradCAM method that combines two different data formats, providing explainability for both 1D ECG signal and 2D ECG image data. Using a dataset of more than 10,000 patients, a 17-layer CNN model capable of four-class arrhythmia detection was developed and separate explainability outputs were obtained for each data form. The resulting explainability maps were evaluated by a cardiologist and the interpretability and clinical significance of the model were verified. The signal form achieved 93.07% accuracy, while the image form achieved 97.44% accuracy. As a pioneering approach for explainability in medical diagnosis, MM-GradCAM has the potential to increase reliability and transparency in medical AI applications.",
+      "authors": [
+        "Fatma Murat Duranay",
+        "Ender Murat",
+        "&#xd6;zal Y&#x131;ld&#x131;r&#x131;m",
+        "Yakup Demir",
+        "Ru-San Tan",
+        "Niranjana Sampathila",
+        "U Rajendra Acharya"
+      ],
+      "year": 2026,
+      "journal": "Scientific reports",
+      "doi": "10.1038/s41598-026-38654-w",
+      "pmid": "41663616",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41663616",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Artificial Intelligence-driven Detection, Mapping, and Personalized Therapy for Atrial Fibrillation.",
+      "abstract": "Atrial fibrillation (AF), the most common arrhythmia worldwide, affects approximately 59 million people globally. It poses a significant health burden by increasing morbidity and mortality. Artificial intelligence (AI) is emerging as a potentially transformative technology across the AF care continuum. This review synthesizes current evidence and critically evaluates AI applications in AF management, including innovations in detection and screening using electrocardiography and wearables; advanced mapping techniques using signal processing and computational modeling to guide catheter ablation; machine learning-based prediction of treatment outcomes; and personalization of long-term therapy, such as anticoagulation. Key studies and trials illustrating AI's capabilities in improving diagnostic yield, refining ablation targets, and enhancing prognostic accuracy are analyzed. The potential for AI to facilitate integrated care pathways, such as the \"AF Better Care\" approach, is considered, balancing innovation against clinical practicality, rigorous validation, and workflow integration. While AI shows considerable potential to augment precision in AF management, significant challenges concerning data generalizability, model interpretability, clinical utility validation, and equitable implementation remain. Optimal integration requires careful alignment with clinical expertise and a focus on patient-centric outcomes. Addressing these challenges through collaborative efforts among clinicians, researchers, and technology developers will be essential to fully realize AI's promise in improving AF care. Future research should prioritize robust validation, transparent methodologies, and practical implementation strategies to ensure that AI effectively enhances patient outcomes.",
+      "authors": [
+        "Daniel Joseph Gonzalez",
+        "Samhith Kambampati",
+        "Erick Godinez",
+        "Ishan Paranjpe",
+        "Kushal Chatterjee",
+        "Rahul Devathu",
+        "Aaryamaan Verma",
+        "Emma Sun",
+        "Connie Ma",
+        "Muhammad Fazal",
+        "Tina Baykaner"
+      ],
+      "year": 2026,
+      "journal": "The Journal of innovations in cardiac rhythm management",
+      "doi": "10.19102/icrm.2026.17011",
+      "pmid": "41657709",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41657709",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "A hybrid learning framework for automated multiclass electrocardiogram classification with SimCardioNet.",
+      "abstract": "Electrocardiography is a cornerstone in the diagnosis of cardiovascular diseases; however, accurate interpretation demands expert knowledge and is often impeded by data scarcity and annotation costs. To address these challenges, we propose SimCardioNet, a hybrid self-supervised and supervised deep learning framework for multi-class electrocardiography image classification. SimCardioNet leverages a custom multi-scale convolutional neural network backbone enhanced with residual connections and multi-head self-attention, pretrained via a modified SimCLR contrastive learning strategy that integrates a hybrid loss combining InfoNCE and cosine similarity. Following self-supervised pretraining, the model undergoes supervised fine-tuning with progressive layer unfreezing to mitigate overfitting and preserve meaningful representations. We evaluate SimCardioNet across three distinct ECG image datasets: (1) a 4-class Pakistani clinical ECG dataset (Dataset I), (2) an external Kaggle electrocardiography dataset for out-of-distribution validation (Dataset II), and (3) the large-scale PTB-XL benchmark (Dataset III) covering five diagnostic superclasses. On Dataset I, SimCardioNet achieves 0.975 accuracy, 0.973 precision, 0.973 recall, and 0.972 F1-score under 3-fold cross-validation. On Dataset II, the model demonstrates perfect classification performance (1.00 accuracy, precision, recall, and F1-score), highlighting strong generalization. On the PTB-XL dataset (Dataset III), SimCardioNet attains 0.921 accuracy and 0.921 F1-score, outperforming current state-of-the-art models including dual-branch CNNs, entropy-enhanced CNNs, and Bi-GRU architectures. Ablation studies confirm the critical contributions of self-supervised pretraining, attention mechanisms, and domain-specific augmentations. Grad-CAM visualizations further validate the model's focus on clinically relevant Electrocardiography regions. Our results underscore SimCardioNet's potential to reduce reliance on labeled data while delivering robust, interpretable, and clinically viable Electrocardiography classification especially valuable in resource-constrained settings.",
+      "authors": [
+        "Muhammad Dawood Majid",
+        "Muhammad Anwar",
+        "Syed Fakhar Bilal",
+        "Muzammil Hussain",
+        "Muhammad Zubair",
+        "Jabeen Sultana",
+        "Muhammad Asif Habib"
+      ],
+      "year": 2026,
+      "journal": "Scientific reports",
+      "doi": "10.1038/s41598-026-36932-1",
+      "pmid": "41644577",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41644577",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "FHGNet: A Feature-Centric Hierarchical Network with Graph Attention Layer for Supraventricular Tachycardia Classification.",
+      "abstract": "Automated electrocardiogram (ECG) classification plays a critical role in arrhythmia diagnosis. However, current deep learning-based methodologies frequently fail to account for physiological rhythms and clinical diagnostic reasoning, thereby compromising their reliability and interpretability. This study proposes a clinically inspired multi-lead oscillatory Transformer framework, named FHGNet, to enhance the precision and interoperability of classifying ventricular tachycardia (VT) and supraventricular tachycardia (SVT). The proposed architecture integrates R-peak detection for heartbeat segmentation and adaptive-length patch extraction with R-wave positional encoding to enhance temporal awareness. It employs a convolutional neural network (CNN) to capture intra-beat morphological features (QRS morphology), a Transformer with FANLayer to model inter-beat rhythmic patterns, and a graph attention network (GAT) to fuse multi-lead dependencies. Additionally, a two-stage classifier is designed to enhance the detection of rare arrhythmia classes. Experimental evaluations on the MIT-BIH Supraventricular Arrhythmia dataset demonstrate FHGNet achieves a macro F1-score of 91.35% outperforming baselines. Ablation studies reveal that removing GAT reduces F1 by 2.42% in multi-lead scenarios, while the two-stage design improves minority class recall by 5.82%. Attention visualization confirms the model focuses on clinically relevant features, such as ST-T segment energy ratios and inter-lead phase differences, aligning with established diagnostic criteria. Additionally, the interpretability of FHGNet is further enhanced by two aspects: 1) Explicit integration of physiological priors (e.g., RR interval variability, intra-beat positional information) in dynamic feature engineering, which enables the model to align with clinicians' rhythm analysis logic; 2) The two-stage classifier strictly follows the clinical diagnostic workflow (first screening abnormalities, then subclassifying), making the decision-making process traceable. This work provides an interpretable, clinically adaptive framework for high-accuracy ECG classification, potentially reducing reliance on invasive electrophysiological studies.",
+      "authors": [
+        "Xiaolin Ju",
+        "Tao Liu",
+        "Bowen Luo",
+        "Heling Cao",
+        "Zhan Gao",
+        "Haiyan Pan"
+      ],
+      "year": 2026,
+      "journal": "Interdisciplinary sciences, computational life sciences",
+      "doi": "10.1007/s12539-025-00802-7",
+      "pmid": "41634243",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41634243",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Explainable multi-modal approach for uncovering key predictors of stroke-risk from ECG, EMG, blood pressure, and respiratory signals.",
+      "abstract": "Accurate and timely stroke-risk prediction is necessary to help patients at risk take guided measures, as stroke remains a leading cause of death and long-term disability worldwide. While there are several developed stroke-risk prediction models using various bio-signals, it remains unclear which signal or signal feature carries the most information towards stroke. Additionally, respiratory signals have not been included in these models, despite research showing their relation to stroke disease. We address these gaps by developing an explainable multi-modal stroke-risk prediction model that integrates respiratory signals (carbon dioxide (CO[Formula: see text]), and respiration flow) alongside blood pressure (BP), electrocardiogram (ECG) and electromyography (EMG). We developed a single perceptron model which achieved a prediction accuracy of 84.91% on a dataset of 64 subjects, outperforming state-of-the-art machine learning (ML) and deep learning (DL) methods. Explainable Artificial Intelligence (XAI) techniques, namely LIME, SHAP, and Anchors, were applied to interpret the model's decisions. The Model Explanation Metric Consensus (MEMC) XAI evaluation metric revealed SHAP as the most reliable explainer, which identified CO[Formula: see text]-derived features as critical predictors. The findings demonstrate the overlooked value of respiratory signals in stroke-risk prediction, as well as the importance of explainable multi-modal approaches in advancing stroke-risk prediction, and enabling clinicians to better understand and trust AI models for improved patient care.",
+      "authors": [
+        "Jalal Krayem",
+        "Lily Wong",
+        "Lai Kuan Tham",
+        "Shiuan-Ni Liang"
+      ],
+      "year": 2026,
+      "journal": "Scientific reports",
+      "doi": "10.1038/s41598-026-37777-4",
+      "pmid": "41629619",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41629619",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Electrocardiography",
+        "Stroke",
+        "Blood Pressure",
+        "Electromyography",
+        "Male",
+        "Female",
+        "Respiration",
+        "Middle Aged",
+        "Aged",
+        "Machine Learning",
+        "Risk Factors",
+        "Risk Assessment"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "An artificial intelligence model for electrocardiogram detection of occlusion myocardial infarction: a retrospective study to reduce false-positive cath lab activations.",
+      "abstract": "AIMS: Existing ST-segment elevation myocardial infarction (STEMI) alert pathways that rely on traditional STEMI criteria perform suboptimally. We aimed to evaluate the diagnostic performance of an artificial intelligence (AI) model to detect acute occlusion myocardial infarction (OMI) from the routine 12-lead electrocardiogram (ECG) and, specifically, its potential to reduce false-positive activations. METHODS AND RESULTS: Consecutive adults managed via the STEMI pathway were included from a tertiary academic medical centre between January 2022 and December 2023. Cases without an available ECG for review, death prior to catheterization, or alternative reasons for activation (i.e. electrical instability or urgent interventions) were excluded. Pre-coronary angiography tracings were interpreted via the AI tool. Test characteristics were compared against traditional STEMI criteria. The primary outcome was the number of avoidable false-positive activations. During the 2-year study period, there were 454 activations, 150 were excluded, and 304 cases with unique ECGs were included in the study cohort. There were 118 (38.8%) false-positive activations, of which 86 (72.9%) were correctly predicted by the AI model. Its test characteristics for identifying true positives were superior compared with traditional STEMI criteria for a sensitivity of 89.2% [95% confidence interval (CI): 84.0-92.9] vs. 68.3% (95% CI: 61.3-74.5), specificity 72.9% (95% CI: 64.2-80.1) vs. 51.7% (95% CI: 42.8-60.5), and accuracy 82.9% (95% CI: 78.3-86.7) vs. 61.8 (95% CI: 56.3-67.1). CONCLUSION: The AI model is superior to traditional STEMI criteria for detecting OMI and has the potential to reduce false-positive catheterization lab activations. It can be a useful decision-aid for catheterization lab activation.",
+      "authors": [
+        "Benjamin L Cooper",
+        "Evan A Genova",
+        "Carrie A Bakunas",
+        "Catherine E Reynolds",
+        "Benjamin Karfunkle",
+        "Nils P Johnson"
+      ],
+      "year": 2026,
+      "journal": "European heart journal. Digital health",
+      "doi": "10.1093/ehjdh/ztaf138",
+      "pmid": "41624558",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41624558",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Can ChatGPT compete with emergency medicine specialists? A two-stage assessment of ECG interpretation supported by clinical information.",
+      "abstract": "BACKGROUND: The increasing integration of AI-powered large language models into clinical workflows has created new opportunities for augmenting diagnostic decision-making in emergency care. This study evaluated whether the customized ECG Reader-GPT model could serve as a supportive tool&#x2014;rather than a substitute for expert judgment&#x2014;during ECG interpretation in the emergency department (ED). METHODS: This single-center diagnostic accuracy study analyzed 72 real patient ECGs obtained in a tertiary ED. An expert panel assigned the ECGs to diagnostic subgroups and classified them as easy or difficult based on clinical complexity. Ten emergency medicine specialists (EMSs) interpreted each ECG in two stages: first without clinical information, then with the patient&#x2019;s history. The same ECG set was assessed by a customized GPT model (ECG Reader-GPT) using standardized English prompts across 10 independent sessions to evaluate performance stability. Two cardiologists, blinded to group assignments, scored all responses using a predefined key. RESULTS: EMSs demonstrated markedly higher diagnostic accuracy than ECG Reader-GPT in both stages. In Stage 1, specialists correctly interpreted 77% of ECGs, whereas ECG Reader-GPT achieved 24%. With clinical information provided (Stage 2), accuracy increased to 79% and 27%, respectively. The performance of both groups was reduced with difficult ECGs (p&#x2009;&lt;&#x2009;0.05). Across all diagnostic subgroups, the specialists outperformed the AI model, and both groups scored higher when clinical context was available. Intraclass correlation demonstrated strong within-group consistency (p&#x2009;&lt;&#x2009;0.001). CONCLUSION: EMSs consistently outperformed ECG Reader-GPT under all conditions, indicating that the model is currently insufficient for real-world ECG interpretation. Although it may offer limited supportive value, its use requires caution, and rigorous external validation is essential before any clinical application.",
+      "authors": [
+        "Tuba Betul Umit",
+        "Muge Arslan",
+        "Gulin Inan",
+        "Sureyya Tuba Fettahoglu",
+        "Asli Yild&#x131;z",
+        "Ibrahim Sarbay",
+        "Hatice Taskan",
+        "Halil Ibrahim Biter",
+        "Ozgur Sogut"
+      ],
+      "year": 2026,
+      "journal": "BMC emergency medicine",
+      "doi": "10.1186/s12873-026-01486-y",
+      "pmid": "41612211",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41612211",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Transformative Impact of Artificial Intelligence on Internal Medicine: Current Applications, Challenges, and Future Horizons for Urban Health.",
+      "abstract": "Artificial intelligence (AI) is rapidly transforming internal medicine by enhancing diagnostic accuracy, enabling personalized treatment, and optimizing patient management. As of August 2024, the U.S. Food and Drug Administration has authorized nearly 950 AI/ML-enabled medical devices, while an American Medical Association survey reported that 66% of physicians already incorporate AI into clinical practice. This review provides a comprehensive overview of AI's expanding role across internal medicine, highlighting its applications in medical interviews, text-based communication, and the interpretation of core diagnostic modalities such as electrocardiography, chest X-ray, and auscultation. While several FDA-approved AI tools are already integrated into clinical workflows, many technologies remain at the research or proof-of-concept stage, with validation often limited to retrospective or controlled trial settings. The transformative potential of AI is particularly relevant in urban healthcare, where population density, limited resources, and disproportionate burdens of chronic and lifestyle-related diseases underscore the need for innovative solutions. AI can mitigate physician shortages, streamline care in overburdened systems, and support equitable access to diagnostics and treatment in metropolitan areas. Key technologies, including machine learning, deep learning, and large language models, are critically examined, along with emerging innovations such as EHR-based foundation models. Despite its promise, AI integration raises ethical, legal, social, and regulatory challenges, including algorithmic bias, data privacy, validation standards, and workforce adaptation. This paper explores these multifaceted aspects, emphasizing the importance of collaborative efforts to ensure responsible and equitable implementation, ultimately aiming to improve patient outcomes and public health in the digital era.",
+      "authors": [
+        "Wataru Fujita",
+        "Akira Sakamoto",
+        "Eiichiro Sato",
+        "Tomohiro Kaneko",
+        "Nobuyuki Kagiyama"
+      ],
+      "year": 2025,
+      "journal": "Juntendo medical journal",
+      "doi": "10.14789/ejmj.JMJ25-0019-R",
+      "pmid": "41608225",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41608225",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Artificial Intelligence-Driven Integration of ECG and Molecular Biomarkers in Pulmonary Embolism.",
+      "abstract": "Pulmonary embolism (PE) is a serious cardiovascular condition and the third leading cause of cardiovascular mortality worldwide. However, its clinical presentation is often non-specific, making timely detection challenging. Biomarkers are commonly used to support early diagnosis and risk stratification. Molecular biomarkers provide information related to coagulation, inflammation, and cardiac injury. Electrocardiography (ECG) reflects cardiac functional changes caused by right ventricular (RV) stress and dilation secondary to increased pulmonary vascular resistance. Individually, these biomarkers have limited diagnostic accuracy. A promising approach to improving PE management involves integrating multimodal clinical data using Artificial Intelligence (AI). AI-based models can detect subtle patterns in ECG signals and molecular biomarker profiles that may be missed by conventional analysis. Combining these data sources may enhance diagnostic accuracy, refine risk assessment, and support personalized treatment. Despite ongoing challenges, including data quality, interpretability, and ethical considerations, AI-driven integration of ECG and molecular biomarkers represents a significant step forward in PE diagnosis and management. Further validation in large, prospective clinical studies is required.",
+      "authors": [
+        "Bojana Uzelac",
+        "Sanja Stankovi&#x107;"
+      ],
+      "year": 2026,
+      "journal": "International journal of molecular sciences",
+      "doi": "10.3390/ijms27020813",
+      "pmid": "41596462",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41596462",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Pulmonary Embolism",
+        "Biomarkers",
+        "Artificial Intelligence",
+        "Electrocardiography"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "[Evaluation of an interpretable 12-lead ECG automatic diagnosis model based on deep feature fusion].",
+      "abstract": "OBJECTIVES: To enhance the accuracy and reliability of 12-lead electrocardiogram (ECG) automatic diagnosis. METHODS: Herein we propose a 12-lead ECG automatic diagnosis model based on deep feature fusion (MRHL-ECGNet), which consists of a multi-scale feature extraction front-end, ResNet-34, a global feature mixing module, and a time-series analysis module. The Hyena Hierarchy Convolution Operator was applied to the 12-lead ECG automatic diagnosis task for more efficient capture of long-range dependencies while reducing computational complexity. Integrated Gradients (IG)-based interpretability analysis technology was used to achieve visualization of the decision-making basis of MRHL-ECGNet. The CPSC2018 dataset was used to train and test MRHL-ECGNet, and its performance was assessed using multiple quantitative evaluation indicators and evaluation experiments. RESULTS: In the 9-class ECG classification task on the test set, MRHL-ECGNet achieved an accuracy of 0.972, an AUC of 0.983, an F1 score of 0.864, a precision of 0.873, and a recall of 0.857, all surpassing other comparative models. This model only took 0.007 s to output a diagnosis for a single sample on a GPU and 0.156 s on a CPU, with a memory footprint of 67.196 MB. CONCLUSIONS: The proposed MRHL-ECGNet model demonstrates excellent classification performance in 12-lead ECG automatic diagnosis with a lightweight design and good interpretability, and thus has great potential for clinical application in ECG-aided diagnosis. &#x76ee;&#x7684;: &#x63d0;&#x5347;12&#x5bfc;&#x8054;&#x5fc3;&#x7535;&#x56fe;&#xff08;ECG&#xff09;&#x81ea;&#x52a8;&#x8bca;&#x65ad;&#x7684;&#x51c6;&#x786e;&#x6027;&#x548c;&#x53ef;&#x4fe1;&#x5ea6;&#x3002;&#x65b9;&#x6cd5;: &#x63d0;&#x51fa;&#x4e86;&#x4e00;&#x79cd;&#x57fa;&#x4e8e;&#x6df1;&#x5ea6;&#x7279;&#x5f81;&#x878d;&#x5408;&#x7684;12&#x5bfc;&#x8054;ECG&#x81ea;&#x52a8;&#x8bca;&#x65ad;&#x6a21;&#x578b;&#xff08;MRHL-ECGNet&#xff09;&#x3002;&#x8be5;&#x6a21;&#x578b;&#x5305;&#x542b;&#x591a;&#x5c3a;&#x5ea6;&#x7279;&#x5f81;&#x63d0;&#x53d6;&#x524d;&#x7aef;&#x3001;ResNet-34&#x3001;&#x5168;&#x5c40;&#x7279;&#x5f81;&#x6df7;&#x5408;&#x6a21;&#x5757;&#x53ca;&#x65f6;&#x95f4;&#x5e8f;&#x5217;&#x5206;&#x6790;&#x6a21;&#x5757;&#xff0c;&#x9996;&#x6b21;&#x5c06;Hyena Hierarchy&#x5377;&#x79ef;&#x7b97;&#x5b50;&#x5e94;&#x7528;&#x4e8e;12&#x5bfc;&#x8054;&#x5fc3;&#x7535;&#x56fe;&#x81ea;&#x52a8;&#x8bca;&#x65ad;&#x4efb;&#x52a1;&#x4e2d;&#x200b;&#x200b;&#xff0c;&#x4ee5;&#x9ad8;&#x6548;&#x6355;&#x6349;ECG&#x4e2d;&#x7684;&#x957f;&#x7a0b;&#x4f9d;&#x8d56;&#x5173;&#x7cfb;&#xff0c;&#x5e76;&#x663e;&#x8457;&#x964d;&#x4f4e;&#x6a21;&#x578b;&#x8ba1;&#x7b97;&#x590d;&#x6742;&#x5ea6;&#x3002;&#x540c;&#x65f6;&#x91c7;&#x7528;&#x57fa;&#x4e8e;&#x79ef;&#x5206;&#x68af;&#x5ea6;&#xff08;IG&#xff09;&#x7684;&#x53ef;&#x89e3;&#x91ca;&#x6027;&#x5206;&#x6790;&#x6280;&#x672f;&#xff0c;&#x5b9e;&#x73b0;MRHL-ECGNet&#x51b3;&#x7b56;&#x4f9d;&#x636e;&#x53ef;&#x89c6;&#x5316;&#x3002;&#x4f7f;&#x7528;CPSC2018&#x6570;&#x636e;&#x96c6;&#x5bf9;MRHL-ECGNet&#x8fdb;&#x884c;&#x8bad;&#x7ec3;&#x548c;&#x6d4b;&#x8bd5;&#xff0c;&#x5e76;&#x91c7;&#x7528;&#x591a;&#x9879;&#x5b9a;&#x91cf;&#x8bc4;&#x4ef7;&#x6307;&#x6807;&#x4e0e;&#x8bc4;&#x4f30;&#x5b9e;&#x9a8c;&#x5bf9;MRHL-ECGNet&#x8fdb;&#x884c;&#x5168;&#x9762;&#x8bc4;&#x4f30;&#x3002;&#x7ed3;&#x679c;: &#x5728;&#x6d4b;&#x8bd5;&#x96c6;&#x4e0a;&#x5bf9;9&#x79cd;&#x7c7b;&#x522b;ECG&#x7684;&#x5206;&#x7c7b;&#x4efb;&#x52a1;&#x4e2d;&#xff0c;MRHL-ECGNet&#x7684;&#x51c6;&#x786e;&#x7387;&#x3001;AUC&#x503c;&#x3001;F1&#x5206;&#x6570;&#x3001;&#x7cbe;&#x786e;&#x7387;&#x548c;&#x53ec;&#x56de;&#x7387;&#x5206;&#x522b;&#x8fbe;&#x5230;0.972&#x3001;0.983&#x3001;0.864&#x3001;0.873&#x548c;0.857&#xff0c;&#x5747;&#x4f18;&#x4e8e;&#x5176;&#x4ed6;&#x5bf9;&#x6bd4;&#x6a21;&#x578b;&#xff0c;&#x4e14;&#x5728;GPU&#x4e0a;&#x5bf9;&#x5355;&#x6837;&#x672c;&#x8f93;&#x51fa;&#x8bca;&#x65ad;&#x7ed3;&#x679c;&#x6240;&#x9700;&#x7684;&#x65f6;&#x95f4;&#x4e3a;0.007s&#xff0c;&#x5728;CPU&#x4e0a;&#x4e5f;&#x4ec5;&#x9700;0.156s&#xff0c;&#x5185;&#x5b58;&#x5360;&#x7528;&#x4e3a;67.196MB&#x3002;&#x7ed3;&#x8bba;: &#x672c;&#x7814;&#x7a76;&#x63d0;&#x51fa;&#x7684;MRHL-ECGNet&#x4e0d;&#x4ec5;&#x5177;&#x6709;&#x5353;&#x8d8a;&#x7684;&#x5206;&#x7c7b;&#x6027;&#x80fd;&#xff0c;&#x8fd8;&#x5177;&#x5907;&#x8f7b;&#x91cf;&#x5316;&#x53ca;&#x53ef;&#x89e3;&#x91ca;&#x6027;&#x7684;&#x7279;&#x70b9;&#xff0c;&#x5728;&#x4e34;&#x5e8a;ECG&#x8f85;&#x52a9;&#x8bca;&#x65ad;&#x4e2d;&#x5177;&#x6709;&#x8f83;&#x9ad8;&#x7684;&#x5e94;&#x7528;&#x4ef7;&#x503c;&#x3002;.",
+      "authors": [
+        "Xueqi Lu",
+        "Huayuan Chen",
+        "Qiucen Wu",
+        "Yaoqi Wen",
+        "Guoguang Liu",
+        "Chaomin Chen"
+      ],
+      "year": 2026,
+      "journal": "Nan fang yi ke da xue xue bao = Journal of Southern Medical University",
+      "doi": "10.12122/j.issn.1673-4254.2026.01.23",
+      "pmid": "41540708",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41540708",
+      "citationCount": 0,
+      "publicationTypes": [
+        "English Abstract",
+        "Journal Article"
+      ],
+      "meshTerms": [
+        "Electrocardiography",
+        "Humans",
+        "Deep Learning",
+        "Algorithms",
+        "Signal Processing, Computer-Assisted",
+        "Neural Networks, Computer",
+        "Reproducibility of Results"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Proposing the ValvUS approach: integrating bedside tests and ultrasonography for severe valvular heart disease diagnosis.",
+      "abstract": "Valvular heart disease is increasingly prevalent, and bedside confirmation or exclusion of severe disease is needed to enable a rapid and cost-effective diagnostic workup. The physical examination skills of clinicians are insufficient for accurate diagnosis, making complementary tests generally necessary. Despite being commonly requested, electrocardiography and chest radiography present low positive and negative likelihood ratios. Incipient studies involving artificial intelligence have shown promising opportunities to support the diagnosis. In addition, solid current evidence demonstrates that point-of-care ultrasound enhances bedside diagnosis of several cardiovascular conditions. Echocardiographic skills can be acquired after only a few hours of training, which encourages routine bedside use with handling equipment. Despite the routine use of sonography in emergencies, large-scale simplified screening protocols for valvular disease remain lacking. Therefore, improving the accuracy of valvular heart disease diagnosis by integrating all bedside modalities needs to be better understood. We propose a simple, reproducible five-step point-of-care ultrasound protocol for diagnosing valvular heart disease (the ValvUS approach), applicable to all patients. The proposed visual assessment involves evaluating valvular movement, thickness, regurgitant flow, aliasing, and chamber dimensions. This evaluation should be interpreted in the context of traditional clinical probability to ensure the most accurate bedside diagnosis. Typical findings of severe valvular disease on electrocardiography and chest radiography, and particularly on point-of-care ultrasound, may improve the accuracy of bedside diagnosis after clinical assessment in the near future.",
+      "authors": [
+        "Tarso Augusto Duenhas Accorsi",
+        "Henrique Barbosa Ribeiro",
+        "Ranna Santos Pessoa",
+        "Renato Paladino Nemoto",
+        "Wilson Mathias Junior",
+        "Philippe Pibarot",
+        "Flavio Tarasoutchi"
+      ],
+      "year": 2026,
+      "journal": "Einstein (Sao Paulo, Brazil)",
+      "doi": "10.31744/einstein_journal/2026RW1487",
+      "pmid": "41538484",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41538484",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Heart Valve Diseases",
+        "Point-of-Care Systems",
+        "Echocardiography",
+        "Point-of-Care Testing",
+        "Electrocardiography",
+        "Severity of Illness Index",
+        "Ultrasonography"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "The Role of Artificial Intelligence in Improving Diagnosis, Management, and Outcomes of Acute Myocardial Ischemia: A Systematic Review.",
+      "abstract": "Artificial intelligence (AI) has emerged as a transformative force in cardiovascular medicine, particularly in the diagnosis, management, and prognostication of acute myocardial ischemia (AMI). This systematic review synthesizes current evidence on AI applications across diagnostic modalities, risk stratification, therapeutic decision-making, and outcome prediction in AMI. A total of 30 peer-reviewed studies were included, encompassing machine learning (ML), deep learning (DL), and hybrid models applied to electrocardiography (ECG), imaging, and electronic health records (EHRs). AI demonstrated superior diagnostic accuracy, enhanced triage efficiency, and improved prognostic modeling compared to conventional methods. Notably, AI-enabled ECG interpretation and coronary imaging have shown cardiologist-level performance in detecting ischemia. Risk prediction models using ML have outperformed traditional scoring systems, while AI-driven decision support tools have optimized therapeutic pathways. Despite promising results, challenges remain in clinical integration, interpretability, and generalizability. This review underscores the potential of AI to revolutionize AMI care and highlights future directions for research, validation, and ethical implementation.",
+      "authors": [
+        "Shaima Tariq Mansoor Beig",
+        "Muazzam M Sheriff",
+        "Ammar Eid Z Alhejaili",
+        "Amani Dawod Mohammed Kamel",
+        "Sheikheldin Ibrahim Elnair",
+        "Moayad Abdulraouf Ahmed",
+        "Lina Mohammad Hatem Mawardi",
+        "Leen Abdulkareem Fida",
+        "Enas Abdulhafeez",
+        "Raydaa Hamed Jan",
+        "Hanan Yousef Ismael Tukruni",
+        "Rahaf Abdulaziz Aljahdali",
+        "Khaled Zamil Mofleh Alshahrani",
+        "Waleed Hatem Hakami",
+        "Anmar Abdulzaher Saati"
+      ],
+      "year": 2025,
+      "journal": "Cureus",
+      "doi": "10.7759/cureus.98865",
+      "pmid": "41523481",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41523481",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "AI Applications in Electrocardiography for Ischemic and Structural Heart Disease: A Review of the Current State.",
+      "abstract": "Cardiovascular disease is the leading cause of morbidity and mortality worldwide, with ischemic and structural heart diseases being key contributors. While the 12-lead electrocardiogram (ECG) is a common low-cost diagnostic test, its interpretation is limited by human variability. Through machine learning with large diverse ECG data sets and artificial intelligence (AI) algorithms, ECG analysis can be automated for pattern recognition with higher accuracy. AI-augmented ECG algorithms have been demonstrated to be able to detect myocardial infarction with high accuracy and reduce door-to-balloon coronary intervention times. Similar models can be utilized to detect subtle ECG waveforms suggestive of current or future asymptomatic left ventricular dysfunction, aortic stenosis, and hypertrophic cardiomyopathy. Despite these promising results, there is concern for generalizability and bias or errors in training data. As AI systems evolve to multimodal integration, AI-augmented ECG has the potential to redefine cardiovascular diagnostics and enable earlier detection, risk stratification, and precision-guided interventions.",
+      "authors": [
+        "Eugene J Kim",
+        "Dhir Gala",
+        "Mohammed Ayyad",
+        "Manaal Pramanik",
+        "Amgad N Makaryus"
+      ],
+      "year": 2026,
+      "journal": "Journal of clinical medicine",
+      "doi": "10.3390/jcm15010316",
+      "pmid": "41517565",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41517565",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Automated diagnosis of chronic obstructive pulmonary disease using deep learning applied to electrocardiograms.",
+      "abstract": "BACKGROUND: Chronic Obstructive Pulmonary Disease (COPD) is a leading cause of morbidity and mortality globally. Effective management hinges on early diagnosis, which is often impeded by non-specific symptoms and resource-intensive diagnostic methods. This study assesses the effectiveness of electrocardiograms (ECGs) analysed via deep learning as a tool for early COPD detection. METHODS: We utilised a Convolutional Neural Network model to analyse ECGs for detecting COPD. The primary outcome was the accuracy of a new clinical COPD diagnosis as determined by ICD codes. Performance was evaluated using Area-Under-the-Curve (AUC) metrics derived by testing against ECGs from a set of holdout patients, ECGs from patients from another hospital, and ECGs of patients with COPD within the UK BioBank (UKBB). FINDINGS: We analysed a total of 208,231 ECGs from 18,225 COPD cases, matched to 49,356 controls by age, sex, and race. The model exhibited robust performance across diverse populations with an AUC of 0&#x22c5;80 (0&#x22c5;80-0&#x22c5;80) in internal testing, 0&#x22c5;82 (0&#x22c5;81-0&#x22c5;82) in external validation and 0&#x22c5;75 (0&#x22c5;71-0&#x22c5;78) in the UKBB cohort. Subsequent analyses linked ECG-derived model predictions with spirometry data, and model explainability highlighted P-wave changes as indicative of COPD. INTERPRETATION: AI-powered ECG analysis offers a promising path for early COPD detection, potentially facilitating earlier and more effective management. Implementing such tools in clinical settings could significantly enhance COPD screening and diagnostic accuracy, thereby improving patient outcomes and addressing the global health burden of the disease. FUNDING: This work was supported in part through the computational and data resources and staff expertise provided by Scientific Computing and Data at the Icahn School of Medicine at Mount Sinai and supported by the Clinical and Translational Science Awards (CTSA) grant UL1TR004419 from the National Center for Advancing Translational Sciences; and R01HL167050-02 from the National Heart, Lung, and Blood Institute.",
+      "authors": [
+        "Akhil Vaid",
+        "Jiya Sharma",
+        "Joy Jiang",
+        "Joshua Lampert",
+        "Ashwin Sawant",
+        "Edgar Argulian",
+        "Stamatios Lerakis",
+        "Pranai Tandon",
+        "Patricia Kovatch",
+        "Charles Powell",
+        "Charles B Cairns",
+        "Girish N Nadkarni",
+        "Monica Kraft"
+      ],
+      "year": 2026,
+      "journal": "EBioMedicine",
+      "doi": "10.1016/j.ebiom.2025.106066",
+      "pmid": "41485457",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41485457",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Pulmonary Disease, Chronic Obstructive",
+        "Electrocardiography",
+        "Deep Learning",
+        "Female",
+        "Male",
+        "Middle Aged",
+        "Aged",
+        "Diagnosis, Computer-Assisted",
+        "Neural Networks, Computer"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Integration of Artificial Intelligence and Wearable Devices in Pediatric Clinical Care: A Review.",
+      "abstract": "Wearable devices are becoming widely applied in healthcare to enable continuous, noninvasive monitoring, but their use in pediatric populations remains relatively underexplored. This review synthesizes 36 clinical studies focused on pediatric hospital and outpatient wearables published between 2014 and 2025. Devices included wrist-worn trackers, adhesive biosensors, and more, capturing electrocardiography, photoplethysmography, accelerometry, and other signals. Clinical applications spanned a variety of care settings. Artificial intelligence (AI) partially enhanced interpretation for the early detection of conditions such as postoperative complications and sepsis. Despite their promising accuracy, most studies remain small, single-center pilots focused on feasibility and signal validity rather than outcomes such as mortality, readmission, or long-term recovery. Key barriers include pediatric-specific device design, motion-robust signal quality, regulatory clearance, workflow integration, and equitable adoption in low-resource settings. Ethical concerns such as privacy, consent, and incidental findings and regulatory constraints, particularly the lack of pediatric labeling and approval for consumer and AI-driven devices, further limit translation into practice. Future work should prioritize multi-center studies, multimodal analytics, explainable AI, and seamless integration into clinical pathways. With these advances, wearables can move beyond feasibility to become reliable, personalized tools that improve pediatric monitoring and care.",
+      "authors": [
+        "Huili Zheng",
+        "Pragya Sharma",
+        "Matthew Johnson",
+        "Matteo Danieletto",
+        "Eugenia Alleva",
+        "Alexander W Charney",
+        "Girish N Nadkarni",
+        "Chethan Sarabu",
+        "Bjoern M Eskofier",
+        "Yuri Ahuja",
+        "Florian Richter",
+        "Eyal Klang",
+        "Sandeep Gangadharan",
+        "Felix Richter",
+        "Emma Holmes",
+        "Benjamin S Glicksberg"
+      ],
+      "year": 2025,
+      "journal": "Bioengineering (Basel, Switzerland)",
+      "doi": "10.3390/bioengineering12121320",
+      "pmid": "41463617",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41463617",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "[Automatic detection and visualization of myocardial infarction in electrocardiograms based on an interpretable deep learning model].",
+      "abstract": "Automated detection of myocardial infarction (MI) is crucial for preventing sudden cardiac death and enabling early intervention in cardiovascular diseases. This paper proposes a deep learning framework based on a lightweight convolutional neural network (CNN) combined with one-dimensional gradient-weighted class activation mapping (1D Grad-CAM) for the automated detection of MI and the visualization of key waveform features in single-lead electrocardiograms (ECGs). The proposed method was evaluated using a total of 432 records from the Physikalisch-Technische Bundesanstalt Diagnostic ECG Database (PTBDB) and the Normal Sinus Rhythm Database (NSRDB), comprising 334 MI and 98 normal ECGs. Experimental results demonstrated that the model achieved an accuracy, sensitivity, and specificity of 95.75%, 96.03%, and 95.47%, respectively, in MI detection. Furthermore, the visualization results indicated that the model's decision-making process aligned closely with clinically critical features, including pathological Q waves, ST-segment elevation, and T-wave inversion. This study confirms that the proposed deep learning algorithm combined with explainable technology performs effectively in the intelligent diagnosis of MI and the visualization of critical ECG waveforms, demonstrating its potential as a useful tool for early MI risk assessment and computer-aided diagnosis. &#x5fc3;&#x808c;&#x6897;&#x6b7b;&#xff08;MI&#xff09;&#x7684;&#x81ea;&#x52a8;&#x68c0;&#x6d4b;&#x5bf9;&#x9884;&#x9632;&#x731d;&#x6b7b;&#x548c;&#x5fc3;&#x8840;&#x7ba1;&#x75be;&#x75c5;&#x7684;&#x65e9;&#x671f;&#x5e72;&#x9884;&#x81f3;&#x5173;&#x91cd;&#x8981;&#x3002;&#x672c;&#x6587;&#x63d0;&#x51fa;&#x4e86;&#x4e00;&#x79cd;&#x57fa;&#x4e8e;&#x8f7b;&#x91cf;&#x7ea7;&#x5377;&#x79ef;&#x795e;&#x7ecf;&#x7f51;&#x7edc;&#xff08;CNN&#xff09;&#x4e0e;&#x4e00;&#x7ef4;&#x68af;&#x5ea6;&#x52a0;&#x6743;&#x7c7b;&#x6fc0;&#x6d3b;&#x6620;&#x5c04;&#xff08;1D-Grad-CAM&#xff09;&#x7684;&#x6df1;&#x5ea6;&#x5b66;&#x4e60;&#x6846;&#x67b6;&#xff0c;&#x7528;&#x4e8e;&#x5355;&#x5bfc;&#x8054;&#x5fc3;&#x7535;&#x56fe;&#x4e2d;MI&#x7684;&#x81ea;&#x52a8;&#x68c0;&#x6d4b;&#x53ca;&#x5176;&#x5173;&#x952e;&#x6ce2;&#x5f62;&#x7279;&#x5f81;&#x7684;&#x53ef;&#x89c6;&#x5316;&#x5206;&#x6790;&#x3002;&#x5b9e;&#x9a8c;&#x91c7;&#x7528;&#x4e86;&#x5fb7;&#x56fd;&#x8054;&#x90a6;&#x7269;&#x7406;&#x6280;&#x672f;&#x7814;&#x7a76;&#x9662;&#x8bca;&#x65ad;&#x5fc3;&#x7535;&#x6570;&#x636e;&#x5e93;&#xff08;PTBDB&#xff09;&#x548c;&#x56fd;&#x9645;&#x516c;&#x5f00;&#x7aa6;&#x6027;&#x5fc3;&#x5f8b;&#x6570;&#x636e;&#x5e93;&#xff08;NSRDB&#xff09;&#x6570;&#x636e;&#x5e93;&#x5171;432&#x6761;&#x8bb0;&#x5f55;&#xff08;&#x5305;&#x62ec;334&#x6761;MI&#x5fc3;&#x7535;&#x548c;98&#x6761;&#x6b63;&#x5e38;&#x5fc3;&#x7535;&#xff09;&#x8fdb;&#x884c;&#x9a8c;&#x8bc1;&#x3002;&#x7ed3;&#x679c;&#x8868;&#x660e;&#xff0c;&#x8be5;&#x6a21;&#x578b;&#x5728;MI&#x68c0;&#x6d4b;&#x4e2d;&#x7684;&#x51c6;&#x786e;&#x7387;&#x3001;&#x7075;&#x654f;&#x5ea6;&#x548c;&#x7279;&#x5f02;&#x6027;&#x5206;&#x522b;&#x8fbe;&#x5230;&#x4e86;95.75%&#x3001;96.03%&#x548c;95.47%&#x3002;&#x53ef;&#x89c6;&#x5316;&#x7ed3;&#x679c;&#x663e;&#x793a;&#xff0c;&#x6a21;&#x578b;&#x51b3;&#x7b56;&#x6240;&#x5173;&#x6ce8;&#x533a;&#x57df;&#x4e0e;&#x4e34;&#x5e8a;&#x8bca;&#x65ad;&#x5173;&#x952e;&#x6307;&#x6807;&#x9ad8;&#x5ea6;&#x543b;&#x5408;&#xff0c;&#x4e3b;&#x8981;&#x5305;&#x62ec;&#x75c5;&#x7406;&#x6027;Q&#x6ce2;&#x3001;ST&#x6bb5;&#x62ac;&#x9ad8;&#x53ca;T&#x6ce2;&#x5012;&#x7f6e;&#x7b49;&#x7279;&#x5f81;&#x3002;&#x7814;&#x7a76;&#x8bc1;&#x5b9e;&#xff0c;&#x6240;&#x63d0;&#x51fa;&#x7684;&#x6df1;&#x5ea6;&#x5b66;&#x4e60;&#x7b97;&#x6cd5;&#x7ed3;&#x5408;&#x53ef;&#x89e3;&#x91ca;&#x6027;&#x6280;&#x672f;&#xff0c;&#x5728;MI&#x5fc3;&#x7535;&#x56fe;&#x7684;&#x667a;&#x80fd;&#x8bca;&#x65ad;&#x4e0e;&#x5173;&#x952e;&#x6ce2;&#x5f62;&#x53ef;&#x89c6;&#x5316;&#x5206;&#x6790;&#x4e2d;&#x5177;&#x6709;&#x826f;&#x597d;&#x6027;&#x80fd;&#xff0c;&#x6709;&#x671b;&#x4e3a;MI&#x65e9;&#x671f;&#x98ce;&#x9669;&#x8bc4;&#x4f30;&#x4e0e;&#x8f85;&#x52a9;&#x8bca;&#x65ad;&#x63d0;&#x4f9b;&#x6709;&#x6548;&#x5de5;&#x5177;&#x3002;.",
+      "authors": [
+        "Yue Zhang",
+        "Yifei Zhang",
+        "Baojie Xie",
+        "Dakun Lai"
+      ],
+      "year": 2025,
+      "journal": "Sheng wu yi xue gong cheng xue za zhi = Journal of biomedical engineering = Shengwu yixue gongchengxue zazhi",
+      "doi": "10.7507/1001-5515.202503016",
+      "pmid": "41448757",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41448757",
+      "citationCount": 0,
+      "publicationTypes": [
+        "English Abstract",
+        "Journal Article"
+      ],
+      "meshTerms": [
+        "Electrocardiography",
+        "Humans",
+        "Deep Learning",
+        "Myocardial Infarction",
+        "Neural Networks, Computer",
+        "Algorithms",
+        "Signal Processing, Computer-Assisted"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Deep learning model for identifying significant tricuspid regurgitation using standard 12-lead electrocardiogram.",
+      "abstract": "INTRODUCTION: Transthoracic echocardiography (TTE) is the current standard for detecting tricuspid regurgitation (TR); however, it incurs additional costs and is dependent on the operator's skill. In contrast, the 12-lead electrocardiogram (ECG) is widely available during initial evaluations. This study aimed to develop deep learning (DL) models using 12-lead ECG signals and clinical features to detect significant TR. METHODS: Between 2017 and 2019, a total of 5432 patients who underwent both 12-lead ECG and TTE were eligible for this study. Significant TR was identified in 570 of these patients. The DL model architecture was based on a combination of one-dimensional convolutional neural network, efficient channel attention block, and Multihead Attention modules. The model was trained on data from 3910 patients, tested on 435 patients, and validated using both internal and external cohorts. RESULTS: The diagnostic performance of the DL model using ECG signals, age, and sex to predict significant TR was as follows: an accuracy of 0.762, sensitivity of 0.809, specificity of 0.756, and an area under the curve (AUC) of 0.857. After incorporating additional factors such as RR interval, QRS duration, corrected QT interval, atrial fibrillation, and hypertension into the DL model, the diagnostic performance remained substantial, with an accuracy of 0.762, sensitivity of 0.836, specificity of 0.752, and an AUC of 0.866. External validation of the DL model showed satisfactory results. CONCLUSIONS: Implementing the DL model for ECG interpretation could facilitate the diagnosis of significant TR. However, the clinical utility of this DL model requires further validation and exploration.",
+      "authors": [
+        "Chun-Chin Chang",
+        "Ming-Tsung Hsieh",
+        "Yin-Hao Lee",
+        "Chih-Hsueh Tseng",
+        "Wei-Ming Huang",
+        "Ruey-Hsing Chou",
+        "Chin-Sheng Lin",
+        "Po-Hsun Huang"
+      ],
+      "year": 2026,
+      "journal": "International journal of cardiology. Cardiovascular risk and prevention",
+      "doi": "10.1016/j.ijcrp.2025.200557",
+      "pmid": "41437957",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41437957",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Advances in machine and deep learning for ECG beat classification: a systematic review.",
+      "abstract": "The electrocardiogram (ECG) is an important tool for exploring the structure and function of the heart due to its low cost, ease of use, efficiency, and non-invasive nature. With the rapid development of artificial intelligence (AI) in the medical field, ECG beat classification has emerged as a key area of research for performing accurate, automated, and interpretable cardiac analysis. According to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses criteria, we examined a total of 106 relevant articles published between 2014 and 2024. This study investigates ECG signal analysis to identify and categorize various beats with better accuracy and efficiency, by emphasizing and applying vital pre-processing techniques for denoising the raw data. Particular attention is given to the evolution from traditional feature-engineering methods toward advanced architectures with automated feature extraction and classification, such as convolutional neural networks, recurrent neural networks, and hybrid frameworks with attention mechanisms. In addition, this review article investigates the common challenges observed in the existing studies, including data imbalance, inter-patient variability, and the absence of unified evaluation metrics, which restrict fair comparison and clinical translation. To address these gaps, future research directions are proposed, focusing on the development of standardized multi-center datasets, cross-modal fusion of physiological signals, and interpretable AI models to facilitate real-world deployment in healthcare systems. This systematic review provides a structured overview of the current state and emerging trends in ECG beat classification, offering clear insights for researchers and clinicians to guide future advancements in intelligent cardiac diagnostics.",
+      "authors": [
+        "Allam Jaya Prakash",
+        "Abdelkader Nasreddine Belkacem",
+        "Ibrahim M Elfadel",
+        "Herbert F Jelinek",
+        "Mohamed Atef"
+      ],
+      "year": 2025,
+      "journal": "Frontiers in digital health",
+      "doi": "10.3389/fdgth.2025.1649923",
+      "pmid": "41395626",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41395626",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "meshTerms": [],
+      "studyType": "systematic_review",
+      "evidenceLevel": "I",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    }
+  ],
+  "total": 375
+}

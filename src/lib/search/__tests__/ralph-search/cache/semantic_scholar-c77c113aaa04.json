@@ -1,0 +1,672 @@
+{
+  "source": "semantic_scholar",
+  "query": "Compare beta-blockers versus calcium channel blockers for rate control in atrial fibrillation",
+  "timestamp": "2026-03-02T14:57:37.201Z",
+  "results": [
+    {
+      "title": "Abstract 4366862: Direct To Catheter Ablation and Pre-Ablation Rate Control Have Similar Outcomes in Persistent Atrial Fibrillation",
+      "authors": [
+        "Radia Ksayer",
+        "Hadi Younes",
+        "E. Tsakiris",
+        "Bella Gonzalez Perez",
+        "Han Feng",
+        "Yishi Jia",
+        "Farbod Zahedi Tajrishi",
+        "Christian Massad",
+        "G. Bidaoui",
+        "M. Bsoul",
+        "Mohammad Montaser Atasi",
+        "M. Abou Khalil",
+        "Alina Upreti",
+        "Y. Menassa",
+        "Karl Abou Zeid",
+        "A. Pandey",
+        "Nassir Marrouche"
+      ],
+      "journal": "Circulation",
+      "year": 2025,
+      "doi": "10.1161/circ.152.suppl_3.4366862",
+      "s2Id": "d9f48287229c0e51c1153d9682b8b62cd03a6e33",
+      "abstract": "\n Objective:\n To compare outcomes of direct-to-catheter ablation (DTCA) versus pre-ablation rate control using metoprolol or diltiazem in patients with persistent atrial fibrillation (PersAF).\n \n \n Methods:\n We evaluated 734 PersAF patients enrolled in the DECAAF II trial. Patients receiving metoprolol prior to ablation (n=260) were compared to those undergoing DTCA without beta-blockers (n=209); a similar comparison was performed for diltiazem (n=55) vs. DTCA without calcium channel blockers (CCBs) (n=639). The primary outcome was AF recurrence over 18 months, monitored via daily mobile ECG. Secondary outcomes included AF burden, SF-36 quality of life (QoL) scores, and changes in left atrial volume index. Kaplan-Meier analysis assessed recurrence. Multivariable Cox regression identified independent predictors of recurrence. Group differences in AF burden and QoL were assessed using Wilcoxon rank-sum and Student’s t-tests.\n \n \n Results:\n Across both comparisons of rate-control vs DTCA, rates of AF recurrence, AF burden, QoL, and atrial remodeling were statistically similar between groups (all p > 0.05). On multivariable analysis, neither metoprolol (HR 0.95; 95% CI 0.70–1.30; p=0.76) nor diltiazem (HR 1.4; 95% CI 0.9–2.1; p=0.10) independently predicted recurrence.\n \n \n Conclusion:\n In this DECAAF II subanalysis, both DTCA and pre-ablation rate control resulted in comparable outcomes in AF recurrence, burden, QoL, and atrial remodeling. These findings suggest that either strategy can be reasonable in the management of PersAF.\n",
+      "tldr": "Both DTCA and pre-ablation rate control resulted in comparable outcomes in AF recurrence, burden, QoL, and atrial remodeling, suggesting that either strategy can be reasonable in the management of PersAF.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Intravenous Amiodarone versus Digoxin in Atrial Fibrillation Rate Control; a Clinical Trial",
+      "authors": [
+        "Majid Shojaee",
+        "Bahareh Feizi",
+        "R. Miri",
+        "Jalil Etemadi",
+        "A. Feizi"
+      ],
+      "journal": "Emergency",
+      "year": 2017,
+      "doi": "10.22037/EMERGENCY.V5I1.14968",
+      "pmid": "28286836",
+      "s2Id": "fd6a7983d95662736e98d6d196267cbb75d62836",
+      "abstract": "Introduction: Treatment of rapid ventricular response arterial fibrillation (rapid AF) varies depending on the decision of the in-charge physician, condition of the patient, availability of the drug, and the treatment protocol of the hospital. The present study was designed aiming to compare IV digoxin and amiodarone in controlling the heart rate of patients presenting to emergency department with rapid AF and relative contraindication for first line drug in this regard. Method: In the present clinical trial, patients presented to the ED with rapid AF and relative contraindication for calcium channel blockers and beta-blockers were treated with either IV amiodarone or IV digoxin and compared regarding success rate and complication using SPSS version 22. P < 0.05 was considered as statistically significant. Results: 84 patients were randomly allocated to either amiodarone or digoxin treatment groups of 42 (53.6% male). The mean age of the studied patients was 61.8 ± 11.14 years (38 - 79). No significant difference was present regarding baseline characteristics. The rate of treatment failure was 21.4% (9 cases) in amiodarone and 59.5% (25 cases) in digoxin groups (p < 0.001). The mean onset of action was 56.66 ± 39.52 minutes (10 - 180) in amiodarone receivers and 135.38 ± 110.41 minutes (25 - 540) in digoxin group (p < 0.001). None of the patients showed any adverse outcomes of hypotension, bradycardia, and rhythm control. Conclusion: Based on the findings of the present study, rapid AF patients with relative contraindication for calcium channel blockers or beta-blockers who had received amiodarone experienced both higher (about 2 times) treatment success and a more rapid (about 2.5 times) response compared to those who received IV digoxin.",
+      "tldr": "Based on the findings of the present study, rapid AF patients with relative contraindication for calcium channel blockers or beta-blockers who had received amiodarone experienced both higher treatment success and more rapid response compared to those who received IV digoxin.",
+      "citationCount": 5,
+      "influentialCitationCount": 0,
+      "referenceCount": 12,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Esmolol versus diltiazem in the treatment of postoperative atrial fibrillation/atrial flutter after open heart surgery.",
+      "authors": [
+        "A. Mooss",
+        "R. Wurdeman",
+        "S. Mohiuddin",
+        "Antonio P. Reyes",
+        "J. Sugimoto",
+        "Walter J. Scott",
+        "D. Hilleman",
+        "A. Seyedroudbari"
+      ],
+      "journal": "American heart journal",
+      "year": 2000,
+      "doi": "10.1067/MHJ.2000.106917",
+      "pmid": "10874282",
+      "s2Id": "2ef21650c2820c142a670f1bf7fb6b0c1f1e03fe",
+      "tldr": "Esmol is more effective in converting patients to normal sinus rhythm than diltiazem during the initial dosing period, and additional studies are needed to confirm whether esmolol is the initial drug of choice in patients with postoperative AF/AFL after coronary bypass surgery.",
+      "citationCount": 73,
+      "influentialCitationCount": 1,
+      "referenceCount": 21,
+      "publicationTypes": [
+        "JournalArticle",
+        "Study",
+        "ClinicalTrial"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "rct",
+      "evidenceLevel": "II",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Rate control in atrial fibrillation, calcium channel blockers versus beta-blockers",
+      "authors": [
+        "T. Koldenhof",
+        "I. V. van Gelder",
+        "H. Crijns",
+        "M. Rienstra",
+        "R. Tieleman"
+      ],
+      "journal": "Heart",
+      "year": 2023,
+      "doi": "10.1136/heartjnl-2023-322635",
+      "pmid": "37433659",
+      "s2Id": "24d41e43341ddb890d3ced0f3bcf962e7e524c3f",
+      "abstract": "Objective To investigate heart rate differences between non-dihydropyridine calcium channel blockers and beta-blockers in patients with non-permanent atrial fibrillation (AF). Methods Using data from ‘A Comparison of Rate Control and Rhythm Control in Patients with Atrial Fibrillation’ (AFFIRM), where patients were randomised 1:1 rate or rhythm control, we compared the effect of rate control drugs on heart rate during AF as well as during sinus rhythm. Multivariable logistic regression was used to adjust for baseline characteristics. Results A total of 4060 patients were enrolled in the AFFIRM trial, mean age was 70±9 years, 39% were women. Out of the total, 1112 patients were in sinus rhythm at baseline and used either non-dihydropyridine channel blockers or beta-blockers. Of them, 474 had AF during follow-up while remaining on the same rate control drugs, 218 (46%) on calcium channel blockers and 256 (54%) on beta-blockers. Mean age of calcium channel blocker patients was 70±8 years and 68±8 for beta-blocker patients (p=0.003), 42% were women. A resting heart rate <110 beats per min during AF was achieved in 92% of patients using calcium channel blockers and 92% of patients using beta-blockers (p=1.00). Bradycardia during sinus rhythm occurred in 17% of patients using calcium channel blockers vs 32% using beta-blockers (p<0.001). After adjusting for patient characteristics, calcium channel blockers were associated with a reduction in bradycardia during sinus rhythm (OR 0.41, 95% CI 0.19 to 0.90). Conclusion In patients with non-permanent AF, calcium channel blockers instituted for rate control were associated with less bradycardia during sinus rhythm compared with beta-blockers.",
+      "tldr": "In patients with non-permanent AF, calcium channel blockers instituted for rate control were associated with less bradycardia during sinus rhythm compared with beta-blockers.",
+      "citationCount": 6,
+      "influentialCitationCount": 0,
+      "referenceCount": 16,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://pure.rug.nl/ws/files/857324343/Rate_control_in_atrial_fibrillation_calcium_channel_blockers_versus_beta-blockers.pdf",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "&bgr;-Blockers versus calcium channel blockers for acute rate control of atrial fibrillation with rapid ventricular response: a systematic review",
+      "authors": [
+        "J. Martindale",
+        "I. deSouza",
+        "M. Silverberg",
+        "Joseph Freedman",
+        "R. Sinert"
+      ],
+      "journal": "European Journal of Emergency Medicine",
+      "year": 2015,
+      "doi": "10.1097/MEJ.0000000000000227",
+      "pmid": "25564459",
+      "s2Id": "d41dbddb40423cfb722d1e1932df056f9fed8444",
+      "abstract": "This is a systematic review of the literature to compare the efficacy of calcium channel blockers to &bgr;-blockers for acute rate control of atrial fibrillation with rapid ventricular response in the emergency department setting. PubMed, EMBASE, and the Cochrane Registry were searched. Relative risk (95% confidence interval) was calculated between drugs and methodological quality of included studies was evaluated. Of the 1003 studies yielded by our initial search, two met inclusion criteria and provided sufficient data. These were randomized double-blinded studies (n=92) comparing intravenous diltiazem with intravenous metoprolol. The combined relative risk of acute rate control by diltiazem versus metoprolol was 1.8 (95% confidence interval 1.2–2.6). On the basis of the paucity of available evidence, diltiazem may be more effective than metoprolol in achieving rapid rate control, but high-quality randomized studies are needed.",
+      "tldr": "On the basis of the paucity of available evidence, diltiazem may be more effective than metoprolol in achieving rapid rate control, but high-quality randomized studies are needed.",
+      "citationCount": 24,
+      "influentialCitationCount": 1,
+      "referenceCount": 17,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://soar.suny.edu/bitstream/20.500.12648/8155/1/SR%20Beta-Blockers%20versus%20Calcium%20Channel%20Blockers%20for%20Acute%20Rate%20Control%20of%20Atrial%20Fibrillation%20with%20Rapid%20Ventricular%20Response.pdf",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Safety and efficiency of calcium channel blockers versus beta-blockers for rate control in patients with atrial fibrillation and no acute underlying medical illness.",
+      "authors": [
+        "F. Scheuermeyer",
+        "E. Grafstein",
+        "R. Stenstrom",
+        "J. Christenson",
+        "Claire L. Heslop",
+        "B. Heilbron",
+        "L. McGrath",
+        "G. Innes"
+      ],
+      "journal": "Academic emergency medicine : official journal of the Society for Academic Emergency Medicine",
+      "year": 2013,
+      "doi": "10.1111/acem.12091",
+      "pmid": "23517253",
+      "s2Id": "396b016c6c7694503fa2d601e91a98144403aa92",
+      "tldr": "In this cohort of ED patients with AF and no acute underlying medical illness who underwent rate control only, patients receiving CCBs had similar hospital admission rates to those receiving BBs, while both classes of medications appeared equally safe at 30 days.",
+      "citationCount": 66,
+      "influentialCitationCount": 1,
+      "referenceCount": 32,
+      "publicationTypes": [
+        "JournalArticle",
+        "Study",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Rate Control With Beta‐blockers Versus Calcium Channel Blockers in the Emergency Setting: Predictors of Medication Class Choice and Associated Hospitalization",
+      "authors": [
+        "C. Atzema",
+        "P. Austin"
+      ],
+      "journal": "Academic Emergency Medicine",
+      "year": 2017,
+      "doi": "10.1111/acem.13303",
+      "pmid": "28853232",
+      "s2Id": "9f360f574fc9aa4020af1d7253b2c1608702d160",
+      "tldr": "CCBs were used more frequently for rate control than BBs, and complications were rare and easily managed using both agents in this study of 24 EDs.",
+      "citationCount": 9,
+      "influentialCitationCount": 0,
+      "referenceCount": 37,
+      "publicationTypes": [
+        "Study",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/acem.13303",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Comparative Persistence on β-Blockers Versus Calcium Channel Blockers for Ventricular Rate Control in Nonelderly Patients With Atrial Fibrillation",
+      "authors": [
+        "V. Desai",
+        "C. Kelton",
+        "Anne H. Metzger",
+        "T. Cavanaugh",
+        "J. Guo",
+        "P. Heaton"
+      ],
+      "journal": "Annals of Pharmacotherapy",
+      "year": 2014,
+      "doi": "10.1177/1060028014552819",
+      "pmid": "25280975",
+      "s2Id": "4b7c1c54d8668a27f6d7325e52c24c7d5aef75a1",
+      "tldr": "Evidence suggests that nonelderly AF patients, when prescribed rate-control therapy, persist longer on BBs than CCBs, and this is the first long-term study comparing the 2 drug classes in theNonelderly population.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 44,
+      "publicationTypes": [
+        "JournalArticle",
+        "Study"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Comparison of Rate Control Efficacy between beta-blockers and Calcium Channel Blockers in Patients Hospitalized with Atrial Fibrillation.",
+      "authors": [
+        "Y. Sherf",
+        "D. Avital",
+        "Shahar Geva Robinson",
+        "Natan Arotsker",
+        "Liat Waldman Radinsky",
+        "Efrat Chen Hendel",
+        "Dana Braiman",
+        "Ahab Hayadri",
+        "Dikla Akselrod",
+        "Tal Schlaeffer-Yosef",
+        "Yasmeen Abu Fraiha",
+        "Ronen Toledano",
+        "N. Maimon"
+      ],
+      "journal": "The Israel Medical Association journal : IMAJ",
+      "year": 2022,
+      "pmid": "36436044",
+      "s2Id": "4c2f544215e9189457a32f9177a2f0d26db5ebf5",
+      "tldr": "BB therapy is more potent for rapid reduction of the heart rate compared to CCB and demonstrated better efficiency in shortening the duration of hospitalization in a subgroup of patients.",
+      "citationCount": 1,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Rate control with calcium channel blockers versus betablockers in patients with paroxysmal and persistent atrial fibrillation - data from the AFFIRM trial",
+      "authors": [
+        "T. Koldenhof",
+        "I. van Gelder",
+        "H. Crijns",
+        "M. Rienstra",
+        "R. Tieleman"
+      ],
+      "journal": "Europace",
+      "year": 2023,
+      "doi": "10.1093/europace/euad122.073",
+      "s2Id": "d24088bbcb69603652999d20377c4ac03447d8bb",
+      "abstract": "Abstract Funding Acknowledgements Type of funding sources: None. Purpose To investigate whether there are differences between nondihydropyridine calcium channel blockers and beta blockers on heart rate in patients with paroxysmal and persistent atrial fibrillation (AF). Methods In present analysis of the AFFIRM trial, the effect of rate control drugs on heart rate was evaluated during first reported AF-episode as well as the last recorded sinus rhythm episode prior to AF. Patients who used both rate control drugs or switched rate control drugs between the last sinus rhythm and the first AF episode were excluded. Results A total of 1195 patients were in sinus rhythm at baseline and used either betablockers (603, 50%) or non-dihydropyridine channel blockers (592, 50%). Of the total, 513 had at least one episode of AF while remaining on the same rate control drug, 257 (50%) of them using calcium channel blockers and 256 (50%) of them using betablockers. Mean age of patients treated with a calcium channel blocker was 70±8 years versus 68±8 for the betablocker treated patients (p=0.014). Forty-four percent were women, 31% with paroxysmal AF, and 69% with persistent AF. A resting heart rate <110 bpm during AF (lenient rate control) was achieved in 92% of patients using beta blockers and 93% of patients using calcium channel blockers (P= 0.724). Bradycardia during sinus rhythm (<60 bpm) occurred significantly less often in patients using calcium channel blockers (19%) versus betablockers (32% , P = 0.001). After adjusting for differences in patient characteristics, the association between calcium channel blockers and a reduction in sinus bradycardia remained statistically significant (OR = 0.40, 95% CI = 0.10-0.68). Conclusion In patients with persistent or paroxysmal AF included in the AFFIRM trial, nondihydropyridine calcium channel blocker as rate control treatment was associated with less bradycardia during sinus rhythm compared to betablockers. Resting heart rates <110 bpm during AF were achieved similarly in those treated with calcium channel blockers and betablockers. Figure 1: primary outcome Patient characteristics at baseline",
+      "tldr": "In patients with persistent or paroxysmal AF included in the AFFIRM trial, nondihydropyridine calcium channel blocker as rate control treatment was associated with less bradycardia during sinus rhythm compared to betablockers.",
+      "citationCount": 1,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://academic.oup.com/europace/article-pdf/25/Supplement_1/euad122.073/50428092/euad122.073.pdf",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Comparison of non-dihydropyridine calcium channel blockers with beta blockers as treatment for atrial fibrillation: protocol for a systematic review with meta-analysis",
+      "authors": [
+        "T. Koldenhof",
+        "B. Gareb",
+        "Marcelle D. Smit",
+        "Thijmen S A Bergwerff",
+        "R. Tieleman",
+        "M. Rienstra"
+      ],
+      "journal": "Systematic Reviews",
+      "year": 2026,
+      "doi": "10.1186/s13643-025-03035-3",
+      "pmid": "41501960",
+      "s2Id": "fab0f95d5797356fce9a1be729dff492586f3ec1",
+      "abstract": "Heart rate control is one of the cornerstones of atrial fibrillation (AF) management and is recommended in all AF patients, even as background therapy for rhythm control. Both non-dihydropyridine calcium channel blockers and beta blockers are recommended as first choice rate control drugs, but no preference is given. Even though there are important differences in pharmacological mechanisms and side effects between these drugs, large randomized controlled trials are lacking. We aim to critically evaluate and synthesize the scientific evidence comparing calcium channel blockers and beta blockers. A systematic review is conducted in four databases: MEDLINE, Embase, Web of Science, and Cochrane Central, collecting all original research published up until March 2025. Studies including patients with AF (P) treated with non-dihydropyridine calcium channel blockers (I) or beta blockers (C) reporting heart rate (O) or other key secondary outcomes such as major adverse cardiac and cerebrovascular events or mortality will be included. Titles and abstracts, as well as full texts, will be screened by two reviewers, and results will be reported using the Preferred Reporting Items for Systematic Reviews and Meta-Analyses checklist. Assessment of risk of bias is evaluated using the Cochrane Risk-of-Bias (RoB 2) tool for randomized controlled trials and the Risk Of Bias In Non-Randomized Studies - of Interventions (ROBINS-I) tool for non-randomized studies. If sufficient homogeneous data are available, meta-analyses are performed. Current systematic reviews on rate control in AF have primarily focused on acute rate control using the intravenous administration of calcium channel blockers and beta blockers. However, systematic reviews comparing these two drug classes for long-term rate control are lacking, and current guidelines offer little guidance for choosing one drug over the other. This systematic review with meta-analysis will compare the effects of calcium channel blockers and beta blockers on heart rate and provide a comprehensive overview of clinical outcomes and side effects in the treatment of AF. It aims to provide a comprehensive overview, helping clinicians tailor rate control for individual patients. PROSPERO CRD42024526695",
+      "tldr": "This systematic review with meta-analysis will compare the effects of calcium channel blockers and beta blockers on heart rate and provide a comprehensive overview of clinical outcomes and side effects in the treatment of AF, to provide a comprehensive overview, helping clinicians tailor rate control for individual patients.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 24,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "In patients presenting to the emergency department with atrial fibrillation with rapid ventricular response, are calcium channel blockers more effective than beta-blockers for acute management of rate control?",
+      "authors": [
+        "J. Dang"
+      ],
+      "journal": "",
+      "year": 2020,
+      "s2Id": "6cd82c39f42e4ee4cbd678ef1c0d3cc8e3fd4b6e",
+      "tldr": "The evidence on the efficacy of nondihydropyridine calcium channel blockers compared to beta-blockers for acute atrial fibrillation rate control in the emergency department setting was examined and revealed that CCBs were superior to BBs because of their rapid onset of action and the lower number of doses they required to sustain ventricular rate control.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 11,
+      "publicationTypes": [],
+      "fieldsOfStudy": [],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "A Comparison of the Impact of Pharmacological Treatments on Cardioversion, Rate Control, and Mortality in Data-Driven Atrial Fibrillation Phenotypes in Critical Care",
+      "authors": [
+        "Alexander Lacki",
+        "A. Martínez-Millana"
+      ],
+      "journal": "Bioengineering",
+      "year": 2024,
+      "doi": "10.3390/bioengineering11030199",
+      "pmid": "38534473",
+      "s2Id": "e9f505f79a86f43545348662cdecde035c22e51b",
+      "abstract": "Critical care physicians are commonly faced with patients exhibiting atrial fibrillation (AF), a cardiac arrhythmia with multifaceted origins. Recent investigations shed light on the heterogeneity among AF patients by uncovering unique AF phenotypes, characterized by differing treatment strategies and clinical outcomes. In this retrospective study encompassing 9401 AF patients in an intensive care cohort, we sought to identify differences in average treatment effects (ATEs) across different patient groups. We extract data from the MIMIC-III database, use hierarchical agglomerative clustering to identify patients’ phenotypes, and assign them to treatment groups based on their initial drug administration during AF episodes. The treatment options examined included beta blockers (BBs), potassium channel blockers (PCBs), calcium channel blockers (CCBs), and magnesium sulfate (MgS). Utilizing multiple imputation and inverse probability of treatment weighting, we estimate ATEs related to rhythm control, rate control, and mortality, approximated as hourly and daily rates (%/h, %/d). Our analysis unveiled four distinctive AF phenotypes: (1) postoperative hypertensive, (2) non-cardiovascular mutlimorbid, (3) cardiovascular multimorbid, and (4) valvulopathy atrial dilation. PCBs showed the highest cardioversion rates across phenotypes, ranging from 11.6%/h (9.35–13.3) to 7.69%/h (5.80–9.22). While CCBs demonstrated the highest effectiveness in controlling ventricular rates within the overall patient cohort, PCBs and MgS outperformed them in specific phenotypes. PCBs exhibited the most favorable mortality outcomes overall, except for the non-cardiovascular multimorbid cluster, where BBs displayed a lower mortality rate of 1.33%/d [1.04–1.93] compared to PCBs’ 1.68%/d [1.10–2.24]. The results of this study underscore the significant diversity in ATEs among individuals with AF and suggest that phenotype-based classification could be a valuable tool for physicians, providing personalized insights to inform clinical decision making.",
+      "tldr": "The results of this study underscore the significant diversity in ATEs among individuals with AF and suggest that phenotype-based classification could be a valuable tool for physicians, providing personalized insights to inform clinical decision making.",
+      "citationCount": 1,
+      "influentialCitationCount": 0,
+      "referenceCount": 41,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://www.mdpi.com/2306-5354/11/3/199/pdf?version=1708424597",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Pre-ablation rate control therapy and direct-to-catheter ablation in patients with persistent atrial fibrillation: A DECAAF II subanalysis.",
+      "authors": [
+        "Radia Ksayer",
+        "Hadi Younes",
+        "E. Tsakiris",
+        "Bella Gonzalez Perez",
+        "Yishi Jia",
+        "Alina Upreti",
+        "G. Bidaoui",
+        "Christian Massad",
+        "A. Pandey",
+        "Han Feng",
+        "N. Marrouche"
+      ],
+      "journal": "Journal of interventional cardiac electrophysiology : an international journal of arrhythmias and pacing",
+      "year": 2026,
+      "doi": "10.1007/s10840-025-02218-1",
+      "pmid": "41491358",
+      "s2Id": "0c22aa5bdd4f1118a9e10c76cab998817b7ae988",
+      "tldr": "Prior treatment with diltiazem or metoprolol before ablation of PersAF did not show additional benefits in reducing patient outcomes such as AF recurrence, fibrosis, or improving QoL.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 10,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Intravenous Metoprolol Versus Diltiazem for Rate Control in Atrial Fibrillation",
+      "authors": [
+        "Shengdong Xiao",
+        "F. Ibarra",
+        "Mallory Cruz"
+      ],
+      "journal": "Annals of Pharmacotherapy",
+      "year": 2021,
+      "doi": "10.1177/10600280211056356",
+      "pmid": "34738470",
+      "s2Id": "3c10e367cc110c2555973a41f9ec6b6f062f75f9",
+      "abstract": "Background Currently, it remains unclear whether β-blockers or nondihydropyridine calcium channel blockers are preferred for the acute management of atrial fibrillation (AF). Objective The objective of this study was to compare the efficacy and safety of intravenous (IV) metoprolol and diltiazem for rate control. Methods This was a single-center, retrospective cohort study of patients who presented to the emergency department between 2015 and 2019 with AF with rapid ventricular rate (RVR) and received IV metoprolol or diltiazem. The primary outcome was the percentage of patients who achieved rate control (defined as heart rate < 100 beats per minute). Secondary outcomes included time to rate control, percentage of patients requiring additional agents for rate control, and incidence of cardioversion, bradycardia, and hypotension. Results A total of 200 patients were included in this study. Rate control was achieved in 35% and 41% of the metoprolol and diltiazem groups, respectively (P = 0.38). Mean time to rate control was not significantly different between the metoprolol and diltiazem groups (35 vs 21 minutes, P = 0.23). One patient developed hypotension, no patient developed bradycardia, and 4 patients required electric cardioversion. No adverse events were observed in patients with ejection fraction ≤40%. Conclusion and Relevance There was no difference in the achievement of rate control between IV metoprolol and diltiazem. This is the largest study to date comparing the two classes of agents for acute rate control in AF. No patient-specific factors were identified that would influence the preferential use of one medication over the other.",
+      "tldr": "This is the largest study to date comparing the two classes of agents for acute rate control in AF and there was no difference in the achievement of rate control between IV metoprolol and diltiazem.",
+      "citationCount": 7,
+      "influentialCitationCount": 0,
+      "referenceCount": 31,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Clinical Outcomes of Early Rhythm or Rate Control for New Onset Atrial Fibrillation Following Transcatheter Aortic Valve Replacement",
+      "authors": [
+        "Jitae A Kim",
+        "Usman S. Najam",
+        "C. M. Ternes",
+        "Q. Marashly",
+        "Mihail G. Chelu"
+      ],
+      "journal": "Cardiovascular Drugs and Therapy",
+      "year": 2024,
+      "doi": "10.1007/s10557-024-07577-x",
+      "pmid": "38869743",
+      "s2Id": "d6fb96453438b02be6923a568350c250be6c92b7",
+      "tldr": "The attenuated benefits of an early rhythm control strategy observed in this setting may be due to the overall high burden of comorbidities and advanced age of these patients.",
+      "citationCount": 1,
+      "influentialCitationCount": 0,
+      "referenceCount": 31,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Are beta-blockers more effective for rate control than calcium channel blockers in patients with atrial fibrillation?",
+      "authors": [
+        "M. Kumanova",
+        "J. Tibúrcio"
+      ],
+      "journal": "",
+      "year": 2014,
+      "s2Id": "b2af372269285d5bdb9a711475cc8ba36384116b",
+      "tldr": "Results were no longer statistically significant at 18 weeks from initiation of the study and when comparing proportion of ulcers with complete resolution of wound area between groups after 18 weeks, no significant difference was noted for HBOT compared with room air.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Abstract 15597: Unlocking Rate Control in Atrial Fibrillation: A Closer Look at the Intravenous Diltiazem and Metoprolol Duel - An Updated Systematic Review and Meta-Analysis",
+      "authors": [
+        "Syed Zamrak Khan",
+        "Muhammad Aslam khan",
+        "U. Akbar",
+        "Saad Farooq",
+        "Nouman Shafique",
+        "Ghanshyam Bhatta"
+      ],
+      "journal": "Circulation",
+      "year": 2023,
+      "doi": "10.1161/circ.148.suppl_1.15597",
+      "s2Id": "5819fd687789596b7faafa1902ee9b01be60a8fd",
+      "abstract": "\n Background:\n Intravenous beta-blockers and calcium channel blockers remain first-line therapeutic agents for hemodynamically stable atrial fibrillation patients with a rapid ventricular rate (AF-RVR) in emergency medical settings.\n \n Material and\n \n Methods:\n We conducted a thorough review of various sources, including PubMed, Embase, Cochrane databases, and clinicaltrials.gov registry. Our search covered the period from the inception of these databases up to May 20, 2023. We only selected studies that compared the effectiveness and safety of diltiazem and metoprolol in adult patients with AF-RVR who were in emergency medical settings or hospitalized. We focused on whether the drugs successfully controlled heart rate and if there were any cases of hypotension or bradycardia following drug administration.\n \n \n Results:\n Among the 150 identified studies, 19 were suitable. All these studies demonstrated a low to moderate risk of bias. The meta-analysis, using the Mantel-Haenszel random-effects model, revealed a higher success rate in achieving the rate control target with diltiazem compared to metoprolol [19 studies, n = 1732, Odds Ratio (OR): 1.65; 95% Confidence Intervals (CI):1.18 to 2.32; I^2 = 58%, P = 0.001]. In terms of safety, no significant difference was observed in the risk of hypotension with either drug [15 studies, n = 1477, OR: 1.12; 95% CI: 0.76 to 1.64; I^2 = 25%, P = 0.18]. However, an incidence of bradycardia was noticed with diltiazem [7 studies, n = 1203, OR: 2.85; 95% CI: 1.25 to 6.46; I^2 = 21%, P = 0.27].\n \n \n Conclusions:\n For patients with AF-RVR, intravenous diltiazem was more successful in achieving the desired rate control than metoprolol. Both drugs had similar rates of hypotension, but diltiazem had a slightly higher risk of bradycardia. These results indicate that diltiazem may be a better option for rate control in AF-RVR patients. However, high-quality randomized studies are needed to assess both medication's long-term safety and effectiveness in this group.\n",
+      "tldr": "For patients with AF-RVR, intravenous diltiazem was more successful in achieving the desired rate control than metoprolol, and indicates that diltiazem may be a better option for rate control in AF-RVR patients.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Calcium channel blockers improve exercise capacity and reduce N-terminal Pro-B-type natriuretic peptide levels compared with beta-blockers in patients with permanent atrial fibrillation.",
+      "authors": [
+        "S. R. Ulimoen",
+        "S. Enger",
+        "A. Pripp",
+        "M. Abdelnoor",
+        "H. Arnesen",
+        "K. Gjesdal",
+        "A. Tveit"
+      ],
+      "journal": "European heart journal",
+      "year": 2014,
+      "doi": "10.1093/eurheartj/eht429",
+      "pmid": "24135831",
+      "s2Id": "08e215eb2c158b06c1e5c0d45786fc1c405910ae",
+      "tldr": "Rate-reducing treatment with diltiazem or verapamil preserved exercise capacity and reduced levels of NT-proBNP compared with baseline, whereas treatment with metoprolol or carvedilol reduced the exercise capacity",
+      "citationCount": 77,
+      "influentialCitationCount": 2,
+      "referenceCount": 58,
+      "publicationTypes": [
+        "JournalArticle",
+        "Study"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://academic.oup.com/eurheartj/article-pdf/35/8/517/17153865/eht429.pdf",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Personalized rate control treatment for atrial fibrillation: a prospective case-control study on the use of diltiazem",
+      "authors": [
+        "A. Spadotto",
+        "G. Massaro",
+        "M. Amadori",
+        "L. Damaschin",
+        "C. Martignani",
+        "M. Ziacchi",
+        "M. Biffi",
+        "N. Galiè",
+        "G. Boriani",
+        "I. Diemberger"
+      ],
+      "journal": "Europace",
+      "year": 2023,
+      "doi": "10.1093/europace/euad122.070",
+      "s2Id": "ce47fedd54338f13311a4ff1f04b1cc9e8e587b6",
+      "abstract": "Abstract Funding Acknowledgements Type of funding sources: None. Background Recent ESC Atrial Fibrillation guidelines introduced some changes in the options for rate control, such as the possibility to combine beta-blockers (BB) and non-dihydropyridine calcium channel blockers (NDCC), to address the need of personalized pharmacologic rate control strategy for AF. However, there are limited data on this topic. Purpose The aim of our study was to explore the prognostic impact of a personalized therapy (PT) for rate control, including the use of NDDC in patients with heart failure (HF) or in combination with BB, compared to standard rate control therapy (ST) as defined by previous ESC guidelines. Methods This is a single centre prospective observational registry on patients referred to our University Hospital for the management of AF between October 2013 and February 2019. Results We enrolled 1112 patients on exclusive rate control treatment, 125 (11.2%) were identified as patients with PT and 987 (88.8%) were on ST. In the PT group, 93/125 (74.4%) patients were prescribed BB + NDCC (±digoxin), while 85/125 (68.0%) were HF patients prescribed with NDCC, diltiazem in all cases. The mean age of patients was 73.5±12.0 years and 72.5±12.7 years in ST and PT groups, respectively. The two cohorts were homogeneous in terms of male prevalence, left ventricular ejection fraction and CHA2DS2-VASc score; while, HF was more frequent in PT group both in terms of patients with NYHA class ≥2 (41.3% in ST vs. 64.8% in PT, p<0.001) and prescription of diuretics (72.2% in ST vs. 88.0% in PT, p<0.001). Patients treated with PT had no difference in one-year overall survival compared to those with a ST (Figure 1 A). Notably, patients with HF in ST had a worse prognosis (p<0.001). (Figure 1 B) Conclusions Our results suggest a potential outcome benefit of NDCC for rate-control in AF patients, either alone or in combination with BB, also in selected patients with HF. Future controlled studies are needed to confirm our findings, and to identify subjects with higher benefit from such personalized rate-control strategies.",
+      "tldr": "The results suggest a potential outcome benefit of NDCC for rate-control in AF patients, either alone or in combination with BB, also in selected patients with HF.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://academic.oup.com/europace/article-pdf/25/Supplement_1/euad122.070/50428265/euad122.070.pdf",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    }
+  ],
+  "total": 109
+}

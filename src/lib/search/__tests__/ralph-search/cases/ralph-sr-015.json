@@ -1,0 +1,59 @@
+{
+  "id": "ralph-sr-015",
+  "name": "Elicit-parity benchmark — 5 diverse queries",
+  "phase": 3,
+  "category": "benchmark",
+  "query": "What are the effects of SGLT2 inhibitors on heart failure outcomes?",
+  "expectedPapers": [
+    {
+      "titleFragment": "sglt2 inhibitors in heart failure",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "empagliflozin",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "meta-analysis",
+      "mustFind": false
+    },
+    {
+      "titleFragment": "systematic review",
+      "mustFind": false
+    }
+  ],
+  "rankingRules": [
+    {
+      "rule": "High evidence (I-II) should outnumber low evidence (IV-V) in top 10",
+      "check": "higher_level_outnumbers_lower",
+      "params": { "n": 10 }
+    }
+  ],
+  "metadataChecks": [
+    {
+      "check": "all_have_doi",
+      "threshold": 0.85
+    },
+    {
+      "check": "study_type_not_other",
+      "threshold": 0.5
+    },
+    {
+      "check": "has_abstract",
+      "threshold": 0.7
+    },
+    {
+      "check": "has_authors",
+      "threshold": 0.9
+    }
+  ],
+  "dedupChecks": [
+    {
+      "titleFragments": [
+        "genitourinary tract infections and sglt2 inhibitors",
+        "sglt2 inhibitors and mechanisms of cardiovascular benefit"
+      ],
+      "maxOccurrences": 1
+    }
+  ]
+}

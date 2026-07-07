@@ -1,0 +1,60 @@
+{
+  "id": "ralph-sr-009",
+  "name": "Recent evidence — GLP-1 RA cardiovascular outcomes 2024-2025",
+  "phase": 2,
+  "category": "recency",
+  "query": "GLP-1 receptor agonists cardiovascular outcomes 2024 2025",
+  "expectedPapers": [
+    {
+      "titleFragment": "glp-1",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "semaglutide",
+      "mustFind": false
+    },
+    {
+      "titleFragment": "tirzepatide",
+      "mustFind": false
+    },
+    {
+      "titleFragment": "cardiovascular",
+      "mustFind": false
+    },
+    {
+      "titleFragment": "meta-analysis",
+      "mustFind": false
+    }
+  ],
+  "rankingRules": [
+    {
+      "rule": "High evidence (I-II) should outnumber low evidence (IV-V) in top 10",
+      "check": "higher_level_outnumbers_lower",
+      "params": { "n": 10 }
+    }
+  ],
+  "metadataChecks": [
+    {
+      "check": "all_have_doi",
+      "threshold": 0.8
+    },
+    {
+      "check": "study_type_not_other",
+      "threshold": 0.4
+    },
+    {
+      "check": "year_nonzero",
+      "threshold": 0.95
+    },
+    {
+      "check": "has_abstract",
+      "threshold": 0.6
+    }
+  ],
+  "dedupChecks": [
+    {
+      "titleFragments": ["glp-1 receptor agonists and sglt2 inhibitors in stable kidney"],
+      "maxOccurrences": 1
+    }
+  ]
+}

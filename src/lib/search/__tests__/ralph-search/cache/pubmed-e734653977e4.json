@@ -1,0 +1,184 @@
+{
+  "source": "pubmed",
+  "query": "(metoprolol OR carvedilol OR bisoprolol OR atenolol OR propranolol) AND (compare AND beta-blockers AND versus AND calcium AND channel AND blockers AND rate AND control AND atrial AND fibrillation)",
+  "timestamp": "2026-03-02T14:57:43.599Z",
+  "results": [
+    {
+      "title": "Efficacy and Safety of Intravenous Diltiazem Versus Metoprolol in the Management of Atrial Fibrillation with Rapid Ventricular Response in the Emergency Department: A Comprehensive Umbrella Review of Systematic Reviews and Meta-analyses.",
+      "authors": [
+        "Jaya Fnu",
+        "Afzal Maria",
+        "Anusha Fnu",
+        "Kumari Muskan",
+        "Kumar Ajay",
+        "Saleem Saqib",
+        "Kumar Aman",
+        "Bhatia Vishal",
+        "Islam Rabia",
+        "Kumar Manoj",
+        "Kumar Rameet",
+        "Islam Hamza",
+        "Muzammil Muhammad Ali",
+        "Kumar Satesh",
+        "Khatri Mahima"
+      ],
+      "journal": "J Innov Card Rhythm Manag",
+      "year": 2024,
+      "doi": "10.19102/icrm.2024.15095",
+      "pmid": "39371447",
+      "abstract": "Atrial fibrillation (AF) is the most common cardiac arrhythmia in the United States, affecting 2.7-6.1 million people. AF can cause symptoms, but when it triggers a rapid ventricular response (RVR), most patients suffer from decompensation. Therefore, we performed an umbrella review of systematic reviews and meta-analyses comparing intravenous (IV) metoprolol and diltiazem to identify discrepancies, fill in knowledge gaps, and develop standardized decision-making guidelines for physicians to manage AF with RVR. A comprehensive search was conducted in PubMed, the Cochrane Library, and Scopus to identify studies for this umbrella review. The overall certainty of the evidence was assessed using the Grading of Recommendations Assessment, Development, and Evaluation method, while the quality of the included reviews was evaluated using AMSTAR 2, the Cochrane Collaboration tool, and the Newcastle-Ottawa scale. This study comprehensively analyzed four meta-analyses covering 11 randomized controlled trials and 19 observational studies. The analysis showed that IV diltiazem treatment was significantly more successful in rate control for AF with rapid ventricular response (RVR) than IV metoprolol (risk ratio [RR], 1.30; 95% confidence interval [CI], 1.09-1.56; I 2 = 0%; P = .003). IV diltiazem also led to a significantly greater reduction in ventricular rate (mean difference, -14.55; 95% CI, -16.93 to -12.16; I 2 = 72%; P &lt; .00001), particularly at 10 min. The analysis also revealed a significantly increased risk of hypotension associated with treatment with IV diltiazem (RR, 1.43; 95% CI, 1.14-1.79; I 2 = 0%; P = .002). In conclusion, IV diltiazem therapy achieved better rate control and ventricular rate decrease than metoprolol therapy in AF with RVR. Future clinical trials should compare calcium channel blockers and &#x3b2;-blockers for heart rate control efficacy and safety, considering adverse events.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Acute rate control with metoprolol versus diltiazem in atrial fibrillation with heart failure with reduced ejection fraction.",
+      "authors": [
+        "Kapustova Karolina",
+        "Phan Brian",
+        "Allison-Aipa Timothy",
+        "Choi Mia"
+      ],
+      "journal": "Am J Emerg Med",
+      "year": 2023,
+      "doi": "10.1016/j.ajem.2023.02.019",
+      "pmid": "36871480",
+      "abstract": "OBJECTIVE: Compare heart rate control between parenteral metoprolol and diltiazem and identify safety outcomes in the acute management of atrial fibrillation (AFib) with rapid ventricular response (RVR) in patients with heart failure with reduced ejection fraction (HFrEF). METHODS: This retrospective, single-center, cohort study included adult patients with HFrEF who received intravenous (IV) metoprolol or diltiazem for AFib RVR in the emergency department (ED). The primary outcome was rate control defined as HR &lt;100&#xa0;bpm or a HR reduction &#x2265;20% within 30&#xa0;min of first dose administration. The secondary outcomes included rate control within 60&#xa0;min and 120&#xa0;min from first dose, need for repeat dosing, and disposition. Safety outcomes included hypotensive and bradycardic events. RESULTS: Out of 552 patients, 45 patients met the inclusion criteria with 15 in the metoprolol group and 30 in the diltiazem group. Using bootstrapping method, patients treated with metoprolol were equally able to reach the primary outcome as those treated with diltiazem (BCa 95% CI: 0.14, 4.31). Hypotensive and bradycardia events remained zero in both groups. CONCLUSION: Our study provides further evidence that short term use of diltiazem is likely as safe and effective as metoprolol in the acute management of HFrEF patients with AFib RVR and provides support for the use of non-dihydropyridine calcium channel blockers (non-DHP CCBs) in this patient population.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [
+        "Adult",
+        "Humans",
+        "Diltiazem",
+        "Atrial Fibrillation",
+        "Metoprolol",
+        "Heart Failure",
+        "Cohort Studies",
+        "Retrospective Studies",
+        "Stroke Volume",
+        "Heart Rate",
+        "Ventricular Dysfunction, Left",
+        "Hypotension"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Comparison of diltiazem and metoprolol for atrial fibrillation with rapid ventricular rate: Systematic review and meta-analysis.",
+      "authors": [
+        "Sharda Saurabh C",
+        "Bhatia Mandip S"
+      ],
+      "journal": "Indian Heart J",
+      "year": 2022,
+      "doi": "10.1016/j.ihj.2022.10.195",
+      "pmid": "36334652",
+      "abstract": "BACKGROUND: Intravenous calcium channel blockers or beta-blockers are the preferred rate control medications for hemodynamically stable patients with atrial fibrillation with rapid ventricular rate (AF-RVR) in the emergency department. OBJECTIVES: To compare the efficacy of intravenous diltiazem and metoprolol for rate control and safety with respect to development of hypotension and bradycardia in patients with AF-RVR. METHODS: For this systematic review and meta-analysis, we searched PubMed, Embase, Cochrane databases, and the clinicaltrials.gov registry between database inception and 30th May 2021. Articles were included if they compared efficacy and safety of diltiazem versus metoprolol in critically ill adult patients hospitalized with AF-RVR. Outcome measures were achievement of rate control, development of new hypotension, and bradycardia after drug administration. RESULTS: Of 86 records identified, 14 were eligible, all of which had a low to moderate risk of overall bias. The meta-analysis (Mantel-Haenszel, random-effects model) showed that diltiazem use was associated with increased achievement of rate control target compared to metoprolol [14 studies, n&#xa0;=&#xa0;1732, Odds Ratio (OR): 1.92; 95% Confidence Intervals (CI):1.26 to 2.90; I2&#xa0;=&#xa0;61%]. In the pooled analysis, no differences were seen in hypotension using diltiazem vs metoprolol [12 studies, n&#xa0;=&#xa0;1477, OR: 0.96; 95% CI:0.61 to 1.52; I2&#xa0;=&#xa0;35%] or bradycardia [9 studies, n&#xa0;=&#xa0;1203, OR: 2.44; 95% CI: 0.82 to 7.31; I2&#xa0;=&#xa0;48%]. CONCLUSIONS: Intravenous diltiazem is associated with increased achievement of rate control target in patients with AF-RVR compared to metoprolol, while both medications are associated with similar incidence of hypotension and bradycardia.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Meta-Analysis",
+        "Systematic Review",
+        "Journal Article"
+      ],
+      "meshTerms": [
+        "Adult",
+        "Humans",
+        "Diltiazem",
+        "Atrial Fibrillation",
+        "Metoprolol",
+        "Bradycardia",
+        "Hypotension",
+        "Heart Rate"
+      ],
+      "studyType": "meta_analysis",
+      "evidenceLevel": "I",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Intravenous Metoprolol Versus Diltiazem for Rate Control in Atrial Fibrillation.",
+      "authors": [
+        "Xiao Sheng Qi",
+        "Ibarra Francisco",
+        "Cruz Mallory"
+      ],
+      "journal": "Ann Pharmacother",
+      "year": 2022,
+      "doi": "10.1177/10600280211056356",
+      "pmid": "34738470",
+      "abstract": "BACKGROUND: Currently, it remains unclear whether &#x3b2;-blockers or nondihydropyridine calcium channel blockers are preferred for the acute management of atrial fibrillation (AF). OBJECTIVE: The objective of this study was to compare the efficacy and safety of intravenous (IV) metoprolol and diltiazem for rate control. METHODS: This was a single-center, retrospective cohort study of patients who presented to the emergency department between 2015 and 2019 with AF with rapid ventricular rate (RVR) and received IV metoprolol or diltiazem. The primary outcome was the percentage of patients who achieved rate control (defined as heart rate &lt; 100 beats per minute). Secondary outcomes included time to rate control, percentage of patients requiring additional agents for rate control, and incidence of cardioversion, bradycardia, and hypotension. RESULTS: A total of 200 patients were included in this study. Rate control was achieved in 35% and 41% of the metoprolol and diltiazem groups, respectively (P&#x2009;=&#x2009;0.38). Mean time to rate control was not significantly different between the metoprolol and diltiazem groups (35 vs 21 minutes, P&#x2009;=&#x2009;0.23). One patient developed hypotension, no patient developed bradycardia, and 4 patients required electric cardioversion. No adverse events were observed in patients with ejection fraction &#x2264;40%. CONCLUSION AND RELEVANCE: There was no difference in the achievement of rate control between IV metoprolol and diltiazem. This is the largest study to date comparing the two classes of agents for acute rate control in AF. No patient-specific factors were identified that would influence the preferential use of one medication over the other.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [
+        "Atrial Fibrillation",
+        "Bradycardia",
+        "Calcium Channel Blockers",
+        "Diltiazem",
+        "Heart Rate",
+        "Humans",
+        "Hypotension",
+        "Metoprolol",
+        "Retrospective Studies"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "&#x3b2;-Blockers versus calcium channel blockers for acute rate control of atrial fibrillation with rapid ventricular response: a systematic review.",
+      "authors": [
+        "Martindale Jennifer L",
+        "deSouza Ian S",
+        "Silverberg Mark",
+        "Freedman Joseph",
+        "Sinert Richard"
+      ],
+      "journal": "Eur J Emerg Med",
+      "year": 2015,
+      "doi": "10.1097/MEJ.0000000000000227",
+      "pmid": "25564459",
+      "abstract": "This is a systematic review of the literature to compare the efficacy of calcium channel blockers to &#x3b2;-blockers for acute rate control of atrial fibrillation with rapid ventricular response in the emergency department setting. PubMed, EMBASE, and the Cochrane Registry were searched. Relative risk (95% confidence interval) was calculated between drugs and methodological quality of included studies was evaluated. Of the 1003 studies yielded by our initial search, two met inclusion criteria and provided sufficient data. These were randomized double-blinded studies (n=92) comparing intravenous diltiazem with intravenous metoprolol. The combined relative risk of acute rate control by diltiazem versus metoprolol was 1.8 (95% confidence interval 1.2-2.6). On the basis of the paucity of available evidence, diltiazem may be more effective than metoprolol in achieving rapid rate control, but high-quality randomized studies are needed.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "meshTerms": [
+        "Adrenergic beta-Antagonists",
+        "Anti-Arrhythmia Agents",
+        "Atrial Fibrillation",
+        "Calcium Channel Blockers",
+        "Humans"
+      ],
+      "studyType": "systematic_review",
+      "evidenceLevel": "I",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    }
+  ],
+  "total": 5
+}

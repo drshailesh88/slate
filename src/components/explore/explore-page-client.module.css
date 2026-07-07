@@ -1,0 +1,49 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.idle {
+  margin: 48px 0 0;
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resultItem {
+  list-style: none;
+}
+
+.resultItem.animated {
+  animation: resultEntrance var(--motion-base) var(--ease-out) both;
+}
+
+@keyframes resultEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(var(--motion-shift));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* The global reduced-motion rule (globals.css §8.4) already collapses
+   animation-duration; it doesn't touch animation-delay, so a staggered list
+   would still reveal itself one item at a time. Zero the delay too. */
+@media (prefers-reduced-motion: reduce) {
+  .resultItem.animated {
+    animation-delay: 0s;
+  }
+}

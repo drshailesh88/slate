@@ -1,0 +1,399 @@
+{
+  "source": "pubmed",
+  "query": "Colchicine post-MI anti-inflammatory cardiovascular",
+  "timestamp": "2026-03-02T17:03:02.338Z",
+  "results": [
+    {
+      "title": "Neutrophil methylmalonic acid promotes microthrombus formation and adverse cardiac remodeling post-myocardial infarction through activating IL-6 signaling pathway-mediated NETosis.",
+      "abstract": "BACKGROUND: Neutrophils contribute critically to adverse cardiac remodeling following acute myocardial infarction (AMI), yet the precise regulatory mechanisms remain unclear. Our previous findings identified methylmalonic acid (MMA) as a novel cardiovascular prognostic biomarker. Thus, we aimed to investigate whether neutrophil-derived MMA mediates neutrophil extracellular trap (NET) formation and subsequent adverse cardiac remodeling post-MI, and to elucidate potential underlying mechanisms. METHODS: Serum and neutrophil MMA levels were measured in humans and mice with AMI. Neutrophil-specific Mmut knockout mice (S100a8Cre Mmutflox/flox) were treated with GSK484 (PAD4 inhibitor) or DNase I (NET-degrading agent) to evaluate the role of neutrophil-derived MMA in cardiac NET formation and adverse remodeling after MI. High-throughput RNA sequencing was performed on isolated neutrophils to identify molecular mechanisms. RESULTS: Compared with patients with angina, patients with AMI displayed significantly increased MMA levels in serum and neutrophils, particularly pronounced in neutrophils. Elevated NET markers were observed in thrombus tissue from patients with AMI with higher neutrophil MMA. Similarly, Mmut knockout mice exhibited increased NET formation, greater microthrombus burden, and worsened cardiac dysfunction 4&#xa0;weeks after MI compared with S100a8Cre controls. NETosis-targeted interventions (GSK484 or DNase I) substantially reduced microthrombus formation and adverse cardiac remodeling, especially in Mmut knockout mice. Integrated transcriptomic and multifactorial analyses revealed that activation of the neutrophil IL-6/JAK1/STAT3 signaling pathway plays a key role in MMA-induced NETosis, which was largely compromised by the treatment with an IL-6 neutralizing antibody. Moreover, colchicine, an FDA-approved anti-inflammatory agent, significantly inhibited neutrophilic IL-6 expression, NETosis, and microthrombus formation, thereby attenuating post-MI cardiac remodeling against the hazards of neutrophil MMA elevation. CONCLUSIONS: Neutrophil-derived MMA promotes NETosis and microthrombus formation through IL-6 activation, contributing to maladaptive cardiac remodeling post-MI. These findings identify neutrophil MMA as a novel immunometabolic trigger driving NET-mediated adverse cardiac remodeling and suggest colchicine as a promising therapeutic strategy to prevent heart failure post-MI, particularly in patients with elevated neutrophil MMA contents.",
+      "authors": [
+        "Yige Liu",
+        "Jiaxin Wang",
+        "Hengxuan Cai",
+        "Zeng Wang",
+        "Rongzhe Lu",
+        "Xiaoxuan Liu",
+        "Mingyang Wang",
+        "Wei Wang",
+        "Junchen Guo",
+        "Guanpeng Ma",
+        "Zhenming Zhang",
+        "Pengyan Wu",
+        "Qin She",
+        "Xiaoming Wu",
+        "Lili Xiu",
+        "Bo Yu",
+        "Xueqin Gao",
+        "Zhaoying Li",
+        "Shanjie Wang",
+        "Shaohong Fang"
+      ],
+      "year": 2026,
+      "journal": "BMC medicine",
+      "doi": "10.1186/s12916-026-04659-5",
+      "pmid": "41593670",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41593670",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [
+        "Animals",
+        "Myocardial Infarction",
+        "Extracellular Traps",
+        "Neutrophils",
+        "Humans",
+        "Mice",
+        "Signal Transduction",
+        "Interleukin-6",
+        "Ventricular Remodeling",
+        "Mice, Knockout",
+        "Male",
+        "Female",
+        "Thrombosis",
+        "Mice, Inbred C57BL"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Low-Dose Colchicine in Patients With Type 2 Diabetes With Recent Myocardial Infarction in the Colchicine Cardiovascular Outcome Trial (COLCOT): A Systematic Review.",
+      "abstract": "Patients with type 2 diabetes who experience myocardial infarction (MI) have up to a twofold higher risk of recurrent cardiovascular events compared with non-diabetic patients, even under optimal medical therapy. Colchicine, an inexpensive anti-inflammatory agent, has been proposed as an adjunctive therapy for secondary prevention. This systematic review evaluates the efficacy, safety, and cost-effectiveness of low-dose colchicine in this high-risk population, with emphasis on evidence from the COLCOT trial and related randomized controlled studies. A comprehensive search of PubMed, Embase, and the Cochrane Library was performed for studies published between October 2015 and February 2025. Eligible randomized controlled trials (RCTs) evaluated low-dose colchicine (0.5 mg/day) in post-MI patients, including subgroups with type 2 diabetes. Data were extracted on major adverse cardiovascular events (MACE), individual cardiovascular outcomes, adverse effects, and cost-effectiveness. Risk of bias was assessed using the Cochrane RoB 2.0 tool, identifying eight studies with low, four with moderate, and two with high risk of bias. A total of 14 RCTs involving approximately 12,000 participants were included. Colchicine significantly reduced MACE, with hazard ratios ranging from 0.65 to 0.77, and showed consistent benefits in stroke reduction (HR 0.26; 95% CI: 0.10-0.70) and urgent revascularization (HR 0.50; 95% CI: 0.31-0.81). Cost-effectiveness analyses demonstrated a dominant economic profile, lowering healthcare costs while improving quality-adjusted life years (QALYs). The most frequent adverse event was gastrointestinal intolerance, while a modest increase in pneumonia incidence was observed (0.9% vs. 0.4%; P = 0.03). No significant rise in cancer incidence or all-cause mortality was noted. Low-dose colchicine provides substantial cardiovascular protection and cost-effectiveness in post-MI patients, particularly those with type 2 diabetes. Although generally safe and well-tolerated, mild gastrointestinal effects and a slightly elevated infection risk warrant clinical vigilance. Further large-scale, standardized, and long-term trials are essential to confirm its role in contemporary secondary prevention.",
+      "authors": [
+        "Hurmah Shoaib",
+        "Amir Saeed",
+        "Usama Hassan Nawaz",
+        "Wajeeh-Ur-Rehman Kashif",
+        "Muazzam Hussain",
+        "Sabeen Irshad"
+      ],
+      "year": 2025,
+      "journal": "Cureus",
+      "doi": "10.7759/cureus.95715",
+      "pmid": "41322854",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41322854",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Colchicine attenuates chemical hypoxia-induced pyroptosis through downregulation of nuclear factor kappa B and caspase-1 in cardiomyocytes.",
+      "abstract": "Myocardial infarction (MI) is the leading cause of mortality worldwide. During MI, cardiomyocyte necrosis and inflammation are crucial in the post-MI cardiac remodeling process, including pyroptosis. Although colchicine is a well-known anti-inflammatory drug that has been clinically studied in the context of MI, its role in cardiac pyroptosis remains unclear. The aim of this study was to investigate the role of colchicine in pyroptosis in vitro, using CoCl2-induced H9c2 cells. Prior to the primary experiment, the hypoxic model in H9c2 cells was optimized by evaluating hypoxia-inducible factor-1 alpha (HIF-1&#x3b1;) expression and viability in cells exposed to various concentrations of CoCl2 at different time intervals. Subsequently, an in vitro hypoxia model was established by treating H9c2 cells with CoCl2 (600 &#xb5;M), with or without colchicine (1 &#xb5;M), for 3 hours. Flow cytometry was used to measure the expression of nuclear factor-kappa beta (NF-&#x3ba;B), interleukin 18 (IL-18), caspase-1, and HIF-1&#x3b1; in pyroptotic cells. Immunofluorescence was used to assess caspase-1 localization and its colocalization with propidium iodide during late-stage pyroptosis. Our data indicated that CoCl2-induced hypoxia significantly upregulated NF-&#x3ba;B, caspase-1, and IL-18 expression, and increased pyroptotic cell death in H9c2 cells. Colchicine treatment attenuated these effects, leading to a marked reduction in NF-&#x3ba;B, caspase-1, and IL-18 expression in hypoxic cells. Colchicine treatment significantly decreased the number of late pyroptotic cells. The protective effect of colchicine was more pronounced in late hypoxia (24-hour) setting compared to early hypoxia (3-hour). These findings suggest that colchicine attenuates cardiac pyroptosis in hypoxic H9c2 cells, as evidenced by the significant downregulation of key proteins involved in this pathway, including NF-&#x3ba;B, caspase-1, and IL-18. This protective effect appeared to be more effective in late hypoxia.",
+      "authors": [
+        "Budi Satrijo",
+        "Mohammad S Rohman",
+        "Aulanni'am Aulanni'am",
+        "Hidayat Sujuti",
+        "Bayu Lestari"
+      ],
+      "year": 2025,
+      "journal": "Narra J",
+      "doi": "10.52225/narra.v5i2.2245",
+      "pmid": "40951489",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40951489",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [
+        "In Vitro Techniques",
+        "Cell Line",
+        "Animals",
+        "Rats",
+        "Myocytes, Cardiac",
+        "Pyroptosis",
+        "Colchicine",
+        "Tubulin Modulators",
+        "Cell Hypoxia",
+        "NF-kappa B",
+        "Caspase 1",
+        "Interleukin-18",
+        "Signal Transduction",
+        "Down-Regulation"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "The effect of colchicine on myocardial infarction: An updated systematic review and meta-analysis of randomized controlled trials.",
+      "abstract": "INTRODUCTION: Myocardial infarction (MI) is associated with a significant post-event inflammatory response which further contributes to post-MI prognosis. Colchicine, an anti-inflammatory agent, exhibits potential benefits in various cardiovascular conditions such as coronary artery disease, pericarditis and atrial fibrillation. This meta-analysis predominantly aimed to provide an up-to-date evaluation of the efficacy and safety of colchicine in reducing adverse cardiovascular events in patients following acute MI. METHODS: A Comprehensive search was conducted on PubMed, Cochrane Library, Scopus, Google Scholar and clinicaltrials.gov for randomized controlled trials (RCTs) investigating the effect of colchicine on patients with MI from inception till May 2024. Our primary outcome was a composite of adverse cardiovascular events, while secondary outcomes included all-cause mortality, incidence of stroke, incidence of cardiac arrest, hospitalization urgency, incidence of recurrent MI, adverse gastrointestinal events and levels of high-sensitivity C - reactive protein (Hs-CRP). Risk ratios (RR) and mean differences (MD) were pooled under the random-effects model. RESULTS: Eleven trials with 7161 patients were included in our analysis out of which 3546 (49.51 %) were allocated to colchicine and 3591 (50.14 %) received placebo. Colchicine demonstrated statistically significant reduction in the composite of adverse cardiovascular events (RR = 0.75, 95 % CI: 0.60-0.94, P = 0.01, I2 = 47 %), and hospitalization urgency (RR = 0.46, 95 % CI: 0.31-0.68, P = 0.0001, I2 = 0 %) but statistically significant increment in adverse gastrointestinal events (RR = 1.86, 95 % CI: 1.14-3.02, P = 0.01, I2 = 79 %). However, all-cause mortality (RR = 1.00, 95 % CI: 0.72-1.39, P = 0.98, I2 = 0 %), incidence of cardiac arrest (RR = 0.81, 95 % CI: 0.33-1.95, P = 0.63, I2 = 0), incidence of stroke (RR = 0.45, 95 % CI: 0.17-1.19, P = 0.11, I2 = 36 %), incidence of recurrent MI (RR = 0.78, 95 % CI: 0.57-1.06, P = 0.11, I2 = 11 %) and the levels of hs-CRP (MD= -0.87, 95 %CI: -1.80-0.06, P=0.07, I2=67 % remained comparable across the two groups. CONCLUSION: The use of colchicine post-MI reduces the composite of adverse cardiovascular events, and hospitalization urgency but increases adverse gastrointestinal events. However, colchicine does not impact all-cause mortality, cardiac arrest, stroke incidence, incidence of recurrent MI and the levels of hs-CRP. Large scale multicenter RCTs especially with longer follow-up duration are warranted to validate these findings.",
+      "authors": [
+        "Ayesha Younas",
+        "Zainab Awan",
+        "Tehreem Khan",
+        "Samay Mehta",
+        "Aqsa Munir",
+        "Hafsa Arshad Azam Raja",
+        "Hritvik Jain",
+        "Ahmed Raza",
+        "Ayesha Sehar",
+        "Raheel Ahmed",
+        "Abdulqadir J Nashwan"
+      ],
+      "year": 2025,
+      "journal": "Current problems in cardiology",
+      "doi": "10.1016/j.cpcardiol.2024.102878",
+      "pmid": "39393620",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39393620",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Meta-Analysis",
+        "Systematic Review"
+      ],
+      "meshTerms": [
+        "Colchicine",
+        "Humans",
+        "Myocardial Infarction",
+        "Randomized Controlled Trials as Topic",
+        "Treatment Outcome",
+        "Anti-Inflammatory Agents"
+      ],
+      "studyType": "meta_analysis",
+      "evidenceLevel": "I",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Optical coherence tomography assessment of the impact of colchicine on non-culprit coronary plaque composition after myocardial infarction.",
+      "abstract": "AIMS: Low-dose colchicine reduces the risk of cardiovascular events after myocardial infarction (MI). The purpose of this study was to assess the effect of colchicine post-MI on coronary plaque morphology in non-culprit segments by optical coherence tomography (OCT). METHODS AND RESULTS: COCOMO-ACS was a double-blind, placebo-controlled trial that randomized 64 patients (median age 61.5 years; 9.4% female) with acute non-ST-segment elevation MI to colchicine 0.5&#x2005;mg daily or placebo for a median of 17.8 months in addition to guideline-recommended therapy. Participants underwent serial OCT imaging within a matched segment of non-culprit coronary artery that contained at least one lipid-rich plaque causing &#x2265;20% stenosis. The primary outcome was the change in minimum fibrous cap thickness (FCT) in non-culprit segments from baseline to final visit. Of those randomized, 57 (29 placebo, 28 colchicine) had evaluable imaging at baseline and follow-up. Overall, colchicine had no effect on relative (placebo +48.0 &#xb1; 35.1% vs. colchicine +62.4 &#xb1; 38.1%, P = 0.18) or absolute changes in minimum FCT (+29.2 &#xb1; 20.9&#x2005;&#xb5;m vs. + 37.2 &#xb1; 21.3&#x2005;&#xb5;m, P = 0.18), or change in maximum lipid arc (-38.8 &#xb1; 32.2&#xb0; vs. -54.8 &#xb1; 46.9&#xb0;, P = 0.18) throughout the imaged non-culprit segment. However, in patients assigned colchicine, cap rupture was less frequent (placebo 27.6% vs. colchicine 3.6%, P = 0.03). In post hoc analysis of 43 participants who had been followed for at least 16 months, minimum FCT increased to a greater extent in the colchicine group (placebo +38.7 &#xb1; 25.4% vs. colchicine +64.7 &#xb1; 34.1%, P = 0.005). CONCLUSION: In this study, OCT failed to detect an effect of colchicine on the minimum FCT or maximum lipid arc of plaques in non-culprit segments post-MI. The post hoc observation that minimum FCT increased to a greater extent with colchicine after more prolonged treatment suggests that longer-term studies may be required to detect the effect of anti-inflammatory therapies on plaque morphology by OCT. CLINICAL TRIAL NUMBER: Australian New Zealand Clinical Trials Registry Identifier, ACTRN12618000809235, registered on the 11 May 2018.",
+      "authors": [
+        "Peter J Psaltis",
+        "Mau T Nguyen",
+        "Kuljit Singh",
+        "Ajay Sinhal",
+        "Dennis T L Wong",
+        "Richard Alcock",
+        "Sharmalar Rajendran",
+        "Rustem Dautov",
+        "Peter Barlis",
+        "Sanjay Patel",
+        "Thalia Salagaras",
+        "Jessica A Marathe",
+        "Christina A Bursill",
+        "Nicholas J Montarello",
+        "Stefan M Nidorf",
+        "Peter L Thompson",
+        "Julie Butters",
+        "Alana R Cuthbert",
+        "Lisa N Yelland",
+        "Juanita L Ottaway",
+        "Yu Kataoka",
+        "Giuseppe Di Giovanni",
+        "Stephen J Nicholls"
+      ],
+      "year": 2025,
+      "journal": "Cardiovascular research",
+      "doi": "10.1093/cvr/cvae191",
+      "pmid": "39189611",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39189611",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Colchicine",
+        "Female",
+        "Male",
+        "Tomography, Optical Coherence",
+        "Middle Aged",
+        "Double-Blind Method",
+        "Plaque, Atherosclerotic",
+        "Aged",
+        "Coronary Vessels",
+        "Non-ST Elevated Myocardial Infarction",
+        "Treatment Outcome",
+        "Coronary Artery Disease",
+        "Predictive Value of Tests",
+        "Time Factors",
+        "Fibrosis",
+        "Coronary Stenosis",
+        "Rupture, Spontaneous"
+      ],
+      "studyType": "rct",
+      "evidenceLevel": "II",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Postcardiac Injury Syndrome After Cardiac Surgery: An Evidence-Based Review.",
+      "abstract": "Postcardiac injury syndrome (PCIS) serves as a comprehensive term encompassing a spectrum of conditions, namely postpericardiotomy syndrome, postmyocardial infarction (MI) related pericarditis (Dressler syndrome), and post-traumatic pericarditis stemming from procedures like percutaneous coronary intervention or cardiac implantable electronic device placement. These conditions collectively give rise to PCIS, triggered by cardiac injury affecting pericardial or pleural mesothelial cells, leading to subsequent inflammation syndromes spanning from uncomplicated pericarditis to substantial pleural effusion. A thorough literature search conducted on MEDLINE/PubMed utilizing search terms including \"postacute cardiac injury syndrome,\" \"postcardiac injury syndrome,\" \"postcardiotomy syndrome,\" \"postpericardiotomy syndrome,\" and \"post-MI pericarditis\" was instrumental in collating pertinent studies. To encapsulate the amassed evidence, relevant full-text materials were meticulously selected and amalgamated narratively. The pathophysiology of PCIS is proposed to manifest through an autoimmune-mediated process, particularly in predisposed individuals. This process involves the development of anti-actin and antimyosin antibodies after a cascade of cardiac injuries in diverse forms. Treatment strategies aimed at preventing recurrent PCIS episodes have shown efficacy, with colchicine and nonsteroidal anti-inflammatory drugs, including ibuprofen, demonstrating positive outcomes. Conversely, corticosteroids have exhibited no discernible benefit concerning prognosis or recurrence rates for this ailment. In summary, PCIS serves as a unifying term encompassing a spectrum of cardiac injury-related syndromes. A comprehensive review of relevant literature underscores the autoimmune-mediated pathophysiology in susceptible individuals. The therapeutic landscape involves the proficient use of colchicine and Nonsteroidal anti-inflammatory drugs to deter recurrent PCIS episodes, while corticosteroids do not appear to contribute to improved prognosis or reduced recurrence rates. This nuanced understanding contributes to an enhanced comprehension of PCIS and its multifaceted clinical manifestations, potentially refining its diagnosis and management.",
+      "authors": [
+        "Muhammad Hamza Tahir",
+        "Sidra Sohail",
+        "Daniyal Shahid",
+        "Iqbal Hussain",
+        "Jahanzeb Malik",
+        "Syeda Iqra",
+        "Maria Faraz"
+      ],
+      "year": 2024,
+      "journal": "Cardiology in review",
+      "doi": "10.1097/CRD.0000000000000662",
+      "pmid": "38323874",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38323874",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Cardiac Surgical Procedures",
+        "Pericarditis",
+        "Postpericardiotomy Syndrome",
+        "Postoperative Complications",
+        "Syndrome"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Cost-Effectiveness of Colchicine for Recurrent Cardiovascular Events.",
+      "abstract": "BACKGROUND: Colchicine is an anti-inflammatory therapy with a low associated cost that has been shown in 2 large studies to reduce cardiovascular (CV) events, but its use is associated with side effects. The main objective for this analysis is to determine whether colchicine therapy is cost-effective for the prevention of recurrent CV events in patients who have suffered a myocardial infarction (MI). METHODS: A decision model was developed to estimate the healthcare costs in Canadian dollars and the clinical outcomes among patients who have suffered an MI and are treated with colchicine. Probabilistic Markov modelling was used in combination with Monte Carlo simulation to derive expected lifetime costs and quality-adjusted life-years, which permitted the calculation of incremental cost-effectiveness ratios. Models were derived for both short-term (20 months) and long-term (lifelong) colchicine use in this population. RESULTS: Long-term colchicine use was dominant over standard of care, with lower average lifetime costs per patient (CAD$91,552.80 vs $97,085.84) and a higher average number of quality-adjusted life-years per patient (19.92 vs 19.80). Short-term colchicine use also dominated over standard of care. Results were consistent over a range of scenario analyses. CONCLUSIONS: Based on 2 large randomized controlled trials, treatment of patients post-MI with colchicine appears cost-effective, compared to the standard of care at the current price. Based on these studies and currently accepted willingness-to-pay thresholds in Canada, healthcare payers could consider funding long-term colchicine therapy for CV secondary prevention while we await results from ongoing trials. CONTEXTE: La colchicine est un traitement anti-inflammatoire peu co&#xfb;teux qui, selon deux grandes &#xe9;tudes, r&#xe9;duit le taux d&#x2019;&#xe9;v&#xe9;nements cardiovasculaires (CV), mais son utilisation est &#xe9;galement associ&#xe9;e &#xe0; des effets secondaires. L&#x2019;objectif principal de cette analyse &#xe9;tait de d&#xe9;terminer si le traitement par la colchicine pr&#xe9;sente un rapport co&#xfb;t-efficacit&#xe9; int&#xe9;ressant en pr&#xe9;vention des &#xe9;v&#xe9;nements CV r&#xe9;currents chez les patients ayant subi un infarctus du myocarde (IM). M&#xc9;THODOLOGIE: Un mod&#xe8;le d&#xe9;cisionnel a &#xe9;t&#xe9; mis au point pour estimer les co&#xfb;ts des soins de sant&#xe9; en dollars canadiens et les issues cli-niques chez les patients qui ont subi un IM et qui sont trait&#xe9;s par la colchicine. Un mod&#xe8;le probabiliste de Markov a &#xe9;t&#xe9; utilis&#xe9; en association avec une simulation de Monte-Carlo pour obtenir le co&#xfb;t attendu pendant la vie et le nombre d&#x2019;ann&#xe9;es de vie ajust&#xe9;es en fonction de la qualit&#xe9;, donn&#xe9;es qui ont permis de calculer les rapports co&#xfb;t-efficacit&#xe9; diff&#xe9;rentiels. Les mod&#xe8;les ont &#xe9;t&#xe9; adapt&#xe9;s pour l&#x2019;utilisation de la colchicine &#xe0; court terme (20 mois) et &#xe0; long terme (&#xe0; vie) dans la m&#xea;me population. R&#xc9;SULTATS: L&#x2019;utilisation de colchicine &#xe0; long terme donnait de meilleurs r&#xe9;sultats que le traitement de r&#xe9;f&#xe9;rence, avec un co&#xfb;t moyen &#xe0; vie par patient plus faible (91 552,80 $ CA c. 97 085,84 $ CA) et un plus grand nombre moyen d&#x2019;ann&#xe9;es de vie ajust&#xe9;es selon la qualit&#xe9; (19,92 c. 19,80). L&#x2019;utilisation &#xe0; court terme de la colchicine donnait aussi de meilleurs r&#xe9;sultats que le traitement de r&#xe9;f&#xe9;rence. Ces r&#xe9;sultats ont &#xe9;t&#xe9; observ&#xe9;s pour un &#xe9;ventail de sc&#xe9;narios analys&#xe9;s. CONCLUSIONS: Selon deux grands essais randomis&#xe9;s contr&#xf4;l&#xe9;s, le traitement par la colchicine des patients ayant subi un IM semble avoir un meilleur rapport co&#xfb;t-efficacit&#xe9; que le traitement de r&#xe9;f&#xe9;rence en fonction des co&#xfb;ts actuels. Selon ces &#xe9;tudes et les seuils de propension &#xe0; payer actuellement accept&#xe9;s au Canada, les payeurs pourraient envisager de financer le traitement &#xe0; long terme par la colchicine en pr&#xe9;vention d&#x2019;&#xe9;v&#xe9;nements CV secondaires, jusqu&#x2019;&#xe0; l&#x2019;obtention des r&#xe9;sultats des essais en cours.",
+      "authors": [
+        "Kevin E Boczar",
+        "Rob Beanlands",
+        "George Wells",
+        "Doug Coyle"
+      ],
+      "year": 2023,
+      "journal": "CJC open",
+      "doi": "10.1016/j.cjco.2023.02.005",
+      "pmid": "37377518",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37377518",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Assessing the Impact of Colchicine on Coronary Plaque Phenotype After Myocardial Infarction with Optical Coherence Tomography: Rationale and Design of the COCOMO-ACS Study.",
+      "abstract": "INTRODUCTION: Recurrent event rates after myocardial infarction (MI) remain unacceptably high, in part because of the continued growth and destabilization of residual coronary atherosclerotic plaques, which may occur despite lipid-lowering therapy. Inflammation is an important contributor to this ongoing risk. Recent studies have shown that the broad-acting anti-inflammatory agent, colchicine, may reduce adverse cardiovascular events in patients post-MI, although the mechanistic basis for this remains unclear. Advances in endovascular arterial wall imaging have allowed detailed characterization of the burden and compositional phenotype of coronary plaque, along with its natural history and responsiveness to treatment. One such example has been the use of optical coherence tomography (OCT) to demonstrate the plaque-stabilizing effects of statins on both fibrous cap thickness and the size of lipid pools within plaque. METHODS: The Phase 2, multi-centre, double-blind colchicine for coronary plaque modification in acute coronary syndrome (COCOMO-ACS) study will evaluate the effect of colchicine 0.5&#xa0;mg daily on coronary plaque features using serial OCT imaging in patients following MI. Recruitment for the trial has been completed with 64 participants with non-ST elevation MI randomized 1:1 to colchicine or placebo in addition to guideline recommended therapies, including high-intensity statins. The primary endpoint is the effect of colchicine on the minimal fibrous cap thickness of non-culprit plaque over an 18-month period. The COCOMO-ACS study will determine whether addition of colchicine 0.5&#xa0;mg daily to standard post-MI treatment has incremental benefits on high-risk features of coronary artery plaques. If confirmed, this will provide new mechanistic insights into how colchicine may confer clinical benefits in patients with atherosclerotic cardiovascular disease. TRIAL REGISTRATION: ANZCTR trial registration number: ACTRN12618000809235. Date of trial registration: 11th of May 2018.",
+      "authors": [
+        "Nicholas J Montarello",
+        "Kuljit Singh",
+        "Ajay Sinhal",
+        "Dennis T L Wong",
+        "Richard Alcock",
+        "Sharmalar Rajendran",
+        "Rustem Dautov",
+        "Peter Barlis",
+        "Sanjay Patel",
+        "Stefan M Nidorf",
+        "Peter L Thompson",
+        "Thalia Salagaras",
+        "Julie Butters",
+        "Nitesh Nerlekar",
+        "Giuseppe Di Giovanni",
+        "Juanita L Ottaway",
+        "Stephen J Nicholls",
+        "Peter J Psaltis"
+      ],
+      "year": 2022,
+      "journal": "Cardiovascular drugs and therapy",
+      "doi": "10.1007/s10557-021-07240-9",
+      "pmid": "34432196",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34432196",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Clinical Trial Protocol"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Acute Coronary Syndrome",
+        "Colchicine",
+        "Coronary Angiography",
+        "Coronary Artery Disease",
+        "Coronary Vessels",
+        "Hydroxymethylglutaryl-CoA Reductase Inhibitors",
+        "Lipids",
+        "Myocardial Infarction",
+        "Phenotype",
+        "Plaque, Atherosclerotic",
+        "Tomography, Optical Coherence",
+        "Double-Blind Method",
+        "Clinical Trials, Phase II as Topic",
+        "Multicenter Studies as Topic"
+      ],
+      "studyType": "rct",
+      "evidenceLevel": "II",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Inflammation in Coronary Atherosclerosis and Its Therapeutic Implications.",
+      "abstract": "Atherosclerotic coronary artery disease has a complex pathogenesis which extends beyond cholesterol intimal infiltration. It involves chronic inflammation of the coronary artery wall driven by systemic and local activation of both the adaptive and innate immune systems, which can ultimately result in the rupture or erosion of atherosclerotic plaque, leading to thrombosis and myocardial infarction (MI). Despite current best practice care, including the widespread use of cholesterol-lowering statins, atherothrombotic cardiovascular events recur at alarming rates post-MI. To a large extent, this reflects residual inflammation that is not adequately controlled by contemporary treatment. Consequently, there has been increasing interest in the pharmacological targeting of inflammation to improve outcomes in atherosclerotic cardiovascular disease. This has comprised both novel pathway-specific agents, most notably the anti-interleukin-1 beta monoclonal antibody, canakinumab, and the repurposing of established, broad-acting drugs, such as colchicine, that are already approved for the management of other inflammatory conditions. Here we discuss the importance of inflammation in mediating atherosclerosis and its complications and provide a timely update on \"new\" and \"old\" anti-inflammatory therapies currently being investigated to target it.",
+      "authors": [
+        "Nicholas J Montarello",
+        "Mau T Nguyen",
+        "Dennis T L Wong",
+        "Stephen J Nicholls",
+        "Peter J Psaltis"
+      ],
+      "year": 2022,
+      "journal": "Cardiovascular drugs and therapy",
+      "doi": "10.1007/s10557-020-07106-6",
+      "pmid": "33170943",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33170943",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Review"
+      ],
+      "meshTerms": [
+        "Atherosclerosis",
+        "Coronary Artery Disease",
+        "Humans",
+        "Inflammation",
+        "Myocardial Infarction",
+        "Plaque, Atherosclerotic"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    }
+  ],
+  "total": 9
+}

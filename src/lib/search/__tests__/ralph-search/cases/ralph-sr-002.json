@@ -1,0 +1,73 @@
+{
+  "id": "ralph-sr-002",
+  "name": "Evidence-weighted ranking — SGLT2 inhibitors (with quality ranker)",
+  "phase": 1,
+  "category": "ranking",
+  "query": "What are the effects of SGLT2 inhibitors on heart failure outcomes?",
+  "expectedPapers": [
+    {
+      "titleFragment": "sglt2 inhibitors in heart failure",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "empagliflozin",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "dapagliflozin",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "cardiovascular",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "meta-analysis",
+      "mustFind": false
+    }
+  ],
+  "rankingRules": [
+    {
+      "rule": "RCTs (Level II) should outnumber Level V papers in top 10",
+      "check": "topN_evidence_order",
+      "params": { "n": 10, "higherLevel": "II", "lowerLevel": "V" }
+    },
+    {
+      "rule": "SGLT2i systematic review should appear in top 5",
+      "check": "specific_paper_in_top_k",
+      "params": { "k": 5, "titleFragment": "sglt2 inhibitors" }
+    },
+    {
+      "rule": "High evidence (I-II) should outnumber low evidence (IV-V) in top 10",
+      "check": "higher_level_outnumbers_lower",
+      "params": { "n": 10 }
+    }
+  ],
+  "metadataChecks": [
+    {
+      "check": "all_have_doi",
+      "threshold": 0.8
+    },
+    {
+      "check": "study_type_not_other",
+      "threshold": 0.5
+    },
+    {
+      "check": "year_nonzero",
+      "threshold": 0.95
+    },
+    {
+      "check": "has_abstract",
+      "threshold": 0.7
+    }
+  ],
+  "dedupChecks": [
+    {
+      "titleFragments": [
+        "genitourinary tract infections and sglt2 inhibitors",
+        "effects of empagliflozin on right ventricular"
+      ],
+      "maxOccurrences": 1
+    }
+  ]
+}

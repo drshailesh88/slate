@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.count {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.num {
+  font-family: var(--mono);
+}
+
+.sources {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.sourcesButton {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.sourcesButton:hover {
+  color: var(--ink3);
+}
+
+.sourcesButton:disabled {
+  cursor: default;
+}
+
+.sourcesButton:disabled:hover {
+  color: var(--muted);
+}

@@ -1,0 +1,40 @@
+{
+  "id": "ralph-sr-015d",
+  "name": "Benchmark — Gut microbiome atrial fibrillation",
+  "phase": 3,
+  "category": "benchmark",
+  "query": "Gut microbiome atrial fibrillation",
+  "expectedPapers": [
+    {
+      "titleFragment": "gut microbi",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "atrial fibrillation",
+      "mustFind": true
+    }
+  ],
+  "rankingRules": [
+    {
+      "rule": "Majority of top 10 should be on-topic",
+      "check": "majority_on_topic",
+      "params": { "n": 10, "keywords": ["gut", "microbiome", "microbiota", "atrial fibrillation", "dysbiosis"], "threshold": 0.5 }
+    }
+  ],
+  "metadataChecks": [
+    {
+      "check": "all_have_doi",
+      "threshold": 0.7
+    },
+    {
+      "check": "has_abstract",
+      "threshold": 0.5
+    }
+  ],
+  "dedupChecks": [
+    {
+      "titleFragments": ["gut microbiota-derived isovaleric acid alleviates atrial fibrillation"],
+      "maxOccurrences": 1
+    }
+  ]
+}

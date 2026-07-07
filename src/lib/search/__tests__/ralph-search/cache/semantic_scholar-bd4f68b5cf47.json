@@ -1,0 +1,695 @@
+{
+  "source": "semantic_scholar",
+  "query": "Artificial intelligence ECG interpretation accuracy",
+  "timestamp": "2026-03-02T17:02:54.440Z",
+  "results": [
+    {
+      "title": "Artificial intelligence in resting ecg: higher accuracy in the interpretation of rhythm abnormalities",
+      "authors": [
+        "S. Havranek",
+        "B. Steklá",
+        "M. Vesela",
+        "J. Holub",
+        "L. Miksová",
+        "K. Kvasničková",
+        "N. Kubinova",
+        "M. Dusik",
+        "V. Čeledová",
+        "L. Plačková"
+      ],
+      "journal": "Europace",
+      "year": 2025,
+      "doi": "10.1093/europace/euaf085.029",
+      "s2Id": "2f90cb6a51fcaa8f80466e1af953b31d0d4492f3",
+      "abstract": "Abstract Introduction The electrocardiogram (ECG) examination is part of a daily routine in primary care, and non-cardiologist physicians deal with high misinterpretations of ECGs. To improve and expand the idea of automated ECG interpretation and support non-cardiologist physicians in ECG interpretation, a new AI-based ECG rhythm model (AI-ECGRM) was developed. The study aimed to test the AI-ECGRM for binary classification between sinus rhythm (SR) and arrhythmias (ARs). Methods The confusion matrix was used to verify the AI-ECGRM’s sensitivity, specificity, and positive and negative predictive values. Two physicians (one cardiologist) evaluated all ECGs used for testing. Results The testing dataset included 1,491 randomly selected ECGs (mean age 65±21 years; 54% female). Out of the testing dataset, the cardiologists diagnosed 1,271 ECGs as SR and 220 as AR. The AI-ECGRM labeled 1,169 as SR and 322 as AR out of the same ECGs. The model's sensitivity and specificity were 94% and 91%, respectively. The positive predictive value was 64%, and the negative predictive value was 99%. The high proportion of false positive results was caused mainly by ECGs with abnormalities other than ARs or by technical artifacts. The false negativity was given by missing a single extrasystoles by model. Conclusion The developed AI-ECGRM proved to be effective in distinguishing between the ECGs with regular SR and those with cardiac ARs, while the negative predictive value of the AI-ECGRM was nearly 100%.",
+      "tldr": "The developed AI-ECGRM proved to be effective in distinguishing between the ECGs with regular SR and those with cardiac ARs, while the negative predictive value of the AI-ECGRM was nearly 100%.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "[Artificial intelligence-enhanced ECG interpretation: a new era for electrocardiography?]",
+      "authors": [
+        "Fabrizio Ricci",
+        "Maria Luana Rizzuto",
+        "G. Bisaccia",
+        "Davide Mansour",
+        "S. Gallina",
+        "Luigi Sciarra",
+        "Giuseppe Bagliani",
+        "A. Dello Russo",
+        "Andrea Mortara",
+        "Giuseppe Ciliberti"
+      ],
+      "journal": "Giornale italiano di cardiologia",
+      "year": 2025,
+      "doi": "10.1714/4542.45427",
+      "pmid": "40864481",
+      "s2Id": "8e17d3e79e0b2c0afee9b99b235dafbaaff3e881",
+      "abstract": "Artificial intelligence (AI) is redefining ECG interpretation, transforming it from a static diagnostic tool into a dynamic, predictive, and integrative instrument. Although widespread, traditional rule-based ECG analysis has limitations in accuracy and adaptability, especially in complex clinical settings. In contrast, AI-driven models, particularly those employing machine learning and deep learning architectures, have demonstrated improved diagnostic performance across a broad spectrum of cardiovascular diseases, including atrial fibrillation, acute myocardial infarction, hypertrophic cardiomyopathy, and valvular heart disease. Notably, AI-ECG is now able to detect subclinical ventricular dysfunction, stratify long-term risk, and anticipate major adverse events before overt clinical manifestations occur. In addition to diagnosis, AI-ECG is emerging as a decision support tool in scenarios characterized by diagnostic uncertainty, such as syncope and cardio-oncology, and may significantly optimize triage and resource allocation. Multiparametric approaches further extend its utility, enabling simultaneous prediction of structural, functional, and electrical cardiac parameters. Wearable devices integrated with AI improve continuous monitoring and may decentralize arrhythmia detection and sudden cardiac death prevention. Despite these advances, critical challenges remain. Poorly explainable AI models, algorithmic bias, overfitting, data governance, and regulatory uncertainty demand rigorous methodological scrutiny. In this framework, federated learning architectures may enable continuous multicenter model refinement and enhance methodological robustness while safeguarding data privacy. The European AI Act and methodological checklists promoted by scientific societies offer a framework to address these issues, fostering transparency, equity, and clinical validity. If validated and implemented responsibly, AI-enhanced ECG has the potential to enhance - not replace - clinical reasoning, advancing a precision medicine paradigm based on both technological innovation and human expertise.",
+      "tldr": "If validated and implemented responsibly, AI-enhanced ECG has the potential to enhance - not replace - clinical reasoning, advancing a precision medicine paradigm based on both technological innovation and human expertise.",
+      "citationCount": 1,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Occlusion myocardial infarction and artificial intelligence: A perspective on out-of-hospital ECG interpretation",
+      "authors": [
+        "Andrew J Bishop",
+        "Benjamin N. Meadley"
+      ],
+      "journal": "Paramedicine",
+      "year": 2025,
+      "doi": "10.1177/27536386251371078",
+      "s2Id": "7aa6eadf91086a642ddbbc89ee3854774b48033f",
+      "abstract": "The traditional ST-segment elevation myocardial infarction (STEMI) paradigm has directed the identification and treatment of acute coronary occlusion (ACO) in the in-hospital and out-of-hospital (OOH) environment. Growing evidence suggests that it fails to identify a substantial proportion of ACO cases, leading to delays in intervention and missed treatment opportunities. The occlusion myocardial infarction (OMI) paradigm has emerged as a more inclusive diagnostic framework, emphasising the recognition of ACO regardless of ST-segment elevation. While OMI offers a more accurate classification, its adoption in OOH settings presents challenges, particularly due to the complexity of ECG interpretation and variability in clinician expertise. Artificial intelligence (AI) has the potential to address these limitations by providing real-time ECG analysis, improving diagnostic accuracy, and reducing inter-rater variability. AI-driven models, particularly artificial neural networks, have demonstrated superior sensitivity in detecting ACO compared to clinician interpretation using the traditional STEMI criteria, with the ability to identify occlusion earlier and more consistently. Additionally, AI integration with telemedicine could facilitate remote expert consultation, ensuring timely decision-making, particularly in resource-limited settings. By enhancing diagnostic accuracy and enabling earlier intervention, AI has the potential to improve prehospital cardiac care, and ultimately, patient outcomes. Future research should focus on optimising AI models, integrating them into OOH workflows, and validating their real-world effectiveness in acute coronary syndrome management.",
+      "tldr": "By enhancing diagnostic accuracy and enabling earlier intervention, AI has the potential to improve prehospital cardiac care, and ultimately, patient outcomes.",
+      "citationCount": 2,
+      "influentialCitationCount": 0,
+      "referenceCount": 64,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "The Use of Artificial Intelligence in ECG Interpretation in the Outpatient Setting: A Scoping Review",
+      "authors": [
+        "Raghavee Neupane",
+        "Oksana Denis",
+        "Mollie Goudy",
+        "Mark Lezanic",
+        "Brandon Nguyen",
+        "M. Nguyen",
+        "Jared Plasencia",
+        "Victor Hugo Spitz",
+        "Vanessa Stalls",
+        "Abraham Yacaman",
+        "Robin J Jacobs"
+      ],
+      "journal": "Cureus",
+      "year": 2025,
+      "doi": "10.7759/cureus.94113",
+      "pmid": "41209885",
+      "s2Id": "86e0412d658c4ca2399973b53729e3a9a77a18c6",
+      "abstract": "Cardiovascular disease remains the leading cause of death across all demographics globally. The 12-lead ECG is a key diagnostic tool for early detection; however, its interpretation is complex and prone to error, particularly in outpatient settings. AI, especially deep learning models such as convolutional neural networks (CNNs), has shown potential in improving ECG interpretation, but its effectiveness outside hospital environments remains underexplored. This scoping review summarizes the use of deep learning algorithms for ECG interpretation in outpatient settings, focusing on diagnostic accuracy and clinical utility. A systematic, comprehensive literature search was conducted using EMBASE, Ovid MEDLINE, and Web of Science. Included studies examined AI-based ECG interpretation in outpatient care. Studies set in emergency departments, case reports, reviews, and purely theoretical AI models were excluded. Data on study design, AI methods used, and clinical outcomes were extracted. Study quality was assessed using the Joanna Briggs Institute Critical Appraisal tools. Findings from this review demonstrate that AI-assisted ECG interpretation, particularly using deep learning, improves diagnostic accuracy and enables earlier detection of cardiac conditions. These tools show the greatest potential in resource-limited outpatient settings, helping reduce misdiagnosis rates and easing the burden on specialists. However, limitations persist, including small and homogenous sample sizes, and a tendency for some algorithms to overdiagnose. Issues such as data standardization, lack of diversity in training datasets, and limited external validation by cardiologists hinder real-world application. Larger, more representative datasets and robust clinical testing are essential to enhance the generalizability and reliability of these tools. AI integration into outpatient ECG interpretation holds significant promise for improving cardiovascular diagnostics, particularly in underserved areas. Future research should prioritize real-world validation across diverse populations and emphasize cardiologist oversight to ensure clinical safety and effectiveness.",
+      "tldr": "It is demonstrated that AI-assisted ECG interpretation, particularly using deep learning, improves diagnostic accuracy and enables earlier detection of cardiac conditions, and these tools show the greatest potential in resource-limited outpatient settings.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 29,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Artificial intelligence in resting ECG: Higher accuracy in the interpretation of rhythm abnormalities",
+      "authors": [
+        "Š. Havránek",
+        "B. Steklá",
+        "Michaela Veselá",
+        "J. Holub",
+        "Michaela Zemkova",
+        "L. Miksová",
+        "K. Kvasničková",
+        "Nikol Kubínová",
+        "Jean-Claude Lubanda",
+        "Milan Dusik",
+        "Josef Marek",
+        "V. Čeledová",
+        "L. Plačková"
+      ],
+      "journal": "Cor et Vasa",
+      "year": 2024,
+      "doi": "10.33678/cor.2023.096",
+      "s2Id": "eba27d5095e5e1c565668c33561752c46eb498d3",
+      "citationCount": 1,
+      "influentialCitationCount": 0,
+      "referenceCount": 18,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "http://e-coretvasa.cz/doi/10.33678/cor.2023.096.pdf",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Diagnostic accuracy of a smartphone application for artificial intelligence-based interpretation of 12-lead ECG in primary care (AMSTELHEART-1)",
+      "authors": [
+        "J. Himmelreich",
+        "R. E. Harskamp"
+      ],
+      "journal": "European Heart Journal",
+      "year": 2023,
+      "doi": "10.1093/eurheartj/ehad655.2982",
+      "s2Id": "32c7920731a71c1e4657d9c33bccfb45416c25bd",
+      "abstract": "\n \n \n The use of 12-lead electrocardiogram (ECG) is common in routine primary care, however it can be difficult for less experienced ECG readers to adequately interpret the ECG.\n \n \n \n To validate a novel smartphone application as a stand-alone interpretation tool for 12-lead ECG in primary care.\n \n \n \n We recruited consecutive patients who underwent 12-lead ECG as part of routinely indicated primary care in the Netherlands. All ECGs were assessed by a smartphone application which analyses a photographed image of 12-lead ECG for automated interpretation, installed on an Android platform and an iOS platform. We validated the application for detecting: 1) any major ECG abnormality (MEA, primary outcome) defined as atrial fibrillation/flutter (AF), markers of (past) myocardial ischemia or clinically relevant impulse and/or conduction abnormalities; or 2) AF (key secondary outcome). The reference standard was a blinded expert panel.\n \n \n \n We included 290 patients from 11 Dutch general practices with median age 67 (IQR 55-74) years, 48% were female. On reference ECG, 71 patients (25%) had MEA, 35 (12%) had AF. The app's sensitivity and specificity for MEA were 86% (95%CI:76-93) and 92% (95%CI:87-95), respectively. For AF, sensitivity and specificity were 97% (95%CI:85-100) and 99% (95%CI:97-100), respectively. Performance was comparable between Android and iOS platform (Kappa=0.95, 95%CI:0.91-0.99 and Kappa=1.00, 95%CI:1.00-1.00 for MEA and AF, respectively).\n \n \n \n A smartphone application that interprets photographed 12-lead ECG images had good diagnostic accuracy in a primary care setting for major ECG abnormalities, and near-perfect properties for diagnosing AF.\n",
+      "tldr": "A smartphone application that interprets photographed 12-lead ECG images had good diagnostic accuracy in a primary care setting for major ECG abnormalities, and near-perfect properties for diagnosing AF.",
+      "citationCount": 3,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://academic.oup.com/eurheartj/article-pdf/44/Supplement_2/ehad655.2982/53609200/ehad655.2982.pdf",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Validation of an automated artificial intelligence system for 12‑lead ECG interpretation.",
+      "authors": [
+        "R. Herman",
+        "A. Demolder",
+        "B. Vavrik",
+        "M. Martonak",
+        "V. Boza",
+        "V. Kresnakova",
+        "A. Iring",
+        "Timotej Paluš",
+        "J. Bahyl",
+        "Olivier Nelis",
+        "M. Beles",
+        "Davide Fabbricatore",
+        "L. Perl",
+        "J. Bartunek",
+        "R. Hatala"
+      ],
+      "journal": "Journal of electrocardiology",
+      "year": 2023,
+      "doi": "10.1016/j.jelectrocard.2023.12.009",
+      "pmid": "38154405",
+      "s2Id": "ac2ff18e8c7072d99aa9012d81cb528a009f9c09",
+      "abstract": "BACKGROUND\nThe electrocardiogram (ECG) is one of the most accessible and comprehensive diagnostic tools used to assess cardiac patients at the first point of contact. Despite advances in computerized interpretation of the electrocardiogram (CIE), its accuracy remains inferior to physicians. This study evaluated the diagnostic performance of an artificial intelligence (AI)-powered ECG system and compared its performance to current state-of-the-art CIE.\n\n\nMETHODS\nAn AI-powered system consisting of 6 deep neural networks (DNN) was trained on standard 12‑lead ECGs to detect 20 essential diagnostic patterns (grouped into 6 categories: rhythm, acute coronary syndrome (ACS), conduction abnormalities, ectopy, chamber enlargement and axis). An independent test set of ECGs with diagnostic consensus of two expert cardiologists was used as a reference standard. AI system performance was compared to current state-of-the-art CIE. The key metrics used to compare performances were sensitivity, specificity, positive predictive value (PPV), negative predictive value (NPV), and F1 score.\n\n\nRESULTS\nA total of 932,711 standard 12‑lead ECGs from 173,949 patients were used for AI system development. The independent test set pooled 11,932 annotated ECG labels. In all 6 diagnostic categories, the DNNs achieved high F1 scores: Rhythm 0.957, ACS 0.925, Conduction abnormalities 0.893, Ectopy 0.966, Chamber enlargement 0.972, and Axis 0.897. The diagnostic performance of DNNs surpassed state-of-the-art CIE for the 13 out of 20 essential diagnostic patterns and was non-inferior for the remaining individual diagnoses.\n\n\nCONCLUSIONS\nOur results demonstrate the AI-powered ECG model's ability to accurately identify electrocardiographic abnormalities from the 12‑lead ECG, highlighting its potential as a clinical tool for healthcare professionals.",
+      "tldr": "The results demonstrate the AI-powered ECG model's ability to accurately identify electrocardiographic abnormalities from the 12‑lead ECG, highlighting its potential as a clinical tool for healthcare professionals.",
+      "citationCount": 27,
+      "influentialCitationCount": 1,
+      "referenceCount": 17,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Enhancing Diagnostic Accuracy in Dyspnea: The Role of AI-Enhanced ECG Interpretation",
+      "authors": [
+        "S. Asif",
+        "Ayesha Mushtag"
+      ],
+      "journal": "Research Posters",
+      "year": 2025,
+      "doi": "10.31986/issn.2689-0690_rdw.stratford_research_day.177_2025",
+      "s2Id": "ac9891402057d316a197341ee7a08a0194e63326",
+      "abstract": "Dyspnea is a frequent and diagnostically challenging presentation in emergency departments, requiring rapid distinction between cardiac and non-cardiac causes. Traditional approaches, including NT-proBNP testing and clinical assessment, often lack optimal sensitivity and specificity. Recent advancements in artificial intelligence (AI) have introduced AI-enhanced electrocardiogram (ECG) analysis as a promising diagnostic tool capable of identifying cardiac dysfunction with high accuracy.\n\nA structured literature review was performed using PubMed to identify randomized controlled trials, prospective validations, and systematic reviews published between 2018 and 2024. Studies evaluating AI-ECG performance, NT-proBNP testing, and clinical assessment in adult patients presenting with dyspnea were included. Data extracted included sensitivity, specificity, and area under the receiver operating characteristic curve (AUC) for each diagnostic method. Studies focusing on external validation of AI models and clinical applicability were prioritized to ensure relevance to real-world emergency department settings.",
+      "tldr": "A structured literature review was performed to identify randomized controlled trials, prospective validations, and systematic reviews published between 2018 and 2024 and studies evaluating AI-ECG performance, NT-proBNP testing, and clinical assessment in adult patients presenting with dyspnea were included.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "Review"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Artificial Intelligence-Based Automated Interpretation of Images of Electrocardiograms: Development and Multinational Validation of ECG-GPT",
+      "authors": [
+        "A. Khunte",
+        "V. Sangha",
+        "E. K. Oikonomou",
+        "Lovedeep Singh Dhingra",
+        "Arya Aminorroaya",
+        "A. Coppi",
+        "S. Vasisht Shankar",
+        "Bobak J. Mortazavi",
+        "Deepak L. Bhatt",
+        "H. Krumholz",
+        "G. Nadkarni",
+        "A. Vaid",
+        "R. Khera"
+      ],
+      "journal": "medRxiv",
+      "year": 2024,
+      "doi": "10.1101/2024.02.17.24302976",
+      "pmid": "38405776",
+      "s2Id": "19c2f3476ca86af8ee8b0a24fcb95854b9ac80fe",
+      "abstract": "Timely and accurate assessment of electrocardiograms (ECGs) is crucial for diagnosing, triaging, and clinically managing patients. Current workflows rely on a computerized ECG interpretation using rule-based tools built into the ECG signal acquisition systems with limited accuracy and flexibility. In low-resource settings, specialists must review every single ECG for such decisions, as these computerized interpretations are not available. Additionally, high-quality interpretations are even more essential in such low-resource settings as there is a higher burden of accuracy for automated reads when access to experts is limited. Artificial Intelligence (AI)-based systems have the prospect of greater accuracy yet are frequently limited to a narrow range of conditions and do not replicate the full diagnostic range. Moreover, these models often require raw signal data, which are unavailable to physicians and necessitate costly technical integrations that are currently limited. To overcome these challenges, we developed and validated a format-independent vision encoder-decoder model - ECG-GPT - that can generate free-text, expert-level diagnosis statements directly from ECG images. The model shows robust performance, validated on 2.6 million ECGs across 6 geographically distinct health settings: (1) 2 large and diverse US health systems- Yale-New Haven and Mount Sinai Health Systems, (2) a consecutive ECG dataset from a central ECG repository from Minas Gerais, Brazil, (3) the prospective cohort study, UK Biobank, (4) a Germany-based, publicly available repository, PTB-XL, and (5) a community hospital in Missouri. The model demonstrated consistently high performance (AUROC[≤]0.81) across a wide range of rhythm and conduction disorders. This can be easily accessed via a web-based application capable of receiving ECG images and represents a scalable and accessible strategy for generating accurate, expert-level reports from images of ECGs, enabling accurate triage of patients globally, especially in low-resource settings.",
+      "tldr": "A format-independent vision encoder-decoder model that can generate free-text, expert-level diagnosis statements directly from ECG images, enabling accurate triage of patients globally, especially in low-resource settings is developed and validated.",
+      "citationCount": 10,
+      "influentialCitationCount": 1,
+      "referenceCount": 48,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10889032",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Performance of an artificial intelligence-powered smartphone application in the UK clinical settings: ECG automation compared to healthcare professionals",
+      "authors": [
+        "Ahmed Kassem",
+        "John Folkes",
+        "S. Mukherjee",
+        "James Rosengarten"
+      ],
+      "journal": "The Egyptian Heart Journal",
+      "year": 2025,
+      "doi": "10.1186/s43044-025-00689-1",
+      "pmid": "41099922",
+      "s2Id": "c05d69806a4a856fc701aa6a481500fd97d4c217",
+      "abstract": "The electrocardiogram (ECG) is widely used in clinical practice, but accurate interpretation requires significant expertise. Variability in training leads to inconsistent diagnostic accuracy amongst healthcare professionals. Artificial intelligence (AI) applications, such as PMCardio (Powerful Medical, Samorin, Slovakia), can digitise and interpret ECGs. While validated in selected populations, its performance compared to clinicians in UK practice has not been assessed. Seventy-six healthcare professionals interpreted eight ECG traces (seven abnormal, one normal). Their performance was compared with the PMCardio application. Accuracy and time were recorded. Healthcare professionals achieved a mean accuracy rate of 67.1% (SD 24.0%), improving with seniority (junior 60%, mid-level 67.5%, senior 80%). PMCardio achieved perfect accuracy on the tested ECGs. Clinicians interpreted faster (median 23.7 s, range 9.1 s) compared to PMCardio (39.0 s, range 8.0 s), noting that the application’s timing included operational steps such as loading and capturing ECG images. PMCardio demonstrated higher diagnostic accuracy than healthcare professionals but required longer interpretation times. Given the small dataset (8 ECGs) and lack of patient context, results should be interpreted cautiously. While AI tools may support clinicians and enhance consistency, they may also introduce uncertainty for less experienced users. Further studies with larger, real-world datasets are needed before widespread adoption.",
+      "tldr": "PMCardio demonstrated higher diagnostic accuracy than healthcare professionals but required longer interpretation times, given the small dataset (8 ECGs) and lack of patient context, results should be interpreted cautiously.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 30,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Abstract 4369183: Artificial Intelligence in Non-Invasive Fetal ECG: A Systematic Review of Extraction and Analysis Techniques",
+      "authors": [
+        "M. Marouf",
+        "Omar Daas",
+        "Bassel Alrabadi",
+        "Yamen Refai",
+        "Zaid Badran",
+        "Natalie Bandak",
+        "Nour Alshujaieh",
+        "Loay Abu-Irsheid"
+      ],
+      "journal": "Circulation",
+      "year": 2025,
+      "doi": "10.1161/circ.152.suppl_3.4369183",
+      "s2Id": "e32d699a9e36a4be65be4c05727234ebfe5ea2dd",
+      "abstract": "\n Background:\n Abdominal fetal electrocardiography (fECG) is an emerging noninvasive tool for fetal monitoring. A key challenge is separating the weak fetal signal from overlapping maternal ECG and external noise. Recent advances in machine learning (ML), particularly in deep learning, hold promise for enhancing signal extraction and detecting subtle fetal cardiac issues, such as arrhythmias. These advances could standardize diagnosis and support early intervention, necessitating a structured review of current practices.\n \n \n Hypothesis:\n We hypothesize that advanced AI techniques and intensive learning models significantly improve the extraction and interpretation of abdominal fECG signals. These models are expected to outperform traditional signal processing in detecting key fetal cardiac features and abnormalities, including arrhythmias and congenital heart disease (CHD), thereby improving diagnostic accuracy and clinical decision-making.\n \n \n Aims:\n To review and synthesize studies utilizing AI methods for fECG signal processing, with a focus on diagnostic performance in fetal monitoring, arrhythmia detection, and CHD diagnosis.\n \n \n Methods:\n A systematic search of PubMed, Scopus, Web of Science, and Cochrane databases was conducted for studies published from 2015 to January 2025. Included studies applied AI techniques to fECG data in prenatal evaluation. Data were extracted using a standardized form.\n \n \n Results:\n Sixty-two studies were included, with sample sizes ranging from 5 to 757 (median: 68) and gestational ages from 21 to 42 weeks. The most commonly used preprocessing methods are bandpass filtering and resampling. Accuracy ranged from 71% to 100%, F1-score from 70.15% to 100%, precision from 75.33% to 100%, and sensitivity from 63% to 100%. CNN-BiLSTM achieved perfect performance across all metrics. Other models (CNN, DenseNet, W-NETR, U-Net) showed near-perfect results, especially for QRS and R-peak detection. For arrhythmia detection, accuracy reached 98.56%, with one CNN model achieving 100% specificity and sensitivity. CHD detection studies have shown accuracies of 71–95%, with the top models achieving 94% across precision, sensitivity, and F1-score. Hybrid and deep learning models consistently outperformed simpler approaches.\n \n \n Conclusion:\n AI-driven, intensive learning shows strong potential for improving fECG signal quality and diagnostic accuracy. While the results are promising, further clinical validation is necessary for routine implementation in prenatal care.\n",
+      "tldr": "Analyses of studies utilizing AI methods for fECG signal processing show strong potential for improving fECG signal quality and diagnostic accuracy, and hybrid and deep learning models consistently outperformed simpler approaches.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "The Role of Artificial Intelligence in Early Detection and Risk Stratification of Coronary Artery Disease Using ECG and Imaging Data",
+      "authors": [
+        "Fahmida Khatoon",
+        "Naglaa Ahmed Abdellatif Ginawi",
+        "Ameera Amirah Fahad Alshammeri",
+        "Yassir Musa",
+        "Manal zayed Alshammary",
+        "Farida Habib Khan",
+        "Sarah Salem Alshammari",
+        "Saud Obaykay Abdulkarim Alshammary",
+        "Khalid Saud Mahal Alnawmasi",
+        "Mohammed Musaad Abdullah Alshammari",
+        "Basmah Mousa Alharbi",
+        "Salma Daher Alshammari",
+        "Hend Faleh Alreshidi"
+      ],
+      "journal": "Journal of Pioneering Medical Sciences",
+      "year": 2025,
+      "doi": "10.47310/jpms2025140913",
+      "s2Id": "53a19edebb7462c6ec3daa5fcc95ec7990ff75c7",
+      "abstract": "Coronary Artery Disease (CAD) remains a leading cause of morbidity and mortality worldwide. To evaluate the diagnostic performance of AI models in the early detection and risk stratification of CAD using ECG and imaging data and to compare their accuracy with cardiologist interpretation. Methods: This cross-sectional analytical study was conducted in Saudia, included 185 patients with suspected CAD who underwent both ECG and imaging evaluation. AI-based models, including convolutional neural networks for ECG and deep learning algorithms for imaging, were applied to detect CAD and stratify patients into risk categories. Cardiologist-confirmed diagnosis served as the reference standard. Results: The AI-ECG model achieved a sensitivity of 88.5%, specificity of 82.0% and an AUC of 0.90 (95% CI: 0.86–0.94). When ECG and imaging data were combined, diagnostic accuracy improved, with sensitivity of 92.4%, specificity of 85.2% and an AUC of 0.93 (95% CI: 0.89–0.96). AI-based risk stratification categorized 54 patients (29.2%) as low risk, 78 (42.2%) as intermediate risk and 53 (28.6%) as high risk. Confirmed CAD prevalence correlated strongly with AI-predicted risk groups, with 22.2% in the low-risk group and 88.7% in the high-risk group. Conclusion: Artificial intelligence demonstrates high accuracy in the early detection and risk stratification of CAD using ECG and imaging data. AI models performed comparably to cardiologists and offered significant efficiency gains. Integration of AI into cardiovascular workflows may enable earlier intervention, optimized resource allocation and improved patient outcomes. Further validation across larger and more diverse populations is warranted.",
+      "tldr": "Artificial intelligence demonstrates high accuracy in the early detection and risk stratification of CAD using ECG and imaging data and integration of AI into cardiovascular workflows may enable earlier intervention, optimized resource allocation and improved patient outcomes.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Diagnostic accuracy of the PMcardio smartphone application for artificial intelligence–based interpretation of electrocardiograms in primary care (AMSTELHEART-1)",
+      "authors": [
+        "J. Himmelreich",
+        "R. Harskamp"
+      ],
+      "journal": "Cardiovascular Digital Health Journal",
+      "year": 2023,
+      "doi": "10.1016/j.cvdhj.2023.03.002",
+      "pmid": "37351331",
+      "s2Id": "5526bc43cdf7400d4318d2bc631db9b30f596f6b",
+      "abstract": "Background The use of 12-lead electrocardiogram (ECG) is common in routine primary care, however it can be difficult for less experienced ECG readers to adequately interpret the ECG. Objective To validate a smartphone application (PMcardio) as a stand-alone interpretation tool for 12-lead ECG in primary care. Methods We recruited consecutive patients who underwent 12-lead ECG as part of routinely indicated primary care in the Netherlands. All ECGs were assessed by the PMcardio app, which analyzes a photographed image of 12-lead ECG for automated interpretation, installed on an Android platform (Samsung Galaxy M31) and an iOS platform (iPhone SE2020). We validated the PMcardio app for detecting any major ECG abnormality (MEA, primary outcome), defined as atrial fibrillation/flutter (AF), markers of (past) myocardial ischemia, or clinically relevant impulse and/or conduction abnormalities; or AF (key secondary outcome) with a blinded expert panel as reference standard. Results We included 290 patients from 11 Dutch general practices with median age 67 (interquartile range 55–74) years; 48% were female. On reference ECG, 71 patients (25%) had MEA and 35 (12%) had AF. Sensitivity and specificity of PMcardio for MEA were 86% (95% CI: 76%–93%) and 92% (95% CI: 87%–95%), respectively. For AF, sensitivity and specificity were 97% (95% CI: 85%–100%) and 99% (95% CI: 97%–100%), respectively. Performance was comparable between Android and iOS platform (kappa = 0.95, 95% CI: 0.91–0.99 and kappa = 1.00, 95% CI: 1.00–1.00 for MEA and AF, respectively). Conclusion A smartphone app developed to interpret 12-lead ECGs was found to have good diagnostic accuracy in a primary care setting for major ECG abnormalities, and near-perfect properties for diagnosing AF.",
+      "tldr": "A smartphone app developed to interpret 12-lead ECGs was found to have good diagnostic accuracy in a primary care setting for major ECG abnormalities, and near-perfect properties for diagnosing AF.",
+      "citationCount": 14,
+      "influentialCitationCount": 0,
+      "referenceCount": 35,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "http://www.cvdigitalhealthjournal.com/article/S2666693623000245/pdf",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Contrasting attitudes towards current and future artificial intelligence applications for computerised interpretation of electrocardiograms: a clinical stakeholder interview study",
+      "authors": [
+        "L. Hughes-Noehrer",
+        "Leda Channer",
+        "Gabriel Strain",
+        "Gregory Yates",
+        "Richard Body",
+        "Caroline Jay"
+      ],
+      "journal": "JAMIA Open",
+      "year": 2025,
+      "doi": "10.1093/jamiaopen/ooaf071",
+      "pmid": "40692805",
+      "s2Id": "e5bb59fbb41caf6cacda82aa95432beebb03477e",
+      "abstract": "Abstract Objectives To investigate clinicians’ attitudes towards current automated interpretation of ECG and novel AI technologies and their perception of computer-assisted interpretation. Materials and Methods We conducted a series of interviews with clinicians in the UK. Our study: (1) explores the potential for AI, specifically future “human-like” computing approaches, to facilitate ECG interpretation and support clinical decision making, and (2) elicits their opinions about the importance of explainability and trustworthiness of AI algorithms. Results We performed inductive thematic analysis on interview transcriptions from 23 clinicians and identified the following themes: (1) a lack of trust in current systems, (2) positive attitudes towards future AI applications and requirements for these, (3) the relationship between the accuracy and explainability of algorithms, and (4) opinions on education, possible deskilling, and the impact of AI on clinical competencies. Discussion Clinicians do not trust current computerised methods, but welcome future “AI” technologies. Where clinicians trust future AI interpretation to be accurate, they are less concerned that it is explainable. They also preferred ECG interpretation that demonstrated the results of the algorithm visually. Whilst clinicians do not fear job losses, they are concerned about deskilling and the need to educate the workforce to use AI responsibly. Conclusion Clinicians are positive about the future application of AI in clinical decision-making. Accuracy is a key factor of uptake and visualisations are preferred over current computerised methods. This is viewed as a potential means of training and upskilling, in contrast to the deskilling that automation might be perceived to bring.",
+      "tldr": "Clinicians’ attitudes towards current automated interpretation of ECG and novel AI technologies and their perception of computer-assisted interpretation are investigated to investigate clinicians’ attitudes towards current automated interpretation of ECG and novel AI technologies.",
+      "citationCount": 1,
+      "influentialCitationCount": 0,
+      "referenceCount": 47,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Artificial intelligence for Brugada syndrome diagnosis and gene variants interpretation.",
+      "authors": [
+        "Mobina Sahebnasagh",
+        "M. Farjoo"
+      ],
+      "journal": "American journal of cardiovascular disease",
+      "year": 2025,
+      "doi": "10.62347/yqhq1079",
+      "pmid": "40124093",
+      "s2Id": "97b3eb5dbaa444d28af66ebb071311f3bb92d6da",
+      "abstract": "Brugada Syndrome (BrS) is a hereditary cardiac condition associated with an elevated risk of lethal arrhythmias, making precise and prompt diagnosis vital to prevent life-threatening outcomes. The diagnosis of BrS is challenging due to the requirement of invasive drug challenge tests, limited human visual capacity to detect subtle electrocardiogram (ECG) patterns, and the transient nature of the disease. Artificial intelligence (AI) can detect almost all patterns of BrS in ECG, some of which are even beyond the capability of expert eyes. AI is subcategorized into several models, with deep learning being considered the most beneficial, boasting its highest accuracy among the other models. With the capability to discriminate subtle data and analyze extensive datasets, AI has achieved higher accuracy, sensitivity, and specificity compared to trained cardiologists. Meanwhile, AI proficiency in managing complex data enables us to discover unclassified genetic variants. AI can also analyze data extracted from induced pluripotent stem cell-derived cardiomyocytes to distinguish BrS from other inherited cardiac arrhythmias. The aim of this study is to present a synopsis of the evolution of various algorithms of artificial intelligence utilized in the diagnosis of BrS and compare their diagnostic abilities to trained cardiologists. In addition, the application of AI for classification of BrS gene variants is also briefly discussed.",
+      "tldr": "The aim of this study is to present a synopsis of the evolution of various algorithms of artificial intelligence utilized in the diagnosis of BrS and compare their diagnostic abilities to trained cardiologists.",
+      "citationCount": 1,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "The Accuracy of Artificial Intelligence-Based Models Applied to 12-Lead Electrocardiograms for the Diagnosis of Acute Coronary Syndrome: A Systematic Review",
+      "authors": [
+        "Aly Fawzy",
+        "Aleena Malik",
+        "Juan Pablo Díaz-Martínez",
+        "A. Orchanian‐Cheff",
+        "Sameer Masood"
+      ],
+      "journal": "Journal of the American College of Emergency Physicians Open",
+      "year": 2025,
+      "doi": "10.1016/j.acepjo.2025.100240",
+      "pmid": "41114130",
+      "s2Id": "0ab81b5d3db932df054f35e786a5399585db6646",
+      "abstract": "Objectives This systematic review aims to evaluate the diagnostic accuracy of artificial intelligence (AI) algorithms in acute coronary syndrome (ACS) detection using 12-lead electrocardiograms (ECGs). Methods Adhering to Preferred Reporting Items for Systematic Reviews guidelines, Ovid MEDLINE, Ovid Embase, Cochrane Central, and Cochrane Database of Systematic Reviews were searched up to June 15, 2023. Eligible studies involved adults with suspected ACS and employed AI for 12-lead ECG interpretation. The primary outcomes were sensitivity and specificity, with secondary outcomes including positive predictive value (PPV), negative predictive value (NPV), and accuracy. Risk of bias was evaluated using Prediction model Risk Of Bias Assessment Tool (PROBAST). Results From 2051 records, 24 studies were included. The sensitivity of AI-based diagnosis for ACS among the 24 studies varied from 68% to 98%, and the specificity varied from 41% to 98%. For subgroup analysis of ST-elevated myocardial infarction/occlusion myocardial infarction, sensitivity ranged from 68% to 97% and specificity from 68% to 99%. AI models outperformed clinicians interpreting ECGs retrospectively without knowledge of outcomes in sensitivity (90% of studies) and PPV (100% of studies), whereas clinicians had better NPV (70% of studies). One study compared AI with real-time emergency department physician interpretations. Three studies reported code availability. Thirty-eight percentage of studies showed a high risk of bias, with 50% showing unclear risk, although applicability concerns were minimal. Conclusion AI models show high diagnostic accuracy for ACS using 12-lead ECGs, with potential to enhance early diagnosis. However, variability in performance, transparency challenges with limited code availability, a high risk of bias in some studies, and minimal real-time comparisons underscore the necessity for standardized reporting and open-access practices.",
+      "tldr": "AI models show high diagnostic accuracy for ACS using 12-lead ECGs, with potential to enhance early diagnosis, however, variability in performance, transparency challenges with limited code availability, a high risk of bias in some studies, and minimal real-time comparisons underscore the necessity for standardized reporting and open-access practices.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 25,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Diagnostic accuracy of artificial intelligence (AI)-based models for acute myocardial infarction: a systematic review and meta-analysis",
+      "authors": [
+        "F. Giacobbe",
+        "M. Nebiolo",
+        "R. A. Cimino",
+        "M. Michelone",
+        "M. Petracca",
+        "S. Capoccia",
+        "O. De Filippo",
+        "F. Bruno",
+        "F. D'ascenzo",
+        "G. D. De Ferrari"
+      ],
+      "journal": "European Heart Journal",
+      "year": 2025,
+      "doi": "10.1093/eurheartj/ehaf784.1710",
+      "s2Id": "d000b9de945a7bffff26e304512ee60e7988a17c",
+      "abstract": "\n \n \n Early diagnosis of acute myocardial infarction (AMI) is crucial to reduce scar fibrosis and prevent further clinical complications related to left ventricular dysfunction or arrhythmias. The diagnosis of AMI is based on ECG, in addition to other non-invasive imaging techniques and clinical and laboratory parameters. Despite continuous improvements in diagnostic tools, manual interpretation of these methods can lead to potential inconsistencies between different observers. To address this issue, automated computer-based diagnostic systems using artificial intelligence (AI) have been developed. Several studies in the literature have presented machine learning (ML) or deep learning (DL) models to quickly and accurately assess the diagnosis of AMI in order to optimize treatment.\n \n \n \n To evaluate the performance of integrating AI-based models into standard clinical practice for the diagnosis of AMI using data from all validation and test cohorts available in the literature.\n \n \n \n A systematic search of PubMed, Scopus and Google Scholar identified studies evaluating the diagnostic accuracy of artificial intelligence algorithms for AMI diagnosis. Only data from validation and test cohorts were considered for the present analysis. Sensitivity and specificity were analyed for different types of AI (machine learning or deep learning) and for all MIs, STEMI only and NSTEMI only. Hierarchical models were used to estimate the summary receiver operating characteristic curve, sensitivity and specificity.\n \n \n \n A total of 23 studies with 198,955 patients and 27 AI-based diagnostic algorithms were included in the analysis. Our cohort of patients admitted with chest pain was predominantly male (62.9%) with a mean age of 62 years (IQR 59-64), and AMI was found in 90,088 (45.2%) cases. In most cases (14/27, 52%) ECG represented the primary data source of the model. The integration of an AI-based algorithm into standard practice was highly efficient in diagnosing AMI with an AUC of 0.97 (sensitivity 0.93, specificity 0.92). This result remained consistent when considering the ability to diagnose STEMI (AUC 0.96, sensitivity 0.89, specificity 0.93) or NSTEMI (AUC 0.97, sensitivity 0.95, specificity 0.90) separately. Finally, the use of a deep learning model was associated with slightly better performance (AUC 0.98, sensitivity 0.93, specificity 0.93) than machine learning (AUC 0.97, sensitivity 0.93, specificity 0.90).\n \n \n \n The integration of AI diagnostic algorithms into standard practice is associated with particularly efficient performance, which could accelerate the detection of myocardial infarction and prevent complications due to delayed treatment. These results were consistent for both STEMI and NSTEMI considered separately. DL models showed slightly better accuracy than ML models.AUC of AI-based models for AMI diagnosis  \n",
+      "tldr": "The integration of an AI-based algorithm into standard practice was highly efficient in diagnosing AMI with an AUC of 0.97 and the use of a deep learning model was associated with slightly better performance than machine learning, which could accelerate the detection of myocardial infarction and prevent complications due to delayed treatment.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Validation of an artificial intelligence system for holter ECG analysis",
+      "authors": [
+        "A. Janas",
+        "H. H. Henrike Hillmann",
+        "N. F. Z. Nikola Fajkis-Zajaczkowska",
+        "P. W. Przemyslaw Wegrzynowicz",
+        "A. H. Alexander Habermeier",
+        "D. D. David Duncker"
+      ],
+      "journal": "European Heart Journal",
+      "year": 2024,
+      "doi": "10.1093/eurheartj/ehae666.3439",
+      "s2Id": "e462a7fb5dcffcd5f7970171c14d8c72603d3be4",
+      "abstract": "\n \n \n Holter ECG is a commonly used tool to identify heart rhythm disorders. As physician-based analysis of such Holter ECG is time consuming, various approaches using computerized interpretation have been developed. However, accuracy of these tools remains inferior to physician-based analysis. Thus, this study assesses the diagnostic performance of an artificial intelligence (AI)-powered Holter ECG service in comparison to results from reference databases as well as with physician-based evaluation.\n \n \n \n 231 ECG recordings, covering 2,261 hours of ECG with annotations for 10,024,315 heartbeats from the following reference databases were used: MIT-BIH Arrhythmia (MITDB), American Heart Association ECG (AHDB), MIT-BIH Atrial Fibrillation (AFDB), Long Term Atrial Fibrillation (LTAFDB). Those recordings were originally collected from a mixed population of inpatients and outpatients between 1975 and 2008. Analysis of these recordings regarding the detection of QRS complexes, QRS classification and detection of Atrial Fibrillation (AF) was performed using a novel service for AI-based ECG analysis. Results were compared to the diagnosis stated within the database.\n QRS complex detection accuracy was performed on recordings from MITDB and AHADB by checking if time positions are within 150 ms to reference annotations. The QRS classification in three classes (normal, supraventricular, ventricular) was then compared for each detected heartbeat. Mismatches were adjudicated manually by three experts. Episodes of Atrial Fibrillation were detected in recordings from MITDB, AFDB and LTAFDB and compared to the reference episodes from the databases. The accuracy was evaluated based on the overlap with the reference annotations in the time-domain.\n \n \n \n Sensitivity and Precision of heartbeat detection compared to the reference databases exceeded 99% Figure 1 displays the results of heartbeat classification. Normal heartbeats were classified with a sensitivity of 99.6%, precision of 99.9% and specificity of 99.6%. For ventricular heartbeats, a sensitivity of 99.58 %, precision of 99.88 and specificity of 99.99% were achieved. Premature supraventricular contractions were recognized with a sensitivity of 99.58 %, precision of 100% and specificity of 100%.\n When comparing the 248,187 QRS complex classifications of MITDB and AHADB to the AI-powered analysis, 128 discrepancies were revealed. 43 were due to a discrepancy of convention as these beats were in sections that were also marked as AF episodes by the databases and the AI-powered analysis marks all beats in AF episodes as normal. Of the 85 remaining discrepancies, more than 87% were adjudicated in favor of the AI-powered analysis by the experts.\n Figure 2 shows the comparison of AF detection results showing Sensitivity and Precision above 99%.\n \n \n \n AI-powered Holter ECG analysis compared to reference ECG stripes exceed 99% of sensitivity, specificity and precision.QRS complex detectionAF/ AFib detection\n",
+      "tldr": "The diagnostic performance of an artificial intelligence (AI)-powered Holter ECG service in comparison to results from reference databases as well as with physician-based evaluation is assessed.",
+      "citationCount": 1,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Abstract 4146391: Multinational Validation of Fully Automated Diagnostic Reports using Artificial Intelligence-enabled Application for ECG Images",
+      "authors": [
+        "A. Khunte",
+        "V. Sangha",
+        "E. Oikonomou",
+        "Lovedeep Singh Dhingra",
+        "Arya Aminorroaya",
+        "A. Coppi",
+        "S. Vasisht Shankar",
+        "Bobak J. Mortazavi",
+        "D. Bhatt",
+        "H. Krumholz",
+        "Girish Nadkarni",
+        "A. Vaid",
+        "R. Khera"
+      ],
+      "journal": "Circulation",
+      "year": 2024,
+      "doi": "10.1161/circ.150.suppl_1.4146391",
+      "s2Id": "64b8c7a06da010fc600e6ec440d4cf33d5cac0ef",
+      "abstract": "\n Background:\n Accurate ECG interpretation is critical for triaging, diagnosis, and managing patients with cardiovascular conditions. Current computerized methods have limited accuracy and are often proprietary algorithms based on raw signal data. We sought to evaluate ECG-GPT, a novel vision-text transformer model capable of generating free-text diagnosis statements from images of ECGs.\n \n \n Methods:\n ECG-GPT was developed with 3 million ECGs at Yale and validated in 2 large and geographically distinct populations: (1) 1.4 million ECG images with diagnosis statements from Mount Sinai Health System (MSHS), NY, and (2) 45,389 ECG images with 6 diagnostic labels from UK Biobank (UKB). We employed 2 metrics: (A) a rule-based approach to evaluate diagnostic accuracy for 19 rhythm and conduction disorders on MSHS ECGs and 6 key conditions on UKB ECGs, and (B) semantic similarity (similar meaning) using a fine-tuned DistilBERT model. Using semantic similarity methods, we assessed the quality of generated text across the full range of ECG diagnoses by computing similarity both for all model-generated and reference statements and for subsets specific to ECGs flagged for each of the 19 extracted conditions. To establish baseline similarities, we also computed semantic similarities between random combinations of model-generated and reference statements within each of these sets.\n \n \n Results:\n The model performed well across multiple key labels, spanning rhythm and conduction disorders, including an AUROC of 0.92 for atrial fibrillation, 0.95 for left bundle branch block, and 0.90 for atrioventricular block (Table A). More importantly, in addition to the labels, ECG-GPT identified the full context of the diagnosis statements with allied conditions. It had a median pairwise cosine similarity of 0.86 (IQR 0.78-0.94), significantly greater than the median baseline similarity of 0.73 (IQR 0.66-0.79, p<0.001) (Table B). This separation between median pairwise and baseline similarity remained consistent across all 19 condition-specific subsets. Results were comparable in the UKB dataset, with AUROCs of 0.95, 0.92, and 0.95 for AF, ST, and SB, and AUROCs of 0.99, 0.99, and 0.95 for LBBB, RBBB, and AVb (Table C).\n \n \n Conclusion:\n Our model represents a scalable and accessible strategy for generating accurate, expert-level reports from photos of ECGs, validated across large, multinational datasets using both individual diagnostic labels and the comprehensiveness of the diagnostic statement.\n \n \n \n \n \n \n \n \n \n",
+      "tldr": "The ECG-GPT model represents a scalable and accessible strategy for generating accurate, expert-level reports from photos of ECGs, validated across large, multinational datasets using both individual diagnostic labels and the comprehensiveness of the diagnostic statement.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "A Talk with ChatGPT: The Role of Artificial Intelligence in Shaping the Future of Cardiology and Electrophysiology",
+      "authors": [
+        "A. Cersosimo",
+        "E. Zito",
+        "N. Pierucci",
+        "Andrea Matteucci",
+        "V. L. La Fazia"
+      ],
+      "journal": "Journal of Personalized Medicine",
+      "year": 2025,
+      "doi": "10.3390/jpm15050205",
+      "pmid": "40423076",
+      "s2Id": "0845f2fbe4b874cb5d43fd34d3e7caa65f66b1be",
+      "abstract": "Background: Artificial intelligence (AI) is poised to significantly impact the future of cardiology and electrophysiology, offering new tools to interpret complex datasets, improve diagnosis, optimize clinical workflows, and personalize therapy. ChatGPT-4o, a leading AI-based language model, exemplifies the transformative potential of AI in clinical research, medical education, and patient care. Aim and Methods: In this paper, we present an exploratory dialogue with ChatGPT to assess the role of AI in shaping the future of cardiology, with a particular focus on arrhythmia management and cardiac electrophysiology. Topics discussed include AI applications in ECG interpretation, arrhythmia detection, procedural guidance during ablation, and risk stratification for sudden cardiac death. We also examine the risks associated with AI use, including overreliance, interpretability challenges, data bias, and generalizability. Conclusions: The integration of AI into cardiovascular care offers the potential to enhance diagnostic accuracy, tailor interventions, and support decision-making. However, the adoption of AI must be carefully balanced with clinical expertise and ethical considerations. By fostering collaboration between clinicians and AI developers, it is possible to guide the development of reliable, transparent, and effective tools that will shape the future of personalized cardiology and electrophysiology.",
+      "tldr": "An exploratory dialogue with ChatGPT-4o is presented to assess the role of AI in shaping the future of cardiology, with a particular focus on arrhythmia management and cardiac electrophysiology.",
+      "citationCount": 32,
+      "influentialCitationCount": 0,
+      "referenceCount": 27,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    }
+  ],
+  "total": 691
+}

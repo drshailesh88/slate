@@ -1,0 +1,738 @@
+{
+  "source": "semantic_scholar",
+  "query": "Colchicine post-MI anti-inflammatory cardiovascular",
+  "timestamp": "2026-03-02T17:03:14.047Z",
+  "results": [
+    {
+      "title": "Colchicine to reduce coronavirus disease-19-related inflammation and cardiovascular complications in high-risk patients post-acute infection with SARS-COV-2—a study protocol for a randomized controlled trial",
+      "authors": [
+        "Shani S. Thankachen",
+        "N. Devasenapathy",
+        "Abhinav Bassi",
+        "Arpita Ghosh",
+        "S. Arfin",
+        "B. Gummidi",
+        "Aneesh Basheer",
+        "Ashfak Bangi",
+        "Dibakar Sahu",
+        "Ashish Bhalla",
+        "Merlin Blesson",
+        "Manish Jain",
+        "Vivekanand Jha"
+      ],
+      "journal": "Trials",
+      "year": 2024,
+      "doi": "10.1186/s13063-024-08205-7",
+      "pmid": "38863076",
+      "s2Id": "7af9f035f6ffd3359bb8c2210ef38c569c9714dd",
+      "abstract": "Background There is no known effective pharmacological therapy for long COVID, which is characterized by wide-ranging, multisystemic, fluctuating, or relapsing symptoms in a large proportion of survivors of acute COVID. This randomized controlled trial aims to assess the safety and efficacy of an anti-inflammatory agent colchicine, to reduce symptoms among those at high risk of developing long COVID. Methods This multi-centre, parallel arm, 1:1 individual randomized, placebo-controlled, double-blind superiority trial will enrol 350 individuals with persistent post-COVID symptoms. Participants will be randomized to either colchicine 0.5 mg once daily (< 70 kg) or twice daily (≥ 70 kg) or matched placebo for 26 weeks and will be followed up until 52 weeks after randomization. The primary trial objective is to demonstrate the superiority of colchicine over a placebo in improving distance walked in 6 min at 52 weeks from baseline. The secondary objectives are to assess the efficacy of colchicine compared to placebo with respect to lung function, inflammatory markers, constitutional symptoms, and mental health state. In a sub-sample of 100 participants, cardiac biomarkers of myocardial injury and myocardial oedema using MRI will be compared. Discussion Persistent inflammatory response following SARS-CoV-19 is one of the postulated pathophysiological mechanisms of long COVID. Colchicine, a low-cost anti-inflammatory agent, acts via multiple inflammatory pathways and has an established safety profile. This trial will generate evidence for an important health priority that can rapidly translate into practice. Trial registration This clinical trial has been registered prospectively on www.clinicaltrials.gov with registration CTRI/2021/11/038234 dated November 24, 2021.",
+      "tldr": "This randomized controlled trial aims to assess the safety and efficacy of an anti-inflammatory agent colchicine, to reduce symptoms among those at high risk of developing long COVID, to demonstrate the superiority of colchicine over a placebo in improving distance walked in 6 min at 52 weeks from baseline.",
+      "citationCount": 6,
+      "influentialCitationCount": 0,
+      "referenceCount": 27,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://trialsjournal.biomedcentral.com/counter/pdf/10.1186/s13063-024-08205-7",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Low-Dose Colchicine in Patients With Type 2 Diabetes With Recent Myocardial Infarction in the Colchicine Cardiovascular Outcome Trial (COLCOT): A Systematic Review",
+      "authors": [
+        "Hurmah Shoaib",
+        "Amir Saeed",
+        "U. Nawaz",
+        "Wajeeh-ur-Rehman Kashif",
+        "M. Hussain",
+        "Sabeen Irshad"
+      ],
+      "journal": "Cureus",
+      "year": 2025,
+      "doi": "10.7759/cureus.95715",
+      "pmid": "41322854",
+      "s2Id": "1647f7b29ebda92fa7ad1fbb292bd2af2bcfdea2",
+      "abstract": "Patients with type 2 diabetes who experience myocardial infarction (MI) have up to a twofold higher risk of recurrent cardiovascular events compared with non-diabetic patients, even under optimal medical therapy. Colchicine, an inexpensive anti-inflammatory agent, has been proposed as an adjunctive therapy for secondary prevention. This systematic review evaluates the efficacy, safety, and cost-effectiveness of low-dose colchicine in this high-risk population, with emphasis on evidence from the COLCOT trial and related randomized controlled studies. A comprehensive search of PubMed, Embase, and the Cochrane Library was performed for studies published between October 2015 and February 2025. Eligible randomized controlled trials (RCTs) evaluated low-dose colchicine (0.5 mg/day) in post-MI patients, including subgroups with type 2 diabetes. Data were extracted on major adverse cardiovascular events (MACE), individual cardiovascular outcomes, adverse effects, and cost-effectiveness. Risk of bias was assessed using the Cochrane RoB 2.0 tool, identifying eight studies with low, four with moderate, and two with high risk of bias. A total of 14 RCTs involving approximately 12,000 participants were included. Colchicine significantly reduced MACE, with hazard ratios ranging from 0.65 to 0.77, and showed consistent benefits in stroke reduction (HR 0.26; 95% CI: 0.10-0.70) and urgent revascularization (HR 0.50; 95% CI: 0.31-0.81). Cost-effectiveness analyses demonstrated a dominant economic profile, lowering healthcare costs while improving quality-adjusted life years (QALYs). The most frequent adverse event was gastrointestinal intolerance, while a modest increase in pneumonia incidence was observed (0.9% vs. 0.4%; P = 0.03). No significant rise in cancer incidence or all-cause mortality was noted. Low-dose colchicine provides substantial cardiovascular protection and cost-effectiveness in post-MI patients, particularly those with type 2 diabetes. Although generally safe and well-tolerated, mild gastrointestinal effects and a slightly elevated infection risk warrant clinical vigilance. Further large-scale, standardized, and long-term trials are essential to confirm its role in contemporary secondary prevention.",
+      "tldr": "Low-dose colchicine provides substantial cardiovascular protection and cost-effectiveness in post-MI patients, particularly those with type 2 diabetes, although generally safe and well-tolerated, mild gastrointestinal effects and a slightly elevated infection risk warrant clinical vigilance.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 43,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "22 Low dose colchicine post myocardial infarction-LoDoCo MI",
+      "authors": [
+        "T. Hennessy",
+        "G. Hillis"
+      ],
+      "journal": "Heart",
+      "year": 2018,
+      "doi": "10.1136/HEARTJNL-2018-ICS.22",
+      "s2Id": "cb600b5fa97c43c25deb0c7ee65938557bf91f6d",
+      "abstract": "Introduction Inflammation is key to plaque formation and rupture. Acute MI survivors have increased risk of further events, due to inflammation. Data on colchicine, an established anti-inflammatory, suggests a reduction in cardiovascular events by inflammatory attenuation. It may reduce complications post myocardial infarction (MI), but before this can be tested in a large randomised trial it’s essential to establish feasibility, safety and tolerability. The CANTOS study used this strategy, demonstrating a monoclonal antibody targeting inflammation significantly reduced events in MI survivors with persistently elevated hs-CRP. CANTOS provides the best evidence to date that inflammatory suppression improves outcomes after acute MI. Monoclonal antibody treatment is costly and unlikely to suitable for widespread use with adverse events an issue. Methods This single centre double-blind randomised controlled trial recruited 238 patients following acute MI (table 1). Adherence was analysed by pill count. Adverse Events were assessed by acceptability questionnaire and laboratory surveillance. hs-CRP levels were measured at baseline and 30 days.Abstract 22 Table 1 Patient characteristics according treatment group Characteristic Total (n= 238) Colchicine (n= 121) Placebo (n= 117) Age in years, median (IQR) 61 (52–70) 61 (52–69) 61 (53–70) Male 182 90 92 Diabetes 53 27 26 Hypertension 112 64 48 Prior or current smoking 144 75 69 ST-elevation myocardial infarction 134 64 70 Previous myocardial infarction 36 18 18 Prior myocardial revascularization 27 13 14 Coronary angiogram during index admission 237 120 117 PCI during index admission 213 107 106 Aspirin 237 120 117 Second anti-platelet agent 233 117 116 Beta blocker 220 113 107 ACE inhibitor 224 116 108 Statin 234 117 117 Body mass index, median (IQR) 28 (26–30) 28 (25–30) 27 (26–30) Baseline haemoglobin, g/L 140 (131–151) 140 (133–151) 141 (128–151) Baseline white cell count, 9.0 (7.4–10.7) 8.9 (7.4–10.9) 9.2 (7.4–10.6) Baseline neutrophil count 6.0 (4.7–7.7) 5.7 (4.7–7.6) 6.1 (4.8–7.8) Baseline lymphocyte count 1.9 (1.5–2.4) 1.8 (1.5–2.4) 1.9 (1.5–2.3) Baseline creatinine 76 (68–86) 75 (68–88) 77 (69–84) Baseline estimated GFR Baseline creatine kinase 249 (112–832) 208 (108–590) 325 (116–920) Baseline high sensitivity CRP 7.4 (3.0–16.9) 7.5 (3.1–15.6) 7.3 (3.0–18.8)Abstract 22 Table 2 Adverse events, tolerability, acceptability of study procedures and concomitant medications at follow up Colchicine group (n= 113) Placebo group (n= 111) P-value Any adverse event 17 21 Re-admission to hospital 3 12 Adverse event not requiring hospitalisation 151 9 Gastrointestinal 12 6 Other2 3 3 Discontinued treatment 5 3 Took≥25 days of study treatment 104 103 Morisky Medication Adherence score Willing to continue with study medication Other medications being taken at follow up3 Aspirin 112 (99%) 109 (100%)3 Second anti-platelet agent 108 (96%) 108 (99%)3 Statin 109 (96%) 107 (98%)3 Beta-blocker 107 (95%) 107 (98%)3 ACE inhibitor or ARB 106 (94%) 104 (95%)3 Results 238 were randomised with 219 completing protocol. 8% ceased trial medication prematurely or were lost to follow up. 9 patients suffered GI issues (7 on colchicine) with basic laboratory analysis normal. At 30 day follow up, median hsCRP in the colchicine arm was 1.5 mg/L vs 2.0 mg/L in placebo (p=0.08). Absolute reduction in hsCRP levels in colchicine arm was −4.5 mg/L vs −3.3 mg/L in placebo (p=0.29). Relative reduction was 78% (colchicine) compared to a placebo 64% (p=0.06). 44% in treatment arm had a hsCRP level ≥2 mg/L at 30 days compared to 51%-placebo (p=0.28). Conclusion No significant reduction in the median level of hsCRP was observed but all were lower in colchicine arm, consistent with prior data. The totality of evidence supports the need for a large-scale outcome trial in patients with recent MI. The current study demonstrates the safety, tolerability of colchicine confirming that patients already receiving many other drugs, find further medication acceptable.",
+      "tldr": "The CANTOS study demonstrates a monoclonal antibody targeting inflammation significantly reduced events in MI survivors with persistently elevated hs-CRP, providing the best evidence to date that inflammatory suppression improves outcomes after acute MI.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 1,
+      "publicationTypes": [],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Long-term trials of colchicine for secondary prevention of vascular events: a meta-analysis",
+      "authors": [
+        "Michelle Samuel",
+        "C. Berry",
+        "Marie-Pierre Dubé",
+        "Wolfgang Koenig",
+        "J. López-Sendón",
+        "A. Maggioni",
+        "Fausto J. Pinto",
+        "F. Roubille",
+        "J. Tardif"
+      ],
+      "journal": "European Heart Journal",
+      "year": 2025,
+      "doi": "10.1093/eurheartj/ehaf174",
+      "pmid": "40314333",
+      "s2Id": "ac8fc746bab18d68994c9de4fc691e29c6c5cd0c",
+      "abstract": "ABSTRACT Background and Aims Colchicine has emerged as a safe and inexpensive anti-inflammatory medication to target the residual risk of cardiovascular events in the secondary prevention of coronary artery disease. Two recently published randomized controlled trials (RCTs) investigating colchicine in the post-stroke and post-myocardial infarction (MI) populations warrant a re-evaluation of colchicine. New evidence was synthesized in a systematic review and meta-analysis to determine the long-term efficacy and safety of colchicine for the secondary prevention of vascular disease. Methods Randomized controlled trials comparing the incidence of cardiovascular events between patients with clinically manifest vascular disease randomized to colchicine vs. placebo and ≥12-month follow-up were included. The primary efficacy endpoint is major adverse cardiovascular events (MACE) and includes cardiovascular mortality, MI, ischaemic stroke, and urgent coronary revascularization. The DerSimonian and Laird random effects model was used to calculate pooled effect estimates. Results Six RCTs, with a pooled sample size of 21 800 patients, were included (colchicine n = 10 871; placebo n = 10 929). Over a follow-up of 12–34 months, colchicine reduced the incidence of MACE compared with placebo [pooled hazard ratio .75, 95% confidence interval (CI) .56–.93]. The reduction in cardiovascular events among colchicine patients was driven by reductions in MIs, ischaemic strokes, and urgent coronary revascularizations (P < .05 for all). No differences were detected for safety outcomes (P > .05 for all), including non-cardiovascular deaths (risk ratio 1.08, 95% CI .76–1.54). Conclusions This updated meta-analysis of RCTs demonstrated a substantial reduction in MACE, MI, ischaemic stroke, and recurrent coronary revascularization with colchicine compared with placebo. Therefore, the results support the use of colchicine to reduce recurrent cardiovascular events.",
+      "tldr": "This updated meta-analysis of RCTs demonstrated a substantial reduction in MACE, MI, ischaemic stroke, and recurrent coronary revascularization with colchicine compared with placebo, and support the use of colchicine to reduce recurrent cardiovascular events.",
+      "citationCount": 40,
+      "influentialCitationCount": 7,
+      "referenceCount": 30,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://doi.org/10.1093/eurheartj/ehaf174",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Colchicine for prevention of post-operative atrial fibrillation: Meta-analysis of randomized controlled trials",
+      "authors": [
+        "Peibing Ge",
+        "Yu Fu",
+        "Qichun Su",
+        "Mengdi Jin",
+        "Li Guo",
+        "Congliang Miao",
+        "Shun Zhu",
+        "Jinqiang Zhuang",
+        "Zhi Zhang",
+        "Jiang Hong"
+      ],
+      "journal": "Frontiers in Cardiovascular Medicine",
+      "year": 2022,
+      "doi": "10.3389/fcvm.2022.1032116",
+      "pmid": "36531704",
+      "s2Id": "1ccfabd8c21ca43de4fa5b4fb1d3b60213f747de",
+      "abstract": "Objective This study intended to assess the efficacy of colchicine for prevention of post-operative atrial fibrillation (AF). Background Post-operative AF is a common complication of surgery operations. Inflammation plays a crucial role in the pathogenesis of post-operative AF. Colchicine, a potent anti-inflammatory drug, may have a role in mitigating the incidence of post-operative AF. Methods We searched Cochrane Library, Web of Science, PubMed, China National Knowledge Infrastructure (CNKI), Database of Chinese sci-tech periodicals (COVIP), and Wanfang Database for randomized controlled trials (RCTs) comparing colchicine versus placebo, or usual care for prevention of post-operative AF. The main outcome was the occurrence of AF post operation, which includes cardiac surgery, lung surgery, or pulmonary vein isolation. The estimated risk ratio (RR) for the occurrence of post-operative AF was evaluated using a random-effects model. The safety end point was the development of any side effects. Results A total of 12 RCTs with 2274 patients were eventually included in this meta-analysis, where 1141 patients received colchicine and 1133 patients received placebo or usual care. Perioperative colchicine treatment was related to a decreased incidence of post-operative AF (RR: 0.65; 95% confidence interval [CI]: 0.56 to 0.75, p<0.001). Although the incidence of gastrointestinal side effects was increased with colchicine therapy when compared to placebo (RR = 2.49, 95% CI 1.85 to 3.34, p < 0.001), the incidence of major adverse events was not increased (RR = 0.86, 95% CI 0.46 to 1.60, p = 0.64). Conclusion In conclusion, the results of our meta-analysis suggest that colchicine treatment could lower the incidence of post-operative AF. Further studies are needed to determine the optimal colchicine treatment regime to minimize the incidence of adverse events.",
+      "tldr": "It is suggested that colchicine treatment could lower the incidence of post-operative atrial fibrillation, and further studies are needed to determine the optimal colchichine treatment regime to minimize the incidenceof adverse events.",
+      "citationCount": 14,
+      "influentialCitationCount": 1,
+      "referenceCount": 66,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://www.frontiersin.org/articles/10.3389/fcvm.2022.1032116/pdf",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "The Effect of Colchicine on Myocardial Infarction: An Updated Systematic Review and Meta-analysis of Randomized Controlled Trials.",
+      "authors": [
+        "Ayesha Younas",
+        "Zainab Awan",
+        "T. Khan",
+        "Samay Mehta",
+        "Aqsa Munir",
+        "H. Raja",
+        "H. Jain",
+        "Ahmed Raza",
+        "Ayesha Sehar",
+        "R. Ahmed",
+        "A. Nashwan"
+      ],
+      "journal": "Current problems in cardiology",
+      "year": 2024,
+      "doi": "10.1016/j.cpcardiol.2024.102878",
+      "pmid": "39393620",
+      "s2Id": "d1e701eb1a6e5cb087418a4b741a52164d5b5dc7",
+      "abstract": "INTRODUCTION\nMyocardial infarction (MI) is associated with a significant post-event inflammatory response which also contributes to post-MI prognosis. Colchicine, an anti-inflammatory agent, has exhibits potential benefits in various cardiovascular conditions such as coronary artery disease, pericarditis and atrial fibrillation. This meta-analysis predominantly aimed to provide an up-to-date evaluation of the efficacy and safety of colchicine in reducing adverse cardiovascular events in patients following acute MI.\n\n\nMETHODS\nA Systematic and comprehensive search was conducted on PubMed, Cochrane Library, Scopus, Google Scholar and clinicaltrials.gov for randomized controlled trials (RCTs) investigating the effect of colchicine on patients with MI until May 2024. Our primary outcome was a composite of adverse cardiovascular events, while secondary outcomes included all-cause mortality, incidence of stroke, cardiac arrest, hospitalization urgency, adverse gastrointestinal events and levels of high-sensitivity C - reactive protein (Hs-CRP). Risk ratios (RR) and standardized mean differences (SMD) were pooled under the random-effects model.\n\n\nRESULTS\nEleven trials with 7161 patients were included in our analysis out of which 3546 (49.51%) were allocated to colchicine and 3591 (50.14%) received placebo. Colchicine demonstrated statistically significant reduction in the composite of adverse cardiovascular events (RR=0.75, 95% CI: 0.60-0.94, P=0.01, I2= 48%), hospitalization urgency (RR=0.46, 95% CI: 0.31-0.68, P=0.0001, I2=0%) and levels of Hs-CRP (SMD= -0.43, 95% CI:-0.83-0.03, P=0.03, I2=85%) but statistically significant increment in adverse gastrointestinal events (RR=1.86, 95% CI: 1.14-3.02, P=0.01, I2=79%). However, all-cause mortality (RR =1.00, 95% CI: 0.72-1.39, P=0.98, I2=0%), cardiac arrest (RR=0.81, 95% CI: 0.33-1.95, P=0.63, I2=0), incidence of stroke (RR=0.45, 95% CI: 0.17-1.19, P=0.11, I2=36%) and recurrent MI (RR=0.78, 95% CI: 0.57-1.06, P=0.11, I2=11%) remained comparable across the two groups.\n\n\nCONCLUSION\nThe use of colchicine post-MI reduces the composite of adverse cardiovascular events, levels of Hs-CRP, hospitalization urgency but increases adverse gastrointestinal events. However, colchicine does not impact all-cause mortality, cardiac arrest, stroke incidence and incidence of recurrent MI. Large scale multicenter RCTs especially with longer follow-up duration are warranted to validate these findings.",
+      "tldr": "The use of colchicine post-MI reduces the composite of adverse cardiovascular events, levels of Hs-CRP, hospitalization urgency but increases adverse gastrointestinal events.",
+      "citationCount": 22,
+      "influentialCitationCount": 2,
+      "referenceCount": 32,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://doi.org/10.1016/j.cpcardiol.2024.102878",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Empagliflozin and Colchicine in Patients With Reduced Left Ventricular Ejection Fraction Following ST-Elevation Myocardial Infarction: A Systematic Review",
+      "authors": [
+        "Francis Asante Baadu",
+        "Muhammad Arif",
+        "Zara Riaz",
+        "Manoj Argariya",
+        "Karishma rani",
+        "M. Iqbal"
+      ],
+      "journal": "Cureus",
+      "year": 2025,
+      "doi": "10.7759/cureus.92680",
+      "pmid": "41122555",
+      "s2Id": "2930e3fa4257175ab00f6c860a23b61930f18573",
+      "abstract": "Patients with reduced left ventricular ejection fraction (LVEF) following ST-elevation myocardial infarction (STEMI) are at a high risk for heart failure (HF), adverse ventricular remodeling, and cardiovascular mortality. Empagliflozin, a sodium-glucose co-transporter 2 (SGLT2) inhibitor, and colchicine, an anti-inflammatory agent, have been proposed as adjunctive therapies to mitigate post-myocardial infarction (MI) complications. A systematic review of randomized controlled trials (RCTs) published in English between January 2015 and June 2025 was conducted using PubMed, Embase, and Cochrane Library. Fourteen RCTs were included. Risk of bias assessment using Cochrane RoB 2.0 classified five studies as low risk and eight as of some concern. Evaluating empagliflozin or colchicine in post-STEMI patients with LVEF <45% was conducted. Key outcomes included changes in LVEF, N-terminal pro-B-type natriuretic peptide (NT-proBNP), HF hospitalization, mortality, inflammatory biomarkers (CRP, creatine kinase-myocardial band (CK-MB)), and safety profiles. The Cochrane Risk of Bias 2.0 was used for quality assessment, and data were synthesized thematically. Visual summaries were generated using the robvis tool. The review indicated that empagliflozin consistently improved LVEF by 1.5%-5.7%, reduced NT-proBNP by approximately 15%, and lowered HF hospitalization risk, though it did not significantly reduce all-cause mortality. Colchicine reduced inflammatory markers (CRP, CK-MB) and recurrent ischemic events, but its effects on LVEF and HF outcomes were inconsistent. Colchicine was also associated with a higher incidence of gastrointestinal side effects and an increased risk of left ventricular thrombus formation. Empagliflozin showed consistent benefits in improving ventricular function and reducing HF hospitalizations after STEMI in patients with type 2 diabetes and should be prioritized in this setting. Colchicine provided potential anti-inflammatory and ischemic protection but demonstrates inconsistent cardiovascular efficacy and notable tolerability concerns. Further high-quality RCTs are required to clarify its role.",
+      "tldr": "Empagliflozin showed consistent benefits in improving ventricular function and reducing HF hospitalizations after STEMI in patients with type 2 diabetes and should be prioritized in this setting.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 36,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Safety and efficacy of colchicine in myocardial infarction: an updated systematic review and meta-analysis",
+      "authors": [
+        "T. Warsi",
+        "Z. Bacha",
+        "S. Hayat Khan",
+        "H. Noor",
+        "S. Tanveer",
+        "I. Shah",
+        "M. Qadri",
+        "M. Sheraz",
+        "S. Rath",
+        "B. Elsiraj",
+        "V. Govindasamy",
+        "A. Afridi",
+        "M. Kakakhel",
+        "M. Ali"
+      ],
+      "journal": "European Heart Journal",
+      "year": 2025,
+      "doi": "10.1093/eurheartj/ehaf784.1553",
+      "s2Id": "6ae4aa7a8d2d5a66085004091022cb4c04801b5a",
+      "abstract": "\n \n \n Myocardial infarction (MI) is still one of the world's major causes of morbidity and mortality.Colchicine, a medication known for its anti-inflammatory properties and commonly prescribed to reduce post-myocardial infarction (MI) inflammation and related negative cardiovascular outcomes. Our systematic review and meta-analysis seeks to thoroughly assess the safety and effectiveness of colchicine in individuals who have experienced an MI.\n \n \n \n Our study aimed to show colchicine in diminishing negative cardiovascular events, such as recurrent myocardial infarction (MI), stroke, and cardiac arrest, as well as its influence on overall mortality. Furthermore, the study sought to investigate the anti-inflammatory properties of colchicine by examining alterations in high-sensitivity C-reactive protein (hs-CRP) levels and to assess its safety profile, especially concerning gastrointestinal (GI) side effects.\n \n \n \n A comprehensive literature was searched across key databases such as PubMed, Embase, and the Cochrane Library assessing colchicine in individuals with MI or those at elevated risk for cardiovascular events. . Outcomes were evaluated by random-effects models and heterogeneity was examined using the I² statistic. Random-effects models used to determine hazard ratios (HRs), odds ratios (OR) along with 95% confidence intervals (CIs). p-value <0.05 considered significant.\n \n \n \n A total of 14,199 individuals participated, with 7,074 receiving colchicine and 7,125 given a placebo. Colchicine showed a notable decrease in the adverse cardiovascular outcomes when compared to the placebo,an odds ratio (OR) of 0.69 [95% CI: 0.53, 0.91, p = 0.007], signifying a 31% reduction. The occurrence of recurrent myocardial infarction (MI) was also significantly reduced in the colchicine group (OR = 0.45 [95% CI: 0.30, 0.67, p = 0.0001]), indicating a 55% decrease. Nevertheless, colchicine had no significant impact on overall mortality (OR = 0.93 [95% CI: 0.78, 1.12, p = 0.45]), stroke occurrence (OR = 0.64 [95% CI: 0.26, 1.59, p = 0.33]), or the incidence of cardiac arrest (OR = 0.80 [95% CI: 0.33, 1.96, p = 0.63]). A trend indicating lower hs-CRP levels was noted (mean difference = -0.87 [95% CI: -1.80, 0.06, p = 0.07]), implying possible anti-inflammatory effects. Colchicine was linked to a significantly risk of gastrointestinal adverse events (OR = 2.11 [95% CI: 1.20, 3.74, p = 0.01]).\n \n \n \n Colchicine is effective in lowering the incidence of cardiovascular events and recurrent myocardial infarction, and it may offer anti-inflammatory advantages. It does not have a considerable effect on overall mortality, stroke incidents, or cardiac arrest and is linked to an increased risk of gastrointestinal side effects.Additional studies are required to enhance its role in managing cardiovascular diseases.  \n",
+      "tldr": "Colchicine is effective in lowering the incidence of cardiovascular events and recurrent myocardial infarction, and it may offer anti-inflammatory advantages, but it does not have a considerable effect on overall mortality, stroke incidents, or cardiac arrest and is linked to an increased risk of gastrointestinal side effects.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Suspected colchicine-induced late myocardial rupture occurring after the late presentation of acute inferior ST-elevation myocardial infarction.",
+      "authors": [
+        "A. M. Niyas",
+        "Fathima Haseefa",
+        "Jordy C. Cox",
+        "M. Movahed"
+      ],
+      "journal": "American journal of cardiovascular disease",
+      "year": 2024,
+      "doi": "10.62347/fxln8938",
+      "pmid": "38764546",
+      "s2Id": "47ec9d92c5b983d56cc42e49b4b0d25796bb2996",
+      "abstract": "Colchicine is one of the established drugs of choice for post-myocardial infarction (MI) induced pericarditis, given its anti-inflammatory properties. Recently, colchicine received FDA approval for secondary prevention of atherosclerotic cardiovascular disease, which leads to concerns regarding its anti-healing effects on myocardial tissue post-infarction. We present a case of a suspected colchicine-induced myocardial rupture in an elderly male, who presented with a syncopal episode while on colchicine three weeks after the late presentation of infero-posterior ST-elevation myocardial infarction.",
+      "tldr": "A case of a suspected colchicine-induced myocardial rupture in an elderly male, who presented with a syncopal episode while on colchicine three weeks after the late presentation of infero-posterior ST-elevation myocardial infarction is presented.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle",
+        "CaseReport"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://doi.org/10.62347/fxln8938",
+      "studyType": "case_report",
+      "evidenceLevel": "IV",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Long-term colchicine therapy in acute coronary syndromes: a systematic review and meta-analysis of randomized controlled trials.",
+      "authors": [
+        "Luísa Pinheiro",
+        "Emídio Mata",
+        "M. De Castro",
+        "Bárbara Lage García",
+        "M. Tinoco",
+        "J. Português",
+        "Sílvia Ribeiro",
+        "Olga Azevedo",
+        "António Lourenço"
+      ],
+      "journal": "Monaldi archives for chest disease = Archivio Monaldi per le malattie del torace",
+      "year": 2025,
+      "doi": "10.4081/monaldi.2025.3566",
+      "pmid": "41334610",
+      "s2Id": "60a5833cfa2c0a5b34d04f2ca9736834e36dd07b",
+      "abstract": "Anti-inflammatory therapy, particularly colchicine, has emerged as a potential secondary prevention strategy post-acute coronary syndrome (ACS). This meta-analysis assessed the impact of long-term colchicine therapy (≥12 months) compared to standard care on cardiovascular events in post-ACS patients. A systematic search of PubMed, Cochrane, Scopus, and Web of Science was conducted on December 22, 2024, for randomized controlled trials (RCTs) comparing long-term (≥12 months) treatment with colchicine to standard care in ACS patients. Outcomes assessed included all-cause mortality, cardiovascular death, myocardial infarction (MI), ischemia-driven revascularization, and stroke. Three RCTs (COLCOT, COPS, and CLEAR SYNERGY) with 12,602 patients were included. Colchicine did not significantly reduce all-cause mortality [hazard ratio (HR) 1.01, 95% confidence interval (CI): 0.67-1.53; I2=54%], cardiovascular death (HR 1.01, 95% CI: 0.80-1.29; I2=0%), or MI (HR 0.86, 95% CI: 0.71-1.05; I2=0%). Ischemia-driven revascularization (HR 0.61, 95% CI: 0.30-1.21; I2=81%) and stroke (HR 0.55, 95% CI: 0.18-1.64; I2=75%) showed non-significant reductions with high heterogeneity. The composite outcome of cardiovascular death, MI, revascularization, or stroke was not significantly reduced (HR 0.80, 95% CI: 0.59-1.07; I2=73%). These findings suggest that long-term colchicine therapy did not confer a consistent reduction in major cardiovascular outcomes after ACS. The pooled results indicate an overall null effect; however, the substantial heterogeneity across trials limits the certainty of this conclusion. This analysis may prompt a reassessment of colchicine's preventive role in ACS. Future studies should aim to reduce heterogeneity through standardized protocols and follow-up reporting and to explore whether subgroups, such as patients with elevated inflammatory markers, may derive benefit.",
+      "tldr": "It is suggested that long-term colchicine therapy did not confer a consistent reduction in major cardiovascular outcomes after ACS, and may prompt a reassessment of colchicine's preventive role in ACS.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 15,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Preoperative Colchicine and Conduction Disturbances After Transcatheter Aortic Valve Implantation: A US Retrospective Cohort Analysis",
+      "authors": [
+        "Kerollos Abdelsayed",
+        "B. Amer",
+        "Ahmed Almahdy Mohamed",
+        "Michele Fouad",
+        "A. Amin",
+        "M. Ibrahim",
+        "S. Thangjui",
+        "B. Abdelazeem",
+        "Sudarshan Balla",
+        "Azeem Latib"
+      ],
+      "journal": "Journal of the American Heart Association: Cardiovascular and Cerebrovascular Disease",
+      "year": 2025,
+      "doi": "10.1161/JAHA.125.043791",
+      "pmid": "40728176",
+      "s2Id": "0bd407d6d78f91e9ff765bdb12d5f12f1d550ae2",
+      "abstract": "Background Conduction disturbances are frequent complications following transcatheter aortic valve intervention (TAVI), partially driven by inflammation. The anti‐inflammatory role of colchicine on these disorders post TAVI has not been studied yet. Therefore, we investigated the association between preoperative colchicine use and conduction disturbances after TAVI. Methods We used the TriNetX platform, a data repository of health record data from health care organizations in the United States, to identify patients receiving any colchicine prescription within 3 months before their first TAVI and compared them to propensity score matched patients never exposed to colchicine up to 1 year after the procedure. Primary outcomes included new‐onset or worsening atrioventricular or left bundle‐branch block (LBBB) and heart block (HB) postoperatively. Outcomes were assessed within 1 and 6 months after TAVI with an E‐sensitivity analysis assessing the impact of unmeasured confounders. Results Of 52 860 patients, 705 were on preoperative colchicine. After matching, each group included 702 patients. Colchicine was associated with a statistically significant reduction of new‐onset or worsening atrioventricular/left bundle‐branch block and heart block post TAVI at 1 month (relative risk [RR], 0.867 [95% CI, 0.756–0.994], P=0.041; RR, 0.887 [95% CI, 0.788–0.999], P=0.047, respectively) but not at 6 months (RR, 0.886 [95% CI, 0.779–1.077], P=0.064; RR, 0.913 [95% CI, 0.817–1.020], P=0.109, respectively). The E‐value was >1.5 for the statistically significant outcomes. Conclusions Preoperative colchicine was associated with a lower incidence of new‐onset or worsening atrioventricular/left bundle‐branch block and heart block after TAVI at 1 month. However, no significant difference was observed at 6 months. Future prospective studies are needed to evaluate the definitive role of colchicine in improving TAVI outcomes.",
+      "tldr": "Preoperative colchicine was associated with a lower incidence of new‐onset or worsening atrioventricular/left bundle‐branch block and heart block after TAVI at 1 month, however, no significant difference was observed at 6 months.",
+      "citationCount": 2,
+      "influentialCitationCount": 0,
+      "referenceCount": 49,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Effects of Acute Colchicine Administration Prior to Percutaneous Coronary Intervention",
+      "authors": [
+        "Binita Shah",
+        "M. Pillinger",
+        "Hua Zhong",
+        "B. Cronstein",
+        "Yuhe Xia",
+        "J. Lorin",
+        "Nathaniel R. Smilowitz",
+        "F. Feit",
+        "Nicole Ratnapala",
+        "N. Keller",
+        "S. Katz"
+      ],
+      "journal": "",
+      "year": 2020,
+      "doi": "10.1161/CIRCINTERVENTIONS.119.008717",
+      "pmid": "32295417",
+      "s2Id": "ca62a8a8bac1494ca929aa18d4e6c9061c3973e8",
+      "abstract": "Supplemental Digital Content is available in the text. Background: Vascular injury and inflammation during percutaneous coronary intervention (PCI) are associated with increased risk of post-PCI adverse outcomes. Colchicine decreases neutrophil recruitment to sites of vascular injury. The anti-inflammatory effects of acute colchicine administration before PCI on subsequent myocardial injury are unknown. Methods: In a prospective, single-site trial, subjects referred for possible PCI (n=714) were randomized to acute preprocedural oral administration of colchicine 1.8 mg or placebo. Results: Among the 400 subjects who underwent PCI, the primary outcome of PCI-related myocardial injury did not differ between colchicine (n=206) and placebo (n=194) groups (57.3% versus 64.2%, P=0.19). The composite outcome of death, nonfatal myocardial infarction, and target vessel revascularization at 30 days (11.7% versus 12.9%, P=0.82), and the outcome of PCI-related myocardial infarction defined by the Society for Cardiovascular Angiography and Interventions (2.9% versus 4.7%, P=0.49) did not differ between colchicine and placebo groups. Among 280 PCI subjects in a nested inflammatory biomarker substudy, the primary biomarker end point, change in interleukin-6 concentrations did not differ between groups 1-hour post-PCI but increased less 24 hours post-PCI in the colchicine (n=141) versus placebo group (n=139; 76% [−6 to 898] versus 338% [27 to 1264], P=0.02). High-sensitivity C-reactive protein concentration also increased less after 24 hours in the colchicine versus placebo groups (11% [−14 to 80] versus 66% [1 to 172], P=0.001). Conclusions: Acute preprocedural administration of colchicine attenuated the increase in interleukin-6 and high-sensitivity C-reactive protein concentrations after PCI when compared with placebo but did not lower the risk of PCI-related myocardial injury. Registration: URL: https://www.clinicaltrials.gov; Unique Identifiers: NCT02594111, NCT01709981.",
+      "tldr": "Acute preprocedural administration of colchicine attenuated the increase in interleukin-6 and high-sensitivity C-reactive protein concentrations after PCI when compared with placebo but did not lower the risk of PCI-related myocardial injury.",
+      "citationCount": 154,
+      "influentialCitationCount": 13,
+      "referenceCount": 48,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://www.ahajournals.org/doi/pdf/10.1161/CIRCINTERVENTIONS.119.008717",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Colchicine to Prevent Periprocedural Myocardial Injury in Percutaneous Coronary Intervention",
+      "authors": [
+        "J. Cole",
+        "N. Htun",
+        "R. Lew",
+        "M. Freilich",
+        "S. Quinn",
+        "J. Layland"
+      ],
+      "journal": "Circulation: Cardiovascular Interventions",
+      "year": 2021,
+      "doi": "10.1161/CIRCINTERVENTIONS.120.009992",
+      "pmid": "34003667",
+      "s2Id": "33fb03a82a87215cb1b541f67da0455bf988819c",
+      "abstract": "Supplemental Digital Content is available in the text. Background: Periprocedural myocardial infarction and injury (PM-injury) are the most common complications of percutaneous coronary intervention (PCI) and are associated with future adverse cardiac events. Inflammation plays a pivotal role in the development of PM-injury. In this randomized pilot trial, we assessed the effect of an anti-inflammatory medication colchicine on periprocedural myocardial injury. Methods: Patients undergoing PCI for stable angina or non–ST-segment–elevation myocardial infarction were randomized to oral colchicine (1 mg followed by 0.5 mg 1 hour later) or placebo, 6 to 24 hours preprocedure. Blood samples were taken immediately pre- and 24-hours post-PCI. The primary outcome, periprocedural myocardial infarction, was defined by an increase in post-PCI troponin >5×99th% upper reference limit when the pre-PCI troponin was normal, or >20% increase in post-PCI troponin when the pre-PCI troponin was raised, including supporting evidence of new myocardial ischemia. Major PM-injury was defined as per periprocedural myocardial infarction without supporting evidence of new myocardial ischemia. Minor PM-injury was defined by post-PCI troponin increase >99th% upper reference limit but ≤5×99th% upper reference limit. Results: A total of 196 patients met inclusion criteria and were randomized. One hundred twenty-one patients were excluded (no PCI, unstable troponin before PCI, or poor-quality measurements) leaving a study population of 75 patients. Thirty-six patients were randomized to colchicine and 39 to placebo preprocedure. Forty-four presented with non–ST-segment–elevation myocardial infarction and 31 with stable angina. High-sensitive (hs) troponin-I pre-PCI was similar between treatment groups (colchicine: 79 ng/L [4–1336] versus placebo: 35 [5–448], P=0.42). Absolute change in hs-troponin-I (calculated as 24-hour post-PCI minus pre-PCI measurements) was significantly lower in the colchicine group: 59 (1–221) versus placebo: 166 (53–530), P=0.02. No patients developed periprocedural myocardial infarction in either group. Significantly fewer patients developed major PM-injury: 11 (31%) versus 21 (54%), P=0.04 or minor PM-injury: 21 (58%) versus 33 (85%), P=0.01, if given colchicine pre-PCI. Conclusions: In this randomized pilot trial, colchicine given 6 to 24 hours pre-PCI reduces periprocedural myocardial injury. Registration: URL: https://www.anzctr.org.au; Unique identifier: ACTRN12615000485538.",
+      "tldr": "In this randomized pilot trial, colchicine given 6 to 24 hours pre-PCI reduces periprocedural myocardial injury and major and minor PM-injury were defined.",
+      "citationCount": 27,
+      "influentialCitationCount": 2,
+      "referenceCount": 38,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://www.ahajournals.org/doi/pdf/10.1161/CIRCINTERVENTIONS.120.009992",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Successful treatment of two cases of acute myocarditis with colchicine.",
+      "authors": [
+        "Akif Kavgacı",
+        "Fatma Incedere",
+        "S. Terlemez",
+        "S. Kula"
+      ],
+      "journal": "Cardiology in the young",
+      "year": 2023,
+      "doi": "10.1017/S1047951123000483",
+      "pmid": "36938910",
+      "s2Id": "8c61bf5b439eed18931c880bdc06a133b435e049",
+      "abstract": "Colchicine is an FDA-approved medicine that has been used for many years to prevent and treat gout flares as well as familial mediterranean fever. It is also used off-label to treat pericarditis, calcium pyrophosphate illness, and Behçet's syndrome. There are additional studies on the use of colchicine, which is accepted as the standard treatment for pericarditis in adults, post-pericardiotomy syndrome, post-operative and post-ablation atrial fibrillation, coronary artery disorders, prior to percutaneous coronary procedures, and myocarditis. Colchicine appears to be a promising oral cardiovascular treatment targeting the inflammatory axis, owing to its low cost and moderate side-effect profile. Our aim is to emphasise that colchicine treatment, which has a strong and effective anti-inflammatory effect profile, should be kept in mind in addition to conventional treatment in childhood myocarditis.",
+      "tldr": "It is emphasised that colchicine treatment, which has a strong and effective anti-inflammatory effect profile, should be kept in mind in addition to conventional treatment in childhood myocarditis.",
+      "citationCount": 3,
+      "influentialCitationCount": 0,
+      "referenceCount": 4,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/93977EE0A1CAD1DD2D269AD951D07C03/S1047951123000483a.pdf/div-class-title-successful-treatment-of-two-cases-of-acute-myocarditis-with-colchicine-div.pdf",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Colchicine Inhibits Neutrophil Extracellular Trap Formation in Patients With Acute Coronary Syndrome After Percutaneous Coronary Intervention",
+      "authors": [
+        "K. Vaidya",
+        "B. Tucker",
+        "R. Kurup",
+        "C. Khandkar",
+        "E. Pandžić",
+        "J. Barraclough",
+        "Joshua Machet",
+        "A. Misra",
+        "M. Kavurma",
+        "G. Martínez",
+        "K. Rye",
+        "B. Cochran",
+        "Sanjay Patel"
+      ],
+      "journal": "Journal of the American Heart Association: Cardiovascular and Cerebrovascular Disease",
+      "year": 2020,
+      "doi": "10.1161/JAHA.120.018993",
+      "pmid": "33346683",
+      "s2Id": "4275b1b605767ad715626ea286e288afe89d2258",
+      "abstract": "Background Release of neutrophil extracellular traps (NETs) after percutaneous coronary intervention (PCI) in acute coronary syndrome (ACS) is associated with periprocedural myocardial infarction, as a result of microvascular obstruction via pro‐inflammatory and prothrombotic pathways. Colchicine is a well‐established anti‐inflammatory agent with growing evidence to support use in patients with coronary disease. However, its effects on post‐PCI NET formation in ACS have not been explored. Methods and Results Sixty patients (40 ACS; 20 stable angina pectoris) were prospectively recruited and allocated to colchicine or no treatment. Within 24 hours of treatment, serial coronary sinus blood samples were collected during PCI. Isolated neutrophils from 10 patients with ACS post‐PCI and 4 healthy controls were treated in vitro with colchicine (25 nmol/L) and stimulated with either ionomycin (5 μmol/L) or phorbol 12‐myristate 13‐acetate (50 nmol/L). Extracellular DNA was quantified using Sytox Green and fixed cells were stained with Hoechst 3342 and anti‐alpha tubulin. Baseline characteristics were similar across both treatment and control arms. Patients with ACS had higher NET release versus patients with stable angina pectoris (P<0.001), which was reduced with colchicine treatment (area under the curve: 0.58 versus 4.29; P<0.001). In vitro, colchicine suppressed unstimulated (P<0.001), phorbol 12‐myristate 13‐acetate–induced (P=0.009) and ionomycin‐induced (P=0.002) NET formation in neutrophils isolated from patients with ACS post‐PCI, but not healthy controls. Tubulin organization was impaired in neutrophils from patients with ACS but was restored by colchicine treatment. Conclusions Colchicine suppresses NET formation in patients with ACS post‐PCI by restoring cytoskeletal dynamics. These findings warrant further investigation in randomized trials powered for clinical end points. Registration URL: https://anzctr.org.au; Unique identifier: ACTRN12619001231134.",
+      "tldr": "Colchicine suppresses NET formation in patients with ACS post‐PCI by restoring cytoskeletal dynamics, and these findings warrant further investigation in randomized trials powered for clinical end points.",
+      "citationCount": 95,
+      "influentialCitationCount": 4,
+      "referenceCount": 40,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://www.ahajournals.org/doi/pdf/10.1161/JAHA.120.018993",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Assessing the Impact of Colchicine on Coronary Plaque Phenotype After Myocardial Infarction with Optical Coherence Tomography: Rationale and Design of the COCOMO-ACS Study",
+      "authors": [
+        "N. Montarello",
+        "Kuljit Singh",
+        "A. Sinhal",
+        "D. Wong",
+        "R. Alcock",
+        "Sharmalar Rajendran",
+        "R. Dautov",
+        "P. Barlis",
+        "Sanjay Patel",
+        "S. Nidorf",
+        "P. Thompson",
+        "Thalia Salagaras",
+        "J. Butters",
+        "N. Nerlekar",
+        "G. Di Giovanni",
+        "Juanita L Ottaway",
+        "S. Nicholls",
+        "P. Psaltis"
+      ],
+      "journal": "Cardiovascular Drugs and Therapy",
+      "year": 2021,
+      "doi": "10.1007/s10557-021-07240-9",
+      "pmid": "34432196",
+      "s2Id": "cced089add1f2a1cd3f05e5c53b7160360873c15",
+      "abstract": "Recurrent event rates after myocardial infarction (MI) remain unacceptably high, in part because of the continued growth and destabilization of residual coronary atherosclerotic plaques, which may occur despite lipid-lowering therapy. Inflammation is an important contributor to this ongoing risk. Recent studies have shown that the broad-acting anti-inflammatory agent, colchicine, may reduce adverse cardiovascular events in patients post-MI, although the mechanistic basis for this remains unclear. Advances in endovascular arterial wall imaging have allowed detailed characterization of the burden and compositional phenotype of coronary plaque, along with its natural history and responsiveness to treatment. One such example has been the use of optical coherence tomography (OCT) to demonstrate the plaque-stabilizing effects of statins on both fibrous cap thickness and the size of lipid pools within plaque. The Phase 2, multi-centre, double-blind colchicine for coronary plaque modification in acute coronary syndrome (COCOMO-ACS) study will evaluate the effect of colchicine 0.5 mg daily on coronary plaque features using serial OCT imaging in patients following MI. Recruitment for the trial has been completed with 64 participants with non-ST elevation MI randomized 1:1 to colchicine or placebo in addition to guideline recommended therapies, including high-intensity statins. The primary endpoint is the effect of colchicine on the minimal fibrous cap thickness of non-culprit plaque over an 18-month period. The COCOMO-ACS study will determine whether addition of colchicine 0.5 mg daily to standard post-MI treatment has incremental benefits on high-risk features of coronary artery plaques. If confirmed, this will provide new mechanistic insights into how colchicine may confer clinical benefits in patients with atherosclerotic cardiovascular disease. ANZCTR trial registration number: ACTRN12618000809235. Date of trial registration: 11th of May 2018.",
+      "tldr": "The COCOMO-ACS study will determine whether addition of colchicine 0.5 mg daily to standard post-MI treatment has incremental benefits on high-risk features of coronary artery plaques, and if confirmed, this will provide new mechanistic insights into how col chicine may confer clinical benefits in patients with atherosclerotic cardiovascular disease.",
+      "citationCount": 20,
+      "influentialCitationCount": 2,
+      "referenceCount": 67,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://link.springer.com/content/pdf/10.1007/s10557-021-07240-9.pdf",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Research in brief: Colchicine for chronic coronary disease: a recent randomised controlled trial.",
+      "authors": [
+        "Rajan S Pooni",
+        "Tevfik F. Ismail"
+      ],
+      "journal": "Clinical medicine",
+      "year": 2021,
+      "doi": "10.7861/clinmed.2020-0981",
+      "pmid": "33479074",
+      "s2Id": "ee45b69f9c888f4bba432c5b00ed01644ebfb9d5",
+      "abstract": "of Nidorf SM, Fiolet ATL, Mosterd A et al. Colchicine in patients with chronic coronary disease. N Engl J Med 2020;383:1838–47. Atherosclerosis and its sequelae remain the leading cause of cardiovascular-related mortality worldwide. A combination of genetic and acquired risk factors contribute to an inflammatory milieu that leads to atherosclerotic plaque formation and ultimately plaque rupture. Given the central role of inflammation in this process, recent efforts to improve outcomes for patients with coronary disease have focused on targeting inflammatory pathways. The selective IL-1β inhibitor, canakinumab, has been shown to reduce cardiovascular events among high-risk patients with a history of myocardial infarction (MI) and elevated high-sensitivity C-reactive protein. Similarly, low-dose colchicine, an agent with a broader spectrum of anti-inflammatory properties, has also shown benefit in post-infarct patients. However, the impact of such an approach in patients with otherwise stable chronic coronary disease was hitherto unknown. Here, we review a recent multi-centre randomised controlled trial (LoDoCo2) evaluating the efficacy of low-dose colchicine in this population.",
+      "tldr": "A recent multi-centre randomised controlled trial (LoDoCo2) evaluating the efficacy of low-dose colchicine in patients with chronic coronary disease found it to have potential in reducing cardiovascular events among high-risk patients with a history of myocardial infarction.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 9,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://www.rcpjournals.org/content/clinmedicine/21/1/e1.full.pdf",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Comparative Cardiovascular Safety of Nonsteroidal Anti‐Inflammatory Drug Versus Colchicine Use When Initiating Urate‐Lowering Therapy Among Patients With Gout: Target Trial Emulations",
+      "authors": [
+        "C. Yokose",
+        "N. McCormick",
+        "Na Lu",
+        "Bohang Jiang",
+        "Kiara Tan",
+        "Saiajay Chigurupati",
+        "S. Rai",
+        "Greg Challener",
+        "J. Aviña-Zubieta",
+        "E. Cipolletta",
+        "A. Abhishek",
+        "Angelo L. Gaffo",
+        "James L. Januzzi",
+        "Yuqing Zhang",
+        "Hyon K Choi"
+      ],
+      "journal": "Arthritis & Rheumatology",
+      "year": 2025,
+      "doi": "10.1002/art.43259",
+      "pmid": "40415645",
+      "s2Id": "35427300f9e84228ebe8f2709213ea29d1097b47",
+      "abstract": "Among patients with gout, nonsteroidal anti‐inflammatory drugs (NSAIDs) are commonly used despite scarce safety data in this specific population. Therefore, we quantified the comparative cardiovascular safety of NSAIDs versus colchicine among patients with gout starting allopurinol.",
+      "citationCount": 3,
+      "influentialCitationCount": 0,
+      "referenceCount": 54,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Colchicine Leads the Charge in Post-PCI Anti-Inflammatory Defense.",
+      "authors": [
+        "Nadia Martinez Naya",
+        "S. Toldo",
+        "Antonio Abbate"
+      ],
+      "journal": "Journal of cardiovascular pharmacology",
+      "year": 2023,
+      "doi": "10.1097/fjc.0000000000001523",
+      "pmid": "38064587",
+      "s2Id": "c0621840533b17a26fe2b14a28682439ad5fdbc9",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://journals.lww.com/cardiovascularpharm/fulltext/2024/03000/colchicine_leads_the_charge_in_post_percutaneous.4.aspx",
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Targeted Anti‐Inflammatory Therapy in Cardiovascular Events: Challenges and Opportunities",
+      "authors": [
+        "Tianyi Ma",
+        "Ling Wang",
+        "Xiaorong Yan",
+        "Feng Li"
+      ],
+      "journal": "The Journal of Clinical Hypertension",
+      "year": 2025,
+      "doi": "10.1111/jch.70172",
+      "pmid": "41257435",
+      "s2Id": "de88dceafbf11043cfe9b3444daeba1f58156e4c",
+      "abstract": "Cardiovascular diseases (CVDs) remain the leading cause of morbidity and mortality globally. Emerging evidence suggests that inflammation plays a pivotal role in the pathogenesis of atherosclerosis and subsequent cardiovascular events. Traditional treatments primarily focus on lipid‐lowering and antithrombotic strategies; however, these approaches do not fully address the inflammatory component of CVD. Recent advancements have highlighted the potential of targeted anti‐inflammatory therapies in mitigating cardiovascular risk. This review explores the efficacy and safety of these novel therapeutic agents. Interleukin (IL)‐1β inhibitors, such as canakinumab, have shown promising results in reducing recurrent cardiovascular events in post‐myocardial infarction patients. By directly modulating inflammatory pathways, canakinumab significantly lowered the incidence of major adverse cardiovascular events (MACE) independent of lipid levels. Similarly, colchicine, an ancient anti‐inflammatory drug, has gained renewed interest due to its efficacy in reducing cardiovascular events in patients with chronic coronary disease and recent myocardial infarction. Furthermore, emerging therapies targeting other inflammatory mediators like IL‐6 and tumor necrosis factor‐α are under investigation, offering additional avenues for intervention. Despite these advancements, challenges such as identifying appropriate patient populations, long‐term safety, and cost‐effectiveness remain. Ongoing research aims to refine these therapies, ensuring a balance between risk reduction and adverse effects. In conclusion, targeted anti‐inflammatory therapy represents a promising adjunct to traditional CVD treatments, potentially revolutionizing the management of cardiovascular events. Future studies are essential to optimize these strategies and fully integrate them into clinical practice, enhancing outcomes for patients with CVD.",
+      "tldr": "Targeted anti‐inflammatory therapy represents a promising adjunct to traditional CVD treatments, potentially revolutionizing the management of cardiovascular events.",
+      "citationCount": 1,
+      "influentialCitationCount": 0,
+      "referenceCount": 134,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    }
+  ],
+  "total": 3440
+}

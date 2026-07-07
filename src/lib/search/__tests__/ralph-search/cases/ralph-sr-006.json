@@ -1,0 +1,61 @@
+{
+  "id": "ralph-sr-006",
+  "name": "Narrow topic — PCSK9 inhibitors in South Asian populations (sparse evidence)",
+  "phase": 2,
+  "category": "sparse",
+  "query": "PCSK9 inhibitors outcomes in South Asian populations",
+  "expectedPapers": [
+    {
+      "titleFragment": "lipoprotein",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "cholesterol",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "pcsk9",
+      "mustFind": false
+    },
+    {
+      "titleFragment": "evolocumab",
+      "mustFind": false
+    },
+    {
+      "titleFragment": "alirocumab",
+      "mustFind": false
+    },
+    {
+      "titleFragment": "south asian",
+      "mustFind": false
+    }
+  ],
+  "rankingRules": [
+    {
+      "rule": "Majority of top 10 should be related to lipid/cardiovascular topics",
+      "check": "majority_on_topic",
+      "params": { "n": 10, "keywords": ["pcsk9", "evolocumab", "alirocumab", "proprotein convertase", "lipoprotein", "ldl", "cholesterol", "lipid", "statin", "dyslipidaemia", "dyslipidemia", "cardiovascular", "hypercholesterolemia"], "threshold": 0.5 }
+    }
+  ],
+  "metadataChecks": [
+    {
+      "check": "all_have_doi",
+      "threshold": 0.7
+    },
+    {
+      "check": "year_nonzero",
+      "threshold": 0.9
+    },
+    {
+      "check": "has_abstract",
+      "threshold": 0.5
+    }
+  ],
+  "precisionKeywords": ["cardiovascular", "risk", "disease", "health"],
+  "dedupChecks": [
+    {
+      "titleFragments": ["why how and in whom should we measure levels of lipoprotein"],
+      "maxOccurrences": 1
+    }
+  ]
+}

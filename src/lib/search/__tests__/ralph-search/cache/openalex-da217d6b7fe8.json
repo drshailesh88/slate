@@ -1,0 +1,765 @@
+{
+  "source": "openalex",
+  "query": "Artificial intelligence ECG interpretation accuracy",
+  "timestamp": "2026-03-02T17:02:59.119Z",
+  "results": [
+    {
+      "title": "Current and Future Use of Artificial Intelligence in Electrocardiography",
+      "authors": [
+        "Manuel Martínez‐Sellés",
+        "Manuel Marina‐Breysse"
+      ],
+      "journal": "Journal of Cardiovascular Development and Disease",
+      "year": 2023,
+      "doi": "10.3390/jcdd10040175",
+      "openalexId": "https://openalex.org/W4366281306",
+      "abstract": "Artificial intelligence (AI) is increasingly used in electrocardiography (ECG) to assist in diagnosis, stratification, and management. AI algorithms can help clinicians in the following areas: (1) interpretation and detection of arrhythmias, ST-segment changes, QT prolongation, and other ECG abnormalities; (2) risk prediction integrated with or without clinical variables (to predict arrhythmias, sudden cardiac death, stroke, and other cardiovascular events); (3) monitoring ECG signals from cardiac implantable electronic devices and wearable devices in real time and alerting clinicians or patients when significant changes occur according to timing, duration, and situation; (4) signal processing, improving ECG quality and accuracy by removing noise/artifacts/interference, and extracting features not visible to the human eye (heart rate variability, beat-to-beat intervals, wavelet transforms, sample-level resolution, etc.); (5) therapy guidance, assisting in patient selection, optimizing treatments, improving symptom-to-treatment times, and cost effectiveness (earlier activation of code infarction in patients with ST-segment elevation, predicting the response to antiarrhythmic drugs or cardiac implantable devices therapies, reducing the risk of cardiac toxicity, etc.); (6) facilitating the integration of ECG data with other modalities (imaging, genomics, proteomics, biomarkers, etc.). In the future, AI is expected to play an increasingly important role in ECG diagnosis and management, as more data become available and more sophisticated algorithms are developed.",
+      "citationCount": 121,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.mdpi.com/2308-3425/10/4/175/pdf?version=1681798224",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Electrocardiography",
+        "Heart rate variability",
+        "Myocardial infarction",
+        "Medicine",
+        "Artificial intelligence",
+        "Cardiac monitoring",
+        "Remote patient monitoring",
+        "Machine learning",
+        "Computer science",
+        "Internal medicine"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "ECG Interpretation: Clinical Relevance, Challenges, and Advances",
+      "authors": [
+        "Nikita Rafie",
+        "Anthony H. Kashou",
+        "Peter A. Noseworthy"
+      ],
+      "journal": "Hearts",
+      "year": 2021,
+      "doi": "10.3390/hearts2040039",
+      "openalexId": "https://openalex.org/W3210931236",
+      "abstract": "Since its inception, the electrocardiogram (ECG) has been an essential tool in medicine. The ECG is more than a mere tracing of cardiac electrical activity; it can detect and diagnose various pathologies including arrhythmias, pericardial and myocardial disease, electrolyte disturbances, and pulmonary disease. The ECG is a simple, non-invasive, rapid, and cost-effective diagnostic tool in medicine; however, its clinical utility relies on the accuracy of its interpretation. Computer ECG analysis has become so widespread and relied upon that ECG literacy among clinicians is waning. With recent technological advances, the application of artificial intelligence-augmented ECG (AI-ECG) algorithms has demonstrated the potential to risk stratify, diagnose, and even interpret ECGs—all of which can have a tremendous impact on patient care and clinical workflow. In this review, we examine (i) the utility and importance of the ECG in clinical practice, (ii) the accuracy and limitations of current ECG interpretation methods, (iii) existing challenges in ECG education, and (iv) the potential use of AI-ECG algorithms for comprehensive ECG interpretation.",
+      "citationCount": 93,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.mdpi.com/2673-3846/2/4/39/pdf?version=1635839450",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Medicine",
+        "Clinical Practice",
+        "Workflow",
+        "Intensive care medicine",
+        "Artificial intelligence",
+        "Computer science"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Diagnostic accuracy of a smartphone application for artificial intelligence-based interpretation of 12-lead ECG in primary care (AMSTELHEART-1)",
+      "authors": [
+        "Jelle C L Himmelreich",
+        "Ralf E. Harskamp"
+      ],
+      "journal": "European Heart Journal",
+      "year": 2023,
+      "doi": "10.1093/eurheartj/ehad655.2982",
+      "openalexId": "https://openalex.org/W4388596922",
+      "abstract": "Abstract Background The use of 12-lead electrocardiogram (ECG) is common in routine primary care, however it can be difficult for less experienced ECG readers to adequately interpret the ECG. Objective To validate a novel smartphone application as a stand-alone interpretation tool for 12-lead ECG in primary care. Methods We recruited consecutive patients who underwent 12-lead ECG as part of routinely indicated primary care in the Netherlands. All ECGs were assessed by a smartphone application which analyses a photographed image of 12-lead ECG for automated interpretation, installed on an Android platform and an iOS platform. We validated the application for detecting: 1) any major ECG abnormality (MEA, primary outcome) defined as atrial fibrillation/flutter (AF), markers of (past) myocardial ischemia or clinically relevant impulse and/or conduction abnormalities; or 2) AF (key secondary outcome). The reference standard was a blinded expert panel. Results We included 290 patients from 11 Dutch general practices with median age 67 (IQR 55-74) years, 48% were female. On reference ECG, 71 patients (25%) had MEA, 35 (12%) had AF. The app's sensitivity and specificity for MEA were 86% (95%CI:76-93) and 92% (95%CI:87-95), respectively. For AF, sensitivity and specificity were 97% (95%CI:85-100) and 99% (95%CI:97-100), respectively. Performance was comparable between Android and iOS platform (Kappa=0.95, 95%CI:0.91-0.99 and Kappa=1.00, 95%CI:1.00-1.00 for MEA and AF, respectively). Conclusions A smartphone application that interprets photographed 12-lead ECG images had good diagnostic accuracy in a primary care setting for major ECG abnormalities, and near-perfect properties for diagnosing AF.",
+      "citationCount": 2,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://academic.oup.com/eurheartj/article-pdf/44/Supplement_2/ehad655.2982/53609200/ehad655.2982.pdf",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Medicine",
+        "Primary care",
+        "Atrial flutter",
+        "Kappa",
+        "Atrial fibrillation",
+        "Abnormality",
+        "Internal medicine",
+        "Diagnostic accuracy",
+        "Cardiology",
+        "Electrocardiography"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Artificial intelligence-enhanced electrocardiography for accurate diagnosis and management of cardiovascular diseases",
+      "authors": [
+        "Muhammad Ali Muzammil",
+        "Saman Javid",
+        "Azra Khan Afridi",
+        "Rupini Siddineni",
+        "Mariam Shahabi",
+        "Muhammad Haseeb",
+        "Fnu Fariha",
+        "Satesh Kumar",
+        "Sahil Zaveri",
+        "Abdulqadir J. Nashwan"
+      ],
+      "journal": "Journal of Electrocardiology",
+      "year": 2024,
+      "doi": "10.1016/j.jelectrocard.2024.01.006",
+      "openalexId": "https://openalex.org/W4391289725",
+      "citationCount": 98,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://doi.org/10.1016/j.jelectrocard.2024.01.006",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Artificial intelligence",
+        "Electrocardiography",
+        "Heart failure",
+        "Deep learning",
+        "Machine learning",
+        "Medicine",
+        "Convolutional neural network",
+        "Computer science",
+        "Intensive care medicine"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Review of deep learning: concepts, CNN architectures, challenges, applications, future directions",
+      "authors": [
+        "Laith Alzubaidi",
+        "Jinglan Zhang",
+        "Amjad J. Humaidi",
+        "Ayad Q. Al-Dujaili",
+        "Ye Duan",
+        "Omran Al-Shamma",
+        "José Santamaría",
+        "Mohammed A. Fadhel",
+        "Muthana Al‐Amidie",
+        "Laith Farhan"
+      ],
+      "journal": "Journal Of Big Data",
+      "year": 2021,
+      "doi": "10.1186/s40537-021-00444-8",
+      "openalexId": "https://openalex.org/W3140854437",
+      "citationCount": 7052,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://journalofbigdata.springeropen.com/counter/pdf/10.1186/s40537-021-00444-8",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Computer science",
+        "Artificial intelligence",
+        "Field (mathematics)",
+        "Deep learning",
+        "Convolutional neural network",
+        "Machine learning",
+        "Data science",
+        "Point (geometry)",
+        "Matching (statistics)"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "The opportunities and pitfalls of ChatGPT in clinical and translational medicine",
+      "authors": [
+        "Christian Baumgärtner"
+      ],
+      "journal": "Clinical and Translational Medicine",
+      "year": 2023,
+      "doi": "10.1002/ctm2.1206",
+      "openalexId": "https://openalex.org/W4322618218",
+      "abstract": "‘The Ultimate Computer’, an episode of the legendary 1968 series Star Trek: The Original Series, in retrospect, put the spotlight on the unprecedented development of artificial intelligence (AI), with its enormous possibilities, but also limitations and dangers, without knowledge of the modern computational methods of the 21st century. I recently watched this episode under this premise and was stunned by the conversations about the benefits and dangers of artificial intelligence that were already taking place at that point. In 2011, this episode was named by Forbes as one of the 10 best episodes of the series, dealing with the effects of advanced technology and, in particular, the dangers of artificial intelligence.1 Forbes commented: ‘The Ultimate Computer’ (TOS) - This is a pretty fascinating episode, especially considering the time period. Pre-dating HAL by a few years, this episode features M-5, a computer capable of learning and adapting that is given command of the Enterprise on a test run. Naturally, things don't go well, but it's an interesting exploration of the difference between human and machine intelligence. It also serves as a metaphor for people who lose their jobs due to mechanization’. “ChatGPT, a state-of-the-art language model developed by OpenAI, has the potential to revolutionize the way medical information is disseminated and processed in the clinical and translational medicine fields. Here are some of the key benefits, challenges, pitfalls and future perspectives of using ChatGPT in this context”: Access to up-to-date information: ChatGPT can access vast amounts of medical data and provide real-time, accurate answers to clinical questions. Improved patient engagement: ChatGPT can provide patients with a convenient and accessible way to get answers to their medical questions and to track their health information.1 Reduced workload for healthcare providers: ChatGPT can help reduce the administrative burden on healthcare providers, allowing them to focus more on patient care. Data privacy concerns: ChatGPT may raise privacy concerns as it has access to vast amounts of personal health information. Inconsistent accuracy: ChatGPT may not always provide accurate answers, particularly for complex medical questions. Bias in the training data: ChatGPT is only as good as the data it was trained on. If the training data are biased, the model may perpetuate that bias. Misleading information: ChatGPT is not a substitute for a healthcare provider, and incorrect or misleading information may cause harm to patients. Dependence on technology: ChatGPT may become a crutch for healthcare providers, reducing their ability to diagnose and treat patients without relying on technology. Improved accuracy: As more data are collected and analyzed, ChatGPT's accuracy is likely to improve. Integration with electronic health records (EHRs): ChatGPT has the potential to be integrated with EHRs, allowing for a more seamless exchange of information between healthcare providers and patients. Personalized medicine: ChatGPT has the potential to provide personalized medical advice based on individual patient data and health histories. In conclusion, ChatGPT has the potential to significantly impact the clinical and translational medicine fields by providing access to up-to-date information, improving patient engagement and reducing workloads for healthcare providers. However, there are also challenges and pitfalls to be considered and addressed, and continued research and development are needed to ensure that ChatGPT is used safely and effectively’. When repeating the same query (“Regenerate Response”), it is interesting to note that the structure of the text remains unchanged, but with some deviations and variations from the previous result (see Figure 1). These differences can be explained by the underlying structure and learning architecture as well as the parameter settings of the tool, making it difficult to reproduce repeated queries. One should know that ChatGPT is deep learning model that uses a transformer-based neural network to generate human-like text. It is intriguing that the original question about the potential impact of ChatGPT in clinical and translational medicine seems to be almost answered by ChatGPT itself, yet there are some questions that need to be addressed here as a result of the global discussion that has begun about ChatGPT and its impact in healthcare. There is no doubt that the benefits and advantages of AI in medicine are beyond question, and have already made their way into everything from research to clinical applications. AI-based algorithms in all areas from data-driven preclinical research to medical decision support in the daily clinical practice, for example, through AI-based interpretation of medical images for diagnosis and patient management, pattern recognition and pre-interpretation of physiological and biophysical signals such as ECG, EEG, EMG and others, are already parts of standardized medical procedures according to GCP. However, the challenges and pitfalls indicated by ChatGPT naturally raise many questions, including relevant medical ethics issues. Data privacy and security, incorrect or misleading information that may cause harm to patients. Otherwise, patients are well prepared for the doctor's interview and appear confident on relevant clinical information such as disease-specific symptoms, medical history, and so on. However, this is often not in the interest of the attending physician and can lead to misunderstandings. In addition, the inconsistent accuracy of ChatGPT responses can lead to problems in education if ChatGPT is used without authorization. Some universities have already banned this tool. Medical staff in training and students could be influenced accordingly by ChatGPT and misinterpret medical knowledge or even make clinical decisions without independent and critical evaluation and validation. The most critical technical issue is training data bias, as ChatGPT's underlying algorithms are only as good as the data they are trained on, and are therefore prone to errors in their responses. Consequently, it would be part of GCP to train and validate the ChatGPT algorithm, for example, for diagnosis and therapy-accompanying applications on relevant, evidence-based knowledge bases, before it can be used. Here, approaches and concepts as known from medical device approval should be considered, including requirements and usability engineering, risk assessment and clinical evaluation. In summary, there are many other aspects that could be discussed in this commentary to illustrate the tremendous benefits of open AI, while not ignoring the consequences and implications of using ChatGPT unwisely. Returning to the introductory example of the science fiction episode ‘The Ultimate Computer’, the advantages and pitfalls of an AI-controlled world were impressively portrayed in this story and have also proven to be real to this day. With the launch of the OpenAI project in 2022, the world has finally been catapulted into a new ‘age of artificial intelligence’, and humans are being called upon to take ultimate responsibility for these new technologies. ‘ChatGPT has the potential to significantly impact the clinical and translational medicine fields by providing access to up-to-date information, improving patient engagement and reducing workloads for healthcare providers. However, there are also challenges and pitfalls to be considered and addressed, and continued research and development are needed to ensure that ChatGPT is used safely and effectively’. In the hope and ethical obligation to improve the quality of life of patients. The authors declare no conflicts of interest.",
+      "citationCount": 105,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ctm2.1206",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Translational medicine",
+        "Medicine",
+        "Translational research",
+        "Intensive care medicine",
+        "Data science"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Artificial Intelligence in Sports Medicine: Reshaping Electrocardiogram Analysis for Athlete Safety—A Narrative Review",
+      "authors": [
+        "Alina Maria Smaranda",
+        "Teodora Simina Drăgoiu",
+        "Adela Caramoci",
+        "Adelina Ana Afetelor",
+        "Anca Ionescu",
+        "Ioana Anca Bădărău"
+      ],
+      "journal": "Sports",
+      "year": 2024,
+      "doi": "10.3390/sports12060144",
+      "openalexId": "https://openalex.org/W4399047977",
+      "abstract": "Artificial Intelligence (AI) is redefining electrocardiogram (ECG) analysis in pre-participation examination (PPE) of athletes, enhancing the detection and monitoring of cardiovascular health. Cardiovascular concerns, including sudden cardiac death, pose significant risks during sports activities. Traditional ECG, essential yet limited, often fails to distinguish between benign cardiac adaptations and serious conditions. This narrative review investigates the application of machine learning (ML) and deep learning (DL) in ECG interpretation, aiming to improve the detection of arrhythmias, channelopathies, and hypertrophic cardiomyopathies. A literature review over the past decade, sourcing from PubMed and Google Scholar, highlights the growing adoption of AI in sports medicine for its precision and predictive capabilities. AI algorithms excel at identifying complex cardiac patterns, potentially overlooked by traditional methods, and are increasingly integrated into wearable technologies for continuous monitoring. Overall, by offering a comprehensive overview of current innovations and outlining future advancements, this review supports sports medicine professionals in merging traditional screening methods with state-of-the-art AI technologies. This approach aims to enhance diagnostic accuracy and efficiency in athlete care, promoting early detection and more effective monitoring through AI-enhanced ECG analysis within athlete PPEs.",
+      "citationCount": 33,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.mdpi.com/2075-4663/12/6/144/pdf?version=1716730554",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Athletes",
+        "Narrative review",
+        "Sports medicine",
+        "Sudden cardiac death",
+        "Wearable computer",
+        "Artificial intelligence",
+        "Health care",
+        "Medicine",
+        "Computer science"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "The application of deep learning in electrocardiogram: Where we came from and where we should go?",
+      "authors": [
+        "Jin-Yu Sun",
+        "Hui Shen",
+        "Qiang Qu",
+        "Wei Sun",
+        "Kong Xiangqing"
+      ],
+      "journal": "International Journal of Cardiology",
+      "year": 2021,
+      "doi": "10.1016/j.ijcard.2021.05.017",
+      "openalexId": "https://openalex.org/W3160994088",
+      "citationCount": 40,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Medicine",
+        "Deep learning",
+        "Artificial intelligence",
+        "Intensive care medicine",
+        "Cardiology"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Can novel multimodal chatbots such as Bing Chat Enterprise, ChatGPT-4 Pro, and Google Bard correctly interpret electrocardiogram images?",
+      "authors": [
+        "Nino Fijačko",
+        "Gregor Prosen",
+        "Benjamin S. Abella",
+        "Špela Metličar",
+        "Gregor Štiglic"
+      ],
+      "journal": "Resuscitation",
+      "year": 2023,
+      "doi": "10.1016/j.resuscitation.2023.110009",
+      "openalexId": "https://openalex.org/W4387911117",
+      "citationCount": 26,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "http://www.resuscitationjournal.com/article/S0300957223003246/pdf",
+      "publicationTypes": [
+        "letter"
+      ],
+      "concepts": [
+        "Medicine",
+        "World Wide Web",
+        "Natural language processing",
+        "Artificial intelligence"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Revolutionizing healthcare: the role of artificial intelligence in clinical practice",
+      "authors": [
+        "Shuroug A. Alowais",
+        "Sahar S. Alghamdi",
+        "Nada Alsuhebany",
+        "Tariq Alqahtani",
+        "Abdulrahman Alshaya",
+        "Sumaya N. Almohareb",
+        "Atheer Aldairem",
+        "Mohammed Alrashed",
+        "Khalid Bin Saleh",
+        "Hisham A. Badreldin",
+        "Majed S. Al Yami",
+        "Shmeylan Al Harbi",
+        "Abdulkareem Albekairy"
+      ],
+      "journal": "BMC Medical Education",
+      "year": 2023,
+      "doi": "10.1186/s12909-023-04698-z",
+      "openalexId": "https://openalex.org/W4386958277",
+      "citationCount": 2479,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://bmcmededuc.biomedcentral.com/counter/pdf/10.1186/s12909-023-04698-z",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Health care",
+        "MEDLINE",
+        "Applications of artificial intelligence",
+        "Medicine",
+        "Leverage (statistics)",
+        "Artificial intelligence",
+        "Computer science"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Key challenges for delivering clinical impact with artificial intelligence",
+      "authors": [
+        "Christopher Kelly",
+        "Alan Karthikesalingam",
+        "Mustafa Suleyman",
+        "Greg S. Corrado",
+        "Dominic King"
+      ],
+      "journal": "BMC Medicine",
+      "year": 2019,
+      "doi": "10.1186/s12916-019-1426-2",
+      "openalexId": "https://openalex.org/W2982580298",
+      "citationCount": 2166,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://bmcmedicine.biomedcentral.com/track/pdf/10.1186/s12916-019-1426-2",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Pace",
+        "Medicine",
+        "Unintended consequences",
+        "Health care",
+        "Psychological intervention",
+        "Harm",
+        "Transformative learning",
+        "Artificial intelligence",
+        "Risk analysis (engineering)",
+        "Data science",
+        "Computer science"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Detecting Digoxin Toxicity by Artificial Intelligence-Assisted Electrocardiography",
+      "authors": [
+        "Da‐Wei Chang",
+        "Chin‐Sheng Lin",
+        "Tien‐Ping Tsao",
+        "Chia‐Cheng Lee",
+        "Jiann‐Torng Chen",
+        "Chien‐Sung Tsai",
+        "Wei‐Shiang Lin",
+        "Chin Lin",
+        "Chin Lin",
+        "Chin Lin"
+      ],
+      "journal": "International Journal of Environmental Research and Public Health",
+      "year": 2021,
+      "doi": "10.3390/ijerph18073839",
+      "openalexId": "https://openalex.org/W3146621982",
+      "abstract": "Although digoxin is important in heart rate control, the utilization of digoxin is declining due to its narrow therapeutic window. Misdiagnosis or delayed diagnosis of digoxin toxicity is common due to the lack of awareness and the time-consuming laboratory work that is involved. Electrocardiography (ECG) may be able to detect potential digoxin toxicity based on characteristic presentations. Our study attempted to develop a deep learning model to detect digoxin toxicity based on ECG manifestations. This study included 61 ECGs from patients with digoxin toxicity and 177,066 ECGs from patients in the emergency room from November 2011 to February 2019. The deep learning algorithm was trained using approximately 80% of ECGs. The other 20% of ECGs were used to validate the performance of the Artificial Intelligence (AI) system and to conduct a human-machine competition. Area under the receiver operating characteristic curve (AUC), sensitivity, and specificity were used to evaluate the performance of ECG interpretation between humans and our deep learning system. The AUCs of our deep learning system for identifying digoxin toxicity were 0.912 and 0.929 in the validation cohort and the human-machine competition, respectively, which reached 84.6% of sensitivity and 94.6% of specificity. Interestingly, the deep learning system using only lead I (AUC = 0.960) was not worse than using complete 12 leads (0.912). Stratified analysis showed that our deep learning system was more applicable to patients with heart failure (HF) and without atrial fibrillation (AF) than those without HF and with AF. Our ECG-based deep learning system provides a high-accuracy, economical, rapid, and accessible way to detect digoxin toxicity, which can be applied as a promising decision supportive system for diagnosing digoxin toxicity in clinical practice.",
+      "citationCount": 38,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.mdpi.com/1660-4601/18/7/3839/pdf?version=1617940889",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Digoxin",
+        "Atrial fibrillation",
+        "Deep learning",
+        "Artificial intelligence",
+        "Electrocardiography",
+        "Medicine",
+        "Machine learning",
+        "Receiver operating characteristic",
+        "Internal medicine",
+        "Heart failure",
+        "Cardiology"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Classification of myocardial infarction based on hybrid feature extraction and artificial intelligence tools by adopting tunable-Q wavelet transform (TQWT), variational mode decomposition (VMD) and neural networks",
+      "authors": [
+        "Wei Zeng",
+        "Jian Yuan",
+        "Chengzhi Yuan",
+        "Qinghui Wang",
+        "Fenglin Liu",
+        "Ying Wang"
+      ],
+      "journal": "Artificial Intelligence in Medicine",
+      "year": 2020,
+      "doi": "10.1016/j.artmed.2020.101848",
+      "openalexId": "https://openalex.org/W3026871847",
+      "citationCount": 45,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://digitalcommons.uri.edu/mcise_facpubs/1069",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Computer science",
+        "Artificial intelligence",
+        "Pattern recognition (psychology)",
+        "Hilbert–Huang transform",
+        "Feature extraction",
+        "Wavelet transform",
+        "Artificial neural network",
+        "Feature vector",
+        "Support vector machine",
+        "Wavelet"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Artificial Intelligence (AI): Multidisciplinary perspectives on emerging challenges, opportunities, and agenda for research, practice and policy",
+      "authors": [
+        "Yogesh K. Dwivedi",
+        "Laurie Hughes",
+        "Elvira Ismagilova",
+        "Gert Aarts",
+        "Crispin Coombs",
+        "Tom Crick",
+        "Yanqing Duan",
+        "Rohita Dwivedi",
+        "John S. Edwards",
+        "Aled Eirug",
+        "Vassilis Galanos",
+        "P. Vigneswara Ilavarasan",
+        "Marijn Janssen",
+        "Paul Jones",
+        "Arpan Kumar Kar",
+        "Hatice Kizgin",
+        "Bianca Kronemann",
+        "Banita Lal",
+        "Biagio Lucini",
+        "Rony Medaglia",
+        "Kenneth Le Meunier‐FitzHugh",
+        "Leslie Caroline Le Meunier-FitzHugh",
+        "Santosh K. Misra",
+        "Emmanuel Mogaji",
+        "Sujeet Kumar Sharma",
+        "Jang Bahadur Singh",
+        "Vishnupriya Raghavan",
+        "Ramakrishnan Raman",
+        "Nripendra P. Rana",
+        "Spyridon Samothrakis",
+        "Jak Spencer",
+        "Kuttimani Tamilmani",
+        "Annie Tubadji",
+        "Paul Walton",
+        "Michael D. Williams"
+      ],
+      "journal": "International Journal of Information Management",
+      "year": 2019,
+      "doi": "10.1016/j.ijinfomgt.2019.08.002",
+      "openalexId": "https://openalex.org/W2969625533",
+      "abstract": "As far back as the industrial revolution, significant development in technical innovation has succeeded in transforming numerous manual tasks and processes that had been in existence for decades where humans had reached the limits of physical capacity. Artificial Intelligence (AI) offers this same transformative potential for the augmentation and potential replacement of human tasks and activities within a wide range of industrial, intellectual and social applications. The pace of change for this new AI technological age is staggering, with new breakthroughs in algorithmic machine learning and autonomous decision-making, engendering new opportunities for continued innovation. The impact of AI could be significant, with industries ranging from: finance, healthcare, manufacturing, retail, supply chain, logistics and utilities, all potentially disrupted by the onset of AI technologies. The study brings together the collective insight from a number of leading expert contributors to highlight the significant opportunities, realistic assessment of impact, challenges and potential research agenda posed by the rapid emergence of AI within a number of domains: business and management, government, public sector, and science and technology. This research offers significant and timely insight to AI technology and its impact on the future of industry and society in general, whilst recognising the societal and industrial influence on pace and direction of AI development.",
+      "citationCount": 3723,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.sciencedirect.com/science/article/pii/S026840121930917X",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Pace",
+        "Transformative learning",
+        "Government (linguistics)",
+        "Multidisciplinary approach",
+        "Supply chain",
+        "Knowledge management",
+        "Business",
+        "Engineering"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Meta-Analysis of the Performance of AI-Driven ECG Interpretation in the Diagnosis of Valvular Heart Diseases",
+      "authors": [
+        "Sahib Singh",
+        "Rahul Chaudhary",
+        "Kevin P. Bliden",
+        "Udaya S. Tantry",
+        "Paul A. Gurbel",
+        "Shyam Visweswaran",
+        "Matthew E. Harinstein"
+      ],
+      "journal": "The American Journal of Cardiology",
+      "year": 2023,
+      "doi": "10.1016/j.amjcard.2023.12.015",
+      "openalexId": "https://openalex.org/W4389720767",
+      "citationCount": 24,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10842912/pdf/nihms-1959751.pdf",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Medicine",
+        "Internal medicine",
+        "Cardiology",
+        "Mitral regurgitation",
+        "Stenosis",
+        "Context (archaeology)",
+        "Meta-analysis",
+        "Confidence interval",
+        "Logistic regression"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "An overview of clinical decision support systems: benefits, risks, and strategies for success",
+      "authors": [
+        "Reed T. Sutton",
+        "David Pincock",
+        "Daniel C. Baumgart",
+        "Daniel Sadowski",
+        "Richard N. Fedorak",
+        "Karen I. Kroeker"
+      ],
+      "journal": "npj Digital Medicine",
+      "year": 2020,
+      "doi": "10.1038/s41746-020-0221-y",
+      "openalexId": "https://openalex.org/W3004612364",
+      "abstract": "Computerized clinical decision support systems, or CDSS, represent a paradigm shift in healthcare today. CDSS are used to augment clinicians in their complex decision-making processes. Since their first use in the 1980s, CDSS have seen a rapid evolution. They are now commonly administered through electronic medical records and other computerized clinical workflows, which has been facilitated by increasing global adoption of electronic medical records with advanced capabilities. Despite these advances, there remain unknowns regarding the effect CDSS have on the providers who use them, patient outcomes, and costs. There have been numerous published examples in the past decade(s) of CDSS success stories, but notable setbacks have also shown us that CDSS are not without risks. In this paper, we provide a state-of-the-art overview on the use of clinical decision support systems in medicine, including the different types, current use cases with proven efficacy, common pitfalls, and potential harms. We conclude with evidence-based recommendations for minimizing risk in CDSS design, implementation, evaluation, and maintenance.",
+      "citationCount": 2546,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.nature.com/articles/s41746-020-0221-y.pdf",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Risk analysis (engineering)",
+        "Decision support system",
+        "Management science",
+        "Computer science",
+        "Business"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "A Talk with ChatGPT: The Role of Artificial Intelligence in Shaping the Future of Cardiology and Electrophysiology",
+      "authors": [
+        "Angelica Cersosimo",
+        "Elio Zito",
+        "Nicola Pierucci",
+        "Andrea Matteucci",
+        "Vincenzo Mirco La Fazia"
+      ],
+      "journal": "Journal of Personalized Medicine",
+      "year": 2025,
+      "doi": "10.3390/jpm15050205",
+      "openalexId": "https://openalex.org/W4410524161",
+      "abstract": "<b>Background</b>: Artificial intelligence (AI) is poised to significantly impact the future of cardiology and electrophysiology, offering new tools to interpret complex datasets, improve diagnosis, optimize clinical workflows, and personalize therapy. ChatGPT-4o, a leading AI-based language model, exemplifies the transformative potential of AI in clinical research, medical education, and patient care. <b>Aim and Methods</b>: In this paper, we present an exploratory dialogue with ChatGPT to assess the role of AI in shaping the future of cardiology, with a particular focus on arrhythmia management and cardiac electrophysiology. Topics discussed include AI applications in ECG interpretation, arrhythmia detection, procedural guidance during ablation, and risk stratification for sudden cardiac death. We also examine the risks associated with AI use, including overreliance, interpretability challenges, data bias, and generalizability. <b>Conclusions</b>: The integration of AI into cardiovascular care offers the potential to enhance diagnostic accuracy, tailor interventions, and support decision-making. However, the adoption of AI must be carefully balanced with clinical expertise and ethical considerations. By fostering collaboration between clinicians and AI developers, it is possible to guide the development of reliable, transparent, and effective tools that will shape the future of personalized cardiology and electrophysiology.",
+      "citationCount": 33,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.mdpi.com/2075-4426/15/5/205/pdf?version=1747708086",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Cardiac electrophysiology",
+        "Medicine",
+        "Interpretability",
+        "Sudden cardiac death",
+        "Clinical Practice",
+        "Artificial intelligence",
+        "Internal medicine",
+        "Cardiology"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Artificial Intelligence in Diagnosis of Long QT Syndrome: A Review of Current State, Challenges, and Future Perspectives",
+      "authors": [
+        "Negar Raissi Dehkordi",
+        "Nastaran Raissi-Dehkordi",
+        "Kimia Karimi Toudeshki",
+        "Mohammad Hadi Farjoo"
+      ],
+      "journal": "Mayo Clinic Proceedings Digital Health",
+      "year": 2023,
+      "doi": "10.1016/j.mcpdig.2023.11.003",
+      "openalexId": "https://openalex.org/W4389921755",
+      "citationCount": 24,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://www.mcpdigitalhealth.org/article/S2949-7612(23)00093-7/pdf",
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Current (fluid)",
+        "State (computer science)",
+        "Medicine",
+        "Intensive care medicine",
+        "Computer science"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Artificial intelligence and the electrocardiogram: A modern renaissance",
+      "authors": [
+        "Stefano Palermi",
+        "Marco Vecchiato",
+        "Fu Siong Ng",
+        "Zachi I. Attia",
+        "Youngjin Cho",
+        "Matteo Anselmino",
+        "Gaetano Maria De Ferrari",
+        "Andrea Saglietto",
+        "Arunashis Sau",
+        "I-Min Chiu",
+        "Juan M. Farina",
+        "Reza Arsanjani",
+        "Giuseppe Biondi Zoccai",
+        "Leonarda Galiuto",
+        "Luca Nissardi",
+        "Veronica Dusi"
+      ],
+      "journal": "European Journal of Internal Medicine",
+      "year": 2025,
+      "doi": "10.1016/j.ejim.2025.04.036",
+      "openalexId": "https://openalex.org/W4410518913",
+      "citationCount": 19,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "publicationTypes": [
+        "review"
+      ],
+      "concepts": [
+        "Medicine",
+        "Generalizability theory",
+        "Artificial intelligence",
+        "Transformative learning",
+        "Precision medicine",
+        "Deep learning"
+      ],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    },
+    {
+      "title": "Data Quality in Healthcare for the Purpose of Artificial Intelligence: A Case Study on ECG Digitalization",
+      "authors": [
+        "Arian Ranjbar",
+        "Jesper Ravn"
+      ],
+      "journal": "Studies in health technology and informatics",
+      "year": 2023,
+      "doi": "10.3233/shti230534",
+      "openalexId": "https://openalex.org/W4382631186",
+      "abstract": "The quantity of data generated within healthcare is increasing exponentially. Following this development, the interest of using data driven methodologies such as machine learning is on a steady rise. However, the quality of the data also needs to be considered, since information generated for human interpretation may not be optimal for quantitative computer-based analysis. This work investigates dimensions of data quality for the purpose of artificial intelligence applications in healthcare. Particularly, ECG is studied which traditionally rely on analog prints for initial examination. A digitalization process for ECG is implemented, together with a machine learning model for heart failure prediction, to quantitatively compare results based on data quality. The digital time series data provide a significant accuracy increase, compared to scans of analog plots.",
+      "citationCount": 10,
+      "isOpenAccess": false,
+      "openAccessPdfUrl": "https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI230534",
+      "publicationTypes": [
+        "article"
+      ],
+      "concepts": [
+        "Computer science",
+        "Artificial intelligence",
+        "Process (computing)",
+        "Quality (philosophy)",
+        "Machine learning",
+        "Health care",
+        "Data mining"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "openalex"
+      ]
+    }
+  ],
+  "total": 6344
+}

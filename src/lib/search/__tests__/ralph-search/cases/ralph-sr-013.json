@@ -1,0 +1,47 @@
+{
+  "id": "ralph-sr-013",
+  "name": "PICO extraction on SGLT2i search results",
+  "phase": 3,
+  "category": "extraction",
+  "query": "What are the effects of SGLT2 inhibitors on heart failure outcomes?",
+  "expectedPapers": [
+    {
+      "titleFragment": "sglt2",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "heart failure",
+      "mustFind": true
+    }
+  ],
+  "rankingRules": [
+    {
+      "rule": "High evidence (I-II) should outnumber low evidence (IV-V) in top 10",
+      "check": "higher_level_outnumbers_lower",
+      "params": { "n": 10 }
+    }
+  ],
+  "metadataChecks": [
+    {
+      "check": "all_have_doi",
+      "threshold": 0.85
+    },
+    {
+      "check": "has_abstract",
+      "threshold": 0.7
+    },
+    {
+      "check": "study_type_not_other",
+      "threshold": 0.5
+    }
+  ],
+  "dedupChecks": [
+    {
+      "titleFragments": [
+        "genitourinary tract infections and sglt2 inhibitors",
+        "differential cardiovascular benefits of sglt2 inhibitors"
+      ],
+      "maxOccurrences": 1
+    }
+  ]
+}

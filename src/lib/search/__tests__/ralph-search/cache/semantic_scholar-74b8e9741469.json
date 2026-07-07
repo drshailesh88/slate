@@ -1,0 +1,117 @@
+{
+  "source": "semantic_scholar",
+  "query": "What are the effects of SGLT2 inhibitors on heart failure outcomes?",
+  "timestamp": "2026-03-02T14:57:08.699Z",
+  "results": [
+    {
+      "title": "Diuretics, SGLT2 inhibitors and falls in older heart failure patients: to prescribe or to deprescribe? A clinical review",
+      "authors": [
+        "Eveline P. Poelgeest",
+        "M. L. Handoko",
+        "Majon Muller",
+        "N. Velde",
+        "On behalf of the Eugms Task Finish group on Fall-risk drugs"
+      ],
+      "journal": "European Geriatric Medicine",
+      "year": 2023,
+      "doi": "10.1007/s41999-023-00752-7",
+      "pmid": "36732414",
+      "s2Id": "61e97a2b96498a5ec0c10520b4ad18307c5cb5c4",
+      "abstract": "Aim This study aimed at summarizing the available literature on fall risk associated with diuretic and SGLT2i use in older heart failure patients, including the underlying pathophysiology, and to assist clinicians in safe (de)prescribing of these drug classes. Findings Both heart failure and diuretic or SGLT2 inhibitor use increase fall risk in older adults. Diuretics and SGLT2 inhibitors not only have various fall-related adverse effects, which partly overlap (e.g. tendency to cause hypotension), but also differ: compared to SGLT2is, diuretics display more fall risk factors (e.g. electrolyte abnormalities). The tendency to cause fall-related adverse effects may differ according to diuretic sub-class or even within sub-classes. Message Decisions to continue or deprescribe diuretics or SGLT2is in fall-prone older HF patients are generally highly complex, but detailed insight into fall-related side effect profiles of these drug classes, and practical clinical decision tools and resources, assist prescribers in rational and personalized (de)prescribing. Purpose Both heart failure and its treatment with diuretics or SGLT2 inhibitors increase fall risk in older adults. Therefore, decisions to continue or deprescribe diuretics or SGLT2 inhibitors in older heart failure patients who have fallen are generally highly complex and challenging for clinicians. However, a comprehensive overview of information required for rationale and safe decision-making is lacking. The aim of this clinical review was to assist clinicians in safe (de)prescribing of these drug classes in older heart failure patients. Methods We comprehensively searched and summarized published literature and international guidelines on the efficacy, fall-related safety issues, and deprescribing of the commonly prescribed diuretics and SGLT2 inhibitors in older adults. Results Both diuretics and SGLT2 inhibitors potentially cause various fall-related adverse effects. Their fall-related side effect profiles partly overlap (e.g., tendency to cause hypotension), but there are also important differences; based on the currently available evidence of this relatively new drug class, SGLT2 inhibitors seem to have a favorable fall-related adverse effect profile compared to diuretics (e.g., low/absent tendency to cause hyperglycemia or electrolyte abnormalities, low risk of worsening chronic kidney disease). In addition, SGLT2 inhibitors have potential beneficial effects (e.g., disease-modifying effects in heart failure, renoprotective effects), whereas diuretic effects are merely symptomatic. Conclusion (De)prescribing diuretics and SGLT2 inhibitors in older heart failure patients who have fallen is often highly challenging, but this clinical review paper assists clinicians in individualized and patient-centered rational clinical decision-making: we provide a summary of available literature on efficacy and (subclass-specific) safety profiles of diuretics and SGLT2 inhibitors, and practical guidance on safe (de)prescribing of these drugs (e.g. a clinical decision tree for deprescribing diuretics in older adults who have fallen).",
+      "tldr": "This clinical review assists clinicians in individualized and patient-centered rational clinical decision-making by providing a summary of available literature on efficacy and (subclass-specific) safety profiles of diuretics and SGLT2 inhibitors, and practical guidance on safe (de)prescribing of these drugs.",
+      "citationCount": 25,
+      "influentialCitationCount": 1,
+      "referenceCount": 116,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://link.springer.com/content/pdf/10.1007/s41999-023-00752-7.pdf",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Canagliflozin independently reduced plasma volume from conventional diuretics in patients with type 2 diabetes and chronic heart failure: a subanalysis of the CANDLE trial",
+      "authors": [
+        "K. Shiina",
+        "H. Tomiyama",
+        "Atsushi Tanaka",
+        "T. Imai",
+        "I. Hisauchi",
+        "I. Taguchi",
+        "A. Sezai",
+        "Shigeru Toyoda",
+        "K. Dohi",
+        "H. Kamiya",
+        "K. Kida",
+        "T. Anzai",
+        "T. Chikamori",
+        "K. Node",
+        "O. B. O. E. investigators"
+      ],
+      "journal": "Hypertension Research",
+      "year": 2022,
+      "doi": "10.1038/s41440-022-01085-x",
+      "pmid": "36380202",
+      "s2Id": "0147102dd674ddc88d14960087c56b1fed824b33",
+      "tldr": "The long-term beneficial effect of SGLT2i on intravascular congestion could be independent of conventional diuretic therapy without worsening renal function in patients with T2D and HF (HFpEF predominantly) and are accompanied by improved hyperuricemia without causing major electrolyte abnormalities.",
+      "citationCount": 11,
+      "influentialCitationCount": 0,
+      "referenceCount": 43,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Effects of Teneligliptin on the Progressive Left Ventricular Diastolic Dysfunction in Patients with Type 2 Diabetes Mellitus in Open-Label, Marker-Stratified Randomized, Parallel-Group Comparison, Standard Treatment-Controlled Multicenter Trial (TOPLEVEL Study): Rationale and Study Design",
+      "authors": [
+        "M. Imazu",
+        "A. Nakano",
+        "S. Ito",
+        "T. Hamasaki",
+        "M. Kitakaze",
+        "on behalf of the Earlier investigators and study coordinators"
+      ],
+      "journal": "Cardiovascular Drugs and Therapy",
+      "year": 2019,
+      "doi": "10.1007/s10557-019-06871-3",
+      "pmid": "30850916",
+      "s2Id": "a27a0c2c69373eb5758fe015ac0903d7954f3335",
+      "tldr": "This study demonstrates the effectiveness of DPP-IV inhibitors on LV diastolic dysfunction, an important surrogate endpoint to predict the cardiovascular outcomes of HFpEF (UMIN000014589).",
+      "citationCount": 5,
+      "influentialCitationCount": 0,
+      "referenceCount": 38,
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    }
+  ],
+  "total": 3
+}

@@ -1,0 +1,25 @@
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--rail);
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 13px;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.pill:disabled {
+  cursor: default;
+}

@@ -1,0 +1,50 @@
+{
+  "id": "ralph-sr-014",
+  "name": "ClinicalTrials.gov integration — SGLT2i in heart failure",
+  "phase": 3,
+  "category": "integration",
+  "query": "What are the effects of SGLT2 inhibitors on heart failure outcomes?",
+  "expectedPapers": [
+    {
+      "titleFragment": "sglt2",
+      "mustFind": true
+    },
+    {
+      "titleFragment": "heart failure",
+      "mustFind": true
+    }
+  ],
+  "rankingRules": [
+    {
+      "rule": "Results should include clinical trial registrations",
+      "check": "has_clinical_trials",
+      "params": { "minTrials": 3 }
+    },
+    {
+      "rule": "Clinical trials should have proper NCT ID and metadata",
+      "check": "has_nctId_fields",
+      "params": {}
+    },
+    {
+      "rule": "High evidence (I-II) should outnumber low evidence (IV-V) in top 10",
+      "check": "higher_level_outnumbers_lower",
+      "params": { "n": 10 }
+    }
+  ],
+  "metadataChecks": [
+    {
+      "check": "all_have_doi",
+      "threshold": 0.5
+    },
+    {
+      "check": "year_nonzero",
+      "threshold": 0.85
+    }
+  ],
+  "dedupChecks": [
+    {
+      "titleFragments": ["investigation of biomarker response to sglt2 inhibition"],
+      "maxOccurrences": 1
+    }
+  ]
+}

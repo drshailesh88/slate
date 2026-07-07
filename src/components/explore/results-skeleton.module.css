@@ -1,0 +1,68 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--paper);
+}
+
+.block {
+  border-radius: 4px;
+  animation: shimmer calc(var(--motion-panel) * 6) var(--ease-inout) infinite;
+}
+
+.title {
+  width: 62%;
+  height: 18px;
+  background: var(--active);
+}
+
+.meta {
+  width: 38%;
+  height: 12px;
+  margin-top: 8px;
+  background: var(--line2);
+}
+
+.badgeRow {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.chip {
+  width: 56px;
+  height: 18px;
+  background: var(--line2);
+}
+
+.snippet {
+  width: 100%;
+  height: 12px;
+  margin-top: 10px;
+  background: var(--line2);
+}
+
+.snippetShort {
+  width: 68%;
+  height: 12px;
+  margin-top: 6px;
+  background: var(--line2);
+}
+
+@keyframes shimmer {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}

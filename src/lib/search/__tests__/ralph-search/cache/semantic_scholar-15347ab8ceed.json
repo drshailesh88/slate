@@ -1,0 +1,687 @@
+{
+  "source": "semantic_scholar",
+  "query": "Traditional Indian medicine cardiovascular effects systematic review",
+  "timestamp": "2026-03-02T17:03:45.683Z",
+  "results": [
+    {
+      "title": "The effects of Traditional Chinese Medicine on cardiac function after percutaneous coronary intervention: a meta-analysis and systematic review",
+      "authors": [
+        "Mengchen Wang",
+        "Shuai Fan",
+        "Libo Xia",
+        "Zixu Wang",
+        "Jixiang Ren"
+      ],
+      "journal": "Frontiers in Cardiovascular Medicine",
+      "year": 2026,
+      "doi": "10.3389/fcvm.2026.1619928",
+      "s2Id": "7ff45ab5531c21c676f422972083618f89074f37",
+      "abstract": "\n \n This systematic review aimed to synthesize and summarize current evidence regarding the effects of Traditional Chinese Medicine (TCM) on cardiac function in patients with coronary heart disease (CHD) following percutaneous coronary intervention (PCI).\n \n \n \n A comprehensive search was conducted in PubMed, Embase, the Cochrane Library, China National Knowledge Infrastructure (CNKI), Wanfang Database, the Chinese Biomedical Literature Database (CBM), and the Chinese Scientific and Technological Journal Database (VIP). Relevant conference papers were also manually screened. Studies evaluating the clinical efficacy of TCM combined with conventional Western medicine for CHD after PCI were selected based on predefined inclusion and exclusion criteria. The methodological quality of the included studies was assessed using the RoB 2. Data extraction was performed independently, and Stata software was used for meta-analysis.\n \n \n \n \n 12 studies involving a total of 6,383 patients were included. Compared with conventional Western medicine alone, integrated TCM and Western therapy significantly reduced the incidence of in-stent restenosis (ISR) and non-fatal myocardial infarction after PCI (\n p\n  < 0.05). However, no significant differences were observed in cardiac mortality or the incidence of coronary artery bypass grafting (CABG) between the two treatment approaches (\n p\n  > 0.05).\n \n \n \n \n The combination of TCM with conventional Western therapy may reduce ISR and non-fatal myocardial infarction in CHD patients after PCI compared with Western medicine alone, suggesting potential benefits for improving post-PCI clinical outcomes.\n",
+      "tldr": "The combination of TCM with conventional Western therapy may reduce ISR and non-fatal myocardial infarction in CHD patients after PCI compared with Western medicine alone, suggesting potential benefits for improving post-PCI clinical outcomes.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 38,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Traditional Indian Medicine Improves Clinical Outcome in Non-alcoholic fatty Liver diseases - A Systematic Review and Meta-analysis",
+      "authors": [
+        "Piyush Chaudhary",
+        "Bharat Rathi",
+        "N. Lamba",
+        "A. Sharma",
+        "Renu Rathi"
+      ],
+      "journal": "International Journal of Ayurvedic Medicine",
+      "year": 2023,
+      "doi": "10.47552/ijam.v14i2.3395",
+      "s2Id": "c8223f9420921e4347f48945edb89fcd9d8c6d36",
+      "abstract": "Background: Non- Alcoholic Fatty Liver Disease (NAFLD) is a rapidly emerging liver disease linked strongly to metabolic syndrome. In the absence of specific pharmacological agents for the effective treatment of NAFLD, current treatment mainly focuses on lifestyle and dietary modifications. Several agents referenced in Ayurvedic texts have shown promising effects in patients over centuries of use. But the outcomes reported by various randomized clinical trials (RCTs) for the efficacy of herbs in non-alcoholic fatty liver disease (NAFLD) are conflicting. Objective: This study aims to systematically review and conduct meta-analysis of the available evidence to evaluate the efficacy and safety of Ayurveda-referenced drugs.  Methodology: The electronic databases PubMed, Web of Science, Embase, Cochrane library, and ARP were searched up to May 2022 to identify relevant studies. Quality of studies was evaluated using modified Jadad Scale. Risk of bias was assessed using Cochrane risk of bias tool. Result: The search retrieved 1352 studies, but only 18 studies were finally evaluated. Statistical analysis showed significant reduction in grades of fatty liver (RR: 2.42, 95% CI; 1.52, 3.86), AST (SMD: -0.91, 95% CI; -1.04, 0.08;) and ALT (SMD = − 0.91; 95% CI; − 1.53, − 0.28; P < 0.00001). Conclusion: Ayurveda drugs have shown positive results in managing NAFLD, as evidenced by the limited available data. More quality-based RCT’s using standardized Ayurveda drugs with large sample sizes and taking histological outcomes into consideration must be conducted to generate stronger evidence.",
+      "tldr": "Ayurveda drugs have shown positive results in managing NAFLD, as evidenced by the limited available data, and more quality-based RCT’s using standardized Ayurvedic drugs with large sample sizes and taking histological outcomes into consideration must be conducted to generate stronger evidence.",
+      "citationCount": 1,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://www.ijam.co.in/index.php/ijam/article/download/3395/1058",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Effects of Cardiac Rehabilitation on Cardiac Function and Cardiovascular Adverse Events in Coronary Heart Disease Patients Following Percutaneous Coronary Intervention: A Systematic Review and Meta-analysis of Randomized Controlled Trials",
+      "authors": [
+        "Xingrong He",
+        "Jing Wang",
+        "Li-Ya Ye",
+        "Linyan Xu",
+        "Jingquan Gao"
+      ],
+      "journal": "Reviews in Cardiovascular Medicine",
+      "year": 2025,
+      "doi": "10.31083/RCM39926",
+      "pmid": "41089802",
+      "s2Id": "d007d543b7bb7dda7b93f6750d14fba846b8fab6",
+      "abstract": "Background: Assessment of the influence of the five central cardiac rehabilitation (CR) prescriptions on heart function and cardiovascular complications in individuals with coronary artery disease following percutaneous coronary intervention (PCI). Methods: This systematic review and meta-analysis was conducted and reported in accordance with Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) statement. A systematic search of PubMed, Web of Science, Ovid full-text journals database, Embase, CINAHL, Cochrane Library, MEDLINE, CNKI, VIP, SinoMed, and Wanfang data resources, was performed in November 2024. Studies that met the following criteria were included: (i) Population (P): adult individuals (18 years or older) with a confirmed diagnosis of ischemic heart disease using the clinical gold standard “coronary angiography” and undergoing first-time PCI; (ii) Intervention (I): five core cardiac rehabilitation prescriptions; (iii) Control (C): routine rehabilitation guidance/traditional rehabilitation guidance; (iv) Outcomes (O): left ventricular ejection fraction (LVEF)/left ventricular end-diastolic diameter (LVEDD)/six-minute walk distance (6MWD)/Major Adverse Cardiovascular Events (MACE); (v) Study design (S): randomized controlled trials. Results: This systematic review and meta-analysis of 16 randomized controlled trials (involving 1808 patients) demonstrates that comprehensive Cardiac Rehabilitation (CCR), integrating exercise training, nutritional counseling, smoking cessation support, psychological intervention, and medication management, yields two key benefits for coronary heart disease (CHD) patients following first-time PCI: (1) significant enhancement of cardiac function evidenced by improved LVEF (standardized mean difference (SMD) = 0.56, 95% confidence interval (CI): 0.33 to 0.79), reduced LVEDD (SMD = –0.67, 95% CI: –0.97 to –0.36), and increased exercise capacity (SMD = 0.82, 95% CI: 0.48 to 1.15); (2) substantial reduction in MACE (odds ratios (OR) = 0.15, 95% CI: 0.09 to 0.24). Conclusions: Patients who have undergone first-time PCI for CHD may experience significant advantages from the combined intervention of five CR strategies. Along with adherence to medical therapy and the evolution of medical models, strengthening multidisciplinary cooperation is crucial for optimizing clinical outcomes in patients following coronary interventional procedures. The PROSPERO Registration: CRD42024565139, URL: https://www.crd.york.ac.uk/prospero/display_record.php?ID=CRD42024565139.",
+      "tldr": "This systematic review and meta-analysis of 16 randomized controlled trials demonstrates that comprehensive Cardiac Rehabilitation (CCR), integrating exercise training, nutritional counseling, smoking cessation support, psychological intervention, and medication management, yields two key benefits for coronary heart disease (CHD) patients following first-time PCI.",
+      "citationCount": 1,
+      "influentialCitationCount": 0,
+      "referenceCount": 43,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "A systematic review and meta-analysis of some traditional Indian remedies against dengue",
+      "authors": [
+        "Devesh Tewari",
+        "G. K. Jain",
+        "Anoop Kumar"
+      ],
+      "journal": "Discover Medicine",
+      "year": 2024,
+      "doi": "10.1007/s44337-024-00048-0",
+      "s2Id": "f33713706c7da1994af19ee9b38a51d3c455276a",
+      "abstract": "Dengue is a life-threatening viral infection caused by the dengue virus (DENV), transmitted to humans through the infected mosquito’s bite. No specific treatment for dengue and symptomatic relief is the only option available. Present study is performed to find out the role of some traditional Indian remedies in the treatment of dengue virus infection. The study was conducted as per the PRISMA guidelines. The relevant studies were searched and sorted based on the inclusion and exclusion criteria. The risk of bias was assessed using Cochrane Risk of Bias Assessment Tool. The pooled estimate was calculated as mean difference with 95% confidence interval. A random effect model was used and publication bias was assessed qualitatively. The overall estimate measure i.e. mean difference [MD = 19.50; 95% confidence interval [1.82–37.18]; P = 0.03] which indicates a significant increase in platelet counts after treatment with Carica papaya extract as compared to the control group. The period of hospitalization was also significantly decreased in Carica papaya extract group as compared to the control group [MD = 1.85; 95% CI (1.41–2.28); P < 0.00001]. Andrographis paniculata, Tinospora cordifolia, and goat milk have shown promising effects under preclinical studies against DENV infections, however, clinical studies are not available. C. papaya, A. paniculata, T. cordifolia and goat milk have potential against DENV infections, however, a greater number of studies are required to confirm the exact role of these traditional Indian remedies particularly Andrographis paniculata, Tinospora cordifolia and goat milk.",
+      "tldr": "A greater number of studies are required to confirm the exact role of these traditional Indian remedies particularly Andrographis paniculata, Tinospora cordifolia and goat milk in the treatment of dengue virus infection.",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 34,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://doi.org/10.1007/s44337-024-00048-0",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Health effects of filtering facepiece respirators: Systematic review of pulmonary and cardiovascular effects",
+      "authors": [
+        "P. Harber",
+        "W. Beckett"
+      ],
+      "journal": "American Journal of Industrial Medicine",
+      "year": 2022,
+      "doi": "10.1002/ajim.23450",
+      "pmid": "36464991",
+      "s2Id": "05667b939e43cde4249bb3747d2775a3a462f31a",
+      "abstract": "Abstract Filtering facepiece respirators (FFRs) were introduced to protect the wearer by removing small particles from inspired air. FFRs are now also used to reduce the spread of transmissible agents from the wearer and are worn outside traditional healthcare and other workplaces. The COVID‐19 pandemic increased concerns about potential adverse effects on wearers. A PUBMED query retrieved articles through June 2022. Abstracts and selected full‐text articles were systematically reviewed by the authors. This article focuses upon cardiopulmonary physiologic effects (e.g., ventilation, CO2 elimination, oxygen uptake, and respiratory control) with emphasis upon current and potential research methods as well as summarizing results. 1985 records were identified, of which only 26% were published before 2020. FFR effects on CO2 elimination appear more likely to be significant than effects on oxygenation or cardiovascular function. While FFRs appear well tolerated by healthy persons, more research is needed for those with pulmonary or cardiac disorders, and for children. Many traditional pulmonary exercise study methods require special care when applied to filtering facepiece respirators. Studying additional parameters may explain the paradox of many subjective discomfort reports despite very limited physiologic effects.",
+      "tldr": "This article focuses upon cardiopulmonary physiologic effects (e.g., ventilation, CO2 elimination, oxygen uptake, and respiratory control) with emphasis upon current and potential research methods as well as summarizing results.",
+      "citationCount": 3,
+      "influentialCitationCount": 0,
+      "referenceCount": 64,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9878161",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Systematic review of Chinese medicine for the treatment of atherosclerosis",
+      "authors": [
+        "Cuiyao Tang",
+        "Bo Liu",
+        "Ying Zhang",
+        "Mengyang Long",
+        "Wei Zheng",
+        "Jing Lu",
+        "Han Li",
+        "Zihui Xu",
+        "Yunqiao Wang"
+      ],
+      "journal": "Frontiers in Cardiovascular Medicine",
+      "year": 2025,
+      "doi": "10.3389/fcvm.2025.1671008",
+      "pmid": "41257262",
+      "s2Id": "7962b39b9627732821f2a799967ad35c8c0390f4",
+      "abstract": "Introduction Atherosclerosis (AS) is a chronic inflammatory metabolic disease strongly associated with risk factors, including hypertension, hyperlipidemia, hyperglycemia, and hyperuricemia. AS serves as the pathological foundation for numerous cardiovascular diseases (CVDs), and it remains a major threat to global health. However, the underlying mechanisms driving AS development are incompletely understood. Elucidating the pathogenesis and key influencing factors of AS is critical for identifying novel preventive strategies and therapeutic approaches. Methods We searched PubMed and Web of Science for relevant studies. We selected relevant English research articles published between 2012 and 2024. Afterward,we analyzed and summarized the pharmacological effects and molecular mechanisms of these Chinese medicines. Results Through our search and exclusion criteria, a total of 116 preclinical studies and 6 clinical research articles were found. Discussion Traditional Chinese medicine (TCM), with over 2000 years of clinical application, offers a rich source of potential interventions. Integrating modern medical technologies allows for the reevaluation of TCM from a natural compound perspective. This review comprehensively summarizes the mechanisms by which single herbal medicines (SHMs) and their derived natural compounds (NCs) exert effects against AS on the basis of preclinical evidence and analysis of seven selected double-blind, randomized, placebo-controlled clinical trials (RCTs).",
+      "tldr": "This review comprehensively summarizes the mechanisms by which single herbal medicines (SHMs) and their derived natural compounds (NCs) exert effects against AS on the basis of preclinical evidence and analysis of seven selected double-blind, randomized, placebo-controlled clinical trials (RCTs).",
+      "citationCount": 0,
+      "influentialCitationCount": 0,
+      "referenceCount": 129,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "The Efficacy of Traditional Chinese Herbal Medicine Across Multiple Cardiovascular Diseases: An Umbrella Review of Systematic Reviews of Randomized Controlled Trials",
+      "authors": [
+        "Xi Li",
+        "Tao Yu",
+        "Q. Jiang",
+        "Jin Tan",
+        "Ke Liu"
+      ],
+      "journal": "Journal of Cardiovascular Pharmacology",
+      "year": 2024,
+      "doi": "10.1097/FJC.0000000000001535",
+      "pmid": "38194594",
+      "s2Id": "c6fb7a8f5eceef57d5519ee81073be23535fdb20",
+      "abstract": "Abstract: Traditional Chinese herbal medicine (CHM) has been extensively used in cardiovascular disease (CVD) in modern clinical practice, alone or in combination with conventional treatment. However, its efficacy has not been assessed extensively. From inception until August 2023, we systematically searched 5 public literature databases to conduct the umbrella review. The inclusion criterion is systematic reviews of randomized controlled trials investigating the effect of CHM in the contemporary management of CVDs. The quality of the included systematic reviews, the certainty of the evidence, and the potential risk of bias were assessed. Five hundred and thirty-nine systematic reviews, including 346 studies in Chinese and 193 in English, were selected before the quantitative synthesis. The methodological quality was generally moderate, with a median value of 11. The favorable efficacy of CHM was primarily presented on 5 main conditions: coronary artery disease, hypertension, heart failure, restenosis, and angina pectoris. CHM, with or without conventional treatment, showed a consistent beneficial effect in various CVDs. Nevertheless, the magnitude of the effect requires further investigation as the lack of relevant research and the complexity of the clinical practice of CHM.",
+      "tldr": "Traditional Chinese herbal medicine, with or without conventional treatment, showed a consistent beneficial effect in various CVDs, Nevertheless, the magnitude of the effect requires further investigation as the lack of relevant research and the complexity of the clinical practice of CHM.",
+      "citationCount": 2,
+      "influentialCitationCount": 0,
+      "referenceCount": 96,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Effects of Traditional Chinese Medicine on Serum Cytokines for the Dampness-heat Syndrome of Ulcerative Colitis: A Systematic Review and Meta-analysis.",
+      "authors": [
+        "Yuan Xu",
+        "Yu Liu",
+        "Jian Lu",
+        "Jiong Wu"
+      ],
+      "journal": "Alternative therapies in health and medicine",
+      "year": 2023,
+      "pmid": "37171947",
+      "s2Id": "8b4c7f1137eb71f1ffed33d68c9b7dc1e466fc41",
+      "tldr": "The literature review and meta-analysis intended to examine TCM's effects in the treatment of UC patients who have the dampness-heat syndrome on the serum cytokines known to be related to UC's pathogenesis found that six proinflammatory cytokines were significantly lower in the combined TCM only and TCM+WM intervention groups than in the WM control group.",
+      "citationCount": 5,
+      "influentialCitationCount": 1,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "The Effectiveness and Safety of Integrative Traditional Asian Medicine Therapy in Lung Cancer Patients Undergoing Cancer Standard Treatment: A Protocol for Systematic Review and Meta-analysis",
+      "authors": [
+        "Keon-Jun Lee",
+        "Dong-Hyeon Kim",
+        "Sang-Won Shin",
+        "Mi-Sun Park",
+        "Jong-Ha Kwon",
+        "So-Jung Park"
+      ],
+      "journal": "Innovations in Acupuncture and Medicine",
+      "year": 2025,
+      "doi": "10.1186/s44424-025-00001-7",
+      "s2Id": "d5f9a4397ba58bc1e4aac23b3d79fcbed2f705a1",
+      "tldr": "A systematic review and meta-analysis is outlined to evaluate the effectiveness and safety of TAM as an adjunctive therapy for lung cancer patients undergoing standard treatments and may contribute to the development of clinical practice guidelines, enhancing patient outcomes and informing future research in integrative oncology.",
+      "citationCount": 2,
+      "influentialCitationCount": 0,
+      "referenceCount": 29,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Traditional Chinese Medicine for Alzheimer's Disease: A Systematic Review and Meta-Analysis.",
+      "authors": [
+        "Yuqing Chen",
+        "Danning Zhang",
+        "Teng Chen",
+        "Lixia Zhao",
+        "Lei Wen",
+        "Ruihua Hou"
+      ],
+      "journal": "The American journal of Chinese medicine",
+      "year": 2025,
+      "doi": "10.1142/S0192415X25500016",
+      "pmid": "40000385",
+      "s2Id": "3cb84ddff618dfc4b813c123b664440490d113e2",
+      "abstract": "The treatment of Alzheimer's Disease (AD) remains a challenge for modern medicine due to its complex pathogenesis. Traditional Chinese Medicine (TCM) has demonstrated significant success in the prevention and treatment of variable medical conditions. For AD pharmacological management, TCM could provide promising approaches. This study aimed to systematically evaluate the current evidence of the effects of TCM therapies on AD. A systematic search of the literature was performed on electronic databases including PubMed, the Cochrane Library, the Chinese National Knowledge Infrastructure (CNKI), and Web of Science. Thirteen studies were included in this review, subject to inclusion and exclusion criteria. Screening, data extraction, and quality assessment were undertaken following the guidelines for Preferred Reporting Items for Systematic Reviews and Meta-Analyses. Our results show that TCM offered a significant improvement in cognitive functioning compared to the control group, measured on both MMSE and ADAS-CoG scales, suggesting its potential utility in slowing cognitive decline and improving cognitive function as compared to conventional drug treatments and placebos. No significant difference was found for scores of neuropsychiatric symptoms (NPI) or ability to perform daily living activities (ADCS-ADL). These findings highlight TCM as a potential adjuvant therapy, in combination with conventional medicine, to improve the effectiveness and reduce the limitations of conventional AD drug regimes. Studies with larger sample sizes, rigorous study designs, accurate long-term reporting, and correlation to neuropathological markers are needed in the future to enhance the evidence base for the use of TCM in AD patients, and to further confirm its efficacy.",
+      "tldr": "Results show that TCM offered a significant improvement in cognitive functioning compared to the control group, measured on both MMSE and ADAS-CoG scales, suggesting its potential utility in slowing cognitive decline and improving cognitive function as compared to conventional drug treatments and placebos.",
+      "citationCount": 4,
+      "influentialCitationCount": 0,
+      "referenceCount": 29,
+      "publicationTypes": [
+        "MetaAnalysis",
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": false,
+      "openAccessPdfUrl": null,
+      "studyType": "meta_analysis",
+      "evidenceLevel": "I",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Efficacy and safety assessment of traditional Chinese patent medicine for dyslipidemia: a systematic review of randomized clinical trials with meta-analysis and trial sequential analysis",
+      "authors": [
+        "Yini Fang",
+        "Haoran Wu",
+        "Xue Liang",
+        "Tianxing Li",
+        "Ruiting Jia",
+        "Yang Dong",
+        "Yanfei Zheng",
+        "Qi Wang",
+        "Lingru Li"
+      ],
+      "journal": "Cardiovascular Diagnosis and Therapy",
+      "year": 2024,
+      "doi": "10.21037/cdt-24-146",
+      "pmid": "38975001",
+      "s2Id": "618259d111eb8079b7f5b2727fdb58777a45707e",
+      "abstract": "Background The overall prevalence of dyslipidemia continues to increase, which poses a significant risk for coronary artery disease. Some patients with dyslipidemia do not respond to or benefit from conventional lipid-lowering therapy, which warrants the need for alternative and complementary therapies. Chinese patent medicine (CPM) has shown great potential in the treatment of dyslipidemia, but its clinical value needs to be further explored. This study aims to systematically evaluate the efficacy and safety of CPM in treating dyslipidemia. Methods This study was registered in INPLASY as INPLASY202330090. The randomized controlled trials included in this study were published in January 2013 to March 2023 and retrieved from the Web of Science, PubMed, Embase, Cochrane Library, SinoMed, China National Knowledge Internet, WanFang, and VIP. The bias risk in the study was independently evaluated by two reviewers using the Cochrane Randomized Trial Bias Risk Tool (RoB 2) Review Manager 5.4 software was used for the overall effect analysis and subgroup analysis of four blood lipids, and the trial sequential analysis (TSA) was conducted to check the results. Results A total of 69 studies were included, involving 6,993 participants. The methodological quality was in the middle level. Meta-analysis showed that CPM markedly improved the levels of total cholesterol (TC) [mean difference (MD) =−0.54 mmol/L; 95% confidence interval (CI): −0.71 to −0.37; P<0.001], triglyceride (TG) (MD =−0.43 mmol/L; 95% CI: −0.53 to −0.33; P<0.001), low-density lipoprotein cholesterol (LDL-C) (MD =−0.40 mmol/L; 95% CI: −0.50 to −0.30; P<0.001) and increased levels of high-density lipoprotein cholesterol (HDL-C) (MD =0.23 mmol/L; 95% CI: 0.18 to 0.27; P<0.001), in patients with dyslipidemia. Though CPM did not differ significantly from statins when used alone, it could improve lipid profile better in all cases when used in combination with statins and with drugs used for comorbidities or co-morbidities. Subgroup analysis found that the efficacy of pill formulations was superior to other formulations, and CPM showed better lipid-lowering response in the context of comorbidity. The TSA confirmed the robustness of the analysis of the LDL-C level. No significant difference was observed in the incidence of adverse events between the treatment group and the control group [risk ratio (RR) =0.89; 95% CI: 0.69–1.16; P=0.40]. Conclusions CPM can yield superior therapeutic effects in ameliorating dyslipidemia without exacerbating adverse effects as an alternative and complementary therapy. In addition, the therapeutic effect can be improved by emphasizing pill formulation and strengthening the standardization of syndromes.",
+      "tldr": "Though CPM did not differ significantly from statins when used alone, it could improve lipid profile better in all cases when used in combination with statins and with drugs used for comorbidities or co-morbidities.",
+      "citationCount": 1,
+      "influentialCitationCount": 0,
+      "referenceCount": 0,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://doi.org/10.21037/cdt-24-146",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Applications of leech therapy in medicine: a systematic review",
+      "authors": [
+        "Mahsa Hosseini",
+        "A. Jadidi",
+        "Mohammad Moein Derakhshan Barjoei",
+        "Mehdi Salehi"
+      ],
+      "journal": "Frontiers in Medicine",
+      "year": 2024,
+      "doi": "10.3389/fmed.2024.1417041",
+      "pmid": "39351007",
+      "s2Id": "06e5c225c79248a0a492c2aa59a91a9e1cb56995",
+      "abstract": "Background Leech therapy (LT) is one of the most widely used treatment methods in traditional medicine. The present study aimed to systematically review clinical trials regarding the effects of LT on the prevention and healing of different diseases. Methods To identify all relevant published studies, we conducted a comprehensive search of PubMed, Scopus, and Web of Science databases without any temporal or geographical constraints until April 2023. To categorize the articles, five stages were considered. The PRISMA checklist and Cochran’s bias analysis tool were used. Results In total, 12 trials that met the inclusion criteria were studied. The results of the studies showed that LT has had successful outcomes in treating different conditions. These included hormonal and metabolic complications, cardiovascular problems, and inflammatory-based diseases. Conclusion “Leech therapy” is a traditional medical treatment used successfully to control and treat various conditions. Although this method can have complications, it is possible to benefit from this low-cost and low-complication treatment by taking preventive measures.",
+      "tldr": "Clinical trials regarding the effects of LT on the prevention and healing of different diseases showed that LT has had successful outcomes in treating different conditions, including hormonal and metabolic complications, cardiovascular problems, and inflammatory-based diseases.",
+      "citationCount": 7,
+      "influentialCitationCount": 0,
+      "referenceCount": 28,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://doi.org/10.3389/fmed.2024.1417041",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Effects and safety of Chinese herbal medicine on inflammatory biomarkers in cardiovascular diseases: A systematic review and meta-analysis of randomized controlled trials",
+      "authors": [
+        "Mingdi Li",
+        "I. Zhou",
+        "J. Trevillyan",
+        "A. Hearps",
+        "A. Zhang",
+        "A. Jaworowski"
+      ],
+      "journal": "Frontiers in Cardiovascular Medicine",
+      "year": 2022,
+      "doi": "10.3389/fcvm.2022.922497",
+      "pmid": "36051278",
+      "s2Id": "466313afa80b9f345d58e11c3bcb1e9cb31f92d6",
+      "abstract": "Inflammation drives cardiovascular disease (CVD) in individuals with underlying chronic inflammatory diseases, including People with HIV (PWH), independently of dyslipidemia. Adjunctive treatments that lower inflammation may be useful to lower CVD risk in such populations. There is very little data on the efficacy of Chinese herbal medicine (CHM) in reducing inflammation in PWH to address its potential in reducing this CVD risk factor, therefore we evaluated its impact on inflammatory biomarkers relevant to CVD risk in the general population. Six English and Chinese databases were searched for studies investigating CHM’s effects on inflammatory biomarkers relevant to CVD from respective inceptions to February 2022. A systematic review and meta-analysis of randomized controlled trials (RCTs) were conducted and the most-frequently prescribed herbs were identified. Thirty-eight RCTs involving 4,047 participants were included. Greater than or equal to 50% of included studies had a low risk of bias in five domains (random sequence generation, detection, attrition, reporting and other bias) and 97% had a high risk of performance bias. CHM provided significant additive effects on attenuating relevant inflammatory indices including hs-CRP (SMD −2.05, 95% CI −2.55 to −1.54), IL-6 (SMD −1.14, 95% CI −1.63 to −0.66) and TNF-α levels (SMD −0.88, 95% CI −1.35 to −0.41), but no significant effects on hs-CRP were found between CHM and placebo when co-treating with Western drugs (MD 0.04, 95% CI −1.66 to 1.74). No severe adverse events were reported in CHM groups. The two most prevalent herbs present in formulae demonstrating reduction of at least one inflammatory biomarker were Dan shen (Salviae Miltiorrhizae Radix et Rhizoma) and Huang qi (Astragali Radix). CHM, in combination with standard anti-inflammatory medications, may depress inflammation and reduce the risk of inflammatory conditions such as CVD. Rigorously-conducted trials and adequate reporting are needed to provide more robust evidence supporting the use of CHM to reduce CVD risk in people with underlying chronic inflammation such as PWH.",
+      "tldr": "Chinese herbal medicine (CHM), in combination with standard anti-inflammatory medications, may depress inflammation and reduce the risk of inflammatory conditions such as CVD.",
+      "citationCount": 7,
+      "influentialCitationCount": 0,
+      "referenceCount": 90,
+      "publicationTypes": [
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://www.frontiersin.org/articles/10.3389/fcvm.2022.922497/pdf",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Traditional Chinese medicine interventions based on meridian theory for pain relief in patients with primary dysmenorrhea: a systematic review and network meta-analysis",
+      "authors": [
+        "Shu-Cheng Chen",
+        "J. Ruan",
+        "Bohan Zhang",
+        "L. Pang",
+        "L. Zhong",
+        "Shuang-Lan Lin",
+        "Ka-Po Wong",
+        "Hui Ouyang",
+        "Wing-Fai Yeung",
+        "Qin-Wei Fu",
+        "Bo Chen"
+      ],
+      "journal": "Frontiers in Medicine",
+      "year": 2024,
+      "doi": "10.3389/fmed.2024.1453609",
+      "pmid": "39301491",
+      "s2Id": "5bd26484e6e719b842a2bf391626aaaf590809ee",
+      "abstract": "Objective To determine the comparative effects and safety of traditional Chinese medicine (TCM) interventions based on meridian theory for pain relief in patients with primary dysmenorrhea (PD). Methods This is a systematic review with network meta-analysis. Randomized controlled trials (RCTs) comparing meridian-based TCM interventions with waitlist, placebo, western medicine, and conventional therapies for PD pain. A SUCRA was used to estimate the probability ranking for the effects of interventions. Results 57 RCTs involving 3,903 participants and 15interventions were included. Thirty-two RCTs were rated as low risk of bias. A network diagram was drawn with 105 pairs of comparisons. Compared with NSAIDs and waitlist, significantly better effects were found in acupressure [SMD = −1.51, 95%CI (−2.91, −0.12)/SMD = −2.31, 95%CI (−4.61, −0.02)], warm needling [SMD = −1.43, 95%CI (−2.68, −0.18)/SMD = −2.23, 95%CI (−4.43, −0.03)], moxibustion [SMD = −1.21, 95%CI (−1.85, −0.57)/SMD = −2.10, 95%CI (−3.95, −0.07)], and acupuncture [SMD = −1.09, 95%CI (−1.62, −0.55)/SMD = −1.89, 95%CI (−3.67, −0.11)]. No adverse events were detected. Conclusion For PD pain, the effects of acupressure, acupuncture, warm needling, and moxibustion were superior to those of NSAIDs and waitlist. Oral contraceptive pill, electro-acupuncture, acupressure, and warm needling demonstrated higher probabilities of being better interventions. More high-quality clinical trials are needed to provide more robust evidence of this network. Systematic review registration PROSPERO CRD42022373312.",
+      "tldr": "For PD pain, the effects of acupressure, acupuncture, warm needling, and moxibustion were superior to those of NSAIDs and waitlist.",
+      "citationCount": 5,
+      "influentialCitationCount": 0,
+      "referenceCount": 65,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://doi.org/10.3389/fmed.2024.1453609",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Combined traditional Chinese medicine and anti-hypertensive treatments for renal hypertension: A network meta-analysis and systematic review",
+      "authors": [
+        "Jinjing Guo",
+        "Zhibing Jiang",
+        "Siyu Yang",
+        "Bin Meng",
+        "Qun Tang"
+      ],
+      "journal": "Medicine",
+      "year": 2024,
+      "doi": "10.1097/MD.0000000000039793",
+      "pmid": "39465780",
+      "s2Id": "7572e0c84ebf241910db505167df3fafa93716c2",
+      "abstract": "Background: Traditional Chinese medicine (TCM) demonstrates significant effects on renal function, yet it remains unclear which TCM treatment yields the best clinical outcomes for renal hypertension (RH) management. This study aims to evaluate the safety and effectiveness of various TCM treatments for RH compared to conventional Western medicine (CWM). Methods: Randomized controlled trials (RCTs) of TCM for RH were screened from 9 databases, covering the period up to July 2023. The Cochrane Risk of Bias tool was utilized to assess the risk of bias in the included RCTs. Network meta-analysis was conducted using RevMan 5.3 and Stata 14.0 software. Sensitivity analyses and meta-regression were performed to identify sources of heterogeneity and assess result robustness. Results: This study encompassed 3879 patients from 44 investigations involving 29 TCM interventions. The quality of the studies ranged from moderate to excellent, with well-defined inclusion criteria and generally low potential for biases related to outcome data and selective reporting. Tianma Gouteng Yin combined with Qiju Dihuang Wan + CWM demonstrated the highest total effective rate (relative risk = 1.31, 95% confidence interval (CI): 1.03, 1.66) compared to CWM alone. Bailing capsule + CWM was optimal for improving serum creatinine (mean difference (MD) = −53.78, 95% CI: −96.59, −10.98). Ziyin Pinggan Huayu decoction + CWM had the highest likelihood (surface under the cumulative ranking curves = 56.2%) of improving blood urea nitrogen. Zishen Pinggan prescription + CWM showed the greatest improvement in systolic blood pressure (MD = −46.29, 95% CI: −73.19, −19.38), while Ye Ren Gao decoction + CWM demonstrated the best improvement in diastolic blood pressure (MD = −13.13, 95% CI: −20.12, −6.13). Xifeng Qingnao decoction + CWM achieved the best improvement in 24-hour urinary protein (MD = −2.00, 95% CI: −3.26, −0.74). The combination of TCM and CWM was associated with a lower incidence of adverse effects. Conclusion: Combination therapy of TCM with CWM surpasses CWM alone in treating renal hypertension. This study identifies the most effective combination treatment for RH, as well as optimal treatments for lowering blood pressure (Zishen Pinggan prescription + CWM) and improving renal function (Bailing capsule + CWM).",
+      "tldr": "Combination therapy of TCM with CWM surpasses CWM alone in treating renal hypertension, and the combination of TCM and CWM was associated with a lower incidence of adverse effects.",
+      "citationCount": 2,
+      "influentialCitationCount": 0,
+      "referenceCount": 56,
+      "publicationTypes": [
+        "MetaAnalysis",
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://doi.org/10.1097/md.0000000000039793",
+      "studyType": "meta_analysis",
+      "evidenceLevel": "I",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "External treatment of traditional Chinese medicine for cancer pain: A systematic review and network meta-analysis",
+      "authors": [
+        "Hong Jin",
+        "Ji Liang",
+        "Siqi Zhang",
+        "Shuai Ma",
+        "Hongyu Qin",
+        "Dongxu Zhang",
+        "Xueying Pang",
+        "Miao Zhang"
+      ],
+      "journal": "Medicine",
+      "year": 2024,
+      "doi": "10.1097/MD.0000000000037024",
+      "pmid": "38394488",
+      "s2Id": "6aa8c19a9058546073308672c710d0ee4ae58b9b",
+      "abstract": "Background: Cancer pain is one of the most intolerable and frightening symptoms of cancer patients. However, the clinical effect of the three-step analgesic ladder method (TSAL) is not satisfactory. The combination of external treatment of traditional Chinese medicine (TCM) can improve the clinical effect. Objective: This study used network meta-analysis to compare the effects of different external treatment methods of TCM combined with TSAL on cancer pain. Methods: Databases searched by our team included Google Scholar, Web of Science, Scopus, Embase, PubMed, and Cochrane Library. Randomized controlled trials related to the external treatment of TCM combined with TSAL for cancer pain were screened from the establishment of the database till now. The above literature extracted clinical efficacy, NRS score, KPS score, analgesic onset time, and duration as the main results after the screening. The 95% confidence interval (95% CI) of OR value and SMD value was used as the effect index to compare the difference in efficacy of different interventions, and the ranking was conducted. STATA 17.0 software was used for the statistical analysis of the above data. Results: A total of 78 studies were included, including 8 interventions and 5742 participants. Based on ranking probability, the clinical effective rate of manual acupuncture combined with TSAL was the best when the intervention time was set at 4 weeks [OR = 5.42, 95% CI (1.99,14.81)], and the improvement effect on KPS score was also the best [SMD = 0.97, 95% CI (0.61, 1.33)]. Acupoint external application was the best intervention in reducing NRS score [SMD = −1.14, 95% CI (−1.90, −0.93)]. Acupoint moxibustion combined with TSAL was considered to be the most effective intervention to prolong the duration of analgesia [SMD = 1.69, 95% CI (0.84, 2.54)] and shortening the onset time of analgesia [SMD = −3.00, 95% CI (−4.54, −1.47)]. Conclusions: TSAL combined with manual acupuncture is the best in terms of clinical efficacy and improvement of patients’ functional activity status. With the extension of treatment time, the intervention of this kind of treatment on the clinical effect is more pronounced. Acupoint external application also has a unique advantage in reducing the pain level of patients. From the point of view of analgesic duration and duration of analgesia, combined acupoint moxibustion has the best effect.",
+      "tldr": "TSAL combined with manual acupuncture is the best in terms of clinical efficacy and improvement of patients’ functional activity status and Acupoint external application also has a unique advantage in reducing the pain level of patients.",
+      "citationCount": 3,
+      "influentialCitationCount": 0,
+      "referenceCount": 57,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://doi.org/10.1097/md.0000000000037024",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Effects and Safety of Traditional Chinese Medicine for Hidden Blood Loss after Total Hip Arthroplasty—A Systematic Review and Meta-Analysis",
+      "authors": [
+        "Ze Yang",
+        "Xiang Wang",
+        "Zheyun Xu",
+        "Qike Xu",
+        "Yongliang Xia",
+        "W. Ji"
+      ],
+      "journal": "Evidence-based Complementary and Alternative Medicine : eCAM",
+      "year": 2022,
+      "doi": "10.1155/2022/6937295",
+      "pmid": "35966734",
+      "s2Id": "1fb95e97b55fda8f5d6b2a62cf5b0850ecaf03ee",
+      "abstract": "Background Hidden blood loss (HBL) after total hip arthroplasty (THA) would lead to many undesirable consequences. Traditional Chinese medicine (TCM) is now increasingly used for hidden blood loss. We performed this systematic review and meta-analysis to summarize the effect and safety of TCM treatment of HBL after THA. Methods We searched PubMed, Embase, Cochrane Library, CNKI, VIP, WanFang, and CBM for the updated articles published from the inception of each database to May, 2022, among which results such as abstracts, comments, letters, reviews, and case reports were excluded. The efficacy and safety of TCM treatment of HBL after THA were synthesized and discussed by the outcomes of total blood loss (TBL), hidden blood loss (HBL), hemoglobin (Hb), and hematocrit (HCT), and the incidence of adverse reactions. Results A total of 12 articles and 881 patients were included. There were 441 cases in the intervention group and 440 cases in the control group. Compared with the control group, the intervention group had more advantages in TBL (MD = −251.68, 95% CI = [−378.36, −125]; Z = 3.89, P < 0.00001), HBL (MD = −159.64, 95% CI = [−252.56, −66.71]; Z = 3.37, P=0.0008), Hb (MD = 11.39, 95% CI = [7.35, 15.43]; Z = 5.53, P < 0.00001), and HCT (MD = 2.87, 95% CI = [0.97, 4.78]; Z = 2.95, P=0.003), and had less incidence of adverse reactions (OR = −0.20, 95% CI = [−0.35, −0.05]; Z = 2.64, P=0.008). Conclusion TCM has advantages in the efficacy and safety of treating hidden blood loss after THA. The strength of the evidence of the research results is limited by the quality of the included literature, and more high-quality RCTs are needed to confirm.",
+      "tldr": "TCM has advantages in the efficacy and safety of treating hidden blood loss after THA, and the strength of the evidence is limited by the quality of the included literature, and more high-quality RCTs are needed to confirm.",
+      "citationCount": 3,
+      "influentialCitationCount": 1,
+      "referenceCount": 25,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://downloads.hindawi.com/journals/ecam/2022/6937295.pdf",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Effects of Integrated Chinese Traditional Medicine and Conventional Western Medicine on the Quality of Life of Breast Cancer Patients: A Systematic Review and Meta-Analysis",
+      "authors": [
+        "Xue Bai",
+        "Najjar Ta",
+        "Guo-Hua Gong",
+        "Bin Zhang",
+        "Cheng-xi Wei"
+      ],
+      "journal": "Evidence-based Complementary and Alternative Medicine : eCAM",
+      "year": 2022,
+      "doi": "10.1155/2022/3123878",
+      "s2Id": "87e670117ef240891ea00b15e4f7c49ffbcd6662",
+      "abstract": "Background Traditional Chinese medicine has been widely used, in conjunction with conventional Western medicine, in clinical practice around the world to treat breast cancer. The study systematically reviewed and summarized the quality of life of breast cancer patients treated with integrated treatment method vs. conventional Western medicine. Methods Eight databases including PubMed, EMBASE, Web of Science, the Cochrane Library, Chinese National Knowledge Infrastructure, China Biology Medicine Disc, Chinese Scientific Journal Database, and Wanfang Data knowledge service platform were searched in this study. The retrieval period was set from January 1, 2005, to December 31, 2020. Results Twenty-two high-quality publications were included in this study. The total sample size was 1689 patients including 844 in the intervention group receiving traditional Chinese medicine combined with conventional Western medicine and 845 patients in the control group receiving conventional Western medicine only. Compared with the single-used conventional Western medicine treatment, an integrated approach to treat breast cancer can increase quality of life measured by rating scales (SMD = 1.29, 95% CI (1.07, 1.52) and P=0.01) and ranking scales (RR = 1.53, 95% CI (1.39 1.68) and P=0.02) and also decrease adverse reactions measured by rating scales (Z = 10.89, P < 0.05; Group 1: I2 = 9.0%, P=0.258, SMD = 1.03; and Group 2: I2 = 31.6%, P=0.199, SMD = 1.56). For further analysis, chemotherapy with epirubicin exhibited higher quality of life than the chemotherapy without epirubicin among breast cancer patients [Z = 19.80, P < 0.05; Group 1: I2 = 62.4%, P=0.070, SMD = 1.61; and Group 2: I2 = 9.0%, P=0.359, SMD = 1.04]. Despite the heterogeneity, which was due to a portion of relative low-quality literature or other factors, the results were satisfactory. In terms of secondary results, the patients with lower tumor markers (CEA and CA153) had better efficiency in quality of life with a statistically significant difference (SMD = 1.39, 95% CI: 1.10,1.67) for rating scales. In addition, secondary results related to high incidence of gastrointestinal adverse reactions (RR = 1.33, 95% CI (1.20, 1.48)) and the traditional Chinese medicine syndrome (RR = 1.50, 95% CI (1.28, 1.80))showed lower quality of life in the intervention group than the control group for ranking scales. Conclusion Traditional Chinese medicine, when used in conjunction with the conventional Western medicine, could be an effective way in improving the quality of life and alleviating incidence of associated adverse symptoms such as gastrointestinal adverse reactions, value of tumor markers, and the incidence of traditional Chinese medicine syndrome. Further investigation of larger and methodologically sound trials with longer follow-up periods and appropriate comparison groups is needed.",
+      "tldr": "Traditional Chinese medicine, when used in conjunction with the conventional Western medicine, could be an effective way in improving the quality of life and alleviating incidence of associated adverse symptoms such as gastrointestinal adverse reactions, value of tumor markers, and the incidence of traditional Chinese medicine syndrome.",
+      "citationCount": 23,
+      "influentialCitationCount": 0,
+      "referenceCount": 43,
+      "publicationTypes": [
+        "Review"
+      ],
+      "fieldsOfStudy": [],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://downloads.hindawi.com/journals/ecam/2022/3123878.pdf",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Effects of the different Tai Chi exercise cycles on patients with essential hypertension: A systematic review and meta-analysis",
+      "authors": [
+        "Yi-Xuan Yin",
+        "Zheng Yu",
+        "Jialin Wang",
+        "Junzhi Sun"
+      ],
+      "journal": "Frontiers in Cardiovascular Medicine",
+      "year": 2023,
+      "doi": "10.3389/fcvm.2023.1016629",
+      "pmid": "36937925",
+      "s2Id": "bfd7fbace90761c1d5b911091937b3639bb84e57",
+      "abstract": "Objective The main treatment for essential hypertension at this stage is pharmacotherapy. Long-term pharmacotherapy is costly with some side effects. Tai Chi, a bright star in traditional Chinese arts, relaxes both mind and body and has been shown to relax blood vessels and lower blood pressure. This study aimed to systematically review the therapeutic effectiveness of the Tai Chi exercise cycle on blood pressure and cardiovascular risk factors of patients with essential hypertension. Methods Searching CNKI, VIP, CBM, PubMed, EBSCO, Embase, Cochrane Library, and Web of Science to collect randomized controlled trials about Tai Chi exercise in the treatment of patients with essential hypertension according to the inclusion and exclusion criteria. The search time ranged from the date of database construction to December 2022. The Cochrane risk-of-bias tool was used to evaluate the included trials. The meta-analysis was performed with RevMan5.3 and Stata12.0 software. Results According to the meta-analysis, compared with the controls, Tai Chi exercise with a cycle of more than 12 weeks may be better for the reduction of systolic blood pressure (SBP) [MD = −11.72, 95% CI (−15.52, −7.91)] and diastolic blood pressure (DBP) [MD = −4.68, 95% CI (−7.23, −2.12)], as well as increasing the content of nitric oxide (NO) [MD = 0.99, 95% CI (0.69, 1.28)]. The blood lipid metabolism ability may also be improved after more than 12 weeks of Tai Chi exercise, total cholesterol (TC) [SMD = −0.68, 95% CI (−0.89, −0.46), triglyceride (TG) [SMD = −0.84, 95% CI (−1.25, −0.43)], low-density lipoprotein cholesterol (LDL-C) [SMD = −1.58, 95% CI (−2.29, −0.86)]. However, the improvement of high-density lipoprotein cholesterol (HDL-C) [SMD = 0.54, 95% CI (0.28, 0.79)] was better with a less than 12 weeks exercise cycle. A subgroup analysis for exercise frequency and time showed that the exercise frequency should preferably be more than or equal to 5 times per week for patients with hypertension, and for patients with hypertension plus hyperlipidemia, the exercise frequency less than 5 times per week with exercise time less than 60 min each day may be more beneficial. Conclusion The meta-analysis indicated that a more than 12 weeks Tai Chi exercise cycle with less than 60 min each time and more than 5 times per week may be more beneficial in blood pressure reduction, NO level increasing and blood lipid metabolism improving in the comparison with the other exercise cycles. For patients with hypertension plus hyperlipidemia, exercise frequency of less than 5 times per week may be better. Systematic Review Registration [http://www.crd.york.ac.uk/prospero], identifier [CRD42022352035].",
+      "tldr": "The meta-analysis indicated that a more than 12 weeks Tai Chi exercise cycle with less than 60 min each time and more than 5 times per week may be more beneficial in blood pressure reduction, NO level increasing and blood lipid metabolism improving in the comparison with the other exercise cycles.",
+      "citationCount": 22,
+      "influentialCitationCount": 0,
+      "referenceCount": 76,
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://www.frontiersin.org/articles/10.3389/fcvm.2023.1016629/pdf",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    },
+    {
+      "title": "Aerobic exercise interventions for promoting cardiovascular health and mobility after stroke: a systematic review with Bayesian network meta-analysis",
+      "authors": [
+        "K. Moncion",
+        "L. Rodrigues",
+        "E. Wiley",
+        "K. Noguchi",
+        "Ahmed Negm",
+        "Julie Richardson",
+        "Maureen J. MacDonald",
+        "M. Roig",
+        "Ada Tang"
+      ],
+      "journal": "British Journal of Sports Medicine",
+      "year": 2024,
+      "doi": "10.1136/bjsports-2023-107956",
+      "pmid": "38413134",
+      "s2Id": "eda1f6a4735ea2f62829d49b53e6f533b6c470e9",
+      "abstract": "Objective To determine the superiority of aerobic exercise (AE) interventions on key outcomes of stroke recovery, including cardiorespiratory fitness (V̇O2peak, primary outcome), systolic blood pressure (SBP) and mobility (6 min Walk Test (6MWT) distance and 10 m Usual Gait Speed) after stroke. Data sources MEDLINE, EMBASE, Web of Science, CINAHL, CENTRAL, SPORTDiscus, PsycINFO and AMED Allied and Complementary Medicine were searched from inception to February 2023. Eligibility criteria Randomised controlled trials were included that compared the effects of any AE interventions (low-intensity, moderate-intensity, high-intensity continuous training (HICT), high-intensity interval training (HIIT)) to no exercise, usual care or other AE interventions in individuals poststroke. Analyses Systematic review with Bayesian network meta-analysis (NMA) methodology was employed. Surface under the cumulative ranking curve (SUCRA) values were used to rank interventions. The Grading of Recommendations, Assessment, Development and Evaluation minimally contextualised framework for NMA was followed. Results There were 28 studies (n=1298) included in the NMA for V̇O2peak, 11 (n=648) for SBP, 28 (n=1494) for 6MWT and 18 (n=775) for the 10 m Usual Gait Speed. The greatest effect on V̇O2peak, 6MWT and 10 m Usual Gait Speed was observed after HIIT and HICT. No differences between interventions were found for SBP. SUCRA values identified HIIT as the superior AE intervention for all outcomes of interest. HIIT was the most effective intervention for improving V̇O2peak (2.9 mL/kg/min (95% credible interval 0.8 to 5.0) moderate certainty) compared with usual care. Conclusion This NMA suggests that higher-intensity AE is superior to traditional low-intensity to moderate-intensity AE for improving outcomes after stroke.",
+      "tldr": "It is suggested that higher-intensity AE is superior to traditional low-intensity to moderate-intensity AE for improving outcomes after stroke.",
+      "citationCount": 28,
+      "influentialCitationCount": 1,
+      "referenceCount": 120,
+      "publicationTypes": [
+        "JournalArticle",
+        "Review"
+      ],
+      "fieldsOfStudy": [
+        null
+      ],
+      "isOpenAccess": true,
+      "openAccessPdfUrl": "https://bjsm.bmj.com/content/bjsports/58/7/392.full.pdf",
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "sources": [
+        "semantic_scholar"
+      ]
+    }
+  ],
+  "total": 6312
+}

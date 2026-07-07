@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/"
+      xmlns:arxiv="http://arxiv.org/schemas/atom">
+  <title>ArXiv Query: search_query=all:quantum entanglement</title>
+  <id>http://arxiv.org/api/query</id>
+  <opensearch:totalResults>4230</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <opensearch:itemsPerPage>3</opensearch:itemsPerPage>
+  <entry>
+    <id>http://arxiv.org/abs/2301.12345v2</id>
+    <updated>2023-06-20T00:00:00Z</updated>
+    <published>2023-01-15T00:00:00Z</published>
+    <title>Quantum Entanglement in Many-Body Systems: A Review</title>
+    <summary>We review recent progress in understanding quantum entanglement in many-body systems, focusing on entanglement entropy and its role in characterizing quantum phases of matter.</summary>
+    <author><name>Alice Zhang</name></author>
+    <author><name>Bob Chen</name></author>
+    <author><name>Carol Williams</name></author>
+    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1103/PhysRevLett.130.123401</arxiv:doi>
+    <link href="http://arxiv.org/abs/2301.12345v2" rel="alternate" type="text/html"/>
+    <link href="http://arxiv.org/pdf/2301.12345v2" title="pdf" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph"/>
+    <category term="quant-ph"/>
+    <category term="cond-mat.str-el"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.67890v1</id>
+    <updated>2023-05-10T00:00:00Z</updated>
+    <published>2023-05-10T00:00:00Z</published>
+    <title>Deep Learning for Quantum State Tomography</title>
+    <summary>We propose a deep learning approach for quantum state tomography that significantly reduces the number of measurements required for accurate reconstruction of quantum states.</summary>
+    <author><name>David Kumar</name></author>
+    <author><name>Eve Martinez</name></author>
+    <link href="http://arxiv.org/abs/2305.67890v1" rel="alternate" type="text/html"/>
+    <link href="http://arxiv.org/pdf/2305.67890v1" title="pdf" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI"/>
+    <category term="cs.AI"/>
+    <category term="quant-ph"/>
+    <category term="cs.LG"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2210.11111v3</id>
+    <updated>2023-02-15T00:00:00Z</updated>
+    <published>2022-10-20T00:00:00Z</published>
+    <title>Entanglement-Assisted Quantum Error Correction Codes</title>
+    <summary>This paper presents new families of entanglement-assisted quantum error correction codes with improved encoding rates and minimum distances.</summary>
+    <author><name>Frank Lee</name></author>
+    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1007/s11128-023-03891-x</arxiv:doi>
+    <link href="http://arxiv.org/abs/2210.11111v3" rel="alternate" type="text/html"/>
+    <link href="http://arxiv.org/pdf/2210.11111v3" title="pdf" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph"/>
+    <category term="quant-ph"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2401.55555v1</id>
+    <updated>2024-01-15T00:00:00Z</updated>
+    <published>2024-01-15T00:00:00Z</published>
+    <title>Topological Entanglement in Higher Dimensions</title>
+    <summary>We study topological entanglement entropy in higher-dimensional quantum systems and establish new bounds on the entanglement structure of topologically ordered states.</summary>
+    <author><name>Grace Park</name></author>
+    <author><name>Henry Tanaka</name></author>
+    <link href="http://arxiv.org/abs/2401.55555v1" rel="alternate" type="text/html"/>
+    <link href="http://arxiv.org/pdf/2401.55555v1" title="pdf" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="hep-th"/>
+    <category term="hep-th"/>
+    <category term="quant-ph"/>
+  </entry>
+</feed>

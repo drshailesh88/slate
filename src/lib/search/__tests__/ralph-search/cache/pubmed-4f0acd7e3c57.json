@@ -1,0 +1,630 @@
+{
+  "source": "pubmed",
+  "query": "What are the effects of SGLT2 inhibitors on heart failure outcomes?",
+  "timestamp": "2026-03-02T14:57:07.300Z",
+  "results": [
+    {
+      "title": "Association of GLP-1 Receptor Agonist and SGLT2 Inhibitor with Cardiovascular Outcomes after Transcatheter Aortic Valve Replacement.",
+      "authors": [
+        "Fahoury Alan M",
+        "Kamel-Abusalha Louie",
+        "Didier Alexander J",
+        "Wunderly Kevin",
+        "Sarrouj Sami",
+        "Issa Rochell",
+        "Afifi Ahmed",
+        "Gupta Rajesh"
+      ],
+      "journal": "Am J Cardiol",
+      "year": 2026,
+      "doi": "10.1016/j.amjcard.2026.02.043",
+      "pmid": "41765256",
+      "abstract": "Aortic valve disease is the most common valvular disease and is often seen in the elderly population. Transcatheter aortic valve replacement (TAVR) is a favorable and rapidly evolving intervention. Despite highly effective procedural outcomes, the TAVR population remains at high risk for heart failure and death, and medical therapy after TAVR is understudied. Diabetic medications including GLP-1 receptor agonists (GLP-1 RA) and SGLT2 inhibitors (SGLT2i) have had emerging data suggesting cardioprotective effects. In this study, we aim to evaluate cardiovascular outcomes in post-TAVR patients who are treated with GLP-1 RA, SGLT2i, or both compared to those who are not treated. Using TriNetX, we identified a cohort of patients who underwent a TAVR procedure and then classified them as treated with GLP-1 RA, SGLT2i, both, or none. After propensity matching for demographics, comorbidities, and medications, patient outcomes for all-cause mortality (ACM) and cardiovascular disorders were evaluated using a Kaplan-Meier analysis. Our results showed a decrease in ACM in those who were on GLP-1 RA after TAVR compared to those who were not. There was also a statistically significant decrease in arrhythmia in patients on SGLT2i after TAVR compared to those who were not. When GLP-1 RA and SGLT2i were combined, there was a decrease in ACM, myocardial infarction, acute heart failure, and arrhythmia after TAVR compared to those who were not. In conclusion, these findings further suggest cardioprotective effects of these drugs in patients treated with TAVR. Future trials should further investigate the role of these medications in patients with aortic valve stenosis.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Genitourinary tract infections and SGLT2 inhibitors in heart failure: an EMPEROR-Pooled analysis.",
+      "authors": [
+        "Ferreira Jo&#xe3;o Pedro",
+        "Zannad Faiez",
+        "Butler Javed",
+        "Filippatos Gerasimos",
+        "Vasques-N&#xf3;voa Francisco",
+        "Marques Pedro",
+        "Neves Jo&#xe3;o S&#xe9;rgio",
+        "Anker Stefan D",
+        "Packer Milton"
+      ],
+      "journal": "Eur J Heart Fail",
+      "year": 2026,
+      "doi": "10.1093/ejhf/xuag054",
+      "pmid": "41762689",
+      "abstract": "BACKGROUND: Sodium glucose co-transporter-2 inhibitors (SGLT2i) improve outcomes of patients with heart failure (HF). Urinary tract infections (UTI) are relatively common in HF, and their occurrence has been associated with an increased mortality risk. The use of SGLT2i has been associated with the occurrence of UTIs and mycotic genitourinary infections (MGI) which are a major cause of treatment discontinuation. AIMS: To study genitourinary infections in men and women with HF, their association with outcomes, and the impact of empagliflozin. METHODS: Analysis of EMPEROR-Pooled including a total of 9718 patients across the spectrum of ejection fraction. Descriptive statistics, Cox and time-varying survival models were used. The median follow-up time was 21 months. RESULTS: Throughout follow-up, 757 (7.8%) patients experienced a lower UTI, 60 (0.6%) MGI, and 41 pyelonephritis/urosepsis (0.4%). Genitourinary infections were more frequent in women than in men. Compared to patients without UTI/MGI, those with pyelonephritis/urosepsis were older and had higher comorbidity burden, whereas those with MGI were younger and had a higher prevalence of diabetes and obesity. Compared to placebo, empagliflozin was associated with a higher risk of lower UTI and MGI, particularly balanitis in men, but not pyelonephritis/urosepsis. The risk of death increased after UTI, but not after MGI. The effect of empagliflozin versus placebo on the composite of HF hospitalization or cardiovascular death was not modified by the occurrence of genitourinary infections. CONCLUSIONS: Lower UTIs were relatively frequent in HF patients, whereas MGI and pyelonephritis/urosepsis were infrequent. SGLT2i increased the risk of lower UTI and MGI. Although UTI, but not MGI, were associated with a higher subsequent risk of death, the clinical benefits of SGLT2i were preserved regardless of genitourinary infection occurrence.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "The impact of sodium glucose cotransporter-2 inhibitors on ventricular arrhythmia in patients with implantable cardioverter-defibrillators: a meta analysis.",
+      "authors": [
+        "Jha Mayank",
+        "Howell Danielle Serafim",
+        "Nazarov Oybek",
+        "Matawala Kruti",
+        "Chahodiya Deep",
+        "Kim David",
+        "Ali Mohamed",
+        "Hooti Jubran Al",
+        "Jain Hritvik",
+        "Song David",
+        "Goldbarg Seth"
+      ],
+      "journal": "J Interv Card Electrophysiol",
+      "year": 2026,
+      "doi": "10.1007/s10840-026-02274-1",
+      "pmid": "41762383",
+      "abstract": "INTRODUCTION: Sodium-glucose cotransporter-2 (SGLT2) inhibitors improve outcomes in heart failure (HF), but their effect on arrhythmias is less clear. Patients with implantable cardioverter-defibrillators (ICDs) are a high risk population for ventricular arrhythmias. However, the effects of SGLT2 inhibitors on ventricular arrhythmias remains a source of debate. METHODS: We systematically searched PubMed, Scopus, and Cochrane databases from inception to August 19, 2025, for studies evaluating SGLT2 inhibitors and arrhythmic/cardiovascular outcomes. Pooled mean differences (MD) and risk ratios (RR) with 95% confidence intervals (CI) were calculated using a random-effects model. RESULTS: A total of 1,605 patients were included in our analysis. SGLT2 inhibitors was associated with a significant reduction in the risk of ventricular arrhythmia (RR: 0.38; 95% CI: 0.17 to 0.81; p&#x2009;=&#x2009;0.01), ventricular tachycardia (RR: 0.60; 95% CI: 0.41 to 0.88; p&#x2009;=&#x2009;0.009), and supraventricular tachycardia (RR: 0.67; 95% CI: 0.47 to 0.95; p&#x2009;=&#x2009;0.02). No significant effect was observed on non-sustained VT (RR: 0.94; 95% CI: 0.52 to 1.67; p&#x2009;=&#x2009;0.83). However, SGLT2 inhibitors were also associated with a significant reduction in ICD shocks (RR: 0.49; 95% CI: 0.38 to 0.64; p&#x2009;&lt;&#x2009;0.00001) and cardiovascular mortality (RR: 0.39; 95% CI: 0.22 to 0.70; p&#x2009;=&#x2009;0.002). CONCLUSION: In ICD patients, SGLT2 inhibitor therapy significantly reduced ventricular arrhythmias, discrete sustained VT, and SVT, with secondary analyses suggesting fewer ICD shocks and reduction in CV mortality in the patients with ICD.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Efficacy of SGLT2 Inhibitors on Clinical Outcomes After Transcatheter Aortic Valve Replacement: A Systematic Review and Meta-Analysis.",
+      "authors": [
+        "Daniyal Shaikh Muhammad",
+        "Khatoon Naveen Murad",
+        "Rasool Anas",
+        "Gul Isbah",
+        "Tabish Sabula",
+        "Asifa Shireen",
+        "Khalid Ayan",
+        "Aftab Zunaira",
+        "Burhan Muhammad",
+        "Fahim Syeda Laiba",
+        "Gondal Habiba Tauqir",
+        "Nadir Muhammad Asfandyar",
+        "Ahmed Syed Zaeem",
+        "Ashraf Danish Ali",
+        "Ahmed Somaiya"
+      ],
+      "journal": "Endocrinol Diabetes Metab",
+      "year": 2026,
+      "doi": "10.1002/edm2.70184",
+      "pmid": "41746781",
+      "abstract": "BACKGROUND: Sodium-glucose cotransporter 2 (SGLT2) inhibitors improve cardiovascular (CV) outcomes in patients with heart failure (HF) and type 2 diabetes. Their effect in patients undergoing transcatheter aortic valve replacement (TAVR) for severe aortic stenosis (AS), however, remains unclear. This study evaluated whether SGLT2 inhibitors reduce all-cause mortality and HF hospitalisations after TAVR. METHODS: A systematic search of PubMed, ScienceDirect, Cochrane (CENTRAL), Scopus and Embase was performed through April 2025 for studies comparing post-TAVR outcomes between SGLT2 inhibitor users and non-users. Outcomes of interest included a composite of all-cause mortality or heart failure (HF) hospitalisation, along with the individual components of all-cause mortality and HF hospitalisation. All outcomes were extracted at 1&#x2009;year. Pooled hazard ratios (HRs) with 95% confidence intervals (CIs) were calculated using a random-effects model. Heterogeneity was quantified using I2 statistics. Analyses were conducted in R (version 4.4.2). RESULTS: Three studies (1 RCT, 2 Observational) comprising 3187 patients met inclusion criteria. SGLT2 inhibitor use was associated with a reduced risk of the composite outcome (HR: 0.75; 95% CI: 0.65, 0.86; p&#x2009;&lt;&#x2009;0.01). Individually, therapy lowered all-cause mortality (HR: 0.72; 95% CI: 0.53, 0.96; p&#x2009;=&#x2009;0.03) and HF hospitalisations (HR: 0.74; 95% CI: 0.61, 0.90; p&#x2009;&lt;&#x2009;0.01). CONCLUSION: In patients with severe AS undergoing TAVR, SGLT2 inhibitors were associated with significant reductions in all-cause mortality and HF hospitalisations. These findings suggest a promising role for SGLT2 inhibitors in improving post-TAVR outcomes. However, given the limited data, larger randomised clinical trials are necessary to consolidate these findings. TRIAL REGISTRATION: CRD420251132729.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "SGLT-2 inhibitors in prevention of chemotherapy-induced cardiotoxicity: systematic review and meta-analysis.",
+      "authors": [
+        "Rafique Soomal",
+        "Buhnerkempe Michael",
+        "Elmasry Yansoun",
+        "Kulkarni Abhishek",
+        "Rao Krishna",
+        "Bhattarai Mukul"
+      ],
+      "journal": "Eur Heart J Open",
+      "year": 2026,
+      "doi": "10.1093/ehjopen/oeag012",
+      "pmid": "41743285",
+      "abstract": "AIMS: Chemotherapy is associated with significant cardiotoxicity. Although other guideline directed medications for heart failure are effective in managing or preventing these cardiotoxic effects, the potential role of sodium-glucose cotransporter-2 (SGLT2) inhibitors remain incompletely understood. OBJECTIVES: This study aims to systematically review high-quality studies to evaluate the cardiovascular outcomes associated with SGLT2 inhibitor use in cancer patients undergoing chemotherapy. METHODS AND RESULTS: We conducted a meta-analysis of cohort studies comparing cardiovascular outcomes between cancer patients receiving SGLT2 inhibitors and those not receiving SGLT2 inhibitors. Cochrane Central Register, clinicaltrials.gov, PubMed, Embase, and Google Scholar were searched from inception to May 2025. Primary outcome was all-cause mortality. Secondary outcomes included cardiac events, and cardiac dysfunction. We used fixed and random effect binomial meta-analysis fit using the Mantel-Haenszel method for each outcome of interest. All analyses were conducted using the 'meta' package in R Statistical Software. Eleven cohort studies comprising 2 689 260 patients were included, of whom 29 958 received SGLT2 inhibitors. SGLT2 inhibitor use was significantly associated with reduced all-cause mortality (OR 0.27, 95% CI 0.25-0.28), cardiac events (OR 0.49, 95% CI 0.49-0.53), cardiac dysfunction (OR 0.62, 95% CI 0.56-0.69), and heart failure hospitalizations (HFH; OR 0.67, 95% CI 0.61-0.75) compared to non-use. CONCLUSION: SGLT2 inhibitors demonstrate robust cardioprotective effects in cancer patients receiving chemotherapy, significantly reducing mortality, HFH, and major cardiac events. These findings support the integration of SGLT2 inhibitors into cardio-oncology strategies, particularly for patients at high risk of chemotherapy-induced cardiotoxicity.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "SGLT2 Inhibitors and Cardiovascular Effects in Kidney Transplant Recipients with Diabetes Mellitus.",
+      "authors": [
+        "Dotan Idit",
+        "Polansky Amir",
+        "Bergman Idan",
+        "Ayada Gida",
+        "Babich Tanya",
+        "Akirov Amit",
+        "Steinmetz Tali",
+        "Cohen Talia Diker"
+      ],
+      "journal": "Endocr Pract",
+      "year": 2026,
+      "doi": "10.1016/j.eprac.2026.02.001",
+      "pmid": "41740789",
+      "abstract": "OBJECTIVES: SGLT2 inhibitors (SGLT2i) reduce major adverse cardiovascular events and mortality in patients with type 2 diabetes mellitus (T2DM), but kidney transplant recipients (KTRs), a high-risk group, were excluded from major trials. We aimed to evaluate the association between SGLT2 inhibitor use and cardiovascular outcomes in kidney transplant recipients with diabetes. METHODS: In this retrospective matched-cohort study at a large transplant center, KTRs with diabetes treated with SGLT2i were compared to matched controls receiving other antihyperglycemic agents. Major outcomes were: (1) a composite of acute coronary syndrome (ACS), stroke/transient ischemic attack (TIA), or all-cause mortality; and (2) a composite of heart failure hospitalizations or all-cause mortality. RESULTS: A total of 480 patients (240 per group; 20% women; median age 63-64 years) were included. Treatment with SGLT2i was started 5.9 years (IQR 2.0-13.9) after the transplant surgery, and patients were followed for up to three years. The incidence of ACS, stroke/TIA, or death was 7.9 vs. 13.6 events per 100 person-years in the SGLT2i and control groups, respectively (adjusted HR 0.64, 95% CI 0.42-0.97, p=0.039). Heart failure hospitalizations or death occurred less frequently in SGLT2i users (5.7 vs. 11.6 events per 100 person-years), though the difference was not statistically significant after adjustment (HR 0.82, 95% CI 0.50-1.32, p=0.410). CONCLUSIONS: SGLT2i use was associated with lower rates of major cardiovascular events in KTRs with diabetes, without a significant reduction in heart failure hospitalization. Given the elevated cardiovascular risk in KTRs, these findings support further investigation of SGLT2i therapy in this population.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Type 2 Diabetes and Vascular Complications: Current Perspectives on Pathophysiology and Management Strategies.",
+      "authors": [
+        "Singh Harmanpreet",
+        "Kumar Rahul",
+        "Singh Arshdeep",
+        "Agarwal Bimal K",
+        "Das Rina",
+        "Mehta Dinesh Kumar"
+      ],
+      "journal": "Curr Pharm Des",
+      "year": 2026,
+      "doi": "10.2174/0113816128415070251009170250",
+      "pmid": "41735213",
+      "abstract": "OBJECTIVES: Type 2 diabetes mellitus (T2DM) is a major global public health challenge, currently affecting over 537 million adults, with projections reaching 783 million by 2045. India contributes over 17% of global T2DM cases, significantly adding to the disease burden. Hyperglycemia-induced oxidative stress plays a crucial role in T2DM pathogenesis by disrupting the balance between reactive oxygen species (ROS) production and antioxidant defence mechanisms. This imbalance activates pathological pathways, including polyol and hexosamine biosynthesis, promotes advanced glycation end-products (AGEs) formation, increases protein kinase C (PKC) activity, and triggers inflammation, leading to vascular complications. METHODS: This study systematically examines literature reviews published between 2010 and 2024 in peerreviewed journals indexed in databases such as PubMed, Web of Science, Scopus, ScienceDirect, and Google Scholar. The research utilizes search terms about diabetic microvascular and macrovascular complications, their pathogenesis, and therapeutic management. RESULTS: Microvascular complications, arising from damage to small blood vessels, encompass diabetic nephropathy, retinopathy, neuropathy, and sexual dysfunction. Macrovascular complications, resulting from large blood vessel impairment, increase the risk of cardiovascular diseases, including coronary artery disease, peripheral arterial disease, stroke, and heart failure. CONCLUSION: The effective management of vascular complications necessitates a comprehensive approach, incorporating strict glycaemic control, lifestyle modifications, and pharmacological interventions such as Renin- Angiotensin-Aldosterone System (RAAS) blockers, Sodium-Glucose Cotransporter-2 (SGLT2) inhibitors (e.g., dapagliflozin), phosphodiesterase-5 inhibitors (PDE5i) (e.g., sildenafil citrate), glucagon-like peptide-1 receptor agonists, and anti- vascular endothelial growth factor (VEGF) therapies (e.g., aflibercept). Early diagnosis, risk factor management, and targeted treatment strategies are crucial for improving patient outcomes and mitigating disease progression.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Risk of Heart Failure Hospitalization for GLP-1 Receptor Agonists Versus DPP-4 Inhibitors or SGLT-2 Inhibitors in Patients With Type 2 Diabetes: A Target Trial Emulation.",
+      "authors": [
+        "Xu Yang",
+        "Huang Tao",
+        "Zhang Yue",
+        "Ji Dongze",
+        "Tuttle Katherine R",
+        "Carrero Juan-Jesus",
+        "Fu Edouard L"
+      ],
+      "journal": "Circulation",
+      "year": 2026,
+      "doi": "10.1161/CIRCULATIONAHA.125.075157",
+      "pmid": "41732861",
+      "abstract": "BACKGROUND: Novel treatments are needed for the primary and secondary prevention of heart failure in patients with type 2 diabetes, including individuals with and those without a history of heart failure. Conflicting trial evidence exists on whether glucagon-like peptide-1 receptor agonists (GLP-1RAs) reduce the risk of hospitalization for heart failure (HHF) in this broad population and whether this is a class effect or varies by specific agent. Furthermore, their comparative effectiveness against sodium-glucose cotransporter-2 inhibitors (SGLT-2is) is unknown. METHODS: We emulated 2 target trials using population-based health care data from Stockholm, Sweden (2010-2021). Target trial 1 included adult patients with type 2 diabetes who newly initiated GLP-1RA versus dipeptidyl peptidase-4 inhibitors (DPP-4is), and target trial 2 compared GLP-1RA with SGLT-2i. The primary outcome was HHF. Cox regression was used to estimate intention-to-treat hazard ratios, with inverse probability of treatment weighting used to balance 72 confounders. Major adverse cardiovascular events were used as the positive control outcome. Analyses were conducted for the GLP-1RA class overall and for individual agents, including liraglutide and semaglutide. RESULTS: Target trial 1 included 32&#x2009;979 patients (42% GLP-1RA and 58% DPP-4i) with a mean age of 64 years and 40% female; and target trial 2 included 30&#x2009;104 patients (49% GLP-1RA and 51% SGLT-2i) with a mean age of 63 years and 38% female. Starting a GLP-1RA was associated with a lower 3-year absolute risk of HHF than starting a DPP-4i (3.4% versus 4.3%), corresponding to a weighted hazard ratio of 0.77 (95% CI, 0.66-0.91). Absolute 3-year risks for GLP-1RA compared with SGLT-2i on HHF were 3.6% and 3.3% with a weighted hazard ratio of 1.02 (95% CI, 0.85-1.18). The absolute risk difference was largest for patients with higher predicted risk of heart failure at baseline. Results were consistent for single agents, in per-protocol analyses, and in the majority of subgroups. In positive control outcome analyses, GLP-1RA use was associated with a lower rate of major adverse cardiovascular events than DPP-4i use (weighted hazard ratio, 0.85 [95% CI, 0.74-0.99]), consistent with trial findings. CONCLUSIONS: GLP-1RA use is associated with a lower risk of HHF compared with DPP-4i and similar risks compared with SGLT-2i in routine clinical care for patients with type 2 diabetes.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Differential cardiovascular benefits of SGLT2 inhibitors, sacubitril/valsartan, omecamtiv mecarbil, and vericiguat across heart failure phenotypes: a systematic review and meta-analysis.",
+      "authors": [
+        "Wang Meng",
+        "Zuo Zhihong",
+        "Wu Ting",
+        "Zhou Zijing"
+      ],
+      "journal": "Front Pharmacol",
+      "year": 2026,
+      "doi": "10.3389/fphar.2026.1644757",
+      "pmid": "41727549",
+      "abstract": "AIM: The study evaluated the cardiovascular outcomes associated with pharmacological treatments in heart failure (HF) patients and explored whether the benefits/risks associated with these drugs for HF with mildly reduced or preserved ejection fraction (HFmrEF/HFpEF) were consistent with HF with reduced EF (HFrEF). METHODS: Several online databases were searched. All studies explored the cardiovascular effects of sodium glucose cotransporter-2 inhibitor (SGLT2i), sacubitril/valsartan, omecamtiv mecarbil and vericiguat were screened and reviewed. RESULTS: A total of 39 studies were included. Compared with placebo therapy, SGLT2i significantly reduced cardiovascular death and hospitalization for HF (HHF) in both HFrEF and HFmrEF/HFpEF patients (approximately 13%-27% risk reduction). SGLT2i reduced serious adverse events across all HF types. Sacubitril/valsartan demonstrated significant benefits in HFrEF patients, reducing cardiovascular death by 19%, all-cause mortality by 22%, and HHF by 22%. However, these benefits were not observed in HFmrEF/HFpEF patients. In contrast, sacubitril/valsartan substantially increased hypotension risk in HFmrEF/HFpEF patients. Omecamtiv mecarbil and vericiguat tended to improve cardiovascular outcomes in patients with HF, but the difference was not statistically significant. CONCLUSION: SGLT2i represents an effective and safe treatment strategy across the HF spectrum. Sacubitril/valsartan significantly improves outcomes in HFrEF but requires careful benefit-risk evaluation in HFmrEF/HFpEF patients. Current evidence does not support routine use of omecamtiv mecarbil or vericiguat. Large-scale randomized trials are warranted to validate these findings. SYSTEMATIC REVIEW REGISTRATION: CRD42023455966.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "meshTerms": [],
+      "studyType": "systematic_review",
+      "evidenceLevel": "I",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Comparative effectiveness of combination therapy with SGLT-2 inhibitors and GLP-1 RAs compared with SGLT-2 inhibitors in individuals with type 2 diabetes: A prevalent new-user cohort study.",
+      "authors": [
+        "Maier Gregor A",
+        "Hennig Beata",
+        "Rathmann Wolfgang",
+        "Kuss Oliver"
+      ],
+      "journal": "Diabetes Obes Metab",
+      "year": 2026,
+      "doi": "10.1111/dom.70523",
+      "pmid": "41725345",
+      "abstract": "AIMS: To evaluate the effectiveness of combination therapy with sodium-glucose cotransporter 2 (SGLT-2) inhibitors and glucagon-like peptide-1 receptor agonists (GLP-1 RAs) compared with continued SGLT-2 inhibitor therapy in routine practice among individuals with type 2 diabetes. MATERIALS AND METHODS: We used nationwide BARMER health claims data and implemented a prevalent new-user design. Individuals initiating a GLP-1 RA, either simultaneously with SGLT-2 inhibitors or during ongoing SGLT-2 inhibitor exposure, were matched to SGLT-2 inhibitor continuers using hybrid exposure sets and time-conditional propensity scores. The study cohort included individuals enrolled between 2013 and 2023, with possible follow-up including 2024. The primary outcome was all-cause mortality. Secondary outcomes included a modified cardiovascular composite (all-cause mortality, myocardial infarction, stroke), heart failure, nephropathy, and renal failure. Cox proportional hazards models estimated hazard ratios (HRs) and 95% confidence intervals (CIs). RESULTS: Among 21&#x2009;664 matched pairs with a median follow-up of 1.3&#x2009;years, combination therapy was associated with a 29% lower hazard of all-cause mortality (HR 0.71, 95% CI 0.63-0.80), consistent across subgroups and sensitivity analyses. Hazard reductions were also observed for the modified cardiovascular composite (HR 0.81, 95% CI 0.74-0.88) and heart failure (HR 0.78, 95% CI 0.68-0.89). CONCLUSIONS: In this large real-world cohort, combination therapy with SGLT-2 inhibitors and GLP-1 RAs was associated with a lower hazard of all-cause mortality, while most secondary cardiorenal outcomes showed generally favourable but imprecise estimates. These findings suggest that sustained concurrent use of both drug classes may offer meaningful clinical benefits in routine practice, although residual confounding cannot be fully excluded.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Efficacy and Safety of Sodium-Glucose Cotransporter 2 Inhibitors (SGLT2i) in Cardiac Amyloidosis: A Systematic Review: Study protocol.",
+      "authors": [
+        "Bourguiba Rim",
+        "Antit Saoussen",
+        "Ben Rejeb Sarra",
+        "Bellakhal Syrine",
+        "Zakhama Lilia"
+      ],
+      "journal": "Tunis Med",
+      "year": 2025,
+      "doi": "10.62438/tunismed.v103i5.5709",
+      "pmid": "41712790",
+      "abstract": "BACKGROUND: Sodium-glucose transport protein 2 inhibitors (SGLT2i) have revolutionized the management of heart failure and renal dysfunction. Cardiac amyloidosis, an underdiagnosed cause of heart failure, primarily results from light-chain (AL) or transthyretin (ATTR) deposition. Emerging evidence suggests that SGLT2i may improve cardiac and renal outcomes in these patients. However, data on their efficacy and safety in cardiac amyloidosis remain limited. This study aimed to conduct a systematic review to evaluate the efficacy and safety of SGLT2i in cardiac amyloidosis. METHODS: This systematic review and meta-analysis followed PRISMA guidelines and was registered on PROSPERO (CRD42024584183). A comprehensive search was performed across PubMed, Embase, Google Scholar, ScienceDirect, and Cochrane Library databases, including studies involving adult patients with AL or ATTR cardiac amyloidosis. Outcomes analyzed included cardiovascular mortality, heart failure hospitalizations, New York Heart Association (NYHA) functional class, left ventricular ejection fraction (LVEF), NT-proBNP, renal parameters, and adverse events. Data were synthesized using a random-effects model to account for heterogeneity, with effect measures expressed as risk ratios (RR) or mean differences (MD) and 95% confidence intervals (CIs). RESULTS: Preliminary findings indicate that SGLT2i use in cardiac amyloidosis is associated with significant improvements in LVEF, NT-pro BNP levels, and renal parameters such as eGFR and albuminuria progression. A reduction in heart failure hospitalizations and stabilization of NYHA functional class were also observed. Adverse events, including genitourinary infections and orthostatic hypotension, were reported but were consistent with known SGLT2i safety profiles. However, heterogeneity in study designs and small sample sizes limit definitive conclusions. CONCLUSION: This systemic review highlights the potential of SGLT2i to improve functional and cardiovascular outcomes in cardiac amyloidosis while maintaining an acceptable safety profile. Despite these promising results, further randomized controlled trials are necessary to confirm the findings and define the role of SGLT2i in managing cardiac amyloidosis. Until then, clinicians should cautiously integrate SGLT2i into treatment strategies based on individual patient characteristics and clinical context.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Sodium-Glucose Transporter 2 Inhibitors",
+        "Amyloidosis",
+        "Systematic Reviews as Topic",
+        "Heart Failure",
+        "Cardiomyopathies",
+        "Treatment Outcome",
+        "Meta-Analysis as Topic",
+        "Research Design"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Established and emerging pharmacologic options and unmet need in HFpEF and HFmrEF.",
+      "authors": [
+        "Sauer Andrew J",
+        "Ter Maaten Jozine M",
+        "Savarese Gianluigi"
+      ],
+      "journal": "ESC Heart Fail",
+      "year": 2026,
+      "doi": "10.1093/eschf/xvag056",
+      "pmid": "41711220",
+      "abstract": "A decline in mortality due to heart failure (HF) with reduced ejection fraction (HFrEF) has been attributed to effective guideline-directed medical therapies. But few effective therapies are available for HF with preserved ejection fraction (HFpEF), despite a high burden of HF events, or for HF with mildly reduced ejection fraction (HFmrEF). Novel therapies are needed for these HF subtypes. Clinical trials have demonstrated the efficacy of sodium-glucose cotransporter 2 inhibitors for improving outcomes in HFpEF and HFmrEF. While renin-angiotensin system inhibitors, angiotensin receptor/neprilysin inhibitors, and steroidal mineralocorticoid receptor antagonists for HFpEF or HFmrEF have not demonstrated effects on primary trial outcomes, sub-analyses from large HF trials suggest they may reduce the risk of hospitalization for HF or mortality. Beta blockers may be beneficial for HFmrEF. Finerenone, a non-steroidal mineralocorticoid receptor antagonist, reduced HF events and cardiovascular deaths in participants with HF and EF &#x2265;40% in the FINEARTS-HF trial, and is under evaluation for HFpEF and HFmrEF in the REDEFINE-HF and CONFIRMATION-HF trials. As treatment for HFpEF and HFmrEF may be impacted by comorbidities, novel treatments could be tailored to specific phenotypes such as obesity and chronic kidney disease. Trials of glucagon-like peptide-1 receptor agonist (GLP-1 RA), semaglutide, and dual glucose-dependent insulinotropic polypeptide receptor agonist/GLP-1 RA, tirzepatide, for HFpEF with obesity, observed an impact on HF hospitalization events and quality of life. Trials of selective mineralocorticoid modulator, balcinrenone, and aldosterone synthase inhibitor, vicadrostat, will address key evidence gaps and help improve outcomes for patients with HFpEF and HFmrEF.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Effects of Empagliflozin on Right Ventricular Free-Wall Strain in Patients with Heart Failure and Reduced Ejection Fraction.",
+      "authors": [
+        "Omar Massar",
+        "Jensen Jesper",
+        "Ali Mulham",
+        "Frederiksen Peter H",
+        "Kistorp Caroline",
+        "Videb&#xe6;k Lars",
+        "Poulsen Mikael Kj&#xe6;r",
+        "Tuxen Christian D",
+        "Borlaug Barry A",
+        "M&#xf6;ller S&#xf6;ren",
+        "Gustafsson Finn",
+        "K&#xf8;ber Lars",
+        "Schou Morten",
+        "M&#xf8;ller Jacob Eifer"
+      ],
+      "journal": "ESC Heart Fail",
+      "year": 2026,
+      "doi": "10.1093/eschf/xvaf031",
+      "pmid": "41711194",
+      "abstract": "OBJECTIVES: To investigate the effect of empagliflozin on right ventricular (RV) function in patients with heart failure with reduced ejection fraction (HFrEF). BACKGROUND: Sodium-glucose cotransporter-2 (SGLT2) inhibitors improve outcomes and reverse left ventricle (LV) remodeling in HFrEF. The impact on RV function remains uncertain. METHODS: The Empire HF trial was an investigator-initiated, double-blind, randomised, placebo-controlled trial of 190 participants with with a left ventricular ejection fraction (LVEF) of 40% or lower, with New York Heart Association (NYHA) Class I-III symptoms. Participants were randomized to receive either empagliflozin (at a dose of 10 mg once daily) or placebo, on top of recommended therapy for 12 weeks. The primary endpoint of this exploratory sub-study was changes in RV free wall strain (RVFWS) across the whole cohort. RVFWS was also stratified into tertiles based on baseline RVFWS. Secondary endpoints included changes in TAPSE and RV S' velocity. RESULTS: Between June 2017 and September 2019, a total of 190 patients were enrolled, of whom 160 were included in this sub-study. Baseline characteristics were balanced between the groups (mean age of 64&#xb1;11 years, 86% male, mean LVEF 29&#xb1;8%, 79% in NYHA class II, 83 patients (52%) had an implanted cardiac device, and tricuspid valve regurgitation was absent/trace in 136 (85%) and mild in 24 (15%)). A high proportion of the population were on optimal medical treatment for HFrEF, and device therapy remained unchanged during follow-up.The overall mean RVFWS was -16.7&#xb1;6.1%, with the empagliflozin group at -16.4&#xb1;6.2% and the placebo group at -16.9&#xb1;5.9%. No differences were observed in RVFWS between the groups. When stratified by baseline RVFWS into tertiles, patients in the lowest tertile demonstrated a significant improvement with empagliflozin (treatment effect: -2.9% [95% CI: -5.0 to -0.3]; P=0.027).This finding was independent of LVEF, plasma volume, and weight loss, and remained unchanged after additional adjustment for LV remodeling and the presence of resynchronization therapy.No significant treatment effect was observed in the middle or highest tertiles of RVFWS, nor in the overall or lowest tertiles of TAPSE or RV S'. CONCLUSIONS: This exploratory substudy of the Empire HF, treatment with empagliflozin exerted no overall effect on RV function in stable HFrEF patients, but significantly improved RVFWS in patients in the lowest tertile of RVFWS after 12 weeks of treatment. Trial Registration &#xa0;ClinicalTrials.gov, Unique Identifier: NCT03198585.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "[Effect of sodium-glucose cotransporter type 2 inhibitors on the course of heart failure in patients with amyloid cardiomyopathy: Results of a pilot single-center randomized trial].",
+      "authors": [
+        "Shoshina A A",
+        "Nasonova S N",
+        "Zhirov I V",
+        "Tereshchenko S N"
+      ],
+      "journal": "Ter Arkh",
+      "year": 2026,
+      "doi": "10.26442/00403660.2025.12.203510",
+      "pmid": "41705611",
+      "abstract": "AIM: To evaluate the efficacy and safety of the use of sodium-glucose cotransporter type 2 (SGLT-2) inhibitors in patients with chronic heart failure (CHF) due to amyloid cardiomyopathy (ACM). MATERIALS AND METHODS: 50 patients with CHF due to different types of ACM were included and randomized in two groups at a ratio of 1:1. In the 1st group (n=25), SGLT-2 inhibitors were added to basic therapy. In the 2nd group (n=25) patients received only basic therapy. The observation period was 6 months. Clinical function status, laboratory marker dynamics, echocardiography parameters, frequency of hospitalizations and presence of cardiovascular events were evaluated. RESULTS: SGLT-2 inhibitors therapy was well tolerated, safe. The frequency of hospitalizations due to decompensated heart failure was higher in the 2nd group (p=0.048), cases of hospitalization in the 2nd group occurred statistically significantly earlier (p=0.017). Mortality in the 1st group was 4% (1 case), in the 2nd group - 16% (4 cases), due to progressive CHF. In the 1st group, the distance of a 6-minute walk test increased (p&lt;0.001), the quality of life assessed by the Minnesota Living with Heart Failure Questionnaire improved (p&lt;0.001), the expression of shortness decreased (p&lt;0.001), there was an improvement in clinical status according to the clinical assessment scale (p&lt;0.001), while in the 2nd group there was a statistically significant deterioration of clinical functional status. The dynamics of the N-terminal pro-Brain Natriuretic Peptide and troponine levels were positive in the 1st group and negative in the 2nd group (p=0.001 and &lt;0.001 respectively). Significant changes in the glomerular filtration rate in the 1st group were not detected (p=0.475), in the 2nd group there was a decrease of this parameter (p&lt;0.001). According to the results of echocardiography in the 2nd group a significant reduction of the left ventricular (LV) ejection fraction (p=0.001) was observed, and in the 1st group was a tendency to decrease of the LV ejection fraction (p=0.238). Regardless of the SGLT-2 inhibitors intake, there was a decrease in the end-diastolic dimension of LV (p=0.046 for 1st group and &lt;0.001 - for 2nd group), as well as a progressive thickening of heart walls (p=0.011 and &lt;0.001 for interventricular septum thickness, p=0.004 and &lt;0.001 - for posterior wall thickness of LV). CONCLUSION: The administration of SGLT-2 inhibitors to patients with CHF due to ACM leads to an improvement in quality of life, a decrease in the frequency of hospitalizations due to decompensated heart failure of CHF, but does not affect mortality. Further study of therapeutic efficacy in more patients is needed. &#x426;&#x435;&#x43b;&#x44c;. &#x41e;&#x446;&#x435;&#x43d;&#x438;&#x442;&#x44c; &#x44d;&#x444;&#x444;&#x435;&#x43a;&#x442;&#x438;&#x432;&#x43d;&#x43e;&#x441;&#x442;&#x44c; &#x438; &#x431;&#x435;&#x437;&#x43e;&#x43f;&#x430;&#x441;&#x43d;&#x43e;&#x441;&#x442;&#x44c; &#x43f;&#x440;&#x438;&#x43c;&#x435;&#x43d;&#x435;&#x43d;&#x438;&#x44f; &#x438;&#x43d;&#x433;&#x438;&#x431;&#x438;&#x442;&#x43e;&#x440;&#x43e;&#x432; &#x43d;&#x430;&#x442;&#x440;&#x438;&#x439;-&#x433;&#x43b;&#x44e;&#x43a;&#x43e;&#x437;&#x43d;&#x43e;&#x433;&#x43e; &#x43a;&#x43e;&#x442;&#x440;&#x430;&#x43d;&#x441;&#x43f;&#x43e;&#x440;&#x442;&#x435;&#x440;&#x430; 2-&#x433;&#x43e; &#x442;&#x438;&#x43f;&#x430; (&#x438;&#x41d;&#x413;&#x41a;&#x422;-2) &#x443; &#x43f;&#x430;&#x446;&#x438;&#x435;&#x43d;&#x442;&#x43e;&#x432; &#x441; &#x445;&#x440;&#x43e;&#x43d;&#x438;&#x447;&#x435;&#x441;&#x43a;&#x43e;&#x439; &#x441;&#x435;&#x440;&#x434;&#x435;&#x447;&#x43d;&#x43e;&#x439; &#x43d;&#x435;&#x434;&#x43e;&#x441;&#x442;&#x430;&#x442;&#x43e;&#x447;&#x43d;&#x43e;&#x441;&#x442;&#x44c;&#x44e; (&#x425;&#x421;&#x41d;) &#x43d;&#x430; &#x444;&#x43e;&#x43d;&#x435; &#x430;&#x43c;&#x438;&#x43b;&#x43e;&#x438;&#x434;&#x43d;&#x43e;&#x439; &#x43a;&#x430;&#x440;&#x434;&#x438;&#x43e;&#x43c;&#x438;&#x43e;&#x43f;&#x430;&#x442;&#x438;&#x438; (&#x410;&#x41a;&#x41c;&#x41f;). &#x41c;&#x430;&#x442;&#x435;&#x440;&#x438;&#x430;&#x43b;&#x44b; &#x438; &#x43c;&#x435;&#x442;&#x43e;&#x434;&#x44b;. &#x412;&#x43a;&#x43b;&#x44e;&#x447;&#x435;&#x43d;&#x44b; 50 &#x43f;&#x430;&#x446;&#x438;&#x435;&#x43d;&#x442;&#x43e;&#x432; &#x441; &#x425;&#x421;&#x41d; &#x43d;&#x430; &#x444;&#x43e;&#x43d;&#x435; &#x440;&#x430;&#x437;&#x43b;&#x438;&#x447;&#x43d;&#x44b;&#x445; &#x442;&#x438;&#x43f;&#x43e;&#x432; &#x410;&#x41a;&#x41c;&#x41f;, &#x440;&#x430;&#x43d;&#x434;&#x43e;&#x43c;&#x438;&#x437;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x44b; &#x432; &#x434;&#x432;&#x435; &#x433;&#x440;&#x443;&#x43f;&#x43f;&#x44b; &#x432; &#x441;&#x43e;&#x43e;&#x442;&#x43d;&#x43e;&#x448;&#x435;&#x43d;&#x438;&#x438; 1:1. &#x412; 1-&#x439; &#x433;&#x440;&#x443;&#x43f;&#x43f;&#x435; (n=25) &#x43a; &#x431;&#x430;&#x437;&#x438;&#x441;&#x43d;&#x43e;&#x439; &#x442;&#x435;&#x440;&#x430;&#x43f;&#x438;&#x438; &#x434;&#x43e;&#x431;&#x430;&#x432;&#x43b;&#x435;&#x43d; &#x43f;&#x440;&#x438;&#x435;&#x43c; &#x438;&#x41d;&#x413;&#x41a;&#x422;-2. &#x412;&#x43e; 2-&#x439; &#x433;&#x440;&#x443;&#x43f;&#x43f;&#x435; (n=25) &#x43f;&#x430;&#x446;&#x438;&#x435;&#x43d;&#x442;&#x44b; &#x43f;&#x43e;&#x43b;&#x443;&#x447;&#x430;&#x43b;&#x438; &#x442;&#x43e;&#x43b;&#x44c;&#x43a;&#x43e; &#x431;&#x430;&#x437;&#x438;&#x441;&#x43d;&#x443;&#x44e; &#x442;&#x435;&#x440;&#x430;&#x43f;&#x438;&#x44e;. &#x421;&#x440;&#x43e;&#x43a; &#x43d;&#x430;&#x431;&#x43b;&#x44e;&#x434;&#x435;&#x43d;&#x438;&#x44f; &#x441;&#x43e;&#x441;&#x442;&#x430;&#x432;&#x438;&#x43b; 6 &#x43c;&#x435;&#x441;. &#x41e;&#x446;&#x435;&#x43d;&#x438;&#x432;&#x430;&#x43b;&#x438;&#x441;&#x44c; &#x43a;&#x43b;&#x438;&#x43d;&#x438;&#x43a;&#x43e;-&#x444;&#x443;&#x43d;&#x43a;&#x446;&#x438;&#x43e;&#x43d;&#x430;&#x43b;&#x44c;&#x43d;&#x44b;&#x439; &#x441;&#x442;&#x430;&#x442;&#x443;&#x441;, &#x434;&#x438;&#x43d;&#x430;&#x43c;&#x438;&#x43a;&#x430; &#x43b;&#x430;&#x431;&#x43e;&#x440;&#x430;&#x442;&#x43e;&#x440;&#x43d;&#x44b;&#x445; &#x43c;&#x430;&#x440;&#x43a;&#x435;&#x440;&#x43e;&#x432;, &#x43f;&#x430;&#x440;&#x430;&#x43c;&#x435;&#x442;&#x440;&#x43e;&#x432; &#x44d;&#x445;&#x43e;&#x43a;&#x430;&#x440;&#x434;&#x438;&#x43e;&#x433;&#x440;&#x430;&#x444;&#x438;&#x438;, &#x447;&#x430;&#x441;&#x442;&#x43e;&#x442;&#x430; &#x43f;&#x43e;&#x432;&#x442;&#x43e;&#x440;&#x43d;&#x44b;&#x445; &#x433;&#x43e;&#x441;&#x43f;&#x438;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x446;&#x438;&#x439; &#x438; &#x43d;&#x430;&#x43b;&#x438;&#x447;&#x438;&#x435; &#x441;&#x435;&#x440;&#x434;&#x435;&#x447;&#x43d;&#x43e;-&#x441;&#x43e;&#x441;&#x443;&#x434;&#x438;&#x441;&#x442;&#x44b;&#x445; &#x441;&#x43e;&#x431;&#x44b;&#x442;&#x438;&#x439;. &#x420;&#x435;&#x437;&#x443;&#x43b;&#x44c;&#x442;&#x430;&#x442;&#x44b;. &#x422;&#x435;&#x440;&#x430;&#x43f;&#x438;&#x44f; &#x438;&#x41d;&#x413;&#x41a;&#x422;-2 &#x445;&#x43e;&#x440;&#x43e;&#x448;&#x43e; &#x43f;&#x435;&#x440;&#x435;&#x43d;&#x43e;&#x441;&#x438;&#x43b;&#x430;&#x441;&#x44c;, &#x44f;&#x432;&#x43b;&#x44f;&#x43b;&#x430;&#x441;&#x44c; &#x431;&#x435;&#x437;&#x43e;&#x43f;&#x430;&#x441;&#x43d;&#x43e;&#x439;. &#x427;&#x430;&#x441;&#x442;&#x43e;&#x442;&#x430; &#x43f;&#x43e;&#x432;&#x442;&#x43e;&#x440;&#x43d;&#x44b;&#x445; &#x433;&#x43e;&#x441;&#x43f;&#x438;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x446;&#x438;&#x439; &#x432; &#x441;&#x432;&#x44f;&#x437;&#x438; &#x441; &#x434;&#x435;&#x43a;&#x43e;&#x43c;&#x43f;&#x435;&#x43d;&#x441;&#x430;&#x446;&#x438;&#x435;&#x439; &#x425;&#x421;&#x41d; &#x43e;&#x43a;&#x430;&#x437;&#x430;&#x43b;&#x430;&#x441;&#x44c; &#x432;&#x44b;&#x448;&#x435; &#x432;&#x43e; 2-&#x439; &#x433;&#x440;&#x443;&#x43f;&#x43f;&#x435; (p=0,048), &#x441;&#x43b;&#x443;&#x447;&#x430;&#x438; &#x433;&#x43e;&#x441;&#x43f;&#x438;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x446;&#x438;&#x438; &#x432;&#x43e; 2-&#x439; &#x433;&#x440;&#x443;&#x43f;&#x43f;&#x435; &#x43d;&#x430;&#x441;&#x442;&#x443;&#x43f;&#x430;&#x43b;&#x438; &#x441;&#x442;&#x430;&#x442;&#x438;&#x441;&#x442;&#x438;&#x447;&#x435;&#x441;&#x43a;&#x438; &#x437;&#x43d;&#x430;&#x447;&#x438;&#x43c;&#x43e; &#x440;&#x430;&#x43d;&#x44c;&#x448;&#x435; (p=0,017). &#x41b;&#x435;&#x442;&#x430;&#x43b;&#x44c;&#x43d;&#x43e;&#x441;&#x442;&#x44c; &#x432; 1-&#x439; &#x433;&#x440;&#x443;&#x43f;&#x43f;&#x435; &#x441;&#x43e;&#x441;&#x442;&#x430;&#x432;&#x438;&#x43b;&#x430; 4% (1 &#x441;&#x43b;&#x443;&#x447;&#x430;&#x439;), &#x432;&#x43e; 2-&#x439; &#x433;&#x440;&#x443;&#x43f;&#x43f;&#x435; &#x2013; 16% (4 &#x441;&#x43b;&#x443;&#x447;&#x430;&#x44f;), &#x43e;&#x431;&#x443;&#x441;&#x43b;&#x43e;&#x432;&#x43b;&#x435;&#x43d;&#x430; &#x43f;&#x440;&#x43e;&#x433;&#x440;&#x435;&#x441;&#x441;&#x438;&#x440;&#x443;&#x44e;&#x449;&#x438;&#x43c;&#x438; &#x44f;&#x432;&#x43b;&#x435;&#x43d;&#x438;&#x44f;&#x43c;&#x438; &#x425;&#x421;&#x41d;. &#x412; 1-&#x439; &#x433;&#x440;&#x443;&#x43f;&#x43f;&#x435; &#x443;&#x432;&#x435;&#x43b;&#x438;&#x447;&#x438;&#x43b;&#x430;&#x441;&#x44c; &#x43f;&#x440;&#x43e;&#x445;&#x43e;&#x434;&#x438;&#x43c;&#x430;&#x44f; &#x434;&#x438;&#x441;&#x442;&#x430;&#x43d;&#x446;&#x438;&#x44f; &#x441;&#x43e;&#x433;&#x43b;&#x430;&#x441;&#x43d;&#x43e; &#x442;&#x435;&#x441;&#x442;&#x443; &#x441; 6-&#x43c;&#x438;&#x43d;&#x443;&#x442;&#x43d;&#x43e;&#x439; &#x445;&#x43e;&#x434;&#x44c;&#x431;&#x43e;&#x439; (p&lt;0,001), &#x43f;&#x43e;&#x432;&#x44b;&#x441;&#x438;&#x43b;&#x43e;&#x441;&#x44c; &#x43a;&#x430;&#x447;&#x435;&#x441;&#x442;&#x432;&#x43e; &#x436;&#x438;&#x437;&#x43d;&#x438; &#x43f;&#x43e; &#x43e;&#x43f;&#x440;&#x43e;&#x441;&#x43d;&#x438;&#x43a;&#x443; &#x41c;&#x438;&#x43d;&#x43d;&#x435;&#x441;&#x43e;&#x442;&#x441;&#x43a;&#x43e;&#x433;&#x43e; &#x443;&#x43d;&#x438;&#x432;&#x435;&#x440;&#x441;&#x438;&#x442;&#x435;&#x442;&#x430; &#x441;&#x43f;&#x435;&#x446;&#x438;&#x430;&#x43b;&#x44c;&#x43d;&#x43e; &#x434;&#x43b;&#x44f; &#x431;&#x43e;&#x43b;&#x44c;&#x43d;&#x44b;&#x445; &#x441; &#x425;&#x421;&#x41d; (p&lt;0,001), &#x443;&#x43c;&#x435;&#x43d;&#x44c;&#x448;&#x438;&#x43b;&#x430;&#x441;&#x44c; &#x432;&#x44b;&#x440;&#x430;&#x436;&#x435;&#x43d;&#x43d;&#x43e;&#x441;&#x442;&#x44c; &#x43e;&#x434;&#x44b;&#x448;&#x43a;&#x438; (p&lt;0,001), &#x443;&#x43b;&#x443;&#x447;&#x448;&#x438;&#x43b;&#x43e;&#x441;&#x44c; &#x43a;&#x43b;&#x438;&#x43d;&#x438;&#x447;&#x435;&#x441;&#x43a;&#x43e;&#x435; &#x441;&#x43e;&#x441;&#x442;&#x43e;&#x44f;&#x43d;&#x438;&#x435; &#x441;&#x43e;&#x433;&#x43b;&#x430;&#x441;&#x43d;&#x43e; &#x448;&#x43a;&#x430;&#x43b;&#x435; &#x43e;&#x446;&#x435;&#x43d;&#x43a;&#x438; &#x43a;&#x43b;&#x438;&#x43d;&#x438;&#x447;&#x435;&#x441;&#x43a;&#x43e;&#x433;&#x43e; &#x441;&#x43e;&#x441;&#x442;&#x43e;&#x44f;&#x43d;&#x438;&#x44f; (p&lt;0,001), &#x432; &#x442;&#x43e; &#x432;&#x440;&#x435;&#x43c;&#x44f; &#x43a;&#x430;&#x43a; &#x432;&#x43e; 2-&#x439; &#x433;&#x440;&#x443;&#x43f;&#x43f;&#x435; &#x43f;&#x440;&#x43e;&#x438;&#x437;&#x43e;&#x448;&#x43b;&#x43e; &#x441;&#x442;&#x430;&#x442;&#x438;&#x441;&#x442;&#x438;&#x447;&#x435;&#x441;&#x43a;&#x438; &#x437;&#x43d;&#x430;&#x447;&#x438;&#x43c;&#x43e;&#x435; &#x443;&#x445;&#x443;&#x434;&#x448;&#x435;&#x43d;&#x438;&#x435; &#x43a;&#x43b;&#x438;&#x43d;&#x438;&#x43a;&#x43e;-&#x444;&#x443;&#x43d;&#x43a;&#x446;&#x438;&#x43e;&#x43d;&#x430;&#x43b;&#x44c;&#x43d;&#x43e;&#x433;&#x43e; &#x441;&#x442;&#x430;&#x442;&#x443;&#x441;&#x430;. &#x414;&#x438;&#x43d;&#x430;&#x43c;&#x438;&#x43a;&#x430; &#x443;&#x440;&#x43e;&#x432;&#x43d;&#x44f; N-&#x43a;&#x43e;&#x43d;&#x446;&#x435;&#x432;&#x43e;&#x433;&#x43e; &#x43c;&#x43e;&#x437;&#x433;&#x43e;&#x432;&#x43e;&#x433;&#x43e; &#x43d;&#x430;&#x442;&#x440;&#x438;&#x439;&#x443;&#x440;&#x435;&#x442;&#x438;&#x447;&#x435;&#x441;&#x43a;&#x43e;&#x433;&#x43e; &#x43f;&#x440;&#x43e;&#x43f;&#x435;&#x43f;&#x442;&#x438;&#x434;&#x430; &#x438; &#x442;&#x440;&#x43e;&#x43f;&#x43e;&#x43d;&#x438;&#x43d;&#x430; &#x43e;&#x43a;&#x430;&#x437;&#x430;&#x43b;&#x430;&#x441;&#x44c; &#x43f;&#x43e;&#x43b;&#x43e;&#x436;&#x438;&#x442;&#x435;&#x43b;&#x44c;&#x43d;&#x43e;&#x439; &#x432; 1-&#x439; &#x433;&#x440;&#x443;&#x43f;&#x43f;&#x435; &#x438; &#x43e;&#x442;&#x440;&#x438;&#x446;&#x430;&#x442;&#x435;&#x43b;&#x44c;&#x43d;&#x43e;&#x439; &#x2013; &#x432;&#x43e; 2-&#x439; &#x433;&#x440;&#x443;&#x43f;&#x43f;&#x435; (p=0,001 &#x438; &lt;0,001 &#x441;&#x43e;&#x43e;&#x442;&#x432;&#x435;&#x442;&#x441;&#x442;&#x432;&#x435;&#x43d;&#x43d;&#x43e;). &#x417;&#x43d;&#x430;&#x447;&#x438;&#x43c;&#x44b;&#x445; &#x438;&#x437;&#x43c;&#x435;&#x43d;&#x435;&#x43d;&#x438;&#x439; &#x441;&#x43a;&#x43e;&#x440;&#x43e;&#x441;&#x442;&#x438; &#x43a;&#x43b;&#x443;&#x431;&#x43e;&#x447;&#x43a;&#x43e;&#x432;&#x43e;&#x439; &#x444;&#x438;&#x43b;&#x44c;&#x442;&#x440;&#x430;&#x446;&#x438;&#x438; &#x432; 1-&#x439; &#x433;&#x440;&#x443;&#x43f;&#x43f;&#x435; &#x43d;&#x435; &#x432;&#x44b;&#x44f;&#x432;&#x43b;&#x435;&#x43d;&#x43e; (p=0,475), &#x432;&#x43e; 2-&#x439; &#x433;&#x440;&#x443;&#x43f;&#x43f;&#x435; &#x43d;&#x430;&#x431;&#x43b;&#x44e;&#x434;&#x430;&#x43b;&#x43e;&#x441;&#x44c; &#x443;&#x43c;&#x435;&#x43d;&#x44c;&#x448;&#x435;&#x43d;&#x438;&#x435; &#x434;&#x430;&#x43d;&#x43d;&#x43e;&#x433;&#x43e; &#x43f;&#x43e;&#x43a;&#x430;&#x437;&#x430;&#x442;&#x435;&#x43b;&#x44f; (p&lt;0,001). &#x41f;&#x43e; &#x440;&#x435;&#x437;&#x443;&#x43b;&#x44c;&#x442;&#x430;&#x442;&#x430;&#x43c; &#x44d;&#x445;&#x43e;&#x43a;&#x430;&#x440;&#x434;&#x438;&#x43e;&#x433;&#x440;&#x430;&#x444;&#x438;&#x438; &#x432;&#x43e; 2-&#x439; &#x433;&#x440;&#x443;&#x43f;&#x43f;&#x435; &#x43d;&#x430;&#x431;&#x43b;&#x44e;&#x434;&#x430;&#x43b;&#x43e;&#x441;&#x44c; &#x437;&#x43d;&#x430;&#x447;&#x438;&#x43c;&#x43e;&#x435; &#x441;&#x43d;&#x438;&#x436;&#x435;&#x43d;&#x438;&#x435; &#x444;&#x440;&#x430;&#x43a;&#x446;&#x438;&#x438; &#x432;&#x44b;&#x431;&#x440;&#x43e;&#x441;&#x430; &#x43b;&#x435;&#x432;&#x43e;&#x433;&#x43e; &#x436;&#x435;&#x43b;&#x443;&#x434;&#x43e;&#x447;&#x43a;&#x430; &#x2013; &#x41b;&#x416; (p=0,001), &#x430; &#x432; 1-&#x439; &#x433;&#x440;&#x443;&#x43f;&#x43f;&#x435; &#x2013; &#x442;&#x435;&#x43d;&#x434;&#x435;&#x43d;&#x446;&#x438;&#x44f; &#x43a; &#x441;&#x43d;&#x438;&#x436;&#x435;&#x43d;&#x438;&#x44e; &#x444;&#x440;&#x430;&#x43a;&#x446;&#x438;&#x438; &#x432;&#x44b;&#x431;&#x440;&#x43e;&#x441;&#x430; &#x41b;&#x416; (p=0,238). &#x412;&#x43d;&#x435; &#x437;&#x430;&#x432;&#x438;&#x441;&#x438;&#x43c;&#x43e;&#x441;&#x442;&#x438; &#x43e;&#x442; &#x43f;&#x440;&#x438;&#x435;&#x43c;&#x430; &#x438;&#x41d;&#x413;&#x41a;&#x422;-2 &#x43d;&#x430;&#x431;&#x43b;&#x44e;&#x434;&#x430;&#x43b;&#x43e;&#x441;&#x44c; &#x443;&#x43c;&#x435;&#x43d;&#x44c;&#x448;&#x435;&#x43d;&#x438;&#x435; &#x43a;&#x43e;&#x43d;&#x435;&#x447;&#x43d;&#x43e;-&#x434;&#x438;&#x430;&#x441;&#x442;&#x43e;&#x43b;&#x438;&#x447;&#x435;&#x441;&#x43a;&#x43e;&#x433;&#x43e; &#x440;&#x430;&#x437;&#x43c;&#x435;&#x440;&#x430; &#x41b;&#x416; (p=0,046 &#x434;&#x43b;&#x44f; 1-&#x439; &#x433;&#x440;&#x443;&#x43f;&#x43f;&#x44b; &#x438; &lt;0,001 &#x2013; &#x434;&#x43b;&#x44f; 2-&#x439; &#x433;&#x440;&#x443;&#x43f;&#x43f;&#x44b;), &#x430; &#x442;&#x430;&#x43a;&#x436;&#x435; &#x43f;&#x440;&#x43e;&#x433;&#x440;&#x435;&#x441;&#x441;&#x438;&#x440;&#x443;&#x44e;&#x449;&#x435;&#x435; &#x443;&#x442;&#x43e;&#x43b;&#x449;&#x435;&#x43d;&#x438;&#x435; &#x441;&#x442;&#x435;&#x43d;&#x43e;&#x43a; &#x441;&#x435;&#x440;&#x434;&#x446;&#x430; (p=0,011 &#x438; &lt;0,001 &#x434;&#x43b;&#x44f; &#x442;&#x43e;&#x43b;&#x449;&#x438;&#x43d;&#x44b; &#x43c;&#x435;&#x436;&#x436;&#x435;&#x43b;&#x443;&#x434;&#x43e;&#x447;&#x43a;&#x43e;&#x432;&#x43e;&#x439; &#x43f;&#x435;&#x440;&#x435;&#x433;&#x43e;&#x440;&#x43e;&#x434;&#x43a;&#x438;, p=0,004 &#x438; &lt;0,001 &#x2013; &#x434;&#x43b;&#x44f; &#x442;&#x43e;&#x43b;&#x449;&#x438;&#x43d;&#x44b; &#x437;&#x430;&#x434;&#x43d;&#x435;&#x439; &#x441;&#x442;&#x435;&#x43d;&#x43a;&#x438; &#x41b;&#x416;). &#x417;&#x430;&#x43a;&#x43b;&#x44e;&#x447;&#x435;&#x43d;&#x438;&#x435;. &#x41d;&#x430;&#x437;&#x43d;&#x430;&#x447;&#x435;&#x43d;&#x438;&#x435; &#x438;&#x41d;&#x413;&#x41a;&#x422;-2 &#x443; &#x43f;&#x430;&#x446;&#x438;&#x435;&#x43d;&#x442;&#x43e;&#x432; &#x441; &#x425;&#x421;&#x41d; &#x43d;&#x430; &#x444;&#x43e;&#x43d;&#x435; &#x410;&#x41a;&#x41c;&#x41f; &#x43f;&#x440;&#x438;&#x432;&#x43e;&#x434;&#x438;&#x442; &#x43a; &#x443;&#x43b;&#x443;&#x447;&#x448;&#x435;&#x43d;&#x438;&#x44e; &#x43a;&#x430;&#x447;&#x435;&#x441;&#x442;&#x432;&#x430; &#x436;&#x438;&#x437;&#x43d;&#x438;, &#x441;&#x43d;&#x438;&#x436;&#x435;&#x43d;&#x438;&#x44e; &#x447;&#x430;&#x441;&#x442;&#x43e;&#x442;&#x44b; &#x433;&#x43e;&#x441;&#x43f;&#x438;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x446;&#x438;&#x439; &#x43f;&#x43e; &#x43f;&#x440;&#x438;&#x447;&#x438;&#x43d;&#x435; &#x434;&#x435;&#x43a;&#x43e;&#x43c;&#x43f;&#x435;&#x43d;&#x441;&#x430;&#x446;&#x438;&#x438; &#x425;&#x421;&#x41d;, &#x43e;&#x434;&#x43d;&#x430;&#x43a;&#x43e; &#x43d;&#x435; &#x432;&#x43b;&#x438;&#x44f;&#x435;&#x442; &#x43d;&#x430; &#x43b;&#x435;&#x442;&#x430;&#x43b;&#x44c;&#x43d;&#x43e;&#x441;&#x442;&#x44c;. &#x41d;&#x435;&#x43e;&#x431;&#x445;&#x43e;&#x434;&#x438;&#x43c;&#x43e; &#x434;&#x430;&#x43b;&#x44c;&#x43d;&#x435;&#x439;&#x448;&#x435;&#x435; &#x438;&#x441;&#x441;&#x43b;&#x435;&#x434;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x435; &#x44d;&#x444;&#x444;&#x435;&#x43a;&#x442;&#x438;&#x432;&#x43d;&#x43e;&#x441;&#x442;&#x438; &#x442;&#x435;&#x440;&#x430;&#x43f;&#x438;&#x438; &#x43d;&#x430; &#x431;&#x43e;&#x43b;&#x44c;&#x448;&#x435;&#x43c; &#x447;&#x438;&#x441;&#x43b;&#x435; &#x43f;&#x430;&#x446;&#x438;&#x435;&#x43d;&#x442;&#x43e;&#x432;.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Randomized Controlled Trial",
+        "English Abstract"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Heart Failure",
+        "Sodium-Glucose Transporter 2 Inhibitors",
+        "Male",
+        "Female",
+        "Middle Aged",
+        "Cardiomyopathies",
+        "Pilot Projects",
+        "Aged",
+        "Echocardiography",
+        "Treatment Outcome",
+        "Amyloidosis",
+        "Hospitalization"
+      ],
+      "studyType": "rct",
+      "evidenceLevel": "II",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Advances in the Pharmacological Treatment of Heart Failure With Preserved Ejection Fraction.",
+      "authors": [
+        "Valente Valeria",
+        "Beer Benedikt N",
+        "Savarese Gianluigi"
+      ],
+      "journal": "Int J Heart Fail",
+      "year": 2026,
+      "doi": "10.36628/ijhf.2025.0111",
+      "pmid": "41696054",
+      "abstract": "Heart failure with preserved ejection fraction (HFpEF) represents approximately half of all heart failure cases and poses a growing global health challenge driven by an ageing population and an increasing comorbidity burden. Once regarded as a condition without effective, evidence-based therapy, HFpEF has undergone a paradigm shift in recent years. Advances in the understanding of its complex pathophysiology have highlighted the multifactorial interplay between systemic inflammation, endothelial dysfunction, and metabolic derangements. The introduction of sodium-glucose cotransporter 2 inhibitors has transformed the HFpEF therapeutic landscape, following large-scale trials such as EMPEROR-Preserved and DELIVER demonstrating consistent reductions in mortality/morbidity in this patient population. More recently, the non-steroidal mineralocorticoid receptor antagonist finerenone, tested in the FINEARTS-HF trial, was also shown to improve mortality/morbidity in HFpEF, marking a further milestone in disease-modifying therapy. Further, glucagon-like peptide-1 receptor agonists (GLP-1 RAs) and a dual gastric inhibitory polypeptide analogue/GLP-1 RA (tirzepatide) have shown to reduce body weight and improve quality of life and mortality/morbidity in the obese-HFpEF phenotype, suggesting the need of additional tailoring of HFpEF therapy based on specific patient profiles. Despite these advances, HFpEF remains a frequently underdiagnosed syndrome, with diagnostic uncertainty often delaying therapy. Comprehensive management of comorbidities and systematic implementation of guideline-directed medical therapy remain crucial to improve patient outcomes. This narrative review provides an updated overview of the pathophysiological mechanisms, diagnostic approaches, and evolving pharmacological strategies shaping the modern management of HFpEF.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "[The effect of empagliflozin on the quality of life in patients with heart failure: results from the Hungarian cohort of the international Emp-Activity study].",
+      "authors": [
+        "R&#xe1;duly Arnold P&#xe9;ter",
+        "Borb&#xe9;ly Attila",
+        "Szil&#xe1;gyi Attila"
+      ],
+      "journal": "Orv Hetil",
+      "year": 2026,
+      "doi": "10.1556/650.2026.33487",
+      "pmid": "41691592",
+      "abstract": "INTRODUCTION: Heart failure remains one of the leading causes of cardiovascular morbidity and mortality, impairing the quality of life. Based on randomized, controlled clinical trials, SGLT2 inhibitors significantly improve outcomes and reduce symptoms. However, real-world evidence is essential to better assess their effectiveness and safety in everyday clinical practice. OBJECTIVE: To evaluate the effects of empagliflozin therapy on the quality of life and functional status, as well as to assess its safety profile in the Hungarian cohort of the international Emp-Activity study, covering the full spectrum of heart failure. METHOD: This prospective, non-interventional, multicenter, observational study involved symptomatic heart failure patients enrolled from 11 Hungarian centers. A total of 106 patients were enrolled, of whom 101 were assigned to the empagliflozin cohort and 5 to the non-empagliflozin cohort. Patients received empagliflozin as part of routine heart failure therapy and completed the Kansas City Cardiomyopathy Questionnaire (KCCQ-12) at baseline and after 24 weeks. Functional status was assessed using the New York Heart Association (NYHA) classification. RESULTS: 101 patients were enrolled to the empagliflozin cohort (median age 69 years, 28.7% female), primarily in NYHA class II and III. Among them, 57% had HFrEF, 19% HFmrEF, and 22% HFpEF. The most frequent etiology was ischemic heart disease (42%). The most common comorbidities included hypertension (58%), atrial fibrillation (33%), diabetes mellitus (26%), and hyperlipidemia (25%). A significant improvement was observed in the KCCQ-12 overall score (74.3 &#xb1; 19.5 vs. 67.1 &#xb1; 19.5, p&lt;0.01), with clinically meaningful improvement (&#x2265;5-point increment) in 53% of patients. The NYHA class improved significantly. Systolic blood pressure decreased (131 &#xb1; 16 mmHg vs. 127 &#xb1; 17 mmHg, p = 0.02), while diastolic blood pressure, serum creatinine, and potassium levels remained stable during the 24-week follow-up. CONCLUSION: In Hungarian patients with heart failure, 24-week empagliflozin treatment resulted in significant improvements in the quality of life and functional capacity, while being well tolerated. These findings support the effectiveness and safety of empagliflozin in routine clinical practice across the full spectrum of heart failure. Orv Hetil. 2026; 167(7): 257-264. Bevezet&#xe9;s: A sz&#xed;vel&#xe9;gtelens&#xe9;g a cardiovascularis morbidit&#xe1;s &#xe9;s mortalit&#xe1;s egyik f&#x151; oka, a betegs&#xe9;g nagym&#xe9;rt&#xe9;kben rontja a betegek &#xe9;letmin&#x151;s&#xe9;g&#xe9;t. Az SGLT2-g&#xe1;tl&#xf3;k randomiz&#xe1;lt, kontroll&#xe1;lt klinikai vizsg&#xe1;latok alapj&#xe1;n jelent&#x151;sen jav&#xed;tj&#xe1;k a kimeneteleket &#xe9;s cs&#xf6;kkentik a t&#xfc;neteket. Ugyanakkor a val&#xf3; &#xe9;letb&#x151;l sz&#xe1;rmaz&#xf3; adatok kulcsfontoss&#xe1;g&#xfa;ak e gy&#xf3;gyszercsoport hat&#xe1;soss&#xe1;g&#xe1;nak &#xe9;s biztons&#xe1;goss&#xe1;g&#xe1;nak pontosabb meg&#xed;t&#xe9;l&#xe9;s&#xe9;hez. C&#xe9;lkit&#x171;z&#xe9;s: A nemzetk&#xf6;zi Emp-Activity vizsg&#xe1;lat magyarorsz&#xe1;gi kohorsz&#xe1;ban az empagliflozinkezel&#xe9;s &#xe9;letmin&#x151;s&#xe9;gre &#xe9;s funkcion&#xe1;lis statusra gyakorolt hat&#xe1;s&#xe1;nak &#xe9;rt&#xe9;kel&#xe9;se, valamint biztons&#xe1;goss&#xe1;g&#xe1;nak vizsg&#xe1;lata a sz&#xed;vel&#xe9;gtelens&#xe9;g spektrum&#xe1;ban. M&#xf3;dszer: A prospekt&#xed;v, beavatkoz&#xe1;ssal nem j&#xe1;r&#xf3;, multicentrikus megfigyel&#xe9;ses vizsg&#xe1;latba 11 hazai centrumb&#xf3;l &#xf6;sszesen 106, t&#xfc;netes sz&#xed;vel&#xe9;gtelen beteg ker&#xfc;lt bevon&#xe1;sra, akik k&#xf6;z&#xfc;l 101 az empagliflozint kap&#xf3; kohorszba, 5 beteg pedig a nem empagliflozint kap&#xf3; kohorszba ker&#xfc;lt. A betegek a rutin-sz&#xed;vel&#xe9;gtelens&#xe9;gter&#xe1;pia r&#xe9;szek&#xe9;nt empagliflozinkezel&#xe9;st kaptak, &#xe9;s a vizsg&#xe1;lat kezdet&#xe9;n, valamint 24 h&#xe9;t eltelt&#xe9;vel kit&#xf6;lt&#xf6;tt&#xe9;k a Kansas City Cardiomyopathy Questionnaire (KCCQ-12) k&#xe9;rd&#x151;&#xed;vet. A funkcion&#xe1;lis statust a New York Heart Association (NYHA) oszt&#xe1;lyoz&#xe1;sa alapj&#xe1;n &#xe9;rt&#xe9;kelt&#xe9;k. Eredm&#xe9;nyek: A vizsg&#xe1;lat empagliflozinkohorsz&#xe1;ba bevont 101 beteg medi&#xe1;n&#xe9;letkora 69 &#xe9;v volt, 28,7%-uk n&#x151;, funkcion&#xe1;lis st&#xe1;diumuk NYHA II. &#xe9;s III. A betegek 57%-a a HFrEF-, 19%-a HFmrEF-, 22%-a pedig a HFpEF-fenot&#xed;pusba tartozott. A sz&#xed;vel&#xe9;gtelens&#xe9;g h&#xe1;tter&#xe9;ben a leggyakrabban (42%) ischaemi&#xe1;s etiol&#xf3;gia &#xe1;llt. A leggyakoribb t&#xe1;rsbetegs&#xe9;gek a hypertonia (58%), a pitvarfibrill&#xe1;ci&#xf3; (33%), a cukorbetegs&#xe9;g (26%) &#xe9;s a hyperlipidaemia (25%) voltak. A KCCQ-12 &#xf6;sszpontsz&#xe1;m&#xe1;ban jelent&#x151;s javul&#xe1;s volt megfigyelhet&#x151; (74,3 &#xb1; 19,5 vs. 67,1 &#xb1; 19,5 pont, p&lt;0,01). Klinikailag szignifik&#xe1;ns javul&#xe1;s (&#x2265;5 pontos n&#xf6;veked&#xe9;s) a betegek 53%-&#xe1;ban k&#xf6;vetkezett be. A NYHA-st&#xe1;dium jelent&#x151;sen javult. A systol&#xe9;s v&#xe9;rnyom&#xe1;s cs&#xf6;kkent (131 &#xb1; 16 Hgmm vs. 127 &#xb1; 17 Hgmm, p = 0,02), m&#xed;g a diastol&#xe9;s v&#xe9;rnyom&#xe1;s, a sz&#xe9;rumkreatinin- &#xe9;s -k&#xe1;liumszint nem v&#xe1;ltozott a 24 hetes kezel&#xe9;s sor&#xe1;n. K&#xf6;vetkeztet&#xe9;s: A sz&#xed;vel&#xe9;gtelens&#xe9;gben szenved&#x151; magyarorsz&#xe1;gi betegek k&#xf6;r&#xe9;ben a 24 hetes empagliflozinkezel&#xe9;s az &#xe9;letmin&#x151;s&#xe9;g &#xe9;s a funkcion&#xe1;lis kapacit&#xe1;s szignifik&#xe1;ns javul&#xe1;s&#xe1;val j&#xe1;rt, emellett a kezel&#xe9;s j&#xf3;l toler&#xe1;lhat&#xf3;nak bizonyult. A vizsg&#xe1;lat eredm&#xe9;nyei meger&#x151;s&#xed;tik az empagliflozin alkalmaz&#xe1;s&#xe1;nak hat&#xe9;konys&#xe1;g&#xe1;t &#xe9;s biztons&#xe1;goss&#xe1;g&#xe1;t a mindennapi klinikai gyakorlatban. Orv Hetil. 2026; 167(7): 257&#x2013;264.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Multicenter Study",
+        "Observational Study",
+        "English Abstract"
+      ],
+      "meshTerms": [
+        "Humans",
+        "Benzhydryl Compounds",
+        "Glucosides",
+        "Heart Failure",
+        "Female",
+        "Male",
+        "Quality of Life",
+        "Aged",
+        "Hungary",
+        "Prospective Studies",
+        "Sodium-Glucose Transporter 2 Inhibitors",
+        "Middle Aged",
+        "Treatment Outcome"
+      ],
+      "studyType": "observational",
+      "evidenceLevel": "III",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Effect of SGLT2 inhibitors on heart failure outcomes in patients with and without diabetes: A systematic review and meta-analysis of randomized controlled trials.",
+      "authors": [
+        "Bafail Duaa Abdullah",
+        "Alhalees Noura Hamdi"
+      ],
+      "journal": "Exp Ther Med",
+      "year": 2026,
+      "doi": "10.3892/etm.2026.13079",
+      "pmid": "41668999",
+      "abstract": "Heart failure (HF) is a debilitating condition with high morbidity and mortality rates worldwide. Sodium-glucose cotransporter 2 inhibitors (SGLT2i) exhibit cardiovascular (CV) and renal protective effects beyond glucose lowering, and may serve a role in managing HF across numerous patient populations, including non-diabetics. Therefore, the present systematic review and meta-analysis aimed to evaluate the efficacy of SGLT2i in reducing HF hospitalizations, CV mortality and adverse events in patients with and without type 2 diabetes mellitus. Following the Preferred Reporting Items for Systematic Reviews and Meta-Analyses 2020 guidelines, comprehensive literature searches were conducted across PubMed, Scopus, Web of Science and Cochrane Central databases up to May 2025. Randomized controlled trials (RCTs; phases II-IV) enrolling adults with HF, irrespective of ejection fraction or diabetes status, comparing SGLT2i with placebo or standard-of-care were included in the present study. Outcomes analyzed encompassed HF hospitalizations, CV and all-cause mortality, adverse events and patient-reported quality of life measures. Meta-analysis was performed with RevMan 5.4 using a random-effects model. Data from 28 RCTs, including numerous high-quality trials, consistently demonstrated that SGLT2i significantly reduced the risk of first and total hospitalization for HF by 24% [odds ratio (OR)=0.76; 95% CI: 0.64-0.91; P=0.002; I&#xb2;=0%] and 33% (OR=0.67; 95% CI: 0.63-0.72; P&lt;0.00001; I&#xb2;=33%), respectively. In addition, the use of SGLT2i decreased all-cause and CV-associated mortality by 28% (OR=0.72; 95% CI: 0.61-0.86; P=0.0002; I2=88%) and 24% (OR=0.76; 95% CI: 0.70-0.83; P&lt;0.00001; I&#xb2;=57%), respectively. Furthermore, adverse events occurred in 22% (OR=0.78; 95% CI: 0.59-1.02; P=0.07; I2=97%), regardless of the diabetic status of the patients. Publication bias was significant (P&lt;0.05) in studies addressing total hospitalization, while studies evaluating all-cause mortality, CV-associated mortality and adverse events did not exhibit significant publication bias (P&#x2265;0.05). The majority of studies were found to have a low risk of bias, with only a small number of studies exhibiting a high risk of bias. Low-to-high certainty of evidence was observed. Overall, SGLT2i were indicated to be effective in reducing hospitalization for HF and improving survival in a broad spectrum of patients, including those without diabetes. The multifactorial mechanisms of SGLT2i are likely to contribute to these benefits, supporting their emerging role in HF management.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Dapagliflozin lowers blood pressure via regulating the sympathetic neural activity in the paraventricular nucleus of hypothalamus in normal mice.",
+      "authors": [
+        "Dong Meiyuan",
+        "Xu Zhimin",
+        "Zhou Ligang",
+        "Wen Song"
+      ],
+      "journal": "Front Endocrinol (Lausanne)",
+      "year": 2026,
+      "doi": "10.3389/fendo.2026.1689167",
+      "pmid": "41658515",
+      "abstract": "BACKGROUND AND AIMS: The risk of heart failure (HF) is significantly higher in patients with type 2 diabetes mellitus (T2DM). Recent studies have shown that an imbalance in the sympathetic nervous system (SNS) is a target for sodium-glucose cotransporter-2 inhibitors (SGLT-2i), which have been proven to reduce the risk of adverse HF outcomes in several clinical trials. However, the specific central mechanisms involved remain unclear. Therefore, our research investigates how dapagliflozin (DAPA) regulates blood pressure through SNS and explores the central neural and endocrinological pathways by which DAPA, an SGLT-2i, influences SNS activity and its impact on the cardiovascular system in the treatment of HF in T2DM. MATERIAL AND METHODS: Twenty-one male C57BL/6 mice aged 8-10 weeks were randomly divided into three groups (n = 7 each): control (CTRL), DAPA, and DAPA-Cyanine 3 (DAPA-Cy3). Blood pressure (BP), heart rate (HR), and blood glucose (BG) were measured after a single dose of treatment. DAPA-Cy3 was designed to assess its ability to cross the blood-brain barrier (BBB). Additionally, histological co-localization analyses of immunoreactivity for c-Fos, neuronal nitric oxide synthase (nNOS), corticotropin-releasing hormone (CRH), and vasopressin (VP) across groups were performed to explore how SGLT-2 inhibitors regulate the central sympathetic nervous system (SNS). RESULTS: 1) DAPA significantly reduced both systolic blood pressure (SBP) and diastolic blood pressure (DBP) in mice, without notably affecting the heart rate (HR); 2) SGLT-2 was found to be extensively expressed in the central nervous system (CNS), especially in the hypothalamus and brainstem; 3) DAPA-Cy3 was able to cross the blood-brain barrier (BBB) and disperse throughout the brain; and 4) DAPA clearly influenced the activity of specific neurons expressing nNOS, CRH, and VP in the hypothalamus. CONCLUSION: DAPA, as an SGLT-2 inhibitor, crosses the BBB and binds to the innate SGLT-2 in the hypothalamus and brainstem of mice. This significantly influences the tone of the SNS through indirect regulation by modulating nNOS, CRH, and VP, which are believed to be the upstream regulatory points of SGLT-2 in interacting with the SNS.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "meshTerms": [
+        "Animals",
+        "Benzhydryl Compounds",
+        "Male",
+        "Glucosides",
+        "Sympathetic Nervous System",
+        "Blood Pressure",
+        "Mice",
+        "Paraventricular Hypothalamic Nucleus",
+        "Mice, Inbred C57BL",
+        "Sodium-Glucose Transporter 2 Inhibitors",
+        "Heart Rate",
+        "Blood Glucose"
+      ],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Differential Outcomes with Empagliflozin and Dapagliflozin in Heart Failure with Mildly Reduced Ejection Fraction.",
+      "authors": [
+        "Mortada Ibrahim",
+        "Lee Aaron",
+        "Sahu Ayushi",
+        "Vidal Erin",
+        "Paul Krishna",
+        "Alhanbali Yazeed",
+        "Mansour Shareef",
+        "Chatila Khaled",
+        "Jehle Dietrich",
+        "Blackwell Thomas",
+        "Jneid Hani"
+      ],
+      "journal": "medRxiv",
+      "year": 2026,
+      "doi": "10.64898/2026.01.09.26343819",
+      "pmid": "41646698",
+      "abstract": "BACKGROUND: Sodium-glucose cotransporter-2 (SGLT2) inhibitors improve outcomes in heart failure (HF), yet comparative effectiveness between individual agents in heart failure with mildly reduced ejection fraction (HFmrEF) remains limited. METHODS: We conducted a retrospective cohort study using the TriNetX Global Collaborative Network electronic health record database. Adults (&#x2265;18 years) with HF and left ventricular ejection fraction (LVEF) 41-49% initiating empagliflozin or dapagliflozin between September 2021 and December 2025 were included. Propensity score matching (1:1) balanced demographics, comorbidities, medications, and laboratory values, yielding 1,466 patients per group. Outcomes were assessed over 1 year after treatment initiation and included all-cause mortality, hospitalization, HF exacerbation, and urinary tract infection (UTI). Risk analyses and Kaplan-Meier survival analyses with hazard ratios (HRs) were performed. RESULTS: In the matched cohort, empagliflozin was associated with lower all-cause mortality (HR 0.75, 95% CI 0.59-0.96), substantially fewer hospitalizations (HR 0.61, 95% CI 0.55-0.67), and HF exacerbations (HR 0.64, 95% CI 0.57-0.73) compared to dapagliflozin. Rates of UTI were similar between groups (HR 0.81, 95% CI 0.65-1.01). CONCLUSIONS: In this large real-world HFmrEF population, empagliflozin was associated with lower mortality, hospitalization, and HF exacerbation compared with dapagliflozin, with no significant difference in UTI risk. These findings suggest potential heterogeneity in clinical effectiveness among SGLT2 inhibitors in HFmrEF and warrant confirmation in prospective comparative studies.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Preprint"
+      ],
+      "meshTerms": [],
+      "studyType": "other",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    },
+    {
+      "title": "Influence of chronic obstructive pulmonary disease on cardiovascular outcomes and mortality benefits of sodium glucose co-transporter inhibitors in heart failure patients: A systematic review and meta-analysis.",
+      "authors": [
+        "Sohail Rohab",
+        "Khan Zaraq Ahmad",
+        "Khattak Ridda",
+        "Anand Prakhar",
+        "Patel Vyom",
+        "Alberto Marcos",
+        "Georgy Mark",
+        "Dhand Karan",
+        "Feldiorean Andrei",
+        "Fatima Seemab",
+        "Murtaza Sana",
+        "Singh Manjeet",
+        "Mehmood Syed Nazeer"
+      ],
+      "journal": "Respir Med",
+      "year": 2026,
+      "doi": "10.1016/j.rmed.2026.108685",
+      "pmid": "41643785",
+      "abstract": "BACKGROUND: By 2030, healthcare expenditures related to congestive heart failure (CHF) in the United States are projected to surpass $70 billion. Despite substantial advances in guideline-directed medical therapy, morbidity and mortality remain unacceptably high, particularly among patients with concomitant chronic obstructive pulmonary disease (COPD), a comorbidity reported in approximately 5%-41% of individuals with CHF. Although COPD is independently associated with worse CHF outcomes, its influence on the mortality benefit conferred by sodium-glucose cotransporter-2 (SGLT-2) inhibitors remains poorly defined. OBJECTIVE: To evaluate whether COPD alters the cardiovascular and mortality benefit of SGLT-2 inhibitors in CHF patients. METHODS: PubMed, Cochrane and Google Scholar were searched from inception to February 2025 to identify studies meeting inclusion criteria. Review Manager was employed to calculate results in the form of relative risk (RR) with 95% confidence interval. RESULTS: Our analysis of 15,058 patients (1725 (11%) COPD patients) showed that COPD was associated with significantly higher risks of composite outcomes (RR&#xa0;=&#xa0;1.63; 95% CI: 1.49-1.79; p&#xa0;&lt;&#xa0;0.00001), CV mortality (RR&#xa0;=&#xa0;1.62; 95% CI: 1.39-1.88; p&#xa0;&lt;&#xa0;0.0001), heart failure hospitalization (RR&#xa0;=&#xa0;1.84; 95% CI: 1.40-2.40; p&#xa0;&lt;&#xa0;0.00001), and all-cause mortality (RR&#xa0;=&#xa0;1.59; 95% CI: 1.42-1.78; p&#xa0;&lt;&#xa0;0.00001). Additionally, adverse outcomes were more frequent in COPD patients, including volume depletion (RR&#xa0;=&#xa0;1.34; 95% CI: 1.25-1.51; p&#xa0;&lt;&#xa0;0.00001), and adverse renal events (RR&#xa0;=&#xa0;1.46, 95% CI: 1.17-1.82; P&#xa0;=&#xa0;0.0007). CONCLUSION: Our analysis indicates that heart failure (HF) patients with COPD may drive a somewhat attenuated benefit from SGLT-2 inhibitors, underscoring a clinical profile that merits careful consideration.",
+      "citationCount": 0,
+      "publicationTypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "meshTerms": [],
+      "studyType": "review",
+      "evidenceLevel": "V",
+      "isOpenAccess": false,
+      "sources": [
+        "pubmed"
+      ]
+    }
+  ],
+  "total": 2220
+}

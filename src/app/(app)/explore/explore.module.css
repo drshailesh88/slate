@@ -1,0 +1,7 @@
+/* Explore — top-aligned, scrolling column (contrast with Home's centered layout). */
+.explore {
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
