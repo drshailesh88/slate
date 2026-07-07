@@ -2,6 +2,7 @@ import { ExternalLink, Globe } from 'lucide-react';
 import type { UnifiedSearchResult } from '@/types/search';
 import { getResultUrl } from './result-url';
 import { renderWithMonoNumerals } from './mono-numerals';
+import { stripMarkdown } from './strip-markdown';
 import styles from './web-result-card.module.css';
 
 export type WebResultVariant = 'web' | 'news' | 'discussions';
@@ -58,6 +59,7 @@ export function WebResultCard({
 }) {
   const href = getResultUrl(result);
   const metaParts = buildMetaParts(result, variant);
+  const snippet = stripMarkdown(result.abstract);
 
   return (
     <article className={styles.card}>
@@ -99,7 +101,7 @@ export function WebResultCard({
         </p>
       )}
 
-      {result.abstract && <p className={styles.snippet}>{result.abstract}</p>}
+      {snippet && <p className={styles.snippet}>{snippet}</p>}
 
       {href && (
         <div className={styles.actions}>

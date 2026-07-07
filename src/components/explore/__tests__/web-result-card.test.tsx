@@ -132,6 +132,24 @@ describe('WebResultCard', () => {
     expect(container.querySelectorAll(`.${styles.numeral}`)).toHaveLength(0);
   });
 
+  it('strips markdown from the abstract so the snippet renders as clean prose', () => {
+    const result = makeResult({
+      url: 'https://example.com/article',
+      domain: 'example.com',
+      abstract: '# SGLT2 inhibitors ## Abstract ### Background Sodium-glucose',
+    });
+    const { container } = render(
+      <WebResultCard result={result} variant="web" />,
+    );
+
+    const snippet = container.querySelector(`.${styles.snippet}`);
+    expect(snippet).toBeInTheDocument();
+    expect(snippet?.textContent).not.toMatch(/#/);
+    expect(normalizeSpace(snippet?.textContent ?? null)).toBe(
+      'SGLT2 inhibitors Abstract Background Sodium-glucose',
+    );
+  });
+
   it('renders the title as plain text (no link) when getResultUrl is undefined', () => {
     const result = makeResult({ url: undefined, doi: undefined });
     render(<WebResultCard result={result} variant="web" />);
