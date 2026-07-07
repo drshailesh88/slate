@@ -14,13 +14,7 @@ import styles from './screening-screen.module.css';
 // resolved server-side — not the AI's take). Ported from the precursor's
 // reference-card and re-skinned to tokens.
 
-function Abstract({
-  text,
-  terms,
-}: {
-  text: string;
-  terms: HighlightTermsDTO;
-}) {
+function Abstract({ text, terms }: { text: string; terms: HighlightTermsDTO }) {
   const segments = highlightAbstract(text, terms);
   return (
     <div className={styles.abstract}>
@@ -54,15 +48,18 @@ export function ReferenceCard({
 }) {
   const [open, setOpen] = useState(true);
 
-  const metaParts = [study.journal, study.year != null ? String(study.year) : null].filter(
-    Boolean,
-  );
+  const metaParts = [
+    study.journal,
+    study.year != null ? String(study.year) : null,
+  ].filter(Boolean);
 
   return (
     <article className={styles.refCard}>
       <div className={styles.refId}>{study.refId}</div>
       <h2 className={styles.refTitle}>{study.title}</h2>
-      {study.authors ? <div className={styles.refAuthors}>{study.authors}</div> : null}
+      {study.authors ? (
+        <div className={styles.refAuthors}>{study.authors}</div>
+      ) : null}
       <div className={styles.refMeta}>
         {metaParts.join(' · ')}
         {study.doi ? (
@@ -99,7 +96,9 @@ export function ReferenceCard({
           {open ? <Abstract text={study.abstract} terms={terms} /> : null}
         </>
       ) : (
-        <p className={styles.noAbstract}>No abstract on record for this reference.</p>
+        <p className={styles.noAbstract}>
+          No abstract on record for this reference.
+        </p>
       )}
     </article>
   );

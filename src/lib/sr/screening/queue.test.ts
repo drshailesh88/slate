@@ -39,12 +39,9 @@ describe('orderStudyIds', () => {
   });
 
   it('ignores AI order when the toggle is off', () => {
-    expect(orderStudyIds(POOL, { aiRanking: ['d', 'c'], useAiOrder: false })).toEqual([
-      'a',
-      'b',
-      'c',
-      'd',
-    ]);
+    expect(
+      orderStudyIds(POOL, { aiRanking: ['d', 'c'], useAiOrder: false }),
+    ).toEqual(['a', 'b', 'c', 'd']);
   });
 
   it('leads with the AI ranking then appends the unranked tail (stable, no drops)', () => {

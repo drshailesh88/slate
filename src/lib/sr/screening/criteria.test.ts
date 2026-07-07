@@ -63,7 +63,11 @@ describe('deriveHighlightTerms', () => {
   it('dedupes and drops trivially short tokens', () => {
     const terms = deriveHighlightTerms({
       ...CONTENT,
-      pico: { ...CONTENT.pico, population: 'a', intervention: 'SGLT2 inhibitor' },
+      pico: {
+        ...CONTENT.pico,
+        population: 'a',
+        intervention: 'SGLT2 inhibitor',
+      },
       criteria: [
         {
           id: 'x',
@@ -75,7 +79,9 @@ describe('deriveHighlightTerms', () => {
       ],
     });
     // 'a' dropped (too short), 'SGLT2 inhibitor' present once.
-    expect(terms.include.filter((t) => t === 'SGLT2 inhibitor')).toHaveLength(1);
+    expect(terms.include.filter((t) => t === 'SGLT2 inhibitor')).toHaveLength(
+      1,
+    );
     expect(terms.include).not.toContain('a');
   });
 

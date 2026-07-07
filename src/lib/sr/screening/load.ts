@@ -6,9 +6,16 @@ import type { MemberContext } from '@/lib/sr/authz/require-member';
 import { loadProtocol } from '@/lib/sr/protocol/service';
 import { DrizzleProtocolStore } from '@/lib/sr/protocol/drizzle-store';
 import { deriveCriteria, deriveHighlightTerms } from './criteria';
-import { getOwnScreeningDecisions, hasFinishedScreening } from './own-decisions';
+import {
+  getOwnScreeningDecisions,
+  hasFinishedScreening,
+} from './own-decisions';
 import { loadScreeningFacts } from './phase';
-import { canCastScreeningDecision, canReadOwnDecisions, canUnblindScreening } from './roles';
+import {
+  canCastScreeningDecision,
+  canReadOwnDecisions,
+  canUnblindScreening,
+} from './roles';
 import { stageLabel } from './stage';
 import type { ScreeningStudyDTO, ScreeningViewDTO } from './types';
 

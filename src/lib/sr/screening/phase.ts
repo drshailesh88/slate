@@ -77,10 +77,7 @@ export async function unblindScreening(
     .update(reviews)
     .set({ screeningPhase: 'reconcile' })
     .where(
-      and(
-        eq(reviews.id, reviewId),
-        eq(reviews.screeningPhase, 'independent'),
-      ),
+      and(eq(reviews.id, reviewId), eq(reviews.screeningPhase, 'independent')),
     )
     .returning({ id: reviews.id });
 

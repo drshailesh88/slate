@@ -23,7 +23,11 @@ import type { OwnDecisionDTO, ScreeningDecisionKind } from './types';
 // ─────────────────────────────────────────────────────────────────────────────
 
 function toKind(decision: string): ScreeningDecisionKind | null {
-  if (decision === 'include' || decision === 'maybe' || decision === 'exclude') {
+  if (
+    decision === 'include' ||
+    decision === 'maybe' ||
+    decision === 'exclude'
+  ) {
     return decision;
   }
   return null;
@@ -59,6 +63,8 @@ export async function getOwnScreeningDecisions(
 
 // True once the reviewer has finished screening — i.e. they have authored at
 // least one decision for this stage and every one of them is locked.
-export function hasFinishedScreening(decisions: readonly OwnDecisionDTO[]): boolean {
+export function hasFinishedScreening(
+  decisions: readonly OwnDecisionDTO[],
+): boolean {
   return decisions.length > 0 && decisions.every((d) => d.locked);
 }

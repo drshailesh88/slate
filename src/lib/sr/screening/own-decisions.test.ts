@@ -4,7 +4,10 @@ vi.mock('@/lib/db/client', () => ({ getDb: vi.fn() }));
 
 import { getDb } from '@/lib/db/client';
 import { BlindedAccessError } from '@/lib/sr/authz/blinded-read';
-import { getOwnScreeningDecisions, hasFinishedScreening } from './own-decisions';
+import {
+  getOwnScreeningDecisions,
+  hasFinishedScreening,
+} from './own-decisions';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // SCREEN-SPECIFIC SIDE-CHANNEL SUITE (T12) — the T6 adversarial pattern aimed at
@@ -133,7 +136,10 @@ describe('getOwnScreeningDecisions — stage scoping', () => {
       { ...screeningRaw[0], id: 's4', stage: 'full_text', study_id: 'st9' },
     ];
     primeDb({ rows: [{ phase: 'independent' }] }, { rows: fullTextOwn });
-    const own = await getOwnScreeningDecisions(ctx('reviewer'), 'title_abstract');
+    const own = await getOwnScreeningDecisions(
+      ctx('reviewer'),
+      'title_abstract',
+    );
     expect(own).toHaveLength(0);
   });
 });
@@ -145,15 +151,33 @@ describe('hasFinishedScreening', () => {
   it('is false while any own decision is unlocked', () => {
     expect(
       hasFinishedScreening([
-        { studyId: 'a', decision: 'include', excludeReasonCode: null, excludeReasonDetail: null, locked: true },
-        { studyId: 'b', decision: 'maybe', excludeReasonCode: null, excludeReasonDetail: null, locked: false },
+        {
+          studyId: 'a',
+          decision: 'include',
+          excludeReasonCode: null,
+          excludeReasonDetail: null,
+          locked: true,
+        },
+        {
+          studyId: 'b',
+          decision: 'maybe',
+          excludeReasonCode: null,
+          excludeReasonDetail: null,
+          locked: false,
+        },
       ]),
     ).toBe(false);
   });
   it('is true once every own decision is locked', () => {
     expect(
       hasFinishedScreening([
-        { studyId: 'a', decision: 'include', excludeReasonCode: null, excludeReasonDetail: null, locked: true },
+        {
+          studyId: 'a',
+          decision: 'include',
+          excludeReasonCode: null,
+          excludeReasonDetail: null,
+          locked: true,
+        },
       ]),
     ).toBe(true);
   });

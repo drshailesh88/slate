@@ -597,12 +597,13 @@ vote and the AI's verdict/score never reach the screen during `independent`.
   (`screening/own-decisions.test.ts` — attack the read seam; `screening-screen.test.tsx`
   — assert the rendered DOM shows no AI score/verdict and only own decisions), and
   the T6 suite (`blinding-adversarial` + `blinding-wall-guard` + `pnpm
-  test:blinded-wall`) + wall guards (ESLint/grep) stay green. If a leak is ever
+test:blinded-wall`) + wall guards (ESLint/grep) stay green. If a leak is ever
   found here, fix the boundary — never weaken a test.
 - **Browser render needs live Neon** (`requireMember` → DB), the founder step
   (role provisioning + `pnpm sr:seed`), same as every SR screen. Skin + wiring are
   proven by the jsdom component tests + build; the route is registered under the
   flag-gated `[reviewId]` layout.
+
 ### The Conflicts / adjudication screen (T13 · ★-adjacent)
 
 Post-unblind screening reconciliation (`/[reviewId]/conflicts`). Ported the
@@ -766,31 +767,32 @@ per-field picker. Same firewall as screening; the reconciliation adds a correcte
 ### The Risk-of-Bias screen (T16 · ★-adjacent — same firewall as extraction)
 
 Per-study, per-domain RoB appraisal (`/[reviewId]/risk-of-bias`), dual + independent
-+ blinded, then reconcile. Reuses the extraction/screening firewall wholesale;
-**zero edits to the chokepoint** (`blinded-read.ts` untouched → T6 stays green).
 
-- **Instruments + roll-up** live in `src/lib/sr/rob/domains.ts` (pure): `ROB2_DOMAINS`
+- blinded, then reconcile. Reuses the extraction/screening firewall wholesale;
+  **zero edits to the chokepoint** (`blinded-read.ts` untouched → T6 stays green).
+
+* **Instruments + roll-up** live in `src/lib/sr/rob/domains.ts` (pure): `ROB2_DOMAINS`
   (5) + `ROBINS_I_DOMAINS` (7), and `overallRobJudgment` **ported near-verbatim** from
   the precursor (`~/ScholarSync:src/lib/sr/rob.ts`) — High if any domain High, Low only
   if EVERY domain Low, else Some concerns (unassessed = at least Some). Slate's enum is
   `low | some | high` (precursor's `some_concerns` → `some`). `rollUpOverall` rolls up
   over the study's full instrument domain set. Per-study instrument is a new **visible**
   column `studies.rob_instrument` (enum `sr_rob_instrument`, default `rob2`).
-- **The read seam is own-only + non-AI** (`rob/own-assessments.ts::getOwnRobJudgements`)
+* **The read seam is own-only + non-AI** (`rob/own-assessments.ts::getOwnRobJudgements`)
   through the chokepoint's existing `getRobAssessments` (own-only during `independent`).
   It re-filters `reviewerId === requester` AND `!isAi` — so during independent a reviewer
   sees NEITHER a co-reviewer's NOR the AI's judgement (anchoring kill). The per-study
   `overall` is rolled up over the caller's OWN rows only → provably no cross-reviewer
   aggregate escapes the firewall (no new chokepoint aggregate needed; same shape as
   screening's `hasFinishedScreening`).
-- **The write chokepoint is `src/lib/sr/authz/rob-write.ts`** — the only human writer of
+* **The write chokepoint is `src/lib/sr/authz/rob-write.ts`** — the only human writer of
   `rob_assessments`. Upsert on the new unique index
   `rob_assessments_reviewer_study_domain_idx` (review/study/reviewer/domain, migration
   `0009_dazzling_sharon_ventura.sql`, additive); no `.returning()` and no DELETE (runtime
   has INSERT/UPDATE only), `setWhere lockedAt IS NULL` so a locked judgement is never
   rewritten. `reviewerId` is always the server-resolved caller. A **support-for-judgement
   quote is REQUIRED** (`rob/validate.ts`) — provenance for every domain call.
-- **AI-suggest / human-confirm, never autonomous.** `src/lib/sr/authz/ai-rob-write.ts`
+* **AI-suggest / human-confirm, never autonomous.** `src/lib/sr/authz/ai-rob-write.ts`
   writes ONLY `is_ai=true` suggestion rows (upsert, locked, no other table imported → no
   path to a final judgement); the chokepoint hides them until reconcile. `rob/ai-suggester.ts`
   is the RobotReviewer-style orchestrator (a `RobSuggestModel` port +
@@ -799,16 +801,16 @@ Per-study, per-domain RoB appraisal (`/[reviewId]/risk-of-bias`), dual + indepen
   shows every reviewer + the AI's LABELED suggestion at equal weight; the consensus starts
   empty and is written by the reconciler (owner/arbitrator) via `confirmRobJudgmentAction`
   → their own `castOwnRobJudgement` row. The AI never records the final judgement.
-- **Owner unblind** (`rob/phase.ts::unblindRob`) is the same one-way atomic CAS on
+* **Owner unblind** (`rob/phase.ts::unblindRob`) is the same one-way atomic CAS on
   `reviews.rob_phase` as screening, audit-logged. `rob` added to `BUILT_STAGES`.
-- **Tests:** `rob/domains.test.ts` (ported roll-up), `rob/own-assessments.test.ts`
+* **Tests:** `rob/domains.test.ts` (ported roll-up), `rob/own-assessments.test.ts`
   (T6-style seam attack: co-reviewer + AI withheld during independent, through the real
   chokepoint), `rob/validate.test.ts` (support-quote required), `rob/reconcile.test.ts`,
   `rob/ai-suggester.test.ts`, `authz/rob-write.test.ts`, `authz/ai-rob-write.test.ts`
   (never-autonomous: only is_ai rows, no DELETE, no final judgement). The T6 adversarial
   suite (which already covers `getRobAssessments`) stays green.
-- **Known scope note:** the appraisal pool is the non-removed-duplicate study set (like
+* **Known scope note:** the appraisal pool is the non-removed-duplicate study set (like
   screening), not yet filtered to screening-included studies — inclusion-gating is a
   follow-up once full-text/inclusion state is wired.
 
-- Add durable project-specific notes here as they are discovered through real work.
+* Add durable project-specific notes here as they are discovered through real work.
