@@ -813,4 +813,62 @@ Per-study, per-domain RoB appraisal (`/[reviewId]/risk-of-bias`), dual + indepen
   screening), not yet filtered to screening-included studies — inclusion-gating is a
   follow-up once full-text/inclusion state is wired.
 
+### The Report + auto-Methods screen (T18)
+
+The report (`/[reviewId]/report`) is a GROUNDED manuscript scaffold: every
+factual number is computed from the review's own records — never generated —
+and carries a source chip naming the record set it derives from. Feature
+module: `src/lib/sr/report/**`.
+
+- **Grounding is structural, at three layers.** (1) Visible-table counts
+  (import ledger, team roster, resolutions, consensus, `ai_validations`) are
+  computed in the seam `report/load.ts`. (2) Blinded-derived aggregates —
+  included/excluded counts + per-reason exclusions (`deriveScreeningOutcomes`)
+  and the RoB roll-up (`deriveRobOutcomes`) — are pure math in
+  `report/outcomes.ts` whose ONLY call sites are the new reconcile-gated
+  chokepoint functions `getReportScreeningOutcomes` / `getReportRobOutcomes`
+  (`authz/blinded-read.ts`, T13 pattern). During `independent` they throw
+  `BlindedAccessError` and the view carries a `withheld` marker with ZERO
+  numbers — the DTO cannot render a blinded count early. Adversarial coverage:
+  `authz/blinding-report.test.ts` (extends T6; primed co-reviewer rows never
+  escape; reconcile positive control). (3) The RoB roll-up never fakes a
+  consensus: agreeing human reviewers → the judgement; disagreement → `mixed`;
+  AI suggestion rows never contribute.
+- **The auto Methods · data-collection block (PRISMA Items 8/9/10)** is
+  assembled by `report/methods.ts` (pure) from RECORDED metadata only: team
+  roster counts, blind-mode independence, recorded screening/extraction
+  resolution-ladder counts, the author-contact log (consensus rows), the
+  passing `ai_validations` row (model/version/recall/sample), QC sample rate,
+  and the extraction template. Every statement carries `recorded` values;
+  `methods.test.ts` mechanically asserts every number in every sentence traces
+  to them. The AI line is factual (no rigor scold — review-modes rule).
+- **AI drafting is prose-only, gated, and never a synthesis.**
+  `report/draft.ts` orchestrates an injected `ReportDraftModel`
+  (`mock-model.ts` deterministic; `vercel-model.ts` the second SDK adapter
+  beside `ai/vercel-model.ts`, AI SDK v7 `generateObject` + `instructions` —
+  the v7 rename of `system`). Structural guarantees: `DRAFTABLE_SECTIONS` is
+  the closed allowlist (`abstract`/`findings`) — a model-emitted
+  conclusions/GRADE section is DROPPED and counted (no auto-synthesis path
+  exists); every sentence must cite ≥1 key from the closed grounding table
+  (`report/grounding.ts`) and may carry no number its cited sources don't
+  support (`extractNumericTokens` — digits glued to letters like "SGLT2" are
+  identifiers, not numeric claims). Drops are surfaced in the UI, never
+  silent. Withheld sections contribute no grounding source, so a draft
+  physically cannot cite blinded data. The server action
+  (`report/actions.ts`) rebuilds the grounding table server-side — the client
+  never supplies the facts.
+- **Screen** `components/sr/report/report-screen.tsx`: AI sections are
+  labeled (`AI · drafted from your recorded data — review & edit`) and land in
+  editable textareas; **Conclusions & certainty is human-only** ("Yours to
+  write" — no draft path into it, enforced by the `DraftableSectionId` union).
+  Withheld sections render a lock note. Edits are client-state only —
+  persisting report drafts is a follow-up (T19 export is the output lane).
+- **Founder step (unchanged from T14):** live drafting needs the AI Gateway
+  provider key (`SR_AI_MODEL`); without it the draft action returns an
+  actionable message. Build + all tests use the deterministic mock.
+- **Known scope notes:** the report's screening summary covers the CURRENT
+  `reviews.screening_stage` (full-text stage lands with its screen); the
+  characteristics table shows four consensus fields (design / population /
+  n / primary outcome).
+
 * Add durable project-specific notes here as they are discovered through real work.
