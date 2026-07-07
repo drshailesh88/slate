@@ -909,4 +909,56 @@ module: `src/lib/sr/report/**`.
   characteristics table shows four consensus fields (design / population /
   n / primary outcome).
 
+### The Export screen (T19 — the last funnel stage)
+
+Export (`/[reviewId]/export`, downloads via
+`GET /api/sr/reviews/[reviewId]/export?format=revman|ris|csv|pdf[&dataset=…]`)
+gets the review's data out in the formats downstream tools use. Feature module:
+`src/lib/sr/export/**`; screen: `src/components/sr/export/export-screen.tsx`
+(server component — no interactivity, links are plain downloads).
+
+- **Blinded data is export-gated STRICTER than the row getters.** The chokepoint
+  gained three `…ForExport` readers (`getScreeningDecisionsForExport` /
+  `getExtractionEntriesForExport` / `getRobAssessmentsForExport` in
+  `authz/blinded-read.ts`): an export artifact leaves the app, so they gate like
+  aggregates (`resolveAggregateVisibility === 'all'`) — refused during
+  `independent` for EVERY role (even the caller's own rows; a file can be
+  shared) and always for `viewer`. They read the authoritative phase from
+  `reviews` themselves, so a spoofed/stale caller-side phase cannot unmask
+  anything (proven by the TOCTOU test in `export/assemble.test.ts`). The T6
+  suite gained `authz/blinding-export.test.ts` (channel 3 hardened).
+- **Consensus ≠ as-extracted, structurally (non-neg #8).** The `ExportBundle`
+  (`export/types.ts`) carries `consensus` (from the visible
+  `extraction_consensus` table) and `asExtracted` (through the chokepoint) as
+  SEPARATE fields with distinct row shapes; every CSV row's first column names
+  its dataset (`consensus` vs `as_extracted`), the RevMan file carries consensus
+  ONLY and says so in its summary, and the PDF renders them as two labeled
+  sections. A blinded dataset is `{status:'withheld', reason}` — an honest
+  designed state (dashed row + reason in the UI, 409 + reason from the route),
+  never a silently-empty file.
+- **The four states / derived / provenance survive every format**: `state` is
+  its own CSV column and a non-`reported` value exports an EMPTY cell (never a
+  0); RevMan/PDF render "Not reported / Not applicable / Unclear" as words;
+  `derived` + formula and provenance (report/page/locator) travel on every row.
+- **Formats are pure builders over the bundle** — `ris.ts` (tags mirror our own
+  `parseRis`, so the export round-trips through the importer), `csv.ts` (RFC
+  4180 writer + its exact-inverse `parseCsvTable`, used by the round-trip
+  tests), `revman.ts` (Cochrane `COCHRANE_REVIEW` XML, DOMParser-verified),
+  `pdf.ts` (a self-contained PDF 1.4 writer — no library; returns a BINARY
+  string, serialize with `Buffer.from(pdf, 'latin1')`; `extractPdfText` is the
+  test inverse). No new dependencies.
+- **Seam pattern as usual:** `export/store.ts` is the visible-data port
+  (facts/studies/consensus/user labels; in-memory fake for tests) +
+  `drizzle-store.ts` (neon-http impl, reviewId-scoped, reuses the T15 consensus
+  store); `assemble.ts` builds the bundle (blinded sections ONLY via the
+  chokepoint readers) and `toExportView` summarizes counts/availability for the
+  client — rows never cross the RSC boundary; data leaves via the download
+  route only.
+- **Gotcha:** the wall guard greps ALL of `src/` for the blinded table names —
+  even a display string like `rob_assessments` in a CSV label trips it. Label
+  datasets `risk_of_bias`/`screening` instead; never weaken the guard.
+- `export` joined `BUILT_STAGES`; route render with real data still waits on
+  the founder Neon step, so the skin (ready + withheld states) was
+  browser-verified via a temporary in-shell preview page (not committed).
+
 * Add durable project-specific notes here as they are discovered through real work.

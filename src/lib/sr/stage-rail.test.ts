@@ -37,6 +37,7 @@ describe('BUILT_STAGES', () => {
       'extraction',
       'prisma',
       'report',
+      'export',
     ]);
   });
 
@@ -48,7 +49,8 @@ describe('BUILT_STAGES', () => {
     expect(isStageBuilt('rob')).toBe(true);
     expect(isStageBuilt('prisma')).toBe(true);
     expect(isStageBuilt('report')).toBe(true);
-    expect(isStageBuilt('export')).toBe(false);
+    expect(isStageBuilt('export')).toBe(true);
+    expect(isStageBuilt('fulltext')).toBe(false);
   });
 });
 

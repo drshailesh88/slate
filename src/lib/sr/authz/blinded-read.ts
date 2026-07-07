@@ -540,6 +540,48 @@ export async function getReportRobOutcomes(
   );
 }
 
+// ── Export readers (T19) — the full-dataset reads an export artifact uses. ────
+//
+// An export leaves the app, so it is gated STRICTER than the row getters: like
+// an aggregate, it resolves only when the surface is in `reconcile` and the
+// caller may see all rows. During `independent` it refuses for EVERY role —
+// even the caller's own blinded rows are not exportable pre-unblind (an export
+// file can be shared; own-rows-in-a-file is still blinded data outside the
+// firewall). `viewer` is refused always (it exports derived consensus + the
+// non-blinded references, never raw rows). The phase is read HERE, from
+// `reviews` — a spoofed or stale caller-side phase cannot unmask anything.
+
+async function fetchExportPhaseOrThrow(
+  ctx: BlindedContext,
+  surface: BlindedSurface,
+): Promise<void> {
+  const phase = await fetchPhase(ctx.reviewId, surface);
+  if (resolveAggregateVisibility(ctx.role, phase) !== 'all') {
+    throw new BlindedAccessError(surface, ctx.role, phase, 'aggregate');
+  }
+}
+
+export async function getScreeningDecisionsForExport(
+  ctx: BlindedContext,
+): Promise<ScreeningDecisionView[]> {
+  await fetchExportPhaseOrThrow(ctx, 'screening');
+  return fetchScreeningRows(ctx.reviewId);
+}
+
+export async function getExtractionEntriesForExport(
+  ctx: BlindedContext,
+): Promise<ExtractionEntryView[]> {
+  await fetchExportPhaseOrThrow(ctx, 'extraction');
+  return fetchExtractionRows(ctx.reviewId);
+}
+
+export async function getRobAssessmentsForExport(
+  ctx: BlindedContext,
+): Promise<RobAssessmentView[]> {
+  await fetchExportPhaseOrThrow(ctx, 'rob');
+  return fetchRobRows(ctx.reviewId);
+}
+
 // ── Safe progress — the ONLY progress surface during `independent`. ───────────
 
 /**
