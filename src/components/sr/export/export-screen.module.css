@@ -1,0 +1,215 @@
+/* Export skin (T19). Frozen skin: tokens only, hairline borders, no shadows or
+   gradients. Serif title, mono numbers. Motion animates opacity only and stays
+   within the micro budget. */
+
+.screen {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 32px 32px 64px;
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+.header {
+  margin-bottom: 20px;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
+.title {
+  margin: 6px 0 0;
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: -0.3px;
+  color: var(--ink);
+}
+
+.lead {
+  margin: 8px 0 0;
+  max-width: 68ch;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ink3);
+}
+
+.sectionTitle {
+  margin: 24px 0 10px;
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* ── Format cards ───────────────────────────────────────────────────────── */
+.formatGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.formatCard {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+  text-decoration: none;
+  transition: opacity var(--motion-micro) var(--ease-out);
+}
+
+.formatCard:hover {
+  opacity: 0.86;
+}
+
+.formatIcon {
+  color: var(--ink2);
+}
+
+.formatTitle {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.formatMeta {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--ink3);
+}
+
+/* ── Dataset rows ───────────────────────────────────────────────────────── */
+.datasetList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dataset,
+.datasetWithheld {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: var(--paper);
+}
+
+.dataset {
+  border: 1px solid var(--line);
+}
+
+/* Withheld = blinded data pre-unblind: designed dashed state, never blank. */
+.datasetWithheld {
+  border: 1px dashed var(--line);
+}
+
+.datasetText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.datasetName {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.datasetWithheld .datasetName {
+  color: var(--ink2);
+}
+
+.datasetMeta {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--ink3);
+}
+
+.withheldReason {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.datasetActions {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0 0 auto;
+}
+
+.count {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--ink2);
+}
+
+.download {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: opacity var(--motion-micro) var(--ease-out);
+}
+
+.download:hover {
+  opacity: 0.86;
+}
+
+.withheldTag {
+  flex: 0 0 auto;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
+/* ── Footnote ───────────────────────────────────────────────────────────── */
+.note {
+  margin-top: 28px;
+  max-width: 62ch;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-size: 12.5px;
+  color: var(--ink2);
+}
+
+.note p {
+  margin: 6px 0 0;
+  line-height: 1.55;
+  color: var(--ink3);
+}
+
+/* ── Mobile — rows stack (SCREEN-SPECS §9) ──────────────────────────────── */
+@media (max-width: 640px) {
+  .screen {
+    padding: 20px 16px 48px;
+  }
+
+  .dataset,
+  .datasetWithheld {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

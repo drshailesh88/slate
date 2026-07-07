@@ -58,9 +58,11 @@ describe('ReviewSummary — renders safe chokepoint counts', () => {
     expect(html).toContain(`href="/systematic-review/${REVIEW_ID}/import"`);
     // Screening now has a route (T12) → linked.
     expect(html).toContain(`href="/systematic-review/${REVIEW_ID}/screening"`);
+    // Export shipped (T19) → linked.
+    expect(html).toContain(`href="/systematic-review/${REVIEW_ID}/export"`);
     // Unbuilt funnel stages still show a coming-soon marker, never a link target.
     expect(html).toContain('Soon');
-    expect(html).not.toContain(`href="/systematic-review/${REVIEW_ID}/export"`);
+    expect(html).not.toContain(`href="/systematic-review/${REVIEW_ID}/prisma"`);
   });
 
   it('shows the first-run guidance and no funnel when nothing is imported', () => {

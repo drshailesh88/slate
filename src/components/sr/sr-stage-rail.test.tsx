@@ -58,7 +58,9 @@ describe('SrStageRail', () => {
     expect(html).toContain('aria-disabled="true"');
     expect(html).toContain('Soon');
     expect(html).not.toContain(`href="${base}/full-text"`);
-    expect(html).not.toContain(`href="${base}/export"`);
+    expect(html).not.toContain(`href="${base}/prisma"`);
+    // Export shipped (T19) → linked, no longer coming soon.
+    expect(html).toContain(`href="${base}/export"`);
   });
 
   it('shows the imported study count on Import', () => {
