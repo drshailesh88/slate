@@ -1,0 +1,695 @@
+/* Risk-of-Bias skin (T16). Frozen skin: tokens only, hairline borders, no
+   shadows or gradients. Serif title, mono numbers. Judgement colors (Jade /
+   Amber / Tomato) are the one place saturated colour lives (design.md §6).
+   Motion animates opacity / transform only and honors prefers-reduced-motion. */
+
+.screen {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 32px 32px 64px;
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+.header {
+  margin-bottom: 12px;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
+.title {
+  margin: 6px 0 0;
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: -0.3px;
+  color: var(--ink);
+}
+
+.lead {
+  margin: 8px 0 0;
+  max-width: 64ch;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ink3);
+}
+
+/* ── Action bar ─────────────────────────────────────────────────────────── */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+
+.actionsSpacer {
+  flex: 1 1 auto;
+}
+
+.finishButton,
+.unblindButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  font-family: var(--sans);
+  font-size: 12.5px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity var(--motion-micro) var(--ease-out);
+}
+
+/* Primary action = solid ink with a white label (never a colored button). */
+.finishButton {
+  color: #fff;
+  background: var(--ink);
+  border: 1px solid var(--ink);
+}
+
+.unblindButton {
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+
+.finishButton:disabled,
+.unblindButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.finishButton:hover:not(:disabled),
+.unblindButton:hover:not(:disabled) {
+  opacity: 0.86;
+}
+
+/* ── Feedback / state strips ────────────────────────────────────────────── */
+.error {
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: var(--exc);
+  background: var(--excbg);
+  border: 1px solid var(--excln);
+  border-radius: 8px;
+}
+
+.finishedBanner {
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink2);
+  background: var(--incbg);
+  border: 1px solid var(--incln);
+  border-radius: 10px;
+}
+
+.confirm {
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  background: var(--maybg);
+  border: 1px solid var(--mayln);
+  border-radius: 10px;
+}
+
+.confirm p {
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink2);
+}
+
+.confirmActions {
+  display: flex;
+  gap: 8px;
+}
+
+.confirmCancel,
+.confirmProceed {
+  padding: 7px 14px;
+  font-size: 12.5px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.confirmCancel {
+  color: var(--ink2);
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+
+.confirmProceed {
+  color: #fff;
+  background: var(--ink);
+  border: 1px solid var(--ink);
+}
+
+.confirmCancel:disabled,
+.confirmProceed:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.blindBanner {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--ink2);
+  background: var(--maybg);
+  border: 1px solid var(--mayln);
+  border-radius: 8px;
+}
+
+.blindDot {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  margin-top: 4px;
+  border-radius: 50%;
+  background: var(--may);
+}
+
+/* ── Two-zone layout (center domains · right study list) ─────────────────── */
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 24px;
+  align-items: start;
+}
+
+.main {
+  min-width: 0;
+}
+
+/* ── Active study header ────────────────────────────────────────────────── */
+.studyHead {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+
+.studyRefId {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.studyTitle {
+  margin: 2px 0 0;
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+.studyMeta {
+  margin-top: 3px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.instrumentRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0 16px;
+}
+
+.instrumentLabel {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Overall roll-up pill. */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  font-family: var(--sans);
+  font-size: 11.5px;
+  font-weight: 600;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+}
+
+.pillDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+/* ── Domain card ────────────────────────────────────────────────────────── */
+.domain {
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  animation: cardIn var(--motion-base) var(--ease-out);
+}
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(var(--motion-shift));
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.domainHead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.domainName {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.signalling {
+  margin: 6px 0 12px;
+  padding-left: 16px;
+}
+
+.signalling li {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--ink3);
+}
+
+/* ── Judgement triad ────────────────────────────────────────────────────── */
+.judges {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.judge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 9px 6px;
+  font-family: var(--sans);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink2);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  cursor: pointer;
+  transition:
+    background var(--motion-micro) var(--ease-out),
+    border-color var(--motion-micro) var(--ease-out);
+}
+
+.judge:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.judgeDot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.judgeLow.judgeSelected {
+  background: var(--incbg);
+  border-color: var(--incln);
+  color: var(--inc);
+}
+.judgeSome.judgeSelected {
+  background: var(--maybg);
+  border-color: var(--mayln);
+  color: var(--may);
+}
+.judgeHigh.judgeSelected {
+  background: var(--excbg);
+  border-color: var(--excln);
+  color: var(--exc);
+}
+
+.judge:not(:disabled):hover {
+  border-color: var(--ink3);
+}
+
+/* ── Support quote ──────────────────────────────────────────────────────── */
+.quoteLabel {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.quote {
+  width: 100%;
+  min-height: 58px;
+  padding: 8px 10px;
+  font-family: var(--sans);
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ink2);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.quote:disabled {
+  opacity: 0.6;
+}
+
+.domainFoot {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.saveButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 13px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  background: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity var(--motion-micro) var(--ease-out);
+}
+
+.saveButton:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.savedTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11.5px;
+  color: var(--inc);
+}
+
+.lockedTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11.5px;
+  color: var(--ink3);
+}
+
+/* ── Study list rail ────────────────────────────────────────────────────── */
+.rail {
+  position: sticky;
+  top: 16px;
+  padding: 16px;
+  background: var(--rail);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.railSubhead {
+  display: block;
+  margin: 0 0 10px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.studyList {
+  display: grid;
+  gap: 6px;
+}
+
+.studyRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 9px 10px;
+  text-align: left;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color var(--motion-micro) var(--ease-out);
+}
+
+.studyRow:hover {
+  border-color: var(--ink3);
+}
+
+.studyRowActive {
+  border-color: var(--ink2);
+}
+
+.studyRowMain {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.studyRowTitle {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.studyRowSub {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.railNote {
+  margin: 12px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.progressCount {
+  font-family: var(--mono);
+  color: var(--ink2);
+}
+
+/* ── Reconcile reveal ───────────────────────────────────────────────────── */
+.reconcileBanner {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ink2);
+  background: var(--accentbg);
+  border: 1px solid var(--accentln);
+  border-radius: 10px;
+}
+
+.entries {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 130px auto 1fr;
+  gap: 10px;
+  align-items: start;
+  padding: 9px 11px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.entryAi {
+  background: var(--accentbg);
+  border-color: var(--accentln);
+}
+
+.entryAuthor {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+.aiChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.entryJudge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.entryQuote {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--ink3);
+}
+
+.useButton {
+  padding: 4px 9px;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--ink2);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.useButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.consensusBox {
+  margin-top: 4px;
+  padding: 12px;
+  background: var(--rail);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+}
+
+.consensusHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.readonlyNote {
+  margin-top: 6px;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+/* ── Hand-off / empty states ────────────────────────────────────────────── */
+.handoff {
+  max-width: 520px;
+  margin: 32px auto;
+  padding: 28px;
+  text-align: center;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  animation: cardIn var(--motion-base) var(--ease-out);
+}
+
+.handoff h2 {
+  margin: 12px 0 8px;
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.handoff p {
+  margin: 0 auto 16px;
+  max-width: 42ch;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--ink3);
+}
+
+.handoffLink {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  background: var(--ink);
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* ── Mobile: one zone at a time ─────────────────────────────────────────── */
+@media (max-width: 860px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .rail {
+    position: static;
+  }
+  .entry {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}

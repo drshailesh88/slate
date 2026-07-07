@@ -31,6 +31,7 @@ import {
   memberStatusEnum,
   reviewModeEnum,
   reviewRoleEnum,
+  robInstrumentEnum,
   screeningDecisionEnum,
   screeningStageEnum,
   phaseEnum,
@@ -197,6 +198,11 @@ export const studies = pgTable(
     ),
     // Which fields matched, e.g. ["title", "year", "first author"].
     dupeMatchedOn: jsonb('dupe_matched_on').$type<string[]>(),
+    // The Risk-of-Bias instrument this study is appraised with (T16). Default
+    // RoB 2 (randomised trials); switch to ROBINS-I for non-randomised designs.
+    robInstrument: robInstrumentEnum('rob_instrument')
+      .notNull()
+      .default('rob2'),
     createdAt: timestamp('created_at', { withTimezone: true })
       .notNull()
       .defaultNow(),

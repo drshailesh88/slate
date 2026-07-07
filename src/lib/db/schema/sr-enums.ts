@@ -80,6 +80,14 @@ export const extractionResolutionMethodEnum = pgEnum(
   ['discuss', 'arbitrator', 'author_contact', 'unresolved'],
 );
 
+// The appraisal instrument a study is assessed with: RoB 2 for randomised trials
+// (default — ScholarSync ships RoB 2 first-class), ROBINS-I for non-randomised
+// studies of interventions. Per-study because one review can mix designs.
+export const robInstrumentEnum = pgEnum('sr_rob_instrument', [
+  'rob2',
+  'robins_i',
+]);
+
 // How a screening conflict was resolved (T13). `align_on_one` = a human
 // explicitly picked include or exclude (never an auto-vote / majority);
 // `send_to_arbitrator` = handed to an independent arbitrator (≠ the study's
