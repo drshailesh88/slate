@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX "screening_decisions_reviewer_study_stage_idx" ON "screening_decisions" USING btree ("review_id","study_id","reviewer_id","stage");
