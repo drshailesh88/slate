@@ -16,7 +16,10 @@ import {
   canCastScreeningDecision,
   canUnblindScreening,
 } from '@/lib/sr/screening/roles';
-import { validateCastInput, type RawCastInput } from '@/lib/sr/screening/validate';
+import {
+  validateCastInput,
+  type RawCastInput,
+} from '@/lib/sr/screening/validate';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Screening server actions (T12) — the trust boundary. Every action:
@@ -43,7 +46,8 @@ export interface UnblindActionResult extends ScreeningActionResult {
 
 const NOT_A_SCREENER =
   'Only reviewers and collaborators can screen studies on this review.';
-const NOT_OWNER = 'Only the review owner can reveal decisions for reconciliation.';
+const NOT_OWNER =
+  'Only the review owner can reveal decisions for reconciliation.';
 const ALREADY_REVEALED =
   'Screening has been revealed for reconciliation — decisions are locked.';
 const REVIEW_NOT_FOUND = 'Review not found.';

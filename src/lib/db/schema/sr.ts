@@ -23,11 +23,15 @@ import type {
 import {
   conflictResolutionMethodEnum,
   dupeStatusEnum,
+  extractionConsensusSourceEnum,
+  extractionResolutionMethodEnum,
+  extractionStateEnum,
   importTargetEnum,
   invitationStatusEnum,
   memberStatusEnum,
   reviewModeEnum,
   reviewRoleEnum,
+  robInstrumentEnum,
   screeningDecisionEnum,
   screeningStageEnum,
   phaseEnum,
@@ -71,6 +75,13 @@ export const reviews = pgTable('reviews', {
     .notNull()
     .default('independent'),
   robPhase: phaseEnum('rob_phase').notNull().default('independent'),
+  // QC sampling rate for AGREED critical extraction fields (T15, non-neg #9):
+  // the fraction of agreed critical fields a reviewer re-verifies to catch shared
+  // misreads. A per-review setting (default 20%), framed as "N fields to verify",
+  // never "drive conflicts to 0".
+  extractionQcSampleRate: real('extraction_qc_sample_rate')
+    .notNull()
+    .default(0.2),
   createdBy: uuid('created_by')
     .notNull()
     .references(() => users.id),
@@ -187,6 +198,11 @@ export const studies = pgTable(
     ),
     // Which fields matched, e.g. ["title", "year", "first author"].
     dupeMatchedOn: jsonb('dupe_matched_on').$type<string[]>(),
+    // The Risk-of-Bias instrument this study is appraised with (T16). Default
+    // RoB 2 (randomised trials); switch to ROBINS-I for non-randomised designs.
+    robInstrument: robInstrumentEnum('rob_instrument')
+      .notNull()
+      .default('rob2'),
     createdAt: timestamp('created_at', { withTimezone: true })
       .notNull()
       .defaultNow(),
@@ -293,6 +309,79 @@ export const screeningConflictResolutions = pgTable(
   ],
 );
 
+// ── Extraction consensus (T15) — the reconciled value, kept SEPARATE ─────────
+//
+// The human-reconciled value for one extraction field after both reviewers
+// locked and the owner unblinded. It is deliberately its OWN table: the two
+// reviewers' as-extracted `extraction_entries` rows are NEVER overwritten by the
+// consensus (non-neg #8 — as-extracted kept forever, queryable/exportable for the
+// reliability-of-coding audit). One active consensus row per (review, study,
+// field); a re-resolution upserts, and every change is also appended to
+// `audit_log`.
+//
+// The science invariants this table encodes:
+//   • Consensus starts EMPTY — a row only exists once a human explicitly acts
+//     (non-neg #3/#4). There is no auto-resolve path anywhere.
+//   • `source` records which input the human PICKED (reviewer1/reviewer2/ai/typed)
+//     — the AI is a labeled third input, never the system of record (non-neg #5/#10).
+//   • `state` is one of the four distinct states; a blank is never a zero (#8).
+//   • `derived` + `derivedFormula` keep a calculated value separate from
+//     as-reported (#10). `provenance` keeps source report + page/table/figure (#6).
+//   • The resolution LADDER (`resolutionMethod`, `arbitratorId`, `authorContacted`,
+//     `authorContactNote`) is recorded per field; leaving a field `unresolved` is
+//     allowed ONLY after the ladder is recorded (#9). Author-contact is an in-app
+//     LOG (attempt + response) — the app never auto-sends email.
+// Non-blinded: rows only ever exist at reconcile, so the runtime role reads + writes it.
+export const extractionConsensus = pgTable(
+  'extraction_consensus',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    reviewId: uuid('review_id')
+      .notNull()
+      .references(() => reviews.id),
+    studyId: uuid('study_id')
+      .notNull()
+      .references(() => studies.id),
+    fieldId: text('field_id').notNull(),
+    // NULL for not_reported / na / unclear, or while recorded-unresolved. A blank
+    // is never a zero.
+    value: text('value'),
+    state: extractionStateEnum('state').notNull(),
+    source: extractionConsensusSourceEnum('source').notNull(),
+    derived: boolean('derived').notNull().default(false),
+    derivedFormula: text('derived_formula'),
+    provenance: jsonb('provenance'),
+    resolutionMethod: extractionResolutionMethodEnum('resolution_method')
+      .notNull()
+      .default('discuss'),
+    // The independent arbitrator when the field was adjudicated by one; NULL
+    // otherwise. Server-enforced ≠ the study's extractors.
+    arbitratorId: uuid('arbitrator_id').references(() => users.id),
+    // Author-contact LOG: whether the study authors were contacted, and the
+    // recorded attempt/response. Never an auto-send.
+    authorContacted: boolean('author_contacted').notNull().default(false),
+    authorContactNote: text('author_contact_note'),
+    // The human who recorded it — never null (no auto-resolve).
+    resolvedBy: uuid('resolved_by')
+      .notNull()
+      .references(() => users.id),
+    createdAt: timestamp('created_at', { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+    updatedAt: timestamp('updated_at', { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (t) => [
+    unique('extraction_consensus_review_study_field_unique').on(
+      t.reviewId,
+      t.studyId,
+      t.fieldId,
+    ),
+    index('extraction_consensus_review_idx').on(t.reviewId),
+  ],
+);
+
 // ── Support tables (NOT blinded) ─────────────────────────────────────────────
 
 // Recall/sensitivity validation of an AI reviewer on this review's includes.
@@ -356,6 +445,8 @@ export type ScreeningConflictResolution =
   typeof screeningConflictResolutions.$inferSelect;
 export type NewScreeningConflictResolution =
   typeof screeningConflictResolutions.$inferInsert;
+export type ExtractionConsensusRow = typeof extractionConsensus.$inferSelect;
+export type NewExtractionConsensusRow = typeof extractionConsensus.$inferInsert;
 export type AiValidation = typeof aiValidations.$inferSelect;
 export type NewAiValidation = typeof aiValidations.$inferInsert;
 export type WorkosEvent = typeof workosEvents.$inferSelect;

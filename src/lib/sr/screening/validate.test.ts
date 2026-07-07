@@ -16,7 +16,9 @@ describe('validateCastInput', () => {
   });
 
   it('rejects a missing study', () => {
-    expect(validateCastInput({ studyId: '', decision: 'include' }).ok).toBe(false);
+    expect(validateCastInput({ studyId: '', decision: 'include' }).ok).toBe(
+      false,
+    );
   });
 
   it('rejects an unknown decision', () => {
@@ -69,7 +71,11 @@ describe('validateCastInput', () => {
     const result = validateCastInput({ studyId: 'st-1', decision: 'exclude' });
     expect(result).toMatchObject({
       ok: true,
-      value: { decision: 'exclude', excludeReasonCode: null, excludeReasonDetail: null },
+      value: {
+        decision: 'exclude',
+        excludeReasonCode: null,
+        excludeReasonDetail: null,
+      },
     });
   });
 

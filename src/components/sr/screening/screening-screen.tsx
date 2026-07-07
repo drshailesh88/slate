@@ -1,6 +1,12 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useState, useTransition } from 'react';
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+  useTransition,
+} from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { ChevronLeft, ChevronRight, Eye, Flag } from 'lucide-react';
@@ -38,7 +44,12 @@ const KEY_TO_DECISION: Record<string, ScreeningDecisionKind> = {
 function isTypingTarget(target: EventTarget | null): boolean {
   if (!(target instanceof HTMLElement)) return false;
   const tag = target.tagName;
-  return tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || target.isContentEditable;
+  return (
+    tag === 'INPUT' ||
+    tag === 'TEXTAREA' ||
+    tag === 'SELECT' ||
+    target.isContentEditable
+  );
 }
 
 export function ScreeningScreen({ view }: { view: ScreeningViewDTO }) {
@@ -157,7 +168,8 @@ export function ScreeningScreen({ view }: { view: ScreeningViewDTO }) {
   }, [view.reviewId, router]);
 
   useEffect(() => {
-    if (view.phase !== 'independent' || !view.canScreen || view.finished) return;
+    if (view.phase !== 'independent' || !view.canScreen || view.finished)
+      return;
     const handler = (event: KeyboardEvent) => {
       if (isTypingTarget(event.target)) return;
       if (event.metaKey || event.ctrlKey || event.altKey) return;
@@ -196,9 +208,9 @@ export function ScreeningScreen({ view }: { view: ScreeningViewDTO }) {
           <Eye size={18} aria-hidden />
           <h2>Screening revealed for reconciliation</h2>
           <p>
-            Independent screening is closed. Every reviewer&apos;s calls — and the
-            AI reviewer&apos;s — are now visible together for reconciliation. This
-            can&apos;t be re-hidden.
+            Independent screening is closed. Every reviewer&apos;s calls — and
+            the AI reviewer&apos;s — are now visible together for
+            reconciliation. This can&apos;t be re-hidden.
           </p>
           <Link
             className={styles.handoffLink}
@@ -218,8 +230,8 @@ export function ScreeningScreen({ view }: { view: ScreeningViewDTO }) {
         <div className={styles.handoff}>
           <h2>Nothing to screen yet</h2>
           <p>
-            Import references into this review, then return here to screen titles
-            and abstracts.
+            Import references into this review, then return here to screen
+            titles and abstracts.
           </p>
           <Link
             className={styles.handoffLink}
@@ -277,14 +289,18 @@ export function ScreeningScreen({ view }: { view: ScreeningViewDTO }) {
 
       {view.finished ? (
         <div className={styles.finishedBanner} role="status">
-          You&apos;ve finished screening — your decisions are locked while you wait
-          for the other reviewers. {view.progress.finishedReviewers} of{' '}
+          You&apos;ve finished screening — your decisions are locked while you
+          wait for the other reviewers. {view.progress.finishedReviewers} of{' '}
           {view.progress.totalReviewers} reviewers finished.
         </div>
       ) : null}
 
       {confirmUnblind ? (
-        <div className={styles.confirm} role="alertdialog" aria-label="Confirm reveal">
+        <div
+          className={styles.confirm}
+          role="alertdialog"
+          aria-label="Confirm reveal"
+        >
           <p>
             Reveal all decisions and start reconciliation?{' '}
             <b>This can&apos;t be re-hidden.</b>

@@ -26,8 +26,7 @@ export interface CleanCastInput {
 }
 
 export type CastValidation =
-  | { ok: true; value: CleanCastInput }
-  | { ok: false; message: string };
+  { ok: true; value: CleanCastInput } | { ok: false; message: string };
 
 export function validateCastInput(raw: RawCastInput): CastValidation {
   if (typeof raw.studyId !== 'string' || raw.studyId.length === 0) {
@@ -74,6 +73,11 @@ export function validateCastInput(raw: RawCastInput): CastValidation {
 
   return {
     ok: true,
-    value: { studyId: raw.studyId, decision, excludeReasonCode, excludeReasonDetail },
+    value: {
+      studyId: raw.studyId,
+      decision,
+      excludeReasonCode,
+      excludeReasonDetail,
+    },
   };
 }

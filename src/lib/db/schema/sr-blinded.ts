@@ -108,6 +108,17 @@ export const extractionEntries = pgTable(
   },
   (t) => [
     index('extraction_entries_review_study_idx').on(t.reviewId, t.studyId),
+    // One entry per (reviewer, study, field). Makes the T15 extraction write
+    // chokepoint an atomic, race-free upsert — a reviewer revises their OWN
+    // field value rather than stacking duplicate rows. The AI reviewer carries a
+    // distinct synthetic reviewer id, so its blinded row coexists on the same
+    // (study, field) without colliding with a human's.
+    uniqueIndex('extraction_entries_reviewer_study_field_idx').on(
+      t.reviewId,
+      t.studyId,
+      t.reviewerId,
+      t.fieldId,
+    ),
   ],
 );
 
@@ -136,7 +147,20 @@ export const robAssessments = pgTable(
       .notNull()
       .defaultNow(),
   },
-  (t) => [index('rob_assessments_review_study_idx').on(t.reviewId, t.studyId)],
+  (t) => [
+    index('rob_assessments_review_study_idx').on(t.reviewId, t.studyId),
+    // One judgement per (reviewer, study, domain). Makes the authz write
+    // chokepoint an atomic, race-free upsert — a reviewer revises their OWN
+    // domain judgement rather than stacking duplicate rows. The synthetic AI
+    // reviewer has its own reviewer_id, so its is_ai suggestion coexists with the
+    // humans' rows for the same domain. Mirrors the screening unique index.
+    uniqueIndex('rob_assessments_reviewer_study_domain_idx').on(
+      t.reviewId,
+      t.studyId,
+      t.reviewerId,
+      t.domain,
+    ),
+  ],
 );
 
 export type ScreeningDecision = typeof screeningDecisions.$inferSelect;

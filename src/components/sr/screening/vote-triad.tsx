@@ -22,9 +22,19 @@ const OPTIONS: Array<{
   key: string;
   className: string;
 }> = [
-  { decision: 'include', label: 'Include', key: 'I', className: styles.voteInclude },
+  {
+    decision: 'include',
+    label: 'Include',
+    key: 'I',
+    className: styles.voteInclude,
+  },
   { decision: 'maybe', label: 'Maybe', key: 'M', className: styles.voteMaybe },
-  { decision: 'exclude', label: 'Exclude', key: 'E', className: styles.voteExclude },
+  {
+    decision: 'exclude',
+    label: 'Exclude',
+    key: 'E',
+    className: styles.voteExclude,
+  },
 ];
 
 export function VoteTriad({ selected, onVote, disabled }: VoteTriadProps) {

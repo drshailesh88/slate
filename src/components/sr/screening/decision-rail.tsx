@@ -2,9 +2,7 @@
 
 import { useState } from 'react';
 import { Check, Lock, ShieldCheck, Sparkles } from 'lucide-react';
-import {
-  EXCLUDE_REASONS,
-} from '@/lib/sr/screening/exclude-reasons';
+import { EXCLUDE_REASONS } from '@/lib/sr/screening/exclude-reasons';
 import type {
   OwnDecisionDTO,
   ScreeningCriteriaDTO,
@@ -160,8 +158,8 @@ export function DecisionRail(props: DecisionRailProps) {
             />
           ) : null}
           <p className={styles.railNote}>
-            Maybe is a positive call — it advances the study. Your decision is the
-            record; revise it any time until you finish.
+            Maybe is a positive call — it advances the study. Your decision is
+            the record; revise it any time until you finish.
           </p>
         </>
       ) : (

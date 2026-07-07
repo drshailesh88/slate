@@ -76,9 +76,14 @@ function makeWriteDb() {
     },
   };
 
-  return { db, insert, update, get returningCalled() {
-    return returningCalled;
-  } };
+  return {
+    db,
+    insert,
+    update,
+    get returningCalled() {
+      return returningCalled;
+    },
+  };
 }
 
 function useDb(fake: { db: unknown }) {
