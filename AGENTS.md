@@ -655,4 +655,56 @@ pre-reconcile).
   Full route render (real data) waits on the founder's Neon role provisioning +
   `pnpm sr:seed`, same as every SR screen; the skin was browser-verified.
 
+### The AI screening reviewer + validation gate (T14 · ★ science-critical)
+
+The AI is a **validated, blinded, non-autonomous** participant in screening. Its
+safeguards (FOUNDATION §8–9) are all enforced in `src/lib/sr/ai/**`, with the one
+blinded write in `src/lib/sr/authz/ai-screening-write.ts`. LLM calls go through the
+**Vercel AI SDK** (`ai` v7 + `zod`), kept behind a narrow port so every safeguard
+is provable against a deterministic **mock model** — no key, no network.
+
+- **Port / adapter:** `ai/types.ts` is the `ScreeningModel` port; `ai/vercel-model.ts`
+  is the ONLY file that touches the SDK (`generateObject` + a Zod `{decision, reasoning}`
+  schema — **no score field is ever requested**); `ai/mock-model.ts` is the fake used
+  by tests + dev. Public surface: `ai/index.ts`.
+- **Recall-validation GATE (`ai/validation.ts` + `ai/recall.ts`):** the AI may NOT
+  screen until it is recall-validated on the **includes** (sensitivity ≥ target,
+  default **0.95**) against a human-labelled sample — recorded in `ai_validations`
+  (`passed`, model, version, date, sampleSize, recall). `hasPassingValidation` is the
+  gate read; `runAiScreening` throws `AiNotValidatedError` and casts nothing without a
+  `passed=true` row. Recall counts an AI `exclude` on a true include as the only miss
+  (a `maybe` keeps it in the pool). Concordance/agreement is deliberately NOT used
+  (true-negative dominated → hides missed includes).
+- **Blinded like a human:** the AI casts `is_ai=true` rows through the same chokepoint
+  as any reviewer; the AI's synthetic reviewer id ≠ any human's, so its verdict +
+  reasoning are hidden during `independent` and revealed only at `reconcile`. Its
+  relevance **score is never produced** (not in the schema, not in the run result, not
+  in the rail — `showScore` is the literal `false`). Optional labelled queue _order_ is
+  the only AI signal allowed pre-reconcile.
+- **Never autonomous (flag-only):** the writer only INSERTs blinded verdicts and never
+  touches `studies` — the AI cannot exclude/remove a record; a human makes the exclusion
+  at reconcile. Verdicts are reversible (`retractAiScreeningDecisions`) and PRISMA-counted.
+- **Coverage-preserving:** the AI is a synthetic `users` row (`ensureAiReviewerUser`),
+  **never a `review_members` row**, so `requiredHumanReviewers(mode)` (2 for two_reviewer,
+  1 for ai_co_reviewer) and the `getSafeProgress` human denominator are untouched by it.
+- **Phase-1 timing — ONE switch (`ai/config.ts` `SR_AI_PHASE1_MODE`, default
+  `silent_hold`):** silent_hold runs the AI during `independent` and holds its verdict
+  (blinded) until reconcile; `defer_to_phase2` is a clean no-op until reconcile. Flipping
+  it is trivial and changes nothing else (founder may flip — NOTED as changeable).
+- **T12 integration:** `buildAiReviewerRail` (`ai/rail.ts`, pure) is the composable rail
+  hook the screening screen renders; the service + validation flow are exposed via
+  `ai/index.ts`. The Team screen (T7) Activate/Validate wire to the gate (`activateAiReviewer`
+  refuses without `passed=true`).
+- **FOUNDER steps (like the Neon role step — build does not block on them):**
+  1. **LLM provider key** — provision the Vercel AI Gateway / provider key and set
+     `SR_AI_MODEL` (default `openai/gpt-4o-mini`). Without it, live screening fails at
+     call time; build + tests use the mock model.
+  2. **Labelled calibration sample** — recall validation needs a human-labelled sample
+     from the review (source is a product/UX follow-up; the gate + flow are built + tested).
+- **Tests (mocked LLM):** `ai/recall.test.ts`, `ai/validation.test.ts`,
+  `ai/screen-reviewer.test.ts` (gate · never-autonomous · phase switch · coverage ·
+  score-hidden), `ai/ai-blinded-integration.test.ts` (verdict withheld until reconcile via
+  the real chokepoint), `ai/rail.test.ts`, `ai/vercel-model.test.ts` (adapter vs the SDK's
+  MockLanguageModel), `authz/ai-screening-write.test.ts`. The T6 adversarial suite stays green.
+
 - Add durable project-specific notes here as they are discovered through real work.
