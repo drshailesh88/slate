@@ -3,14 +3,29 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import type { SearchResponse, UnifiedSearchResult } from '@/types/search';
 import type { SearchState } from '../use-unified-search';
+import type { ExploreTab } from '../tab-bar';
 
 const { useUnifiedSearchMock } = vi.hoisted(() => ({
   useUnifiedSearchMock:
-    vi.fn<(query: string, tab: 'academic') => SearchState>(),
+    vi.fn<(query: string, tab: ExploreTab) => SearchState>(),
 }));
+
+const { useRouterMock, usePathnameMock, useSearchParamsMock } = vi.hoisted(
+  () => ({
+    useRouterMock: vi.fn(),
+    usePathnameMock: vi.fn(),
+    useSearchParamsMock: vi.fn(),
+  }),
+);
 
 vi.mock('../use-unified-search', () => ({
   useUnifiedSearch: useUnifiedSearchMock,
+}));
+
+vi.mock('next/navigation', () => ({
+  useRouter: useRouterMock,
+  usePathname: usePathnameMock,
+  useSearchParams: useSearchParamsMock,
 }));
 
 import { ExplorePageClient } from '../explore-page-client';
@@ -27,6 +42,24 @@ function academicResult(
     publicationTypes: [],
     isOpenAccess: true,
     sources: ['pubmed'],
+    ...overrides,
+  };
+}
+
+function webResult(
+  overrides: Partial<UnifiedSearchResult> = {},
+): UnifiedSearchResult {
+  return {
+    title: 'A clinician’s guide to SGLT2 inhibitors',
+    authors: [],
+    journal: '',
+    year: 2024,
+    citationCount: 0,
+    publicationTypes: [],
+    isOpenAccess: false,
+    sources: [],
+    url: 'https://example.com/sglt2-guide',
+    domain: 'example.com',
     ...overrides,
   };
 }
@@ -50,11 +83,17 @@ function searchResponse(
 }
 
 describe('ExplorePageClient', () => {
+  let mockReplace: ReturnType<typeof vi.fn>;
+
   beforeEach(() => {
     useUnifiedSearchMock.mockReset();
+    mockReplace = vi.fn();
+    useRouterMock.mockReturnValue({ replace: mockReplace, push: vi.fn() });
+    usePathnameMock.mockReturnValue('/explore');
+    useSearchParamsMock.mockReturnValue(new URLSearchParams());
   });
 
-  it('renders the skeleton while loading, never a spinner', () => {
+  it('renders the skeleton while loading, never a spinner, and keeps the TabBar switchable', () => {
     useUnifiedSearchMock.mockReturnValue({ status: 'loading' });
     render(<ExplorePageClient initialQuery="SGLT2" />);
 
@@ -62,6 +101,11 @@ describe('ExplorePageClient', () => {
     expect(screen.queryByRole('status')).not.toBeInTheDocument();
     expect(screen.queryByRole('progressbar')).not.toBeInTheDocument();
     expect(screen.queryByText(/loading/i)).not.toBeInTheDocument();
+
+    // TabBar is persistent chrome — it renders even while loading, so a tab
+    // is switchable from any state, not just a populated result list.
+    expect(screen.getByRole('tablist')).toBeInTheDocument();
+    expect(screen.getByRole('tab', { name: /^web/i })).not.toBeDisabled();
   });
 
   it('renders a result card, the honest-count line, tab bar, and filter pills on success', () => {
@@ -78,10 +122,6 @@ describe('ExplorePageClient', () => {
     expect(
       screen.getByText(/SGLT2 inhibitors reduce heart failure hospitalization/),
     ).toBeInTheDocument();
-    // The count line's numerals render in their own --mono <span>s (see
-    // ResultHeader's renderCountLine), so the "1"s are not direct text nodes
-    // of the <p> — match against the element's full textContent instead of
-    // getByText's default (direct-text-node-only) algorithm.
     expect(
       screen.getByText(
         (_, element) =>
@@ -97,7 +137,7 @@ describe('ExplorePageClient', () => {
     expect(screen.getByRole('button', { name: /^scope/i })).toBeInTheDocument();
   });
 
-  it('shows the degraded Amber note and still renders results — a degraded source is never read as empty', () => {
+  it('shows the degraded Amber note and still renders results — a degraded source is never read as empty (regression)', () => {
     const data = searchResponse({
       results: [academicResult()],
       total: 1,
@@ -119,6 +159,8 @@ describe('ExplorePageClient', () => {
       screen.getByText(/SGLT2 inhibitors reduce heart failure hospitalization/),
     ).toBeInTheDocument();
     expect(screen.queryByText(/No papers matched/)).not.toBeInTheDocument();
+    // Regression: the source chip is still Academic-only.
+    expect(screen.getByText(/1 of 2 sources/)).toBeInTheDocument();
   });
 
   it('renders the No-results serif line when a query yields zero results', () => {
@@ -165,7 +207,7 @@ describe('ExplorePageClient', () => {
     ).not.toBeInTheDocument();
   });
 
-  it('renders the whole-tab Sources-unavailable state (not No-results) when every source is down', () => {
+  it('renders the whole-tab Sources-unavailable state (not No-results) when every academic source is down', () => {
     const data = searchResponse({
       results: [],
       total: 0,
@@ -205,5 +247,201 @@ describe('ExplorePageClient', () => {
 
     expect(useUnifiedSearchMock.mock.calls.length).toBeGreaterThan(callsBefore);
     expect(useUnifiedSearchMock).toHaveBeenLastCalledWith('SGLT2', 'academic');
+  });
+
+  describe('live tab switching', () => {
+    it('selecting the Web tab calls the hook with tab="web" and renders a web card, count, and caveat with no source chip', async () => {
+      const user = userEvent.setup();
+      useUnifiedSearchMock.mockImplementation((_query, tab) => {
+        if (tab === 'web') {
+          return {
+            status: 'success',
+            data: searchResponse({
+              results: [webResult()],
+              total: 2,
+              sourceCounts: { web: 2 },
+            }),
+          };
+        }
+        return {
+          status: 'success',
+          data: searchResponse({
+            results: [academicResult()],
+            total: 1,
+            matchedTotal: 1,
+            sourceCounts: { pubmed: 1 },
+          }),
+        };
+      });
+
+      render(<ExplorePageClient initialQuery="SGLT2" />);
+      await user.click(screen.getByRole('tab', { name: /^web/i }));
+
+      expect(useUnifiedSearchMock).toHaveBeenCalledWith('SGLT2', 'web');
+      expect(
+        screen.getByText(/A clinician’s guide to SGLT2 inhibitors/),
+      ).toBeInTheDocument();
+      expect(
+        screen.getByText(
+          (_, element) =>
+            element?.tagName.toLowerCase() === 'p' &&
+            normalizeSpace(element.textContent) === '2 web results',
+        ),
+      ).toBeInTheDocument();
+      expect(screen.getByText(/Web results are early/)).toBeInTheDocument();
+      expect(
+        screen.queryByRole('button', { name: /sources/i }),
+      ).not.toBeInTheDocument();
+      expect(screen.queryByText(/\d+ sources?$/)).not.toBeInTheDocument();
+    });
+
+    it('renders SourcesUnavailable (not "0 sources" or "No … matched") when a non-academic tab reports searxngUnavailable', () => {
+      useSearchParamsMock.mockReturnValue(new URLSearchParams('tab=web'));
+      useUnifiedSearchMock.mockReturnValue({
+        status: 'success',
+        data: searchResponse({
+          results: [],
+          total: 0,
+          sourceCounts: {},
+          searxngUnavailable: true,
+        }),
+      });
+
+      render(<ExplorePageClient initialQuery="tirzepatide" />);
+
+      expect(
+        screen.getByText('Web search is temporarily unavailable'),
+      ).toBeInTheDocument();
+      expect(screen.queryByText(/0 sources/)).not.toBeInTheDocument();
+      expect(screen.queryByText(/No .* matched/)).not.toBeInTheDocument();
+      expect(useUnifiedSearchMock).toHaveBeenCalledWith('tirzepatide', 'web');
+    });
+
+    it('renders the per-tab NoResults (not SourcesUnavailable) when a non-academic tab is genuinely empty, and its action switches to Academic', async () => {
+      const user = userEvent.setup();
+      useSearchParamsMock.mockReturnValue(new URLSearchParams('tab=web'));
+      useUnifiedSearchMock.mockImplementation((_query, tab) => {
+        if (tab === 'academic') {
+          return {
+            status: 'success',
+            data: searchResponse({
+              results: [academicResult()],
+              total: 1,
+              matchedTotal: 1,
+              sourceCounts: { pubmed: 1 },
+            }),
+          };
+        }
+        return {
+          status: 'success',
+          data: searchResponse({
+            results: [],
+            total: 0,
+            sourceCounts: {},
+            searxngUnavailable: false,
+          }),
+        };
+      });
+
+      render(<ExplorePageClient initialQuery="tirzepatide" />);
+
+      expect(
+        screen.getByText('No web results for "tirzepatide".'),
+      ).toBeInTheDocument();
+      expect(
+        screen.queryByText('Web search is temporarily unavailable'),
+      ).not.toBeInTheDocument();
+
+      await user.click(
+        screen.getByRole('button', { name: 'Search Academic →' }),
+      );
+
+      expect(useUnifiedSearchMock).toHaveBeenCalledWith(
+        'tirzepatide',
+        'academic',
+      );
+      expect(screen.getByRole('tab', { name: /academic/i })).toHaveAttribute(
+        'aria-selected',
+        'true',
+      );
+    });
+
+    it('seeds the active tab from a valid ?tab= and falls back to Academic for an invalid one', () => {
+      useSearchParamsMock.mockReturnValue(new URLSearchParams('tab=videos'));
+      useUnifiedSearchMock.mockReturnValue({ status: 'loading' });
+
+      render(<ExplorePageClient initialQuery="SGLT2" />);
+
+      expect(screen.getByRole('tab', { name: /^videos/i })).toHaveAttribute(
+        'aria-selected',
+        'true',
+      );
+      expect(useUnifiedSearchMock).toHaveBeenCalledWith('SGLT2', 'videos');
+    });
+
+    it('falls back to Academic when ?tab= holds an unknown value', () => {
+      useSearchParamsMock.mockReturnValue(new URLSearchParams('tab=bogus'));
+      useUnifiedSearchMock.mockReturnValue({ status: 'loading' });
+
+      render(<ExplorePageClient initialQuery="SGLT2" />);
+
+      expect(screen.getByRole('tab', { name: /academic/i })).toHaveAttribute(
+        'aria-selected',
+        'true',
+      );
+      expect(useUnifiedSearchMock).toHaveBeenCalledWith('SGLT2', 'academic');
+    });
+
+    // Regression: `?tab=` used to be validated with `value in TAB_LABELS`,
+    // which walks the prototype chain — "toString", "constructor", and
+    // "__proto__" all pass that check even though they aren't real tabs.
+    // Under the old check these values seed `activeTab`, and
+    // `NOUNS[tab]` (a Record keyed by real tabs only) resolves to
+    // Object.prototype methods instead of a [one, many] tuple, throwing
+    // "function is not iterable" once a zero-result render destructures it.
+    // A malicious or mistyped `?tab=` must fall back to Academic, not crash.
+    it.each(['toString', 'constructor', '__proto__'])(
+      'does not throw and falls back to Academic when ?tab=%s (prototype-chain property name)',
+      (maliciousTab) => {
+        useSearchParamsMock.mockReturnValue(
+          new URLSearchParams(`tab=${maliciousTab}`),
+        );
+        useUnifiedSearchMock.mockReturnValue({
+          status: 'success',
+          data: searchResponse({ results: [], total: 0, sourceCounts: {} }),
+        });
+
+        expect(() =>
+          render(<ExplorePageClient initialQuery="SGLT2" />),
+        ).not.toThrow();
+
+        expect(screen.getByRole('tab', { name: /academic/i })).toHaveAttribute(
+          'aria-selected',
+          'true',
+        );
+        expect(useUnifiedSearchMock).toHaveBeenCalledWith('SGLT2', 'academic');
+        // Renders the Academic no-results copy, not a web/other-tab card or
+        // a "No {noun} for ..." line derived from a bogus tab.
+        expect(
+          screen.getByText('No papers matched "SGLT2" in Academic.'),
+        ).toBeInTheDocument();
+        expect(screen.queryByText(/No web results/)).not.toBeInTheDocument();
+      },
+    );
+
+    it('syncs ?tab= via router.replace (preserving other params) after the user switches tabs', async () => {
+      const user = userEvent.setup();
+      useSearchParamsMock.mockReturnValue(new URLSearchParams('q=SGLT2'));
+      useUnifiedSearchMock.mockReturnValue({ status: 'loading' });
+
+      render(<ExplorePageClient initialQuery="SGLT2" />);
+      expect(mockReplace).not.toHaveBeenCalled();
+
+      await user.click(screen.getByRole('tab', { name: /^news/i }));
+
+      expect(mockReplace).toHaveBeenCalledWith('/explore?q=SGLT2&tab=news', {
+        scroll: false,
+      });
+    });
   });
 });

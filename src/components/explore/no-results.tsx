@@ -1,20 +1,37 @@
+import type { ExploreTab } from './tab-bar';
+import { resultNoun } from './tab-meta';
 import styles from './no-results.module.css';
 
 /**
- * Slice 1: neither action is wired yet — Clear filters has nothing to clear
- * (FilterPills are inert this slice) and Search the Web has nowhere to go
- * (Web is disabled/Beta in TabBar). Both stay fully legible but disabled, the
- * same "present, not yet active" treatment FilterPills already uses, so
- * nothing here fakes a working control.
+ * Clear filters stays disabled always — FilterPills are still inert
+ * (Slice 2c). The switch-tab action is gated on `onSwitchTab` being passed;
+ * the only caller (`explore-page-client.tsx`) always supplies `tab` and
+ * `onSwitchTab`, so `tab` and `onSwitchTab` default only for other
+ * call sites (e.g. tests) that omit them.
  */
-export function NoResults({ query }: { query: string }) {
+export function NoResults({
+  query,
+  tab = 'academic',
+  onSwitchTab,
+}: {
+  query: string;
+  tab?: ExploreTab;
+  onSwitchTab?: (tab: ExploreTab) => void;
+}) {
+  const isAcademic = tab === 'academic';
+  const headline = isAcademic
+    ? `No papers matched "${query}" in Academic.`
+    : `No ${resultNoun(tab, 0)} for "${query}".`;
+  const actionLabel = isAcademic ? 'Search the Web →' : 'Search Academic →';
+  const targetTab: ExploreTab = isAcademic ? 'web' : 'academic';
+
   return (
     <div className={styles.wrap}>
-      <p
-        className={styles.headline}
-      >{`No papers matched "${query}" in Academic.`}</p>
+      <p className={styles.headline}>{headline}</p>
       <p className={styles.body}>
-        Try broader terms, widen the time window, or search the Web.
+        {isAcademic
+          ? 'Try broader terms, widen the time window, or search the Web.'
+          : 'Try broader terms or widen the time window.'}
       </p>
       <div className={styles.actions}>
         <button
@@ -28,10 +45,11 @@ export function NoResults({ query }: { query: string }) {
         <button
           type="button"
           className={styles.action}
-          disabled
-          aria-disabled="true"
+          disabled={!onSwitchTab}
+          aria-disabled={!onSwitchTab}
+          onClick={onSwitchTab ? () => onSwitchTab(targetTab) : undefined}
         >
-          Search the Web →
+          {actionLabel}
         </button>
       </div>
     </div>

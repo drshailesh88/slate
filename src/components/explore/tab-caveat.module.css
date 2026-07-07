@@ -1,0 +1,6 @@
+.caveat {
+  margin: 8px 0 0;
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--muted);
+}

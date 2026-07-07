@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import type { SearchResponse } from '@/types/search';
+import type { ExploreTab } from './tab-bar';
 
 export type SearchState = {
   status: 'idle' | 'loading' | 'success' | 'error';
@@ -11,11 +12,11 @@ export type SearchState = {
 
 type CompletedResult = {
   query: string;
-  tab: 'academic';
+  tab: ExploreTab;
   state: SearchState;
 };
 
-export function useUnifiedSearch(query: string, tab: 'academic'): SearchState {
+export function useUnifiedSearch(query: string, tab: ExploreTab): SearchState {
   const trimmedQuery = query.trim();
   const [result, setResult] = useState<CompletedResult | null>(null);
 

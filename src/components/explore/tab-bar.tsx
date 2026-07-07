@@ -1,22 +1,15 @@
 'use client';
 
+import { NON_ACADEMIC_TABS, TAB_LABELS } from './tab-meta';
 import styles from './tab-bar.module.css';
 
 export type ExploreTab = 'academic' | 'web' | 'news' | 'discussions' | 'videos';
 
-const TAB_LABELS: Record<ExploreTab, string> = {
-  academic: 'Academic',
-  web: 'Web',
-  news: 'News',
-  discussions: 'Discussions',
-  videos: 'Videos',
-};
-
 const TABS: ExploreTab[] = ['academic', 'web', 'news', 'discussions', 'videos'];
 
-// Slice 1 wires only Academic; Slice 2 enables the rest — flip this set, no
-// structural change needed.
-const ENABLED_TABS: ReadonlySet<ExploreTab> = new Set<ExploreTab>(['academic']);
+// All five tabs are interactive. Beta now marks "early quality," not
+// "disabled" — see the tag rendered per-tab below.
+const ENABLED_TABS: ReadonlySet<ExploreTab> = new Set<ExploreTab>(TABS);
 
 export function TabBar({
   active,
@@ -43,7 +36,9 @@ export function TabBar({
             onClick={isEnabled ? () => onSelect(tab) : undefined}
           >
             {TAB_LABELS[tab]}
-            {!isEnabled && <span className={styles.beta}>Beta</span>}
+            {NON_ACADEMIC_TABS.has(tab) && (
+              <span className={styles.beta}>Beta</span>
+            )}
           </button>
         );
       })}
