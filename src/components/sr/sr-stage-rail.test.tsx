@@ -58,7 +58,10 @@ describe('SrStageRail', () => {
     expect(html).toContain('aria-disabled="true"');
     expect(html).toContain('Soon');
     expect(html).not.toContain(`href="${base}/full-text"`);
-    expect(html).not.toContain(`href="${base}/export"`);
+    // The M5 screens shipped (T17/T18/T19) → linked, no longer coming soon.
+    expect(html).toContain(`href="${base}/prisma"`);
+    expect(html).toContain(`href="${base}/report"`);
+    expect(html).toContain(`href="${base}/export"`);
   });
 
   it('shows the imported study count on Import', () => {

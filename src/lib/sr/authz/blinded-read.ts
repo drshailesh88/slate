@@ -1,11 +1,27 @@
 import { sql } from 'drizzle-orm';
 import { getDb } from '@/lib/db/client';
+import { requiredHumanReviewers } from '@/lib/sr/ai/coverage';
 import {
   cohensKappa,
   deriveScreeningConflicts,
   type KappaReadout,
   type ScreeningConflict,
 } from '@/lib/sr/conflicts/derive';
+import {
+  derivePrismaFlow,
+  type PrismaFlow,
+  type PrismaResolutionRow,
+  type PrismaStudyRow,
+} from '@/lib/sr/prisma/derive';
+import {
+  deriveRobOutcomes,
+  deriveScreeningOutcomes,
+  type OutcomeResolutionRow,
+  type RobOutcomes,
+  type ScreeningOutcomes,
+} from '@/lib/sr/report/outcomes';
+import type { ReviewMode } from '@/lib/sr/review-modes';
+import { isRobInstrument, type RobInstrument } from '@/lib/sr/rob/domains';
 import {
   applyRowVisibility,
   BlindedAccessError,
@@ -342,6 +358,228 @@ export async function getScreeningConflicts(
     conflicts: deriveScreeningConflicts(rows, stage),
     kappa: cohensKappa(rows.filter((r) => r.stage === stage)),
   };
+}
+
+// ── The PRISMA 2020 flow (T17) — an aggregate over every reviewer's calls. ────
+//
+// PRISMA stage counts (screened / excluded / assessed / included, and the
+// per-reason full-text exclusions — Item 16b) are derived from the blinded
+// screening rows, so the WHOLE flow is blinded data and is computed HERE:
+// refused during `independent` for every role, and always for `viewer` (same
+// gate as getScreeningConflicts). The page shows only the non-blinded
+// Identification block (from `studies`) plus getSafeProgress until the owner
+// unblinds screening. The pure math lives in @/lib/sr/prisma/derive — this is
+// its only call site with real rows.
+export async function getPrismaFlow(ctx: BlindedContext): Promise<PrismaFlow> {
+  const review = await getDb().execute<{ phase: Phase; mode: ReviewMode }>(
+    sql`select screening_phase as phase, review_mode as mode
+        from reviews where id = ${ctx.reviewId}`,
+  );
+  const row = review.rows[0];
+  if (!row) {
+    throw new Error(
+      `Cannot resolve blinding phase: review ${ctx.reviewId} not found. ` +
+        `The authorization layer must reject unknown reviews (404) before calling the chokepoint.`,
+    );
+  }
+  if (resolveAggregateVisibility(ctx.role, row.phase) !== 'all') {
+    throw new BlindedAccessError('screening', ctx.role, row.phase, 'aggregate');
+  }
+
+  const decisions = await fetchScreeningRows(ctx.reviewId);
+  const studies = await fetchPrismaStudies(ctx.reviewId);
+  const resolutions = await fetchPrismaResolutions(ctx.reviewId);
+
+  return derivePrismaFlow({
+    studies,
+    decisions,
+    resolutions,
+    requiredHumans: requiredHumanReviewers(row.mode),
+  });
+}
+
+// The visible study pool + recorded resolutions the flow reconciles over. Both
+// are non-blinded tables, read here so the ENTIRE flow derives from one
+// snapshot inside the gate — a caller never assembles PRISMA numbers itself.
+async function fetchPrismaStudies(reviewId: string): Promise<PrismaStudyRow[]> {
+  const result = await getDb().execute<{
+    id: string;
+    source: string | null;
+    dupe_status: string;
+  }>(
+    sql`select id, source, dupe_status from studies
+        where review_id = ${reviewId}`,
+  );
+  return result.rows.map((r) => ({
+    id: r.id,
+    source: r.source,
+    dupeStatus: r.dupe_status,
+  }));
+}
+
+async function fetchPrismaResolutions(
+  reviewId: string,
+): Promise<PrismaResolutionRow[]> {
+  const result = await getDb().execute<{
+    study_id: string;
+    stage: string;
+    method: string;
+    decision: string | null;
+  }>(
+    sql`select study_id, stage, method, decision
+        from screening_conflict_resolutions
+        where review_id = ${reviewId}`,
+  );
+  return result.rows.map((r) => ({
+    studyId: r.study_id,
+    stage: r.stage,
+    method: r.method,
+    decision: r.decision,
+  }));
+}
+
+// ── Report outcome aggregates (T18) — reconcile-gated, computed HERE. ─────────
+// The report's included/excluded/RoB numbers are aggregates over EVERY
+// reviewer's blinded rows, so — like getScreeningConflicts — the derivation is
+// pure math in src/lib/sr/report/outcomes.ts and its ONLY call sites are these
+// two gated functions. During `independent` they throw BlindedAccessError and
+// the report renders "withheld"; no number leaves early.
+
+// Visible-table support reads (screening_conflict_resolutions / reviews /
+// studies) — the pool rule mirrors extraction: confidently removed duplicates
+// are out.
+async function fetchScreeningResolutions(
+  reviewId: string,
+): Promise<OutcomeResolutionRow[]> {
+  const result = await getDb().execute<{
+    study_id: string;
+    stage: string;
+    method: string;
+    decision: string | null;
+    arbitrator_id: string | null;
+  }>(
+    sql`select study_id, stage, method, decision, arbitrator_id
+        from screening_conflict_resolutions where review_id = ${reviewId}`,
+  );
+  return result.rows.map((r) => ({
+    studyId: r.study_id,
+    stage: r.stage,
+    method: r.method,
+    decision: r.decision,
+    arbitratorId: r.arbitrator_id,
+  }));
+}
+
+async function fetchReviewMode(
+  reviewId: string,
+): Promise<'two_reviewer' | 'ai_co_reviewer'> {
+  const result = await getDb().execute<{ review_mode: string }>(
+    sql`select review_mode from reviews where id = ${reviewId}`,
+  );
+  return result.rows[0]?.review_mode === 'ai_co_reviewer'
+    ? 'ai_co_reviewer'
+    : 'two_reviewer';
+}
+
+async function fetchStudyPool(
+  reviewId: string,
+): Promise<Array<{ id: string; instrument: RobInstrument }>> {
+  const result = await getDb().execute<{
+    id: string;
+    rob_instrument: string;
+  }>(
+    sql`select id, rob_instrument from studies
+        where review_id = ${reviewId}
+          and dupe_status not in ('auto_merged', 'merged')
+        order by created_at`,
+  );
+  return result.rows.map((r) => ({
+    id: r.id,
+    instrument: isRobInstrument(r.rob_instrument) ? r.rob_instrument : 'rob2',
+  }));
+}
+
+export async function getReportScreeningOutcomes(
+  ctx: BlindedContext,
+  stage: string,
+): Promise<ScreeningOutcomes> {
+  const phase = await fetchPhase(ctx.reviewId, 'screening');
+  if (resolveAggregateVisibility(ctx.role, phase) !== 'all') {
+    throw new BlindedAccessError('screening', ctx.role, phase, 'aggregate');
+  }
+  const [decisions, resolutions, pool, reviewMode] = await Promise.all([
+    fetchScreeningRows(ctx.reviewId),
+    fetchScreeningResolutions(ctx.reviewId),
+    fetchStudyPool(ctx.reviewId),
+    fetchReviewMode(ctx.reviewId),
+  ]);
+  return deriveScreeningOutcomes({
+    decisions,
+    resolutions,
+    studyIds: pool.map((s) => s.id),
+    stage,
+    reviewMode,
+  });
+}
+
+export async function getReportRobOutcomes(
+  ctx: BlindedContext,
+): Promise<RobOutcomes> {
+  const phase = await fetchPhase(ctx.reviewId, 'rob');
+  if (resolveAggregateVisibility(ctx.role, phase) !== 'all') {
+    throw new BlindedAccessError('rob', ctx.role, phase, 'aggregate');
+  }
+  const [rows, pool] = await Promise.all([
+    fetchRobRows(ctx.reviewId),
+    fetchStudyPool(ctx.reviewId),
+  ]);
+  return deriveRobOutcomes(
+    rows,
+    new Map(pool.map((s) => [s.id, s.instrument])),
+    pool.map((s) => s.id),
+  );
+}
+
+// ── Export readers (T19) — the full-dataset reads an export artifact uses. ────
+//
+// An export leaves the app, so it is gated STRICTER than the row getters: like
+// an aggregate, it resolves only when the surface is in `reconcile` and the
+// caller may see all rows. During `independent` it refuses for EVERY role —
+// even the caller's own blinded rows are not exportable pre-unblind (an export
+// file can be shared; own-rows-in-a-file is still blinded data outside the
+// firewall). `viewer` is refused always (it exports derived consensus + the
+// non-blinded references, never raw rows). The phase is read HERE, from
+// `reviews` — a spoofed or stale caller-side phase cannot unmask anything.
+
+async function fetchExportPhaseOrThrow(
+  ctx: BlindedContext,
+  surface: BlindedSurface,
+): Promise<void> {
+  const phase = await fetchPhase(ctx.reviewId, surface);
+  if (resolveAggregateVisibility(ctx.role, phase) !== 'all') {
+    throw new BlindedAccessError(surface, ctx.role, phase, 'aggregate');
+  }
+}
+
+export async function getScreeningDecisionsForExport(
+  ctx: BlindedContext,
+): Promise<ScreeningDecisionView[]> {
+  await fetchExportPhaseOrThrow(ctx, 'screening');
+  return fetchScreeningRows(ctx.reviewId);
+}
+
+export async function getExtractionEntriesForExport(
+  ctx: BlindedContext,
+): Promise<ExtractionEntryView[]> {
+  await fetchExportPhaseOrThrow(ctx, 'extraction');
+  return fetchExtractionRows(ctx.reviewId);
+}
+
+export async function getRobAssessmentsForExport(
+  ctx: BlindedContext,
+): Promise<RobAssessmentView[]> {
+  await fetchExportPhaseOrThrow(ctx, 'rob');
+  return fetchRobRows(ctx.reviewId);
 }
 
 // ── Safe progress — the ONLY progress surface during `independent`. ───────────

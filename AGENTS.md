@@ -813,4 +813,152 @@ Per-study, per-domain RoB appraisal (`/[reviewId]/risk-of-bias`), dual + indepen
   screening), not yet filtered to screening-included studies — inclusion-gating is a
   follow-up once full-text/inclusion state is wired.
 
+### The PRISMA flow screen (T17)
+
+The PRISMA 2020 flow diagram (`/[reviewId]/prisma`) — the auditable record of
+where every study went, auto-derived from the review's real data.
+
+- **PRISMA counts MUST route through the chokepoint.** Stage counts, drill-down
+  bucket membership, and the per-reason full-text exclusions (Item 16b) are
+  aggregates over the blinded screening rows, so they are computed ONLY inside
+  `src/lib/sr/authz/blinded-read.ts::getPrismaFlow`, gated by
+  `resolveAggregateVisibility` — refused (`BlindedAccessError`) during
+  `independent` for every role and always for `viewer`. Never derive a PRISMA
+  number from a client store or a raw blinded-table COUNT. The one exception is
+  the Identification block (records identified / per-source / duplicates
+  removed), which is non-blinded and comes from `studies`.
+- **Pure math** `src/lib/sr/prisma/derive.ts` (`derivePrismaFlow`,
+  `derivePrismaIdentification`) — ported from the precursor's
+  `derivePrismaCounts` and rebuilt for the server row model with structural
+  types (names no blinded symbol; same split as `conflicts/derive.ts`). Every
+  pool record lands in EXACTLY ONE terminal bucket (duplicate / TA-excluded /
+  TA-in-progress / FT-excluded / FT-in-progress / included), so the flow
+  reconciles at every stage (in = out + excluded) — asserted by
+  `derive.test.ts::expectReconciled`. Unresolved conflicts, pending
+  arbitrations, and missing calls are an explicit "in progress" bucket, never a
+  silent exclusion; a reason-less full-text exclusion lands in an explicit
+  "not recorded" reason bucket (the precursor silently dropped those).
+- **Pool definition matches screening** (`dupeStatus ∉ {auto_merged, merged}`,
+  `undoneAt` ignored) so PRISMA reconciles with what reviewers actually see.
+- **Seam + screen:** `src/lib/sr/prisma/load.ts::buildPrismaView` catches
+  `BlindedAccessError` → the DTO carries `flow: null` and the screen
+  (`src/components/sr/prisma/prisma-screen.tsx`) renders an honest withheld
+  state: Identification + `getSafeProgress` completion counts only — the DTO
+  shape cannot carry a stage count early. At reconcile every count is a
+  drill-down (click → the underlying records, authz-scoped server-side).
+- **T6 extension:** `src/lib/sr/authz/blinding-prisma.test.ts` primes
+  co-reviewer rows and proves `getPrismaFlow` withholds the whole flow during
+  `independent` (with a reconcile positive control that also asserts the
+  reconciliation invariants).
+
+### The Report + auto-Methods screen (T18)
+
+The report (`/[reviewId]/report`) is a GROUNDED manuscript scaffold: every
+factual number is computed from the review's own records — never generated —
+and carries a source chip naming the record set it derives from. Feature
+module: `src/lib/sr/report/**`.
+
+- **Grounding is structural, at three layers.** (1) Visible-table counts
+  (import ledger, team roster, resolutions, consensus, `ai_validations`) are
+  computed in the seam `report/load.ts`. (2) Blinded-derived aggregates —
+  included/excluded counts + per-reason exclusions (`deriveScreeningOutcomes`)
+  and the RoB roll-up (`deriveRobOutcomes`) — are pure math in
+  `report/outcomes.ts` whose ONLY call sites are the new reconcile-gated
+  chokepoint functions `getReportScreeningOutcomes` / `getReportRobOutcomes`
+  (`authz/blinded-read.ts`, T13 pattern). During `independent` they throw
+  `BlindedAccessError` and the view carries a `withheld` marker with ZERO
+  numbers — the DTO cannot render a blinded count early. Adversarial coverage:
+  `authz/blinding-report.test.ts` (extends T6; primed co-reviewer rows never
+  escape; reconcile positive control). (3) The RoB roll-up never fakes a
+  consensus: agreeing human reviewers → the judgement; disagreement → `mixed`;
+  AI suggestion rows never contribute.
+- **The auto Methods · data-collection block (PRISMA Items 8/9/10)** is
+  assembled by `report/methods.ts` (pure) from RECORDED metadata only: team
+  roster counts, blind-mode independence, recorded screening/extraction
+  resolution-ladder counts, the author-contact log (consensus rows), the
+  passing `ai_validations` row (model/version/recall/sample), QC sample rate,
+  and the extraction template. Every statement carries `recorded` values;
+  `methods.test.ts` mechanically asserts every number in every sentence traces
+  to them. The AI line is factual (no rigor scold — review-modes rule).
+- **AI drafting is prose-only, gated, and never a synthesis.**
+  `report/draft.ts` orchestrates an injected `ReportDraftModel`
+  (`mock-model.ts` deterministic; `vercel-model.ts` the second SDK adapter
+  beside `ai/vercel-model.ts`, AI SDK v7 `generateObject` + `instructions` —
+  the v7 rename of `system`). Structural guarantees: `DRAFTABLE_SECTIONS` is
+  the closed allowlist (`abstract`/`findings`) — a model-emitted
+  conclusions/GRADE section is DROPPED and counted (no auto-synthesis path
+  exists); every sentence must cite ≥1 key from the closed grounding table
+  (`report/grounding.ts`) and may carry no number its cited sources don't
+  support (`extractNumericTokens` — digits glued to letters like "SGLT2" are
+  identifiers, not numeric claims). Drops are surfaced in the UI, never
+  silent. Withheld sections contribute no grounding source, so a draft
+  physically cannot cite blinded data. The server action
+  (`report/actions.ts`) rebuilds the grounding table server-side — the client
+  never supplies the facts.
+- **Screen** `components/sr/report/report-screen.tsx`: AI sections are
+  labeled (`AI · drafted from your recorded data — review & edit`) and land in
+  editable textareas; **Conclusions & certainty is human-only** ("Yours to
+  write" — no draft path into it, enforced by the `DraftableSectionId` union).
+  Withheld sections render a lock note. Edits are client-state only —
+  persisting report drafts is a follow-up (T19 export is the output lane).
+- **Founder step (unchanged from T14):** live drafting needs the AI Gateway
+  provider key (`SR_AI_MODEL`); without it the draft action returns an
+  actionable message. Build + all tests use the deterministic mock.
+- **Known scope notes:** the report's screening summary covers the CURRENT
+  `reviews.screening_stage` (full-text stage lands with its screen); the
+  characteristics table shows four consensus fields (design / population /
+  n / primary outcome).
+
+### The Export screen (T19 — the last funnel stage)
+
+Export (`/[reviewId]/export`, downloads via
+`GET /api/sr/reviews/[reviewId]/export?format=revman|ris|csv|pdf[&dataset=…]`)
+gets the review's data out in the formats downstream tools use. Feature module:
+`src/lib/sr/export/**`; screen: `src/components/sr/export/export-screen.tsx`
+(server component — no interactivity, links are plain downloads).
+
+- **Blinded data is export-gated STRICTER than the row getters.** The chokepoint
+  gained three `…ForExport` readers (`getScreeningDecisionsForExport` /
+  `getExtractionEntriesForExport` / `getRobAssessmentsForExport` in
+  `authz/blinded-read.ts`): an export artifact leaves the app, so they gate like
+  aggregates (`resolveAggregateVisibility === 'all'`) — refused during
+  `independent` for EVERY role (even the caller's own rows; a file can be
+  shared) and always for `viewer`. They read the authoritative phase from
+  `reviews` themselves, so a spoofed/stale caller-side phase cannot unmask
+  anything (proven by the TOCTOU test in `export/assemble.test.ts`). The T6
+  suite gained `authz/blinding-export.test.ts` (channel 3 hardened).
+- **Consensus ≠ as-extracted, structurally (non-neg #8).** The `ExportBundle`
+  (`export/types.ts`) carries `consensus` (from the visible
+  `extraction_consensus` table) and `asExtracted` (through the chokepoint) as
+  SEPARATE fields with distinct row shapes; every CSV row's first column names
+  its dataset (`consensus` vs `as_extracted`), the RevMan file carries consensus
+  ONLY and says so in its summary, and the PDF renders them as two labeled
+  sections. A blinded dataset is `{status:'withheld', reason}` — an honest
+  designed state (dashed row + reason in the UI, 409 + reason from the route),
+  never a silently-empty file.
+- **The four states / derived / provenance survive every format**: `state` is
+  its own CSV column and a non-`reported` value exports an EMPTY cell (never a
+  0); RevMan/PDF render "Not reported / Not applicable / Unclear" as words;
+  `derived` + formula and provenance (report/page/locator) travel on every row.
+- **Formats are pure builders over the bundle** — `ris.ts` (tags mirror our own
+  `parseRis`, so the export round-trips through the importer), `csv.ts` (RFC
+  4180 writer + its exact-inverse `parseCsvTable`, used by the round-trip
+  tests), `revman.ts` (Cochrane `COCHRANE_REVIEW` XML, DOMParser-verified),
+  `pdf.ts` (a self-contained PDF 1.4 writer — no library; returns a BINARY
+  string, serialize with `Buffer.from(pdf, 'latin1')`; `extractPdfText` is the
+  test inverse). No new dependencies.
+- **Seam pattern as usual:** `export/store.ts` is the visible-data port
+  (facts/studies/consensus/user labels; in-memory fake for tests) +
+  `drizzle-store.ts` (neon-http impl, reviewId-scoped, reuses the T15 consensus
+  store); `assemble.ts` builds the bundle (blinded sections ONLY via the
+  chokepoint readers) and `toExportView` summarizes counts/availability for the
+  client — rows never cross the RSC boundary; data leaves via the download
+  route only.
+- **Gotcha:** the wall guard greps ALL of `src/` for the blinded table names —
+  even a display string like `rob_assessments` in a CSV label trips it. Label
+  datasets `risk_of_bias`/`screening` instead; never weaken the guard.
+- `export` joined `BUILT_STAGES`; route render with real data still waits on
+  the founder Neon step, so the skin (ready + withheld states) was
+  browser-verified via a temporary in-shell preview page (not committed).
+
 * Add durable project-specific notes here as they are discovered through real work.
