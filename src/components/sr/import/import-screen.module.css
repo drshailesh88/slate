@@ -176,7 +176,7 @@
   flex: 1;
 }
 
-/* Buttons — primary is ink with a white label (§9.5). */
+/* Buttons — primary is ink with a paper-token label (§9.5). */
 .primaryBtn {
   padding: 9px 17px;
   border: 1px solid var(--ink);
