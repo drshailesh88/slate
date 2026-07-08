@@ -66,9 +66,9 @@
   transition: opacity var(--motion-micro) var(--ease-out);
 }
 
-/* Primary action = solid ink with a white label (never a colored button). */
+/* Primary action = solid ink with a paper-token label (never a colored button). */
 .finishButton {
-  color: #fff;
+  color: var(--paper);
   background: var(--ink);
   border: 1px solid var(--ink);
 }
@@ -148,7 +148,7 @@
 }
 
 .confirmProceed {
-  color: #fff;
+  color: var(--paper);
   background: var(--ink);
   border: 1px solid var(--ink);
 }
@@ -407,7 +407,7 @@
   padding: 7px 13px;
   font-size: 12px;
   font-weight: 500;
-  color: #fff;
+  color: var(--paper);
   background: var(--ink);
   border: 1px solid var(--ink);
   border-radius: 8px;
@@ -674,7 +674,7 @@
   padding: 8px 16px;
   font-size: 13px;
   font-weight: 500;
-  color: #fff;
+  color: var(--paper);
   background: var(--ink);
   border-radius: 8px;
   text-decoration: none;
