@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { PanelLeft, Plus } from 'lucide-react';
 import { Avatar } from './avatar';
+import { Brand } from './brand';
 import { navItems } from './nav-items';
 import type { ShellUser } from './app-shell';
 import styles from './sidebar.module.css';
@@ -25,7 +26,7 @@ export function Sidebar({
       aria-label="Main navigation"
     >
       <div className={styles.head}>
-        {!isCollapsed && <span className={styles.wordmark}>Slate</span>}
+        <Brand variant={isCollapsed ? 'mark' : 'lockup'} />
         <button
           type="button"
           className={styles.iconButton}

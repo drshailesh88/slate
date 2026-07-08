@@ -12,7 +12,9 @@
 }
 
 .collapsed .head {
+  flex-direction: column;
   justify-content: center;
+  gap: 10px;
 }
 
 .collapsed .newProject,
@@ -31,13 +33,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 14px 14px 10px;
-}
-
-.wordmark {
-  font-family: var(--serif);
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--ink);
 }
 
 .iconButton {
